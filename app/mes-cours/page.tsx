@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useRef, useState } from "react";
-import { useStudiJur } from "@/lib/state";
+import { hasAccess, useStudiJur } from "@/lib/state";
 import { TRIAL_IMPORT_LIMIT } from "@/lib/limits";
 import { prepareImage } from "@/lib/image-prep";
 import { Button, SectionTitle, Tag } from "@/components/ui";
@@ -27,7 +27,12 @@ export default function MyCoursesPage() {
 
   const importes = state.customCourses.length;
   const abonne = state.profile.plan === "active";
-  const plafondAtteint = !abonne && importes >= TRIAL_IMPORT_LIMIT;
+  const acces = hasAccess(state);
+  // Bloqué soit parce que l'essai est fini (plus d'accès du tout), soit parce
+  // que le plafond d'imports de l'essai est atteint alors que l'essai court
+  // encore — sans ce premier cas, un essai expiré avec un import inutilisé
+  // pouvait continuer à appeler l'IA (ingest/ocr) indéfiniment.
+  const plafondAtteint = !acces || (!abonne && importes >= TRIAL_IMPORT_LIMIT);
 
   async function readFile(file: File) {
     setPhase("reading");
@@ -217,7 +222,7 @@ export default function MyCoursesPage() {
                 </div>
               ))}
             </div>
-            <Button onClick={transcribePhotos} disabled={busy} variant="soft" size="sm" full>
+            <Button onClick={transcribePhotos} disabled={busy || plafondAtteint} variant="soft" size="sm" full>
               {phase === "reading" ? "Lecture en cours…" : `Transcrire ${photos.length > 1 ? `ces ${photos.length} photos` : "cette photo"}`}
             </Button>
           </div>
@@ -261,11 +266,12 @@ export default function MyCoursesPage() {
           {plafondAtteint ? (
             <div className="rounded-xl p-4 text-center" style={{ background: "var(--gold-soft)" }}>
               <p className="text-[14px] font-semibold" style={{ color: "var(--gold)" }}>
-                Limite de l&apos;essai gratuit atteinte
+                {acces ? "Limite de l'essai gratuit atteinte" : "Ton essai gratuit est terminé"}
               </p>
               <p className="mt-1 text-[13.5px] leading-relaxed" style={{ color: "var(--ink-2)" }}>
-                Pendant l&apos;essai, tu peux importer {TRIAL_IMPORT_LIMIT} cours. Abonne-toi pour en déposer autant
-                que tu veux — tes {importes} cours déjà importés restent accessibles.
+                {acces
+                  ? `Pendant l'essai, tu peux importer ${TRIAL_IMPORT_LIMIT} cours. Abonne-toi pour en déposer autant que tu veux — tes ${importes} cours déjà importés restent accessibles.`
+                  : `Abonne-toi pour déposer de nouveaux cours et continuer à en générer — tes ${importes} cours déjà importés restent accessibles.`}
               </p>
               <div className="mt-3"><Button href="/abonnement" size="sm">Voir les formules</Button></div>
             </div>
