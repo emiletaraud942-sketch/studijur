@@ -2,10 +2,62 @@ import { NextResponse } from "next/server";
 import { callModel, extractJson, getAnthropic, currentModel } from "@/lib/anthropic";
 import { fallbackCourse, splitSections } from "@/lib/ingest-fallback";
 import { checkQuota, fingerprint, lookupShared, releaseQuota, sharedCourseId, storeShared } from "@/lib/shared-courses";
+import { CORPUS } from "@/lib/corpus";
+import { getAdmin } from "@/lib/supabase-admin";
+import { envoyerEmail } from "@/lib/brevo";
 import type { Course, Lesson } from "@/lib/types";
 
 export const runtime = "nodejs";
 export const maxDuration = 300;
+
+const DESTINATAIRE = process.env.FEEDBACK_NOTIFY_EMAIL ?? "emiletaraud942@gmail.com";
+
+function normalise(s: string): string {
+  return s
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[̀-ͯ]/g, "")
+    .replace(/[^a-z0-9]+/g, " ")
+    .trim();
+}
+
+// Un cours déposé sur une matière déjà présente dans le corpus ne sert qu'à
+// l'élève qui l'a importé (comportement inchangé). Une matière absente est en
+// revanche un trou du corpus qu'Émile n'a pas encore couvert : le cours
+// devient un candidat à l'ajout, jamais appliqué automatiquement — juste
+// signalé, pour qu'il le relise et l'intègre lui-même s'il le juge fiable.
+function matiereConnue(title: string): boolean {
+  const n = normalise(title);
+  if (!n) return false;
+  return CORPUS.some((c) => {
+    const t = normalise(c.title);
+    const s = normalise(c.short);
+    return n.includes(t) || t.includes(n) || n.includes(s) || s.includes(n);
+  });
+}
+
+async function signalerMatiereManquante(course: Course): Promise<void> {
+  const sb = getAdmin();
+  if (!sb) return;
+  try {
+    await sb.from("course_submissions").insert({
+      fingerprint: course.id.replace(/^cours-/, ""),
+      title: course.title,
+      course,
+    });
+  } catch {
+    /* best-effort : un cours déposé reste utilisable même si le signalement échoue */
+  }
+  void envoyerEmail({
+    to: DESTINATAIRE,
+    subject: `Cours déposé sur une matière absente du corpus : ${course.title}`,
+    html: `
+      <p>Un élève a déposé un cours sur <strong>${course.title}</strong>, une matière qui ne semble pas encore dans le corpus StudiJur.</p>
+      <p>${course.lessons.length} leçon${course.lessons.length > 1 ? "s" : ""} générée${course.lessons.length > 1 ? "s" : ""}, enregistrée${course.lessons.length > 1 ? "s" : ""} pour relecture.</p>
+      <p>Rien n'a été ajouté au corpus partagé automatiquement — relis le contenu avant de l'intégrer.</p>
+    `,
+  });
+}
 
 const MAX_CHARS = 200_000;
 const MAX_LESSONS = 12;
@@ -185,6 +237,10 @@ export async function POST(req: Request) {
 
   // Le résultat profite au prochain élève qui déposera le même document.
   await storeShared(fp, course);
+
+  // Une matière absente du corpus est un trou qu'Émile n'a pas encore
+  // couvert : on le signale (base + email), sans jamais rien ajouter tout seul.
+  if (!matiereConnue(title)) void signalerMatiereManquante(course);
 
   return NextResponse.json({
     course,
