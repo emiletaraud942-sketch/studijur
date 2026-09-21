@@ -101,7 +101,7 @@ export const introGeneraleEntrainement: QuestionEntrainement[] = [
     id: "voc-15",
     categorie: "Méthodologie",
     question: "Comment cite-t-on un article de code, une loi et une décision de justice ?",
-    reponse: "Un **article de code** : le code puis le numéro (« C. civ., art. 1253 »). Une **loi** : son numéro, sa date et son intitulé (« L. n°2021-85 du 29 janv. 2021 visant à définir et protéger le patrimoine sensoriel des campagnes françaises »). Une **décision** : la juridiction, la formation, la date et le numéro (« Cass. 3ᵉ civ., 21 mai 2026, n°24-10.569 »).",
+    reponse: "Un **article de code** : le code puis le numéro (« C. civ., art. 1253 »). Une **loi** : son numéro, sa date et son intitulé (« L. n°2021-1539 du 30 nov. 2021 visant à définir et protéger le patrimoine sensoriel des campagnes françaises »). Une **décision** : la juridiction, la formation, la date et le numéro — pour la Cour de cassation (« Cass. 3ᵉ civ., 21 mai 2026, n°24-10.569 »), pour une cour d'appel (« CA Bordeaux, 5ᵉ ch., 1ᵉʳ juin 2006, n°05/00492 »).",
   },
 
   // --- Jurisprudence (les vraies décisions étudiées) ---
@@ -202,5 +202,35 @@ export const introGeneraleEntrainement: QuestionEntrainement[] = [
     categorie: "Question de cours",
     question: "Appliquez le syllogisme juridique à l'affaire des clochettes de moutons.",
     reponse: "**Majeure** : l'article 1253 du Code civil pose que nul ne doit causer à autrui un trouble excédant les inconvénients normaux de voisinage. **Mineure** : le tintement des clochettes est **permanent**, jour et nuit, ce qui n'est pas caractéristique du milieu rural où vivent les parties ; une **alternative existait** pourtant pour protéger le troupeau sans ce bruit continu (des chiens de protection). **Conclusion** : le trouble excède les inconvénients normaux de voisinage — il est **anormal**, ce qui justifie la cessation du trouble et la réparation du préjudice.",
+  },
+  {
+    id: "cours-10",
+    categorie: "Question de cours",
+    question: "Que protège l'article 9 du Code civil ?",
+    reponse: "Le **droit au respect de la vie privée** : « Chacun a droit au respect de sa vie privée. » Les juges peuvent, sans préjudice de la réparation du dommage subi, prescrire toute mesure propre à empêcher ou faire cesser une atteinte à l'intimité de la vie privée, y compris en référé s'il y a urgence.",
+  },
+  {
+    id: "cours-11",
+    categorie: "Question de cours",
+    question: "Que protège l'article 16-1 du Code civil, et en quoi le texte de Maupassant \"Une vente\" (Document 1) l'illustre-t-il ?",
+    reponse: "L'article 16-1 pose le principe de l'**inviolabilité et de l'indisponibilité du corps humain** : « Chacun a droit au respect de son corps. Le corps humain est inviolable. Le corps humain, ses éléments et ses produits ne peuvent faire l'objet d'un droit patrimonial. » Le corps humain est donc **hors du commerce juridique** : il ne peut être vendu. Le texte satirique de Maupassant, où un mari « vend » son épouse à un tiers au mètre cube, met en scène un tel contrat — qui serait aujourd'hui frappé de **nullité absolue** pour objet illicite, la personne humaine ne pouvant être réduite à un bien.",
+  },
+  {
+    id: "cours-12",
+    categorie: "Question de cours",
+    question: "Que dispose l'article 515-14 du Code civil sur le statut juridique de l'animal ?",
+    reponse: "Introduit en 2015 : « Les animaux sont des êtres vivants doués de sensibilité. Sous réserve des lois qui les protègent, les animaux sont soumis au régime des biens. » L'animal occupe ainsi un statut **intermédiaire** : reconnu comme un être sensible, mais juridiquement encore rattaché au régime des biens (donc, par exemple, susceptible d'appropriation).",
+  },
+  {
+    id: "cours-13",
+    categorie: "Question de cours",
+    question: "Qu'est-ce que la loi n°2021-1539 du 30 novembre 2021, et en quoi éclaire-t-elle les affaires des clochettes et du chant du coq ?",
+    reponse: "Dite loi « patrimoine sensoriel des campagnes », elle complète l'article L. 110-1 du Code de l'environnement en y ajoutant que les **sons et odeurs caractéristiques des milieux naturels** (le chant du coq, le bruit des troupeaux…) font partie du patrimoine commun de la nation et ne peuvent, à ce seul titre, être regardés comme des nuisances. Elle éclaire les deux affaires : le juge doit concilier ce patrimoine sensoriel rural avec la règle du trouble anormal de voisinage — ce qui explique pourquoi le chant occasionnel d'un coq, caractéristique de la campagne, n'a pas été jugé anormal, alors que le tintement **permanent, jour et nuit**, des clochettes l'a été.",
+  },
+  {
+    id: "cours-14",
+    categorie: "Question de cours",
+    question: "Que pose l'article L. 110-1 du Code de l'environnement ?",
+    reponse: "Il affirme que les espaces, ressources et milieux naturels — ainsi que les sons et odeurs qui les caractérisent — font partie du **patrimoine commun de la nation**, et pose les grands principes du droit de l'environnement : précaution, action préventive et correction à la source, pollueur-payeur, participation, solidarité écologique et non-régression.",
   },
 ];
