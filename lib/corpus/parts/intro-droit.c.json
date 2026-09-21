@@ -1,128 +1,71 @@
 [
   {
-    "id": "intro-05",
-    "order": 5,
-    "title": "Le bloc de conventionnalité",
-    "teaser": "L'article 55, la condition de réciprocité, et la place particulière du droit de l'Union.",
+    "id": "intro-08",
+    "order": 8,
+    "title": "Les grandes notions et les tendances contemporaines",
+    "teaser": "Personnes, biens, obligations : les trois piliers, et neuf mutations qui redessinent le droit d'aujourd'hui.",
     "minutes": 5,
     "brief": [
-      "Juste sous la Constitution se place le **bloc de conventionnalité** : les traités et accords internationaux. L'article 55 de la Constitution dispose qu'ils ont, dès leur publication, « une autorité supérieure à celle des lois, sous réserve, pour chaque accord ou traité, de son application par l'autre partie ». Trois conditions sont donc posées : la **ratification ou l'approbation** régulière, la **publication**, et la **réciprocité**.",
-      "Cette supériorité ne vaut pas contre la Constitution. Le Conseil d'État l'a affirmé dans l'arrêt **Sarran** de 1998, la Cour de cassation dans l'arrêt **Fraisse** de 2000 : dans l'ordre interne, la Constitution reste au sommet. Si un traité est contraire à la Constitution, l'article 54 impose de réviser la Constitution avant de pouvoir le ratifier — ce qui fut fait pour Maastricht en 1992.",
-      "Le contrôle de conventionnalité est confié aux **juges ordinaires**, non au Conseil constitutionnel, qui a refusé cette compétence dès la décision **IVG de 1975**. La Cour de cassation l'a exercé la première dans l'arrêt **Jacques Vabre** de 1975, le Conseil d'État à partir de l'arrêt **Nicolo** de 1989. Tout juge peut donc écarter une loi contraire à un traité, sans l'annuler : il la laisse inappliquée dans le litige.",
-      "Deux ensembles occupent une place particulière. La **Convention européenne des droits de l'homme**, adoptée à Rome le 4 novembre 1950 et ratifiée par la France le 3 mai 1974, est directement invocable par les particuliers devant tout juge français. Le **droit de l'Union européenne** bénéficie de deux principes dégagés par la Cour de justice : l'effet direct (*Van Gend en Loos*, 1963) et la primauté (*Costa contre ENEL*, 1964), qui en font un ordre juridique intégré plutôt qu'un simple droit international."
+      "Trois notions structurent l'ensemble du droit privé. Les **personnes** sont les sujets de droit — personnes physiques et personnes morales —, dotées de la **personnalité juridique**, l'aptitude à être titulaire de droits et d'obligations. Les **biens** sont tout ce qui n'est pas une personne ; leur notion centrale est la **propriété**, présentée par l'article 544 du Code civil comme le droit le plus absolu. Les **obligations**, enfin, sont des liens de droit entre un créancier et un débiteur, dont la source est soit le **contrat** (art. 1101 C. civ.), soit la **responsabilité** (art. 1240 C. civ.).",
+      "Le droit contemporain est traversé par des tendances de fond, qu'il faut savoir mobiliser dans une copie. La **constitutionnalisation** : la QPC irrigue désormais toutes les branches du droit. L'**européanisation** : primauté du droit de l'Union européenne, influence croissante de la CEDH. La **fondamentalisation** : les droits fondamentaux gagnent jusqu'aux litiges entre personnes privées.",
+      "La **contractualisation** : montée en puissance de la norme négociée, le contrat, au détriment parfois de la loi imposée. La **subjectivisation** : prolifération des « droits à » — droit à la santé, au logement. La **numérisation** : *open data* des décisions de justice, encadrement de l'intelligence artificielle par l'AI Act (règlement (UE) 2024/1689 du 13 juin 2024).",
+      "L'**écologisation** : le droit saisi par l'impératif environnemental — Charte de l'environnement de 2004, devoir de vigilance, contentieux climatique. La **protection de la vulnérabilité** : le droit se met du côté des plus faibles — consommateur, mineur, majeur protégé. La **lutte contre les discriminations**, enfin : la recherche d'une égalité concrète, et non plus seulement formelle.",
+      "Ces neuf tendances ne sont pas de simples mots-clés isolés : elles s'articulent entre elles. La fondamentalisation et l'européanisation se nourrissent l'une l'autre par la jurisprudence de la CEDH ; la numérisation et l'écologisation posent toutes deux la question de l'adaptation du droit à des phénomènes qui débordent les frontières nationales. Savoir les nommer et les illustrer est un réflexe attendu dans toute copie de droit contemporain."
     ],
     "keyPoints": [
-      "Article 55 : trois conditions — ratification, publication, réciprocité.",
-      "Le traité prime la loi, jamais la Constitution (Sarran 1998, Fraisse 2000).",
-      "Contrôle de conventionnalité par le juge ordinaire (Jacques Vabre 1975, Nicolo 1989).",
-      "Droit de l'Union : effet direct et primauté, un ordre juridique intégré."
+      "Trois piliers : personnes (personnalité juridique), biens (propriété, art. 544), obligations (contrat art. 1101 ou responsabilité art. 1240).",
+      "Neuf tendances contemporaines à mobiliser : constitutionnalisation, européanisation, fondamentalisation, contractualisation, subjectivisation.",
+      "Numérisation (open data, AI Act 2024), écologisation (Charte de 2004), protection de la vulnérabilité, lutte contre les discriminations.",
+      "Ces tendances s'articulent entre elles plutôt que d'agir isolément."
     ],
     "definitions": [
-      { "term": "Article 55 de la Constitution", "text": "Disposition conférant aux traités régulièrement ratifiés et publiés une autorité supérieure à celle des lois, sous réserve de réciprocité." },
-      { "term": "Contrôle de conventionnalité", "text": "Vérification, par tout juge ordinaire, de la conformité d'une loi à un traité. Le juge n'annule pas la loi : il écarte son application dans le litige." },
-      { "term": "Arrêt Nicolo", "text": "Arrêt par lequel le Conseil d'État accepte de faire prévaloir un traité sur une loi postérieure, alignant sa position sur celle de la Cour de cassation.", "source": "CE, Ass., 20 octobre 1989, Nicolo" },
-      { "term": "Primauté du droit de l'Union", "text": "Principe selon lequel le droit de l'Union prime le droit national des États membres, y compris postérieur.", "source": "CJCE, 15 juillet 1964, Costa c/ ENEL" },
-      { "term": "Effet direct", "text": "Aptitude d'une norme de l'Union à créer directement des droits dans le patrimoine des particuliers, invocables devant le juge national.", "source": "CJCE, 5 février 1963, Van Gend en Loos" }
-    ],
-    "exam": {
-      "kind": "question de cours",
-      "question": "Le traité international prime-t-il la Constitution dans l'ordre juridique français ?",
-      "concise": "Non. L'article 55 de la Constitution confère aux traités régulièrement ratifiés et publiés une autorité supérieure à celle des **lois**, et à elles seules. Dans l'ordre interne, la Constitution demeure la norme suprême : le Conseil d'État l'a jugé dans l'arrêt Sarran du 30 octobre 1998, la Cour de cassation dans l'arrêt Fraisse du 2 juin 2000. Le mécanisme de l'article 54 le confirme : lorsqu'un engagement international comporte une clause contraire à la Constitution, il faut d'abord réviser la Constitution pour pouvoir le ratifier. Il faut cependant nuancer, car la perspective s'inverse dans l'ordre international et dans l'ordre de l'Union : la Cour de justice affirme depuis Costa c/ ENEL la primauté du droit de l'Union sur toute norme nationale, y compris constitutionnelle. On est donc face à deux logiques concurrentes que la jurisprudence gère par des techniques de conciliation plutôt que par une hiérarchie tranchée.",
-      "plan": [
-        {
-          "title": "I. La suprématie constitutionnelle affirmée dans l'ordre interne",
-          "children": [
-            { "title": "A. Une lettre claire de l'article 55", "points": ["Supériorité sur les lois, non sur la Constitution", "Les trois conditions : ratification, publication, réciprocité", "L'article 54 : réviser avant de ratifier"] },
-            { "title": "B. Une jurisprudence concordante des deux ordres", "points": ["CE, Sarran, 30 octobre 1998", "Cass., Fraisse, 2 juin 2000", "Le Conseil constitutionnel refuse le contrôle de conventionnalité : décision IVG, 15 janvier 1975"] }
-          ]
-        },
-        {
-          "title": "II. Une suprématie relativisée par l'ordre juridique de l'Union",
-          "children": [
-            { "title": "A. La thèse de la primauté absolue", "points": ["CJCE, Costa c/ ENEL, 1964 : primauté sur tout le droit national", "CJCE, Simmenthal, 1978 : obligation d'écarter la norme nationale contraire", "Fondement : l'effectivité et l'uniformité du droit de l'Union"] },
-            { "title": "B. Les techniques de conciliation", "points": ["Article 88-1 : exigence constitutionnelle de transposition des directives", "La réserve de l'identité constitutionnelle de la France", "Conclusion : un dialogue des juges plutôt qu'une hiérarchie unique"] }
-          ]
-        }
-      ],
-      "pitfalls": [
-        "Ne pas dire que le juge « annule » la loi inconventionnelle : il l'écarte seulement dans le litige.",
-        "Ne pas confondre CEDH (Conseil de l'Europe, 46 États) et Union européenne (27 États)."
-      ]
-    },
-    "quiz": [
-      { "q": "L'article 55 subordonne la supériorité des traités à :", "choices": ["Un vote du Parlement", "La condition de réciprocité", "Un avis du Conseil d'État", "Un référendum"], "answer": 1, "why": "L'article 55 pose trois conditions : ratification ou approbation régulière, publication, et application par l'autre partie (réciprocité)." },
-      { "q": "Dans l'arrêt Nicolo (1989), le Conseil d'État accepte :", "choices": ["De contrôler la constitutionnalité des lois", "De faire primer un traité sur une loi postérieure", "D'annuler une loi", "De saisir la CJUE"], "answer": 1, "why": "Jusqu'en 1989 le Conseil d'État refusait d'écarter une loi postérieure au traité. Nicolo aligne sa jurisprudence sur l'arrêt Jacques Vabre de la Cour de cassation (1975)." },
-      { "q": "La CEDH a été ratifiée par la France en :", "choices": ["1950", "1958", "1974", "1981"], "answer": 2, "why": "Adoptée à Rome le 4 novembre 1950, elle n'est ratifiée par la France que le 3 mai 1974 ; le recours individuel ne sera accepté qu'en 1981." },
-      { "q": "Le principe de primauté du droit de l'Union a été posé par l'arrêt :", "choices": ["Van Gend en Loos", "Costa c/ ENEL", "Nicolo", "Sarran"], "answer": 1, "why": "Van Gend en Loos (1963) pose l'effet direct ; Costa c/ ENEL (1964) pose la primauté." },
-      { "q": "Si un traité comporte une clause contraire à la Constitution :", "choices": ["Il est nul", "Il prime la Constitution", "Il faut réviser la Constitution avant de le ratifier", "Le juge l'écarte"], "answer": 2, "why": "C'est le mécanisme de l'article 54, utilisé notamment avant la ratification du traité de Maastricht en 1992." }
-    ]
-  },
-  {
-    "id": "intro-06",
-    "order": 6,
-    "title": "Loi, règlement et sources infra-réglementaires",
-    "teaser": "Articles 34 et 37, décrets et arrêtés, puis les sources discutées : jurisprudence, coutume, circulaires.",
-    "minutes": 5,
-    "brief": [
-      "Sous les traités vient le **bloc de légalité** : les lois votées par le Parlement. La Constitution de 1958 innove en délimitant la loi par une liste : l'**article 34** énumère les matières réservées au législateur, tandis que l'**article 37** confie au pouvoir réglementaire tout ce qui n'y figure pas. C'est une inversion complète par rapport aux Républiques précédentes, où la loi pouvait tout faire. Il faut distinguer, au sein du bloc, les lois constitutionnelles (qui révisent la Constitution), les lois organiques (qui précisent l'application de la Constitution et sont obligatoirement contrôlées par le Conseil constitutionnel) et les lois ordinaires.",
-      "Vient ensuite le **bloc réglementaire** : décrets du Président ou du Premier ministre, arrêtés ministériels, préfectoraux, municipaux. Il faut distinguer les règlements d'application, qui précisent une loi, et les règlements autonomes, pris directement sur le fondement de l'article 37 dans les matières non réservées à la loi. Le règlement illégal peut être annulé par le juge administratif, saisi d'un recours pour excès de pouvoir.",
-      "Au-dessous se trouvent les sources **infra-réglementaires** ou discutées. Les **circulaires** sont des instructions du supérieur au subordonné : en principe non créatrices de droit, elles deviennent attaquables lorsqu'elles sont impératives et font grief. La **jurisprudence** est une source controversée : l'article 5 du Code civil interdit les arrêts de règlement, mais l'article 4 interdit au juge de refuser de juger sous prétexte du silence de la loi — donc il crée nécessairement du droit.",
-      "La **coutume** enfin suppose deux éléments : un élément matériel, la répétition d'un usage constant, et un élément psychologique, la conviction de son caractère obligatoire (*opinio juris*). Elle joue un rôle résiduel mais réel : en droit commercial, en droit international public, et dans certains usages locaux que le Code civil lui-même renvoie."
-    ],
-    "keyPoints": [
-      "Article 34 : domaine de la loi ; article 37 : compétence de droit commun du règlement.",
-      "Trois types de lois : constitutionnelles, organiques, ordinaires.",
-      "Circulaire impérative faisant grief = acte attaquable.",
-      "Coutume = usage constant (élément matériel) + opinio juris (élément psychologique)."
-    ],
-    "definitions": [
-      { "term": "Article 34 de la Constitution", "text": "Article énumérant limitativement les matières dans lesquelles le Parlement est compétent pour légiférer." },
-      { "term": "Loi organique", "text": "Loi qui précise les modalités d'application de la Constitution. Adoptée selon une procédure renforcée et obligatoirement soumise au Conseil constitutionnel avant promulgation." },
-      { "term": "Règlement autonome", "text": "Acte réglementaire pris directement sur le fondement de l'article 37, dans une matière qui ne relève pas du domaine de la loi." },
-      { "term": "Arrêt de règlement", "text": "Décision par laquelle un juge poserait une règle générale valant pour l'avenir. Interdit par l'article 5 du Code civil." },
-      { "term": "Opinio juris", "text": "Élément psychologique de la coutume : conviction partagée que l'usage suivi est juridiquement obligatoire et non une simple habitude." }
+      { "term": "Personnalité juridique", "text": "Aptitude à être titulaire de droits et d'obligations, reconnue aux personnes physiques et aux personnes morales." },
+      { "term": "Propriété", "text": "Droit réel présenté comme le plus absolu que le droit reconnaisse sur un bien.", "source": "Article 544 du Code civil" },
+      { "term": "Constitutionnalisation", "text": "Tendance contemporaine par laquelle le contrôle de constitutionnalité, notamment via la QPC, irrigue toutes les branches du droit." },
+      { "term": "Fondamentalisation", "text": "Tendance par laquelle les droits fondamentaux gagnent en influence jusque dans les litiges entre personnes privées." },
+      { "term": "Écologisation du droit", "text": "Tendance par laquelle le droit intègre l'impératif environnemental, à travers la Charte de l'environnement de 2004, le devoir de vigilance et le contentieux climatique." }
     ],
     "exam": {
       "kind": "dissertation",
-      "question": "La jurisprudence est-elle une source du droit ?",
-      "concise": "La question tient à une contradiction interne au Code civil. L'article 5 interdit les arrêts de règlement, donc défend au juge de poser des règles générales : la jurisprudence ne serait pas une source. Mais l'article 4 lui interdit de refuser de juger sous prétexte du silence, de l'obscurité ou de l'insuffisance de la loi : il doit donc bien créer la solution que la loi ne fournit pas. En pratique, la jurisprudence présente tous les caractères d'une source : elle est générale par l'effet du précédent et du rôle unificateur de la Cour de cassation, elle est obligatoire de fait pour les juges du fond, et elle est parfois consacrée par le législateur lui-même. Elle reste toutefois une source **subordonnée et précaire** : elle peut être renversée par un revirement, elle n'a pas d'autorité formelle au-delà du litige tranché (article 1355 du Code civil), et elle s'efface devant la loi nouvelle. Source de fait plutôt que source de droit au sens formel, donc.",
+      "question": "Le droit privé contemporain se transforme-t-il en profondeur ?",
+      "concise": "Les trois piliers classiques du droit privé — personnes, biens, obligations — restent la structure de base, mais ils sont aujourd'hui traversés par des mutations profondes. Certaines viennent d'en haut : la constitutionnalisation via la QPC et l'européanisation, portée par la primauté du droit de l'Union et l'influence de la CEDH, font entrer des normes supérieures dans des litiges autrefois purement internes, prolongées par la fondamentalisation des rapports entre particuliers. D'autres viennent de la société elle-même : la contractualisation déplace la source de la norme vers l'accord des volontés, la subjectivisation multiplie les « droits à », et la protection de la vulnérabilité ainsi que la lutte contre les discriminations réorientent le droit vers une égalité concrète. D'autres, enfin, répondent à des défis inédits : la numérisation, avec l'open data et l'AI Act de 2024, et l'écologisation, avec la Charte de l'environnement et le contentieux climatique. Le droit privé ne change donc pas de piliers, mais il change profondément de logique.",
       "plan": [
         {
-          "title": "I. Une source niée par les textes",
+          "title": "I. Des mutations venues des normes supérieures",
           "children": [
-            { "title": "A. L'interdiction des arrêts de règlement", "points": ["Article 5 du Code civil, héritage de la méfiance révolutionnaire envers les parlements d'Ancien Régime", "La séparation des pouvoirs : le juge applique, il ne légifère pas", "L'autorité relative de la chose jugée : article 1355 du Code civil"] },
-            { "title": "B. Une autorité formellement précaire", "points": ["Le revirement de jurisprudence, toujours possible", "L'absence de règle du précédent obligatoire en droit français", "La loi nouvelle brise la jurisprudence contraire"] }
+            { "title": "A. Constitutionnalisation et européanisation", "points": ["La QPC irrigue toutes les branches du droit", "La primauté du droit de l'Union européenne", "L'influence croissante de la Cour européenne des droits de l'homme"] },
+            { "title": "B. La fondamentalisation des rapports privés", "points": ["Les droits fondamentaux gagnent les litiges entre particuliers", "Un dialogue croissant entre droit privé et droit constitutionnel", "La subjectivisation : la prolifération des droits à"] }
           ]
         },
         {
-          "title": "II. Une source imposée par la pratique",
+          "title": "II. Des mutations répondant aux défis contemporains",
           "children": [
-            { "title": "A. L'obligation de juger contraint à créer", "points": ["Article 4 du Code civil : le déni de justice est une infraction", "Les créations prétoriennes majeures : responsabilité du fait des choses, arrêt Jand'heur", "Le contrôle de proportionnalité, création récente du juge"] },
-            { "title": "B. Une normativité de fait organisée", "points": ["Le rôle unificateur de la Cour de cassation et du Conseil d'État", "La publication et la diffusion : open data des décisions de justice", "La consécration législative a posteriori des solutions prétoriennes"] }
+            { "title": "A. Contractualisation et protection des plus faibles", "points": ["La montée en puissance de la norme négociée", "La protection de la vulnérabilité : consommateur, mineur, majeur protégé", "La lutte contre les discriminations, vers une égalité concrète"] },
+            { "title": "B. Numérisation et écologisation", "points": ["L'open data des décisions de justice et l'AI Act de 2024", "La Charte de l'environnement de 2004 et le contentieux climatique", "Conclusion : les piliers demeurent, la logique se transforme"] }
           ]
         }
       ],
       "pitfalls": [
-        "Ne pas oublier de citer les articles 4 et 5 du Code civil : c'est le couple attendu.",
-        "Distinguer autorité de la chose jugée (relative) et autorité de la chose interprétée (persuasive)."
+        "Ne pas traiter ces tendances comme une simple liste à réciter : il faut les illustrer et les articuler entre elles.",
+        "L'AI Act est un règlement de l'Union européenne (2024/1689 du 13 juin 2024), pas une loi française."
       ]
     },
     "quiz": [
-      { "q": "Sous la Ve République, la compétence de droit commun appartient :", "choices": ["Au Parlement", "Au pouvoir réglementaire", "Au juge", "Au Conseil constitutionnel"], "answer": 1, "why": "L'article 34 énumère limitativement le domaine de la loi ; tout le reste relève du règlement par l'article 37. C'est l'inversion opérée en 1958." },
-      { "q": "L'article 5 du Code civil interdit :", "choices": ["Le déni de justice", "Les arrêts de règlement", "La rétroactivité", "Les circulaires"], "answer": 1, "why": "L'article 5 interdit au juge de statuer par voie de disposition générale et réglementaire ; l'article 4, lui, interdit le déni de justice." },
-      { "q": "Une circulaire devient attaquable devant le juge administratif lorsqu'elle :", "choices": ["Est publiée", "Est signée par un ministre", "Est impérative et fait grief", "Interprète une loi"], "answer": 2, "why": "Une circulaire purement interprétative ne fait pas grief. Dès qu'elle impose un comportement et produit des effets notables, elle est attaquable." },
-      { "q": "La coutume suppose deux éléments :", "choices": ["Écrit et publication", "Usage constant et opinio juris", "Ancienneté et sanction", "Répétition et vote"], "answer": 1, "why": "Un élément matériel (la répétition d'un usage) et un élément psychologique (la conviction de son caractère obligatoire)." },
-      { "q": "Les lois organiques sont :", "choices": ["Soumises obligatoirement au Conseil constitutionnel", "De valeur constitutionnelle", "Adoptées par décret", "Votées par référendum"], "answer": 0, "why": "Leur contrôle avant promulgation est obligatoire. Elles restent des lois, supérieures aux lois ordinaires mais inférieures à la Constitution." }
+      { "q": "La personnalité juridique désigne :", "choices": ["La propriété d'un bien", "L'aptitude à être titulaire de droits et d'obligations", "Le droit de vote", "La nationalité"], "answer": 1, "why": "Elle est reconnue aux personnes physiques comme aux personnes morales, et fonde leur capacité à agir en droit." },
+      { "q": "L'article 544 du Code civil concerne :", "choices": ["Le contrat", "La responsabilité", "La propriété", "La filiation"], "answer": 2, "why": "Il présente la propriété comme le droit le plus absolu reconnu sur un bien." },
+      { "q": "L'AI Act est :", "choices": ["Une loi française de 2024", "Un règlement de l'Union européenne du 13 juin 2024", "Un traité de l'ONU", "Une décision du Conseil constitutionnel"], "answer": 1, "why": "Règlement (UE) 2024/1689, qui encadre l'intelligence artificielle à l'échelle de l'Union." },
+      { "q": "La fondamentalisation désigne :", "choices": ["La disparition des droits fondamentaux", "La montée en puissance des droits fondamentaux dans les litiges entre particuliers", "La codification du droit", "La suppression de la Constitution"], "answer": 1, "why": "Les droits fondamentaux irriguent désormais des rapports autrefois purement privés." },
+      { "q": "L'écologisation du droit s'appuie notamment sur :", "choices": ["Le Code civil de 1804", "La Charte de l'environnement de 2004", "La loi de 1905", "L'article 544 du Code civil"], "answer": 1, "why": "Avec le devoir de vigilance et le développement du contentieux climatique." }
     ]
   },
   {
-    "id": "intro-07",
-    "order": 7,
+    "id": "intro-09",
+    "order": 9,
     "title": "Droit objectif et droits subjectifs, droit privé et droit public",
     "teaser": "Les deux grandes summa divisio de la L1, avec les nuances qui font gagner des points.",
     "minutes": 5,
     "brief": [
-      "Le mot « droit » recouvre deux réalités. Le **droit objectif** désigne l'ensemble des règles qui régissent la vie en société : c'est le Droit avec une majuscule, envisagé comme système. Les **droits subjectifs** désignent les prérogatives individuelles que ce système reconnaît aux personnes : mon droit de propriété, ma créance, mon droit au respect de la vie privée. Les deux notions sont liées : le droit objectif est la source, les droits subjectifs sont les effets.",
+      "Le mot « droit » recouvre deux réalités. Le **droit objectif** désigne l'ensemble des règles qui régissent la vie en société : c'est le Droit avec une majuscule, envisagé comme système. Les **droits subjectifs** désignent les prérogatives individuelles que ce système reconnaît aux personnes : mon droit de propriété, ma créance, mon droit au respect de la vie privée. Les deux notions sont liées : le droit objectif est la source, les droits subjectifs en sont les effets.",
       "La seconde grande distinction, la *summa divisio*, oppose le **droit privé** au **droit public**. Le droit privé régit les rapports entre personnes privées — personnes physiques, sociétés, associations. Le droit public régit l'organisation de l'État et ses rapports avec les particuliers. La distinction commande la compétence juridictionnelle : au juge judiciaire les litiges de droit privé, au juge administratif ceux de droit public, selon la loi des 16 et 24 août 1790.",
       "Cette frontière est moins nette qu'il n'y paraît. Des matières sont **mixtes** : le droit pénal punit au nom de la société (logique publique) mais est appliqué par le juge judiciaire ; le droit du travail mêle contrat privé et ordre public social ; le droit de la concurrence, le droit de l'environnement ignorent largement la distinction. L'arrêt **Blanco** du Tribunal des conflits, du 8 février 1873, est l'illustration fondatrice : la responsabilité de l'État ne peut pas être régie par les règles du Code civil, elle a ses règles propres.",
       "Le piège classique en dissertation consiste à traiter la distinction comme une frontière géographique. Traite-la plutôt comme deux **logiques** : le droit privé raisonne à partir de l'égalité des volontés et du contrat ; le droit public raisonne à partir de l'inégalité, de la prérogative de puissance publique et de l'intérêt général. C'est cette différence de logique qui survit, même quand la frontière des matières se brouille."
@@ -174,8 +117,8 @@
     ]
   },
   {
-    "id": "intro-08",
-    "order": 8,
+    "id": "intro-10",
+    "order": 10,
     "title": "La classification des droits subjectifs",
     "teaser": "Patrimoniaux ou extrapatrimoniaux ; nés d'un acte ou d'un fait juridique — et la preuve qui en découle.",
     "minutes": 5,

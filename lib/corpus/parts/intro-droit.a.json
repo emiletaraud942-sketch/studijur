@@ -1,306 +1,238 @@
 [
- {
-  "id": "intro-01",
-  "order": 1,
-  "title": "Qu'est-ce qu'une règle de droit ?",
-  "teaser": "La définition négative, la définition positive, et pourquoi la sanction étatique change tout.",
-  "minutes": 5,
-  "brief": [
-   "Une société sans règles est impossible : dès que deux personnes vivent ensemble, il faut arbitrer leurs prétentions. Mais toutes les règles ne sont pas des règles **de droit**. La morale, la religion, la politesse, les usages professionnels commandent eux aussi des comportements. Le travail du juriste commence donc par un tri : qu'est-ce qui distingue la règle de droit de toutes ses voisines ?",
-   "La **définition négative** procède par élimination. La règle de droit n'est pas la règle morale, car elle ne vise pas la perfection intérieure de l'individu mais l'ordre extérieur du groupe ; on peut être un parfait salaud et n'avoir rien à se reprocher juridiquement. Elle n'est pas la règle religieuse, car elle ne tire pas sa force d'une révélation mais d'une autorité temporelle. Elle n'est pas le simple usage, car l'usage ne devient obligatoire que si le droit le reprend à son compte.",
-   "La **définition positive** retient trois caractères cumulatifs. La règle de droit est **générale et abstraite** : elle ne désigne personne en particulier et s'applique à toutes les situations qui entrent dans sa catégorie. Elle est **permanente**, en ce sens qu'elle s'applique de façon constante tant qu'elle n'est pas abrogée. Et surtout elle est **obligatoire et sanctionnée par la contrainte étatique** : c'est ce dernier trait qui est décisif.",
-   "La contrainte étatique est le critère le plus sûr parce qu'il est le plus vérifiable. Derrière la règle de droit se tient une force publique organisée : huissier, police, administration pénitentiaire. La morale connaît la réprobation, la religion connaît le péché ; seul le droit connaît la saisie, l'amende et la prison. Attention toutefois au piège classique : certaines règles de droit ne sont pas directement sanctionnées (les lois dites *imparfaites*), sans cesser pour autant d'être du droit.",
-   "Retiens enfin que « obligatoire » ne signifie pas « impératif » dans tous les cas. Une règle **supplétive** ne s'applique que si les parties n'ont rien prévu d'autre : elle est obligatoire en ce qu'elle s'impose à défaut de volonté contraire, mais les parties peuvent l'écarter. Une règle **impérative** (ou d'ordre public) ne peut au contraire jamais être écartée par contrat."
-  ],
-  "keyPoints": [
-   "Définition négative : le droit n'est ni la morale, ni la religion, ni l'usage.",
-   "Définition positive : générale, abstraite, permanente, obligatoire, sanctionnée par l'État.",
-   "Le critère décisif est la contrainte étatique organisée.",
-   "Distinguer règle impérative (ordre public) et règle supplétive (écartable par contrat)."
-  ],
-  "definitions": [
-   {
-    "term": "Règle de droit",
-    "text": "Norme de conduite générale, abstraite et obligatoire, dont le respect est assuré par la contrainte organisée de l'État."
-   },
-   {
-    "term": "Caractère général et abstrait",
-    "text": "La règle ne vise aucune personne nommément désignée : elle s'applique à toute personne placée dans la situation qu'elle décrit. C'est le fondement du principe d'égalité devant la loi."
-   },
-   {
-    "term": "Contrainte étatique",
-    "text": "Pouvoir reconnu à l'État seul d'imposer par la force l'exécution de la règle de droit (exécution forcée, sanction pénale, astreinte)."
-   },
-   {
-    "term": "Règle impérative (ou d'ordre public)",
-    "text": "Règle à laquelle les particuliers ne peuvent pas déroger par convention contraire, car elle protège un intérêt jugé supérieur à leur volonté."
-   },
-   {
-    "term": "Règle supplétive",
-    "text": "Règle qui ne s'applique qu'à défaut de volonté contraire des parties : elle comble le silence du contrat sans s'imposer contre lui."
-   }
-  ],
-  "exam": {
-   "kind": "dissertation",
-   "question": "La sanction est-elle le critère de la règle de droit ?",
-   "concise": "La sanction étatique est le critère le plus opératoire de la règle de droit, parce qu'elle est extérieure, organisée et vérifiable : là où la morale s'en remet au for intérieur et la religion à une autorité spirituelle, le droit mobilise une force publique. Mais ce critère n'est pas absolu. D'une part, il existe des règles de droit dépourvues de sanction directe (obligations naturelles, lois imparfaites, nombre de règles de droit international public), qui restent pourtant du droit parce qu'elles participent d'un ordre juridique cohérent. D'autre part, la sanction n'est pas l'apanage du droit : la morale et les groupes sociaux connaissent leurs propres sanctions diffuses. Le critère doit donc être affiné : ce n'est pas la sanction en elle-même qui fait le droit, mais son **caractère étatique et organisé**, c'est-à-dire l'existence d'une autorité habilitée à la prononcer selon une procédure préétablie.",
-   "plan": [
-    {
-     "title": "I. La sanction étatique, critère opératoire de la juridicité",
-     "children": [
-      {
-       "title": "A. Un critère qui distingue le droit de ses voisins",
-       "points": [
-        "La morale sanctionne par le remords, la religion par le péché : sanctions internes ou transcendantes",
-        "Le droit sanctionne par la contrainte matérielle : saisie, amende, emprisonnement",
-        "Le monopole étatique de la contrainte comme héritage de la nuit du 4 août 1789"
-       ]
-      },
-      {
-       "title": "B. Un critère vérifiable de l'extérieur",
-       "points": [
-        "L'existence d'un juge et d'une procédure permet de constater objectivement la juridicité",
-        "Kelsen : la norme juridique est celle qui rattache un acte de contrainte à une condition",
-        "Intérêt pratique : c'est ce qui permet au justiciable de savoir ce qu'il risque"
-       ]
-      }
-     ]
+  {
+    "id": "intro-01",
+    "order": 1,
+    "title": "Le phénomène juridique",
+    "teaser": "Ubi societas, ibi jus : pourquoi aucune société durable ne peut se passer de droit.",
+    "minutes": 5,
+    "brief": [
+      "Le droit résulte de la vie en société — adage **ubi societas, ibi jus** (« là où il y a une société, il y a du droit »). Il n'existe aucune société durable sans droit. Le juriste **Jean Carbonnier** l'explique par l'origine : en remontant aux sociétés les plus anciennes, le droit apparaît pour lutter contre des menaces communes, par exemple s'organiser collectivement contre le danger de la nuit.",
+      "Le droit n'est pas seulement fait d'interdits : dans la majorité des cas, on ne le voit pas. Il crée des prérogatives, et l'essentiel du droit s'organise sans juge — un peu comme le dit l'image médicale : « la médecine, c'est le silence des organes ». C'est le **panjurisme** : l'idée que le droit est omniprésent dans la vie sociale (un simple contrat de vente, art. 1582 du Code civil, en est l'exemple le plus banal). Mais Carbonnier nuance : le droit est en réalité plus petit que l'ensemble des rapports sociaux, car la morale et la religion organisent elles aussi la société — ce qui relève, pour lui, du **non-droit**.",
+      "Cette omniprésence n'est d'ailleurs pas forcément une bonne nouvelle : il y a trop de règles, on ne les respecte pas toutes alors qu'il en existe toujours plus ; beaucoup ne sont pas effectives ; certaines sont des « **lois d'émotion** », votées dans la foulée d'un fait divers qui a ému l'opinion. Le panjurisme reste donc une ambition qui, en pratique, ne fonctionne pas pleinement.",
+      "Définir le droit pose un paradoxe : on le pratique énormément, mais on ne s'accorde pas sur sa définition — **Kant** disait qu'il y a autant de définitions du droit que de personnes pour le définir. L'étymologie éclaire un peu : *directum*, « ce qui est droit » au sens géométrique, aller droit à la solution ; la loi, elle, vient de *lex* — **loi et droit ne se confondent donc pas**. De même, *jus* (le droit) est historiquement proche de *justitia* (la justice) sans s'y confondre : il peut exister des lois injustes, comme les lois antisémites de 1940. **Ihering** résume : « la fin du droit, c'est la paix ; le moyen d'y parvenir, c'est la lutte. »",
+      "Le mot « droit » recouvre en réalité trois sens : le **droit objectif** (l'ensemble des règles), les **droits subjectifs** (les prérogatives reconnues à chacun) et la **science du droit** (la discipline d'étude). Deux critères reviennent pour cerner une définition : la **contrainte** et la **justiciabilité**. La définition retenue : le droit est un **ordre** — un ensemble organisé et hiérarchisé de règles de conduite, socialement édictées et sanctionnées. L'outil du juriste pour appliquer cet ordre est le **syllogisme juridique** : une majeure (la règle, ex. art. 9 C. civ. sur le respect de la vie privée), une mineure (les faits qualifiés), une conclusion (l'application). Tout se joue dans la **qualification** : traduire un fait brut dans le langage du droit."
+    ],
+    "keyPoints": [
+      "Panjurisme : le droit est omniprésent, mais Carbonnier rappelle qu'il reste plus petit que l'ensemble des rapports sociaux (le non-droit).",
+      "Trois sens du mot droit : droit objectif, droits subjectifs, science du droit.",
+      "Définition retenue : le droit est un ordre — organisé, hiérarchisé, socialement sanctionné.",
+      "Le syllogisme juridique (majeure/mineure/conclusion) : tout se joue dans la qualification des faits."
+    ],
+    "definitions": [
+      { "term": "Panjurisme", "text": "Constat de l'omniprésence apparente du droit dans la vie sociale, à nuancer : le droit reste plus restreint que l'ensemble des rapports sociaux." },
+      { "term": "Non-droit", "text": "Rapports sociaux organisés par la morale ou la religion, mais qui ne relèvent pas du droit.", "source": "Jean Carbonnier" },
+      { "term": "Droit objectif, droit subjectif, science du droit", "text": "Les trois sens du mot droit : l'ensemble des règles ; les prérogatives individuelles qu'il reconnaît ; la discipline qui l'étudie." },
+      { "term": "Syllogisme juridique", "text": "Raisonnement en trois temps du juriste : la majeure énonce la règle, la mineure qualifie les faits, la conclusion en tire l'application." },
+      { "term": "Qualification", "text": "Opération consistant à traduire un fait brut dans le langage du droit, en le rattachant à une catégorie juridique." }
+    ],
+    "exam": {
+      "kind": "question de cours",
+      "question": "Pourquoi est-il si difficile de définir le droit, et quelle définition retenir ?",
+      "concise": "Le paradoxe est réel : le droit se pratique quotidiennement, mais aucune définition ne fait consensus — Kant disait qu'il en existe autant que de personnes pour le proposer. La difficulté vient de ce que le droit touche à des notions voisines qu'il faut écarter sans les confondre : il n'est ni la loi (*lex*, simple source), ni la justice (*justitia*, à laquelle il ne se réduit pas — il existe des lois injustes), ni la morale ou la religion, qui organisent elles aussi la société sans être du droit. Deux critères reviennent pour le cerner : la **contrainte**, qui peut être imposée par une autorité légitime, et la **justiciabilité**, la possibilité de porter une question devant un juge. La définition la plus opératoire retient le droit comme un **ordre** : un ensemble organisé et hiérarchisé de règles de conduite, socialement édictées et sanctionnées — ni un empilement de textes isolés, ni un simple synonyme de justice.",
+      "plan": [
+        {
+          "title": "I. Une notion difficile à isoler de ses voisines",
+          "children": [
+            { "title": "A. Loi, justice, morale : des confusions à écarter", "points": ["Loi (lex) et droit (jus) : la loi n'est qu'une source parmi d'autres", "Droit et justice : proximité étymologique (jus/justitia) mais non-confusion, les lois injustes de 1940", "Ihering : la fin du droit est la paix, le moyen la lutte"] },
+            { "title": "B. Le panjurisme et ses limites", "points": ["L'omniprésence apparente du droit dans la vie sociale", "Carbonnier : le droit reste plus petit que l'ensemble des rapports sociaux, d'où le non-droit", "Trop de règles, effectivité douteuse, lois d'émotion"] }
+          ]
+        },
+        {
+          "title": "II. Une définition construite autour de deux critères",
+          "children": [
+            { "title": "A. Contrainte et justiciabilité", "points": ["La contrainte : possibilité d'imposer la règle par une autorité légitime", "La justiciabilité : possibilité de porter la question devant un juge", "Trois sens du mot droit : objectif, subjectif, science du droit"] },
+            { "title": "B. Le droit comme ordre", "points": ["Un ensemble organisé et hiérarchisé de règles de conduite", "Socialement édictées et sanctionnées", "Le syllogisme juridique comme méthode d'application de cet ordre"] }
+          ]
+        }
+      ],
+      "pitfalls": [
+        "Ne jamais écrire que « droit » et « loi » sont synonymes : la loi n'est qu'une des sources du droit.",
+        "Ne pas confondre droit et justice : le droit peut être injuste sans cesser d'être du droit."
+      ]
     },
-    {
-     "title": "II. La sanction étatique, critère insuffisant à lui seul",
-     "children": [
-      {
-       "title": "A. Des règles de droit sans sanction directe",
-       "points": [
-        "Les lois imparfaites, dépourvues de sanction organisée",
-        "L'obligation naturelle, qui ne peut être exigée mais dont l'exécution volontaire est valable",
-        "Le droit international public, longtemps décrit comme un droit sans gendarme"
-       ]
-      },
-      {
-       "title": "B. Un critère à compléter par la structure de l'ordre juridique",
-       "points": [
-        "La juridicité tient aussi à l'appartenance à un système hiérarchisé de normes",
-        "Kelsen : la validité d'une norme vient de sa conformité à la norme supérieure",
-        "Conclusion : la sanction est un indice majeur, la hiérarchie des normes en est le fondement"
-       ]
-      }
-     ]
-    }
-   ],
-   "pitfalls": [
-    "Ne jamais écrire que la règle de droit est « la règle qui vient de l'État » : la coutume est du droit sans émaner directement de l'État.",
-    "Ne pas confondre sanction et peine : la nullité d'un contrat est une sanction civile, pas une punition."
-   ]
+    "quiz": [
+      { "q": "L'adage « ubi societas, ibi jus » signifie :", "choices": ["Le droit précède la société", "Là où il y a une société, il y a du droit", "La société n'a pas besoin de droit", "Le droit remplace la société"], "answer": 1, "why": "Aucune société durable ne peut se passer de droit : c'est le point de départ du cours." },
+      { "q": "Pour Carbonnier, le non-droit désigne :", "choices": ["L'absence totale de règles", "Les rapports sociaux organisés par la morale ou la religion, hors du droit", "Le droit international", "Les règles supplétives"], "answer": 1, "why": "Le droit est plus petit que l'ensemble des rapports sociaux : la morale et la religion organisent aussi la société." },
+      { "q": "Étymologiquement, « lex » désigne :", "choices": ["Le droit", "La loi", "La justice", "Le juge"], "answer": 1, "why": "Loi et droit ne se confondent pas : lex est la loi, directum (le droit) évoque ce qui va droit à la solution." },
+      { "q": "Dans le syllogisme juridique, la mineure correspond :", "choices": ["À la règle de droit", "Aux faits qualifiés", "À la décision finale", "À la jurisprudence"], "answer": 1, "why": "La majeure énonce la règle, la mineure qualifie les faits : c'est là que se joue l'essentiel du raisonnement." },
+      { "q": "Les deux critères qui reviennent pour cerner le droit sont :", "choices": ["L'écrit et la publication", "La contrainte et la justiciabilité", "La morale et la religion", "Le Parlement et le gouvernement"], "answer": 1, "why": "Ce sont ces deux critères, combinés, qui mènent à la définition du droit comme un ordre." }
+    ]
   },
-  "quiz": [
-   {
-    "q": "Quel caractère distingue le plus sûrement la règle de droit de la règle morale ?",
-    "choices": [
-     "Elle est écrite",
-     "Elle est sanctionnée par la contrainte étatique",
-     "Elle est votée par le Parlement",
-     "Elle est plus ancienne"
+  {
+    "id": "intro-02",
+    "order": 2,
+    "title": "Droit et morale",
+    "teaser": "Antigone, l'obligation naturelle et le recul des bonnes mœurs : où s'arrête la convergence.",
+    "minutes": 5,
+    "brief": [
+      "Le mythe d'**Antigone**, qui refuse d'appliquer le droit au nom de la morale, illustre depuis toujours la question : peut-on refuser d'appliquer le droit pour une raison morale ? La morale régit le **for interne** (la conscience), le droit relève plutôt du **for externe** (les actes) — mais la frontière n'est pas étanche : la morale peut commander des comportements tournés vers autrui (sauver un noyé), et le droit s'intéresse parfois aux intentions (l'acte juridique suppose une volonté de produire des effets de droit).",
+      "Trois combinaisons se dégagent : de la morale non juridique (politesse, charité), du droit **amoral** (sans lien avec la morale) et du droit **moral** (qui recoupe la morale). Les rapports entre les deux évoluent dans le temps : la sanction pénale de la non-assistance à personne en danger a transformé un principe moral en obligation juridique. Quand le droit n'est pas moral se pose la question de la **désobéissance**, qui oppose deux courants : le **positivisme**, attaché à l'application de la norme positive telle qu'elle est, et le **jusnaturalisme**, qui défend l'existence d'un droit naturel supérieur, qu'on ne peut remettre en cause.",
+      "Les deux ordres convergent d'abord autour de l'**ordre public et des bonnes mœurs**, à l'article 6 du Code civil : « On ne peut déroger, par des conventions particulières, aux lois qui intéressent l'ordre public et les bonnes mœurs. » Le droit absorbe ainsi des principes moraux, comme le respect de la parole donnée (l'exigence de **bonne foi**, art. 1104 C. civ., dans la négociation, la formation et l'exécution du contrat).",
+      "Mais les bonnes mœurs sont en net **recul**. Les libéralités (donations et legs à titre gratuit) exigeaient traditionnellement de vérifier les intentions du disposant ; un **revirement de jurisprudence** de la première chambre civile de la Cour de cassation a jugé qu'une libéralité n'est plus nulle du seul fait qu'elle s'inscrit dans une relation adultère. Plus largement, la **réforme de 2016** du droit des contrats a supprimé toute référence aux bonnes mœurs dans le Code civil.",
+      "Les deux ordres divergent ensuite par l'**extériorité de la sanction** : la morale se sanctionne intérieurement (le remords), le droit extérieurement, par une contrainte étatique organisée. La notion d'**obligation naturelle** illustre cette frontière mouvante : elle peut « naître de l'exécution volontaire ou de la promesse d'exécution d'un devoir de conscience envers autrui ». Aider financièrement un frère ou une sœur en difficulté n'est imposé par aucune loi — mais une fois l'argent versé, ou la promesse faite, il n'y a plus de retour en arrière possible : le devoir moral, exécuté, produit un effet juridique."
     ],
-    "answer": 1,
-    "why": "L'écrit n'est pas nécessaire (la coutume est du droit) et toutes les règles de droit ne viennent pas du Parlement. Seule la contrainte étatique organisée est propre au droit."
-   },
-   {
-    "q": "Une règle supplétive est une règle :",
-    "choices": [
-     "Que les parties peuvent écarter par une clause contraire",
-     "Qui s'ajoute à une autre règle",
-     "Qui n'est pas encore entrée en vigueur",
-     "Que seul le juge peut appliquer"
+    "keyPoints": [
+      "Antigone : peut-on désobéir au droit au nom de la morale ? Positivisme contre jusnaturalisme.",
+      "Convergence : ordre public et bonnes mœurs, art. 6 du Code civil ; bonne foi, art. 1104.",
+      "Recul des bonnes mœurs : revirement sur les libéralités entre amants, suppression par la réforme de 2016.",
+      "Divergence : sanction extérieure du droit contre sanction intérieure de la morale ; l'obligation naturelle, à la frontière des deux."
     ],
-    "answer": 0,
-    "why": "La règle supplétive supplée au silence des parties : elle comble le contrat, mais cède devant leur volonté contraire."
-   },
-   {
-    "q": "Dire que la règle de droit est « abstraite » signifie qu'elle :",
-    "choices": [
-     "Est difficile à comprendre",
-     "Ne vise personne nommément",
-     "N'a pas d'application pratique",
-     "Est théorique"
+    "definitions": [
+      { "term": "For interne / for externe", "text": "Le for interne désigne le domaine de la conscience, propre à la morale ; le for externe désigne le domaine des actes, propre au droit." },
+      { "term": "Positivisme", "text": "Courant selon lequel seul compte le droit positif, tel qu'il est édicté, indépendamment de sa conformité à une morale supérieure." },
+      { "term": "Jusnaturalisme", "text": "Courant qui défend l'existence d'un droit naturel, de principes supérieurs au droit positif, auxquels celui-ci ne pourrait déroger." },
+      { "term": "Ordre public et bonnes mœurs", "text": "Limites à la liberté contractuelle : on ne peut déroger par convention aux lois qui les intéressent.", "source": "Article 6 du Code civil" },
+      { "term": "Obligation naturelle", "text": "Devoir de conscience envers autrui, sans force obligatoire tant qu'il n'est pas exécuté ou promis, mais irréversible une fois exécuté ou promis." }
     ],
-    "answer": 1,
-    "why": "Abstrait s'oppose ici à individuel : la règle décrit une catégorie de situations, pas une personne désignée. C'est le support du principe d'égalité devant la loi."
-   },
-   {
-    "q": "L'obligation naturelle est un bon contre-exemple parce qu'elle :",
-    "choices": [
-     "Est sanctionnée pénalement",
-     "Ne peut pas être exigée en justice mais reste juridique",
-     "Relève uniquement de la morale",
-     "A été abrogée en 2016"
-    ],
-    "answer": 1,
-    "why": "Elle ne donne pas d'action en justice, mais son exécution volontaire est valable et ne peut être répétée : c'est du droit sans contrainte directe."
-   },
-   {
-    "q": "Une règle d'ordre public :",
-    "choices": [
-     "Ne concerne que le droit pénal",
-     "Peut être écartée par contrat",
-     "S'impose aux parties qui ne peuvent y déroger",
-     "Ne s'applique qu'à l'administration"
-    ],
-    "answer": 2,
-    "why": "L'ordre public marque la limite de la liberté contractuelle : les parties ne peuvent pas y déroger, quelle que soit la matière."
-   }
-  ]
- },
- {
-  "id": "intro-02",
-  "title": "Le rôle de la règle de droit",
-  "teaser": "Ordonner, protéger, arbitrer : à quoi sert vraiment le droit, et où s'arrête-t-il.",
-  "minutes": 5,
-  "brief": [
-   "La règle de droit remplit d'abord une **fonction d'organisation**. Elle distribue les compétences, fixe les procédures, dit qui décide et selon quelles formes. Sans elle, aucune institution ne tient : le droit constitutionnel organise l'État, le droit des sociétés organise l'entreprise, le droit de la famille organise la parenté. Cette fonction est neutre en apparence, mais elle est profondément politique : organiser, c'est déjà choisir.",
-   "Elle remplit ensuite une **fonction de protection**. Le droit reconnaît des droits subjectifs aux personnes et les met à l'abri des atteintes d'autrui comme des empiétements de la puissance publique. C'est la logique des libertés fondamentales, du droit de propriété, du droit du travail. On dit souvent que le droit est l'arme du faible : la règle générale protège celui qui n'a pas les moyens du rapport de force.",
-   "Elle remplit enfin une **fonction de pacification**. En imposant un mode de règlement des conflits, le droit substitue le procès à la vengeance privée. C'est le sens du monopole étatique de la justice : l'interdiction de se faire justice à soi-même n'est supportable que si l'État offre en contrepartie un juge accessible et impartial.",
-   "Reste la question des rapports entre le droit et les autres ordres normatifs. Le droit **emprunte** à la morale (la bonne foi de l'article 1104 du Code civil, l'abus de droit), sans s'y réduire. Il **prend ses distances** avec la religion depuis la loi de 1905. Il **utilise l'équité** avec méfiance : le juge ne peut pas statuer en équité contre la loi, sauf quand la loi l'y autorise expressément.",
-   "Attention au piège classique : dire que le droit « reflète » la société est vrai, mais insuffisant. Le droit est aussi **performatif** : il transforme la société qu'il décrit. Reconnaître le mariage entre personnes de même sexe en 2013, ce n'était pas enregistrer un état de fait, c'était en créer un."
-  ],
-  "keyPoints": [
-   "Trois fonctions : organiser, protéger, pacifier.",
-   "Le monopole de la justice étatique est la contrepartie de l'interdiction de la vengeance privée.",
-   "Le droit emprunte à la morale sans s'y confondre (bonne foi, abus de droit).",
-   "Le droit n'est pas seulement le miroir de la société : il la transforme."
-  ],
-  "definitions": [
-   {
-    "term": "Fonction d'organisation",
-    "text": "Rôle du droit consistant à répartir les compétences et à fixer les procédures par lesquelles les décisions sont prises au sein d'un groupe."
-   },
-   {
-    "term": "Justice privée (vengeance privée)",
-    "text": "Règlement d'un conflit par la force de l'intéressé lui-même. Interdite en droit français, sauf cas exceptionnels (légitime défense, état de nécessité)."
-   },
-   {
-    "term": "Équité",
-    "text": "Correction de la règle générale au regard des circonstances particulières d'une espèce. Le juge français ne peut y recourir que lorsqu'un texte l'y autorise."
-   },
-   {
-    "term": "Bonne foi",
-    "text": "Exigence de loyauté dans la négociation, la formation et l'exécution du contrat, posée à l'article 1104 du Code civil, qui précise que cette disposition est d'ordre public."
-   },
-   {
-    "term": "Abus de droit",
-    "text": "Exercice d'un droit subjectif dans une intention de nuire ou sans intérêt légitime, que le juge sanctionne alors même que le titulaire agissait dans les limites formelles de son droit."
-   }
-  ],
-  "exam": {
-   "kind": "dissertation",
-   "question": "Le droit est-il le reflet de la société ?",
-   "concise": "Le droit est incontestablement un produit social : il naît de rapports de force, épouse les valeurs dominantes d'une époque et se transforme quand la société se transforme, comme le montrent l'évolution du droit de la famille depuis 1965 ou la reconnaissance progressive du préjudice écologique. Mais réduire le droit à un reflet reviendrait à lui dénier toute autonomie. Le droit possède ses propres catégories, sa propre temporalité — souvent en décalage avec les mœurs — et surtout une force performative : en qualifiant, il crée. Le droit est donc moins un miroir qu'un **instrument de transformation** : il enregistre les mutations sociales autant qu'il les provoque et parfois les contient.",
-   "plan": [
-    {
-     "title": "I. Un droit façonné par la société qu'il régit",
-     "children": [
-      {
-       "title": "A. Le droit comme produit des valeurs dominantes",
-       "points": [
-        "Montesquieu et l'esprit des lois : le droit dépend du climat, des mœurs, de la religion",
-        "L'évolution du droit de la famille comme sismographe social (1965, 1970, 1975, 2013)",
-        "Les analyses sociologiques : Durkheim, le droit comme fait social"
-       ]
-      },
-      {
-       "title": "B. Le droit comme enregistrement des rapports de force",
-       "points": [
-        "Le droit du travail né du conflit social",
-        "Le rôle des groupes de pression dans la fabrique de la loi",
-        "Limite : un droit purement suiviste perdrait sa fonction normative"
-       ]
-      }
-     ]
+    "exam": {
+      "kind": "dissertation",
+      "question": "Le droit et la morale se confondent-ils ?",
+      "concise": "Droit et morale entretiennent une relation double, faite de convergences et de divergences. Ils **convergent** d'abord : l'article 6 du Code civil fait de l'ordre public et des bonnes mœurs une limite à la liberté contractuelle, et l'exigence de bonne foi (art. 1104) absorbe un principe moral — le respect de la parole donnée — en obligation juridique. Mais cette convergence recule : le droit contemporain admet la validité des libéralités consenties dans une relation adultère, et la réforme de 2016 a supprimé la référence aux bonnes mœurs. Les deux ordres **divergent** ensuite structurellement : la sanction morale est intérieure (le remords), la sanction juridique extérieure et organisée par l'État. L'obligation naturelle illustre la zone frontière : un devoir purement moral tant qu'il n'est pas exécuté, qui devient irréversible une fois honoré. Droit et morale ne se confondent donc pas, mais s'influencent constamment, dans un rapport qui n'est jamais figé.",
+      "plan": [
+        {
+          "title": "I. Des convergences réelles mais en recul",
+          "children": [
+            { "title": "A. L'absorption de principes moraux par le droit", "points": ["Article 6 du Code civil : ordre public et bonnes mœurs", "Article 1104 : bonne foi dans la négociation, la formation et l'exécution du contrat", "La sanction pénale de la non-assistance à personne en danger"] },
+            { "title": "B. Le recul contemporain des bonnes mœurs", "points": ["Revirement de la 1re chambre civile sur les libéralités entre amants", "La réforme de 2016 supprime la référence aux bonnes mœurs", "Positivisme et jusnaturalisme : deux réponses à la désobéissance"] }
+          ]
+        },
+        {
+          "title": "II. Une divergence structurelle de fond",
+          "children": [
+            { "title": "A. L'extériorité de la sanction", "points": ["Morale : sanction intérieure, le remords", "Droit : sanction extérieure, étatique, organisée", "For interne (conscience) contre for externe (actes)"] },
+            { "title": "B. L'obligation naturelle, une frontière mouvante", "points": ["Un devoir de conscience sans force obligatoire", "L'exécution volontaire ou la promesse rendent le devoir irréversible", "Conclusion : influence réciproque sans confusion"] }
+          ]
+        }
+      ],
+      "pitfalls": [
+        "Ne pas confondre positivisme et jusnaturalisme dans les définitions : le premier suit la norme positive, le second invoque un droit supérieur.",
+        "Le mythe d'Antigone illustre le conflit droit/morale, ce n'est pas une source de droit positif."
+      ]
     },
-    {
-     "title": "II. Un droit qui façonne en retour la société",
-     "children": [
-      {
-       "title": "A. La force performative de la qualification juridique",
-       "points": [
-        "Nommer, c'est créer : la personnalité juridique, le mariage, la société commerciale",
-        "Le droit crée des institutions que la réalité sociale ne contenait pas",
-        "L'exemple de la loi de 2013 : le droit précède et fixe une évolution des mœurs"
-       ]
-      },
-      {
-       "title": "B. L'autonomie du raisonnement juridique",
-       "points": [
-        "Kelsen et la théorie pure du droit : la validité ne vient pas du fait mais de la norme supérieure",
-        "Le décalage temporel : le droit résiste, retarde ou anticipe",
-        "Conclusion : dialectique plutôt que reflet"
-       ]
-      }
-     ]
-    }
-   ],
-   "pitfalls": [
-    "Ne pas transformer la dissertation en histoire du droit de la famille : les exemples illustrent, ils ne structurent pas.",
-    "Éviter le plan « oui / non » brut : la seconde partie doit dépasser, pas contredire mécaniquement."
-   ]
+    "quiz": [
+      { "q": "Le mythe d'Antigone illustre :", "choices": ["La supériorité du droit sur la morale", "Le refus d'appliquer le droit au nom de la morale", "L'origine du droit romain", "La naissance de la laïcité"], "answer": 1, "why": "Antigone refuse d'appliquer le droit du roi au nom d'une exigence morale supérieure : c'est le conflit fondateur entre droit et morale." },
+      { "q": "L'article 6 du Code civil pose une limite à la liberté contractuelle fondée sur :", "choices": ["L'ordre public et les bonnes mœurs", "La bonne foi uniquement", "Le droit international", "La religion"], "answer": 0, "why": "On ne peut déroger par convention particulière aux lois qui intéressent l'ordre public et les bonnes mœurs." },
+      { "q": "Le jusnaturalisme défend :", "choices": ["L'application stricte du droit positif", "L'existence d'un droit naturel supérieur au droit positif", "La suppression de toute morale", "Le monopole étatique du droit"], "answer": 1, "why": "À l'inverse du positivisme, attaché à la norme positive telle qu'elle est édictée." },
+      { "q": "La réforme de 2016 du droit des contrats a :", "choices": ["Ajouté la notion de bonnes mœurs", "Supprimé la référence aux bonnes mœurs", "Créé l'obligation naturelle", "Aboli l'article 6 du Code civil"], "answer": 1, "why": "Elle a retiré la référence aux bonnes mœurs, confirmant le recul de cette notion en droit des contrats." },
+      { "q": "L'obligation naturelle devient irréversible :", "choices": ["Jamais", "Dès qu'elle est exécutée ou promise", "Seulement si elle est écrite", "Après dix ans"], "answer": 1, "why": "Une fois exécutée ou promise, on ne peut plus en demander la restitution, même si aucune obligation n'existait au départ." }
+    ]
   },
-  "quiz": [
-   {
-    "q": "L'interdiction de se faire justice à soi-même a pour contrepartie :",
-    "choices": [
-     "Le droit de vote",
-     "L'obligation pour l'État d'offrir un juge accessible",
-     "La liberté contractuelle",
-     "Le principe de légalité"
+  {
+    "id": "intro-03",
+    "order": 3,
+    "title": "Droit et religion : la laïcité",
+    "teaser": "Loi du 9 décembre 1905, liberté de conscience absolue, et le triple contrôle de proportionnalité.",
+    "minutes": 5,
+    "brief": [
+      "La religion prescrit elle aussi une conduite, comme le droit ou la morale, mais elle sanctionne différemment : sa sanction est effective dans l'au-delà. Trois modèles décrivent les rapports possibles entre l'État et les cultes : le **modèle de confusion** (théocratie) ; le **système de reconnaissance**, où l'État reconnaît les cultes et en tire des conséquences (en Alsace-Moselle, où les cultes peuvent être financés) ; et la **séparation de l'État et des cultes**, régime de laïcité. Historiquement, le rapport entre État et religion était étroit — le roi, descendant de Dieu sur terre — et la **sécularisation** est la transition du roi à l'État laïque. Des traces de cette influence subsistent : jours fériés, repos dominical.",
+      "La **loi du 9 décembre 1905** organise la séparation des Églises et de l'État : elle garantit le libre exercice des cultes, sous réserve de l'ordre public, et l'État ne subventionne aucun culte. La **liberté de conscience** est absolue ; la **liberté de manifestation** de sa religion est, elle, relative. L'article 1er de la Constitution proclame la République « indivisible, laïque, démocratique et sociale ». L'État est incompétent en matière religieuse : il ne peut ni imposer une religion, ni en interdire une — il n'est pas athée, il est **neutre**, et garantit la liberté religieuse de chacun.",
+      "Une conséquence concrète touche le mariage : institution à la fois religieuse et civile, dont le volet religieux n'a **aucun effet civil**. Depuis **1792**, il est interdit de se marier religieusement avant d'être marié civilement — l'État ne reconnaît que le second.",
+      "La liberté religieuse s'arrête là où commence l'**ordre public**. Toute atteinte doit alors satisfaire un **contrôle de proportionnalité** à triple critère : l'atteinte doit être **nécessaire**, **adaptée** et **proportionnée**. La liberté de conscience reste absolue ; seule la liberté de manifestation y est soumise. Les champs de tension sont connus : l'école publique, les services publics, l'entreprise (via le règlement intérieur), l'espace public.",
+      "Enfin, la **sécularisation** peut aussi transformer un symbole religieux en symbole civil : dès qu'un symbole n'est plus perçu comme religieux, le droit commun s'applique — Noël en est l'exemple le plus net. Certains juges valident d'ailleurs la présence de signes religieux au motif qu'ils sont désormais laïcisés."
     ],
-    "answer": 1,
-    "why": "Le monopole étatique de la justice n'est légitime que si l'État assure en retour l'accès au juge : c'est l'obligation de juger et l'interdiction du déni de justice."
-   },
-   {
-    "q": "Le juge français peut statuer en équité :",
-    "choices": [
-     "Toujours",
-     "Jamais",
-     "Seulement quand un texte l'y autorise",
-     "Uniquement en droit pénal"
+    "keyPoints": [
+      "Trois modèles État/cultes : confusion, reconnaissance, séparation (laïcité).",
+      "Loi du 9 décembre 1905 : libre exercice des cultes sous réserve de l'ordre public, aucun financement.",
+      "Liberté de conscience absolue ; liberté de manifestation relative, soumise au contrôle de proportionnalité (nécessaire, adaptée, proportionnée).",
+      "Depuis 1792, le mariage religieux n'a aucun effet civil et doit suivre le mariage civil."
     ],
-    "answer": 2,
-    "why": "L'équité ne peut pas être invoquée contre la loi. Le juge ne statue en équité que si la loi le prévoit (par exemple l'amiable composition en arbitrage)."
-   },
-   {
-    "q": "L'article 1104 du Code civil pose l'exigence :",
-    "choices": [
-     "De bonne foi",
-     "De cause",
-     "De solidarité",
-     "De forme authentique"
+    "definitions": [
+      { "term": "Laïcité", "text": "Régime de séparation de l'État et des cultes, garantissant la liberté de conscience et le libre exercice des cultes dans la limite de l'ordre public.", "source": "Loi du 9 décembre 1905" },
+      { "term": "Sécularisation", "text": "Transition d'un pouvoir ou d'un symbole religieux vers une forme civile ou laïque, historiquement du roi (descendant de Dieu) vers l'État laïque." },
+      { "term": "Liberté de conscience", "text": "Liberté de croire ou de ne pas croire, absolue et sans limite, à distinguer de la liberté de manifester sa religion." },
+      { "term": "Contrôle de proportionnalité", "text": "Vérification à trois critères — nécessité, adaptation, proportion — appliquée à toute atteinte portée à la liberté de manifester sa religion." },
+      { "term": "Neutralité de l'État", "text": "Position de l'État laïque, qui n'est pas athée mais incompétent en matière religieuse : il ne peut ni imposer ni interdire un culte." }
     ],
-    "answer": 0,
-    "why": "L'article 1104 dispose que les contrats doivent être négociés, formés et exécutés de bonne foi, et précise que cette disposition est d'ordre public."
-   },
-   {
-    "q": "Dire que le droit est performatif signifie que :",
-    "choices": [
-     "Il est efficace",
-     "Il crée la réalité qu'il énonce",
-     "Il est rapide",
-     "Il est mesurable"
+    "exam": {
+      "kind": "dissertation",
+      "question": "La laïcité interdit-elle toute expression religieuse dans l'espace public ?",
+      "concise": "Non : la laïcité française, héritée de la loi du 9 décembre 1905, n'est pas un régime de confusion inversée qui bannirait la religion, mais un régime de **séparation neutre**. L'État ne subventionne aucun culte mais n'en interdit aucun non plus ; il garantit une liberté de conscience **absolue**. Ce qui est soumis à limitation, c'est seulement la liberté de **manifester** sa religion, et uniquement lorsque l'ordre public l'exige, au terme d'un contrôle de proportionnalité à trois critères : nécessité, adaptation, proportion. C'est cet équilibre, et non une hostilité de principe, qui structure les champs de tension classiques — école publique, services publics, entreprise, espace public — où la présence de signes religieux est discutée au cas par cas plutôt qu'exclue en bloc. La sécularisation de certains symboles (Noël) montre même que le droit commun peut réintégrer sans difficulté ce qui n'est plus perçu comme religieux.",
+      "plan": [
+        {
+          "title": "I. Un régime de séparation neutre, non hostile à la religion",
+          "children": [
+            { "title": "A. La lettre de la loi de 1905", "points": ["Libre exercice des cultes sous réserve de l'ordre public", "Aucun financement, mais aucune interdiction", "Article 1er de la Constitution : République indivisible, laïque, démocratique et sociale"] },
+            { "title": "B. Une liberté de conscience absolue", "points": ["L'État neutre, ni athée ni confessionnel", "Distinction avec la liberté de manifestation, elle relative", "L'exemple du mariage : effet civil distinct de l'effet religieux depuis 1792"] }
+          ]
+        },
+        {
+          "title": "II. Une liberté de manifestation encadrée, non supprimée",
+          "children": [
+            { "title": "A. Le contrôle de proportionnalité", "points": ["Triple critère : nécessité, adaptation, proportion", "Limite fixée par l'ordre public, pas par une hostilité de principe", "Les champs de tension : école, services publics, entreprise, espace public"] },
+            { "title": "B. La sécularisation des symboles", "points": ["Un symbole qui n'est plus perçu comme religieux relève du droit commun", "L'exemple de Noël", "Conclusion : un équilibre au cas par cas, pas une exclusion générale"] }
+          ]
+        }
+      ],
+      "pitfalls": [
+        "Ne pas confondre laïcité et athéisme d'État : la neutralité n'est pas l'hostilité.",
+        "La liberté de conscience est absolue ; seule sa manifestation extérieure peut être limitée, et seulement par un contrôle de proportionnalité."
+      ]
+    },
+    "quiz": [
+      { "q": "La loi du 9 décembre 1905 organise :", "choices": ["Le financement de tous les cultes", "La séparation des Églises et de l'État", "L'interdiction de toute religion", "Le mariage religieux"], "answer": 1, "why": "Elle garantit le libre exercice des cultes sous réserve de l'ordre public, sans qu'aucun ne soit subventionné par l'État." },
+      { "q": "La liberté de conscience est :", "choices": ["Relative", "Absolue", "Réservée aux nationaux", "Soumise à autorisation"], "answer": 1, "why": "Seule la liberté de manifester sa religion est relative et soumise au contrôle de proportionnalité." },
+      { "q": "Depuis 1792, en France :", "choices": ["Le mariage religieux suffit", "Le mariage religieux ne peut précéder le mariage civil", "Le mariage civil est interdit", "Les deux mariages sont simultanés obligatoirement"], "answer": 1, "why": "Le mariage religieux n'a aucun effet civil et ne peut être célébré avant le mariage civil." },
+      { "q": "Le triple critère du contrôle de proportionnalité est :", "choices": ["Légal, moral, social", "Nécessaire, adapté, proportionné", "Rapide, gratuit, public", "Écrit, motivé, définitif"], "answer": 1, "why": "Toute atteinte à la liberté de manifester sa religion doit satisfaire ces trois exigences cumulatives." },
+      { "q": "La sécularisation d'un symbole comme Noël signifie qu'il :", "choices": ["Reste soumis au droit des cultes", "Relève désormais du droit commun", "Est interdit dans l'espace public", "Doit être financé par l'État"], "answer": 1, "why": "Dès qu'un symbole n'est plus perçu comme religieux, le droit commun s'applique à lui." }
+    ]
+  },
+  {
+    "id": "intro-04",
+    "order": 4,
+    "title": "Les caractères de la règle de droit",
+    "teaser": "Générale et abstraite, permanente, sanctionnée par l'État — et trois contre-exemples embarrassants.",
+    "minutes": 5,
+    "brief": [
+      "La **règle** est ce qui permet de tracer des lignes : elle aligne les comportements sur un modèle qu'elle fixe. La **norme**, plus large, englobe les normes individuelles, les règles générales, et même des règles non contraignantes — toute norme est une règle, mais toute règle n'est pas une norme. La règle de droit est intimement liée à la loi et à l'État ; elle doit être souple, réaliste et complète.",
+      "Premier caractère : elle est **générale et abstraite**. Elle vise des situations et des catégories, jamais des personnes nommées — l'article 6 de la DDHC de 1789 pose que la loi doit être la même pour tous, qu'elle protège ou qu'elle punisse. Cette généralité n'est pas synonyme d'uniformité : une loi peut viser des personnes en particulier tant qu'elle reste **normative**, c'est-à-dire qu'elle pose une règle plutôt qu'elle ne désigne un individu.",
+      "Second caractère : elle est **permanente et obligatoire**. Permanence ne veut pas dire éternité — une loi peut être abrogée, y compris **tacitement**, lorsqu'une loi nouvelle contredit une loi ancienne. Pour la majorité des professeurs de droit, une loi ne peut tomber en désuétude : une loi non appliquée reste une loi. Son caractère obligatoire s'impose à tous, mais selon des intensités variables.",
+      "Troisième caractère, décisif : la **contrainte étatique**. Le droit accepte de remplacer la violence par le procès ; il se substitue à toutes les formes de violence privée. Ce qui fait la **juridicité**, c'est cette contrainte organisée, qui se décline en une palette de sanctions : l'exécution forcée, l'effacement (nullité d'un acte), la réparation (en nature ou par équivalent) et la punition (peine privative de liberté ou amende). Trois contre-exemples embarrassants nuancent pourtant ce critère : le **droit international**, avec peu de « gendarme mondial » ; les **obligations naturelles**, exécutées sans contrainte possible ; le ***soft law*** — recommandations, chartes, avis — sans sanction directe, et pourtant tenu pour du droit. La réponse est donc nuancée : la contrainte étatique est un critère **dominant, non exclusif** — la juridicité est affaire de degré. Exception notable à l'interdiction de se faire justice à soi-même : la légitime défense.",
+      "Cette gradation se retrouve dans les **degrés de normativité**. Les règles **impératives** ne souffrent aucune dérogation ; les règles **supplétives** (environ 80 % du droit des contrats) ne s'appliquent qu'à défaut de volonté contraire, posant un modèle par défaut mais laissant le choix. S'y ajoutent les **principes**, normes qui posent des valeurs fondatrices, applicables même sans texte, et qui corrigent une application trop stricte de la règle. Le tout forme un continuum : recommandations et chartes (*soft law*), durcissement du *soft law* avec effets notables, règles supplétives, puis règles impératives."
     ],
-    "answer": 1,
-    "why": "La qualification juridique fait exister des réalités qui n'ont pas d'équivalent naturel : la personne morale, le mariage, la créance."
-   },
-   {
-    "q": "L'abus de droit est sanctionné parce que :",
-    "choices": [
-     "Le droit n'existait pas",
-     "Le titulaire a dépassé les limites formelles de son droit",
-     "L'exercice du droit visait à nuire ou était sans intérêt légitime",
-     "La loi l'interdit expressément dans tous les cas"
+    "keyPoints": [
+      "Générale et abstraite : jamais de personnes nommées, art. 6 DDHC 1789 ; généralité ≠ uniformité.",
+      "Permanente et obligatoire : abrogation possible (y compris tacite), la désuétude n'efface pas la loi.",
+      "Contrainte étatique : critère dominant mais non exclusif — droit international, obligations naturelles, soft law en sont les contre-exemples.",
+      "Degrés de normativité : soft law, règles supplétives (défaut de volonté contraire), règles impératives, et les principes."
     ],
-    "answer": 2,
-    "why": "L'abus suppose précisément que le titulaire soit resté dans les limites formelles de son droit : ce qui est sanctionné, c'est l'intention de nuire ou l'absence d'intérêt légitime."
-   }
-  ],
-  "order": 2
- }
+    "definitions": [
+      { "term": "Règle générale et abstraite", "text": "Règle qui vise des catégories de situations et jamais des personnes nommément désignées, tout en restant compatible avec des catégories ciblées si elle demeure normative." },
+      { "term": "Abrogation tacite", "text": "Disparition d'une règle de droit déduite de l'adoption d'une loi nouvelle contraire à la loi ancienne, sans abrogation expresse." },
+      { "term": "Contrainte étatique", "text": "Pouvoir de l'État de faire exécuter la règle de droit par la force (exécution forcée, nullité, réparation, punition) ; critère dominant mais non exclusif de la juridicité." },
+      { "term": "Règle supplétive", "text": "Règle qui ne s'applique qu'à défaut de volonté contraire des parties, posant un modèle par défaut sans s'imposer contre lui. Environ 80 % du droit des contrats." },
+      { "term": "Soft law", "text": "Recommandations, chartes ou avis dépourvus de sanction directe, mais néanmoins tenus pour du droit — l'un des trois contre-exemples au critère de la contrainte étatique." }
+    ],
+    "exam": {
+      "kind": "dissertation",
+      "question": "La contrainte étatique est-elle le critère de la règle de droit ?",
+      "concise": "La contrainte étatique est le critère le plus opératoire de la règle de droit : elle est extérieure, organisée et vérifiable, là où la morale s'en remet au for intérieur. Le droit mobilise une palette de sanctions propres — exécution forcée, nullité, réparation, punition — qui le distingue nettement de ses voisins normatifs. Mais ce critère n'est pas absolu : trois contre-exemples le mettent en tension — le droit international, dépourvu de gendarme mondial ; les obligations naturelles, exécutées sans contrainte possible ; le soft law, dénué de sanction directe. Chacun reste pourtant tenu pour du droit. Il faut donc affiner le critère : ce n'est pas la sanction en elle-même qui fait le droit, mais son caractère étatique et organisé lorsqu'il existe, complété par les autres caractères de la règle — généralité, abstraction, permanence — et par une conception graduée de la normativité, du soft law aux règles impératives.",
+      "plan": [
+        {
+          "title": "I. La contrainte étatique, critère opératoire de la juridicité",
+          "children": [
+            { "title": "A. Une palette de sanctions propre au droit", "points": ["Exécution forcée, effacement, réparation, punition", "Le droit remplace la violence privée par le procès", "L'exception de la légitime défense"] },
+            { "title": "B. Un critère extérieur et vérifiable", "points": ["Opposé à la sanction intérieure de la morale (le remords)", "Une autorité légitime, une procédure organisée", "Intérêt pratique : le justiciable sait ce qu'il risque"] }
+          ]
+        },
+        {
+          "title": "II. Un critère dominant mais non exclusif",
+          "children": [
+            { "title": "A. Trois contre-exemples embarrassants", "points": ["Le droit international, peu de gendarme mondial", "Les obligations naturelles, sans contrainte possible", "Le soft law, sans sanction directe"] },
+            { "title": "B. Une juridicité graduée", "points": ["Les degrés de normativité : du soft law aux règles impératives", "Les règles supplétives, obligatoires à défaut de volonté contraire", "Conclusion : un critère dominant, la juridicité reste affaire de degré"] }
+          ]
+        }
+      ],
+      "pitfalls": [
+        "Ne pas dire que la règle de droit vient toujours directement de l'État : le soft law et les obligations naturelles nuancent cette idée.",
+        "Une règle supplétive n'est pas facultative : elle s'impose à défaut de volonté contraire exprimée."
+      ]
+    },
+    "quiz": [
+      { "q": "Une règle générale et abstraite :", "choices": ["Ne peut jamais viser une catégorie de personnes", "Vise des situations et des catégories, jamais des personnes nommées", "Doit être écrite en langage technique", "S'applique seulement au droit pénal"], "answer": 1, "why": "La généralité n'est pas l'uniformité : une catégorie ciblée reste générale tant qu'elle demeure normative." },
+      { "q": "L'abrogation tacite d'une loi survient :", "choices": ["Uniquement par un vote exprès du Parlement", "Quand une loi nouvelle contredit une loi ancienne", "Par simple désuétude", "Jamais en droit français"], "answer": 1, "why": "Pour la majorité des professeurs, la seule désuétude ne suffit pas : il faut une loi nouvelle réellement contraire." },
+      { "q": "Parmi les trois contre-exemples au critère de la contrainte étatique figure :", "choices": ["Le droit pénal", "Le soft law", "La Constitution", "Le droit civil"], "answer": 1, "why": "Avec le droit international et les obligations naturelles, le soft law est tenu pour du droit sans sanction directe." },
+      { "q": "Une règle supplétive s'applique :", "choices": ["Toujours, sans exception", "À défaut de volonté contraire des parties", "Uniquement en droit pénal", "Seulement si un juge le décide"], "answer": 1, "why": "Elle pose un modèle par défaut, dans le silence des parties, mais cède devant leur volonté contraire." },
+      { "q": "Environ quelle part du droit des contrats est composée de règles supplétives ?", "choices": ["20 %", "50 %", "80 %", "100 %"], "answer": 2, "why": "Une proportion importante des règles du droit des contrats ne s'impose qu'à défaut de stipulation contraire." }
+    ]
+  }
 ]
