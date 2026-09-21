@@ -177,7 +177,9 @@ export default function SettingsPage() {
       <section className="card p-5">
         <SectionTitle kicker="Zone sensible" title="Effacer ma progression" />
         <p className="text-[13.5px]" style={{ color: "var(--muted)" }}>
-          Supprime définitivement les leçons faites, les définitions mémorisées et la série sur cet appareil.
+          {signedInAs
+            ? "Supprime définitivement les leçons faites, les définitions mémorisées et la série — sur cet appareil et sur tous les autres connectés à ce compte, une fois la synchronisation faite."
+            : "Supprime définitivement les leçons faites, les définitions mémorisées et la série sur cet appareil."}
         </p>
         <div className="mt-4">
           {confirmReset ? (
