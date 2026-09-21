@@ -102,6 +102,10 @@ export type ProgressState = {
   // à la connexion, pour que réglages et progression suivent le compte plutôt
   // que de rester bloqués sur le premier appareil qui a le plus de leçons.
   savedAt?: string;
+  // Nombre de corrections IA utilisées dans le module d'entraînement gratuit
+  // (questions ouvertes d'intro générale). Plafonné pour les comptes non
+  // abonnés, voir ENTRAINEMENT_CORRECTION_LIMIT dans lib/state.tsx.
+  entrainementCorrectionsUsed?: number;
 };
 
 // Retour de l'IA sur une copie rédigée par l'élève (mode correction).
@@ -111,6 +115,13 @@ export type EssayFeedback = {
   pointsForts: string[];
   pointsFaibles: string[];
   conseils: string[];
+  commentaire: string;
+};
+
+// Retour de l'IA sur une réponse courte du module d'entraînement (questions
+// de cours / vocabulaire / jurisprudence), comparée à la réponse attendue.
+export type EntrainementFeedback = {
+  verdict: "correct" | "partiel" | "incorrect";
   commentaire: string;
 };
 
