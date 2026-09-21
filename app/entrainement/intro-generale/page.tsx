@@ -3,25 +3,45 @@
 import { useState } from "react";
 import Link from "next/link";
 import { Tag, Button } from "@/components/ui";
+import { Arrow, Chevron } from "@/components/icons";
 import { inlineMarkup } from "@/lib/format";
 import { introGeneraleEntrainement, type QuestionEntrainement } from "@/lib/entrainement";
 import { useStudiJur, entrainementCorrectionCapReached, ENTRAINEMENT_CORRECTION_LIMIT } from "@/lib/state";
 import type { EntrainementFeedback } from "@/lib/types";
 
 export default function EntrainementIntroGeneralePage() {
+  const [i, setI] = useState(0);
+  const total = introGeneraleEntrainement.length;
+  const q = introGeneraleEntrainement[i];
+
   return (
     <div className="space-y-6">
       <div>
         <Link href="/entrainement" className="text-[13px] font-semibold" style={{ color: "var(--muted)" }}>← Entraînement intero</Link>
         <h1 className="serif mt-1.5 text-[28px] font-bold tracking-tight">Introduction générale au droit</h1>
         <p className="mt-1.5 text-[14.5px]" style={{ color: "var(--muted)" }}>
-          Vocabulaire des procès, jurisprudence vue en TD, questions de cours — {introGeneraleEntrainement.length}{" "}
-          questions. Écris ta réponse si tu veux, fais-la corriger par l&apos;IA, puis révèle la réponse attendue.
+          Vocabulaire des procès, jurisprudence vue en TD, questions de cours. Écris ta réponse si tu veux, fais-la
+          corriger par l&apos;IA, puis révèle la réponse attendue.
         </p>
       </div>
 
-      <div className="space-y-3">
-        {introGeneraleEntrainement.map((q) => <QuestionCard key={q.id} q={q} />)}
+      <div className="flex items-center justify-between text-[12.5px]" style={{ color: "var(--muted)" }}>
+        <span className="tabular">Question {i + 1} sur {total}</span>
+      </div>
+
+      <QuestionCard key={q.id} q={q} />
+
+      <div className="grid grid-cols-2 gap-3">
+        <button onClick={() => setI((n) => Math.max(0, n - 1))} disabled={i === 0}
+          className="flex items-center justify-center gap-1.5 rounded-xl py-3.5 text-[14px] font-semibold transition-all active:scale-[0.98] disabled:opacity-40"
+          style={{ background: "var(--surface-2)", color: "var(--ink)" }}>
+          <Chevron className="h-4 w-4 rotate-180" /> Précédent
+        </button>
+        <button onClick={() => setI((n) => Math.min(total - 1, n + 1))} disabled={i === total - 1}
+          className="flex items-center justify-center gap-1.5 rounded-xl py-3.5 text-[14px] font-semibold transition-all active:scale-[0.98] disabled:opacity-40"
+          style={{ background: "var(--accent)", color: "var(--accent-ink)" }}>
+          Suivant <Arrow className="h-4 w-4" />
+        </button>
       </div>
     </div>
   );
@@ -68,9 +88,9 @@ function QuestionCard({ q }: { q: QuestionEntrainement }) {
   const verdictLabel = feedback?.verdict === "correct" ? "Correct" : feedback?.verdict === "partiel" ? "Partiellement correct" : "À revoir";
 
   return (
-    <div className="card p-4">
+    <div className="card pop p-5">
       <Tag>{q.categorie}</Tag>
-      <p className="mt-2 text-[15px] font-semibold leading-snug">{q.question}</p>
+      <p className="mt-2 text-[16.5px] font-semibold leading-snug">{q.question}</p>
 
       <textarea
         value={reponse}
