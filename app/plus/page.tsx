@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Arrow, Cards, Flame, Target } from "@/components/icons";
+import { Arrow, Cards, Flame, Quill, Target } from "@/components/icons";
 
 const ITEMS = [
   {
@@ -22,6 +22,13 @@ const ITEMS = [
     Icon: Target,
     title: "Cas pratiques guidés",
     text: "La méthode pas à pas, avec la correction révélée seulement après ta réponse à chaque étape.",
+  },
+  {
+    href: "/suggestions",
+    hue: "plum",
+    Icon: Quill,
+    title: "Suggestions & retours",
+    text: "Dis-moi ce qui te manque ou ce qui te bloque, pour que StudiJur te convienne vraiment.",
   },
 ] as const;
 
