@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import { callModel, getAnthropic, currentModel, type ContentBlock } from "@/lib/anthropic";
-import { checkQuota, releaseQuota } from "@/lib/shared-courses";
+import { checkQuotaBoth, releaseQuotaAll } from "@/lib/shared-courses";
+import { AUTH_REQUIRED_MESSAGE, authRequired, requireUser } from "@/lib/auth-server";
 
 export const runtime = "nodejs";
 export const maxDuration = 120;
@@ -9,7 +10,10 @@ export const maxDuration = 120;
 // retranscrit fidèlement chaque page avec la vision de Claude, puis le texte
 // obtenu rejoint le même champ que le copier-coller ou l'import de fichier —
 // aucune leçon n'est encore générée ici, juste la lecture des photos.
-const MAX_PHOTOS = 6;
+// Alignée sur le quota quotidien (3) : une seule transcription peut au pire
+// consommer toutes les générations du jour, jamais plus — voir shared-courses.ts.
+const MAX_PHOTOS = 3;
+const PHOTO_MAX_TOKENS = 1300;
 const MAX_BASE64_CHARS = 6_000_000; // ~4,5 Mo décodés, marge de sécurité par photo
 const ALLOWED_MEDIA_TYPES = new Set(["image/jpeg", "image/png", "image/gif", "image/webp"]);
 
@@ -62,10 +66,21 @@ export async function POST(req: Request) {
   }
 
   const ip = clientIp(req);
-  const gate = await checkQuota(ip);
+  let quotaKeys = [ip];
+  if (authRequired()) {
+    const user = await requireUser(req);
+    if (!user) return NextResponse.json({ error: AUTH_REQUIRED_MESSAGE }, { status: 401 });
+    quotaKeys = [`user:${user.id}`, ip];
+  }
+
+  // Une photo = un appel modèle : le quota se consomme sur ce nombre réel
+  // d'appels, pas sur la requête HTTP (voir checkQuotaBoth).
+  const gate = await checkQuotaBoth(quotaKeys, images.length);
   if (!gate.ok) {
     return NextResponse.json(
-      { error: "Tu as atteint la limite de lectures/générations pour aujourd'hui. Réessaie demain, ou colle le texte directement." },
+      {
+        error: `Tu envoies ${images.length} photo${images.length > 1 ? "s" : ""}, mais il ne te reste que ${gate.remaining} génération${gate.remaining > 1 ? "s" : ""} IA aujourd'hui. Réessaie demain, ou colle le texte directement.`,
+      },
       { status: 429 },
     );
   }
@@ -86,7 +101,7 @@ export async function POST(req: Request) {
           { type: "image", source: { type: "base64", media_type: mediaType, data: img.data } },
           { type: "text", text: "Transcris cette page." },
         ];
-        const raw = await callModel(client!, { system: SYSTEM, maxTokens: 4000, user: content });
+        const raw = await callModel(client!, { system: SYSTEM, maxTokens: PHOTO_MAX_TOKENS, user: content });
         const trimmed = raw.trim();
         results[i] = trimmed.length > 0 ? trimmed : null;
       } catch {
@@ -102,7 +117,7 @@ export async function POST(req: Request) {
     .filter((p): p is string => Boolean(p));
 
   if (!pages.length) {
-    await releaseQuota(ip);
+    await releaseQuotaAll(quotaKeys, images.length);
     return NextResponse.json(
       { error: "Impossible de lire ces photos. Vérifie qu'elles sont nettes et bien cadrées, ou copie-colle le texte à la place." },
       { status: 422 },
