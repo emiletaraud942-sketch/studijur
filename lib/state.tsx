@@ -121,12 +121,16 @@ export function StudiJurProvider({ children }: { children: React.ReactNode }) {
         .eq("user_id", data.user.id)
         .maybeSingle();
       if (!cancelled && row?.state) {
-        // Le distant fait foi s'il est plus riche : l'élève a pu travailler
-        // depuis un autre appareil entre deux sessions.
+        // Le distant fait foi s'il est plus récent : un réglage (heure de
+        // rappel, thème…) changé depuis un autre appareil doit s'appliquer
+        // ici aussi, pas seulement la progression. On compare l'horodatage
+        // de dernière écriture plutôt que le nombre de leçons, qui ne dit
+        // rien des réglages et pouvait laisser cet appareil bloqué sur une
+        // ancienne version dès qu'il avait autant ou plus de leçons faites.
         const remote = row.state as ProgressState;
-        const localCount = Object.keys(local?.lessons ?? {}).length;
-        const remoteCount = Object.keys(remote.lessons ?? {}).length;
-        if (remoteCount >= localCount) setState({ ...freshState(), ...remote });
+        const remoteTime = remote.savedAt ? Date.parse(remote.savedAt) : 0;
+        const localTime = local?.savedAt ? Date.parse(local.savedAt) : 0;
+        if (!local || remoteTime > localTime) setState({ ...freshState(), ...remote });
       }
       // Un abonnement payé peut avoir été activé depuis un autre appareil, ou
       // juste avant que cette session ne se (re)connecte : on vérifie à
@@ -142,9 +146,13 @@ export function StudiJurProvider({ children }: { children: React.ReactNode }) {
   }, []);
 
   // Persistance locale immédiate, synchronisation distante différée.
+  // L'horodatage est posé ici, à l'écriture, plutôt que dans `update()` : il
+  // marque quand cette version a été enregistrée, pas quand elle a été
+  // modifiée en mémoire, et ne modifie pas `state` (pas de boucle de re-render).
   useEffect(() => {
     if (!ready) return;
-    writeLocal(state);
+    const stamped: ProgressState = { ...state, savedAt: new Date().toISOString() };
+    writeLocal(stamped);
     const sb = getSupabase();
     if (!sb || !signedInAs) return;
     if (timer.current) clearTimeout(timer.current);
@@ -155,7 +163,7 @@ export function StudiJurProvider({ children }: { children: React.ReactNode }) {
         if (data.user) {
           await sb.from("progress").upsert({
             user_id: data.user.id,
-            state,
+            state: stamped,
             updated_at: new Date().toISOString(),
           });
         }
