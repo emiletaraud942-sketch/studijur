@@ -3,13 +3,14 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useStudiJur, trialDaysLeft } from "@/lib/state";
-import { Books, Chart, Gear, Grid, Home, Scales, Upload, Flame } from "./icons";
+import { Books, Chart, Gear, Grid, Home, Quill, Scales, Upload, Flame } from "./icons";
 import { longDate } from "@/lib/format";
 import InstallPrompt from "./InstallPrompt";
 
 const NAV = [
   { href: "/", label: "Aujourd'hui", Icon: Home },
   { href: "/bibliotheque", label: "Matières", Icon: Books },
+  { href: "/cours", label: "Cours", Icon: Quill },
   { href: "/mes-cours", label: "Mes cours", Icon: Upload },
   { href: "/progression", label: "Progression", Icon: Chart },
   { href: "/plus", label: "Plus", Icon: Grid },
