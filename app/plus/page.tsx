@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Arrow, Cards, Flame, Quill, Target } from "@/components/icons";
+import SuggestionForm from "@/components/SuggestionForm";
 
 const ITEMS = [
   {
@@ -22,13 +23,6 @@ const ITEMS = [
     Icon: Target,
     title: "Cas pratiques guidés",
     text: "La méthode pas à pas, avec la correction révélée seulement après ta réponse à chaque étape.",
-  },
-  {
-    href: "/suggestions",
-    hue: "plum",
-    Icon: Quill,
-    title: "Suggestions & retours",
-    text: "Dis-moi ce qui te manque ou ce qui te bloque, pour que StudiJur te convienne vraiment.",
   },
 ] as const;
 
@@ -58,6 +52,16 @@ export default function PlusPage() {
             </span>
           </Link>
         ))}
+      </div>
+
+      <div data-hue="plum">
+        <div className="mb-3 flex items-center gap-2 text-[13px] font-semibold" style={{ color: "var(--muted)" }}>
+          <span className="grid h-7 w-7 shrink-0 place-items-center rounded-lg" style={{ background: "var(--h-soft)", color: "var(--h)" }}>
+            <Quill className="h-3.5 w-3.5" />
+          </span>
+          Suggestions &amp; retours — dis-moi ce qui te manque, je lis tout.
+        </div>
+        <SuggestionForm />
       </div>
 
       <p className="text-center text-[12.5px]" style={{ color: "var(--muted)" }}>
