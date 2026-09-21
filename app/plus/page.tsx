@@ -54,7 +54,7 @@ export default function PlusPage() {
         ))}
       </div>
 
-      <div data-hue="plum">
+      <div id="suggestions" data-hue="plum" className="scroll-mt-20">
         <div className="mb-3 flex items-center gap-2 text-[13px] font-semibold" style={{ color: "var(--muted)" }}>
           <span className="grid h-7 w-7 shrink-0 place-items-center rounded-lg" style={{ background: "var(--h-soft)", color: "var(--h)" }}>
             <Quill className="h-3.5 w-3.5" />
