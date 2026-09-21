@@ -13,7 +13,7 @@ import type { Course } from "@/lib/types";
 type Phase = "idle" | "reading" | "generating" | "done" | "error";
 type Photo = { id: string; mediaType: "image/jpeg"; base64: string };
 
-const MAX_PHOTOS = 6;
+const MAX_PHOTOS = 3;
 
 export default function MyCoursesPage() {
   const { state, ready, addCustomCourse, removeCustomCourse, signedInAs } = useStudiJur();

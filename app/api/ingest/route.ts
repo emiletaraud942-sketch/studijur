@@ -61,7 +61,11 @@ async function signalerMatiereManquante(course: Course): Promise<void> {
 }
 
 const MAX_CHARS = 200_000;
-const MAX_LESSONS = 12;
+// Alignée sur le quota quotidien (3) : un seul dépôt de cours peut au pire
+// consommer toutes les générations du jour, jamais plus — voir shared-courses.ts.
+const MAX_LESSONS = 3;
+const SECTION_CHARS = 6000;
+const SECTION_MAX_TOKENS = 1400;
 
 const SYSTEM = `Tu es agrégé de droit et tu fabriques des micro-leçons pour des étudiants français de première année de licence de droit.
 
@@ -160,18 +164,9 @@ export async function POST(req: Request) {
     });
   }
 
-  const gate = await checkQuotaBoth(quotaKeys);
-  if (!gate.ok) {
-    return NextResponse.json(
-      { error: "Tu as atteint la limite de générations pour aujourd'hui. Réessaie demain, ou dépose un document déjà importé par un autre étudiant." },
-      { status: 429 },
-    );
-  }
-
   const client = getAnthropic();
 
   if (!client) {
-    await releaseQuotaAll(quotaKeys);
     const course = fallbackCourse(title, clipped, courseId);
     return NextResponse.json({
       course, engine: "local",
@@ -181,8 +176,19 @@ export async function POST(req: Request) {
 
   const sections = splitSections(clipped).slice(0, MAX_LESSONS);
   if (!sections.length) {
-    await releaseQuotaAll(quotaKeys);
     return NextResponse.json({ error: "Impossible de découper ce cours en parties exploitables." }, { status: 400 });
+  }
+
+  // Une section = un appel modèle : le quota se consomme sur ce nombre réel
+  // d'appels, pas sur la requête HTTP (voir checkQuotaBoth).
+  const gate = await checkQuotaBoth(quotaKeys, sections.length);
+  if (!gate.ok) {
+    return NextResponse.json(
+      {
+        error: `Ce cours se découpe en ${sections.length} parties, mais il ne te reste que ${gate.remaining} génération${gate.remaining > 1 ? "s" : ""} IA aujourd'hui. Réessaie demain, ou dépose un extrait plus court.`,
+      },
+      { status: 429 },
+    );
   }
 
   const results: (Draft | null)[] = new Array(sections.length).fill(null);
@@ -198,8 +204,8 @@ export async function POST(req: Request) {
         const raw = await callModel(client!, {
           system: SYSTEM,
           cacheSystem: true,
-          maxTokens: 4000,
-          user: `Matière : ${title}\nPartie du cours : ${s.title}\n\n--- EXTRAIT DU COURS ---\n${s.body.slice(0, 14000)}\n--- FIN DE L'EXTRAIT ---\n\nProduis la leçon JSON.`,
+          maxTokens: SECTION_MAX_TOKENS,
+          user: `Matière : ${title}\nPartie du cours : ${s.title}\n\n--- EXTRAIT DU COURS ---\n${s.body.slice(0, SECTION_CHARS)}\n--- FIN DE L'EXTRAIT ---\n\nProduis la leçon JSON.`,
         });
         const draft = extractJson<Draft>(raw);
         if (sane(draft)) results[i] = tidy(draft);
@@ -225,7 +231,7 @@ export async function POST(req: Request) {
   });
 
   if (!lessons.length) {
-    await releaseQuotaAll(quotaKeys);
+    await releaseQuotaAll(quotaKeys, sections.length);
     const course = fallbackCourse(title, clipped, courseId);
     return NextResponse.json({
       course, engine: "local",

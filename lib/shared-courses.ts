@@ -87,65 +87,74 @@ export async function storeShared(fp: string, course: Course): Promise<void> {
 // Sans Supabase configuré, ou tant que la table n'a pas encore été créée, on
 // retombe sur la mémoire locale : imparfait, mais on ne bloque jamais un
 // élève pour une panne d'infrastructure.
-const QUOTA_PER_DAY = 6;
+//
+// Le quota compte des appels modèle, pas des requêtes HTTP : l'OCR (jusqu'à
+// MAX_PHOTOS photos) et le dépôt de cours (jusqu'à MAX_LESSONS sections)
+// appellent l'IA plusieurs fois en une seule requête. Sans ça, "3
+// générations/jour" pouvait en réalité déclencher des dizaines d'appels
+// facturés. `amount` porte donc le nombre d'appels réellement engagés.
+const QUOTA_PER_DAY = 3;
 const QUOTA_WINDOW_MS = 86400000;
 const memoryQuota = new Map<string, { count: number; resetAt: number }>();
 
-function checkQuotaInMemory(key: string): { ok: boolean; remaining: number } {
+function checkQuotaInMemory(key: string, amount: number): { ok: boolean; remaining: number } {
   const now = Date.now();
   const entry = memoryQuota.get(key);
   if (!entry || entry.resetAt < now) {
-    memoryQuota.set(key, { count: 1, resetAt: now + QUOTA_WINDOW_MS });
-    return { ok: true, remaining: QUOTA_PER_DAY - 1 };
+    if (amount > QUOTA_PER_DAY) return { ok: false, remaining: QUOTA_PER_DAY };
+    memoryQuota.set(key, { count: amount, resetAt: now + QUOTA_WINDOW_MS });
+    return { ok: true, remaining: QUOTA_PER_DAY - amount };
   }
-  if (entry.count >= QUOTA_PER_DAY) return { ok: false, remaining: 0 };
-  entry.count += 1;
+  if (entry.count + amount > QUOTA_PER_DAY) return { ok: false, remaining: Math.max(0, QUOTA_PER_DAY - entry.count) };
+  entry.count += amount;
   return { ok: true, remaining: QUOTA_PER_DAY - entry.count };
 }
 
-function releaseQuotaInMemory(key: string) {
+function releaseQuotaInMemory(key: string, amount: number) {
   const entry = memoryQuota.get(key);
-  if (entry && entry.count > 0) entry.count -= 1;
+  if (entry) entry.count = Math.max(0, entry.count - amount);
 }
 
-export async function checkQuota(ip: string): Promise<{ ok: boolean; remaining: number }> {
+export async function checkQuota(key: string, amount = 1): Promise<{ ok: boolean; remaining: number }> {
   const sb = getAdmin();
-  if (!sb) return checkQuotaInMemory(ip);
+  if (!sb) return checkQuotaInMemory(key, amount);
 
   try {
     const nowIso = new Date().toISOString();
     const { data: row, error: readError } = await sb
       .from("api_quota")
       .select("count, reset_at")
-      .eq("key", ip)
+      .eq("key", key)
       .maybeSingle();
-    if (readError) return checkQuotaInMemory(ip); // table absente ou panne : dégradation gracieuse
+    if (readError) return checkQuotaInMemory(key, amount); // table absente ou panne : dégradation gracieuse
 
     if (!row || row.reset_at < nowIso) {
+      if (amount > QUOTA_PER_DAY) return { ok: false, remaining: QUOTA_PER_DAY };
       const resetAt = new Date(Date.now() + QUOTA_WINDOW_MS).toISOString();
       const { error } = await sb
         .from("api_quota")
-        .upsert({ key: ip, count: 1, reset_at: resetAt }, { onConflict: "key" });
-      if (error) return checkQuotaInMemory(ip);
-      return { ok: true, remaining: QUOTA_PER_DAY - 1 };
+        .upsert({ key, count: amount, reset_at: resetAt }, { onConflict: "key" });
+      if (error) return checkQuotaInMemory(key, amount);
+      return { ok: true, remaining: QUOTA_PER_DAY - amount };
     }
-    if (row.count >= QUOTA_PER_DAY) return { ok: false, remaining: 0 };
-    const nextCount = row.count + 1;
-    const { error } = await sb.from("api_quota").update({ count: nextCount }).eq("key", ip);
-    if (error) return checkQuotaInMemory(ip);
+    if (row.count + amount > QUOTA_PER_DAY) return { ok: false, remaining: Math.max(0, QUOTA_PER_DAY - row.count) };
+    const nextCount = row.count + amount;
+    const { error } = await sb.from("api_quota").update({ count: nextCount }).eq("key", key);
+    if (error) return checkQuotaInMemory(key, amount);
     return { ok: true, remaining: QUOTA_PER_DAY - nextCount };
   } catch {
-    return checkQuotaInMemory(ip);
+    return checkQuotaInMemory(key, amount);
   }
 }
 
-export async function releaseQuota(ip: string): Promise<void> {
+export async function releaseQuota(key: string, amount = 1): Promise<void> {
   const sb = getAdmin();
-  if (!sb) return releaseQuotaInMemory(ip);
+  if (!sb) return releaseQuotaInMemory(key, amount);
   try {
-    const { data: row, error } = await sb.from("api_quota").select("count").eq("key", ip).maybeSingle();
+    const { data: row, error } = await sb.from("api_quota").select("count").eq("key", key).maybeSingle();
     if (error || !row) return;
-    if (row.count > 0) await sb.from("api_quota").update({ count: row.count - 1 }).eq("key", ip);
+    const next = Math.max(0, row.count - amount);
+    await sb.from("api_quota").update({ count: next }).eq("key", key);
   } catch {
     /* best effort : un crédit non rendu n'est jamais bloquant */
   }
@@ -157,19 +166,21 @@ export async function releaseQuota(ip: string): Promise<void> {
 // navigateur, le second reste un filet contre le partage d'un seul compte
 // entre plusieurs personnes. Les deux clés doivent passer pour continuer ;
 // si l'une échoue, celles déjà consommées sont immédiatement rendues.
-export async function checkQuotaBoth(keys: string[]): Promise<{ ok: boolean }> {
+export async function checkQuotaBoth(keys: string[], amount = 1): Promise<{ ok: boolean; remaining: number }> {
   const consumed: string[] = [];
+  let minRemaining = QUOTA_PER_DAY;
   for (const key of keys) {
-    const r = await checkQuota(key);
+    const r = await checkQuota(key, amount);
     if (!r.ok) {
-      for (const c of consumed) await releaseQuota(c);
-      return { ok: false };
+      for (const c of consumed) await releaseQuota(c, amount);
+      return { ok: false, remaining: r.remaining };
     }
+    minRemaining = Math.min(minRemaining, r.remaining);
     consumed.push(key);
   }
-  return { ok: true };
+  return { ok: true, remaining: minRemaining };
 }
 
-export async function releaseQuotaAll(keys: string[]): Promise<void> {
-  await Promise.all(keys.map((k) => releaseQuota(k)));
+export async function releaseQuotaAll(keys: string[], amount = 1): Promise<void> {
+  await Promise.all(keys.map((k) => releaseQuota(k, amount)));
 }
