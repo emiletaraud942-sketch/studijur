@@ -200,6 +200,11 @@ export default function TodayPage() {
           })}
         </div>
       </section>
+
+      <p className="text-center text-[12.5px]" style={{ color: "var(--muted)" }}>
+        StudiJur va continuer à s&apos;enrichir de nouvelles fonctionnalités pour te servir toujours mieux —{" "}
+        <Link href="/plus#suggestions" className="underline">dis-moi ce qui te manque</Link>, ça compte.
+      </p>
     </div>
   );
 }
