@@ -62,6 +62,21 @@ export function hasAccess(state: ProgressState): boolean {
   return state.profile.plan === "active" || trialDaysLeft(state) > 0;
 }
 
+// Le corpus fait 32 leçons : sans plafond, un élève motivé peut tout finir
+// pendant les 7 jours d'essai, avant même d'être passé à la caisse. Deux
+// leçons suffisent à donner un aperçu sans vider le corpus. Une leçon déjà
+// commencée reste toujours consultable, seules les nouvelles se verrouillent.
+export const TRIAL_LESSON_LIMIT = 2;
+
+export function trialLessonCapReached(state: ProgressState, lessonId: string): boolean {
+  if (state.profile.plan === "active") return false;
+  const dejaFaites = new Set(
+    Object.values(state.lessons).filter((l) => l.completedAt).map((l) => l.lessonId),
+  );
+  if (dejaFaites.has(lessonId)) return false;
+  return dejaFaites.size >= TRIAL_LESSON_LIMIT;
+}
+
 // La table `subscriptions` est tenue à jour par le webhook Stripe (voir
 // app/api/stripe/webhook/route.ts) mais rien ne la relisait jamais côté
 // application avant cette fonction : un abonnement payé ne débloquait donc

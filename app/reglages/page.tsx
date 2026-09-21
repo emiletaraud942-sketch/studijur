@@ -1,25 +1,18 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { useStudiJur, supabaseConfigured, trialDaysLeft } from "@/lib/state";
 import { allCourses } from "@/lib/corpus";
 import { getSupabase } from "@/lib/supabase";
-import { Button, SectionTitle, Tag } from "@/components/ui";
-import { Check, Cross } from "@/components/icons";
+import { Button, SectionTitle } from "@/components/ui";
+import { Check } from "@/components/icons";
 import Rappel from "@/components/Rappel";
-
-type Status = { anthropic: boolean; supabase: boolean; stripe: boolean; push: boolean; model: string };
 
 export default function SettingsPage() {
   const { state, ready, update, reset, signedInAs, syncing } = useStudiJur();
-  const [status, setStatus] = useState<Status | null>(null);
   const [confirmReset, setConfirmReset] = useState(false);
   const courses = allCourses(state.customCourses);
-
-  useEffect(() => {
-    fetch("/api/status").then((r) => r.json()).then(setStatus).catch(() => setStatus(null));
-  }, []);
 
   if (!ready) return <div className="py-24 text-center text-[14px]" style={{ color: "var(--muted)" }}>Chargement…</div>;
 
@@ -38,7 +31,7 @@ export default function SettingsPage() {
     <div className="space-y-8">
       <div>
         <h1 className="serif text-[28px] font-bold tracking-tight">Réglages</h1>
-        <p className="mt-1.5 text-[14.5px]" style={{ color: "var(--muted)" }}>Ton profil, ton programme et l&apos;état de l&apos;installation.</p>
+        <p className="mt-1.5 text-[14.5px]" style={{ color: "var(--muted)" }}>Ton profil, ton programme et ton compte.</p>
       </div>
 
       <section className="card p-5">
@@ -130,27 +123,6 @@ export default function SettingsPage() {
       </section>
 
       <section className="card p-5">
-        <SectionTitle kicker="Installation" title="État des services" />
-        <p className="mb-3 text-[13.5px]" style={{ color: "var(--muted)" }}>
-          StudiJur fonctionne sans aucune de ces clés. Chacune débloque une capacité supplémentaire.
-        </p>
-        <div className="space-y-2">
-          <Service on={status?.anthropic} label="API Claude"
-            off="Les cours déposés sont découpés par l'analyseur local, sans génération IA."
-            onText={`Génération complète des leçons (${status?.model ?? ""}).`} />
-          <Service on={status?.supabase} label="Supabase"
-            off="Progression stockée sur cet appareil uniquement."
-            onText="Comptes, synchronisation multi-appareils et sauvegarde." />
-          <Service on={status?.stripe} label="Stripe"
-            off="Le paiement est désactivé : l'accès reste ouvert."
-            onText="Abonnement et essai gratuit de 7 jours actifs." />
-          <Service on={status?.push} label="Rappel quotidien"
-            off="Les notifications ont besoin des clés VAPID et de Supabase."
-            onText="Les rappels partent chaque jour à l'heure choisie par l'élève." />
-        </div>
-      </section>
-
-      <section className="card p-5">
         <SectionTitle kicker="Application" title="Épingler StudiJur" />
         <p className="mb-3 text-[13.5px]" style={{ color: "var(--muted)" }}>
           Installée, StudiJur s&apos;ouvre en plein écran depuis ton bureau ou ton écran d&apos;accueil, comme une
@@ -235,19 +207,3 @@ function HowTo({ label, children }: { label: string; children: React.ReactNode }
   );
 }
 
-function Service({ on, label, off, onText }: { on?: boolean; label: string; off: string; onText: string }) {
-  return (
-    <div className="flex items-start gap-3 rounded-xl px-4 py-3" style={{ background: "var(--surface-2)" }}>
-      <span className="mt-0.5 grid h-5 w-5 shrink-0 place-items-center rounded-full"
-        style={on ? { background: "var(--good)", color: "var(--accent-ink)" } : { background: "var(--line-strong)", color: "var(--surface)" }}>
-        {on ? <Check className="h-3 w-3" /> : <Cross className="h-3 w-3" />}
-      </span>
-      <span className="min-w-0">
-        <span className="flex items-center gap-2 text-[14px] font-semibold">
-          {label} {on ? <Tag tone="hue">Actif</Tag> : <Tag>Inactif</Tag>}
-        </span>
-        <span className="mt-0.5 block text-[13px] leading-relaxed" style={{ color: "var(--muted)" }}>{on ? onText : off}</span>
-      </span>
-    </div>
-  );
-}
