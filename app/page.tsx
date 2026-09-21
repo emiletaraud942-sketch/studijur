@@ -87,6 +87,11 @@ export default function TodayPage() {
             Première visite ? Découvrir StudiJur en 30 secondes <Chevron className="h-3.5 w-3.5" />
           </Link>
         )}
+        <Link href="/plus#suggestions" className="mt-3 inline-flex items-center gap-1.5 text-[13.5px] font-semibold"
+          style={{ color: "var(--accent)" }}>
+          StudiJur va continuer à s&apos;enrichir de nouvelles fonctionnalités pour te servir toujours mieux —
+          dis-moi ce qui te manque, ça compte <Chevron className="h-3.5 w-3.5" />
+        </Link>
       </section>
 
       {daily && dailyCourse ? (
@@ -200,11 +205,6 @@ export default function TodayPage() {
           })}
         </div>
       </section>
-
-      <p className="text-center text-[12.5px]" style={{ color: "var(--muted)" }}>
-        StudiJur va continuer à s&apos;enrichir de nouvelles fonctionnalités pour te servir toujours mieux —{" "}
-        <Link href="/plus#suggestions" className="underline">dis-moi ce qui te manque</Link>, ça compte.
-      </p>
     </div>
   );
 }
