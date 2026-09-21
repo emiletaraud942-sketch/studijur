@@ -1,7 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { useStudiJur, hasAccess } from "@/lib/state";
+import { useStudiJur } from "@/lib/state";
 import { allCourses } from "@/lib/corpus";
 import { Button, SectionTitle, Tag } from "@/components/ui";
 import { inlineMarkup } from "@/lib/format";
@@ -28,11 +28,13 @@ export default function RevisionIntensivePage() {
 
   if (!ready) return <div className="py-24 text-center text-[14px]" style={{ color: "var(--muted)" }}>Chargement…</div>;
 
-  if (!hasAccess(state)) {
+  if (state.profile.plan !== "active") {
     return (
       <div className="mx-auto max-w-md py-20 text-center">
-        <h1 className="serif text-[24px] font-bold">Ton essai gratuit est terminé</h1>
-        <p className="mt-2 text-[15px]" style={{ color: "var(--muted)" }}>Abonne-toi pour retrouver la révision intensive.</p>
+        <h1 className="serif text-[24px] font-bold">Réservé aux abonnés</h1>
+        <p className="mt-2 text-[15px]" style={{ color: "var(--muted)" }}>
+          La fiche de dernière minute et le quiz éclair débloquent avec l&apos;abonnement.
+        </p>
         <div className="mt-6"><Button href="/abonnement" size="lg">Voir les formules</Button></div>
       </div>
     );

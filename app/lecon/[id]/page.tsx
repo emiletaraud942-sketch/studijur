@@ -3,8 +3,8 @@
 import Link from "next/link";
 import { useParams, useRouter } from "next/navigation";
 import { useEffect, useMemo, useState } from "react";
-import { useStudiJur, hasAccess } from "@/lib/state";
-import { findLesson, findCourse, neighbours } from "@/lib/corpus";
+import { useStudiJur, hasAccess, trialLessonCapReached, TRIAL_LESSON_LIMIT } from "@/lib/state";
+import { findLesson, findCourse, neighbours, corpusStats } from "@/lib/corpus";
 import { Button, Prose, Tag } from "@/components/ui";
 import { inlineMarkup } from "@/lib/format";
 import { Arrow, Cards, Check, Cross, Flame, Quill, Target } from "@/components/icons";
@@ -51,6 +51,19 @@ export default function LessonPage() {
       <div className="py-24 text-center">
         <p className="text-[15px]" style={{ color: "var(--muted)" }}>Cette leçon n&apos;existe pas.</p>
         <div className="mt-4"><Button href="/" variant="outline">Retour à l&apos;accueil</Button></div>
+      </div>
+    );
+  }
+
+  if (trialLessonCapReached(state, lesson.id)) {
+    return (
+      <div className="mx-auto max-w-md py-20 text-center">
+        <h1 className="serif text-[24px] font-bold">Tes {TRIAL_LESSON_LIMIT} leçons d&apos;essai sont faites</h1>
+        <p className="mt-2 text-[15px]" style={{ color: "var(--muted)" }}>
+          Abonne-toi pour débloquer les {corpusStats(state.customCourses).lessons} leçons du corpus et continuer
+          tes séances quotidiennes. Ta progression et ta série sont conservées.
+        </p>
+        <div className="mt-6"><Button href="/abonnement" size="lg">Voir les formules</Button></div>
       </div>
     );
   }
