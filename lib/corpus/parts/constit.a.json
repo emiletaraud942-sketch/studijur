@@ -1,0 +1,234 @@
+[
+  {
+    "id": "constit-01",
+    "order": 1,
+    "title": "Qu'est-ce que le droit constitutionnel ?",
+    "teaser": "« Tout le droit constitutionnel n'est pas dans la Constitution » — pourquoi Vedel a raison.",
+    "minutes": 5,
+    "brief": [
+      "Le droit constitutionnel est la branche du droit public qui régit l'**organisation et le fonctionnement de l'État** ainsi que les rapports entre les gouvernants et les gouvernés. Il s'intéresse donc à un certain type de normes : celles qui fondent le pouvoir, le répartissent et le limitent. Trois notions lui sont indissociables : l'État, la Constitution, et la souveraineté.",
+      "La formule de **Georges Vedel** — « Tout le droit constitutionnel n'est pas dans la Constitution » — résume une idée essentielle. La Constitution est le texte central, mais le droit constitutionnel déborde largement ce texte : il comprend la jurisprudence du Conseil constitutionnel, les lois organiques, les règlements des assemblées, et une part considérable de **pratiques et de coutumes**. L'exemple le plus parlant est le **Royaume-Uni**, qui n'a pas de Constitution écrite unique et dispose pourtant d'un droit constitutionnel très dense, fait de textes épars, de conventions de la Constitution et de jurisprudence.",
+      "Inversement, il est possible que le droit constitutionnel s'émancipe de l'État. Le projet de **traité établissant une Constitution pour l'Europe**, soumis à référendum en 2004 et rejeté par la France en 2005, en est la tentative la plus aboutie : un ordre juridique non étatique se dotant d'un texte de nature constitutionnelle. L'échec du projet montre les limites de cette émancipation, mais l'idée demeure.",
+      "Comme discipline universitaire, le droit constitutionnel naît en France avec l'**ordonnance de Guizot de 1834**, qui crée la première chaire. Son intérêt n'est pas seulement théorique : c'est un droit **transversal** qui irrigue tous les métiers. La non-rétroactivité de la loi pénale plus sévère, la présomption d'innocence, la légalité des délits et des peines sont des principes constitutionnels que l'avocat pénaliste mobilise quotidiennement. Depuis 2010, la **question prioritaire de constitutionnalité** permet même à tout justiciable de contester, au cours de son procès, la constitutionnalité de la loi qu'on veut lui appliquer."
+    ],
+    "keyPoints": [
+      "Objet : organisation de l'État, exercice et limitation du pouvoir.",
+      "Vedel : « Tout le droit constitutionnel n'est pas dans la Constitution » — voir le Royaume-Uni.",
+      "Naissance de la discipline : ordonnance de Guizot, 1834.",
+      "Droit transversal, rendu concret pour le justiciable par la QPC depuis 2010."
+    ],
+    "definitions": [
+      { "term": "Droit constitutionnel", "text": "Branche du droit public regroupant les règles relatives à l'organisation et au fonctionnement de l'État, à la dévolution du pouvoir et aux rapports entre gouvernants et gouvernés." },
+      { "term": "Constitution", "text": "Ensemble des règles, écrites ou non, qui déterminent la forme de l'État, l'organisation de ses organes et les droits garantis aux citoyens. Elle occupe le sommet de la hiérarchie des normes internes." },
+      { "term": "Convention de la Constitution", "text": "Pratique constante suivie par les acteurs politiques, tenue pour obligatoire sans être juridiquement sanctionnée. Notion centrale du droit constitutionnel britannique." },
+      { "term": "Question prioritaire de constitutionnalité (QPC)", "text": "Procédure permettant à tout justiciable de soutenir, à l'occasion d'une instance, qu'une disposition législative porte atteinte aux droits et libertés garantis par la Constitution.", "source": "Article 61-1 de la Constitution" },
+      { "term": "Constitutionnalisme", "text": "Doctrine selon laquelle le pouvoir politique doit être encadré par un texte supérieur garantissant les droits des gouvernés et la séparation des pouvoirs." }
+    ],
+    "exam": {
+      "kind": "dissertation",
+      "question": "Expliquez la formule de Georges Vedel : « Tout le droit constitutionnel n'est pas dans la Constitution. »",
+      "concise": "La formule signifie que le texte constitutionnel ne suffit pas à décrire le droit constitutionnel réellement applicable. D'abord parce que la Constitution est **complétée** par des normes qui n'y figurent pas : lois organiques, règlements des assemblées, jurisprudence du Conseil constitutionnel — dont la décision du 16 juillet 1971 a elle-même élargi le bloc de constitutionnalité bien au-delà du texte de 1958. Ensuite parce qu'elle est **prolongée par la pratique** : la lecture présidentialiste de la Ve République, l'usage du droit de dissolution, la cohabitation ne sont écrits nulle part et pèsent pourtant plus que bien des articles. L'exemple britannique pousse la démonstration à son terme : un État peut avoir un droit constitutionnel dense sans Constitution écrite unique. La formule invite donc à distinguer la Constitution **formelle**, texte adopté selon une procédure solennelle, et la Constitution **matérielle**, ensemble des règles qui organisent effectivement le pouvoir.",
+      "plan": [
+        {
+          "title": "I. Un droit constitutionnel plus large que le texte constitutionnel",
+          "children": [
+            { "title": "A. L'élargissement du bloc de constitutionnalité", "points": ["CC, 16 juillet 1971, Liberté d'association : valeur contraignante du préambule", "DDHC 1789, préambule de 1946, Charte de l'environnement 2004, PFRLR", "La jurisprudence constitutionnelle comme source à part entière"] },
+            { "title": "B. Les normes constitutionnelles hors Constitution", "points": ["Lois organiques et règlements des assemblées", "Les conventions de la Constitution et les pratiques institutionnelles", "L'exemple britannique : un droit constitutionnel sans Constitution écrite unique"] }
+          ]
+        },
+        {
+          "title": "II. Une distinction entre Constitution formelle et Constitution matérielle",
+          "children": [
+            { "title": "A. La Constitution formelle : un critère procédural", "points": ["Texte adopté et révisé selon une procédure solennelle, article 89", "La rigidité constitutionnelle comme garantie de suprématie", "Limite : le formalisme ne dit rien du contenu"] },
+            { "title": "B. La Constitution matérielle : un critère substantiel", "points": ["Toutes les règles relatives à l'organisation du pouvoir, quelle que soit leur forme", "La pratique de la Ve République : lecture présidentialiste, cohabitation, fait majoritaire", "Conclusion : le droit constitutionnel vit autant dans la pratique que dans le texte"] }
+          ]
+        }
+      ],
+      "pitfalls": [
+        "Ne pas réduire la démonstration au Royaume-Uni : c'est un exemple, pas le plan.",
+        "Ne pas confondre Constitution matérielle et bloc de constitutionnalité : le bloc est un ensemble de normes formellement constitutionnelles."
+      ]
+    },
+    "quiz": [
+      { "q": "La chaire de droit constitutionnel est créée en France par :", "choices": ["La Constitution de 1791", "L'ordonnance de Guizot de 1834", "La loi de 1875", "La Constitution de 1958"], "answer": 1, "why": "L'ordonnance de Guizot de 1834 crée la première chaire de droit constitutionnel : c'est l'acte de naissance de la discipline en France." },
+      { "q": "Le Royaume-Uni est un exemple d'État :", "choices": ["Sans droit constitutionnel", "Sans Constitution écrite unique", "Sans Parlement", "Sans contrôle juridictionnel"], "answer": 1, "why": "Son droit constitutionnel existe bel et bien, mais il est dispersé entre textes historiques, conventions et jurisprudence." },
+      { "q": "La QPC permet à un justiciable de :", "choices": ["Contester une loi devant la CEDH", "Soutenir qu'une loi applicable à son litige viole les droits garantis par la Constitution", "Saisir directement le Conseil constitutionnel", "Faire annuler un décret"], "answer": 1, "why": "La saisine n'est jamais directe : elle passe par le filtrage du juge du fond puis de la Cour de cassation ou du Conseil d'État." },
+      { "q": "Le projet de Constitution pour l'Europe a été rejeté par la France en :", "choices": ["2004", "2005", "2007", "2008"], "answer": 1, "why": "Signé en 2004, il est rejeté par référendum le 29 mai 2005 ; le traité de Lisbonne de 2007 en reprendra une partie du contenu." },
+      { "q": "La Constitution formelle se définit par :", "choices": ["Son contenu", "La procédure solennelle de son adoption et de sa révision", "Sa longueur", "Son ancienneté"], "answer": 1, "why": "Le critère formel est procédural : est constitutionnelle la norme adoptée selon la procédure constituante, quel que soit son objet." }
+    ]
+  },
+  {
+    "id": "constit-02",
+    "order": 2,
+    "title": "La naissance de l'État moderne",
+    "teaser": "De la polis grecque au modèle agonistique : pourquoi la cité antique n'est qu'un proto-État.",
+    "minutes": 5,
+    "brief": [
+      "Le mot État vient du latin *status*, « se tenir debout ». Il désigne à la fois un ensemble de symboles — drapeau, hymne, monnaie — et un ensemble d'activités. Juridiquement, c'est une **fiction** : une personne morale abstraite, distincte des individus qui la composent et de ceux qui la gouvernent. Deux conceptions s'opposent : la conception **holiste**, qui voit dans l'État la personnification juridique de la collectivité nationale tout entière, et la conception **réductionniste**, qui n'y voit que la somme des principales institutions politiques.",
+      "La **cité-État grecque**, la *polis*, est souvent présentée comme le premier État. C'est inexact. Elle possède bien une organisation structurée — l'*ecclesia*, les magistratures, les tribunaux — mais les Grecs n'ont jamais théorisé la cité comme une **entité abstraite distincte des citoyens**. La cité, c'est le corps des citoyens lui-même. Il n'y a pas de personne morale qui survivrait au renouvellement de ses membres. On parle donc de **proto-État**.",
+      "La **féodalité** marque un autre stade. Le pouvoir y est fragmenté et personnel : il repose sur le **contrat vassalique**, par lequel un seigneur se lie à un suzerain. Ce lien est interpersonnel, non territorial ni institutionnel. Il n'y a pas d'État parce qu'il n'y a pas de pouvoir souverain unique s'imposant à tous sur un territoire donné.",
+      "C'est le **modèle agonistique** — du grec *agôn*, le combat — qui produit l'État. Les royaumes les plus faibles sont éliminés au profit des familles les plus puissantes, par la guerre et l'alliance. L'unification progressive de vastes royaumes crée un besoin nouveau : justifier un pouvoir qui ne repose plus sur des liens personnels mais sur la domination d'un territoire. La réponse viendra de Machiavel puis de Bodin."
+    ],
+    "keyPoints": [
+      "État = fiction juridique, personne morale abstraite distincte des gouvernants.",
+      "Holiste (personnification de la nation) contre réductionniste (somme des institutions).",
+      "La polis grecque est un proto-État : pas d'entité abstraite distincte des citoyens.",
+      "Féodalité = pouvoir personnel et vassalique ; le modèle agonistique produit l'unification."
+    ],
+    "definitions": [
+      { "term": "État", "text": "Personne morale de droit public, titulaire de la souveraineté, exerçant un pouvoir de contrainte sur une population déterminée fixée sur un territoire délimité." },
+      { "term": "Conception holiste de l'État", "text": "Analyse selon laquelle l'État est la personnification juridique de la collectivité nationale prise dans son ensemble." },
+      { "term": "Conception réductionniste de l'État", "text": "Analyse selon laquelle l'État n'est rien d'autre que la somme cumulée des principales institutions politiques qui le composent." },
+      { "term": "Polis", "text": "Cité-État grecque, entité politique limitée à une ville et ses alentours, dotée d'institutions structurées mais jamais pensée comme une abstraction distincte du corps des citoyens." },
+      { "term": "Contrat vassalique", "text": "Lien féodal par lequel un seigneur se reconnaît vassal d'un suzerain, en échange de la protection et d'une tenure. Pouvoir personnel, non territorial." }
+    ],
+    "exam": {
+      "kind": "dissertation",
+      "question": "En quel sens peut-on dire que la cité grecque n'est pas encore un État au sens moderne du terme ?",
+      "concise": "La cité grecque possède plusieurs attributs que l'on retrouvera dans l'État : un territoire délimité, une population de citoyens, des institutions organisées — assemblée, magistratures, tribunaux — et une capacité à édicter des normes obligatoires. Elle mérite donc le nom de proto-État. Mais il lui manque le trait décisif : l'**abstraction**. Les Grecs n'ont jamais conçu la cité comme une personne morale distincte du corps des citoyens qui la composent ; la *polis*, ce sont les citoyens réunis, et rien de plus. Il en résulte trois manques : pas de continuité de la personne publique par-delà le renouvellement de ses membres, pas de distinction entre la fonction et celui qui l'occupe, et pas de souveraineté au sens de puissance suprême, perpétuelle et indivisible. Ces trois éléments ne seront théorisés qu'au XVIe siècle, avec Machiavel puis Bodin.",
+      "plan": [
+        {
+          "title": "I. Une cité dotée des attributs matériels de l'État",
+          "children": [
+            { "title": "A. Un cadre territorial et humain identifiable", "points": ["Un territoire limité : la ville et sa chôra", "Un corps de citoyens défini par la naissance, excluant métèques et esclaves", "Une autonomie politique revendiquée à l'égard des autres cités"] },
+            { "title": "B. Des institutions structurées", "points": ["L'ecclesia, assemblée des citoyens", "Les magistratures, la boulè, les tribunaux populaires", "Une capacité normative : le vote de décrets et de lois"] }
+          ]
+        },
+        {
+          "title": "II. Une cité privée de l'abstraction étatique",
+          "children": [
+            { "title": "A. L'absence de personne morale distincte", "points": ["La cité se confond avec le corps des citoyens", "Pas de continuité de la personne publique au-delà de ses membres", "Pas de patrimoine public distinct des patrimoines privés"] },
+            { "title": "B. L'absence de souveraineté théorisée", "points": ["Aucune distinction entre la fonction et son titulaire", "Le concept de souveraineté ne sera forgé qu'au XVIe siècle par Jean Bodin", "Conclusion : un proto-État, matrice institutionnelle mais non modèle juridique"] }
+          ]
+        }
+      ],
+      "pitfalls": [
+        "Ne pas dire que les Grecs « ignoraient le droit » : ils avaient un droit très développé, ce qui leur manque est le concept d'État abstrait.",
+        "Ne pas confondre démocratie athénienne et État démocratique moderne."
+      ]
+    },
+    "quiz": [
+      { "q": "Le mot État vient du latin :", "choices": ["Civitas", "Status", "Res publica", "Imperium"], "answer": 1, "why": "Status, « se tenir debout », d'où l'idée de stabilité et de permanence de l'institution." },
+      { "q": "La conception holiste de l'État le définit comme :", "choices": ["La somme des institutions politiques", "La personnification juridique de la collectivité nationale", "Un ensemble de fonctionnaires", "Un territoire"], "answer": 1, "why": "La conception réductionniste, elle, n'y voit que la somme cumulée des principales institutions politiques." },
+      { "q": "La cité grecque est qualifiée de proto-État parce qu'elle :", "choices": ["Était trop petite", "N'a jamais été pensée comme une entité abstraite distincte des citoyens", "N'avait pas de lois", "N'avait pas de territoire"], "answer": 1, "why": "C'est l'abstraction juridique qui manque, non la taille ni les institutions." },
+      { "q": "Le contrat vassalique fonde un pouvoir :", "choices": ["Territorial et souverain", "Personnel et interpersonnel", "Démocratique", "Constitutionnel"], "answer": 1, "why": "Le lien féodal unit deux personnes, pas un pouvoir à un territoire : c'est ce qui empêche l'émergence de l'État." },
+      { "q": "Le modèle agonistique désigne :", "choices": ["Un mode de scrutin", "L'élimination des royaumes faibles au profit des plus puissants", "Une théorie du contrat social", "Un type de Constitution"], "answer": 1, "why": "Du grec agôn, le combat : la guerre et l'alliance unifient progressivement de vastes royaumes, créant le besoin d'un pouvoir souverain." }
+    ]
+  },
+  {
+    "id": "constit-03",
+    "order": 3,
+    "title": "Machiavel et Bodin : la pensée de la souveraineté",
+    "teaser": "Sécularisation du pouvoir, raison d'État, puis une puissance absolue, perpétuelle et indivisible.",
+    "minutes": 5,
+    "brief": [
+      "**Machiavel** (1469-1527) opère la première rupture décisive avec *Le Prince*. Il **sécularise le pouvoir** : le politique cesse d'être subordonné au religieux, le prince se sépare de l'Église. Attention au contresens fréquent : sécularisation ne signifie pas athéisme. Machiavel ne nie pas la religion, il lui assigne un domaine — le spirituel — dont le politique est désormais distinct.",
+      "De cette séparation découle la **raison d'État** : pour bien gouverner, le prince peut s'affranchir de la morale chrétienne, dès lors que cela sert le maintien de son pouvoir et la stabilité de l'État. Machiavel n'est donc pas immoral au sens vulgaire : il constate que la logique politique obéit à des règles propres, distinctes des règles morales. Il décrit ce qui est, non ce qui devrait être.",
+      "**Jean Bodin** (1530-1596) accomplit la seconde rupture avec *Les Six Livres de la République* (1576). Il forge le concept de **souveraineté** : une puissance **absolue**, **perpétuelle** et **indivisible**, exercée par le roi. Absolue, elle n'est soumise à aucun pouvoir supérieur dans l'ordre temporel. Perpétuelle, elle ne s'éteint pas avec celui qui la détient. Indivisible, elle ne se partage pas entre plusieurs titulaires.",
+      "La conséquence est capitale, et c'est le point que les correcteurs attendent : le roi ne **détient que la fonction** de souveraineté, il n'est pas la souveraineté elle-même. La souveraineté appartient à l'État, entité abstraite. Il en résulte que **l'État ne meurt jamais** : « le roi est mort, vive le roi ». La continuité de l'État par-delà la mort de ses gouvernants est la contribution majeure de Bodin, et l'un des fondements du droit public moderne."
+    ],
+    "keyPoints": [
+      "Machiavel : sécularisation du pouvoir et raison d'État — pas athéisme.",
+      "Bodin, 1576 : la souveraineté est absolue, perpétuelle et indivisible.",
+      "Le roi détient la fonction de souverain, il n'est pas la souveraineté.",
+      "Conséquence décisive : l'État ne meurt jamais, il survit à ses gouvernants."
+    ],
+    "definitions": [
+      { "term": "Sécularisation du pouvoir", "text": "Séparation du pouvoir politique et des institutions religieuses, théorisée par Machiavel : le prince gouverne selon une logique propre, distincte de l'autorité spirituelle." },
+      { "term": "Raison d'État", "text": "Principe selon lequel le maintien de l'État peut justifier que le gouvernant s'affranchisse des règles morales ordinaires." },
+      { "term": "Souveraineté", "text": "Puissance suprême de l'État, absolue, perpétuelle et indivisible, qui ne connaît aucun pouvoir supérieur ni concurrent dans l'ordre interne.", "source": "Jean Bodin, Les Six Livres de la République, 1576" },
+      { "term": "Caractère perpétuel de la souveraineté", "text": "Trait par lequel la souveraineté ne s'éteint pas avec la personne qui l'exerce : elle appartient à l'État, qui survit à ses gouvernants." },
+      { "term": "Distinction de la fonction et du titulaire", "text": "Principe selon lequel le pouvoir appartient à l'institution et non à la personne qui l'occupe. Fondement de la continuité de l'État." }
+    ],
+    "exam": {
+      "kind": "question de cours",
+      "question": "En quoi la théorie de la souveraineté de Jean Bodin fonde-t-elle la continuité de l'État ?",
+      "concise": "Bodin définit la souveraineté comme une puissance absolue, perpétuelle et indivisible. Le caractère **perpétuel** est celui qui fonde la continuité de l'État. En posant que la souveraineté ne s'éteint pas avec celui qui l'exerce, Bodin dissocie la **fonction** souveraine de la **personne** du roi : le roi n'est pas la souveraineté, il en est le dépositaire temporaire. Il en résulte que la mort du monarque n'emporte aucune vacance du pouvoir — « le roi est mort, vive le roi » — et que l'État, titulaire véritable de la souveraineté, ne meurt jamais. Cette construction a trois conséquences durables : elle fonde la personnalité morale de l'État, elle permet la continuité des engagements pris au nom de l'État par-delà les changements de gouvernants, et elle rend possible la distinction moderne entre les organes de l'État et l'État lui-même. C'est le socle sur lequel Carré de Malberg bâtira la définition juridique de l'État.",
+      "plan": [
+        {
+          "title": "I. Une souveraineté détachée de la personne du souverain",
+          "children": [
+            { "title": "A. Les trois caractères posés en 1576", "points": ["Absolue : aucun pouvoir supérieur dans l'ordre temporel", "Perpétuelle : elle ne s'éteint pas avec son titulaire", "Indivisible : elle ne se partage pas entre plusieurs autorités"] },
+            { "title": "B. La dissociation de la fonction et du titulaire", "points": ["Le roi exerce la souveraineté, il ne l'incarne pas", "Rupture avec la logique féodale du pouvoir personnel", "Machiavel avait préparé le terrain en sécularisant le pouvoir"] }
+          ]
+        },
+        {
+          "title": "II. Une théorie fondatrice du droit public moderne",
+          "children": [
+            { "title": "A. La continuité de l'État", "points": ["« Le roi est mort, vive le roi » : pas de vacance du pouvoir", "Continuité des engagements et des dettes de l'État", "Naissance de la personnalité morale de l'État"] },
+            { "title": "B. Les prolongements de la construction", "points": ["Les théories contractualistes déplaceront le titulaire de la souveraineté vers le peuple ou la nation", "Carré de Malberg et la définition juridique de l'État par trois éléments", "Limite : l'absolutisme de Bodin sera récusé par le constitutionnalisme"] }
+          ]
+        }
+      ],
+      "pitfalls": [
+        "Ne pas présenter Machiavel comme un immoraliste : il sépare morale et politique, il ne nie pas la morale.",
+        "Ne jamais écrire que la souveraineté « appartient au roi » chez Bodin : elle appartient à l'État, le roi l'exerce."
+      ]
+    },
+    "quiz": [
+      { "q": "Chez Machiavel, la sécularisation du pouvoir signifie :", "choices": ["Le rejet de toute religion", "La séparation du politique et du religieux", "La soumission du prince au pape", "La fin des guerres de religion"], "answer": 1, "why": "Machiavel ne nie pas la religion : il l'assigne au spirituel et libère le politique de sa tutelle." },
+      { "q": "Les trois caractères de la souveraineté chez Bodin sont :", "choices": ["Écrite, rigide, suprême", "Absolue, perpétuelle, indivisible", "Nationale, populaire, déléguée", "Législative, exécutive, judiciaire"], "answer": 1, "why": "Ce triptyque de 1576 est le socle de toute la théorie moderne de la souveraineté." },
+      { "q": "Selon Bodin, la souveraineté appartient :", "choices": ["Au roi personnellement", "À l'État, le roi n'en exerçant que la fonction", "Au peuple", "Au Parlement"], "answer": 1, "why": "C'est le point décisif : la dissociation de la fonction et du titulaire, qui fonde la continuité de l'État." },
+      { "q": "Les Six Livres de la République ont été publiés en :", "choices": ["1532", "1576", "1651", "1690"], "answer": 1, "why": "1576 pour Bodin. 1532 pour Le Prince de Machiavel, 1651 pour le Léviathan de Hobbes, 1690 pour Locke." },
+      { "q": "La formule « le roi est mort, vive le roi » illustre :", "choices": ["Le caractère absolu de la souveraineté", "Le caractère perpétuel de la souveraineté", "Le caractère indivisible de la souveraineté", "La raison d'État"], "answer": 1, "why": "La perpétuité : il n'y a jamais de vacance, parce que la souveraineté appartient à l'État et non à la personne du roi." }
+    ]
+  },
+  {
+    "id": "constit-04",
+    "order": 4,
+    "title": "Les théories du contrat social",
+    "teaser": "Hobbes, Locke, Rousseau : trois états de nature, trois transferts, trois régimes.",
+    "minutes": 5,
+    "brief": [
+      "Les théories contractualistes cherchent à **justifier** l'État plutôt qu'à en décrire l'origine historique. Le raisonnement est une fiction : imaginons les hommes avant toute société — l'**état de nature** — et demandons-nous pourquoi ils ont consenti à sortir de cet état en transférant leurs pouvoirs à un gouvernant. La réponse donnée à cette question détermine la nature du pouvoir obtenu. C'est pourquoi les trois auteurs majeurs, partant de la même méthode, aboutissent à trois régimes différents.",
+      "**Thomas Hobbes** (*Léviathan*, 1651) décrit un état de nature de **guerre de tous contre tous** : l'homme est un loup pour l'homme, la vie y est « solitaire, misérable, dangereuse, animale et brève ». Pour en sortir, les hommes transfèrent la totalité de leurs droits au souverain, de façon **totale et irrévocable**. Le souverain n'est pas partie au contrat : il ne s'engage à rien. Conséquence logique : le pouvoir est absolu, et il n'existe pas de droit de résistance.",
+      "**John Locke** (*Second traité du gouvernement civil*, 1690) part d'un état de nature **paisible**, où les hommes jouissent déjà de droits naturels — vie, liberté, propriété. Ce qui manque n'est pas la paix mais un juge impartial. Le transfert est donc **partiel et conditionnel** : les hommes confient au pouvoir la seule fonction d'arbitrer, à charge pour lui de respecter les droits naturels. S'il y manque, le peuple retrouve un **droit de résistance**. Locke fonde ainsi le libéralisme politique.",
+      "**Jean-Jacques Rousseau** (*Du contrat social*, 1762) déplace la question. Son état de nature est celui d'un homme naturellement bon, corrompu par la société — en particulier par l'appropriation privée. Le contrat n'est pas un transfert à un tiers : chacun s'aliène totalement à la **communauté** et reçoit en retour la qualité de citoyen. Le souverain, c'est le peuple lui-même exerçant la **volonté générale**, qui n'est pas la somme des intérêts particuliers mais ce que veut le corps politique en tant que tel. Le pouvoir est donc absolu, mais entre les mains du peuple : c'est la matrice de la souveraineté populaire et de la démocratie directe."
+    ],
+    "keyPoints": [
+      "Hobbes : état de nature chaotique, transfert total et irrévocable, absolutisme, pas de droit de résistance.",
+      "Locke : état de nature paisible, transfert partiel et conditionnel, droit de résistance, libéralisme.",
+      "Rousseau : aliénation à la communauté, volonté générale, souveraineté populaire.",
+      "La nature de l'état de nature détermine la nature du régime obtenu."
+    ],
+    "definitions": [
+      { "term": "État de nature", "text": "Fiction théorique décrivant la condition des hommes avant toute organisation politique, servant à justifier la nécessité et les limites du pouvoir." },
+      { "term": "Contrat social", "text": "Construction théorique expliquant le passage de l'état de nature à l'état civil par un accord fondateur transférant tout ou partie des pouvoirs individuels." },
+      { "term": "Léviathan", "text": "Figure du souverain absolu chez Hobbes, monstre biblique composé de la multitude des individus, seul capable de faire cesser la guerre de tous contre tous.", "source": "Thomas Hobbes, Léviathan, 1651" },
+      { "term": "Droit de résistance", "text": "Faculté reconnue au peuple, chez Locke, de renverser le gouvernement qui viole les droits naturels qu'il avait mission de protéger." },
+      { "term": "Volonté générale", "text": "Chez Rousseau, volonté du corps politique considéré comme un tout, qui se distingue de la volonté de tous, simple somme des intérêts particuliers.", "source": "Jean-Jacques Rousseau, Du contrat social, 1762" }
+    ],
+    "exam": {
+      "kind": "dissertation",
+      "question": "Comparez les conceptions de l'état de nature chez Hobbes et chez Locke, et expliquez en quoi cette différence détermine la nature du transfert de pouvoir.",
+      "concise": "Hobbes et Locke usent de la même méthode — la fiction de l'état de nature — mais lui donnent un contenu opposé, et c'est cette opposition qui commande tout le reste. Chez **Hobbes**, l'état de nature est une guerre de tous contre tous, où l'égalité des forces rend chacun mortellement menaçant pour chacun ; il n'y existe ni droit ni propriété assurée. La sortie exige donc un remède radical : un transfert **total et irrévocable** de tous les droits à un souverain qui, n'étant pas partie au contrat, n'est tenu par rien. D'où un pouvoir absolu et l'absence de droit de résistance. Chez **Locke**, l'état de nature est au contraire paisible et déjà régi par une loi naturelle garantissant vie, liberté et propriété ; le seul défaut est l'absence d'un juge impartial. Le remède peut donc être limité : le transfert est **partiel et conditionnel**, borné à la fonction d'arbitrage, et assorti d'un droit de résistance si le pouvoir trahit sa mission. On mesure ainsi que la sévérité du diagnostic commande l'étendue du remède : Hobbes fonde l'absolutisme, Locke le libéralisme constitutionnel.",
+      "plan": [
+        {
+          "title": "I. Deux diagnostics opposés de l'état de nature",
+          "children": [
+            { "title": "A. Hobbes : l'état de nature comme état de guerre", "points": ["Homo homini lupus : l'égalité des forces engendre la peur réciproque", "Absence de droit, de propriété, d'industrie : une vie brève et misérable", "Le désir de conservation comme unique moteur de la sortie"] },
+            { "title": "B. Locke : l'état de nature comme état paisible imparfait", "points": ["Une loi naturelle préexistante garantissant vie, liberté et propriété", "Le seul manque : un juge impartial et une force commune d'exécution", "Le travail comme fondement de la propriété, antérieur à l'État"] }
+          ]
+        },
+        {
+          "title": "II. Deux transferts, deux régimes",
+          "children": [
+            { "title": "A. Le transfert total et irrévocable de Hobbes", "points": ["Le souverain n'est pas partie au contrat : il n'est tenu par rien", "Un pouvoir absolu et indivisible, le Léviathan", "Conséquence : aucun droit de résistance, sauf menace directe sur la vie"] },
+            { "title": "B. Le transfert partiel et conditionnel de Locke", "points": ["Un mandat limité à la protection des droits naturels", "Séparation des pouvoirs législatif et exécutif, ébauche du constitutionnalisme", "Le droit de résistance comme sanction du manquement, matrice des révolutions de 1688 et 1776"] }
+          ]
+        }
+      ],
+      "pitfalls": [
+        "Ne pas plaquer Rousseau sur la comparaison demandée : il peut servir d'ouverture, pas de troisième partie.",
+        "Chez Hobbes, le souverain n'est pas partie au contrat : c'est ce qui explique qu'il ne soit tenu par rien."
+      ]
+    },
+    "quiz": [
+      { "q": "Chez Hobbes, l'état de nature est :", "choices": ["Paisible", "Une guerre de tous contre tous", "Régi par un juge", "Fondé sur la propriété"], "answer": 1, "why": "L'égalité des forces engendre la peur réciproque : la vie y est solitaire, misérable, dangereuse, animale et brève." },
+      { "q": "Chez Locke, le transfert de pouvoir est :", "choices": ["Total et irrévocable", "Partiel et conditionnel", "Inexistant", "Réservé aux propriétaires"], "answer": 1, "why": "Les hommes ne confient que la fonction d'arbitrage ; si le pouvoir viole les droits naturels, le droit de résistance renaît." },
+      { "q": "Le Léviathan a été publié en :", "choices": ["1576", "1651", "1690", "1762"], "answer": 1, "why": "1651 pour Hobbes, 1690 pour le Second traité de Locke, 1762 pour Du contrat social de Rousseau." },
+      { "q": "Chez Rousseau, le souverain est :", "choices": ["Le monarque", "Le peuple exerçant la volonté générale", "Le Parlement", "Le juge"], "answer": 1, "why": "Le contrat n'est pas un transfert à un tiers : chacun s'aliène à la communauté et devient citoyen, membre du souverain." },
+      { "q": "La volonté générale se distingue de la volonté de tous parce qu'elle :", "choices": ["Est votée à l'unanimité", "N'est pas la somme des intérêts particuliers", "Émane du monarque", "Est écrite dans la Constitution"], "answer": 1, "why": "La volonté de tous additionne les intérêts particuliers ; la volonté générale est ce que veut le corps politique en tant que tel." }
+    ]
+  }
+]

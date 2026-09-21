@@ -1,0 +1,234 @@
+[
+  {
+    "id": "histoire-01",
+    "order": 1,
+    "title": "Les droits cunéiformes",
+    "teaser": "Hammurabi, la loi du talion et la première mise par écrit du droit.",
+    "minutes": 5,
+    "brief": [
+      "Les premiers témoignages de droit public nous viennent de **Mésopotamie**, entre le Tigre et l'Euphrate, à partir du troisième millénaire avant notre ère. On les appelle **droits cunéiformes**, du nom de l'écriture en forme de coins gravée sur des tablettes d'argile. Leur découverte a bouleversé l'histoire du droit : elle montre que la mise par écrit des règles précède de très loin la Grèce et Rome.",
+      "Le texte le plus célèbre est le **Code de Hammurabi**, roi de Babylone, gravé vers 1750 avant notre ère sur une stèle de basalte conservée au Louvre. Il rassemble environ 280 dispositions. Le mot « code » est trompeur : ce n'est pas un code au sens moderne, c'est-à-dire un ensemble systématique et exhaustif de règles générales. C'est plutôt un recueil de **solutions casuistiques** — « si un homme a fait ceci, alors il subira cela » — présentées comme des décisions royales exemplaires.",
+      "Deux traits sont à retenir. Le premier est la **loi du talion** : « œil pour œil, dent pour dent ». On y voit souvent une barbarie ; c'est en réalité un progrès, car le talion **limite** la vengeance en la proportionnant à l'offense, là où la vengeance privée était sans mesure. Le second est l'**inégalité des peines selon le statut social** : la sanction diffère selon que la victime est un homme libre, un subalterne ou un esclave. Le droit décrit et consacre une société hiérarchisée.",
+      "Le prologue de la stèle éclaire la fonction politique de l'écrit. Hammurabi y affirme avoir reçu sa mission du dieu Shamash, dieu du soleil et de la justice, pour « faire régner la justice dans le pays » et empêcher que le fort n'opprime le faible. Le droit est ainsi placé sous une **légitimation religieuse**, et l'écrit sert autant à afficher la puissance du roi qu'à informer ses sujets."
+    ],
+    "keyPoints": [
+      "Droits cunéiformes : Mésopotamie, IIIe millénaire, tablettes d'argile.",
+      "Code de Hammurabi, vers 1750 av. J.-C., environ 280 dispositions casuistiques — pas un code moderne.",
+      "Loi du talion : non pas une barbarie mais une limitation proportionnée de la vengeance.",
+      "Peines inégales selon le statut social ; légitimation religieuse du pouvoir royal."
+    ],
+    "definitions": [
+      { "term": "Droits cunéiformes", "text": "Ensemble des droits du Proche-Orient ancien consignés en écriture cunéiforme sur tablettes d'argile, à partir du IIIe millénaire avant notre ère." },
+      { "term": "Code de Hammurabi", "text": "Recueil d'environ 280 dispositions gravé vers 1750 avant notre ère sur une stèle de basalte, au nom du roi de Babylone Hammurabi." },
+      { "term": "Casuistique", "text": "Méthode consistant à énoncer le droit par des solutions d'espèce successives plutôt que par des règles générales et abstraites." },
+      { "term": "Loi du talion", "text": "Principe de proportionnalité de la peine à l'offense, qui limite la vengeance privée en la mesurant au dommage subi." },
+      { "term": "Légitimation religieuse du droit", "text": "Procédé par lequel le pouvoir présente ses règles comme reçues d'une divinité, afin d'en renforcer l'autorité." }
+    ],
+    "exam": {
+      "kind": "question de cours",
+      "question": "Peut-on qualifier le Code de Hammurabi de code au sens moderne du terme ?",
+      "concise": "Non. Un code au sens moderne, tel que le Code civil de 1804, présente trois caractères : il est **systématique**, organisé selon un plan rationnel ; il est **général et abstrait**, posant des règles valant pour des catégories de situations ; et il prétend à une certaine **exhaustivité** dans sa matière. Le texte de Hammurabi ne remplit aucun de ces critères. Il procède par **cas concrets** successifs, sur le modèle « si un homme a fait ceci, alors… », sans plan d'ensemble rigoureux. Il ne couvre pas l'intégralité des rapports juridiques de son temps, laissant subsister à côté de lui coutumes et pratiques locales. Et il se présente moins comme une loi impersonnelle que comme un recueil de **décisions royales exemplaires**, destinées à manifester la justice du souverain. Il s'agit donc d'un monument juridique et politique majeur, mais dont la logique est casuistique et non codificatrice.",
+      "plan": [
+        {
+          "title": "I. Un monument juridique d'une portée considérable",
+          "children": [
+            { "title": "A. Une mise par écrit précoce du droit", "points": ["Vers 1750 avant notre ère, environ 280 dispositions", "Une stèle de basalte exposée publiquement, aujourd'hui au Louvre", "Un droit rendu visible et opposable, antérieur de plus d'un millénaire à Rome"] },
+            { "title": "B. Des principes d'une réelle modernité", "points": ["La loi du talion comme proportionnalité de la peine", "Le prologue : empêcher que le fort n'opprime le faible", "Une ébauche de fonction protectrice du droit"] }
+          ]
+        },
+        {
+          "title": "II. Une logique étrangère à celle de la codification",
+          "children": [
+            { "title": "A. Une méthode casuistique", "points": ["Des solutions d'espèce et non des règles générales", "Absence de plan systématique et d'exhaustivité", "Coexistence avec les coutumes locales non écrites"] },
+            { "title": "B. Une inégalité incompatible avec l'idée de code", "points": ["Des peines variables selon le statut social de la victime", "Un droit qui consacre la hiérarchie sociale plutôt que l'égalité", "Conclusion : un recueil de décisions royales, non un code"] }
+          ]
+        }
+      ],
+      "pitfalls": [
+        "Ne pas présenter le talion comme une simple cruauté : c'est d'abord une limitation de la vengeance.",
+        "Ne pas dire que le Code de Hammurabi est « le premier texte juridique » : d'autres recueils mésopotamiens lui sont antérieurs."
+      ]
+    },
+    "quiz": [
+      { "q": "Le Code de Hammurabi date d'environ :", "choices": ["3000 av. J.-C.", "1750 av. J.-C.", "450 av. J.-C.", "530 apr. J.-C."], "answer": 1, "why": "Vers 1750 avant notre ère. 450 av. J.-C. correspond à la Loi des XII Tables romaine, 530 au Code de Justinien." },
+      { "q": "La loi du talion a pour effet de :", "choices": ["Supprimer toute sanction", "Limiter la vengeance en la proportionnant", "Instaurer l'égalité des peines", "Confier la peine au roi seul"], "answer": 1, "why": "Face à une vengeance privée sans mesure, le talion impose une proportion : c'est en cela un progrès juridique." },
+      { "q": "Le Code de Hammurabi procède :", "choices": ["Par règles générales et abstraites", "Par solutions casuistiques", "Par principes philosophiques", "Par renvoi à la coutume"], "answer": 1, "why": "Sa forme est « si un homme a fait ceci, alors… » : des cas concrets, non des catégories abstraites." },
+      { "q": "Dans le Code de Hammurabi, la peine varie selon :", "choices": ["L'âge du coupable", "Le statut social de la victime", "La région", "La saison"], "answer": 1, "why": "Homme libre, subalterne ou esclave : la sanction diffère. Le droit consacre la hiérarchie sociale." },
+      { "q": "L'écriture cunéiforme tire son nom :", "choices": ["Du nom de son inventeur", "De la forme en coins des signes", "De la ville de Cunée", "Du matériau utilisé"], "answer": 1, "why": "Du latin cuneus, le coin : les signes étaient imprimés dans l'argile au moyen d'un calame à section triangulaire." }
+    ]
+  },
+  {
+    "id": "histoire-02",
+    "order": 2,
+    "title": "Le droit grec : l'exemple d'Athènes",
+    "teaser": "Isonomie, tirage au sort, héliée : une démocratie sans État et sans juristes.",
+    "minutes": 5,
+    "brief": [
+      "Athènes est l'exemple canonique du droit public grec. Sa démocratie repose sur un principe cardinal : l'**isonomie**, l'égalité de tous les citoyens devant la loi et dans l'accès aux charges. Attention au périmètre : la citoyenneté est étroite, elle exclut les femmes, les **métèques** — étrangers domiciliés — et les esclaves, qui forment ensemble la grande majorité de la population.",
+      "Les institutions s'articulent autour de trois organes. L'**ecclesia**, assemblée de tous les citoyens, vote les lois et les décrets, décide de la guerre et de la paix. La **boulè**, conseil de cinq cents membres tirés au sort, prépare les travaux de l'assemblée. Les **magistratures** sont pour la plupart attribuées par **tirage au sort**, annuelles et collégiales, sauf les fonctions militaires — la stratégie — qui restent électives parce qu'elles exigent une compétence.",
+      "Le tirage au sort est la clé du système. Il n'est pas un aveu d'incompétence mais une garantie **anti-oligarchique** : l'élection favorise mécaniquement les notables riches et connus ; le sort donne à chaque citoyen une chance égale d'exercer le pouvoir. Il s'accompagne de contrôles rigoureux — examen d'entrée en charge, reddition de comptes en sortie — et de la rotation annuelle des fonctions.",
+      "La justice est rendue par l'**héliée**, tribunal populaire composé de citoyens tirés au sort, siégeant par centaines pour éviter la corruption. Il n'y a ni juge professionnel, ni avocat au sens moderne, ni science juridique autonome : le plaideur parle lui-même, souvent aidé d'un logographe qui lui a écrit son discours. C'est pourquoi l'héritage grec est **politique et philosophique** plutôt que technique : les Grecs ont pensé la démocratie, la loi et la justice, mais ils n'ont pas construit la dogmatique juridique — cela sera l'œuvre de Rome."
+    ],
+    "keyPoints": [
+      "Isonomie : égalité devant la loi, mais citoyenneté étroite (ni femmes, ni métèques, ni esclaves).",
+      "Ecclesia (assemblée), boulè (500 membres tirés au sort), magistratures annuelles et collégiales.",
+      "Tirage au sort = garantie anti-oligarchique, assortie de contrôles d'entrée et de sortie de charge.",
+      "Héliée : tribunal populaire, sans juges professionnels ni science juridique autonome."
+    ],
+    "definitions": [
+      { "term": "Isonomie", "text": "Principe grec d'égalité des citoyens devant la loi et dans l'accès aux magistratures, fondement de la démocratie athénienne." },
+      { "term": "Ecclesia", "text": "Assemblée de tous les citoyens athéniens, souveraine pour voter les lois et les décrets et décider de la guerre et de la paix." },
+      { "term": "Boulè", "text": "Conseil de cinq cents membres tirés au sort, chargé de préparer l'ordre du jour et les délibérations de l'ecclesia." },
+      { "term": "Héliée", "text": "Tribunal populaire athénien composé de citoyens tirés au sort, siégeant en formations très nombreuses pour prévenir la corruption." },
+      { "term": "Métèque", "text": "Étranger libre résidant durablement à Athènes, soumis à l'impôt et au service militaire mais exclu de la citoyenneté." }
+    ],
+    "exam": {
+      "kind": "dissertation",
+      "question": "Le tirage au sort est-il démocratique ?",
+      "concise": "Pour les Athéniens, le tirage au sort est le procédé démocratique par excellence, et l'élection est au contraire un procédé **aristocratique** — l'analyse est déjà chez Aristote. Le sort réalise l'isonomie en donnant à chaque citoyen une chance strictement égale d'exercer une charge, il empêche la constitution d'une classe politique professionnelle, et il rend la corruption difficile puisque nul ne sait à l'avance qui sera désigné. Les contrôles d'entrée et de sortie de charge, ainsi que la rotation annuelle, en corrigent les inconvénients. Le procédé souffre pourtant de limites sérieuses. Il suppose une **compétence également répartie**, ce que les Athéniens eux-mêmes ne croyaient pas puisqu'ils réservaient l'élection aux stratèges. Il s'applique dans une cité de quelques dizaines de milliers de citoyens, non dans un État de millions d'habitants. Et il repose sur une citoyenneté **étroite**, excluant femmes, métèques et esclaves — ce qui relativise fortement l'égalité proclamée. Démocratique dans son principe, le tirage au sort n'est donc transposable qu'à certaines fonctions.",
+      "plan": [
+        {
+          "title": "I. Un procédé démocratique par nature",
+          "children": [
+            { "title": "A. L'égalité stricte des chances", "points": ["L'isonomie réalisée : chaque citoyen peut exercer une charge", "Aristote : le sort est démocratique, l'élection est aristocratique", "La rotation annuelle empêche la professionnalisation du pouvoir"] },
+            { "title": "B. Un procédé assorti de garanties", "points": ["Examen d'aptitude à l'entrée en charge", "Reddition de comptes en fin de mandat", "Collégialité des magistratures et difficulté de la corruption"] }
+          ]
+        },
+        {
+          "title": "II. Un procédé aux conditions d'application étroites",
+          "children": [
+            { "title": "A. Une exigence de compétence mal satisfaite", "points": ["Les stratèges restent élus : la compétence militaire ne se tire pas au sort", "Le risque d'incompétence dans les fonctions techniques", "La critique platonicienne du gouvernement par le nombre"] },
+            { "title": "B. Une démocratie à l'assise restreinte", "points": ["Exclusion des femmes, des métèques et des esclaves", "Une cité de taille réduite, incomparable à l'État moderne", "Conclusion : un procédé réactualisé aujourd'hui pour les conventions citoyennes et les jurys d'assises"] }
+          ]
+        }
+      ],
+      "pitfalls": [
+        "Ne pas présenter la démocratie athénienne comme universelle : la citoyenneté y est très restreinte.",
+        "Ne pas oublier que les stratèges étaient élus : c'est l'exception qui révèle la logique du système."
+      ]
+    },
+    "quiz": [
+      { "q": "L'isonomie désigne :", "choices": ["Le tirage au sort", "L'égalité devant la loi et dans l'accès aux charges", "Le droit de vote des femmes", "L'égalité des fortunes"], "answer": 1, "why": "C'est le principe fondateur de la démocratie athénienne, dont le tirage au sort n'est que le moyen." },
+      { "q": "La boulè comptait :", "choices": ["100 membres", "500 membres", "1000 membres", "9 membres"], "answer": 1, "why": "Cinq cents membres tirés au sort, chargés de préparer les travaux de l'ecclesia." },
+      { "q": "Quelle magistrature restait élue à Athènes ?", "choices": ["Les archontes", "Les stratèges", "Les héliastes", "Les bouleutes"], "answer": 1, "why": "La fonction militaire exigeait une compétence : elle échappait au tirage au sort. C'est ainsi que Périclès fut réélu stratège chaque année." },
+      { "q": "L'héliée était :", "choices": ["Une assemblée législative", "Un tribunal populaire tiré au sort", "Un conseil de magistrats", "Une juridiction d'appel"], "answer": 1, "why": "Composée de centaines de citoyens tirés au sort pour rendre la corruption impossible." },
+      { "q": "Selon Aristote, l'élection est un procédé :", "choices": ["Démocratique", "Aristocratique", "Monarchique", "Tyrannique"], "answer": 1, "why": "Parce qu'elle favorise les notables riches et connus. Le tirage au sort est, lui, le procédé démocratique." }
+    ]
+  },
+  {
+    "id": "histoire-03",
+    "order": 3,
+    "title": "Rome : les magistratures et le cursus honorum",
+    "teaser": "Annalité, collégialité, responsabilité — et l'exception qui confirme tout : la dictature.",
+    "minutes": 5,
+    "brief": [
+      "Sous la République, les magistratures romaines obéissent à trois principes structurants. L'**annalité** : la charge dure un an, ce qui empêche l'accaparement du pouvoir. La **collégialité** : chaque magistrature est exercée par au moins deux titulaires, dotés d'un droit d'opposition réciproque — l'*intercessio* — qui permet à l'un de bloquer l'autre. La **responsabilité** : le magistrat rend des comptes à l'issue de sa charge et peut être poursuivi.",
+      "Le **cursus honorum** est l'ordre obligatoire de parcours de ces charges, fixé notamment par la *lex Villia annalis* de 180 avant notre ère. On gravit successivement la **questure**, qui gère les finances ; l'**édilité**, chargée de la police de la ville, des marchés et des jeux ; la **préture**, qui dit le droit et rend la justice ; enfin le **consulat**, magistrature suprême, exercée par deux consuls qui commandent l'armée et convoquent le Sénat. La **censure**, exercée par d'anciens consuls, établit le cens et surveille les mœurs ; elle est prestigieuse mais hors du cursus ordinaire.",
+      "Deux magistratures échappent au schéma. Le **tribunat de la plèbe** est une magistrature plébéienne, non patricienne : le tribun est **sacro-saint**, sa personne est inviolable, et il dispose d'un droit de veto sur les actes des magistrats et du Sénat. C'est l'institution qui donne à la plèbe un contre-pouvoir réel.",
+      "La **dictature** est la magistrature **extraordinaire** par excellence. En cas de péril grave, un dictateur est nommé pour **six mois au maximum**, concentrant tous les pouvoirs. Elle rompt délibérément avec les trois principes : elle n'est ni collégiale, ni annale, et le dictateur n'est pas responsable de ses actes pendant sa charge. Cette exception, strictement bornée dans le temps, éclaire la logique de tout le système : la République accepte de suspendre ses garanties, mais jamais sans terme fixé d'avance."
+    ],
+    "keyPoints": [
+      "Trois principes : annalité, collégialité (avec intercessio), responsabilité.",
+      "Cursus honorum : questure → édilité → préture → consulat ; censure à part.",
+      "Tribun de la plèbe : sacro-saint, doté d'un droit de veto.",
+      "Dictature : magistrature extraordinaire de six mois maximum, qui rompt les trois principes."
+    ],
+    "definitions": [
+      { "term": "Cursus honorum", "text": "Ordre obligatoire de parcours des magistratures romaines, fixant pour chacune un âge minimum et des délais entre les charges." },
+      { "term": "Collégialité (Rome)", "text": "Principe selon lequel chaque magistrature est exercée par plusieurs titulaires égaux, dotés d'un droit d'opposition réciproque appelé intercessio." },
+      { "term": "Préteur", "text": "Magistrat romain chargé de dire le droit et de rendre la justice, dont l'édit annuel a joué un rôle majeur dans la formation du droit romain." },
+      { "term": "Tribun de la plèbe", "text": "Magistrat plébéien inviolable, disposant d'un droit de veto sur les actes des magistrats et du Sénat, institué pour protéger la plèbe." },
+      { "term": "Dictature", "text": "Magistrature extraordinaire romaine concentrant tous les pouvoirs entre les mains d'un seul homme pour six mois au maximum, en cas de péril grave." }
+    ],
+    "exam": {
+      "kind": "dissertation",
+      "question": "Les magistratures romaines organisent-elles une limitation efficace du pouvoir ?",
+      "concise": "Le système magistratuel romain met en place une limitation du pouvoir remarquablement pensée. L'**annalité** interdit qu'une charge se transforme en position acquise ; la **collégialité**, assortie de l'*intercessio*, permet à chaque magistrat de paralyser son collègue ; la **responsabilité** expose le magistrat à des poursuites une fois sorti de charge ; le **cursus honorum** impose une progression lente et contrôlée ; et le **tribunat de la plèbe** offre à la partie la plus nombreuse du corps social un droit de veto. Cette limitation connaît toutefois des failles décisives. La **dictature**, quoique bornée à six mois, montre que la République admet la suspension de ses propres garanties ; le **Sénat**, qui n'est pas une magistrature, exerce une influence considérable sans être soumis à ces contraintes ; et la fin de la République révèle que ces règles cèdent devant le fait militaire, lorsque Sylla puis César obtiennent des dictatures de durée indéfinie, puis perpétuelle. La limitation était donc efficace tant que le consensus civique la soutenait, et impuissante dès qu'il s'est rompu.",
+      "plan": [
+        {
+          "title": "I. Un dispositif de limitation soigneusement construit",
+          "children": [
+            { "title": "A. Les trois principes des magistratures ordinaires", "points": ["Annalité : la charge dure un an", "Collégialité et intercessio : le droit d'opposition entre collègues", "Responsabilité : reddition de comptes et poursuites possibles"] },
+            { "title": "B. Les garanties complémentaires", "points": ["Le cursus honorum : progression obligatoire, âges minimaux, lex Villia annalis de 180 av. J.-C.", "Le tribunat de la plèbe : inviolabilité et droit de veto", "La censure : contrôle des mœurs et de la composition du Sénat"] }
+          ]
+        },
+        {
+          "title": "II. Un dispositif qui cède devant le fait",
+          "children": [
+            { "title": "A. Les exceptions admises par le système lui-même", "points": ["La dictature : six mois, sans collégialité ni responsabilité", "L'influence du Sénat, non soumis aux règles magistratuelles", "Le cumul et les dispenses accordées aux grands commandements"] },
+            { "title": "B. L'effondrement à la fin de la République", "points": ["Sylla et César : des dictatures de durée indéfinie puis perpétuelle", "Le poids des armées personnelles et des clientèles", "Conclusion : des règles efficaces tant que le consensus civique les porte"] }
+          ]
+        }
+      ],
+      "pitfalls": [
+        "La censure n'appartient pas au cursus honorum ordinaire : elle est exercée par d'anciens consuls.",
+        "Ne pas confondre la dictature romaine, magistrature légale et temporaire, avec la dictature au sens moderne."
+      ]
+    },
+    "quiz": [
+      { "q": "Les trois principes des magistratures romaines sont :", "choices": ["Annalité, collégialité, responsabilité", "Égalité, continuité, mutabilité", "Superposition, autonomie, participation", "Publicité, célérité, gratuité"], "answer": 0, "why": "Ce triptyque organise la limitation du pouvoir sous la République romaine." },
+      { "q": "L'ordre du cursus honorum est :", "choices": ["Consulat, préture, édilité, questure", "Questure, édilité, préture, consulat", "Préture, questure, consulat, censure", "Édilité, consulat, questure, préture"], "answer": 1, "why": "On gravit les charges de la plus modeste à la plus haute : questure, édilité, préture, consulat." },
+      { "q": "L'intercessio désigne :", "choices": ["Le droit d'opposition entre magistrats collègues", "L'élection d'un magistrat", "La reddition de comptes", "Le tirage au sort"], "answer": 0, "why": "Elle permet à un magistrat de bloquer l'acte de son collègue : c'est la sanction concrète de la collégialité." },
+      { "q": "La dictature romaine était limitée à :", "choices": ["Un an", "Six mois", "Dix ans", "À vie"], "answer": 1, "why": "Six mois au maximum. Sylla puis César briseront cette limite, ce qui annonce la fin de la République." },
+      { "q": "Le tribun de la plèbe est :", "choices": ["Un magistrat patricien", "Sacro-saint et doté d'un droit de veto", "Élu par le Sénat", "Chargé des finances"], "answer": 1, "why": "Son inviolabilité et son veto font de lui le contre-pouvoir plébéien face aux magistrats patriciens et au Sénat." }
+    ]
+  },
+  {
+    "id": "histoire-04",
+    "order": 4,
+    "title": "Sénat, comices et sources du droit romain",
+    "teaser": "Qui vote quoi à Rome — et pourquoi le préteur compte plus que l'assemblée.",
+    "minutes": 5,
+    "brief": [
+      "Le **Sénat** n'est pas une assemblée élue : il réunit d'anciens magistrats, inscrits sur la liste par les censeurs. Il n'a pas, en droit, de pouvoir législatif : il rend des *senatus consulta*, des avis. Mais son autorité — l'*auctoritas* — est telle que ces avis sont suivis. Il dirige de fait la politique étrangère, les finances et la religion. C'est l'organe de la continuité aristocratique face à des magistrats annuels.",
+      "Les **comices** sont les assemblées du peuple. Les *comitia centuriata*, organisées par centuries selon la fortune, élisent les consuls et les préteurs et votent la guerre ; le système est délibérément **censitaire**, les classes les plus riches votant les premières et disposant d'une majorité de centuries. Les *comitia tributa*, organisées par tribus territoriales, élisent les magistrats inférieurs. Les **conciles de la plèbe** réunissent les seuls plébéiens et votent des *plébiscites* : depuis la *lex Hortensia* de 287 avant notre ère, ces plébiscites s'imposent à tout le peuple romain, patriciens compris — c'est l'aboutissement de la lutte des ordres.",
+      "Les **sources du droit** romain sont multiples et hiérarchisées différemment selon les époques. La plus ancienne est la **Loi des XII Tables**, vers 450 avant notre ère, première mise par écrit du droit romain, obtenue par la plèbe pour échapper à l'arbitraire de l'interprétation patricienne. Viennent ensuite les lois comitiales, les plébiscites, les sénatus-consultes, puis, sous l'Empire, les **constitutions impériales**.",
+      "Deux sources dominent en pratique. L'**édit du préteur** : chaque préteur publie en entrant en charge l'édit exposant les actions qu'il accordera ; en créant des actions nouvelles, il forge un droit parallèle au droit civil, le *droit prétorien*, souple et adapté. Et la **doctrine** : les *jurisconsultes* — Gaius, Papinien, Ulpien, Paul, Modestin — donnent des consultations dont certaines reçoivent force de loi. Le tout sera rassemblé au VIe siècle par **Justinien** dans la compilation qu'on appellera plus tard le *Corpus juris civilis*, socle de la redécouverte du droit romain à Bologne au XIe siècle et de toute la tradition juridique continentale."
+    ],
+    "keyPoints": [
+      "Sénat : anciens magistrats, auctoritas, senatus consulta suivis en fait.",
+      "Comices centuriates censitaires ; lex Hortensia de 287 av. J.-C. : les plébiscites lient tout le peuple.",
+      "Loi des XII Tables, vers 450 av. J.-C. : première mise par écrit, arrachée par la plèbe.",
+      "Édit du préteur et jurisconsultes : les deux sources vivantes ; Justinien compile au VIe siècle."
+    ],
+    "definitions": [
+      { "term": "Sénat romain", "text": "Assemblée d'anciens magistrats inscrits par les censeurs, dépourvue de pouvoir législatif formel mais dont l'autorité dirige en fait la politique romaine." },
+      { "term": "Comices centuriates", "text": "Assemblée du peuple organisée par centuries selon la fortune, élisant les magistrats supérieurs ; son mode de vote favorisait les classes les plus riches." },
+      { "term": "Lex Hortensia", "text": "Loi de 287 avant notre ère conférant aux plébiscites votés par les conciles de la plèbe force obligatoire pour l'ensemble du peuple romain." },
+      { "term": "Loi des XII Tables", "text": "Première mise par écrit du droit romain, vers 450 avant notre ère, obtenue par la plèbe pour soustraire le droit à l'interprétation arbitraire des patriciens." },
+      { "term": "Édit du préteur", "text": "Programme publié par le préteur à son entrée en charge, énumérant les actions qu'il accordera, et source du droit prétorien." }
+    ],
+    "exam": {
+      "kind": "dissertation",
+      "question": "Le préteur est-il une source du droit romain ?",
+      "concise": "Formellement, le préteur n'a pas le pouvoir de faire la loi : celle-ci appartient aux comices, aux conciles de la plèbe et, plus tard, à l'empereur. Sa mission est de **dire le droit**, c'est-à-dire d'organiser le procès et d'accorder ou de refuser les actions. Mais c'est précisément par là qu'il devient créateur. En publiant chaque année son **édit**, il annonce les actions qu'il accordera ; en créant des actions nouvelles là où le droit civil n'en offrait pas, il fait naître des situations juridiques inédites — la possession protégée, les contrats de bonne foi, l'exception de dol. Les juristes romains le disaient déjà : le droit prétorien vient « aider, suppléer et corriger » le droit civil. L'édit finit par se stabiliser et sera codifié sous Hadrien en **édit perpétuel**. Le préteur est donc une source **matérielle** majeure du droit romain, sans en être une source **formelle** — et ce décalage entre le pouvoir affiché et le pouvoir réel est exactement celui que connaît aujourd'hui le juge français.",
+      "plan": [
+        {
+          "title": "I. Un magistrat qui n'a pas le pouvoir de faire la loi",
+          "children": [
+            { "title": "A. Une compétence juridictionnelle", "points": ["Le préteur dit le droit, il ne légifère pas", "La loi appartient aux comices, aux conciles de la plèbe, puis à l'empereur", "Une magistrature annuelle, soumise aux principes du cursus honorum"] },
+            { "title": "B. Une intervention formellement procédurale", "points": ["Accorder ou refuser l'action, organiser l'instance", "La distinction entre la phase in jure et la phase apud judicem", "L'édit se présente comme un programme, non comme une loi"] }
+          ]
+        },
+        {
+          "title": "II. Un magistrat qui crée le droit en fait",
+          "children": [
+            { "title": "A. La création par l'action", "points": ["Pas de droit sans action : accorder une action, c'est créer un droit", "Les créations prétoriennes : possession, contrats de bonne foi, exception de dol", "Aider, suppléer et corriger le droit civil"] },
+            { "title": "B. La stabilisation d'un droit prétorien", "points": ["La reprise de l'édit d'année en année : l'edictum tralaticium", "La codification sous Hadrien : l'édit perpétuel", "Conclusion : un parallèle éclairant avec le rôle créateur du juge contemporain"] }
+          ]
+        }
+      ],
+      "pitfalls": [
+        "Ne pas confondre les comices (tout le peuple) et les conciles de la plèbe (les seuls plébéiens).",
+        "Le Corpus juris civilis est une compilation du VIe siècle : le nom lui a été donné bien plus tard."
+      ]
+    },
+    "quiz": [
+      { "q": "La lex Hortensia de 287 av. J.-C. décide que :", "choices": ["Le Sénat vote les lois", "Les plébiscites s'imposent à tout le peuple romain", "Les comices sont supprimés", "Le préteur cesse de publier son édit"], "answer": 1, "why": "C'est l'aboutissement de la lutte des ordres : la plèbe obtient que ses votes lient aussi les patriciens." },
+      { "q": "La Loi des XII Tables date d'environ :", "choices": ["450 av. J.-C.", "287 av. J.-C.", "180 av. J.-C.", "530 apr. J.-C."], "answer": 0, "why": "Vers 450 avant notre ère. 287 correspond à la lex Hortensia, 530 à la compilation de Justinien." },
+      { "q": "Les comices centuriates étaient organisées :", "choices": ["Par tribus territoriales", "Par centuries selon la fortune", "Par tirage au sort", "Par tranches d'âge"], "answer": 1, "why": "Un système censitaire : les classes riches votaient en premier et détenaient la majorité des centuries." },
+      { "q": "Le Sénat romain rendait :", "choices": ["Des lois", "Des senatus consulta, des avis suivis en fait", "Des édits", "Des plébiscites"], "answer": 1, "why": "Pas de pouvoir législatif formel, mais une auctoritas telle que ses avis étaient suivis." },
+      { "q": "La compilation de Justinien date du :", "choices": ["IIe siècle av. J.-C.", "Ier siècle apr. J.-C.", "VIe siècle apr. J.-C.", "XIe siècle"], "answer": 2, "why": "VIe siècle. Le XIe siècle est celui de sa redécouverte à Bologne, à l'origine de la tradition juridique continentale." }
+    ]
+  }
+]

@@ -1,0 +1,234 @@
+[
+  {
+    "id": "intro-05",
+    "order": 5,
+    "title": "Le bloc de conventionnalité",
+    "teaser": "L'article 55, la condition de réciprocité, et la place particulière du droit de l'Union.",
+    "minutes": 5,
+    "brief": [
+      "Juste sous la Constitution se place le **bloc de conventionnalité** : les traités et accords internationaux. L'article 55 de la Constitution dispose qu'ils ont, dès leur publication, « une autorité supérieure à celle des lois, sous réserve, pour chaque accord ou traité, de son application par l'autre partie ». Trois conditions sont donc posées : la **ratification ou l'approbation** régulière, la **publication**, et la **réciprocité**.",
+      "Cette supériorité ne vaut pas contre la Constitution. Le Conseil d'État l'a affirmé dans l'arrêt **Sarran** de 1998, la Cour de cassation dans l'arrêt **Fraisse** de 2000 : dans l'ordre interne, la Constitution reste au sommet. Si un traité est contraire à la Constitution, l'article 54 impose de réviser la Constitution avant de pouvoir le ratifier — ce qui fut fait pour Maastricht en 1992.",
+      "Le contrôle de conventionnalité est confié aux **juges ordinaires**, non au Conseil constitutionnel, qui a refusé cette compétence dès la décision **IVG de 1975**. La Cour de cassation l'a exercé la première dans l'arrêt **Jacques Vabre** de 1975, le Conseil d'État à partir de l'arrêt **Nicolo** de 1989. Tout juge peut donc écarter une loi contraire à un traité, sans l'annuler : il la laisse inappliquée dans le litige.",
+      "Deux ensembles occupent une place particulière. La **Convention européenne des droits de l'homme**, adoptée à Rome le 4 novembre 1950 et ratifiée par la France le 3 mai 1974, est directement invocable par les particuliers devant tout juge français. Le **droit de l'Union européenne** bénéficie de deux principes dégagés par la Cour de justice : l'effet direct (*Van Gend en Loos*, 1963) et la primauté (*Costa contre ENEL*, 1964), qui en font un ordre juridique intégré plutôt qu'un simple droit international."
+    ],
+    "keyPoints": [
+      "Article 55 : trois conditions — ratification, publication, réciprocité.",
+      "Le traité prime la loi, jamais la Constitution (Sarran 1998, Fraisse 2000).",
+      "Contrôle de conventionnalité par le juge ordinaire (Jacques Vabre 1975, Nicolo 1989).",
+      "Droit de l'Union : effet direct et primauté, un ordre juridique intégré."
+    ],
+    "definitions": [
+      { "term": "Article 55 de la Constitution", "text": "Disposition conférant aux traités régulièrement ratifiés et publiés une autorité supérieure à celle des lois, sous réserve de réciprocité." },
+      { "term": "Contrôle de conventionnalité", "text": "Vérification, par tout juge ordinaire, de la conformité d'une loi à un traité. Le juge n'annule pas la loi : il écarte son application dans le litige." },
+      { "term": "Arrêt Nicolo", "text": "Arrêt par lequel le Conseil d'État accepte de faire prévaloir un traité sur une loi postérieure, alignant sa position sur celle de la Cour de cassation.", "source": "CE, Ass., 20 octobre 1989, Nicolo" },
+      { "term": "Primauté du droit de l'Union", "text": "Principe selon lequel le droit de l'Union prime le droit national des États membres, y compris postérieur.", "source": "CJCE, 15 juillet 1964, Costa c/ ENEL" },
+      { "term": "Effet direct", "text": "Aptitude d'une norme de l'Union à créer directement des droits dans le patrimoine des particuliers, invocables devant le juge national.", "source": "CJCE, 5 février 1963, Van Gend en Loos" }
+    ],
+    "exam": {
+      "kind": "question de cours",
+      "question": "Le traité international prime-t-il la Constitution dans l'ordre juridique français ?",
+      "concise": "Non. L'article 55 de la Constitution confère aux traités régulièrement ratifiés et publiés une autorité supérieure à celle des **lois**, et à elles seules. Dans l'ordre interne, la Constitution demeure la norme suprême : le Conseil d'État l'a jugé dans l'arrêt Sarran du 30 octobre 1998, la Cour de cassation dans l'arrêt Fraisse du 2 juin 2000. Le mécanisme de l'article 54 le confirme : lorsqu'un engagement international comporte une clause contraire à la Constitution, il faut d'abord réviser la Constitution pour pouvoir le ratifier. Il faut cependant nuancer, car la perspective s'inverse dans l'ordre international et dans l'ordre de l'Union : la Cour de justice affirme depuis Costa c/ ENEL la primauté du droit de l'Union sur toute norme nationale, y compris constitutionnelle. On est donc face à deux logiques concurrentes que la jurisprudence gère par des techniques de conciliation plutôt que par une hiérarchie tranchée.",
+      "plan": [
+        {
+          "title": "I. La suprématie constitutionnelle affirmée dans l'ordre interne",
+          "children": [
+            { "title": "A. Une lettre claire de l'article 55", "points": ["Supériorité sur les lois, non sur la Constitution", "Les trois conditions : ratification, publication, réciprocité", "L'article 54 : réviser avant de ratifier"] },
+            { "title": "B. Une jurisprudence concordante des deux ordres", "points": ["CE, Sarran, 30 octobre 1998", "Cass., Fraisse, 2 juin 2000", "Le Conseil constitutionnel refuse le contrôle de conventionnalité : décision IVG, 15 janvier 1975"] }
+          ]
+        },
+        {
+          "title": "II. Une suprématie relativisée par l'ordre juridique de l'Union",
+          "children": [
+            { "title": "A. La thèse de la primauté absolue", "points": ["CJCE, Costa c/ ENEL, 1964 : primauté sur tout le droit national", "CJCE, Simmenthal, 1978 : obligation d'écarter la norme nationale contraire", "Fondement : l'effectivité et l'uniformité du droit de l'Union"] },
+            { "title": "B. Les techniques de conciliation", "points": ["Article 88-1 : exigence constitutionnelle de transposition des directives", "La réserve de l'identité constitutionnelle de la France", "Conclusion : un dialogue des juges plutôt qu'une hiérarchie unique"] }
+          ]
+        }
+      ],
+      "pitfalls": [
+        "Ne pas dire que le juge « annule » la loi inconventionnelle : il l'écarte seulement dans le litige.",
+        "Ne pas confondre CEDH (Conseil de l'Europe, 46 États) et Union européenne (27 États)."
+      ]
+    },
+    "quiz": [
+      { "q": "L'article 55 subordonne la supériorité des traités à :", "choices": ["Un vote du Parlement", "La condition de réciprocité", "Un avis du Conseil d'État", "Un référendum"], "answer": 1, "why": "L'article 55 pose trois conditions : ratification ou approbation régulière, publication, et application par l'autre partie (réciprocité)." },
+      { "q": "Dans l'arrêt Nicolo (1989), le Conseil d'État accepte :", "choices": ["De contrôler la constitutionnalité des lois", "De faire primer un traité sur une loi postérieure", "D'annuler une loi", "De saisir la CJUE"], "answer": 1, "why": "Jusqu'en 1989 le Conseil d'État refusait d'écarter une loi postérieure au traité. Nicolo aligne sa jurisprudence sur l'arrêt Jacques Vabre de la Cour de cassation (1975)." },
+      { "q": "La CEDH a été ratifiée par la France en :", "choices": ["1950", "1958", "1974", "1981"], "answer": 2, "why": "Adoptée à Rome le 4 novembre 1950, elle n'est ratifiée par la France que le 3 mai 1974 ; le recours individuel ne sera accepté qu'en 1981." },
+      { "q": "Le principe de primauté du droit de l'Union a été posé par l'arrêt :", "choices": ["Van Gend en Loos", "Costa c/ ENEL", "Nicolo", "Sarran"], "answer": 1, "why": "Van Gend en Loos (1963) pose l'effet direct ; Costa c/ ENEL (1964) pose la primauté." },
+      { "q": "Si un traité comporte une clause contraire à la Constitution :", "choices": ["Il est nul", "Il prime la Constitution", "Il faut réviser la Constitution avant de le ratifier", "Le juge l'écarte"], "answer": 2, "why": "C'est le mécanisme de l'article 54, utilisé notamment avant la ratification du traité de Maastricht en 1992." }
+    ]
+  },
+  {
+    "id": "intro-06",
+    "order": 6,
+    "title": "Loi, règlement et sources infra-réglementaires",
+    "teaser": "Articles 34 et 37, décrets et arrêtés, puis les sources discutées : jurisprudence, coutume, circulaires.",
+    "minutes": 5,
+    "brief": [
+      "Sous les traités vient le **bloc de légalité** : les lois votées par le Parlement. La Constitution de 1958 innove en délimitant la loi par une liste : l'**article 34** énumère les matières réservées au législateur, tandis que l'**article 37** confie au pouvoir réglementaire tout ce qui n'y figure pas. C'est une inversion complète par rapport aux Républiques précédentes, où la loi pouvait tout faire. Il faut distinguer, au sein du bloc, les lois constitutionnelles (qui révisent la Constitution), les lois organiques (qui précisent l'application de la Constitution et sont obligatoirement contrôlées par le Conseil constitutionnel) et les lois ordinaires.",
+      "Vient ensuite le **bloc réglementaire** : décrets du Président ou du Premier ministre, arrêtés ministériels, préfectoraux, municipaux. Il faut distinguer les règlements d'application, qui précisent une loi, et les règlements autonomes, pris directement sur le fondement de l'article 37 dans les matières non réservées à la loi. Le règlement illégal peut être annulé par le juge administratif, saisi d'un recours pour excès de pouvoir.",
+      "Au-dessous se trouvent les sources **infra-réglementaires** ou discutées. Les **circulaires** sont des instructions du supérieur au subordonné : en principe non créatrices de droit, elles deviennent attaquables lorsqu'elles sont impératives et font grief. La **jurisprudence** est une source controversée : l'article 5 du Code civil interdit les arrêts de règlement, mais l'article 4 interdit au juge de refuser de juger sous prétexte du silence de la loi — donc il crée nécessairement du droit.",
+      "La **coutume** enfin suppose deux éléments : un élément matériel, la répétition d'un usage constant, et un élément psychologique, la conviction de son caractère obligatoire (*opinio juris*). Elle joue un rôle résiduel mais réel : en droit commercial, en droit international public, et dans certains usages locaux que le Code civil lui-même renvoie."
+    ],
+    "keyPoints": [
+      "Article 34 : domaine de la loi ; article 37 : compétence de droit commun du règlement.",
+      "Trois types de lois : constitutionnelles, organiques, ordinaires.",
+      "Circulaire impérative faisant grief = acte attaquable.",
+      "Coutume = usage constant (élément matériel) + opinio juris (élément psychologique)."
+    ],
+    "definitions": [
+      { "term": "Article 34 de la Constitution", "text": "Article énumérant limitativement les matières dans lesquelles le Parlement est compétent pour légiférer." },
+      { "term": "Loi organique", "text": "Loi qui précise les modalités d'application de la Constitution. Adoptée selon une procédure renforcée et obligatoirement soumise au Conseil constitutionnel avant promulgation." },
+      { "term": "Règlement autonome", "text": "Acte réglementaire pris directement sur le fondement de l'article 37, dans une matière qui ne relève pas du domaine de la loi." },
+      { "term": "Arrêt de règlement", "text": "Décision par laquelle un juge poserait une règle générale valant pour l'avenir. Interdit par l'article 5 du Code civil." },
+      { "term": "Opinio juris", "text": "Élément psychologique de la coutume : conviction partagée que l'usage suivi est juridiquement obligatoire et non une simple habitude." }
+    ],
+    "exam": {
+      "kind": "dissertation",
+      "question": "La jurisprudence est-elle une source du droit ?",
+      "concise": "La question tient à une contradiction interne au Code civil. L'article 5 interdit les arrêts de règlement, donc défend au juge de poser des règles générales : la jurisprudence ne serait pas une source. Mais l'article 4 lui interdit de refuser de juger sous prétexte du silence, de l'obscurité ou de l'insuffisance de la loi : il doit donc bien créer la solution que la loi ne fournit pas. En pratique, la jurisprudence présente tous les caractères d'une source : elle est générale par l'effet du précédent et du rôle unificateur de la Cour de cassation, elle est obligatoire de fait pour les juges du fond, et elle est parfois consacrée par le législateur lui-même. Elle reste toutefois une source **subordonnée et précaire** : elle peut être renversée par un revirement, elle n'a pas d'autorité formelle au-delà du litige tranché (article 1355 du Code civil), et elle s'efface devant la loi nouvelle. Source de fait plutôt que source de droit au sens formel, donc.",
+      "plan": [
+        {
+          "title": "I. Une source niée par les textes",
+          "children": [
+            { "title": "A. L'interdiction des arrêts de règlement", "points": ["Article 5 du Code civil, héritage de la méfiance révolutionnaire envers les parlements d'Ancien Régime", "La séparation des pouvoirs : le juge applique, il ne légifère pas", "L'autorité relative de la chose jugée : article 1355 du Code civil"] },
+            { "title": "B. Une autorité formellement précaire", "points": ["Le revirement de jurisprudence, toujours possible", "L'absence de règle du précédent obligatoire en droit français", "La loi nouvelle brise la jurisprudence contraire"] }
+          ]
+        },
+        {
+          "title": "II. Une source imposée par la pratique",
+          "children": [
+            { "title": "A. L'obligation de juger contraint à créer", "points": ["Article 4 du Code civil : le déni de justice est une infraction", "Les créations prétoriennes majeures : responsabilité du fait des choses, arrêt Jand'heur", "Le contrôle de proportionnalité, création récente du juge"] },
+            { "title": "B. Une normativité de fait organisée", "points": ["Le rôle unificateur de la Cour de cassation et du Conseil d'État", "La publication et la diffusion : open data des décisions de justice", "La consécration législative a posteriori des solutions prétoriennes"] }
+          ]
+        }
+      ],
+      "pitfalls": [
+        "Ne pas oublier de citer les articles 4 et 5 du Code civil : c'est le couple attendu.",
+        "Distinguer autorité de la chose jugée (relative) et autorité de la chose interprétée (persuasive)."
+      ]
+    },
+    "quiz": [
+      { "q": "Sous la Ve République, la compétence de droit commun appartient :", "choices": ["Au Parlement", "Au pouvoir réglementaire", "Au juge", "Au Conseil constitutionnel"], "answer": 1, "why": "L'article 34 énumère limitativement le domaine de la loi ; tout le reste relève du règlement par l'article 37. C'est l'inversion opérée en 1958." },
+      { "q": "L'article 5 du Code civil interdit :", "choices": ["Le déni de justice", "Les arrêts de règlement", "La rétroactivité", "Les circulaires"], "answer": 1, "why": "L'article 5 interdit au juge de statuer par voie de disposition générale et réglementaire ; l'article 4, lui, interdit le déni de justice." },
+      { "q": "Une circulaire devient attaquable devant le juge administratif lorsqu'elle :", "choices": ["Est publiée", "Est signée par un ministre", "Est impérative et fait grief", "Interprète une loi"], "answer": 2, "why": "Une circulaire purement interprétative ne fait pas grief. Dès qu'elle impose un comportement et produit des effets notables, elle est attaquable." },
+      { "q": "La coutume suppose deux éléments :", "choices": ["Écrit et publication", "Usage constant et opinio juris", "Ancienneté et sanction", "Répétition et vote"], "answer": 1, "why": "Un élément matériel (la répétition d'un usage) et un élément psychologique (la conviction de son caractère obligatoire)." },
+      { "q": "Les lois organiques sont :", "choices": ["Soumises obligatoirement au Conseil constitutionnel", "De valeur constitutionnelle", "Adoptées par décret", "Votées par référendum"], "answer": 0, "why": "Leur contrôle avant promulgation est obligatoire. Elles restent des lois, supérieures aux lois ordinaires mais inférieures à la Constitution." }
+    ]
+  },
+  {
+    "id": "intro-07",
+    "order": 7,
+    "title": "Droit objectif et droits subjectifs, droit privé et droit public",
+    "teaser": "Les deux grandes summa divisio de la L1, avec les nuances qui font gagner des points.",
+    "minutes": 5,
+    "brief": [
+      "Le mot « droit » recouvre deux réalités. Le **droit objectif** désigne l'ensemble des règles qui régissent la vie en société : c'est le Droit avec une majuscule, envisagé comme système. Les **droits subjectifs** désignent les prérogatives individuelles que ce système reconnaît aux personnes : mon droit de propriété, ma créance, mon droit au respect de la vie privée. Les deux notions sont liées : le droit objectif est la source, les droits subjectifs sont les effets.",
+      "La seconde grande distinction, la *summa divisio*, oppose le **droit privé** au **droit public**. Le droit privé régit les rapports entre personnes privées — personnes physiques, sociétés, associations. Le droit public régit l'organisation de l'État et ses rapports avec les particuliers. La distinction commande la compétence juridictionnelle : au juge judiciaire les litiges de droit privé, au juge administratif ceux de droit public, selon la loi des 16 et 24 août 1790.",
+      "Cette frontière est moins nette qu'il n'y paraît. Des matières sont **mixtes** : le droit pénal punit au nom de la société (logique publique) mais est appliqué par le juge judiciaire ; le droit du travail mêle contrat privé et ordre public social ; le droit de la concurrence, le droit de l'environnement ignorent largement la distinction. L'arrêt **Blanco** du Tribunal des conflits, du 8 février 1873, est l'illustration fondatrice : la responsabilité de l'État ne peut pas être régie par les règles du Code civil, elle a ses règles propres.",
+      "Le piège classique en dissertation consiste à traiter la distinction comme une frontière géographique. Traite-la plutôt comme deux **logiques** : le droit privé raisonne à partir de l'égalité des volontés et du contrat ; le droit public raisonne à partir de l'inégalité, de la prérogative de puissance publique et de l'intérêt général. C'est cette différence de logique qui survit, même quand la frontière des matières se brouille."
+    ],
+    "keyPoints": [
+      "Droit objectif = le système de règles ; droits subjectifs = les prérogatives individuelles.",
+      "Summa divisio droit privé / droit public, qui commande la compétence juridictionnelle.",
+      "Arrêt Blanco, 8 février 1873 : l'État a ses règles propres de responsabilité.",
+      "Deux logiques : égalité des volontés d'un côté, puissance publique et intérêt général de l'autre."
+    ],
+    "definitions": [
+      { "term": "Droit objectif", "text": "Ensemble des règles de conduite qui régissent les rapports des hommes en société et dont le respect est assuré par la contrainte étatique." },
+      { "term": "Droit subjectif", "text": "Prérogative individuelle reconnue et sanctionnée par le droit objectif, permettant à son titulaire de faire, d'exiger ou d'interdire quelque chose." },
+      { "term": "Summa divisio", "text": "Distinction fondamentale qui commande l'organisation d'une discipline. En droit français, celle du droit privé et du droit public." },
+      { "term": "Arrêt Blanco", "text": "Décision fondatrice du droit administratif, jugeant que la responsabilité de l'État n'est régie ni par les principes du Code civil ni par un régime de droit commun, et qu'elle relève du juge administratif.", "source": "TC, 8 février 1873, Blanco" },
+      { "term": "Prérogative de puissance publique", "text": "Pouvoir exorbitant du droit commun reconnu à l'administration pour l'accomplissement de sa mission d'intérêt général (décision unilatérale, expropriation, exécution d'office)." }
+    ],
+    "exam": {
+      "kind": "dissertation",
+      "question": "La distinction du droit privé et du droit public est-elle toujours pertinente ?",
+      "concise": "La distinction reste structurante : elle commande l'organisation des facultés, la répartition des contentieux entre les deux ordres de juridiction et, plus profondément, deux logiques normatives — celle de l'égalité des volontés et celle de la puissance publique au service de l'intérêt général. L'arrêt Blanco en donne le fondement moderne. Mais sa pertinence est aujourd'hui érodée sur trois fronts : la multiplication des matières mixtes (droit pénal, droit du travail, droit de la santé) ; la privatisation de l'action publique, qui voit des personnes privées gérer des services publics avec des prérogatives publiques ; et l'influence du droit européen, qui raisonne en termes fonctionnels et ignore largement cette *summa divisio*. La distinction survit donc moins comme une frontière que comme un **outil de raisonnement** permettant d'identifier la logique applicable à une situation donnée.",
+      "plan": [
+        {
+          "title": "I. Une distinction structurante",
+          "children": [
+            { "title": "A. Un fondement historique et institutionnel", "points": ["Loi des 16 et 24 août 1790 : interdiction faite au juge judiciaire de juger l'administration", "Décret du 2 septembre 1795 et naissance de la justice retenue", "TC, Blanco, 1873 : l'autonomie du droit administratif"] },
+            { "title": "B. Deux logiques normatives irréductibles", "points": ["Droit privé : égalité des volontés, autonomie de la volonté, réparation", "Droit public : inégalité assumée, prérogatives exorbitantes, intérêt général", "Conséquence pratique : la compétence juridictionnelle"] }
+          ]
+        },
+        {
+          "title": "II. Une distinction érodée",
+          "children": [
+            { "title": "A. Le brouillage des frontières", "points": ["Les matières mixtes : droit pénal, droit du travail, droit de la concurrence", "TC, Bac d'Eloka, 22 janvier 1921 : le service public industriel et commercial", "Les personnes privées gérant un service public avec prérogatives de puissance publique"] },
+            { "title": "B. L'influence d'un droit européen indifférent à la distinction", "points": ["La CEDH raisonne en termes de droits et libertés, pas de nature de la personne", "Le droit de l'Union impose des catégories fonctionnelles (entreprise, opérateur économique)", "Conclusion : d'une frontière à un outil de qualification"] }
+          ]
+        }
+      ],
+      "pitfalls": [
+        "Bac d'Eloka est du 22 janvier 1921, rendu par le Tribunal des conflits : ne pas l'attribuer au Conseil d'État.",
+        "Ne pas confondre droit objectif / droits subjectifs avec droit public / droit privé : ce sont deux distinctions indépendantes."
+      ]
+    },
+    "quiz": [
+      { "q": "L'arrêt Blanco a été rendu par :", "choices": ["Le Conseil d'État", "La Cour de cassation", "Le Tribunal des conflits", "Le Conseil constitutionnel"], "answer": 2, "why": "TC, 8 février 1873 : c'est le Tribunal des conflits qui pose l'autonomie du droit administratif et la compétence du juge administratif." },
+      { "q": "Le droit objectif désigne :", "choices": ["Les prérogatives individuelles", "L'ensemble des règles régissant la vie en société", "Le droit public seulement", "Le droit écrit"], "answer": 1, "why": "Le droit objectif est le système de règles ; les droits subjectifs en sont les prérogatives individuelles qui en découlent." },
+      { "q": "La loi des 16 et 24 août 1790 interdit :", "choices": ["Au juge judiciaire de juger l'administration", "Les arrêts de règlement", "La justice seigneuriale", "Le déni de justice"], "answer": 0, "why": "C'est le texte fondateur de la séparation des autorités administratives et judiciaires, à l'origine du dualisme juridictionnel." },
+      { "q": "L'arrêt Bac d'Eloka (1921) est important parce qu'il :", "choices": ["Crée le Conseil d'État", "Reconnaît le service public industriel et commercial soumis au droit privé", "Pose la primauté du droit de l'Union", "Consacre la QPC"], "answer": 1, "why": "Il admet qu'une personne publique gérant un service dans les mêmes conditions qu'une entreprise privée relève du droit privé et du juge judiciaire." },
+      { "q": "Le droit pénal est une matière mixte parce qu'il :", "choices": ["Est appliqué par le juge administratif", "Punit au nom de la société mais relève du juge judiciaire", "Ne connaît pas de sanction", "Relève du droit de l'Union"], "answer": 1, "why": "Sa finalité est publique (la défense de l'ordre social) mais son contentieux est confié au juge judiciaire, gardien de la liberté individuelle." }
+    ]
+  },
+  {
+    "id": "intro-08",
+    "order": 8,
+    "title": "La classification des droits subjectifs",
+    "teaser": "Patrimoniaux ou extrapatrimoniaux ; nés d'un acte ou d'un fait juridique — et la preuve qui en découle.",
+    "minutes": 5,
+    "brief": [
+      "Les droits subjectifs se classent d'abord **selon leur nature**. Les droits **patrimoniaux** ont une valeur pécuniaire : ils entrent dans le patrimoine, sont cessibles, transmissibles, saisissables et prescriptibles. Les droits **extrapatrimoniaux** en sont l'exact inverse : droit au nom, droit à l'honneur, droit au respect de la vie privée, autorité parentale. Ils sont hors commerce, incessibles, insaisissables et en principe imprescriptibles.",
+      "Au sein des droits patrimoniaux, on distingue trois catégories. Le **droit réel** porte directement sur une chose et confère un droit de suite et un droit de préférence : la propriété en est le modèle. Le **droit personnel** (ou droit de créance) est le droit d'exiger d'une personne déterminée une prestation : c'est le rapport d'obligation. Le **droit intellectuel** porte sur une chose incorporelle : brevet, marque, droit d'auteur, fonds de commerce.",
+      "Les droits subjectifs se classent ensuite **selon leur source**. L'**acte juridique** est une manifestation de volonté destinée à produire des effets de droit : le contrat, le testament, la reconnaissance d'enfant. Le **fait juridique** est un événement, volontaire ou non, auquel la loi attache des effets de droit sans qu'ils aient été recherchés : l'accident, la naissance, l'écoulement du temps.",
+      "Cette dernière distinction a une conséquence pratique décisive, en **matière de preuve**. L'acte juridique portant sur une somme supérieure à un seuil fixé par décret doit en principe être prouvé par écrit (article 1359 du Code civil), parce que les parties ont eu le temps de se ménager une preuve. Le fait juridique, lui, se prouve par **tout moyen** : témoignages, présomptions, constats — puisque personne ne prévoit un accident. C'est l'un des raisonnements les plus fréquemment testés en cas pratique de L1."
+    ],
+    "keyPoints": [
+      "Patrimoniaux : cessibles, saisissables, prescriptibles. Extrapatrimoniaux : l'inverse.",
+      "Trois droits patrimoniaux : réel (sur une chose), personnel (contre une personne), intellectuel.",
+      "Acte juridique = volonté de produire des effets ; fait juridique = événement auquel la loi attache des effets.",
+      "Preuve : écrit exigé pour l'acte juridique au-delà d'un seuil ; liberté de la preuve pour le fait juridique."
+    ],
+    "definitions": [
+      { "term": "Droit patrimonial", "text": "Droit subjectif évaluable en argent, qui entre dans le patrimoine de son titulaire et qui est cessible, transmissible, saisissable et prescriptible." },
+      { "term": "Droit réel", "text": "Droit qui porte directement sur une chose et confère à son titulaire un droit de suite et un droit de préférence. Le droit de propriété en est l'archétype." },
+      { "term": "Droit personnel", "text": "Droit d'exiger d'une personne déterminée l'exécution d'une prestation : donner, faire ou ne pas faire. Aussi appelé droit de créance." },
+      { "term": "Acte juridique", "text": "Manifestation de volonté destinée à produire des effets de droit. Il peut être unilatéral, bilatéral ou collectif.", "source": "Article 1100-1 du Code civil" },
+      { "term": "Fait juridique", "text": "Agissement ou événement auquel la loi attache des effets de droit, sans que ces effets aient été spécialement voulus par leur auteur.", "source": "Article 1100-2 du Code civil" }
+    ],
+    "exam": {
+      "kind": "cas pratique",
+      "question": "Mathilde prête 2 000 euros à son cousin Théo. Aucun écrit n'est rédigé. Trois mois plus tard, Théo refuse de rembourser et conteste l'existence du prêt. Par ailleurs, en sortant de chez Théo, Mathilde a glissé sur le palier mal entretenu de l'immeuble et s'est fracturé le poignet ; elle veut engager la responsabilité du syndic. Comment Mathilde peut-elle prouver chacune de ses prétentions ?",
+      "concise": "Les deux prétentions relèvent de régimes de preuve opposés, parce qu'elles n'ont pas la même source. **Le prêt** est un acte juridique : une manifestation de volonté destinée à produire des effets de droit, au sens de l'article 1100-1 du Code civil. Son montant dépassant le seuil réglementaire, il doit en principe être prouvé par écrit (article 1359). Mathilde n'en a pas. Elle n'est cependant pas démunie : elle peut invoquer un **commencement de preuve par écrit** — un SMS, un mail, un relevé bancaire mentionnant le prêt — qui, complété par des témoignages ou des présomptions, rend la preuve recevable ; elle peut aussi se prévaloir de l'impossibilité morale de se procurer un écrit, admise entre proches parents, qui la fait échapper à l'exigence d'écrit. **La chute**, en revanche, est un fait juridique au sens de l'article 1100-2 : un événement auquel la loi attache des effets de droit sans qu'ils aient été voulus. Elle se prouve donc par **tout moyen** : certificat médical, photographies du palier, témoignages, constat d'huissier.",
+      "plan": [
+        {
+          "title": "I. La preuve du prêt, acte juridique soumis à l'exigence d'un écrit",
+          "children": [
+            { "title": "A. La qualification et le principe", "points": ["Qualification : contrat de prêt, acte juridique bilatéral, article 1100-1", "Montant supérieur au seuil réglementaire : preuve par écrit exigée, article 1359", "Justification : les parties pouvaient se préconstituer une preuve"] },
+            { "title": "B. Les tempéraments applicables à l'espèce", "points": ["Le commencement de preuve par écrit : SMS, mail, virement libellé", "L'impossibilité morale de se procurer un écrit entre proches parents", "Conclusion : la preuve redevient libre et Mathilde peut produire témoignages et présomptions"] }
+          ]
+        },
+        {
+          "title": "II. La preuve de la chute, fait juridique soumis à la liberté de la preuve",
+          "children": [
+            { "title": "A. La qualification", "points": ["Événement non recherché auquel la loi attache des effets : article 1100-2", "Fondement de l'action : responsabilité du fait des choses ou faute d'entretien", "Conséquence : aucune preuve préconstituée n'était possible"] },
+            { "title": "B. Les modes de preuve mobilisables", "points": ["Certificat médical initial établissant le dommage et sa date", "Constat d'huissier et photographies établissant l'état du palier", "Témoignages des occupants de l'immeuble sur le défaut d'entretien"] }
+          ]
+        }
+      ],
+      "pitfalls": [
+        "Toujours qualifier avant de raisonner : c'est la qualification acte/fait qui commande le régime de preuve.",
+        "Le commencement de preuve par écrit ne suffit jamais seul : il doit être corroboré par un autre élément."
+      ]
+    },
+    "quiz": [
+      { "q": "Un droit extrapatrimonial est :", "choices": ["Cessible et saisissable", "Incessible et en principe imprescriptible", "Toujours écrit", "Réservé aux personnes morales"], "answer": 1, "why": "Hors commerce juridique : droit au nom, à l'honneur, à la vie privée. Ni cessible, ni saisissable, ni en principe prescriptible." },
+      { "q": "Le droit de suite et le droit de préférence caractérisent :", "choices": ["Le droit personnel", "Le droit réel", "Le droit intellectuel", "Le droit extrapatrimonial"], "answer": 1, "why": "Le droit réel porte directement sur la chose : son titulaire la suit en quelque main qu'elle passe et prime les créanciers chirographaires." },
+      { "q": "Un accident de la circulation est :", "choices": ["Un acte juridique", "Un fait juridique", "Un contrat", "Un quasi-contrat unilatéral"], "answer": 1, "why": "C'est un événement auquel la loi attache des effets de droit sans qu'ils aient été voulus : article 1100-2 du Code civil." },
+      { "q": "Le fait juridique se prouve :", "choices": ["Par écrit uniquement", "Par tout moyen", "Par témoignage uniquement", "Par acte authentique"], "answer": 1, "why": "Personne ne peut se préconstituer la preuve d'un événement qu'il ne prévoit pas : la preuve est donc libre." },
+      { "q": "Le commencement de preuve par écrit :", "choices": ["Suffit à lui seul à prouver l'acte", "Doit être complété par un autre élément de preuve", "N'existe plus depuis 2016", "Ne concerne que les actes authentiques"], "answer": 1, "why": "Il rend la preuve libre mais ne prouve pas à lui seul : il faut le corroborer par des témoignages ou des présomptions." }
+    ]
+  }
+]

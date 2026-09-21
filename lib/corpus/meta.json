@@ -1,0 +1,51 @@
+[
+ {
+  "id": "intro-droit",
+  "title": "Introduction générale au droit",
+  "short": "Intro au droit",
+  "subtitle": "La règle de droit, la hiérarchie des normes et les grandes classifications",
+  "hue": "gold",
+  "prefix": "intro-droit"
+ },
+ {
+  "id": "constitutionnel",
+  "title": "Droit constitutionnel",
+  "short": "Constitutionnel",
+  "subtitle": "L'État, la souveraineté et les formes d'organisation du pouvoir",
+  "hue": "green",
+  "prefix": "constit"
+ },
+ {
+  "id": "organisation-juridictionnelle",
+  "title": "Organisation juridictionnelle",
+  "short": "Organisation jur.",
+  "subtitle": "Les principes de la justice, les deux ordres et les juridictions",
+  "hue": "blue",
+  "prefix": "orga"
+ },
+ {
+  "id": "histoire-droit-public",
+  "title": "Introduction historique au droit public",
+  "short": "Histoire du droit",
+  "subtitle": "Des droits cunéiformes à l'héritage du droit romain",
+  "hue": "plum",
+  "prefix": "histoire"
+ },
+ {
+  "id": "methodologie",
+  "title": "Méthodologie juridique",
+  "short": "Méthodologie",
+  "subtitle": "Dissertation et commentaire de texte : la technique qui fait la note",
+  "hue": "rust",
+  "prefix": "methodo"
+ },
+ {
+  "id": "droit-obligations",
+  "title": "Droit des obligations",
+  "short": "Obligations",
+  "subtitle": "Formation du contrat, validité, vices du consentement et sanctions de l'inexécution",
+  "hue": "blue",
+  "prefix": "obligations",
+  "niveau": "L2"
+ }
+]

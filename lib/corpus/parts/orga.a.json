@@ -1,0 +1,234 @@
+[
+  {
+    "id": "orga-01",
+    "order": 1,
+    "title": "Le monopole étatique de la justice",
+    "teaser": "Depuis le 4 août 1789, l'État seul juge — et il le paie de deux obligations.",
+    "minutes": 5,
+    "brief": [
+      "Rendre la justice est une mission essentielle de l'État : pas de justice, pas d'État de droit. L'État de droit se reconnaît à ce qu'il applique le droit sur son territoire **et se soumet lui-même à ce droit**. La justice est à l'origine du contrat social : c'est parce qu'un tiers impartial peut trancher que nous pouvons faire société plutôt que nous entre-tuer.",
+      "Sous l'Ancien Régime coexistaient plusieurs justices : justices seigneuriales, justice canonique, justice royale. La **nuit du 4 août 1789** abolit les privilèges et, avec eux, ces justices concurrentes. L'État récupère le monopole. C'est un attribut direct de la souveraineté : nul ne peut rendre la justice à sa place.",
+      "Ce monopole a une contrepartie en deux temps. D'abord l'**obligation de juger** : le juge ne peut pas refuser de statuer, fût-ce au motif que la loi est obscure ou insuffisante. Le refus constitue un **déni de justice**, sanctionné pénalement. Ensuite l'**obligation de bien juger** : l'État doit respecter les garanties de la Convention européenne des droits de l'homme — délai raisonnable, impartialité, procès équitable — et les règles constitutionnelles.",
+      "Deux exceptions notables. L'**arbitrage** permet aux parties de confier leur litige à un arbitre privé, désigné par une convention d'arbitrage ; la sentence arbitrale a la valeur d'un jugement, mais les arbitres n'ont pas la **force exécutoire**, qui reste le monopole de l'État : il faut passer par l'exequatur du juge étatique. L'arbitrage est limité au droit commercial et aux matières internationales, et totalement interdit en droit de la famille, en droit pénal et en droit administratif. La **transaction** est un contrat par lequel les parties mettent fin au litige par des concessions réciproques — fréquente en droit du travail."
+    ],
+    "keyPoints": [
+      "4 août 1789 : abolition des justices seigneuriales et canoniques, l'État récupère le monopole.",
+      "Contrepartie n° 1 : obligation de juger, interdiction du déni de justice.",
+      "Contrepartie n° 2 : obligation de bien juger (délai raisonnable, impartialité, procès équitable).",
+      "Arbitrage et transaction : exceptions encadrées ; la force exécutoire reste étatique."
+    ],
+    "definitions": [
+      { "term": "Monopole étatique de la justice", "text": "Principe selon lequel seul l'État, par ses juridictions, peut trancher les litiges et faire appliquer le droit par la contrainte. Attribut de la souveraineté." },
+      { "term": "Déni de justice", "text": "Refus d'un juge de statuer, notamment sous prétexte du silence, de l'obscurité ou de l'insuffisance de la loi. Constitue une infraction.", "source": "Article 4 du Code civil" },
+      { "term": "Arbitrage", "text": "Mode conventionnel de règlement des litiges par lequel les parties confient à un ou plusieurs arbitres privés, qu'elles désignent, le soin de trancher leur différend par une sentence arbitrale." },
+      { "term": "Force exécutoire", "text": "Pouvoir de contraindre une partie à exécuter une décision, au besoin par la force publique. Monopole de l'État : la sentence arbitrale doit recevoir l'exequatur du juge pour en être revêtue." },
+      { "term": "Transaction", "text": "Contrat écrit par lequel les parties terminent une contestation née ou préviennent une contestation à naître au moyen de concessions réciproques." }
+    ],
+    "exam": {
+      "kind": "dissertation",
+      "question": "Le monopole étatique de la justice est-il absolu ?",
+      "concise": "Le monopole étatique de la justice est un acquis révolutionnaire et un attribut de la souveraineté : depuis l'abolition des privilèges en août 1789, l'État seul peut trancher les litiges et user de la contrainte pour faire exécuter ses décisions. Ce monopole est solidement garanti, tant par l'interdiction faite aux particuliers de se faire justice à eux-mêmes que par l'obligation corrélative faite à l'État de juger et de bien juger. Il n'est pourtant pas absolu. Il connaît des **exceptions conventionnelles** — l'arbitrage, la transaction, les modes amiables de règlement des différends — que le législateur encourage pour désengorger les tribunaux. Mais ces exceptions sont doublement contenues : elles sont **interdites** dans les matières touchant à l'ordre public (famille, pénal, administratif), et elles ne franchissent jamais le seuil de la contrainte, car la force exécutoire demeure le monopole irréductible de l'État.",
+      "plan": [
+        {
+          "title": "I. Un monopole solidement établi",
+          "children": [
+            { "title": "A. Un acquis révolutionnaire", "points": ["Nuit du 4 août 1789 : disparition des justices seigneuriales et canoniques", "La justice comme attribut de la souveraineté étatique", "Interdiction de la vengeance privée, sauf légitime défense et état de nécessité"] },
+            { "title": "B. Un monopole qui oblige l'État", "points": ["Obligation de juger : article 4 du Code civil, sanction du déni de justice", "Obligation de bien juger : article 6 § 1 de la CEDH, procès équitable et délai raisonnable", "Gratuité relative : l'aide juridictionnelle, loi du 10 juillet 1991"] }
+          ]
+        },
+        {
+          "title": "II. Un monopole aménagé par la volonté des parties",
+          "children": [
+            { "title": "A. Les modes conventionnels de règlement", "points": ["L'arbitrage : convention d'arbitrage, sentence ayant valeur de jugement", "La transaction : concessions réciproques, fréquente en droit du travail", "Médiation et conciliation, encouragées pour désengorger les juridictions"] },
+            { "title": "B. Des aménagements strictement bornés", "points": ["Matières fermées : droit de la famille, droit pénal, droit administratif", "L'exequatur : la sentence n'est exécutoire qu'après contrôle du juge étatique", "Le recours en annulation devant la cour d'appel : le juge garde le dernier mot"] }
+          ]
+        }
+      ],
+      "pitfalls": [
+        "Ne pas dire que la sentence arbitrale « n'a pas de valeur » : elle a autorité de chose jugée, mais pas force exécutoire.",
+        "La transaction n'est pas un jugement : c'est un contrat, régi par le Code civil."
+      ]
+    },
+    "quiz": [
+      { "q": "L'État récupère le monopole de la justice à partir de :", "choices": ["La nuit du 4 août 1789", "La loi des 16 et 24 août 1790", "Le Code civil de 1804", "La Constitution de 1958"], "answer": 0, "why": "L'abolition des privilèges emporte la disparition des justices seigneuriales et canoniques ; la loi de 1790 organisera ensuite la séparation des ordres." },
+      { "q": "Le déni de justice est :", "choices": ["Le rejet d'une demande", "Le refus de juger, notamment au motif que la loi est obscure", "Une décision d'appel", "Un non-lieu"], "answer": 1, "why": "Article 4 du Code civil. Rejeter une demande au fond est un jugement, pas un déni de justice." },
+      { "q": "L'arbitrage est interdit en matière :", "choices": ["Commerciale", "Internationale", "De droit de la famille", "Contractuelle"], "answer": 2, "why": "Interdit en droit de la famille, en droit pénal et en droit administratif : ces matières touchent à l'ordre public." },
+      { "q": "La force exécutoire appartient :", "choices": ["Aux arbitres", "Aux parties", "À l'État seul", "Aux huissiers librement"], "answer": 2, "why": "C'est le cœur irréductible du monopole : une sentence arbitrale doit recevoir l'exequatur du juge étatique pour être exécutée par la force." },
+      { "q": "La transaction suppose :", "choices": ["Un jugement préalable", "Des concessions réciproques des parties", "L'accord du procureur", "Un arbitre"], "answer": 1, "why": "C'est un contrat écrit par lequel chaque partie renonce à une part de ses prétentions pour mettre fin au litige." }
+    ]
+  },
+  {
+    "id": "orga-02",
+    "order": 2,
+    "title": "L'indépendance et l'impartialité de la justice",
+    "teaser": "Séparation des pouvoirs souple, valeur constitutionnelle, et les empiètements que la Constitution autorise.",
+    "minutes": 5,
+    "brief": [
+      "L'indépendance signifie que les juges ne sont soumis à aucune pression extérieure, ni du pouvoir politique, ni des parties, ni de l'opinion. Elle découle de la **séparation des pouvoirs** : faire la loi appartient au Parlement, gouverner au pouvoir exécutif, juger aux juridictions. Montesquieu l'avait formulé comme une garantie contre la tyrannie : il faut que le pouvoir arrête le pouvoir.",
+      "Cette séparation n'est pas **stricte** mais **souple** : les interactions entre pouvoirs sont prévues par la Constitution elle-même. Elle organise même des empiètements de l'exécutif sur la fonction de juger. Le **droit de grâce** du Président de la République, prévu à l'article 17, dispense un condamné d'exécuter sa peine. L'**amnistie**, votée par le Parlement, efface l'infraction elle-même pour une catégorie de personnes. Ces mécanismes ne sont pas des anomalies : ils sont constitutionnellement organisés.",
+      "L'indépendance a **valeur constitutionnelle**. Son fondement textuel est l'article 16 de la Déclaration de 1789 : « Toute société dans laquelle la garantie des droits n'est pas assurée, ni la séparation des pouvoirs déterminée, n'a point de Constitution. » Le Conseil constitutionnel l'a consacrée, notamment par une décision du **29 juillet 1998** et, plus récemment, par une décision QPC du **21 mars 2019**. L'article 64 de la Constitution fait du Président de la République le garant de l'indépendance de l'autorité judiciaire, assisté du Conseil supérieur de la magistrature.",
+      "L'**impartialité** en est le prolongement, mais ne se confond pas avec elle. L'indépendance est une qualité **statutaire** : elle protège le juge des pressions par l'inamovibilité des magistrats du siège. L'impartialité est une qualité **fonctionnelle** : elle exige que le juge n'ait pas de préjugé dans l'affaire qu'il tranche. On distingue l'impartialité **subjective** — les convictions personnelles du juge — et l'impartialité **objective** — l'apparence, car la justice doit non seulement être impartiale, mais le paraître. C'est le fondement des procédures de récusation et de renvoi pour cause de suspicion légitime."
+    ],
+    "keyPoints": [
+      "Séparation des pouvoirs souple : la Constitution organise elle-même les interactions.",
+      "Empiètements prévus : droit de grâce (article 17), amnistie votée par le Parlement.",
+      "Valeur constitutionnelle : article 16 DDHC, décisions du 29 juillet 1998 et QPC du 21 mars 2019.",
+      "Indépendance = statut (inamovibilité) ; impartialité = fonction (subjective et objective)."
+    ],
+    "definitions": [
+      { "term": "Indépendance de la justice", "text": "Garantie statutaire selon laquelle les juridictions et les magistrats exercent leur fonction sans être soumis à des pressions ou instructions extérieures.", "source": "Article 16 de la DDHC de 1789" },
+      { "term": "Impartialité objective", "text": "Exigence selon laquelle le juge doit offrir des garanties suffisantes pour exclure tout doute légitime sur sa neutralité, indépendamment de ses convictions réelles." },
+      { "term": "Droit de grâce", "text": "Prérogative du Président de la République dispensant un condamné de tout ou partie de l'exécution de sa peine, sans effacer la condamnation.", "source": "Article 17 de la Constitution" },
+      { "term": "Amnistie", "text": "Mesure législative qui efface rétroactivement le caractère délictueux de certains faits pour une catégorie de personnes, faisant disparaître la condamnation du casier judiciaire." },
+      { "term": "Inamovibilité", "text": "Garantie statutaire empêchant qu'un magistrat du siège soit déplacé, même par promotion, sans son consentement.", "source": "Article 64 de la Constitution" }
+    ],
+    "exam": {
+      "kind": "dissertation",
+      "question": "L'indépendance de la justice est-elle assurée en France ?",
+      "concise": "L'indépendance de la justice dispose en France de garanties solides. Elle repose sur un fondement constitutionnel — l'article 16 de la Déclaration de 1789, consacré par le Conseil constitutionnel notamment le 29 juillet 1998 puis en QPC le 21 mars 2019 — et sur des garanties statutaires réelles : l'inamovibilité des magistrats du siège, le rôle du Conseil supérieur de la magistrature, et la protection qu'offre l'article 64. Elle reste pourtant discutée sur deux points. D'une part, le **statut du parquet** : les magistrats du ministère public sont hiérarchiquement subordonnés au garde des Sceaux, ce qui a conduit la Cour européenne des droits de l'homme, dans l'arrêt *Medvedyev* puis surtout *Moulin c/ France* du 23 novembre 2010, à refuser de les qualifier d'autorité judiciaire au sens de l'article 5 de la Convention. D'autre part, les **moyens** : un juge submergé et sous-doté ne juge pas librement, et la lenteur chronique de la justice française nourrit une dépendance de fait. L'indépendance est donc juridiquement garantie et pratiquement fragile.",
+      "plan": [
+        {
+          "title": "I. Une indépendance juridiquement garantie",
+          "children": [
+            { "title": "A. Un fondement constitutionnel", "points": ["Article 16 de la DDHC : séparation des pouvoirs et garantie des droits", "CC, 29 juillet 1998, et QPC du 21 mars 2019", "Article 64 : le Président garant, assisté du Conseil supérieur de la magistrature"] },
+            { "title": "B. Des garanties statutaires effectives", "points": ["Inamovibilité des magistrats du siège", "Rôle du CSM dans la nomination et la discipline", "Interdiction des instructions individuelles depuis la loi du 25 juillet 2013"] }
+          ]
+        },
+        {
+          "title": "II. Une indépendance pratiquement discutée",
+          "children": [
+            { "title": "A. La question du parquet", "points": ["Subordination hiérarchique au garde des Sceaux", "CEDH, Moulin c/ France, 23 novembre 2010 : le parquet n'est pas une autorité judiciaire au sens de l'article 5", "Les projets de réforme du CSM restés inaboutis"] },
+            { "title": "B. La contrainte des moyens", "points": ["Sous-dotation budgétaire et délais déraisonnables", "Remise en cause de la collégialité pour raisons budgétaires", "Conclusion : une indépendance qui se joue autant dans les moyens que dans les textes"] }
+          ]
+        }
+      ],
+      "pitfalls": [
+        "Ne pas confondre grâce (dispense d'exécuter la peine) et amnistie (effacement de l'infraction).",
+        "Indépendance et impartialité sont liées mais distinctes : l'une est statutaire, l'autre fonctionnelle."
+      ]
+    },
+    "quiz": [
+      { "q": "Le fondement constitutionnel de l'indépendance de la justice est :", "choices": ["L'article 55 de la Constitution", "L'article 16 de la DDHC", "L'article 34 de la Constitution", "L'article 4 du Code civil"], "answer": 1, "why": "L'article 16 de la Déclaration de 1789 lie garantie des droits et séparation des pouvoirs ; il a valeur constitutionnelle depuis 1971." },
+      { "q": "Le droit de grâce :", "choices": ["Efface l'infraction", "Dispense d'exécuter tout ou partie de la peine", "Appartient au Parlement", "Annule le jugement"], "answer": 1, "why": "La grâce ne touche ni la culpabilité ni la condamnation : elle dispense de l'exécution. C'est l'amnistie qui efface l'infraction." },
+      { "q": "L'inamovibilité protège :", "choices": ["Les magistrats du parquet", "Les magistrats du siège", "Les greffiers", "Les avocats"], "answer": 1, "why": "Un magistrat du siège ne peut être déplacé sans son consentement, même par promotion. Le parquet, lui, est hiérarchisé." },
+      { "q": "L'impartialité objective porte sur :", "choices": ["Les convictions intimes du juge", "L'apparence de neutralité offerte par la juridiction", "La compétence technique du juge", "La rapidité du jugement"], "answer": 1, "why": "La justice doit non seulement être impartiale mais le paraître : c'est ce qui fonde la récusation et le renvoi pour suspicion légitime." },
+      { "q": "La séparation des pouvoirs en France est :", "choices": ["Stricte", "Souple, avec des interactions prévues par la Constitution", "Inexistante", "Limitée au pouvoir législatif"], "answer": 1, "why": "La Constitution organise elle-même les empiètements : droit de grâce, amnistie, responsabilité du gouvernement devant le Parlement." }
+    ]
+  },
+  {
+    "id": "orga-03",
+    "order": 3,
+    "title": "Collégialité et double degré de juridiction",
+    "teaser": "Deux garanties de qualité — dont aucune n'a valeur constitutionnelle.",
+    "minutes": 5,
+    "brief": [
+      "La **collégialité** veut qu'à chaque degré, le justiciable soit jugé par plusieurs juges plutôt que par un seul. L'idée, héritée de l'Ancien Régime, est que la délibération limite l'erreur et dilue la responsabilité personnelle du juge, donc les pressions. Mais attention au piège : la collégialité n'a **pas de valeur constitutionnelle**, et la Cour européenne des droits de l'homme ne la considère pas comme indispensable au procès équitable. Elle recule donc régulièrement sous l'effet des réformes budgétaires : le juge unique s'est généralisé en matière civile comme pénale.",
+      "Le **double degré de juridiction** permet de faire rejuger une affaire par une juridiction supérieure. Dans l'ordre judiciaire, les **juges du fond** de première instance jugent en fait et en droit et rendent des **jugements** ; les **juges d'appel** rejugent en fait et en droit et rendent des **arrêts**. En cas de doute sur le terme, « décision » convient pour les deux.",
+      "Le **pourvoi en cassation** n'est **pas un troisième degré de juridiction**. C'est le point le plus souvent raté en examen. Le juge de cassation est le juge du **droit** : il ne rejuge pas les faits, il vérifie que le droit a été correctement appliqué par les juges du fond. Sa fonction est d'**unifier** l'interprétation du droit sur tout le territoire : les juridictions inférieures doivent respecter son interprétation pour les affaires à venir.",
+      "Le droit à l'appel n'a pas non plus valeur constitutionnelle, mais la Convention européenne des droits de l'homme l'impose en **matière criminelle** — d'où la création de la cour d'assises d'appel en 2000. Il connaît des limites budgétaires : les petits litiges civils sont jugés en **premier et dernier ressort**, sans appel possible, en dessous d'un seuil fixé par décret. Le pourvoi en cassation reste toutefois ouvert de plein droit."
+    ],
+    "keyPoints": [
+      "Collégialité : garantie de qualité, mais sans valeur constitutionnelle ; recul du fait des coupes budgétaires.",
+      "Première instance = jugements ; appel = arrêts ; les deux jugent en fait et en droit.",
+      "La cassation n'est pas un troisième degré : le juge de cassation est juge du droit et unifie la jurisprudence.",
+      "Appel obligatoire en matière criminelle (CEDH) ; premier et dernier ressort pour les petits litiges civils."
+    ],
+    "definitions": [
+      { "term": "Collégialité", "text": "Principe selon lequel une affaire est jugée par une formation composée de plusieurs magistrats délibérant ensemble, afin de limiter les erreurs et les pressions." },
+      { "term": "Juge du fond", "text": "Juridiction de première instance ou d'appel qui apprécie à la fois les faits de l'espèce et les règles de droit applicables." },
+      { "term": "Pourvoi en cassation", "text": "Recours par lequel une partie conteste la conformité au droit d'une décision rendue en dernier ressort, sans que les faits puissent être rejugés." },
+      { "term": "Premier et dernier ressort", "text": "Qualification d'une décision rendue par une juridiction de première instance qui n'est pas susceptible d'appel, seul le pourvoi en cassation restant ouvert." },
+      { "term": "Autorité de la chose interprétée", "text": "Force persuasive de l'interprétation retenue par la juridiction suprême, que les juges du fond suivent pour les affaires à venir sans y être formellement contraints." }
+    ],
+    "exam": {
+      "kind": "question de cours",
+      "question": "Le pourvoi en cassation constitue-t-il un troisième degré de juridiction ?",
+      "concise": "Non, et c'est une distinction essentielle. Un degré de juridiction suppose que l'affaire soit **rejugée en fait et en droit**. C'est le cas de la première instance et de l'appel : le juge d'appel réexamine l'ensemble du litige et peut confirmer, infirmer ou réformer la décision attaquée. La Cour de cassation, elle, est le **juge du droit** : elle ne connaît pas des faits, qui sont souverainement appréciés par les juges du fond, et se borne à vérifier que la règle de droit a été correctement appliquée et que la décision est régulièrement motivée. Elle ne tranche donc pas le litige : elle **casse** la décision et renvoie devant une autre juridiction du fond, sauf lorsqu'elle casse sans renvoi. Sa fonction n'est pas de rejuger mais d'**unifier** l'interprétation du droit sur tout le territoire, afin que la même règle reçoive partout le même sens.",
+      "plan": [
+        {
+          "title": "I. La cassation, un contrôle distinct du jugement",
+          "children": [
+            { "title": "A. Un contrôle limité au droit", "points": ["Souveraineté des juges du fond dans l'appréciation des faits", "Contrôle de la qualification juridique, de la motivation et de la procédure", "Les cas d'ouverture : violation de la loi, défaut de base légale, manque de motifs"] },
+            { "title": "B. Un office qui n'est pas de trancher", "points": ["La Cour casse et renvoie devant une autre juridiction du fond", "La cassation sans renvoi, exception lorsque plus rien ne reste à juger", "L'assemblée plénière en cas de résistance des juges du fond"] }
+          ]
+        },
+        {
+          "title": "II. La cassation, une fonction d'unification du droit",
+          "children": [
+            { "title": "A. L'unité d'interprétation", "points": ["Une même règle doit recevoir le même sens sur tout le territoire", "L'autorité de la chose interprétée, persuasive et non contraignante", "La publication des arrêts et l'open data des décisions de justice"] },
+            { "title": "B. Les limites du modèle", "points": ["L'engorgement et le filtrage des pourvois", "Le développement du contrôle de proportionnalité, qui rapproche la Cour du fait", "Conclusion : un juge du droit dont l'office évolue sans devenir un troisième degré"] }
+          ]
+        }
+      ],
+      "pitfalls": [
+        "Jugement en première instance, arrêt en appel et en cassation : ne pas inverser le vocabulaire.",
+        "Ne pas écrire que la Cour de cassation « rejuge l'affaire » : elle casse et renvoie."
+      ]
+    },
+    "quiz": [
+      { "q": "La collégialité a :", "choices": ["Valeur constitutionnelle", "Valeur conventionnelle obligatoire", "Aucune valeur constitutionnelle", "Valeur supérieure à la loi"], "answer": 2, "why": "Ni le Conseil constitutionnel ni la Cour européenne ne l'imposent, ce qui explique la généralisation du juge unique pour raisons budgétaires." },
+      { "q": "Les juridictions de première instance rendent :", "choices": ["Des arrêts", "Des jugements", "Des sentences", "Des ordonnances uniquement"], "answer": 1, "why": "Jugements en première instance, arrêts en appel et en cassation. « Décision » est le terme générique sûr." },
+      { "q": "Le juge de cassation est :", "choices": ["Un troisième degré de juridiction", "Le juge du droit", "Le juge du fait", "Une juridiction d'appel"], "answer": 1, "why": "Il vérifie l'application du droit sans rejuger les faits : ce n'est donc pas un degré de juridiction supplémentaire." },
+      { "q": "La CEDH impose le double degré de juridiction :", "choices": ["En toute matière", "En matière criminelle", "En matière civile uniquement", "Jamais"], "answer": 1, "why": "D'où la création de la cour d'assises d'appel par la loi du 15 juin 2000 sur la présomption d'innocence." },
+      { "q": "Une affaire jugée en premier et dernier ressort :", "choices": ["Ne peut faire l'objet d'aucun recours", "Peut faire l'objet d'un appel", "Peut faire l'objet d'un pourvoi en cassation", "Est jugée par la Cour de cassation"], "answer": 2, "why": "L'appel est fermé, mais le pourvoi en cassation reste ouvert de plein droit : le contrôle du droit n'est jamais supprimé." }
+    ]
+  },
+  {
+    "id": "orga-04",
+    "order": 4,
+    "title": "Publicité et célérité de la justice",
+    "teaser": "Une justice rendue au nom du peuple doit se voir — et ne pas faire attendre.",
+    "minutes": 5,
+    "brief": [
+      "La **publicité** de la justice découle de ce que les décisions sont rendues « au nom du peuple français ». Si le peuple est la source de la justice, il doit pouvoir la contrôler. L'article 6 § 1 de la Convention européenne des droits de l'homme le consacre : toute personne a droit à ce que sa cause soit entendue **publiquement**. La publicité porte à la fois sur les audiences, ouvertes à tous, et sur les décisions, qui doivent être rendues publiquement et motivées.",
+      "Ce principe connaît des limites. Le **huis clos** ferme l'audience au public lorsque la publicité porterait atteinte à l'intimité de la vie privée, à l'ordre public ou aux intérêts d'un mineur : seules les parties, leurs proches et le personnel de la juridiction y assistent. Par ailleurs, l'**enregistrement et la captation** des audiences sont en principe interdits, même si la loi du 22 décembre 2021 a ouvert la possibilité de filmer certaines audiences à des fins pédagogiques, sous conditions strictes.",
+      "L'**open data** des décisions de justice prolonge la publicité à l'ère numérique : les décisions sont progressivement mises en ligne gratuitement, après pseudonymisation des personnes physiques. L'enjeu est double — rendre le droit accessible, et permettre l'analyse de la jurisprudence — mais il soulève la question de la protection des données et du risque de profilage des magistrats, que la loi interdit.",
+      "La **célérité** exige que les décisions soient rendues dans un **délai raisonnable**, exigence posée par l'article 6 § 1 de la Convention et reprise par le Code de l'organisation judiciaire. Le caractère raisonnable s'apprécie *in concreto*, au regard de la nature et de la complexité de l'affaire, du comportement des parties et de celui des autorités. La justice française est régulièrement critiquée pour sa lenteur, imputée par le ministère lui-même au manque de moyens humains et matériels ; l'État peut être condamné à indemniser le justiciable pour fonctionnement défectueux du service public de la justice."
+    ],
+    "keyPoints": [
+      "Publicité : audiences ouvertes et décisions publiques, article 6 § 1 CEDH.",
+      "Limites : huis clos (vie privée, ordre public, mineurs) et interdiction de filmer, assouplie en 2021.",
+      "Open data : mise en ligne pseudonymisée, interdiction du profilage des magistrats.",
+      "Célérité : délai raisonnable apprécié in concreto ; l'État répond du fonctionnement défectueux."
+    ],
+    "definitions": [
+      { "term": "Publicité de la justice", "text": "Principe imposant que les audiences soient accessibles au public et que les décisions soient rendues publiquement, afin de permettre le contrôle de la justice par les citoyens.", "source": "Article 6 § 1 de la CEDH" },
+      { "term": "Huis clos", "text": "Décision par laquelle une juridiction ferme l'audience au public pour protéger l'intimité de la vie privée, l'ordre public ou les intérêts d'un mineur." },
+      { "term": "Délai raisonnable", "text": "Exigence de célérité appréciée au cas par cas selon la complexité de l'affaire, le comportement des parties et celui des autorités judiciaires.", "source": "Article 6 § 1 de la CEDH" },
+      { "term": "Open data des décisions de justice", "text": "Mise à disposition gratuite et en ligne des décisions rendues par les juridictions, après pseudonymisation des personnes physiques." },
+      { "term": "Non-lieu", "text": "Décision par laquelle le juge d'instruction constate qu'il n'existe pas de charges suffisantes pour renvoyer la personne mise en examen devant une juridiction de jugement." }
+    ],
+    "exam": {
+      "kind": "dissertation",
+      "question": "La publicité de la justice est-elle un principe absolu ?",
+      "concise": "La publicité est un principe fondamental du procès : rendue au nom du peuple français, la justice doit pouvoir être contrôlée par lui. L'article 6 § 1 de la Convention européenne des droits de l'homme lui donne un fondement conventionnel solide, et elle se décline en publicité des audiences comme des décisions, désormais prolongée par l'open data. Elle n'est pourtant jamais absolue, car elle entre en conflit avec d'autres exigences de valeur au moins égale. Le **huis clos** la neutralise lorsque l'intimité de la vie privée, l'ordre public ou l'intérêt d'un mineur l'imposent. L'**interdiction d'enregistrer** protège la sérénité des débats et la présomption d'innocence, même si la loi du 22 décembre 2021 l'a assouplie à des fins pédagogiques. La **pseudonymisation** imposée par l'open data et l'interdiction du profilage des magistrats montrent enfin que la transparence numérique doit elle-même être bornée. La publicité est donc un principe de portée générale, constamment mis en balance.",
+      "plan": [
+        {
+          "title": "I. Un principe de portée générale",
+          "children": [
+            { "title": "A. Un fondement solide", "points": ["La justice rendue au nom du peuple français", "Article 6 § 1 de la CEDH : droit à ce que la cause soit entendue publiquement", "Publicité des audiences et publicité des décisions motivées"] },
+            { "title": "B. Un principe étendu par le numérique", "points": ["L'open data des décisions de justice, accès gratuit et en ligne", "Un droit rendu plus accessible et une jurisprudence analysable", "La motivation comme condition du contrôle démocratique"] }
+          ]
+        },
+        {
+          "title": "II. Un principe constamment mis en balance",
+          "children": [
+            { "title": "A. Les limites tenant à la protection des personnes", "points": ["Le huis clos : vie privée, ordre public, intérêt du mineur", "L'interdiction d'enregistrer, assouplie par la loi du 22 décembre 2021", "La présomption d'innocence et la sérénité des débats"] },
+            { "title": "B. Les limites propres à la transparence numérique", "points": ["La pseudonymisation obligatoire des personnes physiques", "L'interdiction du profilage des magistrats", "Conclusion : une publicité fonctionnelle, non absolue"] }
+          ]
+        }
+      ],
+      "pitfalls": [
+        "Le huis clos n'est pas le secret : les parties et leurs conseils restent présents, et la décision est rendue publiquement.",
+        "Ne pas confondre publicité de l'audience et motivation de la décision : ce sont deux garanties distinctes."
+      ]
+    },
+    "quiz": [
+      { "q": "Le fondement conventionnel de la publicité de la justice est :", "choices": ["L'article 5 de la CEDH", "L'article 6 § 1 de la CEDH", "L'article 8 de la CEDH", "L'article 55 de la Constitution"], "answer": 1, "why": "L'article 6 § 1 garantit le droit à un procès équitable, public et dans un délai raisonnable." },
+      { "q": "Le huis clos permet d'assister à l'audience :", "choices": ["À personne", "Aux seules parties, proches et personnels de la juridiction", "À la presse uniquement", "À tous sauf aux mineurs"], "answer": 1, "why": "L'audience est fermée au public, mais les parties, leurs conseils et le personnel du tribunal restent présents." },
+      { "q": "Le délai raisonnable s'apprécie :", "choices": ["Selon un barème fixe", "In concreto, selon la complexité de l'affaire et le comportement des parties", "À six mois maximum", "Uniquement en matière pénale"], "answer": 1, "why": "Aucun délai chiffré n'est posé : l'appréciation est concrète, ce qui permet de tenir compte de la difficulté réelle du dossier." },
+      { "q": "L'open data des décisions de justice impose :", "choices": ["La publication des noms des parties", "La pseudonymisation des personnes physiques", "Un accès payant", "L'accord des parties"], "answer": 1, "why": "Les noms des personnes physiques sont occultés, et le profilage des magistrats à partir de ces données est interdit." },
+      { "q": "Un non-lieu est :", "choices": ["Un acquittement", "Une relaxe", "Une décision constatant l'absence de charges suffisantes", "Un renvoi devant la cour d'assises"], "answer": 2, "why": "Il intervient à l'issue de l'instruction. L'acquittement vient de la cour d'assises, la relaxe du tribunal correctionnel." }
+    ]
+  }
+]

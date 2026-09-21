@@ -1,0 +1,120 @@
+[
+  {
+    "id": "intro-03",
+    "order": 3,
+    "title": "L'application de la loi dans le temps",
+    "teaser": "Non-rétroactivité, effet immédiat, survie de la loi ancienne : le trio à ne jamais confondre.",
+    "minutes": 5,
+    "brief": [
+      "Quand une loi nouvelle remplace une loi ancienne, une question surgit aussitôt : que deviennent les situations nées sous l'empire de la loi ancienne ? L'article 2 du Code civil pose le principe : « La loi ne dispose que pour l'avenir ; elle n'a point d'effet rétroactif. » C'est le principe de **non-rétroactivité**.",
+      "Ce principe protège la sécurité juridique : on ne peut pas être jugé aujourd'hui sur une règle qui n'existait pas au moment des faits. En matière pénale, il a une valeur **constitutionnelle** (article 8 de la Déclaration de 1789) et ne souffre qu'une exception : la loi pénale plus douce s'applique immédiatement aux faits non définitivement jugés (*rétroactivité in mitius*). En matière civile, il n'a que valeur législative : le législateur peut donc y déroger par une loi expressément rétroactive, notamment par les lois de validation, sous le contrôle de la Cour européenne des droits de l'homme qui exige un impérieux motif d'intérêt général.",
+      "À côté de la rétroactivité, il faut maîtriser l'**effet immédiat**. La loi nouvelle s'applique immédiatement aux situations en cours de constitution et aux effets futurs des situations légales. Exemple : une loi qui modifie les conditions de l'autorité parentale s'applique aux familles déjà constituées, pour l'avenir. Ce n'est pas de la rétroactivité : on ne remet pas en cause le passé, on régit le présent.",
+      "Enfin la **survie de la loi ancienne** : par exception, les contrats en cours restent régis par la loi en vigueur au jour de leur conclusion. La raison est que le contrat est un acte de prévision : les parties ont calculé leurs engagements sur l'état du droit du moment. L'exception à l'exception : les lois d'ordre public particulièrement impérieuses s'appliquent immédiatement, même aux contrats en cours.",
+      "Le piège d'examen est constant : on confond rétroactivité et effet immédiat. Retiens la question de contrôle : est-ce que la loi nouvelle **remet en cause des effets déjà produits** ? Si oui, elle est rétroactive. Si elle ne régit que les effets à venir, elle est d'application immédiate."
+    ],
+    "keyPoints": [
+      "Article 2 du Code civil : principe de non-rétroactivité.",
+      "Exception majeure : la rétroactivité in mitius de la loi pénale plus douce.",
+      "Effet immédiat pour les situations légales en cours ; survie de la loi ancienne pour les contrats en cours.",
+      "Test décisif : la loi nouvelle touche-t-elle des effets déjà produits ?"
+    ],
+    "definitions": [
+      { "term": "Non-rétroactivité", "text": "Principe selon lequel la loi nouvelle ne peut pas régir des faits accomplis ni remettre en cause des effets juridiques déjà produits avant son entrée en vigueur.", "source": "Article 2 du Code civil" },
+      { "term": "Rétroactivité in mitius", "text": "Application immédiate de la loi pénale plus douce aux infractions commises avant son entrée en vigueur et non définitivement jugées.", "source": "Article 112-1 du Code pénal" },
+      { "term": "Effet immédiat de la loi nouvelle", "text": "Application de la loi nouvelle aux effets à venir des situations juridiques en cours, sans remise en cause des effets déjà produits." },
+      { "term": "Survie de la loi ancienne", "text": "Maintien de la loi en vigueur au jour de la conclusion du contrat pour régir ce contrat, malgré l'entrée en vigueur d'une loi nouvelle." },
+      { "term": "Loi de validation", "text": "Loi rétroactive par laquelle le législateur valide un acte administratif menacé d'annulation. Admise sous réserve d'un impérieux motif d'intérêt général." }
+    ],
+    "exam": {
+      "kind": "question de cours",
+      "question": "Expliquez la différence entre la rétroactivité d'une loi et son effet immédiat, en précisant le sort des contrats en cours.",
+      "concise": "La rétroactivité et l'effet immédiat se distinguent par ce qu'ils atteignent. Une loi est **rétroactive** lorsqu'elle régit des faits entièrement accomplis avant son entrée en vigueur ou remet en cause des effets juridiques déjà produits ; l'article 2 du Code civil l'interdit en principe, et ce principe a valeur constitutionnelle en matière répressive. Une loi est d'**effet immédiat** lorsqu'elle s'applique aux situations juridiques en cours de constitution et aux effets futurs des situations légales déjà constituées : elle ne touche pas le passé, elle régit l'avenir d'une situation née antérieurement. Pour les **contrats en cours**, la règle s'inverse : par exception au principe d'effet immédiat, la loi ancienne survit et continue de régir le contrat conclu sous son empire, parce que le contrat est un acte de prévision. Cette survie cède toutefois devant les lois nouvelles d'ordre public particulièrement impérieuses.",
+      "plan": [
+        {
+          "title": "I. Deux mécanismes distincts par leur objet",
+          "children": [
+            { "title": "A. La rétroactivité : atteindre le passé", "points": ["Article 2 du Code civil : la loi ne dispose que pour l'avenir", "Valeur constitutionnelle en matière pénale : article 8 DDHC", "Exception : la rétroactivité in mitius, article 112-1 du Code pénal"] },
+            { "title": "B. L'effet immédiat : régir le présent d'une situation ancienne", "points": ["Application aux situations légales en cours (filiation, autorité parentale, propriété)", "Pas de remise en cause des effets déjà produits", "Test : la loi touche-t-elle un effet déjà consommé ?"] }
+          ]
+        },
+        {
+          "title": "II. Un régime propre aux situations contractuelles",
+          "children": [
+            { "title": "A. Le principe de survie de la loi ancienne", "points": ["Fondement : le contrat est un acte de prévision des parties", "Le contrat reste régi par la loi du jour de sa conclusion", "Illustration : l'application dans le temps de la réforme du droit des obligations de 2016"] },
+            { "title": "B. Les limites tenant à l'ordre public", "points": ["Les lois d'ordre public impérieuses s'appliquent aux contrats en cours", "Le contrôle de la CEDH sur les lois de validation : impérieux motif d'intérêt général", "Conclusion : un équilibre entre sécurité juridique et adaptation du droit"] }
+          ]
+        }
+      ],
+      "pitfalls": [
+        "Ne pas dire qu'une loi d'effet immédiat est « un peu rétroactive » : ce sont deux catégories exclusives.",
+        "La survie de la loi ancienne est l'exception, pas le principe : elle ne joue que pour les contrats."
+      ]
+    },
+    "quiz": [
+      { "q": "Quel article du Code civil pose le principe de non-rétroactivité ?", "choices": ["Article 1", "Article 2", "Article 4", "Article 1104"], "answer": 1, "why": "L'article 2 dispose : « La loi ne dispose que pour l'avenir ; elle n'a point d'effet rétroactif. »" },
+      { "q": "La rétroactivité in mitius concerne :", "choices": ["La loi civile plus favorable", "La loi pénale plus douce", "Les lois de validation", "Les décrets"], "answer": 1, "why": "In mitius signifie « en plus doux » : la loi pénale plus douce s'applique aux faits non définitivement jugés." },
+      { "q": "Un contrat conclu en 2015 est en principe régi par :", "choices": ["La loi en vigueur au jour du litige", "La loi en vigueur au jour de sa conclusion", "La loi la plus favorable", "La loi choisie par le juge"], "answer": 1, "why": "C'est la survie de la loi ancienne : le contrat reste soumis à la loi du jour de sa conclusion, parce qu'il est un acte de prévision." },
+      { "q": "Une loi qui modifie pour l'avenir les règles de l'autorité parentale des familles déjà constituées est :", "choices": ["Rétroactive", "D'application immédiate", "Inconstitutionnelle", "Supplétive"], "answer": 1, "why": "Elle ne remet pas en cause les effets déjà produits : elle régit les effets futurs d'une situation légale en cours. C'est l'effet immédiat." },
+      { "q": "Le contrôle des lois de validation par la Cour européenne des droits de l'homme exige :", "choices": ["Un avis du Conseil d'État", "Un impérieux motif d'intérêt général", "L'unanimité du Parlement", "Un référendum"], "answer": 1, "why": "La CEDH admet ces lois rétroactives seulement si elles reposent sur d'impérieux motifs d'intérêt général, au nom du procès équitable." }
+    ]
+  },
+  {
+    "id": "intro-04",
+    "order": 4,
+    "title": "La pyramide de Kelsen : le bloc de constitutionnalité",
+    "teaser": "Au sommet, la Constitution du 4 octobre 1958 — et tout ce que le préambule y a fait entrer.",
+    "minutes": 5,
+    "brief": [
+      "Hans Kelsen a proposé de représenter l'ordre juridique comme une **pyramide de normes** : chaque norme tire sa validité de sa conformité à la norme qui lui est supérieure, jusqu'à une norme fondamentale hypothétique. L'intérêt est immense pour un étudiant de L1 : il donne une méthode pour résoudre n'importe quel conflit de normes. La norme inférieure qui contredit la supérieure est irrégulière, et un mécanisme de contrôle doit permettre de la faire disparaître.",
+      "Au sommet de la pyramide française se trouve le **bloc de constitutionnalité**. Il ne se réduit pas au texte de la Constitution du 4 octobre 1958. Par sa décision **Liberté d'association du 16 juillet 1971**, le Conseil constitutionnel a jugé que le préambule de la Constitution avait valeur contraignante : il a donc fait entrer dans le bloc tout ce à quoi ce préambule renvoie.",
+      "Le bloc comprend aujourd'hui : le texte de la Constitution de 1958 lui-même ; la **Déclaration des droits de l'homme et du citoyen de 1789** ; le **préambule de la Constitution de 1946**, qui contient les principes politiques, économiques et sociaux particulièrement nécessaires à notre temps ; la **Charte de l'environnement de 2004** ; et les **principes fondamentaux reconnus par les lois de la République** (PFRLR), dégagés par le Conseil constitutionnel lui-même à partir de lois républicaines antérieures à 1946.",
+      "La décision de 1971 est un basculement. Avant elle, le Conseil constitutionnel n'était guère qu'un régulateur des pouvoirs publics, chargé de tenir le Parlement dans les limites de l'article 34. Après elle, il devient le **garant des droits et libertés**. La révision constitutionnelle de 1974, en ouvrant la saisine à soixante députés ou soixante sénateurs, donnera à ce pouvoir sa portée réelle en permettant à l'opposition de saisir.",
+      "Piège classique : ne pas confondre bloc de constitutionnalité et **bloc de conventionnalité**. Le premier réunit les normes de valeur constitutionnelle, contrôlées par le Conseil constitutionnel ; le second réunit les traités, qui ont une valeur supérieure aux lois mais inférieure à la Constitution, et dont le respect est contrôlé par les juges ordinaires."
+    ],
+    "keyPoints": [
+      "Kelsen : chaque norme tire sa validité de la norme supérieure.",
+      "Décision Liberté d'association, 16 juillet 1971 : le préambule devient contraignant.",
+      "Le bloc : Constitution 1958 + DDHC 1789 + préambule 1946 + Charte de l'environnement 2004 + PFRLR.",
+      "1974 : l'ouverture de la saisine à 60 parlementaires donne sa portée au contrôle."
+    ],
+    "definitions": [
+      { "term": "Pyramide de Kelsen", "text": "Représentation hiérarchisée de l'ordre juridique dans laquelle la validité de chaque norme dépend de sa conformité à la norme immédiatement supérieure." },
+      { "term": "Bloc de constitutionnalité", "text": "Ensemble des normes de valeur constitutionnelle au regard desquelles le Conseil constitutionnel contrôle la conformité des lois." },
+      { "term": "Décision Liberté d'association", "text": "Décision du Conseil constitutionnel du 16 juillet 1971 reconnaissant valeur constitutionnelle au préambule de la Constitution et, par renvoi, aux textes qu'il vise.", "source": "CC, 16 juillet 1971, n° 71-44 DC" },
+      { "term": "PFRLR", "text": "Principes fondamentaux reconnus par les lois de la République : principes dégagés par le Conseil constitutionnel à partir de lois républicaines antérieures à 1946, auxquels il reconnaît valeur constitutionnelle." },
+      { "term": "Bloc de conventionnalité", "text": "Ensemble des engagements internationaux régulièrement ratifiés, qui ont, dès leur publication, une autorité supérieure à celle des lois.", "source": "Article 55 de la Constitution" }
+    ],
+    "exam": {
+      "kind": "dissertation",
+      "question": "La décision Liberté d'association du 16 juillet 1971 a-t-elle transformé la nature du Conseil constitutionnel ?",
+      "concise": "En 1958, le Conseil constitutionnel est conçu comme le gardien du parlementarisme rationalisé : sa mission est de cantonner le Parlement dans le domaine de l'article 34, non de protéger des droits. La décision du 16 juillet 1971 change radicalement la donne en conférant valeur contraignante au préambule de la Constitution : le Conseil s'attribue ainsi la compétence de contrôler les lois au regard de la Déclaration de 1789, du préambule de 1946 et des principes fondamentaux reconnus par les lois de la République. D'un régulateur des compétences, il devient un **juge des libertés**. Cette transformation reste toutefois incomplète en 1971 : elle n'acquiert sa portée réelle qu'avec la révision de 1974 ouvrant la saisine à l'opposition parlementaire, puis avec celle de 2008 instituant la question prioritaire de constitutionnalité, qui ouvre enfin le prétoire au justiciable.",
+      "plan": [
+        {
+          "title": "I. Une transformation opérée par le Conseil lui-même",
+          "children": [
+            { "title": "A. Un Conseil initialement conçu comme régulateur des pouvoirs", "points": ["L'intention des constituants de 1958 : discipliner le Parlement", "Une composition non juridictionnelle : 9 membres nommés, membres de droit", "Un contrôle a priori, réservé à quatre autorités"] },
+            { "title": "B. L'auto-saisine d'une compétence nouvelle en 1971", "points": ["La valeur contraignante reconnue au préambule", "L'intégration de la DDHC, du préambule de 1946 et des PFRLR", "Une décision rendue contre le gouvernement : la liberté d'association préservée"] }
+          ]
+        },
+        {
+          "title": "II. Une transformation achevée par le constituant",
+          "children": [
+            { "title": "A. 1974 : l'ouverture de la saisine parlementaire", "points": ["60 députés ou 60 sénateurs peuvent saisir le Conseil", "La constitutionnalité devient une arme de l'opposition", "Multiplication des saisines et densification de la jurisprudence"] },
+            { "title": "B. 2008 : l'accès du justiciable par la QPC", "points": ["Article 61-1 : contrôle a posteriori des atteintes aux droits et libertés", "Le filtrage par le Conseil d'État et la Cour de cassation", "Le risque du gouvernement des juges et l'autolimitation du Conseil"] }
+          ]
+        }
+      ],
+      "pitfalls": [
+        "Ne pas écrire que le Conseil constitutionnel est une cour suprême : il ne juge ni les litiges, ni les décisions des deux ordres.",
+        "1971 ne crée pas la QPC : celle-ci date de la révision du 23 juillet 2008."
+      ]
+    },
+    "quiz": [
+      { "q": "La décision Liberté d'association date du :", "choices": ["16 juillet 1971", "4 octobre 1958", "23 juillet 2008", "29 juillet 1998"], "answer": 0, "why": "Décision n° 71-44 DC du 16 juillet 1971, qui reconnaît la valeur constitutionnelle du préambule." },
+      { "q": "Lequel de ces textes ne fait PAS partie du bloc de constitutionnalité ?", "choices": ["La DDHC de 1789", "Le préambule de 1946", "La Charte de l'environnement de 2004", "La Convention européenne des droits de l'homme"], "answer": 3, "why": "La CEDH relève du bloc de conventionnalité : supérieure aux lois par l'article 55, elle reste inférieure à la Constitution." },
+      { "q": "Les PFRLR sont dégagés à partir :", "choices": ["Des traités européens", "De lois républicaines antérieures à 1946", "De la jurisprudence administrative", "Du Code civil"], "answer": 1, "why": "Le Conseil constitutionnel les déduit de lois républicaines adoptées avant l'entrée en vigueur du préambule de 1946." },
+      { "q": "La révision de 1974 a :", "choices": ["Créé le Conseil constitutionnel", "Ouvert la saisine à 60 députés ou 60 sénateurs", "Créé la QPC", "Supprimé les membres de droit"], "answer": 1, "why": "Elle élargit la saisine à l'opposition parlementaire, ce qui donne au contrôle de 1971 sa portée pratique." },
+      { "q": "Selon Kelsen, la validité d'une norme dépend :", "choices": ["De son efficacité sociale", "De sa conformité à la norme supérieure", "De son ancienneté", "De son caractère écrit"], "answer": 1, "why": "C'est le cœur de la théorie pure du droit : la validité est formelle et découle de la hiérarchie, non du contenu ou du fait." }
+    ]
+  }
+]

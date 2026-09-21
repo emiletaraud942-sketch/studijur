@@ -1,0 +1,110 @@
+<claude-code-hint v="1" type="plugin" value="vercel@claude-plugins-official" />
+Vercel CLI 59.22.0 (Node.js 22.22.2)
+Deploying lexio
+Uploading [--------------------] (0.0B/223KB)
+Uploading [=====---------------] (64.7KB/223KB)
+Uploading [===========---------] (124.5KB/223KB)
+Uploading [===============-----] (172.5KB/223KB)
+Uploading [====================] (223.0KB/223KB)
+  Inspect         https://vercel.com/emiletaraud942-sketchs-projects/lexio/EKPVK5NkjCmPhKgtHnRRRCgXc7ho
+  Production      https://lexio-erpi2ixh9-emiletaraud942-sketchs-projects.vercel.app
+Building…
+Building…
+Running build in Washington, D.C., USA (East) – iad1
+Build machine configuration: 2 cores, 8 GB
+Retrieving list of deployment files...
+Downloading 88 deployment files...
+Restored build cache from previous deployment (3X2buKVEbHXtUzfMj3droRaU4mo6)
+Running "vercel build"
+Vercel CLI 59.23.2
+Installing dependencies...
+up to date in 2s
+19 packages are looking for funding
+run `npm fund` for details
+Detected Next.js version: 16.3.5
+Running "npm run build"
+> studijur@0.1.0 build
+> next build
+▲ Next.js 16.3.5 (Turbopack)
+Applying modifyConfig from Vercel
+✓ Running next.config.ts took 708ms
+Creating an optimized production build ...
+✓ Compiled successfully in 3.0s
+Running TypeScript ...
+Finished TypeScript in 6.5s ...
+Collecting page data using 1 worker ...
+Generating static pages using 1 worker (0/27) ...
+Generating static pages using 1 worker (6/27)
+Generating static pages using 1 worker (13/27)
+Generating static pages using 1 worker (20/27)
+✓ Generating static pages using 1 worker (27/27) in 627ms
+Finalizing page optimization ...
+Running onBuildComplete from Vercel
+Route (app)
+┌ ○ /
+├ ○ /_not-found
+├ ○ /abonnement
+├ ƒ /api/checkout
+├ ƒ /api/correction
+├ ƒ /api/cron/rappel
+├ ƒ /api/ingest
+├ ƒ /api/ocr
+├ ƒ /api/push/subscribe
+├ ƒ /api/status
+├ ƒ /api/stripe/webhook
+├ ○ /bibliotheque
+├ ƒ /cas-pratique/[id]
+├ ○ /cas-pratiques
+├ ○ /classement
+├ ○ /connexion
+├ ƒ /lecon/[id]
+├ ○ /manifest.webmanifest
+├ ○ /mentions-legales
+├ ○ /mes-cours
+├ ○ /plus
+├ ○ /presentation
+├ ○ /progression
+├ ○ /reglages
+├ ○ /revision-intensive
+├ ○ /robots.txt
+└ ○ /sitemap.xml
+○  (Static)   prerendered as static content
+ƒ  (Dynamic)  server-rendered on demand
+Build Completed in /vercel/output [17s]
+Deploying outputs...
+[2K[1A[2K[G  Production      https://lexio-erpi2ixh9-emiletaraud942-sketchs-projects.vercel.app
+Completing…
+▲ Aliased         https://www.studyjur.fr
+{
+  "status": "ok",
+  "deployment": {
+    "id": "dpl_EKPVK5NkjCmPhKgtHnRRRCgXc7ho",
+    "url": "https://lexio-erpi2ixh9-emiletaraud942-sketchs-projects.vercel.app",
+    "inspectorUrl": "https://vercel.com/emiletaraud942-sketchs-projects/lexio/EKPVK5NkjCmPhKgtHnRRRCgXc7ho",
+    "readyState": "READY",
+    "target": "production",
+    "deploymentApiUrl": "https://api.vercel.com/v13/deployments/dpl_EKPVK5NkjCmPhKgtHnRRRCgXc7ho",
+    "buildMachine": {
+      "cores": 2,
+      "memory": 8192,
+      "machine": "basic",
+      "selectionType": "fixed",
+      "selectionSource": "plan-default"
+    }
+  },
+  "message": "Deployment lexio-erpi2ixh9-emiletaraud942-sketchs-projects.vercel.app ready.",
+  "next": [
+    {
+      "command": "vercel curl https://lexio-erpi2ixh9-emiletaraud942-sketchs-projects.vercel.app",
+      "when": "Verify deployment, including when Deployment Protection is enabled"
+    },
+    {
+      "command": "vercel inspect lexio-erpi2ixh9-emiletaraud942-sketchs-projects.vercel.app",
+      "when": "Inspect deployment"
+    },
+    {
+      "command": "vercel deploy --prod",
+      "when": "Promote to production"
+    }
+  ]
+}

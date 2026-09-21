@@ -1,0 +1,234 @@
+[
+  {
+    "id": "methodo-01",
+    "order": 1,
+    "title": "La dissertation juridique : le brouillon",
+    "teaser": "Ce qui se joue avant la première ligne — et qui décide de la note.",
+    "minutes": 5,
+    "brief": [
+      "Une dissertation juridique ne s'improvise pas au fil de la plume. Sur quatre heures d'épreuve, la règle admise est d'en consacrer environ **une heure au brouillon** et trois à la rédaction et à la relecture. Le brouillon n'est pas une perte de temps : c'est là que se décide la note, parce qu'un devoir bien construit sur des idées moyennes vaut toujours mieux qu'un devoir riche mais désordonné.",
+      "Le brouillon suit quatre temps. Premièrement, **analyser le sujet mot à mot**. Chaque terme compte, y compris les petits : « et » invite à confronter, « ou » à choisir, un pluriel ou un singulier change le périmètre. « Le juge et la loi » n'est pas « Les juges et les lois ». Deuxièmement, **délimiter le sujet** : ce qui est dedans, ce qui est dehors, et pourquoi — cette délimitation sera écrite dans l'introduction, jamais laissée implicite.",
+      "Troisièmement, **rassembler les connaissances** en vrac : textes, arrêts, auteurs, dates, exemples. On jette tout, sans trier. Quatrièmement seulement, **dégager la problématique**, puis regrouper les idées en deux blocs cohérents qui deviendront les deux parties. L'ordre compte : la problématique naît de la matière rassemblée, elle ne lui est pas imposée d'avance.",
+      "La **problématique** est la question juridique que le sujet pose et à laquelle le devoir répond. Trois erreurs classiques la ruinent. La reformulation paresseuse : recopier le sujet sous forme interrogative n'est pas problématiser. La question fermée à laquelle on répond par oui ou non, qui condamne au plan « pour / contre ». Et la question trop large, du type « Qu'est-ce que l'État ? », à laquelle aucun devoir ne peut répondre. Une bonne problématique met en tension deux exigences du droit — par exemple : dans quelle mesure la protection des droits fondamentaux peut-elle s'accommoder de la souveraineté du législateur ?"
+    ],
+    "keyPoints": [
+      "Environ une heure de brouillon pour trois heures de rédaction sur une épreuve de quatre heures.",
+      "Quatre temps : analyser mot à mot, délimiter, rassembler en vrac, problématiser.",
+      "La problématique vient après la collecte des idées, jamais avant.",
+      "Trois pièges : reformuler le sujet, poser une question fermée, poser une question trop large."
+    ],
+    "definitions": [
+      { "term": "Problématique", "text": "Question juridique précise, née de la tension entre deux exigences du droit, que le sujet soulève et à laquelle l'ensemble du devoir apporte une réponse construite." },
+      { "term": "Délimitation du sujet", "text": "Opération consistant à énoncer explicitement, dans l'introduction, le périmètre retenu et ce qui en est volontairement exclu, avec la justification de ce choix." },
+      { "term": "Analyse des termes", "text": "Examen mot à mot de l'intitulé, y compris des conjonctions, des articles et des nombres, dont chacun modifie l'objet exact de la démonstration." },
+      { "term": "Plan d'idées", "text": "Plan dont les parties expriment des étapes de raisonnement, par opposition au plan de récitation qui se contente de juxtaposer des connaissances." },
+      { "term": "Hors-sujet partiel", "text": "Développement exact en lui-même mais qui ne sert pas la démonstration annoncée, sanctionné parce qu'il révèle une absence de problématisation." }
+    ],
+    "exam": {
+      "kind": "question de cours",
+      "question": "Qu'est-ce qu'une bonne problématique de dissertation juridique, et comment la construire ?",
+      "concise": "Une bonne problématique est une **question juridique précise**, née de la tension entre deux exigences du droit, dont la réponse exige un raisonnement en deux temps. Elle se distingue de trois contrefaçons : la reformulation interrogative du sujet, qui n'ajoute rien ; la question fermée appelant un oui ou un non, qui conduit au plan « pour / contre » ; et la question générale, du type « Qu'est-ce que l'État ? », à laquelle aucune démonstration ne peut répondre dans le format imposé. Sa construction suit un ordre strict. On analyse d'abord le sujet **mot à mot**, en pesant chaque terme, y compris les conjonctions et les nombres. On **délimite** ensuite le périmètre, en disant ce qu'on écarte et pourquoi. On **rassemble en vrac** toutes les connaissances mobilisables — textes, arrêts, auteurs, dates. Ce n'est qu'alors, au vu de la matière réunie, qu'on identifie la tension centrale et qu'on la formule en une question. Le plan en découle naturellement : chaque partie est un temps de la réponse.",
+      "plan": [
+        {
+          "title": "I. Une question juridique en tension, et non une reformulation",
+          "children": [
+            { "title": "A. Ce que la problématique n'est pas", "points": ["Le sujet recopié sous forme interrogative", "La question fermée, qui condamne au plan pour et contre", "La question trop générale, sans réponse possible dans le format"] },
+            { "title": "B. Ce qu'elle est", "points": ["Une tension entre deux exigences du droit également légitimes", "Une question dont la réponse commande un raisonnement en deux temps", "Un fil que chaque développement doit servir"] }
+          ]
+        },
+        {
+          "title": "II. Une construction méthodique au brouillon",
+          "children": [
+            { "title": "A. Les trois opérations préalables", "points": ["Analyser le sujet mot à mot, conjonctions comprises", "Délimiter explicitement le périmètre et justifier les exclusions", "Rassembler en vrac les textes, arrêts, auteurs et exemples"] },
+            { "title": "B. La formulation et ses effets", "points": ["La problématique se dégage de la matière réunie, jamais l'inverse", "Le plan en découle : chaque partie est un temps de la réponse", "Le test final : chaque paragraphe sert-il la question posée ?"] }
+          ]
+        }
+      ],
+      "pitfalls": [
+        "Ne jamais rédiger le plan avant d'avoir rassemblé les connaissances : on aboutit à un plan de récitation.",
+        "Une problématique qui tient en une phrase : si elle en demande trois, elle n'est pas encore claire."
+      ]
+    },
+    "quiz": [
+      { "q": "Sur une épreuve de quatre heures, le brouillon doit occuper environ :", "choices": ["10 minutes", "Une heure", "Deux heures et demie", "Trois heures"], "answer": 1, "why": "Une heure de brouillon pour trois heures de rédaction et de relecture : c'est le rapport communément recommandé." },
+      { "q": "La problématique doit être dégagée :", "choices": ["Avant de rassembler les connaissances", "Après avoir rassemblé les connaissances", "Pendant la rédaction", "À la conclusion"], "answer": 1, "why": "Elle naît de la matière réunie. La formuler avant conduit à forcer les connaissances dans un moule arbitraire." },
+      { "q": "Une question fermée comme problématique est un défaut parce qu'elle :", "choices": ["Est trop courte", "Conduit à un plan pour et contre", "Est trop technique", "Empêche de citer des arrêts"], "answer": 1, "why": "Le plan « oui / non » est un plan de juxtaposition, pas de raisonnement : la seconde partie ne dépasse pas la première." },
+      { "q": "Dans un sujet, la conjonction « et » invite généralement à :", "choices": ["Choisir entre deux notions", "Confronter deux notions", "Définir une seule notion", "Énumérer"], "answer": 1, "why": "« Le juge et la loi » appelle l'étude de leur rapport, pas deux exposés successifs juxtaposés." },
+      { "q": "La délimitation du sujet doit :", "choices": ["Rester implicite", "Être annoncée dans l'introduction et justifiée", "Figurer en conclusion", "Être écrite au brouillon seulement"], "answer": 1, "why": "Le correcteur doit savoir que l'exclusion est un choix raisonné et non un oubli." }
+    ]
+  },
+  {
+    "id": "methodo-02",
+    "order": 2,
+    "title": "L'introduction en six étapes",
+    "teaser": "Accroche, définitions, contexte, délimitation, problématique, annonce — un alinéa chacune.",
+    "minutes": 5,
+    "brief": [
+      "L'introduction est la partie la plus lue et la plus notée du devoir : c'est là que le correcteur décide de la qualité de votre raisonnement. Elle représente environ **un tiers** de la copie et suit six étapes obligatoires, chacune faisant l'objet d'un **alinéa distinct**, avec retrait. La séparation visuelle n'est pas cosmétique : elle prouve que la méthode est maîtrisée.",
+      "**Un — l'accroche.** Une phrase d'entrée qui amène le sujet sans le paraphraser : une citation d'auteur, une décision récente, un chiffre, un fait d'actualité juridique. Elle doit mener au sujet en une ou deux phrases, pas s'y attarder. Évitez absolument le « De tout temps, les hommes… ». **Deux — la définition des termes.** On définit chacun des mots-clés de l'intitulé, dans l'ordre où il apparaît, en s'appuyant sur des définitions doctrinales ou légales.",
+      "**Trois — le contexte.** Il est double : historique, pour dire d'où vient la question, et juridique, pour situer les textes et la jurisprudence applicables. **Quatre — la délimitation.** On annonce ce que l'on traite et ce que l'on écarte, en justifiant l'exclusion : « L'étude sera circonscrite au droit français, la comparaison avec les systèmes fédéraux excédant l'objet du sujet. »",
+      "**Cinq — la problématique.** Une seule question, formulée clairement, qui met en tension les éléments dégagés. **Six — l'annonce de plan.** Deux phrases, une par partie, reprenant les titres sans les numéros, reliées par une transition logique. La formule attendue est du type : « Il conviendra d'analyser d'abord … (I), avant d'envisager … (II). » Retenez la règle d'or : **tout ce qui figure dans l'introduction doit servir dans le développement, et rien dans le développement ne doit surgir sans avoir été préparé dans l'introduction.**"
+    ],
+    "keyPoints": [
+      "Six étapes, six alinéas : accroche, définitions, contexte, délimitation, problématique, annonce de plan.",
+      "L'introduction représente environ un tiers de la copie.",
+      "L'annonce de plan reprend les titres sans les numéros, en deux phrases reliées.",
+      "Règle d'or : rien d'inutile dans l'introduction, rien d'imprévu dans le développement."
+    ],
+    "definitions": [
+      { "term": "Accroche", "text": "Première phrase de l'introduction, qui amène le sujet par une citation, une décision, un chiffre ou un fait d'actualité, sans le paraphraser." },
+      { "term": "Contexte historique et juridique", "text": "Étape de l'introduction situant l'origine de la question et l'état des textes et de la jurisprudence au moment où le sujet est posé." },
+      { "term": "Annonce de plan", "text": "Dernier alinéa de l'introduction, énonçant en deux phrases liées les deux parties du développement, sans reprendre les numéros de titres." },
+      { "term": "Alinéa", "text": "Paragraphe commençant par un retrait. Dans une introduction juridique, chaque étape de la méthode occupe son propre alinéa." },
+      { "term": "Paraphrase du sujet", "text": "Défaut consistant à reformuler l'intitulé sans l'analyser, fréquemment sanctionné en accroche et en problématique." }
+    ],
+    "exam": {
+      "kind": "question de cours",
+      "question": "Détaillez les six étapes de l'introduction d'une dissertation juridique et expliquez la fonction de chacune.",
+      "concise": "L'introduction juridique comporte six étapes, chacune dans un alinéa distinct. **L'accroche** capte l'attention et amène le sujet par une citation, une décision ou un fait d'actualité, sans le paraphraser. **La définition des termes** fixe le sens de chaque mot-clé de l'intitulé, dans l'ordre où il apparaît, et conditionne tout le reste : mal définir, c'est traiter un autre sujet. **Le contexte**, historique et juridique, montre d'où vient la question et quel est l'état du droit positif. **La délimitation** énonce le périmètre retenu et justifie les exclusions, prouvant au correcteur que ce qui manque est un choix. **La problématique** formule en une question la tension que le devoir va résoudre ; c'est le cœur de l'introduction. **L'annonce de plan**, enfin, présente en deux phrases liées les deux parties, en reprenant leurs titres sans les numéros. Ensemble, ces six étapes occupent environ un tiers de la copie, et leur fonction commune est de rendre le raisonnement prévisible : le correcteur doit savoir, après l'introduction, où le devoir va le mener.",
+      "plan": [
+        {
+          "title": "I. Les étapes de mise en place du sujet",
+          "children": [
+            { "title": "A. Amener et définir", "points": ["L'accroche : citation, décision, chiffre ou actualité, jamais la paraphrase de l'intitulé", "La définition des termes, dans l'ordre de l'intitulé", "L'appui sur des définitions doctrinales ou légales"] },
+            { "title": "B. Situer et borner", "points": ["Le contexte historique : l'origine de la question", "Le contexte juridique : textes et jurisprudence applicables", "La délimitation : ce qui est écarté, et pourquoi"] }
+          ]
+        },
+        {
+          "title": "II. Les étapes de mise en place du raisonnement",
+          "children": [
+            { "title": "A. La problématique", "points": ["Une question unique, formulée en une phrase", "Une tension née des définitions et du contexte", "Le fil auquel chaque développement devra se rattacher"] },
+            { "title": "B. L'annonce de plan", "points": ["Deux phrases liées, une par partie", "Reprise des titres sans les numéros", "Règle d'or : rien d'inutile en introduction, rien d'imprévu dans le développement"] }
+          ]
+        }
+      ],
+      "pitfalls": [
+        "Ne jamais commencer par « De tout temps » ni par une définition de dictionnaire.",
+        "L'annonce de plan ne se rédige pas au futur vague : elle nomme précisément les deux parties."
+      ]
+    },
+    "quiz": [
+      { "q": "Combien d'étapes comporte l'introduction d'une dissertation juridique ?", "choices": ["Trois", "Quatre", "Six", "Huit"], "answer": 2, "why": "Accroche, définition des termes, contexte, délimitation, problématique, annonce de plan — un alinéa chacune." },
+      { "q": "L'introduction représente environ :", "choices": ["Un dixième de la copie", "Un tiers de la copie", "La moitié de la copie", "Deux pages fixes"], "answer": 1, "why": "C'est la partie la plus dense et la plus notée : elle installe tout le raisonnement." },
+      { "q": "L'annonce de plan doit :", "choices": ["Reprendre les numéros I et II dans le corps des phrases", "Reprendre les titres sans les numéros, en deux phrases liées", "Être placée avant la problématique", "Rester implicite"], "answer": 1, "why": "Les numéros figurent entre parenthèses en fin de phrase, mais les titres se lisent dans un texte continu." },
+      { "q": "Dans quel ordre définit-on les termes du sujet ?", "choices": ["Du plus général au plus précis", "Dans l'ordre où ils apparaissent dans l'intitulé", "Par ordre alphabétique", "Selon leur importance"], "answer": 1, "why": "Suivre l'intitulé évite d'en déformer l'objet et montre qu'on l'a analysé tel qu'il est posé." },
+      { "q": "La délimitation du sujet sert à :", "choices": ["Raccourcir le devoir", "Montrer que les exclusions sont des choix justifiés", "Remplacer la problématique", "Annoncer le plan"], "answer": 1, "why": "Sans elle, le correcteur lit une lacune là où le candidat a fait un choix raisonné." }
+    ]
+  },
+  {
+    "id": "methodo-03",
+    "order": 3,
+    "title": "Titres, chapeaux et transitions",
+    "teaser": "Un titre est une affirmation, jamais une question — et le chapeau n'est pas décoratif.",
+    "minutes": 5,
+    "brief": [
+      "Le plan juridique est **binaire** : deux parties, deux sous-parties chacune. Ce n'est pas une convention arbitraire : la binarité oblige à opposer ou à articuler deux mouvements de raisonnement, donc à penser en dialectique. On évite le plan à trois parties et le déséquilibre entre I et II, qui signale presque toujours que la seconde partie n'a pas été pensée.",
+      "Les **titres** obéissent à des règles strictes. Un titre est une **affirmation**, jamais une question : « I. Une souveraineté affirmée dans l'ordre interne », pas « I. La souveraineté est-elle affirmée ? ». Il est **nominal**, sans verbe conjugué. Il est **court**, une ligne au maximum. Il ne contient **ni « et » ni énumération** : un titre qui juxtapose deux idées trahit une sous-partie non problématisée. Et il doit être **apparié** avec son symétrique : I et II doivent s'opposer ou se compléter de façon lisible, comme « affirmée » / « relativisée », ou « consacrée » / « limitée ».",
+      "Le **chapeau** est le court paragraphe qui suit immédiatement le titre de partie et annonce les deux sous-parties. Il n'est pas décoratif : il joue pour la partie le rôle que l'annonce de plan joue pour le devoir. Il tient en deux ou trois phrases et se termine par la mention des sous-parties, du type : « … (A), avant d'examiner … (B). »",
+      "Les **transitions** relient les développements. Entre A et B, une phrase suffit. Entre I et II, la transition est un vrai paragraphe : elle fait le bilan de ce qui vient d'être démontré et annonce le basculement, sans se contenter d'un « Cependant » isolé. Dernier point à retenir : la dissertation juridique **ne comporte pas de conclusion** dans la plupart des facultés françaises. Le raisonnement s'achève avec le dernier développement du II-B. Si votre chargé de TD en exige une, elle doit être brève et ouvrir, jamais résumer."
+    ],
+    "keyPoints": [
+      "Plan binaire : deux parties, deux sous-parties, équilibrées.",
+      "Titres : affirmatifs, nominaux, courts, sans « et », et appariés entre I et II.",
+      "Le chapeau annonce les deux sous-parties, en deux ou trois phrases.",
+      "Pas de conclusion en principe ; transition développée entre I et II."
+    ],
+    "definitions": [
+      { "term": "Plan binaire", "text": "Structure en deux parties comportant chacune deux sous-parties, qui oblige à articuler deux mouvements de raisonnement plutôt qu'à juxtaposer des connaissances." },
+      { "term": "Titre apparié", "text": "Titre construit en symétrie de celui de l'autre partie, de sorte que les deux se répondent : consacré et limité, affirmé et relativisé." },
+      { "term": "Chapeau introductif", "text": "Paragraphe court placé sous le titre d'une partie, qui en annonce les deux sous-parties et joue pour la partie le rôle de l'annonce de plan." },
+      { "term": "Transition", "text": "Passage assurant le lien entre deux développements : une phrase entre sous-parties, un paragraphe complet entre les deux parties." },
+      { "term": "Plan de récitation", "text": "Plan qui juxtapose des connaissances sans répondre à une question, reconnaissable à ses titres descriptifs et à l'absence d'appariement." }
+    ],
+    "exam": {
+      "kind": "question de cours",
+      "question": "Quelles règles gouvernent la rédaction des titres et des chapeaux dans une dissertation juridique ?",
+      "concise": "Les **titres** obéissent à cinq règles. Ils sont **affirmatifs** : ils énoncent le résultat de la démonstration, jamais une question. Ils sont **nominaux**, construits autour d'un substantif et d'un qualificatif plutôt que d'un verbe conjugué. Ils sont **courts**, une ligne au plus. Ils ne comportent **ni conjonction « et » ni énumération**, car un titre qui juxtapose deux idées révèle une sous-partie non problématisée. Ils sont enfin **appariés** : les titres de I et II doivent se répondre, par opposition ou par complémentarité — « une souveraineté affirmée » / « une souveraineté relativisée ». Le **chapeau** est le paragraphe placé sous chaque titre de partie. Il tient en deux ou trois phrases, rappelle en une ligne l'idée directrice de la partie et annonce explicitement les deux sous-parties, avec leurs lettres entre parenthèses. Sa fonction est de rendre la partie lisible à elle seule : un correcteur qui ne lirait que les titres et les chapeaux devrait pouvoir reconstituer l'intégralité du raisonnement.",
+      "plan": [
+        {
+          "title": "I. Des titres qui portent la démonstration",
+          "children": [
+            { "title": "A. Les règles de forme", "points": ["Affirmatifs et non interrogatifs", "Nominaux, sans verbe conjugué", "Courts, une ligne maximum, sans « et » ni énumération"] },
+            { "title": "B. La règle d'appariement", "points": ["I et II se répondent : consacré et limité, affirmé et relativisé", "L'appariement révèle immédiatement la dialectique du devoir", "Son absence signale un plan de récitation"] }
+          ]
+        },
+        {
+          "title": "II. Des chapeaux qui rendent le plan lisible",
+          "children": [
+            { "title": "A. La fonction du chapeau", "points": ["Annoncer les deux sous-parties avec leurs lettres", "Rappeler l'idée directrice de la partie", "Deux à trois phrases, jamais davantage"] },
+            { "title": "B. Les liaisons du devoir", "points": ["Une phrase de transition entre A et B", "Un paragraphe de transition entre I et II : bilan puis basculement", "L'absence de conclusion dans la plupart des facultés françaises"] }
+          ]
+        }
+      ],
+      "pitfalls": [
+        "Un titre contenant « et » cache presque toujours deux idées : il faut en choisir une.",
+        "Ne pas confondre chapeau (sous le titre de partie) et annonce de plan (fin de l'introduction)."
+      ]
+    },
+    "quiz": [
+      { "q": "Un titre de dissertation juridique doit être :", "choices": ["Interrogatif", "Affirmatif et nominal", "Une phrase complète avec verbe conjugué", "Numéroté uniquement"], "answer": 1, "why": "Le titre énonce le résultat de la démonstration : il affirme, sans verbe conjugué et sans point d'interrogation." },
+      { "q": "Deux titres appariés sont par exemple :", "choices": ["« La souveraineté » / « Le territoire »", "« Une souveraineté affirmée » / « Une souveraineté relativisée »", "« Historique » / « Actualité »", "« Définition » / « Exemples »"], "answer": 1, "why": "Les deux titres se répondent terme à terme, ce qui rend la dialectique du devoir immédiatement lisible." },
+      { "q": "Le chapeau se place :", "choices": ["À la fin de l'introduction", "Sous le titre de partie, avant la sous-partie A", "À la fin de chaque sous-partie", "En conclusion"], "answer": 1, "why": "Il annonce les deux sous-parties et joue, pour la partie, le rôle de l'annonce de plan pour le devoir." },
+      { "q": "La dissertation juridique française comporte en principe :", "choices": ["Une conclusion obligatoire", "Pas de conclusion", "Trois parties", "Une bibliographie"], "answer": 1, "why": "Le raisonnement s'achève avec le dernier développement du II-B. Si le chargé de TD en exige une, elle doit ouvrir et non résumer." },
+      { "q": "Un titre contenant « et » est déconseillé parce qu'il :", "choices": ["Est trop long", "Juxtapose deux idées et trahit une sous-partie non problématisée", "Est familier", "Empêche la numérotation"], "answer": 1, "why": "Une sous-partie défend une idée. Deux idées dans un titre signalent qu'il faut soit choisir, soit scinder." }
+    ]
+  },
+  {
+    "id": "methodo-04",
+    "order": 4,
+    "title": "Le commentaire de texte juridique",
+    "teaser": "Commenter, ce n'est ni paraphraser ni disserter : c'est expliquer et apprécier.",
+    "minutes": 5,
+    "brief": [
+      "Le commentaire de texte est l'exercice le plus discriminant de la L1, parce qu'il se définit par ce qu'il n'est pas. Il n'est pas une **paraphrase** : redire le texte dans d'autres mots ne commente rien. Il n'est pas une **dissertation** : partir du thème du texte pour réciter le cours est un hors-sujet, même si tout ce qui est écrit est exact. Commenter, c'est **expliquer** le texte — ce qu'il dit, pourquoi il le dit ainsi — puis l'**apprécier** — ce qu'il apporte, ce qu'il omet, ce qu'il coûte.",
+      "Le travail au brouillon commence par une **lecture stylo en main**. On identifie la nature du texte — article de loi, extrait de décision, texte doctrinal, discours politique —, son auteur, sa date, son contexte. On repère ensuite sa **structure** : les articulations, les mots de liaison, les oppositions. Puis on relève les **points d'appui** : les termes qui font difficulté, les silences, les formules ambiguës, les partis pris.",
+      "L'**introduction** reprend les six étapes de la dissertation, adaptées. L'accroche amène le texte. La présentation remplace la définition des termes : nature, auteur, date, contexte. Suit une **analyse structurée du texte**, qui en expose la logique interne — c'est l'étape propre au commentaire. Vient ensuite l'intérêt du texte, qui joue le rôle de la délimitation, puis la problématique, puis l'annonce de plan.",
+      "Le plan reste **binaire**, mais il ne suit jamais l'ordre du texte, sous peine de paraphrase. On construit un plan **thématique**, articulé autour des idées que l'on veut mettre en lumière. La règle absolue est celle de l'**ancrage** : chaque sous-partie doit citer le texte, entre guillemets, et repartir de la formule citée. Un commentaire sans citations n'est pas un commentaire. À l'inverse, une citation qui n'est pas suivie d'une explication n'est qu'un ornement : le schéma attendu est **citer, expliquer, apprécier**."
+    ],
+    "keyPoints": [
+      "Ni paraphrase, ni dissertation : expliquer puis apprécier.",
+      "Introduction : accroche, présentation (nature, auteur, date, contexte), analyse du texte, intérêt, problématique, annonce.",
+      "Plan binaire et thématique, jamais l'ordre du texte.",
+      "Ancrage obligatoire : citer, expliquer, apprécier — dans chaque sous-partie."
+    ],
+    "definitions": [
+      { "term": "Commentaire de texte", "text": "Exercice consistant à expliquer la logique interne d'un texte juridique puis à en apprécier la portée, les apports et les limites." },
+      { "term": "Paraphrase", "text": "Défaut majeur du commentaire consistant à reformuler le texte sans l'expliquer ni l'apprécier." },
+      { "term": "Plan thématique", "text": "Plan organisé autour des idées dégagées du texte, par opposition au plan linéaire qui en suivrait l'ordre et conduirait à la paraphrase." },
+      { "term": "Ancrage", "text": "Obligation de rattacher chaque développement à une formule précise du texte, citée entre guillemets, puis expliquée et appréciée." },
+      { "term": "Intérêt du texte", "text": "Étape de l'introduction du commentaire exposant pourquoi ce texte mérite d'être commenté : sa nouveauté, sa portée, sa position dans une évolution." }
+    ],
+    "exam": {
+      "kind": "question de cours",
+      "question": "En quoi le commentaire de texte se distingue-t-il de la dissertation, et quelles conséquences en tirer sur la méthode ?",
+      "concise": "La différence tient à l'**objet** de l'exercice. La dissertation part d'un sujet et mobilise librement les connaissances pour répondre à une question. Le commentaire part d'un **texte donné**, qui est à la fois la matière et la limite du devoir : on ne peut pas en sortir, et tout ce qu'on affirme doit pouvoir s'y rattacher. Deux dérives symétriques guettent donc. La **paraphrase**, qui reste dans le texte sans rien y ajouter ; et la **dissertation déguisée**, qui quitte le texte pour réciter le cours sur son thème. Trois conséquences méthodologiques en découlent. D'abord, l'introduction comporte deux étapes propres : la **présentation** du texte — nature, auteur, date, contexte — et son **analyse structurée**, qui en expose la logique interne. Ensuite, le plan est **thématique** et non linéaire : suivre l'ordre du texte conduit mécaniquement à la paraphrase. Enfin, chaque sous-partie doit être **ancrée** : citer une formule précise entre guillemets, l'expliquer, puis l'apprécier.",
+      "plan": [
+        {
+          "title": "I. Un exercice défini par la contrainte du texte",
+          "children": [
+            { "title": "A. Le texte comme matière exclusive", "points": ["Tout développement doit se rattacher à une formule du texte", "La dissertation déguisée : un hors-sujet même si le contenu est exact", "L'appréciation suppose l'explication préalable"] },
+            { "title": "B. Le texte comme objet d'explication", "points": ["Identifier nature, auteur, date, contexte", "Repérer la structure : articulations, oppositions, silences", "Distinguer ce que le texte dit de ce qu'il ne dit pas"] }
+          ]
+        },
+        {
+          "title": "II. Un exercice aux exigences méthodologiques propres",
+          "children": [
+            { "title": "A. Une introduction spécifique", "points": ["La présentation du texte remplace la définition des termes", "L'analyse structurée expose la logique interne du texte", "L'intérêt du texte justifie qu'on le commente"] },
+            { "title": "B. Un développement ancré", "points": ["Plan binaire et thématique, jamais l'ordre du texte", "Le triptyque : citer, expliquer, apprécier", "Un commentaire sans citations n'est pas un commentaire"] }
+          ]
+        }
+      ],
+      "pitfalls": [
+        "Suivre l'ordre du texte est le chemin le plus court vers la paraphrase : construire un plan thématique.",
+        "Une citation non expliquée ne vaut rien : elle doit toujours être suivie d'une analyse."
+      ]
+    },
+    "quiz": [
+      { "q": "Le commentaire de texte consiste à :", "choices": ["Reformuler le texte", "Expliquer puis apprécier le texte", "Réciter le cours sur le thème du texte", "Résumer le texte"], "answer": 1, "why": "Reformuler est la paraphrase, réciter est la dissertation déguisée : les deux dérives classiques de l'exercice." },
+      { "q": "Le plan d'un commentaire doit être :", "choices": ["Linéaire, suivant l'ordre du texte", "Thématique", "En trois parties", "Chronologique"], "answer": 1, "why": "Suivre l'ordre du texte conduit mécaniquement à la paraphrase : il faut dégager des thèmes." },
+      { "q": "Quelle étape est propre à l'introduction du commentaire ?", "choices": ["L'accroche", "L'analyse structurée du texte", "La problématique", "L'annonce de plan"], "answer": 1, "why": "La présentation du texte et son analyse structurée remplacent la définition des termes de la dissertation." },
+      { "q": "Le triptyque attendu dans chaque sous-partie est :", "choices": ["Citer, expliquer, apprécier", "Définir, illustrer, conclure", "Résumer, comparer, critiquer", "Annoncer, démontrer, récapituler"], "answer": 0, "why": "L'ancrage textuel est la marque du commentaire : sans citation expliquée puis appréciée, il n'y a pas de commentaire." },
+      { "q": "Un commentaire qui récite le cours sur le thème du texte est :", "choices": ["Correct s'il est exact", "Une dissertation déguisée, donc un hors-sujet", "Un résumé", "Une paraphrase"], "answer": 1, "why": "L'exactitude ne sauve pas l'exercice : le devoir doit rester ancré dans le texte donné." }
+    ]
+  }
+]

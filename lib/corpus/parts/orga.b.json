@@ -1,0 +1,234 @@
+[
+  {
+    "id": "orga-05",
+    "order": 5,
+    "title": "La justice, service public",
+    "teaser": "Égalité, continuité, mutabilité : les lois de Rolland appliquées au prétoire.",
+    "minutes": 5,
+    "brief": [
+      "Un service public est une activité d'intérêt général assurée ou contrôlée par une personne publique. La justice en est un : on peut la saisir pour résoudre ses conflits, elle est financée par l'impôt, elle emploie des agents publics. À ce titre, elle est soumise aux trois **lois de Rolland**, dégagées par la doctrine et consacrées par la jurisprudence : égalité, continuité, mutabilité.",
+      "L'**égalité** signifie que chaque usager doit être traité de la même façon : égalité dans l'accès au service et égalité dans son fonctionnement. Elle a valeur constitutionnelle. Elle emporte deux conséquences. La **neutralité** des agents, qui doivent s'abstenir de manifester leurs opinions politiques ou religieuses dans l'exercice de leurs fonctions. Et la **gratuité** relative : depuis la loi du 10 juillet 1991 sur l'aide juridictionnelle, l'État prend en charge tout ou partie des frais de justice des personnes aux ressources modestes, ce qui donne à l'égalité d'accès un contenu réel.",
+      "La **continuité** impose que le service fonctionne de manière régulière et sans interruption. Les juridictions doivent rester accessibles en permanence pour les procédures d'urgence — permanences pénales, référés, juge des libertés et de la détention. Certaines juridictions fonctionnent toutefois par **session**, comme les cours d'assises. Le corollaire est la limitation du droit de grève des magistrats, qui ne peuvent interrompre le service au point de le paralyser.",
+      "La **mutabilité** — ou principe d'adaptation — permet au service public d'évoluer avec les besoins de la population. Elle n'a pas valeur constitutionnelle. Elle a une conséquence importante : il n'existe **pas de droit au maintien** d'un service public. C'est sur ce fondement que la réforme de 2019 a fusionné tribunaux d'instance et de grande instance en **tribunaux judiciaires**, et que la dématérialisation s'est imposée, avec des plateformes comme Télérecours pour la juridiction administrative."
+    ],
+    "keyPoints": [
+      "Trois lois de Rolland : égalité, continuité, mutabilité.",
+      "Égalité (valeur constitutionnelle) → neutralité des agents + gratuité relative via l'aide juridictionnelle (1991).",
+      "Continuité → permanences et référés ; droit de grève des magistrats limité.",
+      "Mutabilité (pas de valeur constitutionnelle) → aucun droit au maintien d'un service : fusion des tribunaux en 2019."
+    ],
+    "definitions": [
+      { "term": "Service public", "text": "Activité d'intérêt général assurée ou contrôlée par une personne publique, soumise à un régime juridique particulier." },
+      { "term": "Lois de Rolland", "text": "Trois principes jurisprudentiels applicables à tout service public : égalité devant le service, continuité du service, mutabilité ou adaptation du service." },
+      { "term": "Aide juridictionnelle", "text": "Prise en charge par l'État de tout ou partie des frais de justice des personnes dont les ressources sont insuffisantes.", "source": "Loi du 10 juillet 1991" },
+      { "term": "Principe de mutabilité", "text": "Principe permettant à l'administration d'adapter, de réorganiser ou de supprimer un service public pour l'ajuster aux besoins de l'intérêt général." },
+      { "term": "Tribunal judiciaire", "text": "Juridiction de droit commun de première instance de l'ordre judiciaire, née le 1er janvier 2020 de la fusion du tribunal d'instance et du tribunal de grande instance." }
+    ],
+    "exam": {
+      "kind": "dissertation",
+      "question": "La justice est-elle un service public comme les autres ?",
+      "concise": "La justice présente tous les traits du service public : activité d'intérêt général, assurée par l'État, financée par l'impôt, accessible aux usagers, et soumise aux trois lois de Rolland — égalité, continuité, mutabilité. La jurisprudence en tire des conséquences concrètes : neutralité des agents, gratuité relative organisée par l'aide juridictionnelle depuis 1991, permanences assurant la continuité, réorganisations justifiées par la mutabilité comme la fusion des tribunaux en 2019. Mais la justice est un service public **singulier** à un double titre. D'abord par son objet : elle ne fournit pas une prestation, elle tranche et contraint, ce qui exige des garanties propres — indépendance, impartialité, publicité, double degré — étrangères aux autres services. Ensuite par son régime contentieux : la responsabilité du service public de la justice obéit à des règles spéciales, l'État ne répondant du fonctionnement défectueux qu'en cas de faute lourde ou de déni de justice, et l'acte juridictionnel lui-même échappant au contrôle de l'excès de pouvoir.",
+      "plan": [
+        {
+          "title": "I. Une activité pleinement soumise au régime du service public",
+          "children": [
+            { "title": "A. L'application des lois de Rolland", "points": ["Égalité : accès et fonctionnement, valeur constitutionnelle, aide juridictionnelle de 1991", "Continuité : permanences, référés, limitation du droit de grève des magistrats", "Mutabilité : fusion des tribunaux d'instance et de grande instance, dématérialisation"] },
+            { "title": "B. Les obligations d'un service envers ses usagers", "points": ["Neutralité politique et religieuse des agents", "Accessibilité géographique et numérique", "Réparation du fonctionnement défectueux du service"] }
+          ]
+        },
+        {
+          "title": "II. Une activité irréductible au modèle commun",
+          "children": [
+            { "title": "A. Des garanties propres à la fonction de juger", "points": ["Indépendance et impartialité, sans équivalent dans les autres services", "Publicité, motivation, double degré de juridiction", "Le juge n'est pas un prestataire : il dit le droit et contraint"] },
+            { "title": "B. Un régime de responsabilité dérogatoire", "points": ["Faute lourde ou déni de justice exigés pour engager la responsabilité de l'État", "L'acte juridictionnel échappe au recours pour excès de pouvoir", "Conclusion : un service public, mais un service public souverain"] }
+          ]
+        }
+      ],
+      "pitfalls": [
+        "La gratuité de la justice n'est pas absolue : elle est organisée par l'aide juridictionnelle, sous conditions de ressources.",
+        "La mutabilité n'a pas valeur constitutionnelle, contrairement à l'égalité : c'est une nuance souvent attendue."
+      ]
+    },
+    "quiz": [
+      { "q": "Les trois lois de Rolland sont :", "choices": ["Égalité, liberté, fraternité", "Égalité, continuité, mutabilité", "Publicité, célérité, collégialité", "Légalité, proportionnalité, subsidiarité"], "answer": 1, "why": "Ces trois principes s'appliquent à tout service public, y compris la justice." },
+      { "q": "L'aide juridictionnelle a été instaurée par la loi de :", "choices": ["1972", "1982", "1991", "2019"], "answer": 2, "why": "Loi du 10 juillet 1991 : elle donne un contenu réel au principe d'égalité d'accès au juge." },
+      { "q": "Le principe de mutabilité implique :", "choices": ["Un droit au maintien du service public", "Qu'un service public peut être supprimé s'il n'est plus utile", "L'interdiction de toute réforme", "La gratuité du service"], "answer": 1, "why": "Il n'existe aucun droit acquis au maintien d'un service public : c'est ce qui a permis la fusion des tribunaux en 2019." },
+      { "q": "La continuité de la justice implique :", "choices": ["Des permanences et des procédures d'urgence accessibles en permanence", "Que toutes les juridictions siègent en continu", "L'interdiction totale de la grève", "La suppression des sessions d'assises"], "answer": 0, "why": "Certaines juridictions siègent par session ; ce qui doit être continu, c'est l'accès aux procédures d'urgence." },
+      { "q": "La neutralité des agents du service public de la justice découle :", "choices": ["Du principe d'égalité", "Du principe de mutabilité", "Du principe de célérité", "Du principe de collégialité"], "answer": 0, "why": "Traiter également tous les usagers suppose que l'agent n'affiche pas ses opinions politiques ou religieuses." }
+    ]
+  },
+  {
+    "id": "orga-06",
+    "order": 6,
+    "title": "Les deux ordres et le Tribunal des conflits",
+    "teaser": "De la loi de 1790 à l'arrêt Cadot : comment la France s'est retrouvée avec deux justices.",
+    "minutes": 5,
+    "brief": [
+      "La France connaît un **dualisme juridictionnel**. L'ordre **judiciaire** tranche les litiges entre personnes privées : personnes physiques, entreprises, associations. L'ordre **administratif** tranche les litiges impliquant les personnes publiques : l'État, les collectivités locales, leurs établissements.",
+      "Cette dualité est le fruit d'une histoire précise. La **loi des 16 et 24 août 1790** interdit au juge judiciaire de juger l'administration, par méfiance envers les parlements d'Ancien Régime qui avaient entravé les réformes royales. Le **décret du 2 septembre 1795** interdit aux tribunaux de connaître des actes d'administration. L'administration devient alors son propre juge : c'est le système du **ministre-juge**. Le **Conseil d'État**, créé le 13 décembre 1799, ne rend d'abord que des avis : c'est la **justice retenue**, le ministre gardant le dernier mot.",
+      "Deux étapes émancipent la justice administrative. La **loi du 24 mai 1872** fait du Conseil d'État une véritable juridiction, dotée de la **justice déléguée**. L'**arrêt Cadot du 13 décembre 1889** achève le mouvement : le Conseil d'État accepte de connaître directement d'un recours sans passer par le ministre, mettant fin au ministre-juge. L'arrêt **Blanco** de 1873 avait entre-temps posé que la responsabilité de l'État obéit à des règles propres.",
+      "Le **Tribunal des conflits** règle les conflits de compétence entre les deux ordres. Sa composition est **paritaire** : quatre magistrats de la Cour de cassation et quatre du Conseil d'État, élus pour trois ans ; il siège au Palais-Royal. Le **conflit positif** survient quand les deux ordres se déclarent compétents : le préfet dépose un déclinatoire de compétence, le juge judiciaire sursoit à statuer, puis le préfet prend un arrêté de conflit qui saisit le Tribunal. Le **conflit négatif** survient quand les deux se déclarent incompétents : le dernier juge saisi doit alors saisir le Tribunal, car la justice doit toujours trancher. Le Tribunal ne se prononce jamais sur le fond, sauf deux exceptions : le **conflit de décisions** contradictoires au fond, et l'indemnisation du préjudice né d'une durée excessive de procédure due au dualisme lui-même."
+    ],
+    "keyPoints": [
+      "Loi des 16 et 24 août 1790 : interdiction au juge judiciaire de juger l'administration.",
+      "Loi du 24 mai 1872 : justice déléguée ; arrêt Cadot, 13 décembre 1889 : fin du ministre-juge.",
+      "Tribunal des conflits : composition paritaire 4+4, siège au Palais-Royal.",
+      "Conflit positif (déclinatoire + arrêté de conflit) / conflit négatif ; jamais de décision au fond, sauf deux exceptions."
+    ],
+    "definitions": [
+      { "term": "Dualisme juridictionnel", "text": "Coexistence en France de deux ordres de juridiction autonomes, l'ordre judiciaire et l'ordre administratif, dotés chacun de leur juridiction suprême." },
+      { "term": "Justice retenue", "text": "Système dans lequel l'administration conserve le pouvoir de décision, le Conseil d'État ne rendant que des avis. En vigueur jusqu'à la loi du 24 mai 1872." },
+      { "term": "Arrêt Cadot", "text": "Décision par laquelle le Conseil d'État accepte de connaître directement d'un recours en premier ressort, mettant fin au système du ministre-juge.", "source": "CE, 13 décembre 1889, Cadot" },
+      { "term": "Conflit positif", "text": "Situation dans laquelle les deux ordres se déclarent compétents. Le préfet dépose un déclinatoire de compétence puis prend un arrêté de conflit saisissant le Tribunal des conflits." },
+      { "term": "Conflit négatif", "text": "Situation dans laquelle les deux ordres se déclarent successivement incompétents, laissant le justiciable sans juge. Le dernier juge saisi doit saisir le Tribunal des conflits." }
+    ],
+    "exam": {
+      "kind": "dissertation",
+      "question": "Le dualisme juridictionnel français est-il justifié ?",
+      "concise": "Le dualisme repose sur une justification historique — la méfiance révolutionnaire envers les parlements d'Ancien Régime, traduite par la loi des 16 et 24 août 1790 — et sur une justification théorique : l'administration poursuit l'intérêt général avec des prérogatives exorbitantes, que le droit privé ne sait pas appréhender. C'est l'enseignement de l'arrêt Blanco de 1873. Le dualisme a par ailleurs produit un droit administratif protecteur, forgé par un juge spécialisé qui a su imposer la légalité à la puissance publique, de l'arrêt Cadot au recours pour excès de pouvoir. Il a toutefois un coût : la **complexité** pour le justiciable, obligé d'identifier le bon ordre sous peine de perdre du temps ; les **conflits de compétence**, dont le traitement par le Tribunal des conflits allonge encore les procédures au point que ce dernier doit parfois indemniser le préjudice qu'il a lui-même contribué à causer ; et le brouillage des frontières, le juge judiciaire étant souvent compétent en matière de libertés. Le dualisme reste donc justifié dans son principe, mais son coût procédural appelle des simplifications.",
+      "plan": [
+        {
+          "title": "I. Un dualisme historiquement et théoriquement fondé",
+          "children": [
+            { "title": "A. Un héritage révolutionnaire", "points": ["La méfiance envers les parlements d'Ancien Régime", "Loi des 16 et 24 août 1790, décret du 2 septembre 1795", "De la justice retenue à la justice déléguée : loi du 24 mai 1872, arrêt Cadot de 1889"] },
+            { "title": "B. Une spécificité irréductible du droit administratif", "points": ["TC, Blanco, 1873 : des règles propres à la responsabilité de l'État", "Les prérogatives de puissance publique et la logique d'intérêt général", "Un juge spécialisé qui a construit un droit protecteur : recours pour excès de pouvoir"] }
+          ]
+        },
+        {
+          "title": "II. Un dualisme coûteux pour le justiciable",
+          "children": [
+            { "title": "A. La complexité de la répartition des compétences", "points": ["La difficulté de qualifier le litige : TC, Bac d'Eloka, 1921", "Les blocs de compétence créés par la loi pour simplifier", "Le juge judiciaire, gardien de la liberté individuelle et de la propriété"] },
+            { "title": "B. Le coût procédural du règlement des conflits", "points": ["Conflit positif et conflit négatif : des procédures longues", "L'indemnisation du préjudice né de la durée excessive due au dualisme", "Conclusion : un principe justifié, une mise en œuvre à simplifier"] }
+          ]
+        }
+      ],
+      "pitfalls": [
+        "Le Tribunal des conflits a été réorganisé en 1872 puis réformé en 2015 : il ne se prononce pas sur le fond, sauf deux exceptions.",
+        "Ne pas dater l'arrêt Blanco de 1889 ni Cadot de 1873 : Blanco est de 1873, Cadot de 1889."
+      ]
+    },
+    "quiz": [
+      { "q": "La loi des 16 et 24 août 1790 interdit :", "choices": ["Au juge administratif de juger les particuliers", "Au juge judiciaire de juger l'administration", "Les arrêts de règlement", "La justice retenue"], "answer": 1, "why": "C'est l'acte fondateur de la séparation des autorités administratives et judiciaires." },
+      { "q": "L'arrêt Cadot date de :", "choices": ["1873", "1872", "1889", "1921"], "answer": 2, "why": "CE, 13 décembre 1889 : le Conseil d'État accepte un recours direct, mettant fin au système du ministre-juge." },
+      { "q": "Le Tribunal des conflits est composé de :", "choices": ["9 membres nommés", "4 magistrats de la Cour de cassation et 4 du Conseil d'État", "27 juges", "15 juges élus"], "answer": 1, "why": "Composition paritaire, mandat de trois ans, siège au Palais-Royal." },
+      { "q": "Dans le conflit positif, l'initiative appartient :", "choices": ["Au justiciable", "Au préfet", "Au procureur", "Au juge administratif"], "answer": 1, "why": "Le préfet dépose un déclinatoire de compétence, puis prend un arrêté de conflit qui saisit le Tribunal des conflits." },
+      { "q": "Le Tribunal des conflits se prononce sur le fond :", "choices": ["Jamais", "Toujours", "En cas de conflit de décisions contradictoires et pour la durée excessive de procédure", "Uniquement en matière pénale"], "answer": 2, "why": "Ce sont les deux exceptions : il tranche alors pour éviter un déni de justice ou indemniser le préjudice causé par le dualisme." }
+    ]
+  },
+  {
+    "id": "orga-07",
+    "order": 7,
+    "title": "Le Conseil constitutionnel",
+    "teaser": "Neuf membres, neuf ans, et un contrôle qui a changé de nature deux fois.",
+    "minutes": 5,
+    "brief": [
+      "Le Conseil constitutionnel est une juridiction interne créée par la Constitution de 1958, dont la mission principale est de contrôler la **constitutionnalité des lois**. Sa composition est singulière : il n'est pas composé de magistrats professionnels et aucune formation juridique n'est exigée de ses membres.",
+      "Il compte **neuf membres nommés** pour **neuf ans** : trois par le Président de la République, trois par le président du Sénat, trois par le président de l'Assemblée nationale. Le renouvellement se fait par tiers tous les trois ans. Le mandat n'est **pas renouvelable**, ce qui garantit l'autonomie des membres à l'égard de l'autorité qui les a nommés, et ils sont **irrévocables**. S'y ajoutent les **membres de droit** : les anciens Présidents de la République, membres à vie, sans obligation de siéger. Le président du Conseil est désigné par le Président de la République, ce qui nourrit la critique récurrente d'un défaut d'indépendance.",
+      "Le Conseil exerce d'abord une fonction de **juge électoral** : il se prononce sur la régularité des élections nationales — présidentielle, législatives, sénatoriales — et veille au bon déroulement des référendums nationaux. Tout citoyen peut contester ces résultats. Attention à la répartition : les élections **européennes** relèvent du Conseil d'État, et les élections **locales** du juge administratif territorialement compétent.",
+      "Il exerce ensuite des **attributions consultatives**. La plus notable concerne l'**article 16**, qui confère au Président des pouvoirs exceptionnels en cas de crise grave : le Conseil doit être consulté avant leur mise en œuvre, mais son avis ne lie pas. Il constate également la **vacance de la présidence**, situation dans laquelle le président du Sénat assure l'intérim. Enfin, il exerce le **contrôle de constitutionnalité** des lois ordinaires, des lois organiques, des règlements des assemblées et des engagements internationaux — l'objet de la leçon suivante."
+    ],
+    "keyPoints": [
+      "9 membres nommés pour 9 ans, par tiers : Président de la République, président du Sénat, président de l'Assemblée.",
+      "Mandat non renouvelable et irrévocable ; anciens Présidents membres de droit à vie.",
+      "Juge électoral des scrutins nationaux ; européennes au Conseil d'État, locales au juge administratif.",
+      "Attributions consultatives : article 16, constatation de la vacance de la présidence."
+    ],
+    "definitions": [
+      { "term": "Conseil constitutionnel", "text": "Juridiction créée par la Constitution de 1958, chargée du contrôle de constitutionnalité des lois, du contentieux des élections nationales et d'attributions consultatives." },
+      { "term": "Membre de droit", "text": "Ancien Président de la République, membre à vie du Conseil constitutionnel, sans obligation de siéger." },
+      { "term": "Article 16 de la Constitution", "text": "Disposition conférant au Président de la République des pouvoirs exceptionnels en cas de menace grave et immédiate sur les institutions, après consultation non contraignante du Conseil constitutionnel." },
+      { "term": "Vacance de la présidence", "text": "Situation dans laquelle le Président de la République n'est plus en mesure d'exercer ses fonctions ; l'intérim est alors assuré par le président du Sénat.", "source": "Article 7 de la Constitution" },
+      { "term": "Loi organique", "text": "Loi précisant les modalités d'application de la Constitution, obligatoirement soumise au Conseil constitutionnel avant sa promulgation et supérieure aux lois ordinaires." }
+    ],
+    "exam": {
+      "kind": "question de cours",
+      "question": "La composition du Conseil constitutionnel garantit-elle son indépendance ?",
+      "concise": "La composition du Conseil offre de réelles garanties d'indépendance. Le mandat de neuf ans est **long**, ce qui détache le membre du cycle politique ; il est **non renouvelable**, ce qui supprime tout intérêt à complaire à l'autorité de nomination ; les membres sont **irrévocables** ; et le renouvellement par tiers tous les trois ans évite qu'une majorité politique ne compose le Conseil d'un seul coup. Ces garanties sont pourtant contestées sur trois points. D'abord la **nomination elle-même** : les neuf membres sont désignés discrétionnairement par trois autorités politiques, et le président du Conseil est choisi par le Président de la République. Ensuite l'**absence d'exigence de compétence juridique** : aucune formation n'est requise, et le Conseil a longtemps accueilli d'anciens responsables politiques. Enfin les **membres de droit**, anciens Présidents siégeant à vie, dont la présence est difficilement conciliable avec l'impartialité attendue d'un juge. La composition assure donc davantage l'indépendance dans l'exercice du mandat que dans son attribution.",
+      "plan": [
+        {
+          "title": "I. Des garanties réelles d'indépendance dans l'exercice du mandat",
+          "children": [
+            { "title": "A. La durée et la stabilité", "points": ["Neuf ans, durée détachée du calendrier électoral", "Renouvellement par tiers tous les trois ans", "Irrévocabilité des membres"] },
+            { "title": "B. L'absence de renouvellement", "points": ["Un mandat non renouvelable supprime la dépendance envers l'autorité de nomination", "Incompatibilités renforcées avec les fonctions électives", "Obligation de réserve des membres"] }
+          ]
+        },
+        {
+          "title": "II. Des garanties discutées dans l'attribution du mandat",
+          "children": [
+            { "title": "A. Une nomination politique", "points": ["Trois autorités politiques nomment discrétionnairement", "Le président du Conseil désigné par le Président de la République", "Le contrôle parlementaire de l'article 13 reste un avis"] },
+            { "title": "B. Une composition non juridictionnelle", "points": ["Aucune formation juridique exigée", "Les membres de droit, anciens Présidents siégeant à vie", "Conclusion : une légitimité qui tient davantage à la jurisprudence qu'à la composition"] }
+          ]
+        }
+      ],
+      "pitfalls": [
+        "Le contentieux des élections européennes relève du Conseil d'État, pas du Conseil constitutionnel.",
+        "L'avis rendu au titre de l'article 16 ne lie pas le Président : c'est une consultation, pas une autorisation."
+      ]
+    },
+    "quiz": [
+      { "q": "Le Conseil constitutionnel compte :", "choices": ["7 membres pour 7 ans", "9 membres pour 9 ans", "12 membres pour 6 ans", "15 membres pour 9 ans"], "answer": 1, "why": "Neuf membres nommés pour neuf ans, renouvelés par tiers tous les trois ans, plus les membres de droit." },
+      { "q": "Le contentieux des élections européennes relève :", "choices": ["Du Conseil constitutionnel", "Du Conseil d'État", "De la Cour de cassation", "De la CJUE"], "answer": 1, "why": "Le Conseil constitutionnel ne juge que les scrutins nationaux ; les européennes relèvent du juge administratif suprême." },
+      { "q": "Le mandat des membres nommés est :", "choices": ["Renouvelable une fois", "Non renouvelable", "À vie", "De quatre ans"], "answer": 1, "why": "Le non-renouvellement est précisément ce qui garantit leur autonomie envers l'autorité de nomination." },
+      { "q": "En cas de vacance de la présidence de la République, l'intérim est assuré par :", "choices": ["Le Premier ministre", "Le président de l'Assemblée nationale", "Le président du Sénat", "Le président du Conseil constitutionnel"], "answer": 2, "why": "Article 7 de la Constitution : c'est le président du Sénat qui assure l'intérim." },
+      { "q": "L'avis rendu par le Conseil au titre de l'article 16 est :", "choices": ["Contraignant", "Consultatif", "Secret", "Rendu par le Conseil d'État"], "answer": 1, "why": "Le Président doit consulter, mais il n'est pas tenu de suivre l'avis." }
+    ]
+  },
+  {
+    "id": "orga-08",
+    "order": 8,
+    "title": "Le contrôle de constitutionnalité et la QPC",
+    "teaser": "A priori depuis 1958, a posteriori depuis 2008 : les trois filtres à connaître par cœur.",
+    "minutes": 5,
+    "brief": [
+      "Le contrôle de constitutionnalité n'est **jamais automatique** : il faut saisir le Conseil. Deux formes coexistent. Le contrôle **a priori**, institué en 1958, s'exerce **avant la promulgation** de la loi. À l'origine, quatre autorités seulement pouvaient saisir : le Président de la République, le Premier ministre, le président du Sénat, le président de l'Assemblée nationale. La révision de **1974** y ajoute **soixante députés ou soixante sénateurs**, ce qui ouvre la saisine à l'opposition et transforme la pratique du contrôle.",
+      "Le Conseil contrôle les lois au regard du **bloc de constitutionnalité**, notion issue de la décision **Liberté d'association du 16 juillet 1971** qui a reconnu valeur contraignante au préambule. Le bloc comprend le texte de la Constitution, la Déclaration de 1789, le préambule de 1946, la Charte de l'environnement de 2004 et les principes fondamentaux reconnus par les lois de la République. Il contrôle les lois ordinaires, obligatoirement les **lois organiques** et les **règlements des assemblées**, et sur saisine les **engagements internationaux** : si un traité est jugé contraire, il faut réviser la Constitution avant de le ratifier, ou renoncer.",
+      "Avant 2008, le justiciable ne pouvait pas saisir le Conseil. La révision du 23 juillet 2008 institue le contrôle **a posteriori** par la **question prioritaire de constitutionnalité**, entrée en vigueur le 1er mars 2010. Elle ne peut être soulevée que pour un motif précis : la disposition législative porterait atteinte à un **droit ou une liberté que la Constitution garantit**.",
+      "La procédure repose sur un double filtre, à connaître par cœur. Le justiciable soulève la QPC devant le juge du fond, qui vérifie **trois critères** : la disposition est **applicable au litige** ; elle n'a **pas déjà été déclarée conforme** par le Conseil, sauf changement de circonstances ; et la question est **sérieuse** ou nouvelle. Si les trois sont réunis, le juge transmet à la juridiction suprême de son ordre — Cour de cassation ou Conseil d'État — qui refait le même examen avant de saisir le Conseil constitutionnel. Celui-ci dispose de trois mois et peut déclarer la loi conforme, non conforme, ou partiellement conforme ; l'abrogation prend effet à la date qu'il fixe. Le risque assumé est celui du **gouvernement des juges** : le Conseil s'autolimite en ne censurant que les violations manifestes, pour préserver la marge du législateur."
+    ],
+    "keyPoints": [
+      "A priori : avant promulgation ; 4 autorités depuis 1958, + 60 députés ou 60 sénateurs depuis 1974.",
+      "Contrôle obligatoire pour les lois organiques et les règlements des assemblées.",
+      "QPC (révision du 23 juillet 2008, en vigueur le 1er mars 2010) : atteinte aux droits et libertés garantis.",
+      "Trois critères filtrés deux fois : applicable au litige, non déjà déclarée conforme, sérieuse ou nouvelle."
+    ],
+    "definitions": [
+      { "term": "Contrôle a priori", "text": "Contrôle de constitutionnalité exercé sur une loi votée mais non encore promulguée, sur saisine du Président, du Premier ministre, des présidents des assemblées ou de 60 parlementaires.", "source": "Article 61 de la Constitution" },
+      { "term": "Contrôle a posteriori", "text": "Contrôle exercé sur une loi déjà en vigueur, à la demande d'un justiciable, par la voie de la question prioritaire de constitutionnalité.", "source": "Article 61-1 de la Constitution" },
+      { "term": "Filtrage de la QPC", "text": "Double examen, par le juge du fond puis par la Cour de cassation ou le Conseil d'État, des trois conditions de transmission de la question au Conseil constitutionnel." },
+      { "term": "Bloc de constitutionnalité", "text": "Ensemble des normes de référence du contrôle : Constitution de 1958, DDHC de 1789, préambule de 1946, Charte de l'environnement de 2004 et PFRLR." },
+      { "term": "Gouvernement des juges", "text": "Critique adressée à une juridiction constitutionnelle qui substituerait son appréciation politique à celle du législateur élu." }
+    ],
+    "exam": {
+      "kind": "dissertation",
+      "question": "La question prioritaire de constitutionnalité a-t-elle démocratisé le contrôle de constitutionnalité ?",
+      "concise": "Jusqu'en 2008, le contrôle de constitutionnalité restait une affaire d'institutions : seules quatre autorités, puis soixante parlementaires depuis 1974, pouvaient saisir le Conseil, et toujours avant la promulgation. La QPC opère une rupture en ouvrant le prétoire constitutionnel au **justiciable** : toute personne peut, à l'occasion d'un litige, contester une loi en vigueur qui porterait atteinte à ses droits et libertés. L'effet a été massif, avec plusieurs centaines de décisions et l'abrogation de dispositions anciennes que nul n'avait jamais contestées, notamment en procédure pénale. Cette démocratisation reste toutefois **encadrée**. L'accès n'est pas direct : un double filtrage, par le juge du fond puis par la Cour de cassation ou le Conseil d'État, écarte la majorité des questions. Le grief est limité aux droits et libertés garantis, à l'exclusion des règles de compétence ou de procédure. Et le Conseil module lui-même les effets de ses abrogations. La QPC a donc démocratisé l'accès sans en faire un recours populaire.",
+      "plan": [
+        {
+          "title": "I. Une ouverture réelle du contrôle au justiciable",
+          "children": [
+            { "title": "A. La fin d'un contrôle réservé aux institutions", "points": ["1958 : quatre autorités de saisine ; 1974 : ouverture à 60 parlementaires", "Un contrôle uniquement a priori, avant promulgation", "Révision du 23 juillet 2008, entrée en vigueur le 1er mars 2010"] },
+            { "title": "B. Un effet massif sur le droit en vigueur", "points": ["Le contrôle atteint des lois anciennes jamais contestées", "Abrogations majeures en procédure pénale, notamment la garde à vue en 2010", "La Constitution devient un argument de plaidoirie ordinaire"] }
+          ]
+        },
+        {
+          "title": "II. Une ouverture strictement encadrée",
+          "children": [
+            { "title": "A. Un accès filtré", "points": ["Trois critères : applicabilité au litige, absence de déclaration de conformité antérieure, caractère sérieux ou nouveau", "Double filtrage par le juge du fond puis par la juridiction suprême de l'ordre", "Un taux de transmission volontairement faible"] },
+            { "title": "B. Un contrôle volontairement contenu", "points": ["Grief limité aux droits et libertés que la Constitution garantit", "Modulation dans le temps des effets de l'abrogation", "Autolimitation du Conseil pour éviter le reproche de gouvernement des juges"] }
+          ]
+        }
+      ],
+      "pitfalls": [
+        "La QPC ne permet jamais une saisine directe du Conseil constitutionnel : le double filtrage est obligatoire.",
+        "Le grief doit porter sur un droit ou une liberté garantis : on ne peut pas soulever une QPC sur une règle de répartition des compétences."
+      ]
+    },
+    "quiz": [
+      { "q": "La saisine du Conseil constitutionnel a été ouverte à 60 parlementaires en :", "choices": ["1958", "1971", "1974", "2008"], "answer": 2, "why": "La révision de 1974 permet à l'opposition de saisir, ce qui donne sa portée pratique au contrôle inauguré en 1971." },
+      { "q": "La QPC est entrée en vigueur le :", "choices": ["23 juillet 2008", "1er mars 2010", "16 juillet 1971", "4 octobre 1958"], "answer": 1, "why": "La révision constitutionnelle date du 23 juillet 2008 ; la procédure n'est applicable qu'à compter du 1er mars 2010." },
+      { "q": "Lequel de ces critères n'est PAS exigé pour transmettre une QPC ?", "choices": ["La disposition est applicable au litige", "La question est sérieuse ou nouvelle", "La disposition n'a pas déjà été déclarée conforme", "Le requérant est de nationalité française"], "answer": 3, "why": "La nationalité est indifférente : toute partie à une instance peut soulever une QPC." },
+      { "q": "Le contrôle est obligatoire pour :", "choices": ["Les lois ordinaires", "Les lois organiques et les règlements des assemblées", "Les décrets", "Les traités"], "answer": 1, "why": "Ces deux catégories sont systématiquement contrôlées avant leur entrée en vigueur ; les autres supposent une saisine." },
+      { "q": "Si un engagement international est déclaré contraire à la Constitution :", "choices": ["Il est nul", "Il s'applique quand même", "Il faut réviser la Constitution avant de le ratifier", "Le juge l'écarte"], "answer": 2, "why": "Mécanisme de l'article 54, mis en œuvre notamment avant la ratification du traité de Maastricht en 1992." }
+    ]
+  }
+]

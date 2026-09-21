@@ -1,0 +1,306 @@
+[
+ {
+  "id": "intro-01",
+  "order": 1,
+  "title": "Qu'est-ce qu'une règle de droit ?",
+  "teaser": "La définition négative, la définition positive, et pourquoi la sanction étatique change tout.",
+  "minutes": 5,
+  "brief": [
+   "Une société sans règles est impossible : dès que deux personnes vivent ensemble, il faut arbitrer leurs prétentions. Mais toutes les règles ne sont pas des règles **de droit**. La morale, la religion, la politesse, les usages professionnels commandent eux aussi des comportements. Le travail du juriste commence donc par un tri : qu'est-ce qui distingue la règle de droit de toutes ses voisines ?",
+   "La **définition négative** procède par élimination. La règle de droit n'est pas la règle morale, car elle ne vise pas la perfection intérieure de l'individu mais l'ordre extérieur du groupe ; on peut être un parfait salaud et n'avoir rien à se reprocher juridiquement. Elle n'est pas la règle religieuse, car elle ne tire pas sa force d'une révélation mais d'une autorité temporelle. Elle n'est pas le simple usage, car l'usage ne devient obligatoire que si le droit le reprend à son compte.",
+   "La **définition positive** retient trois caractères cumulatifs. La règle de droit est **générale et abstraite** : elle ne désigne personne en particulier et s'applique à toutes les situations qui entrent dans sa catégorie. Elle est **permanente**, en ce sens qu'elle s'applique de façon constante tant qu'elle n'est pas abrogée. Et surtout elle est **obligatoire et sanctionnée par la contrainte étatique** : c'est ce dernier trait qui est décisif.",
+   "La contrainte étatique est le critère le plus sûr parce qu'il est le plus vérifiable. Derrière la règle de droit se tient une force publique organisée : huissier, police, administration pénitentiaire. La morale connaît la réprobation, la religion connaît le péché ; seul le droit connaît la saisie, l'amende et la prison. Attention toutefois au piège classique : certaines règles de droit ne sont pas directement sanctionnées (les lois dites *imparfaites*), sans cesser pour autant d'être du droit.",
+   "Retiens enfin que « obligatoire » ne signifie pas « impératif » dans tous les cas. Une règle **supplétive** ne s'applique que si les parties n'ont rien prévu d'autre : elle est obligatoire en ce qu'elle s'impose à défaut de volonté contraire, mais les parties peuvent l'écarter. Une règle **impérative** (ou d'ordre public) ne peut au contraire jamais être écartée par contrat."
+  ],
+  "keyPoints": [
+   "Définition négative : le droit n'est ni la morale, ni la religion, ni l'usage.",
+   "Définition positive : générale, abstraite, permanente, obligatoire, sanctionnée par l'État.",
+   "Le critère décisif est la contrainte étatique organisée.",
+   "Distinguer règle impérative (ordre public) et règle supplétive (écartable par contrat)."
+  ],
+  "definitions": [
+   {
+    "term": "Règle de droit",
+    "text": "Norme de conduite générale, abstraite et obligatoire, dont le respect est assuré par la contrainte organisée de l'État."
+   },
+   {
+    "term": "Caractère général et abstrait",
+    "text": "La règle ne vise aucune personne nommément désignée : elle s'applique à toute personne placée dans la situation qu'elle décrit. C'est le fondement du principe d'égalité devant la loi."
+   },
+   {
+    "term": "Contrainte étatique",
+    "text": "Pouvoir reconnu à l'État seul d'imposer par la force l'exécution de la règle de droit (exécution forcée, sanction pénale, astreinte)."
+   },
+   {
+    "term": "Règle impérative (ou d'ordre public)",
+    "text": "Règle à laquelle les particuliers ne peuvent pas déroger par convention contraire, car elle protège un intérêt jugé supérieur à leur volonté."
+   },
+   {
+    "term": "Règle supplétive",
+    "text": "Règle qui ne s'applique qu'à défaut de volonté contraire des parties : elle comble le silence du contrat sans s'imposer contre lui."
+   }
+  ],
+  "exam": {
+   "kind": "dissertation",
+   "question": "La sanction est-elle le critère de la règle de droit ?",
+   "concise": "La sanction étatique est le critère le plus opératoire de la règle de droit, parce qu'elle est extérieure, organisée et vérifiable : là où la morale s'en remet au for intérieur et la religion à une autorité spirituelle, le droit mobilise une force publique. Mais ce critère n'est pas absolu. D'une part, il existe des règles de droit dépourvues de sanction directe (obligations naturelles, lois imparfaites, nombre de règles de droit international public), qui restent pourtant du droit parce qu'elles participent d'un ordre juridique cohérent. D'autre part, la sanction n'est pas l'apanage du droit : la morale et les groupes sociaux connaissent leurs propres sanctions diffuses. Le critère doit donc être affiné : ce n'est pas la sanction en elle-même qui fait le droit, mais son **caractère étatique et organisé**, c'est-à-dire l'existence d'une autorité habilitée à la prononcer selon une procédure préétablie.",
+   "plan": [
+    {
+     "title": "I. La sanction étatique, critère opératoire de la juridicité",
+     "children": [
+      {
+       "title": "A. Un critère qui distingue le droit de ses voisins",
+       "points": [
+        "La morale sanctionne par le remords, la religion par le péché : sanctions internes ou transcendantes",
+        "Le droit sanctionne par la contrainte matérielle : saisie, amende, emprisonnement",
+        "Le monopole étatique de la contrainte comme héritage de la nuit du 4 août 1789"
+       ]
+      },
+      {
+       "title": "B. Un critère vérifiable de l'extérieur",
+       "points": [
+        "L'existence d'un juge et d'une procédure permet de constater objectivement la juridicité",
+        "Kelsen : la norme juridique est celle qui rattache un acte de contrainte à une condition",
+        "Intérêt pratique : c'est ce qui permet au justiciable de savoir ce qu'il risque"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "II. La sanction étatique, critère insuffisant à lui seul",
+     "children": [
+      {
+       "title": "A. Des règles de droit sans sanction directe",
+       "points": [
+        "Les lois imparfaites, dépourvues de sanction organisée",
+        "L'obligation naturelle, qui ne peut être exigée mais dont l'exécution volontaire est valable",
+        "Le droit international public, longtemps décrit comme un droit sans gendarme"
+       ]
+      },
+      {
+       "title": "B. Un critère à compléter par la structure de l'ordre juridique",
+       "points": [
+        "La juridicité tient aussi à l'appartenance à un système hiérarchisé de normes",
+        "Kelsen : la validité d'une norme vient de sa conformité à la norme supérieure",
+        "Conclusion : la sanction est un indice majeur, la hiérarchie des normes en est le fondement"
+       ]
+      }
+     ]
+    }
+   ],
+   "pitfalls": [
+    "Ne jamais écrire que la règle de droit est « la règle qui vient de l'État » : la coutume est du droit sans émaner directement de l'État.",
+    "Ne pas confondre sanction et peine : la nullité d'un contrat est une sanction civile, pas une punition."
+   ]
+  },
+  "quiz": [
+   {
+    "q": "Quel caractère distingue le plus sûrement la règle de droit de la règle morale ?",
+    "choices": [
+     "Elle est écrite",
+     "Elle est sanctionnée par la contrainte étatique",
+     "Elle est votée par le Parlement",
+     "Elle est plus ancienne"
+    ],
+    "answer": 1,
+    "why": "L'écrit n'est pas nécessaire (la coutume est du droit) et toutes les règles de droit ne viennent pas du Parlement. Seule la contrainte étatique organisée est propre au droit."
+   },
+   {
+    "q": "Une règle supplétive est une règle :",
+    "choices": [
+     "Que les parties peuvent écarter par une clause contraire",
+     "Qui s'ajoute à une autre règle",
+     "Qui n'est pas encore entrée en vigueur",
+     "Que seul le juge peut appliquer"
+    ],
+    "answer": 0,
+    "why": "La règle supplétive supplée au silence des parties : elle comble le contrat, mais cède devant leur volonté contraire."
+   },
+   {
+    "q": "Dire que la règle de droit est « abstraite » signifie qu'elle :",
+    "choices": [
+     "Est difficile à comprendre",
+     "Ne vise personne nommément",
+     "N'a pas d'application pratique",
+     "Est théorique"
+    ],
+    "answer": 1,
+    "why": "Abstrait s'oppose ici à individuel : la règle décrit une catégorie de situations, pas une personne désignée. C'est le support du principe d'égalité devant la loi."
+   },
+   {
+    "q": "L'obligation naturelle est un bon contre-exemple parce qu'elle :",
+    "choices": [
+     "Est sanctionnée pénalement",
+     "Ne peut pas être exigée en justice mais reste juridique",
+     "Relève uniquement de la morale",
+     "A été abrogée en 2016"
+    ],
+    "answer": 1,
+    "why": "Elle ne donne pas d'action en justice, mais son exécution volontaire est valable et ne peut être répétée : c'est du droit sans contrainte directe."
+   },
+   {
+    "q": "Une règle d'ordre public :",
+    "choices": [
+     "Ne concerne que le droit pénal",
+     "Peut être écartée par contrat",
+     "S'impose aux parties qui ne peuvent y déroger",
+     "Ne s'applique qu'à l'administration"
+    ],
+    "answer": 2,
+    "why": "L'ordre public marque la limite de la liberté contractuelle : les parties ne peuvent pas y déroger, quelle que soit la matière."
+   }
+  ]
+ },
+ {
+  "id": "intro-02",
+  "title": "Le rôle de la règle de droit",
+  "teaser": "Ordonner, protéger, arbitrer : à quoi sert vraiment le droit, et où s'arrête-t-il.",
+  "minutes": 5,
+  "brief": [
+   "La règle de droit remplit d'abord une **fonction d'organisation**. Elle distribue les compétences, fixe les procédures, dit qui décide et selon quelles formes. Sans elle, aucune institution ne tient : le droit constitutionnel organise l'État, le droit des sociétés organise l'entreprise, le droit de la famille organise la parenté. Cette fonction est neutre en apparence, mais elle est profondément politique : organiser, c'est déjà choisir.",
+   "Elle remplit ensuite une **fonction de protection**. Le droit reconnaît des droits subjectifs aux personnes et les met à l'abri des atteintes d'autrui comme des empiétements de la puissance publique. C'est la logique des libertés fondamentales, du droit de propriété, du droit du travail. On dit souvent que le droit est l'arme du faible : la règle générale protège celui qui n'a pas les moyens du rapport de force.",
+   "Elle remplit enfin une **fonction de pacification**. En imposant un mode de règlement des conflits, le droit substitue le procès à la vengeance privée. C'est le sens du monopole étatique de la justice : l'interdiction de se faire justice à soi-même n'est supportable que si l'État offre en contrepartie un juge accessible et impartial.",
+   "Reste la question des rapports entre le droit et les autres ordres normatifs. Le droit **emprunte** à la morale (la bonne foi de l'article 1104 du Code civil, l'abus de droit), sans s'y réduire. Il **prend ses distances** avec la religion depuis la loi de 1905. Il **utilise l'équité** avec méfiance : le juge ne peut pas statuer en équité contre la loi, sauf quand la loi l'y autorise expressément.",
+   "Attention au piège classique : dire que le droit « reflète » la société est vrai, mais insuffisant. Le droit est aussi **performatif** : il transforme la société qu'il décrit. Reconnaître le mariage entre personnes de même sexe en 2013, ce n'était pas enregistrer un état de fait, c'était en créer un."
+  ],
+  "keyPoints": [
+   "Trois fonctions : organiser, protéger, pacifier.",
+   "Le monopole de la justice étatique est la contrepartie de l'interdiction de la vengeance privée.",
+   "Le droit emprunte à la morale sans s'y confondre (bonne foi, abus de droit).",
+   "Le droit n'est pas seulement le miroir de la société : il la transforme."
+  ],
+  "definitions": [
+   {
+    "term": "Fonction d'organisation",
+    "text": "Rôle du droit consistant à répartir les compétences et à fixer les procédures par lesquelles les décisions sont prises au sein d'un groupe."
+   },
+   {
+    "term": "Justice privée (vengeance privée)",
+    "text": "Règlement d'un conflit par la force de l'intéressé lui-même. Interdite en droit français, sauf cas exceptionnels (légitime défense, état de nécessité)."
+   },
+   {
+    "term": "Équité",
+    "text": "Correction de la règle générale au regard des circonstances particulières d'une espèce. Le juge français ne peut y recourir que lorsqu'un texte l'y autorise."
+   },
+   {
+    "term": "Bonne foi",
+    "text": "Exigence de loyauté dans la négociation, la formation et l'exécution du contrat, posée à l'article 1104 du Code civil, qui précise que cette disposition est d'ordre public."
+   },
+   {
+    "term": "Abus de droit",
+    "text": "Exercice d'un droit subjectif dans une intention de nuire ou sans intérêt légitime, que le juge sanctionne alors même que le titulaire agissait dans les limites formelles de son droit."
+   }
+  ],
+  "exam": {
+   "kind": "dissertation",
+   "question": "Le droit est-il le reflet de la société ?",
+   "concise": "Le droit est incontestablement un produit social : il naît de rapports de force, épouse les valeurs dominantes d'une époque et se transforme quand la société se transforme, comme le montrent l'évolution du droit de la famille depuis 1965 ou la reconnaissance progressive du préjudice écologique. Mais réduire le droit à un reflet reviendrait à lui dénier toute autonomie. Le droit possède ses propres catégories, sa propre temporalité — souvent en décalage avec les mœurs — et surtout une force performative : en qualifiant, il crée. Le droit est donc moins un miroir qu'un **instrument de transformation** : il enregistre les mutations sociales autant qu'il les provoque et parfois les contient.",
+   "plan": [
+    {
+     "title": "I. Un droit façonné par la société qu'il régit",
+     "children": [
+      {
+       "title": "A. Le droit comme produit des valeurs dominantes",
+       "points": [
+        "Montesquieu et l'esprit des lois : le droit dépend du climat, des mœurs, de la religion",
+        "L'évolution du droit de la famille comme sismographe social (1965, 1970, 1975, 2013)",
+        "Les analyses sociologiques : Durkheim, le droit comme fait social"
+       ]
+      },
+      {
+       "title": "B. Le droit comme enregistrement des rapports de force",
+       "points": [
+        "Le droit du travail né du conflit social",
+        "Le rôle des groupes de pression dans la fabrique de la loi",
+        "Limite : un droit purement suiviste perdrait sa fonction normative"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "II. Un droit qui façonne en retour la société",
+     "children": [
+      {
+       "title": "A. La force performative de la qualification juridique",
+       "points": [
+        "Nommer, c'est créer : la personnalité juridique, le mariage, la société commerciale",
+        "Le droit crée des institutions que la réalité sociale ne contenait pas",
+        "L'exemple de la loi de 2013 : le droit précède et fixe une évolution des mœurs"
+       ]
+      },
+      {
+       "title": "B. L'autonomie du raisonnement juridique",
+       "points": [
+        "Kelsen et la théorie pure du droit : la validité ne vient pas du fait mais de la norme supérieure",
+        "Le décalage temporel : le droit résiste, retarde ou anticipe",
+        "Conclusion : dialectique plutôt que reflet"
+       ]
+      }
+     ]
+    }
+   ],
+   "pitfalls": [
+    "Ne pas transformer la dissertation en histoire du droit de la famille : les exemples illustrent, ils ne structurent pas.",
+    "Éviter le plan « oui / non » brut : la seconde partie doit dépasser, pas contredire mécaniquement."
+   ]
+  },
+  "quiz": [
+   {
+    "q": "L'interdiction de se faire justice à soi-même a pour contrepartie :",
+    "choices": [
+     "Le droit de vote",
+     "L'obligation pour l'État d'offrir un juge accessible",
+     "La liberté contractuelle",
+     "Le principe de légalité"
+    ],
+    "answer": 1,
+    "why": "Le monopole étatique de la justice n'est légitime que si l'État assure en retour l'accès au juge : c'est l'obligation de juger et l'interdiction du déni de justice."
+   },
+   {
+    "q": "Le juge français peut statuer en équité :",
+    "choices": [
+     "Toujours",
+     "Jamais",
+     "Seulement quand un texte l'y autorise",
+     "Uniquement en droit pénal"
+    ],
+    "answer": 2,
+    "why": "L'équité ne peut pas être invoquée contre la loi. Le juge ne statue en équité que si la loi le prévoit (par exemple l'amiable composition en arbitrage)."
+   },
+   {
+    "q": "L'article 1104 du Code civil pose l'exigence :",
+    "choices": [
+     "De bonne foi",
+     "De cause",
+     "De solidarité",
+     "De forme authentique"
+    ],
+    "answer": 0,
+    "why": "L'article 1104 dispose que les contrats doivent être négociés, formés et exécutés de bonne foi, et précise que cette disposition est d'ordre public."
+   },
+   {
+    "q": "Dire que le droit est performatif signifie que :",
+    "choices": [
+     "Il est efficace",
+     "Il crée la réalité qu'il énonce",
+     "Il est rapide",
+     "Il est mesurable"
+    ],
+    "answer": 1,
+    "why": "La qualification juridique fait exister des réalités qui n'ont pas d'équivalent naturel : la personne morale, le mariage, la créance."
+   },
+   {
+    "q": "L'abus de droit est sanctionné parce que :",
+    "choices": [
+     "Le droit n'existait pas",
+     "Le titulaire a dépassé les limites formelles de son droit",
+     "L'exercice du droit visait à nuire ou était sans intérêt légitime",
+     "La loi l'interdit expressément dans tous les cas"
+    ],
+    "answer": 2,
+    "why": "L'abus suppose précisément que le titulaire soit resté dans les limites formelles de son droit : ce qui est sanctionné, c'est l'intention de nuire ou l'absence d'intérêt légitime."
+   }
+  ],
+  "order": 2
+ }
+]

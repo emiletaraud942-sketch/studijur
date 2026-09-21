@@ -1,0 +1,148 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --paper: #FAF2E1;
+  --surface: #FFFFFF;
+  --surface-2: #F3E7C9;
+  --ink: #1E2A47;
+  --ink-2: #3B4A6B;
+  --muted: #82795F;
+  --line: #ECE0C2;
+  --line-strong: #E2D2A8;
+
+  --accent: #E2876A;
+  --accent-strong: #C96B4E;
+  --accent-soft: #F8DED0;
+  --accent-ink: #FFFFFF;
+
+  --gold: #B8862A;
+  --gold-soft: #F3E4C0;
+
+  --good: #2F6B4C;
+  --good-soft: #E1EFE6;
+  --bad: #B14B3A;
+  --bad-soft: #F7E1DA;
+
+  /* Bordure épaisse "carte à onglets" façon GénéraQuiz : marine, pas ton chaud. */
+  --card-border: rgba(30, 42, 71, 0.22);
+
+  --shadow-sm: 0 1px 2px rgba(30, 42, 71, 0.07);
+  --shadow-md: 0 2px 4px rgba(30, 42, 71, 0.05), 0 10px 26px -14px rgba(30, 42, 71, 0.28);
+  --shadow-lg: 0 6px 10px -2px rgba(30, 42, 71, 0.1), 0 26px 50px -24px rgba(30, 42, 71, 0.38);
+}
+
+.dark {
+  --paper: #141B29;
+  --surface: #1C2536;
+  --surface-2: #232E42;
+  --ink: #F3ECD9;
+  --ink-2: #D8CFB4;
+  --muted: #9B9682;
+  --line: #303C54;
+  --line-strong: #3D4B67;
+
+  --accent: #E2876A;
+  --accent-strong: #F0A084;
+  --accent-soft: #3A2A22;
+  --accent-ink: #1A1008;
+
+  --gold: #E0B563;
+  --gold-soft: #362B14;
+
+  --good: #57C79A;
+  --good-soft: #15352A;
+  --bad: #E8927E;
+  --bad-soft: #35201B;
+
+  --card-border: rgba(243, 236, 217, 0.16);
+
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 2px 4px rgba(0, 0, 0, 0.3), 0 8px 24px -12px rgba(0, 0, 0, 0.6);
+  --shadow-lg: 0 4px 8px rgba(0, 0, 0, 0.3), 0 24px 48px -24px rgba(0, 0, 0, 0.8);
+}
+
+@theme inline {
+  --color-paper: var(--paper);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-ink: var(--ink);
+  --color-ink-2: var(--ink-2);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-line-strong: var(--line-strong);
+  --color-accent: var(--accent);
+  --color-accent-strong: var(--accent-strong);
+  --color-accent-soft: var(--accent-soft);
+  --color-accent-ink: var(--accent-ink);
+  --color-gold: var(--gold);
+  --color-gold-soft: var(--gold-soft);
+  --color-good: var(--good);
+  --color-good-soft: var(--good-soft);
+  --color-bad: var(--bad);
+  --color-bad-soft: var(--bad-soft);
+  --color-card-border: var(--card-border);
+  --font-serif: "Spectral", Georgia, "Times New Roman", serif;
+  --font-sans: "Public Sans", ui-sans-serif, system-ui, -apple-system, sans-serif;
+}
+
+* { -webkit-tap-highlight-color: transparent; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  font-feature-settings: "kern", "liga";
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3, h4, .serif { font-family: var(--font-serif); }
+
+::selection { background: var(--accent-soft); color: var(--accent-strong); }
+
+.rule {
+  height: 3px;
+  background: linear-gradient(90deg, var(--accent) 0%, var(--accent) 38%, var(--gold) 38%, var(--gold) 52%, var(--line-strong) 52%);
+}
+
+.card {
+  background: var(--surface);
+  border: 1.5px solid var(--card-border);
+  border-radius: 20px;
+  box-shadow: var(--shadow-sm);
+}
+
+.prose-law p { margin-bottom: 0.95rem; line-height: 1.72; color: var(--ink-2); }
+.prose-law p:last-child { margin-bottom: 0; }
+.prose-law strong { color: var(--ink); font-weight: 600; }
+.prose-law em { color: var(--ink); font-style: italic; }
+
+.tabular { font-variant-numeric: tabular-nums; }
+
+@keyframes riseIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.rise { animation: riseIn 0.32s cubic-bezier(0.22, 1, 0.36, 1) both; }
+
+@keyframes popIn {
+  0% { opacity: 0; transform: scale(0.94); }
+  60% { transform: scale(1.02); }
+  100% { opacity: 1; transform: scale(1); }
+}
+.pop { animation: popIn 0.34s cubic-bezier(0.22, 1, 0.36, 1) both; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }

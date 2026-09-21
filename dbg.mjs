@@ -1,0 +1,15 @@
+import { chromium } from "playwright";
+const b = await chromium.launch({ executablePath: "/opt/pw-browsers/chromium-1194/chrome-linux/chrome", args: ["--no-sandbox"] });
+const c = await b.newContext({ ignoreHTTPSErrors: true, viewport: { width: 420, height: 900 } });
+const p = await c.newPage();
+const errs = [], failed = [];
+p.on("pageerror", e => errs.push(String(e).slice(0,200)));
+p.on("console", m => { if (m.type()==="error") errs.push("console: "+m.text().slice(0,200)); });
+p.on("requestfailed", r => failed.push(r.url().slice(0,110) + " :: " + (r.failure()?.errorText ?? "")));
+await p.goto("https://lexio-roan.vercel.app/", { waitUntil: "domcontentloaded", timeout: 60000 });
+await p.waitForTimeout(6000);
+console.log("H1:", await p.locator("h1").count());
+console.log("BODY:", (await p.locator("body").innerText()).slice(0,200).replace(/\n/g," | "));
+console.log("erreurs:", errs.slice(0,5));
+console.log("requêtes échouées:", failed.slice(0,8));
+await b.close();

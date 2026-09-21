@@ -1,0 +1,545 @@
+[
+ {
+  "id": "obligations-01",
+  "order": 1,
+  "title": "La formation du contrat : l'offre et l'acceptation",
+  "teaser": "Depuis la réforme de 2016, le Code civil définit précisément l'offre, l'acceptation, et le moment où le contrat se forme.",
+  "minutes": 6,
+  "brief": [
+   "Le contrat est défini par l'article 1101 du Code civil comme « un accord de volontés entre deux ou plusieurs personnes destiné à créer, modifier, transmettre ou éteindre des obligations ». Cet accord se forme, très concrètement, par la rencontre d'une offre et d'une acceptation (article 1113) : avant la réforme de 2016, cette mécanique reposait presque entièrement sur la jurisprudence ; elle est désormais codifiée avec précision, ce qui en fait un terrain classique de questions de cours.",
+   "L'**offre** (autrefois appelée « pollicitation ») est définie par l'article 1114 : elle doit comporter les éléments essentiels du contrat envisagé et exprimer la volonté de son auteur d'être lié en cas d'acceptation. À défaut de l'un de ces deux caractères — fermeté et précision — il ne s'agit que d'une simple invitation à entrer en pourparlers, qui n'engage à rien. C'est toute la différence entre annoncer « je vends ma voiture, à débattre » et écrire « je vends ma Twingo de 2018 pour 4 000 euros ».",
+   "L'offre peut en principe être librement rétractée tant qu'elle n'est pas parvenue à son destinataire (article 1115). Une fois reçue, la situation change : l'article 1116 autorise encore son auteur à la retirer avant l'expiration d'un délai raisonnable, mais cette rétractation fautive engage sa responsabilité extracontractuelle — sans jamais forcer la formation du contrat ni donner lieu à des dommages-intérêts correspondant au gain manqué. C'est un compromis caractéristique de la réforme entre liberté contractuelle et sécurité du destinataire. L'offre devient enfin caduque en cas de décès ou d'incapacité de son auteur (article 1117).",
+   "L'**acceptation** est la manifestation de volonté d'adhérer aux termes de l'offre ; elle peut résulter d'une déclaration ou d'un comportement non équivoque (article 1118). Le principe posé par l'article 1120 est que le silence ne vaut pas acceptation — sauf circonstances particulières, usage, relations d'affaires habituelles, ou lorsque l'offre est faite dans l'intérêt exclusif de son destinataire. Enfin, l'article 1121 retient la **théorie de la réception** : le contrat est formé, et au lieu, où l'acceptation parvient à l'offrant — et non au moment où l'acceptant l'a simplement envoyée."
+  ],
+  "keyPoints": [
+   "Le contrat se forme par la rencontre d'une offre et d'une acceptation (article 1113 du Code civil).",
+   "L'offre doit être ferme et précise ; à défaut ce n'est qu'une invitation à entrer en pourparlers.",
+   "Le silence ne vaut pas acceptation, sauf exception (relations d'affaires habituelles, usages, intérêt exclusif du destinataire).",
+   "Depuis 2016, le contrat est formé au moment et au lieu où l'acceptation parvient à l'offrant (théorie de la réception)."
+  ],
+  "definitions": [
+   {
+    "term": "Offre",
+    "text": "Manifestation de volonté, unilatérale, ferme et précise, qui exprime la volonté de son auteur d'être lié en cas d'acceptation.",
+    "source": "Article 1114 du Code civil"
+   },
+   {
+    "term": "Acceptation",
+    "text": "Manifestation de volonté d'adhérer aux termes de l'offre, pouvant résulter d'une déclaration ou d'un comportement non équivoque.",
+    "source": "Article 1118 du Code civil"
+   },
+   {
+    "term": "Théorie de la réception",
+    "text": "Règle selon laquelle le contrat est formé au moment et au lieu où l'acceptation parvient à l'offrant, et non au moment où elle a été émise.",
+    "source": "Article 1121 du Code civil"
+   }
+  ],
+  "exam": {
+   "kind": "dissertation",
+   "question": "Le silence vaut-il acceptation ?",
+   "concise": "Le principe, posé par l'article 1120 du Code civil et hérité de la jurisprudence de la Cour de cassation du 25 mai 1870, est que le silence ne vaut pas acceptation : nul ne doit être engagé contre sa volonté, et l'absence de réponse est par nature équivoque, ni un oui ni un non. Ce principe protège la liberté de ne pas contracter. Il connaît cependant des exceptions, légales ou jurisprudentielles, qui permettent d'inférer un consentement du silence lorsque les circonstances l'autorisent : relations d'affaires habituelles entre les mêmes parties, usages d'une profession ou d'une branche d'activité, ou offre faite dans l'intérêt exclusif de son destinataire (par exemple la remise gratuite d'une dette). La solution suppose donc, en pratique, une appréciation au cas par cas des circonstances entourant le silence gardé.",
+   "plan": [
+    {
+     "title": "I. Le principe : le silence ne vaut pas acceptation",
+     "children": [
+      {
+       "title": "A. Un principe protecteur de la liberté contractuelle",
+       "points": [
+        "Nul ne doit être engagé sans l'avoir voulu : fondement de l'autonomie de la volonté",
+        "Origine jurisprudentielle : Cass. civ., 25 mai 1870, codifiée à l'article 1120",
+        "Le silence est par nature équivoque, il n'exprime ni oui ni non"
+       ]
+      },
+      {
+       "title": "B. Une exigence cohérente avec la définition de l'acceptation",
+       "points": [
+        "L'acceptation suppose une manifestation de volonté, positive ou par comportement non équivoque (article 1118)",
+        "Le silence, à l'inverse, est une absence de manifestation",
+        "Sécurité juridique : éviter que le destinataire d'une offre non désirée soit engagé malgré lui"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "II. Les exceptions où le silence peut valoir acceptation",
+     "children": [
+      {
+       "title": "A. Les exceptions reconnues",
+       "points": [
+        "Les relations d'affaires habituelles entre les mêmes parties (ex. renouvellement tacite de commandes)",
+        "Les usages professionnels propres à une branche d'activité",
+        "L'offre faite dans l'intérêt exclusif de son destinataire"
+       ]
+      },
+      {
+       "title": "B. La portée pratique de ces exceptions",
+       "points": [
+        "Le juge apprécie souverainement les circonstances entourant le silence",
+        "Illustration classique : le renouvellement tacite d'un contrat d'assurance ou d'abonnement",
+        "Ces exceptions restent d'interprétation stricte, le principe demeurant le refus du silence"
+       ]
+      }
+     ]
+    }
+   ],
+   "pitfalls": [
+    "Confondre l'absence de réponse avec un refus : le silence est neutre par principe, ni acceptation ni refus.",
+    "Oublier de citer l'arrêt fondateur du 25 mai 1870 et sa codification à l'article 1120.",
+    "Ne pas illustrer les exceptions par des exemples concrets."
+   ]
+  },
+  "quiz": [
+   {
+    "q": "Une offre, au sens de l'article 1114 du Code civil, doit être :",
+    "choices": [
+     "Écrite obligatoirement",
+     "Ferme et précise",
+     "Acceptée dans les 24 heures",
+     "Faite par un professionnel"
+    ],
+    "answer": 1,
+    "why": "L'article 1114 exige la fermeté et la précision ; la forme écrite n'est jamais une condition d'existence de l'offre."
+   },
+   {
+    "q": "Le silence gardé face à une offre :",
+    "choices": [
+     "Vaut toujours acceptation",
+     "Ne vaut jamais acceptation, sans exception",
+     "Ne vaut pas acceptation, sauf circonstances particulières",
+     "Vaut systématiquement refus"
+    ],
+    "answer": 2,
+    "why": "Article 1120 : le principe souffre des exceptions (relations d'affaires habituelles, usages, intérêt exclusif du destinataire)."
+   },
+   {
+    "q": "Depuis la réforme de 2016, entre absents, le contrat est formé :",
+    "choices": [
+     "Au moment où l'acceptant envoie son acceptation",
+     "Au moment et au lieu où l'offrant reçoit l'acceptation",
+     "Au moment de la signature devant notaire",
+     "Au moment du début d'exécution du contrat"
+    ],
+    "answer": 1,
+    "why": "Article 1121 : la France a retenu la théorie de la réception, non celle de l'émission."
+   },
+   {
+    "q": "Le décès de l'offrant avant l'acceptation de son offre :",
+    "choices": [
+     "Est sans effet sur l'offre",
+     "Rend l'offre caduque",
+     "Transmet automatiquement l'offre à ses héritiers",
+     "Suspend seulement le délai d'acceptation"
+    ],
+    "answer": 1,
+    "why": "Article 1117 : l'offre est caduque en cas de décès ou d'incapacité de son auteur."
+   }
+  ]
+ },
+ {
+  "id": "obligations-02",
+  "order": 2,
+  "title": "Les conditions de validité du contrat",
+  "teaser": "Consentement, capacité, contenu licite et certain : les trois piliers de l'article 1128 du Code civil depuis 2016.",
+  "minutes": 6,
+  "brief": [
+   "Avant la réforme de 2016, l'ancien article 1108 du Code civil exigeait quatre conditions de validité du contrat : le consentement, la capacité, un objet certain et une cause licite. L'ordonnance du 10 février 2016 a simplifié cette liste : l'article 1128 ne retient plus que trois conditions — le consentement des parties, leur capacité de contracter, et un contenu licite et certain.",
+   "Le **consentement** doit exister — une personne totalement inconsciente de son engagement (trouble mental grave) ne consent pas valablement — et être exempt de vices : erreur, dol ou violence (articles 1130 et suivants, étudiés dans la leçon suivante). C'est la condition la plus intuitive : sans rencontre réelle des volontés, il n'y a pas de contrat digne de ce nom.",
+   "La **capacité de contracter** est définie par l'article 1145 comme l'aptitude d'une personne à conclure elle-même un contrat. Le principe est celui de la capacité : toute personne peut contracter, sauf incapacité prévue par la loi. Ces incapacités sont dites « de protection » : elles visent les mineurs non émancipés et les majeurs protégés (sous sauvegarde de justice, curatelle ou tutelle, article 425). Il faut bien distinguer l'incapacité de jouissance, qui prive purement et simplement du droit lui-même (rare, par exemple certaines interdictions professionnelles), de l'incapacité d'exercice, la plus fréquente, qui laisse le droit intact mais impose une représentation ou une assistance pour l'exercer.",
+   "Le **contenu** du contrat, notion qui a absorbé les anciennes exigences relatives à l'objet et à la cause, doit être licite et certain. L'article 1162 pose que le contrat ne peut déroger à l'ordre public, ni par ses stipulations ni par son but, même si ce but n'est connu que d'une seule partie. L'article 1163 exige que l'obligation ait pour objet une prestation présente ou future, mais celle-ci doit être déterminée ou déterminable, et possible. Un contrat portant sur une chose hors du commerce, ou poursuivant un but illicite, encourt la nullité pour contenu illicite — même si les parties étaient parfaitement consentantes et capables."
+  ],
+  "keyPoints": [
+   "Trois conditions de validité depuis 2016 : le consentement, la capacité, et le contenu licite et certain (article 1128).",
+   "La notion de « cause » a disparu du vocabulaire du Code civil, mais sa fonction de contrôle de la licéité est reprise par le contenu du contrat.",
+   "L'incapacité protège certaines personnes (mineurs, majeurs protégés) ; il s'agit presque toujours d'une incapacité d'exercice, pas de jouissance.",
+   "Le contenu du contrat doit être licite (conforme à l'ordre public) et certain (déterminé ou déterminable, possible)."
+  ],
+  "definitions": [
+   {
+    "term": "Capacité de contracter",
+    "text": "Aptitude d'une personne à conclure elle-même un contrat et à en exercer les droits et obligations qui en résultent.",
+    "source": "Article 1145 du Code civil"
+   },
+   {
+    "term": "Contenu du contrat",
+    "text": "Ensemble des prestations et obligations sur lesquelles porte l'engagement des parties ; il doit être licite et certain.",
+    "source": "Articles 1162 et 1163 du Code civil"
+   },
+   {
+    "term": "Majeur protégé",
+    "text": "Personne majeure dont les facultés sont altérées et qui bénéficie d'un régime de protection : sauvegarde de justice, curatelle ou tutelle.",
+    "source": "Article 425 du Code civil"
+   }
+  ],
+  "exam": {
+   "kind": "question de cours",
+   "question": "Quelles sont les conditions de validité du contrat depuis la réforme de 2016 ?",
+   "concise": "L'article 1128 du Code civil retient désormais trois conditions cumulatives : le consentement des parties, leur capacité de contracter, et un contenu licite et certain. Le consentement doit exister et être exempt de vices (erreur, dol, violence). La capacité est présumée : le principe est que toute personne peut contracter, sauf incapacité prévue par la loi pour protéger les mineurs et les majeurs vulnérables. Le contenu, enfin, a remplacé les anciennes notions d'objet et de cause : il doit être conforme à l'ordre public et suffisamment déterminé ou déterminable pour que le juge puisse, le cas échéant, en vérifier l'exécution.",
+   "plan": [
+    {
+     "title": "I. Le consentement et la capacité, conditions tenant aux parties",
+     "children": [
+      {
+       "title": "A. Le consentement, condition de l'accord de volontés",
+       "points": [
+        "Le consentement doit exister : une personne inconsciente de son engagement ne consent pas",
+        "Il doit être exempt de vices : erreur, dol, violence (articles 1130 et suivants)",
+        "La sanction du défaut ou du vice de consentement est la nullité relative"
+       ]
+      },
+      {
+       "title": "B. La capacité, principe et incapacités de protection",
+       "points": [
+        "Principe : toute personne physique peut contracter (article 1145)",
+        "Incapacités de protection : mineurs non émancipés, majeurs protégés (article 425)",
+        "Distinction incapacité de jouissance / incapacité d'exercice"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "II. Le contenu, condition tenant à l'objet du contrat",
+     "children": [
+      {
+       "title": "A. Un contenu licite, conforme à l'ordre public",
+       "points": [
+        "Le contrat ne peut déroger à l'ordre public par ses stipulations ou son but (article 1162)",
+        "Absorption de l'ancienne notion de « cause illicite »",
+        "Exemple : nullité d'un contrat portant sur une chose hors du commerce"
+       ]
+      },
+      {
+       "title": "B. Un contenu certain, déterminé ou déterminable",
+       "points": [
+        "La prestation doit être présente ou future, mais possible (article 1163)",
+        "Elle doit être déterminée ou déterminable selon des éléments objectifs",
+        "Absorption de l'ancienne notion d'« objet certain »"
+       ]
+      }
+     ]
+    }
+   ],
+   "pitfalls": [
+    "Continuer à parler de « l'objet » et de « la cause » comme des conditions autonomes : ces mots ont disparu du Code civil depuis 2016.",
+    "Oublier de citer l'article 1128, référence centrale de toute copie sur ce sujet.",
+    "Confondre incapacité de jouissance et incapacité d'exercice."
+   ]
+  },
+  "quiz": [
+   {
+    "q": "Depuis la réforme de 2016, l'article 1128 du Code civil pose comme conditions de validité du contrat :",
+    "choices": [
+     "Le consentement, l'objet et la cause",
+     "Le consentement, la capacité et un contenu licite et certain",
+     "La capacité, l'objet et la forme",
+     "Le consentement, la bonne foi et la cause"
+    ],
+    "answer": 1,
+    "why": "L'ancienne liste à quatre conditions (article 1108) a été remplacée par ces trois conditions."
+   },
+   {
+    "q": "La notion de « cause », qui figurait dans l'ancien article 1108, a été :",
+    "choices": [
+     "Renforcée par la réforme de 2016",
+     "Supprimée du Code civil, sa fonction de contrôle étant reprise par le contenu",
+     "Remplacée par la notion de bonne foi",
+     "Laissée inchangée"
+    ],
+    "answer": 1,
+    "why": "La réforme a fait disparaître le mot « cause », mais son rôle de contrôle de la licéité perdure via le contenu du contrat."
+   },
+   {
+    "q": "Un mineur non émancipé qui conclut seul un acte grave sans représentation encourt :",
+    "choices": [
+     "Aucune sanction, il est pleinement capable",
+     "La nullité relative pour incapacité",
+     "La nullité absolue",
+     "La résolution pour inexécution"
+    ],
+    "answer": 1,
+    "why": "L'incapacité du mineur protège un intérêt privé : la sanction est donc la nullité relative, qu'il peut seul invoquer."
+   },
+   {
+    "q": "Un contrat portant sur une chose hors du commerce est nul pour :",
+    "choices": [
+     "Défaut de consentement",
+     "Incapacité d'une partie",
+     "Contenu illicite",
+     "Vice de forme"
+    ],
+    "answer": 2,
+    "why": "L'objet de la prestation n'étant pas dans le commerce, le contenu du contrat est illicite au sens des articles 1162-1163."
+   }
+  ]
+ },
+ {
+  "id": "obligations-03",
+  "order": 3,
+  "title": "Les vices du consentement",
+  "teaser": "Erreur, dol, violence : trois façons dont un consentement, bien qu'exprimé, peut être vicié.",
+  "minutes": 7,
+  "brief": [
+   "Un consentement peut exister, avoir été exprimé, et pourtant ne pas être valable : c'est l'hypothèse des vices du consentement, régis par les articles 1130 à 1144 du Code civil. Le Code en retient trois : l'erreur, le dol et la violence. Chacun suppose, pour être sanctionné, d'être déterminant du consentement — c'est-à-dire que sans lui, la victime n'aurait pas contracté, ou aurait contracté à des conditions substantiellement différentes (article 1130).",
+   "L'**erreur** est une représentation inexacte de la réalité au moment de la conclusion du contrat. Seule l'erreur sur les qualités essentielles de la prestation ou du cocontractant est une cause de nullité (article 1132) ; l'erreur sur la valeur ou sur un simple motif, extérieur au champ contractuel, n'est en principe pas sanctionnée (article 1136 et 1135), sauf si les parties en ont fait expressément un élément déterminant.",
+   "Le **dol** est défini par l'article 1137 comme le fait, pour un contractant, d'obtenir le consentement de l'autre par des manœuvres ou des mensonges. Depuis 2016, la réticence dolosive — le silence gardé sur une information dont on sait le caractère déterminant pour l'autre partie — est expressément assimilée au dol. Le dol se distingue de la simple erreur spontanée en ceci qu'il est provoqué par le cocontractant lui-même : c'est pourquoi il est sanctionné plus largement, y compris pour une erreur sur la valeur ou sur un simple motif, dès lors qu'elle a été provoquée par des manœuvres.",
+   "La **violence**, enfin, est le fait d'exercer une contrainte, physique ou morale, de nature à inspirer la crainte d'exposer sa personne, sa fortune ou celle de ses proches à un mal considérable (article 1140). Depuis 2016, l'article 1143 reconnaît aussi la **violence économique** : le fait d'abuser de l'état de dépendance dans lequel se trouve son cocontractant pour obtenir un engagement qu'il n'aurait pas souscrit en l'absence d'une telle contrainte, et d'en tirer un avantage manifestement excessif. Dans les trois cas, la sanction est la même : la nullité relative du contrat (article 1131), et éventuellement des dommages-intérêts."
+  ],
+  "keyPoints": [
+   "Trois vices du consentement : l'erreur, le dol, la violence — chacun doit être déterminant du consentement (article 1130).",
+   "L'erreur n'est sanctionnée que si elle porte sur les qualités essentielles de la prestation ou du cocontractant.",
+   "Le dol inclut, depuis 2016, la réticence dolosive : le silence gardé volontairement sur une information déterminante.",
+   "La violence économique (abus de dépendance) est désormais un vice du consentement à part entière (article 1143)."
+  ],
+  "definitions": [
+   {
+    "term": "Erreur",
+    "text": "Représentation inexacte de la réalité, cause de nullité lorsqu'elle porte sur les qualités essentielles de la prestation due ou du cocontractant.",
+    "source": "Articles 1132 et 1133 du Code civil"
+   },
+   {
+    "term": "Dol",
+    "text": "Manœuvres, mensonges, ou réticence intentionnelle d'un contractant qui obtiennent le consentement de l'autre partie.",
+    "source": "Article 1137 du Code civil"
+   },
+   {
+    "term": "Violence",
+    "text": "Contrainte, y compris économique, exercée sur une partie pour lui inspirer la crainte d'exposer sa personne, sa fortune ou celle de ses proches à un mal considérable.",
+    "source": "Articles 1140 et 1143 du Code civil"
+   }
+  ],
+  "exam": {
+   "kind": "cas pratique",
+   "question": "Camille achète à Lucas, particulier, un tableau présenté comme une œuvre originale du peintre local Armand Rieux, pour 3 000 euros. Six mois plus tard, un expert lui révèle qu'il s'agit d'une simple reproduction sans valeur, et que Lucas, collectionneur amateur, le savait au moment de la vente mais n'a rien dit. Par ailleurs, Camille avait signé la vente dans l'urgence, un jour où Lucas lui avait laissé entendre — à tort — que deux autres acheteurs étaient déjà sur les rangs. Quels moyens juridiques Camille peut-elle invoquer pour remettre en cause la vente ?",
+   "concise": "Deux vices du consentement peuvent être invoqués cumulativement. D'abord, **l'erreur sur les qualités essentielles** de la chose (article 1133) : Camille croyait acquérir une œuvre originale, qualité qui a été déterminante de son consentement au sens de l'article 1130 — sans cette croyance, elle n'aurait jamais payé 3 000 euros pour une reproduction. Mais cette erreur a en réalité été **provoquée par le silence intentionnel de Lucas**, qui connaissait la vérité et savait le caractère déterminant de l'authenticité pour Camille : il s'agit d'une **réticence dolosive**, assimilée au dol par l'article 1137 alinéa 2. Le dol permet d'obtenir la nullité même pour une erreur qui, sans lui, n'aurait pas toujours été sanctionnée seule. Ensuite, l'affirmation mensongère de deux acheteurs concurrents relève de la **manœuvre dolosive classique**, destinée à précipiter la décision de Camille — un dol distinct, qui vient s'ajouter au premier. En revanche, la simple pression temporelle ressentie par Camille ne suffit pas à caractériser une violence au sens de l'article 1140, faute de menace pesant sur sa personne ou sa fortune : c'est un mensonge sur les circonstances de la vente, pas une contrainte.",
+   "plan": [
+    {
+     "title": "I. La réticence dolosive sur l'authenticité de l'œuvre",
+     "children": [
+      {
+       "title": "A. La qualification de l'erreur initiale",
+       "points": [
+        "Erreur sur une qualité essentielle de la chose : l'authenticité de l'œuvre (article 1133)",
+        "Caractère déterminant du consentement : sans cette croyance, pas d'achat à ce prix (article 1130)",
+        "Seule, cette erreur suppose d'établir son caractère excusable"
+       ]
+      },
+      {
+       "title": "B. L'assimilation au dol par réticence",
+       "points": [
+        "Silence intentionnel de Lucas sur une information dont il connaissait le caractère déterminant",
+        "Réticence dolosive expressément visée par l'article 1137 alinéa 2 depuis 2016",
+        "Intérêt pratique : le dol dispense d'établir le caractère excusable de l'erreur qui en résulte"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "II. Les manœuvres relatives à la fausse concurrence d'acheteurs",
+     "children": [
+      {
+       "title": "A. Une manœuvre dolosive autonome",
+       "points": [
+        "Affirmation mensongère destinée à précipiter le consentement de Camille",
+        "Élément intentionnel caractérisé : Lucas savait l'information fausse",
+        "Ce second dol peut se cumuler avec la réticence sur l'authenticité"
+       ]
+      },
+      {
+       "title": "B. L'écartement de la qualification de violence",
+       "points": [
+        "Absence de menace pesant sur la personne, la fortune de Camille ou de ses proches (article 1140)",
+        "La pression temporelle ressentie relève du mensonge, non de la contrainte",
+        "Conclusion : deux dols cumulés, pas de violence caractérisée"
+       ]
+      }
+     ]
+    }
+   ],
+   "pitfalls": [
+    "Confondre l'urgence ressentie par la victime avec une violence caractérisée : il faut une menace précise, pas un simple sentiment de pression.",
+    "Oublier de vérifier le caractère déterminant du consentement pour chaque vice invoqué (article 1130), condition commune aux trois vices."
+   ]
+  },
+  "quiz": [
+   {
+    "q": "Pour être une cause de nullité, un vice du consentement doit être :",
+    "choices": [
+     "Prouvé par un écrit",
+     "Déterminant du consentement de la victime",
+     "Commis par un professionnel",
+     "D'un montant supérieur à 1 500 euros"
+    ],
+    "answer": 1,
+    "why": "Article 1130 : sans le vice, la victime n'aurait pas contracté, ou à des conditions substantiellement différentes."
+   },
+   {
+    "q": "La réticence dolosive consiste à :",
+    "choices": [
+     "Menacer son cocontractant",
+     "Se tromper spontanément sur une qualité de la chose",
+     "Garder intentionnellement le silence sur une information dont on connaît le caractère déterminant pour l'autre",
+     "Refuser de signer un contrat"
+    ],
+    "answer": 2,
+    "why": "Article 1137 alinéa 2 : le silence intentionnel sur une information déterminante est assimilé au dol depuis 2016."
+   },
+   {
+    "q": "La violence économique, reconnue par l'article 1143, suppose :",
+    "choices": [
+     "Une menace physique directe",
+     "L'abus d'un état de dépendance pour obtenir un engagement et un avantage manifestement excessif",
+     "Une simple négociation difficile",
+     "Un contrat conclu entre professionnels uniquement"
+    ],
+    "answer": 1,
+    "why": "Il faut à la fois l'abus de dépendance et un avantage manifestement excessif tiré de cet abus."
+   },
+   {
+    "q": "La sanction commune aux trois vices du consentement est :",
+    "choices": [
+     "La résolution du contrat",
+     "La nullité absolue",
+     "La nullité relative",
+     "La caducité"
+    ],
+    "answer": 2,
+    "why": "Les vices du consentement protègent un intérêt privé (celui de la victime) : la sanction est la nullité relative (article 1131)."
+   }
+  ]
+ },
+ {
+  "id": "obligations-04",
+  "order": 4,
+  "title": "L'inexécution du contrat et ses sanctions",
+  "teaser": "Exception d'inexécution, exécution forcée, résolution, réduction du prix : le menu des sanctions ouvert au créancier depuis 2016.",
+  "minutes": 6,
+  "brief": [
+   "Lorsqu'une partie n'exécute pas, ou exécute mal, ses obligations contractuelles, l'article 1217 du Code civil offre à son cocontractant tout un éventail de sanctions, qu'il peut en principe choisir librement et même cumuler lorsqu'elles sont compatibles : refuser d'exécuter sa propre obligation, poursuivre l'exécution forcée en nature, solliciter une réduction du prix, provoquer la résolution du contrat, ou demander réparation des conséquences de l'inexécution.",
+   "L'**exception d'inexécution** (article 1219) permet à une partie de suspendre l'exécution de sa propre obligation tant que l'autre n'exécute pas la sienne, à condition que l'inexécution soit suffisamment grave. L'article 1220 ajoute une version préventive : l'exception pour risque d'inexécution, lorsqu'il est manifeste que le cocontractant n'exécutera pas à l'échéance et que les conséquences de cette inexécution sont suffisamment graves.",
+   "L'**exécution forcée en nature** est de principe depuis la réforme (article 1221) : le créancier peut, après mise en demeure, en poursuivre l'exécution en nature, sauf si celle-ci est impossible ou s'il existe une disproportion manifeste entre son coût pour le débiteur de bonne foi et son intérêt pour le créancier. À défaut, ou en complément, l'article 1223 permet désormais au créancier d'accepter une exécution imparfaite et de solliciter une **réduction proportionnelle du prix** — une innovation notable de 2016, auparavant réservée à des régimes spéciaux comme la vente.",
+   "La **résolution** du contrat peut être judiciaire (demandée au juge), résulter d'une clause résolutoire prévue par les parties, ou, innovation majeure de 2016, être notifiée unilatéralement par le créancier aux risques et périls de celui-ci en cas d'inexécution suffisamment grave, après mise en demeure restée infructueuse (article 1226). Le débiteur mécontent pourra toujours contester cette résolution unilatérale devant le juge, qui vérifiera a posteriori la gravité de l'inexécution. Enfin, ces sanctions peuvent se cumuler avec la réparation du préjudice complémentaire (dommages-intérêts), lorsque l'inexécution a causé un dommage non compensé par la sanction principale."
+  ],
+  "keyPoints": [
+   "L'article 1217 dresse la liste des sanctions de l'inexécution, en principe cumulables lorsqu'elles sont compatibles.",
+   "L'exception d'inexécution permet de suspendre sa propre prestation face à une inexécution suffisamment grave de l'autre partie.",
+   "L'exécution forcée en nature est de principe, sauf impossibilité ou disproportion manifeste de son coût (article 1221).",
+   "La résolution peut désormais être notifiée unilatéralement par le créancier, sous le contrôle a posteriori du juge (article 1226)."
+  ],
+  "definitions": [
+   {
+    "term": "Exception d'inexécution",
+    "text": "Mécanisme permettant à une partie de suspendre l'exécution de sa propre obligation tant que son cocontractant n'exécute pas la sienne.",
+    "source": "Article 1219 du Code civil"
+   },
+   {
+    "term": "Résolution",
+    "text": "Anéantissement rétroactif du contrat en cas d'inexécution suffisamment grave, qui peut être judiciaire, contractuelle ou notifiée unilatéralement par le créancier.",
+    "source": "Articles 1224 à 1230 du Code civil"
+   },
+   {
+    "term": "Réduction du prix",
+    "text": "Sanction permettant au créancier d'une obligation imparfaitement exécutée d'en accepter l'exécution et de solliciter une diminution proportionnelle du prix.",
+    "source": "Article 1223 du Code civil"
+   }
+  ],
+  "exam": {
+   "kind": "dissertation",
+   "question": "La résolution unilatérale du contrat, une remise en cause de l'office du juge ?",
+   "concise": "Avant 2016, la résolution pour inexécution supposait, sauf clause résolutoire expresse, une décision du juge (article 1184 ancien) : le créancier ne pouvait se faire justice à lui-même. La réforme a consacré, à l'article 1226, la possibilité pour le créancier de notifier lui-même la résolution du contrat, à ses risques et périls, en cas d'inexécution suffisamment grave et après mise en demeure infructueuse. Ce mécanisme ne supprime pourtant pas l'office du juge : il le déplace. Le contrôle judiciaire, auparavant préalable et systématique, devient éventuel et a posteriori — le débiteur qui conteste la résolution peut toujours saisir le juge, qui vérifiera si l'inexécution était réellement suffisamment grave, et remettra en cause la résolution si tel n'était pas le cas, exposant le créancier qui a agi trop hâtivement à sa propre responsabilité.",
+   "plan": [
+    {
+     "title": "I. Un recul du contrôle préalable du juge",
+     "children": [
+      {
+       "title": "A. Le principe ancien du contrôle judiciaire systématique",
+       "points": [
+        "Ancien article 1184 : la résolution judiciaire était le mode de droit commun",
+        "Le créancier ne pouvait se faire justice à lui-même sans engager sa responsabilité",
+        "Lourdeur et lenteur dénoncées par la pratique contractuelle"
+       ]
+      },
+      {
+       "title": "B. L'innovation de la résolution unilatérale",
+       "points": [
+        "Article 1226 : notification par le créancier après mise en demeure infructueuse",
+        "Condition de fond : une inexécution suffisamment grave",
+        "Gain de rapidité et d'efficacité pour le créancier de bonne foi"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "II. Un contrôle judiciaire déplacé, non supprimé",
+     "children": [
+      {
+       "title": "A. Le maintien d'un contrôle a posteriori",
+       "points": [
+        "Le débiteur qui conteste peut toujours saisir le juge",
+        "Le juge vérifie rétrospectivement la gravité de l'inexécution",
+        "Sanction possible : requalification en rupture abusive du contrat"
+       ]
+      },
+      {
+       "title": "B. Le créancier agit à ses risques et périls",
+       "points": [
+        "Une résolution notifiée à tort engage la responsabilité de son auteur",
+        "Incitation à documenter soigneusement la gravité de l'inexécution avant d'agir",
+        "Equilibre recherché par la réforme entre rapidité et sécurité juridique"
+       ]
+      }
+     ]
+    }
+   ],
+   "pitfalls": [
+    "Affirmer que le juge n'a plus aucun rôle : son contrôle est déplacé dans le temps, pas supprimé.",
+    "Oublier la condition de mise en demeure préalable, indispensable avant toute résolution unilatérale.",
+    "Ne pas mentionner le risque encouru par le créancier qui notifie une résolution injustifiée."
+   ]
+  },
+  "quiz": [
+   {
+    "q": "L'exception d'inexécution permet à une partie :",
+    "choices": [
+     "D'obtenir des dommages-intérêts automatiquement",
+     "De suspendre sa propre prestation tant que l'autre n'exécute pas la sienne",
+     "De résoudre immédiatement le contrat",
+     "De saisir le juge en urgence"
+    ],
+    "answer": 1,
+    "why": "Article 1219 : c'est un mécanisme de suspension, pas de rupture ni de réparation."
+   },
+   {
+    "q": "Depuis 2016, l'exécution forcée en nature peut être refusée par le juge lorsque :",
+    "choices": [
+     "Le débiteur ne le souhaite pas",
+     "Elle est impossible ou son coût est manifestement disproportionné pour un débiteur de bonne foi",
+     "Le créancier préfère des dommages-intérêts",
+     "Le contrat a plus d'un an"
+    ],
+    "answer": 1,
+    "why": "Article 1221 : impossibilité ou disproportion manifeste sont les deux seules limites posées par le texte."
+   },
+   {
+    "q": "La résolution unilatérale du contrat, prévue à l'article 1226, suppose au préalable :",
+    "choices": [
+     "Une décision du juge",
+     "Une mise en demeure restée infructueuse",
+     "L'accord du débiteur",
+     "Un délai minimum d'un an d'exécution du contrat"
+    ],
+    "answer": 1,
+    "why": "Le créancier doit avoir mis en demeure son débiteur avant de pouvoir notifier la résolution."
+   },
+   {
+    "q": "La réduction du prix, prévue à l'article 1223, suppose que le créancier :",
+    "choices": [
+     "Refuse toute exécution",
+     "Accepte l'exécution imparfaite et demande une diminution proportionnelle du prix",
+     "Saisisse obligatoirement le juge au préalable",
+     "Renonce à toute réparation complémentaire"
+    ],
+    "answer": 1,
+    "why": "C'est une sanction alternative à la résolution : le créancier garde la prestation imparfaite mais en paie moins cher."
+   }
+  ]
+ }
+]

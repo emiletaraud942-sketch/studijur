@@ -1,0 +1,234 @@
+[
+  {
+    "id": "constit-05",
+    "order": 5,
+    "title": "Les théories sociologiques de l'État",
+    "teaser": "Quand Duguit et Weber répondent : l'État n'est pas un contrat, c'est un fait de domination.",
+    "minutes": 5,
+    "brief": [
+      "Aux théories contractualistes, le XIXe et le XXe siècle opposent une critique radicale : le contrat social n'a jamais existé. Personne n'a jamais signé quoi que ce soit. La fiction est commode pour **justifier** l'État, elle est inutile pour l'**expliquer**. Les théories sociologiques prennent donc l'État tel qu'il est : un fait.",
+      "**Léon Duguit** (1859-1928) fonde l'école du service public. Pour lui, l'État n'est pas une personne souveraine mais une simple réalité observable : la distinction entre **gouvernants et gouvernés**, c'est-à-dire entre ceux qui peuvent effectivement imposer leur volonté et ceux qui la subissent. La souveraineté est un concept métaphysique dont il faut se débarrasser. Ce qui légitime le pouvoir, ce n'est pas un contrat, c'est le **service rendu** : les gouvernants sont tenus d'assurer des services publics, et leur légitimité se mesure à cette obligation. On parle d'État-fonction contre l'État-puissance.",
+      "**Max Weber** (1864-1920) propose la définition la plus citée : l'État est la communauté humaine qui revendique avec succès le **monopole de la violence physique légitime** sur un territoire donné. Trois mots comptent. *Monopole* : nul autre ne peut user légitimement de la force. *Légitime* : la contrainte est acceptée comme fondée. *Avec succès* : c'est l'effectivité qui fait l'État, non le droit.",
+      "Weber distingue trois **types idéaux de domination légitime** : la domination **traditionnelle**, qui repose sur le caractère sacré des coutumes — la monarchie héréditaire ; la domination **charismatique**, qui repose sur les qualités exceptionnelles prêtées à un chef — le prophète, le chef de guerre, le leader révolutionnaire ; la domination **légale-rationnelle**, qui repose sur la croyance en la légalité des règlements et le droit de commander de ceux qui sont désignés conformément à eux. C'est cette dernière qui caractérise l'État moderne et la bureaucratie."
+    ],
+    "keyPoints": [
+      "Critique commune : le contrat social justifie, il n'explique pas.",
+      "Duguit : l'État, c'est la distinction gouvernants / gouvernés ; la légitimité vient du service public.",
+      "Weber : monopole de la violence physique légitime sur un territoire donné.",
+      "Trois dominations légitimes : traditionnelle, charismatique, légale-rationnelle."
+    ],
+    "definitions": [
+      { "term": "Théorie sociologique de l'État", "text": "Approche qui explique l'État comme un fait social observable plutôt que comme le produit d'un accord fondateur fictif." },
+      { "term": "Distinction gouvernants / gouvernés", "text": "Chez Duguit, seul fait constatable dans toute société politique : certains imposent effectivement leur volonté, d'autres la subissent." },
+      { "term": "État-fonction", "text": "Conception selon laquelle l'État se légitime par les services qu'il rend et non par la souveraineté qu'il détiendrait. Opposée à l'État-puissance." },
+      { "term": "Monopole de la violence physique légitime", "text": "Définition wébérienne de l'État : communauté humaine qui revendique avec succès l'exclusivité de l'usage légitime de la force sur un territoire déterminé." },
+      { "term": "Domination légale-rationnelle", "text": "Type de domination fondé sur la croyance en la légalité des règlements et en la légitimité de ceux qui sont désignés conformément à eux. Caractéristique de l'État moderne et de la bureaucratie." }
+    ],
+    "exam": {
+      "kind": "dissertation",
+      "question": "Les théories du contrat social expliquent-elles l'État ?",
+      "concise": "Les théories contractualistes ne prétendent pas décrire un événement historique : elles construisent une fiction destinée à **justifier** l'obéissance politique. À ce titre, elles sont d'une fécondité considérable : elles fondent la légitimité du pouvoir sur le consentement, permettent d'en mesurer les limites (Locke), et inspirent directement les révolutions anglaise, américaine et française ainsi que l'article 3 de la Déclaration de 1789. Mais comme explication, elles échouent : aucun contrat n'a été signé, aucune société n'est née d'un accord, et l'anthropologie montre que les groupes humains connaissent des formes de pouvoir bien avant tout État. Les théories sociologiques — Duguit, Weber — comblent ce manque en partant du fait : l'État est une structure de domination effective, caractérisée par le monopole de la contrainte légitime. Les deux approches ne s'excluent donc pas : les unes disent pourquoi le pouvoir **devrait** être obéi, les autres pourquoi il **l'est**.",
+      "plan": [
+        {
+          "title": "I. Une fiction féconde pour justifier l'État",
+          "children": [
+            { "title": "A. Le consentement comme fondement de l'obéissance", "points": ["Le passage de l'état de nature à l'état civil comme opération de légitimation", "Hobbes : la sécurité ; Locke : la protection des droits naturels ; Rousseau : la liberté civile", "Article 3 de la DDHC : le principe de toute souveraineté réside essentiellement dans la Nation"] },
+            { "title": "B. Une matrice des révolutions modernes", "points": ["Locke et la Glorieuse Révolution de 1688, la Déclaration d'indépendance de 1776", "Rousseau et la Révolution française, la souveraineté populaire", "La théorie du contrat comme instrument critique du pouvoir établi"] }
+          ]
+        },
+        {
+          "title": "II. Une fiction impuissante à expliquer l'État",
+          "children": [
+            { "title": "A. Une construction démentie par les faits", "points": ["Aucun contrat fondateur historiquement attesté", "L'anthropologie et l'histoire : des pouvoirs bien antérieurs à l'État", "Le modèle agonistique : l'État naît de la guerre, non de l'accord"] },
+            { "title": "B. L'apport des théories sociologiques", "points": ["Duguit : la distinction gouvernants/gouvernés et la légitimation par le service public", "Weber : le monopole de la violence physique légitime et les trois dominations", "Conclusion : justifier et expliquer sont deux opérations distinctes et complémentaires"] }
+          ]
+        }
+      ],
+      "pitfalls": [
+        "Ne pas reprocher aux contractualistes d'être « faux » : ils ne prétendent pas à la vérité historique.",
+        "Duguit est un juriste, Weber un sociologue : ne pas les confondre dans une même école."
+      ]
+    },
+    "quiz": [
+      { "q": "Pour Weber, l'État se définit par :", "choices": ["La souveraineté", "Le monopole de la violence physique légitime", "Le contrat social", "La Constitution"], "answer": 1, "why": "Définition tirée du Savant et le politique : la communauté humaine qui revendique avec succès ce monopole sur un territoire donné." },
+      { "q": "Duguit rejette la notion de souveraineté au profit de :", "choices": ["La volonté générale", "La distinction gouvernants / gouvernés", "La domination charismatique", "La séparation des pouvoirs"], "answer": 1, "why": "Seul fait observable selon lui ; la légitimité du pouvoir vient ensuite du service rendu, d'où l'école du service public." },
+      { "q": "La domination légale-rationnelle repose sur :", "choices": ["Le charisme d'un chef", "Le caractère sacré des coutumes", "La croyance en la légalité des règlements", "La force brute"], "answer": 2, "why": "C'est la forme propre à l'État moderne et à la bureaucratie : on obéit à la règle, pas à la personne." },
+      { "q": "Dans la définition de Weber, « avec succès » souligne :", "choices": ["La popularité de l'État", "L'effectivité du monopole", "La légalité du pouvoir", "La durée de l'État"], "answer": 1, "why": "Ce qui fait l'État chez Weber est l'effectivité de la revendication, non sa conformité au droit." },
+      { "q": "L'État-fonction s'oppose à :", "choices": ["L'État-nation", "L'État-puissance", "L'État fédéral", "L'État de droit"], "answer": 1, "why": "Duguit oppose un État qui se légitime par les services qu'il rend à un État qui se légitimerait par la souveraineté qu'il détiendrait." }
+    ]
+  },
+  {
+    "id": "constit-06",
+    "order": 6,
+    "title": "Les trois éléments constitutifs de l'État",
+    "teaser": "Territoire, population, puissance publique : la définition juridique de Carré de Malberg.",
+    "minutes": 5,
+    "brief": [
+      "Après les justifications philosophiques et les explications sociologiques vient la **définition juridique**. Raymond **Carré de Malberg** (1861-1935) la formule dans sa *Contribution à la théorie générale de l'État* : l'État est une collectivité humaine fixée sur un territoire déterminé et soumise à une puissance publique organisée. Trois éléments, tous nécessaires, aucun suffisant.",
+      "L'**élément matériel** est le **territoire**. Il comprend le sol, le sous-sol, l'espace aérien et, pour les États côtiers, les eaux territoriales — traditionnellement douze milles marins. Le territoire joue trois rôles : il délimite la compétence de l'État, il en est le support physique, et il est un élément d'identité nationale. Sans territoire, pas d'État : c'est ce qui distingue l'État d'une organisation internationale ou d'un peuple sans terre. La frontière n'est pas une simple ligne : c'est la limite de la souveraineté.",
+      "L'**élément personnel** est la **population**. Il faut distinguer trois notions. La population est l'ensemble des personnes vivant sur le territoire, quelle que soit leur nationalité. Le peuple est l'ensemble des nationaux, titulaires de la souveraineté. La **nation** est une notion plus subjective : deux conceptions s'opposent, la conception allemande dite objective (langue, race, culture communes — Fichte) et la conception française dite subjective ou élective (**Renan** : la nation est « un plébiscite de tous les jours », un vouloir-vivre collectif).",
+      "L'**élément formel** est la **puissance publique organisée**, c'est-à-dire la souveraineté. C'est l'élément décisif : une collectivité sur un territoire sans pouvoir souverain n'est pas un État. La souveraineté a deux faces. Dans l'ordre **interne**, elle est la compétence suprême : l'État a le monopole de la contrainte et la « compétence de sa compétence ». Dans l'ordre **externe**, elle est l'indépendance : l'égalité souveraine des États, affirmée par l'article 2 de la Charte des Nations unies."
+    ],
+    "keyPoints": [
+      "Carré de Malberg : territoire + population + puissance publique organisée.",
+      "Territoire : sol, sous-sol, espace aérien, eaux territoriales ; il délimite la compétence.",
+      "Distinguer population (habitants), peuple (nationaux), nation (Renan contre Fichte).",
+      "Souveraineté interne = compétence suprême ; souveraineté externe = indépendance."
+    ],
+    "definitions": [
+      { "term": "Définition juridique de l'État", "text": "Collectivité humaine fixée sur un territoire déterminé et soumise à une puissance publique organisée et souveraine.", "source": "Raymond Carré de Malberg" },
+      { "term": "Territoire", "text": "Assise spatiale de l'État comprenant le sol, le sous-sol, l'espace aérien et les eaux territoriales, dans les limites duquel s'exerce sa souveraineté." },
+      { "term": "Nation (conception élective)", "text": "Communauté fondée sur la volonté de vivre ensemble et le partage d'un héritage commun, indépendamment de la langue ou de l'origine.", "source": "Ernest Renan, Qu'est-ce qu'une nation ?, 1882" },
+      { "term": "Compétence de la compétence", "text": "Aptitude de l'État souverain à déterminer lui-même l'étendue de ses propres compétences, sans qu'une autorité supérieure ne les lui assigne." },
+      { "term": "Égalité souveraine des États", "text": "Principe du droit international selon lequel tous les États sont juridiquement égaux, quelle que soit leur puissance effective.", "source": "Article 2 de la Charte des Nations unies" }
+    ],
+    "exam": {
+      "kind": "question de cours",
+      "question": "Quels sont les éléments constitutifs de l'État et lequel est déterminant ?",
+      "concise": "La doctrine, à la suite de Carré de Malberg, retient trois éléments cumulatifs. Le **territoire**, élément matériel, comprend le sol, le sous-sol, l'espace aérien et les eaux territoriales ; il délimite le champ de la compétence étatique. La **population**, élément personnel, se distingue du peuple — les seuls nationaux — et de la nation, qui relève d'une conception soit objective (Fichte : langue, culture, origine communes), soit élective (Renan : le plébiscite de tous les jours). La **puissance publique organisée**, élément formel, est la souveraineté : compétence suprême à l'intérieur, indépendance à l'extérieur. C'est ce troisième élément qui est **déterminant**. Territoire et population existent en effet dans des collectivités qui ne sont pas des États : une région, une commune, une province fédérée. Seule la souveraineté — le monopole de la contrainte et la compétence de la compétence — distingue l'État de toute autre collectivité territoriale.",
+      "plan": [
+        {
+          "title": "I. Deux éléments matériels nécessaires mais non suffisants",
+          "children": [
+            { "title": "A. Le territoire", "points": ["Composantes : sol, sous-sol, espace aérien, eaux territoriales", "Triple fonction : délimitation de la compétence, support physique, identité", "Insuffisance : une collectivité territoriale a aussi un territoire"] },
+            { "title": "B. La population", "points": ["Population, peuple et nation : trois notions à ne pas confondre", "Conception objective de Fichte contre conception élective de Renan", "Insuffisance : une minorité ou une diaspora ne forme pas un État"] }
+          ]
+        },
+        {
+          "title": "II. Un élément formel déterminant : la souveraineté",
+          "children": [
+            { "title": "A. La souveraineté dans l'ordre interne", "points": ["Monopole de la contrainte organisée", "Compétence de la compétence : l'État fixe lui-même l'étendue de ses pouvoirs", "Ce qui distingue l'État de la région ou de l'État fédéré"] },
+            { "title": "B. La souveraineté dans l'ordre international", "points": ["Indépendance et non-ingérence", "Égalité souveraine des États, article 2 de la Charte des Nations unies", "Limite contemporaine : les transferts de compétences à l'Union européenne"] }
+          ]
+        }
+      ],
+      "pitfalls": [
+        "Ne jamais confondre peuple et nation : le peuple est juridique, la nation est sociologique et politique.",
+        "La reconnaissance internationale n'est pas un quatrième élément constitutif : elle est déclarative, non constitutive."
+      ]
+    },
+    "quiz": [
+      { "q": "Les trois éléments constitutifs de l'État sont :", "choices": ["Constitution, Parlement, gouvernement", "Territoire, population, puissance publique organisée", "Peuple, nation, souveraineté", "Sol, drapeau, monnaie"], "answer": 1, "why": "C'est la définition classique de Carré de Malberg, reprise par toute la doctrine française." },
+      { "q": "Pour Renan, la nation est :", "choices": ["Une communauté de langue et de race", "Un plébiscite de tous les jours", "Un territoire délimité", "L'ensemble des nationaux"], "answer": 1, "why": "Conception élective et subjective, développée dans la conférence de 1882, opposée à la conception objective allemande de Fichte." },
+      { "q": "La compétence de la compétence signifie que l'État :", "choices": ["Est compétent en tout", "Détermine lui-même l'étendue de ses compétences", "Délègue ses compétences", "Partage ses compétences"], "answer": 1, "why": "C'est le critère qui distingue l'État souverain de l'État fédéré, dont les compétences sont fixées par la Constitution fédérale." },
+      { "q": "Le territoire d'un État comprend :", "choices": ["Le sol seulement", "Le sol et le sous-sol", "Le sol, le sous-sol, l'espace aérien et les eaux territoriales", "Uniquement les terres habitées"], "answer": 2, "why": "La souveraineté s'exerce en trois dimensions, y compris sur la mer territoriale, traditionnellement fixée à douze milles marins." },
+      { "q": "L'élément déterminant de l'État est :", "choices": ["Le territoire", "La population", "La puissance publique souveraine", "La reconnaissance internationale"], "answer": 2, "why": "Territoire et population existent aussi dans des collectivités non étatiques. Seule la souveraineté est propre à l'État." }
+    ]
+  },
+  {
+    "id": "constit-07",
+    "order": 7,
+    "title": "Souveraineté nationale et souveraineté populaire",
+    "teaser": "Sieyès contre Rousseau : deux doctrines, deux régimes électoraux, une synthèse à l'article 3.",
+    "minutes": 5,
+    "brief": [
+      "La Révolution française hérite d'une question : qui est le titulaire de la souveraineté, une fois le roi écarté ? Deux réponses s'affrontent, et chacune emporte des conséquences institutionnelles précises. C'est l'un des sujets de dissertation les plus fréquents en L1, parce qu'il permet de vérifier si l'étudiant sait déduire un régime d'un principe.",
+      "La **souveraineté nationale**, théorisée par **Sieyès**, attribue la souveraineté à la **Nation**, entité abstraite, indivisible, distincte de la somme des individus qui la composent. La Nation ne pouvant s'exprimer elle-même, elle doit être représentée. Conséquences : le régime est nécessairement **représentatif** ; l'électorat est une **fonction** et non un droit, ce qui autorise le **suffrage restreint** (censitaire) ; les élus reçoivent un **mandat représentatif**, c'est-à-dire général et non révocable, et représentent la Nation entière, non leurs électeurs.",
+      "La **souveraineté populaire**, théorisée par **Rousseau**, attribue la souveraineté au **peuple**, somme des citoyens, chacun en détenant une part égale. Conséquences inverses : le régime tend à la **démocratie directe** ; le vote est un **droit** attaché à la qualité de citoyen, ce qui impose le **suffrage universel** ; les élus reçoivent un **mandat impératif**, assorti d'instructions et révocable. Rousseau écrit d'ailleurs que le peuple anglais n'est libre que le jour de l'élection.",
+      "Le droit positif français opère une **synthèse**. L'article 3 de la Constitution de 1958 dispose : « La souveraineté nationale appartient au peuple qui l'exerce par ses représentants et par la voie du référendum. » La formule est délibérément hybride : le mot *nationale* et le mécanisme représentatif viennent de Sieyès ; le mot *peuple*, le suffrage universel et le référendum viennent de Rousseau. L'article 27 conserve en revanche la logique nationale en déclarant nul tout **mandat impératif**."
+    ],
+    "keyPoints": [
+      "Souveraineté nationale (Sieyès) : Nation abstraite, régime représentatif, électorat-fonction, suffrage restreint possible, mandat représentatif.",
+      "Souveraineté populaire (Rousseau) : peuple somme des citoyens, démocratie directe, électorat-droit, suffrage universel, mandat impératif.",
+      "Article 3 de la Constitution : synthèse des deux doctrines.",
+      "Article 27 : tout mandat impératif est nul — trace de la logique nationale."
+    ],
+    "definitions": [
+      { "term": "Souveraineté nationale", "text": "Doctrine attribuant la souveraineté à la Nation, entité abstraite et indivisible distincte des individus, qui ne peut l'exercer que par des représentants." },
+      { "term": "Souveraineté populaire", "text": "Doctrine attribuant la souveraineté au peuple, chaque citoyen en détenant une fraction égale, ce qui conduit au suffrage universel et à la démocratie directe." },
+      { "term": "Électorat-fonction", "text": "Conception selon laquelle le vote n'est pas un droit individuel mais une fonction confiée à ceux que la Nation juge aptes à l'exercer. Fondement du suffrage censitaire." },
+      { "term": "Mandat représentatif", "text": "Mandat général, libre et non révocable, par lequel l'élu représente la Nation entière et non ses seuls électeurs.", "source": "Article 27 de la Constitution" },
+      { "term": "Mandat impératif", "text": "Mandat assorti d'instructions précises, dont le non-respect permet la révocation de l'élu. Déclaré nul par la Constitution française." }
+    ],
+    "exam": {
+      "kind": "dissertation",
+      "question": "Souveraineté nationale et souveraineté populaire sous la Ve République.",
+      "concise": "Les deux doctrines s'opposent sur le titulaire de la souveraineté et, par voie de conséquence, sur tout le régime électoral. La souveraineté **nationale** de Sieyès attribue la souveraineté à une Nation abstraite qui ne peut qu'être représentée : elle justifie le régime représentatif, l'électorat-fonction, le suffrage restreint et le mandat représentatif. La souveraineté **populaire** de Rousseau la fractionne entre les citoyens : elle appelle la démocratie directe, l'électorat-droit, le suffrage universel et le mandat impératif. La Ve République refuse de choisir. L'article 3 juxtapose les deux logiques — « la souveraineté nationale appartient au peuple » — et combine représentation et référendum. Cette synthèse n'est pas un compromis mou : elle est cohérente avec un régime qui veut à la fois la stabilité de la représentation et la légitimité du recours direct au peuple, dont l'élection présidentielle au suffrage universel direct depuis 1962 est la manifestation la plus forte.",
+      "plan": [
+        {
+          "title": "I. Deux doctrines aux conséquences institutionnelles opposées",
+          "children": [
+            { "title": "A. La souveraineté nationale et le gouvernement représentatif", "points": ["Sieyès : la Nation, entité abstraite et indivisible", "Électorat-fonction, suffrage censitaire, Constitution de 1791", "Mandat représentatif : l'élu représente la Nation entière"] },
+            { "title": "B. La souveraineté populaire et la démocratie directe", "points": ["Rousseau : le peuple, somme des citoyens détenant chacun une part", "Électorat-droit et suffrage universel, Constitution de 1793", "Mandat impératif et révocabilité des élus"] }
+          ]
+        },
+        {
+          "title": "II. Une synthèse assumée par la Ve République",
+          "children": [
+            { "title": "A. La formule hybride de l'article 3", "points": ["« La souveraineté nationale appartient au peuple »", "Exercice par les représentants et par la voie du référendum", "Suffrage universel, égal et secret : héritage rousseauiste"] },
+            { "title": "B. Une pratique qui renforce le lien direct au peuple", "points": ["L'élection présidentielle au suffrage universel direct depuis la révision de 1962", "Les référendums de l'article 11 et le référendum d'initiative partagée de 2008", "Persistance de la logique nationale : l'article 27 déclare nul le mandat impératif"] }
+          ]
+        }
+      ],
+      "pitfalls": [
+        "Ne pas dire que la France a « choisi » la souveraineté populaire : l'article 3 est une synthèse, et l'article 27 conserve la logique nationale.",
+        "Constitution de 1791 = souveraineté nationale ; Constitution de 1793 = souveraineté populaire. Ne pas inverser."
+      ]
+    },
+    "quiz": [
+      { "q": "La souveraineté nationale a été théorisée par :", "choices": ["Rousseau", "Sieyès", "Montesquieu", "Bodin"], "answer": 1, "why": "Sieyès attribue la souveraineté à la Nation, entité abstraite, ce qui impose le régime représentatif." },
+      { "q": "L'électorat-fonction justifie :", "choices": ["Le suffrage universel", "Le suffrage restreint ou censitaire", "Le mandat impératif", "Le référendum"], "answer": 1, "why": "Si le vote est une fonction et non un droit, la Nation peut la confier aux seuls citoyens qu'elle juge aptes." },
+      { "q": "L'article 3 de la Constitution de 1958 dispose que la souveraineté nationale appartient :", "choices": ["À la Nation", "Au peuple", "Au Parlement", "Au Président"], "answer": 1, "why": "« La souveraineté nationale appartient au peuple qui l'exerce par ses représentants et par la voie du référendum » : une synthèse assumée." },
+      { "q": "L'article 27 de la Constitution déclare nul :", "choices": ["Le mandat représentatif", "Le mandat impératif", "Le référendum", "Le vote par procuration"], "answer": 1, "why": "C'est la trace de la logique de souveraineté nationale : l'élu représente la Nation entière, pas ses électeurs." },
+      { "q": "La Constitution de 1793 repose sur :", "choices": ["La souveraineté nationale", "La souveraineté populaire", "La souveraineté royale", "La souveraineté parlementaire"], "answer": 1, "why": "La Constitution montagnarde de 1793 consacre la souveraineté populaire et le suffrage universel masculin ; celle de 1791 consacrait la souveraineté nationale." }
+    ]
+  },
+  {
+    "id": "constit-08",
+    "order": 8,
+    "title": "Les formes d'État : unitaire, fédéral, régional",
+    "teaser": "Un seul ordre juridique ou plusieurs ? Superposition, autonomie, participation.",
+    "minutes": 5,
+    "brief": [
+      "L'**État unitaire** ne connaît qu'un seul centre d'impulsion politique, un seul ordre juridique, une seule Constitution. C'est la forme française : l'article 1er de la Constitution dispose que la France est une République « indivisible ». Cela n'interdit pas l'aménagement. La **déconcentration** transfère des pouvoirs à des agents locaux de l'État, nommés et soumis au pouvoir hiérarchique — le préfet. La **décentralisation** transfère des compétences à des collectivités territoriales dotées de la personnalité morale, administrées par des organes **élus**, sous simple contrôle de légalité. Depuis la révision de 2003, l'article 1er ajoute que l'organisation de la République « est décentralisée ».",
+      "L'**État fédéral** superpose deux ordres juridiques : celui de la fédération et celui des États fédérés, chacun doté de sa Constitution, de son Parlement, de ses tribunaux. Georges Scelle a dégagé trois lois du fédéralisme. La **loi de superposition** : deux ordres se superposent sur le même territoire et la même population. La **loi d'autonomie** : chaque État fédéré dispose de compétences propres garanties par la Constitution fédérale. La **loi de participation** : les États fédérés participent aux décisions fédérales, généralement par une seconde chambre les représentant — le Sénat américain, le Bundesrat allemand.",
+      "L'**État régional** est une forme intermédiaire, parfois dite autonomique. L'Italie et l'Espagne en offrent les exemples. Les régions y disposent d'un pouvoir **législatif** propre dans certaines matières, ce qui les distingue nettement des collectivités décentralisées françaises, mais elles ne possèdent pas de Constitution propre ni de participation organisée au pouvoir central, ce qui les distingue des États fédérés.",
+      "Le critère décisif pour trancher entre ces formes est simple : la collectivité infra-étatique dispose-t-elle d'un **pouvoir législatif autonome** et d'une **Constitution propre** ? Ni l'un ni l'autre : État unitaire, éventuellement décentralisé. Le pouvoir législatif sans Constitution propre : État régional. Les deux, plus la participation : État fédéral."
+    ],
+    "keyPoints": [
+      "Unitaire : un seul ordre juridique. Déconcentration (agents nommés) ≠ décentralisation (organes élus).",
+      "Fédéral : trois lois de Scelle — superposition, autonomie, participation.",
+      "Régional : pouvoir législatif régional mais pas de Constitution propre (Italie, Espagne).",
+      "Critère de tri : pouvoir législatif autonome + Constitution propre + participation."
+    ],
+    "definitions": [
+      { "term": "État unitaire", "text": "État qui ne comporte qu'un seul centre d'impulsion politique et un seul ordre juridique s'appliquant uniformément sur tout le territoire." },
+      { "term": "Déconcentration", "text": "Transfert de pouvoirs de décision à des agents de l'État implantés localement, nommés et soumis au pouvoir hiérarchique. Simple technique d'organisation administrative." },
+      { "term": "Décentralisation", "text": "Transfert de compétences à des collectivités territoriales dotées de la personnalité morale et d'organes élus, soumises à un contrôle de légalité et non à un pouvoir hiérarchique." },
+      { "term": "Loi de participation", "text": "Loi du fédéralisme selon laquelle les États fédérés participent à l'exercice du pouvoir fédéral, généralement par une chambre haute qui les représente.", "source": "Georges Scelle" },
+      { "term": "État régional", "text": "Forme intermédiaire dans laquelle les régions disposent d'un pouvoir législatif propre dans certaines matières, sans posséder de Constitution propre ni de participation organisée au pouvoir central." }
+    ],
+    "exam": {
+      "kind": "dissertation",
+      "question": "La France est-elle encore un État unitaire ?",
+      "concise": "La France demeure juridiquement un État unitaire, et l'article 1er de la Constitution le rappelle en proclamant la République « indivisible ». Il n'existe qu'un ordre juridique, qu'une Constitution, qu'un pouvoir législatif : les collectivités territoriales exercent un pouvoir réglementaire d'application, jamais un pouvoir législatif propre, et le Conseil constitutionnel veille strictement à cette limite. Mais ce caractère unitaire s'est considérablement assoupli. La décentralisation, engagée par la loi Defferre du 2 mars 1982 et constitutionnalisée en 2003 par la mention d'une organisation « décentralisée », a substitué le contrôle de légalité a posteriori à la tutelle préfectorale, consacré le principe de subsidiarité et le droit à l'expérimentation. Les statuts dérogatoires — Corse, Nouvelle-Calédonie surtout, qui dispose de « lois du pays » contrôlées par le Conseil constitutionnel — introduisent une différenciation qui affaiblit l'uniformité. La France reste donc un État unitaire, mais un État unitaire **différencié**, dont certains territoires s'approchent du modèle régional.",
+      "plan": [
+        {
+          "title": "I. Un caractère unitaire juridiquement maintenu",
+          "children": [
+            { "title": "A. L'unicité affirmée", "points": ["Article 1er : République indivisible ; article 3 : souveraineté nationale unique", "Un seul pouvoir législatif : les collectivités n'ont qu'un pouvoir réglementaire", "CC, 9 mai 1991 : censure de la mention du « peuple corse » comme composante du peuple français"] },
+            { "title": "B. Des aménagements qui ne remettent pas en cause l'unité", "points": ["La déconcentration : le préfet, agent de l'État soumis au pouvoir hiérarchique", "La décentralisation : des organes élus, mais un contrôle de légalité maintenu", "L'article 72 : libre administration, sans pouvoir législatif"] }
+          ]
+        },
+        {
+          "title": "II. Un caractère unitaire profondément assoupli",
+          "children": [
+            { "title": "A. L'approfondissement de la décentralisation", "points": ["Loi Defferre du 2 mars 1982 : fin de la tutelle a priori", "Révision de 2003 : organisation décentralisée, subsidiarité, droit à l'expérimentation", "Autonomie financière garantie par l'article 72-2"] },
+            { "title": "B. La différenciation territoriale", "points": ["Les statuts particuliers : Corse, outre-mer, articles 73 et 74", "La Nouvelle-Calédonie et ses lois du pays, contrôlées par le Conseil constitutionnel", "Conclusion : un État unitaire différencié, sans franchir le seuil du fédéralisme"] }
+          ]
+        }
+      ],
+      "pitfalls": [
+        "Ne jamais écrire que les régions françaises votent des lois : elles prennent des délibérations et des actes réglementaires.",
+        "Déconcentration et décentralisation ne sont pas des degrés l'une de l'autre : ce sont deux logiques distinctes."
+      ]
+    },
+    "quiz": [
+      { "q": "La déconcentration se distingue de la décentralisation parce qu'elle repose sur :", "choices": ["Des organes élus", "Des agents nommés soumis au pouvoir hiérarchique", "Un pouvoir législatif local", "Une Constitution propre"], "answer": 1, "why": "Le préfet est nommé et hiérarchiquement subordonné ; le maire et les conseillers régionaux sont élus et seulement contrôlés en légalité." },
+      { "q": "Les trois lois du fédéralisme selon Scelle sont :", "choices": ["Unité, égalité, fraternité", "Superposition, autonomie, participation", "Subsidiarité, proportionnalité, coopération", "Séparation, collaboration, contrôle"], "answer": 1, "why": "Superposition de deux ordres juridiques, autonomie constitutionnelle des fédérés, participation au pouvoir fédéral." },
+      { "q": "L'État régional se caractérise par :", "choices": ["Une Constitution propre aux régions", "Un pouvoir législatif régional sans Constitution propre", "L'absence de toute autonomie", "Une seconde chambre représentant les régions"], "answer": 1, "why": "C'est la forme intermédiaire de l'Italie et de l'Espagne : législation régionale, mais pas de Constitution régionale ni de participation organisée." },
+      { "q": "La loi Defferre de décentralisation date de :", "choices": ["1958", "1972", "1982", "2003"], "answer": 2, "why": "Loi du 2 mars 1982, qui supprime la tutelle a priori du préfet au profit d'un contrôle de légalité a posteriori." },
+      { "q": "La mention d'une organisation « décentralisée » de la République a été introduite en :", "choices": ["1982", "1992", "2003", "2008"], "answer": 2, "why": "Révision constitutionnelle du 28 mars 2003, qui complète l'article 1er et introduit subsidiarité et droit à l'expérimentation." }
+    ]
+  }
+]
