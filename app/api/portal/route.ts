@@ -96,12 +96,12 @@ export async function POST(req: Request) {
     return NextResponse.json({ url: session.url });
   } catch (err) {
     const message = err instanceof Error ? err.message : "Ouverture du portail impossible.";
-    // Cas courant tant que le portail client n'a pas été activé une première
-    // fois dans le tableau de bord Stripe : on le dit clairement plutôt que de
-    // renvoyer une erreur technique à l'élève.
-    const friendly = message.includes("configuration")
+    // Deux cas connus, jamais montrés tels quels à l'élève (message technique
+    // Stripe, parfois avec un identifiant de compte) : le portail client pas
+    // encore activé, ou la clé API qui n'a pas la permission nécessaire.
+    const friendly = message.includes("configuration") || message.toLowerCase().includes("permission")
       ? "Le portail de gestion n'est pas encore activé côté Stripe. Écris-nous à contact@studijur.fr, on résilie pour toi."
-      : message;
+      : "Ouverture du portail impossible pour le moment. Réessaie dans un instant, ou écris-nous à contact@studijur.fr.";
     return NextResponse.json({ error: friendly }, { status: 500 });
   }
 }
