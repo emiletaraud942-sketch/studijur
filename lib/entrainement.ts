@@ -6,7 +6,7 @@
 
 export type QuestionEntrainement = {
   id: string;
-  categorie: "Vocabulaire des procès" | "Jurisprudence" | "Question de cours";
+  categorie: "Vocabulaire des procès" | "Jurisprudence" | "Question de cours" | "Méthodologie";
   question: string;
   reponse: string;
 };
@@ -64,20 +64,44 @@ export const introGeneraleEntrainement: QuestionEntrainement[] = [
   {
     id: "voc-09",
     categorie: "Vocabulaire des procès",
-    question: "Dans un arrêt, qu'est-ce que le \"visa\", et qu'est-ce que le \"dispositif\" ?",
-    reponse: "Le **visa** est l'article de loi sur lequel s'appuie la décision, cité en tête de l'arrêt. Le **dispositif** est la décision finale de la juridiction — rejet ou cassation, avec ou sans renvoi.",
+    question: "Quelles sont les 5 parties qu'on retrouve dans l'anatomie d'un arrêt de la Cour de cassation ?",
+    reponse: "1) L'**en-tête** (juridiction, formation, date, n° de pourvoi) ; 2) **Faits et procédure** (récit des faits, décisions des juges du fond, qui se pourvoit contre quoi) ; 3) **Examen des moyens — l'énoncé** (les griefs de l'auteur du pourvoi, souvent cités entre guillemets « alors que… ») ; 4) La **réponse de la Cour** (les motifs : la règle énoncée, puis son application aux faits) ; 5) Le **dispositif** (introduit par « PAR CES MOTIFS » : rejette, ou casse et annule avec ou sans renvoi, dépens, article 700).",
   },
   {
     id: "voc-10",
     categorie: "Vocabulaire des procès",
-    question: "Qu'est-ce qu'un \"attendu de principe\" ?",
-    reponse: "La formule par laquelle les juges énoncent la règle générale qui fonde leur décision — souvent la phrase-clé à citer dans un commentaire d'arrêt.",
+    question: "Qu'est-ce qu'un \"attendu de principe\", et depuis quand la Cour de cassation ne les utilise-t-elle plus systématiquement ?",
+    reponse: "C'est la formule par laquelle les juges énoncent la règle générale qui fonde leur décision — la phrase-clé à citer dans un commentaire d'arrêt. Avant le **1ᵉʳ octobre 2019**, les arrêts se présentaient en une seule phrase scandée par des « Attendu que… ». Depuis cette date, la Cour de cassation rédige en **style direct**, avec des paragraphes numérotés et un plan apparent.",
   },
   {
     id: "voc-11",
     categorie: "Vocabulaire des procès",
     question: "En matière de succession : comment s'appelle celui qui rédige un testament, et celui qui en bénéficie ?",
     reponse: "Celui qui rédige le testament est le **testateur** (ou la testatrice) ; celui qui reçoit est le **légataire** (un legs universel désigne un légataire universel). Celui qui est exclu du testament est l'**exhérédé**.",
+  },
+  {
+    id: "voc-12",
+    categorie: "Vocabulaire des procès",
+    question: "Quelle est la différence entre \"confirmer\" et \"infirmer\" un jugement en appel ?",
+    reponse: "**Confirmer** : la cour d'appel maintient la solution retenue par le premier juge. **Infirmer** : elle l'annule et statue différemment.",
+  },
+  {
+    id: "voc-13",
+    categorie: "Vocabulaire des procès",
+    question: "Qu'est-ce que le syllogisme juridique, et à quoi sert-il ?",
+    reponse: "Le raisonnement en trois temps qu'applique tout juriste : la **majeure** énonce la règle de droit applicable, avec sa source ; la **mineure** confronte les faits, préalablement qualifiés, aux conditions posées par la règle ; la **conclusion** en déduit la solution. C'est la structure élémentaire de tout raisonnement juridique, au cœur du cas pratique.",
+  },
+  {
+    id: "voc-14",
+    categorie: "Vocabulaire des procès",
+    question: "Les juges du tribunal et de la cour d'appel apprécient-ils les faits de la même façon que la Cour de cassation ?",
+    reponse: "Non. Les juges « du fond » (tribunal, puis cour d'appel) constatent et apprécient **souverainement** les faits. La Cour de cassation, elle, ne juge que le **droit** : elle vérifie seulement que la règle a été correctement appliquée, sans jamais rejuger les faits.",
+  },
+  {
+    id: "voc-15",
+    categorie: "Méthodologie",
+    question: "Comment cite-t-on un article de code, une loi et une décision de justice ?",
+    reponse: "Un **article de code** : le code puis le numéro (« C. civ., art. 1253 »). Une **loi** : son numéro, sa date et son intitulé (« L. n°2021-85 du 29 janv. 2021 visant à définir et protéger le patrimoine sensoriel des campagnes françaises »). Une **décision** : la juridiction, la formation, la date et le numéro (« Cass. 3ᵉ civ., 21 mai 2026, n°24-10.569 »).",
   },
 
   // --- Jurisprudence (les vraies décisions étudiées) ---
@@ -110,6 +134,18 @@ export const introGeneraleEntrainement: QuestionEntrainement[] = [
     categorie: "Jurisprudence",
     question: "Quelle est la portée de la décision de l'assemblée plénière dans l'affaire du legs à la \"maîtresse\" ?",
     reponse: "Un **revirement de jurisprudence** : une libéralité (comme un legs) n'est plus nulle du seul fait qu'elle a été consentie dans le cadre d'une relation adultère. La Cour casse le raisonnement de la cour d'appel, qui avait annulé le legs pour ce motif en se fondant sur les anciens articles 1131 et 1133 du Code civil.",
+  },
+  {
+    id: "juri-06",
+    categorie: "Jurisprudence",
+    question: "Dans l'affaire du chant du coq (CA Bordeaux, 5ᵉ ch., 1ᵉʳ juin 2006, n°05/00492), qui sont les appelants, et qui est l'intimé ?",
+    reponse: "**M. et Mme Dominique X…** sont les **appelants** : ils avaient perdu en première instance (TI de Ribérac, 7 décembre 2004, qui les avait déboutés) et contestent ce jugement devant la cour d'appel. **M. Michel Y…**, leur voisin propriétaire des coqs dont le chant les gênait, est l'**intimé**.",
+  },
+  {
+    id: "juri-07",
+    categorie: "Jurisprudence",
+    question: "Quelle est l'issue de l'affaire du chant du coq, et en quoi contraste-t-elle avec l'affaire des clochettes ?",
+    reponse: "La cour d'appel de Bordeaux **confirme** le jugement de première instance : elle déboute les appelants, jugeant que le trouble n'est pas anormal (commune rurale, d'autres voisins élèvent aussi des basses-cours, absence de preuve sérieuse d'un trouble excessif). Même **principe** que dans l'affaire des clochettes (le trouble anormal de voisinage), mais **qualification opposée** des faits : là où le tintement permanent des clochettes a été jugé anormal, le chant occasionnel d'un coq à la campagne ne l'a pas été. Cela illustre que l'appréciation du caractère « anormal » est **souveraine** et dépend entièrement du contexte factuel.",
   },
 
   // --- Questions de cours (issues des fiches de cours et de TD) ---
@@ -160,5 +196,11 @@ export const introGeneraleEntrainement: QuestionEntrainement[] = [
     categorie: "Question de cours",
     question: "Expliquez la formule de Georges Vedel : « Tout le droit constitutionnel n'est pas dans la Constitution », en l'illustrant par l'exemple du Royaume-Uni.",
     reponse: "Le droit constitutionnel ne se réduit pas au texte écrit de la Constitution : il inclut aussi les pratiques, les principes et la jurisprudence. Le Royaume-Uni l'illustre parfaitement : il a un véritable droit constitutionnel (règles sur l'organisation et le fonctionnement de l'État), sans pourtant disposer d'une Constitution écrite unique — il repose sur des textes épars, des conventions et des coutumes constitutionnelles.",
+  },
+  {
+    id: "cours-09",
+    categorie: "Question de cours",
+    question: "Appliquez le syllogisme juridique à l'affaire des clochettes de moutons.",
+    reponse: "**Majeure** : l'article 1253 du Code civil pose que nul ne doit causer à autrui un trouble excédant les inconvénients normaux de voisinage. **Mineure** : le tintement des clochettes est **permanent**, jour et nuit, ce qui n'est pas caractéristique du milieu rural où vivent les parties ; une **alternative existait** pourtant pour protéger le troupeau sans ce bruit continu (des chiens de protection). **Conclusion** : le trouble excède les inconvénients normaux de voisinage — il est **anormal**, ce qui justifie la cessation du trouble et la réparation du préjudice.",
   },
 ];
