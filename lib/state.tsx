@@ -77,6 +77,17 @@ export function trialLessonCapReached(state: ProgressState, lessonId: string): b
   return dejaFaites.size >= TRIAL_LESSON_LIMIT;
 }
 
+// Le module d'entraînement (questions de cours d'intro générale) est
+// gratuit et sans limite sur les questions elles-mêmes, mais la correction
+// par l'IA d'une réponse rédigée coûte un appel modèle : deux essais
+// suffisent à donner un aperçu sans plan payant.
+export const ENTRAINEMENT_CORRECTION_LIMIT = 2;
+
+export function entrainementCorrectionCapReached(state: ProgressState): boolean {
+  if (state.profile.plan === "active") return false;
+  return (state.entrainementCorrectionsUsed ?? 0) >= ENTRAINEMENT_CORRECTION_LIMIT;
+}
+
 // La table `subscriptions` est tenue à jour par le webhook Stripe (voir
 // app/api/stripe/webhook/route.ts) mais rien ne la relisait jamais côté
 // application avant cette fonction : un abonnement payé ne débloquait donc
