@@ -97,6 +97,11 @@ export type ProgressState = {
   cards: Record<string, CardRecord>;
   streak: { current: number; best: number; lastDay?: string; days: string[] };
   customCourses: Course[];
+  // Horodatage de la dernière écriture (posé au moment de la persistance, pas
+  // à chaque frappe) : départage quel appareil a la version la plus récente
+  // à la connexion, pour que réglages et progression suivent le compte plutôt
+  // que de rester bloqués sur le premier appareil qui a le plus de leçons.
+  savedAt?: string;
 };
 
 // Retour de l'IA sur une copie rédigée par l'élève (mode correction).
