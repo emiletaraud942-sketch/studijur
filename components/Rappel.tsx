@@ -21,7 +21,7 @@ function cleVersOctets(base64: string): Uint8Array {
 type Etat = "inconnu" | "indisponible" | "inactif" | "actif" | "refuse";
 
 export default function Rappel() {
-  const { state, update } = useStudiJur();
+  const { state, update, signedInAs } = useStudiJur();
   const [etat, setEtat] = useState<Etat>("inconnu");
   const [occupe, setOccupe] = useState(false);
   const [message, setMessage] = useState("");
@@ -42,6 +42,34 @@ export default function Rappel() {
       .then((sub) => setEtat(sub ? "actif" : "inactif"))
       .catch(() => setEtat("inactif"));
   }, []);
+
+  // Relie automatiquement un abonnement déjà actif au compte : un abonnement
+  // créé avant la connexion (ou avant cette version) reste sans user_id tant
+  // que personne ne re-soumet le formulaire. Sans ça, le cron ne peut pas
+  // rattacher cet appareil à la préférence d'heure du compte.
+  useEffect(() => {
+    if (!signedInAs) return;
+    let annule = false;
+    (async () => {
+      try {
+        const reg = await navigator.serviceWorker.ready;
+        const sub = await reg.pushManager.getSubscription();
+        if (!sub || annule) return;
+        const sb = getSupabase();
+        const userId = sb ? (await sb.auth.getUser()).data.user?.id ?? null : null;
+        if (!userId || annule) return;
+        await fetch("/api/push/subscribe", {
+          method: "POST",
+          headers: { "content-type": "application/json" },
+          body: JSON.stringify({ subscription: sub.toJSON(), hour: heure, userId }),
+        });
+      } catch {
+        /* liaison en tâche de fond : un prochain changement d'heure retentera */
+      }
+    })();
+    return () => { annule = true; };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [signedInAs]);
 
   async function activer() {
     setOccupe(true);
