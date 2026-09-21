@@ -150,3 +150,26 @@ export async function releaseQuota(ip: string): Promise<void> {
     /* best effort : un crédit non rendu n'est jamais bloquant */
   }
 }
+
+// Avec un compte obligatoire pour les fonctionnalités IA, on plafonne à la
+// fois par compte (clé `user:<id>`) et par IP : le premier empêche un même
+// élève de multiplier les essais gratuits en changeant d'appareil ou de
+// navigateur, le second reste un filet contre le partage d'un seul compte
+// entre plusieurs personnes. Les deux clés doivent passer pour continuer ;
+// si l'une échoue, celles déjà consommées sont immédiatement rendues.
+export async function checkQuotaBoth(keys: string[]): Promise<{ ok: boolean }> {
+  const consumed: string[] = [];
+  for (const key of keys) {
+    const r = await checkQuota(key);
+    if (!r.ok) {
+      for (const c of consumed) await releaseQuota(c);
+      return { ok: false };
+    }
+    consumed.push(key);
+  }
+  return { ok: true };
+}
+
+export async function releaseQuotaAll(keys: string[]): Promise<void> {
+  await Promise.all(keys.map((k) => releaseQuota(k)));
+}

@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import { callModel, extractJson, getAnthropic } from "@/lib/anthropic";
-import { checkQuota, releaseQuota } from "@/lib/shared-courses";
+import { checkQuotaBoth, releaseQuotaAll } from "@/lib/shared-courses";
+import { AUTH_REQUIRED_MESSAGE, authRequired, requireUser } from "@/lib/auth-server";
 import type { EntrainementFeedback } from "@/lib/types";
 
 export const runtime = "nodejs";
@@ -58,7 +59,14 @@ export async function POST(req: Request) {
   }
 
   const ip = clientIp(req);
-  const gate = await checkQuota(ip);
+  let quotaKeys = [ip];
+  if (authRequired()) {
+    const user = await requireUser(req);
+    if (!user) return NextResponse.json({ error: AUTH_REQUIRED_MESSAGE }, { status: 401 });
+    quotaKeys = [`user:${user.id}`, ip];
+  }
+
+  const gate = await checkQuotaBoth(quotaKeys);
   if (!gate.ok) {
     return NextResponse.json(
       { error: "Tu as atteint la limite de corrections pour aujourd'hui. Réessaie demain." },
@@ -77,7 +85,7 @@ export async function POST(req: Request) {
     if (!sane(feedback)) throw new Error("réponse mal formée");
     return NextResponse.json({ feedback });
   } catch {
-    await releaseQuota(ip);
+    await releaseQuotaAll(quotaKeys);
     return NextResponse.json({ error: "La correction a échoué. Réessaie dans un instant." }, { status: 502 });
   }
 }

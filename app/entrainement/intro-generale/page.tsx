@@ -6,7 +6,8 @@ import { Tag, Button } from "@/components/ui";
 import { Arrow, Chevron } from "@/components/icons";
 import { inlineMarkup } from "@/lib/format";
 import { introGeneraleEntrainement, type QuestionEntrainement } from "@/lib/entrainement";
-import { useStudiJur, entrainementCorrectionCapReached, ENTRAINEMENT_CORRECTION_LIMIT } from "@/lib/state";
+import { useStudiJur, entrainementCorrectionCapReached, ENTRAINEMENT_CORRECTION_LIMIT, supabaseConfigured } from "@/lib/state";
+import { authFetchHeaders } from "@/lib/supabase";
 import type { EntrainementFeedback } from "@/lib/types";
 
 export default function EntrainementIntroGeneralePage() {
@@ -48,7 +49,7 @@ export default function EntrainementIntroGeneralePage() {
 }
 
 function QuestionCard({ q }: { q: QuestionEntrainement }) {
-  const { state, update } = useStudiJur();
+  const { state, update, signedInAs } = useStudiJur();
   const [reponse, setReponse] = useState("");
   const [revealed, setRevealed] = useState(false);
   const [correctionState, setCorrectionState] = useState<"idle" | "loading" | "done" | "error">("idle");
@@ -56,6 +57,7 @@ function QuestionCard({ q }: { q: QuestionEntrainement }) {
   const [error, setError] = useState("");
 
   const capReached = entrainementCorrectionCapReached(state);
+  const connexionRequise = supabaseConfigured && !signedInAs;
   const restantes = Math.max(0, ENTRAINEMENT_CORRECTION_LIMIT - (state.entrainementCorrectionsUsed ?? 0));
   const wordCount = reponse.trim() ? reponse.trim().split(/\s+/).filter(Boolean).length : 0;
   const abonne = state.profile.plan === "active";
@@ -66,7 +68,7 @@ function QuestionCard({ q }: { q: QuestionEntrainement }) {
     try {
       const res = await fetch("/api/entrainement-correction", {
         method: "POST",
-        headers: { "content-type": "application/json" },
+        headers: { "content-type": "application/json", ...(await authFetchHeaders()) },
         body: JSON.stringify({ question: q.question, reponseAttendue: q.reponse, reponseEtudiant: reponse }),
       });
       const data = await res.json();
@@ -108,7 +110,13 @@ function QuestionCard({ q }: { q: QuestionEntrainement }) {
           {revealed ? "Masquer la réponse" : "Montrer la réponse"}
         </button>
 
-        {!capReached ? (
+        {connexionRequise ? (
+          <Link href="/connexion"
+            className="rounded-xl px-3.5 py-2 text-[13px] font-semibold"
+            style={{ background: "var(--gold-soft)", color: "var(--gold)" }}>
+            Se connecter pour corriger par l&apos;IA
+          </Link>
+        ) : !capReached ? (
           <Button onClick={corriger} disabled={wordCount < 3 || correctionState === "loading"} variant="soft" size="sm">
             {correctionState === "loading" ? "Correction…" : "Faire corriger par l'IA"}
           </Button>

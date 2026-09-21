@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import { callModel, getAnthropic, currentModel, type ContentBlock } from "@/lib/anthropic";
-import { checkQuota, releaseQuota } from "@/lib/shared-courses";
+import { checkQuotaBoth, releaseQuotaAll } from "@/lib/shared-courses";
+import { AUTH_REQUIRED_MESSAGE, authRequired, requireUser } from "@/lib/auth-server";
 
 export const runtime = "nodejs";
 export const maxDuration = 120;
@@ -62,7 +63,14 @@ export async function POST(req: Request) {
   }
 
   const ip = clientIp(req);
-  const gate = await checkQuota(ip);
+  let quotaKeys = [ip];
+  if (authRequired()) {
+    const user = await requireUser(req);
+    if (!user) return NextResponse.json({ error: AUTH_REQUIRED_MESSAGE }, { status: 401 });
+    quotaKeys = [`user:${user.id}`, ip];
+  }
+
+  const gate = await checkQuotaBoth(quotaKeys);
   if (!gate.ok) {
     return NextResponse.json(
       { error: "Tu as atteint la limite de lectures/générations pour aujourd'hui. Réessaie demain, ou colle le texte directement." },
@@ -102,7 +110,7 @@ export async function POST(req: Request) {
     .filter((p): p is string => Boolean(p));
 
   if (!pages.length) {
-    await releaseQuota(ip);
+    await releaseQuotaAll(quotaKeys);
     return NextResponse.json(
       { error: "Impossible de lire ces photos. Vérifie qu'elles sont nettes et bien cadrées, ou copie-colle le texte à la place." },
       { status: 422 },

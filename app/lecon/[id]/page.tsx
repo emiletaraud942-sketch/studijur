@@ -3,10 +3,11 @@
 import Link from "next/link";
 import { useParams, useRouter } from "next/navigation";
 import { useEffect, useMemo, useState } from "react";
-import { useStudiJur, hasAccess, trialLessonCapReached, TRIAL_LESSON_LIMIT } from "@/lib/state";
+import { useStudiJur, hasAccess, trialLessonCapReached, TRIAL_LESSON_LIMIT, supabaseConfigured } from "@/lib/state";
 import { findLesson, findCourse, neighbours, corpusStats } from "@/lib/corpus";
 import { Button, Prose, Tag } from "@/components/ui";
 import { inlineMarkup } from "@/lib/format";
+import { authFetchHeaders } from "@/lib/supabase";
 import { Arrow, Cards, Check, Cross, Flame, Quill, Target } from "@/components/icons";
 import type { EssayFeedback, StepName } from "@/lib/types";
 
@@ -341,10 +342,12 @@ function Correction({
   draft: string;
   wordCount: number;
 }) {
+  const { signedInAs } = useStudiJur();
   const [state, setState] = useState<"idle" | "loading" | "done" | "error">("idle");
   const [feedback, setFeedback] = useState<EssayFeedback | null>(null);
   const [error, setError] = useState("");
   const ready = wordCount >= 30;
+  const connexionRequise = supabaseConfigured && !signedInAs;
 
   async function correct() {
     setState("loading");
@@ -352,7 +355,7 @@ function Correction({
     try {
       const res = await fetch("/api/correction", {
         method: "POST",
-        headers: { "content-type": "application/json" },
+        headers: { "content-type": "application/json", ...(await authFetchHeaders()) },
         body: JSON.stringify({
           question: lesson.exam.question,
           kind: lesson.exam.kind,
@@ -393,11 +396,20 @@ function Correction({
             Écris ton brouillon ci-dessus, puis fais-le corriger : note sur 20, points forts, points faibles et
             conseils, comme un chargé de TD.
           </p>
-          <div className="mt-3">
-            <Button onClick={correct} disabled={!ready || state === "loading"} variant="soft" size="md">
-              {state === "loading" ? "Correction en cours…" : "Faire corriger ma copie"}
-            </Button>
-          </div>
+          {connexionRequise ? (
+            <div className="mt-3">
+              <p className="mb-2 text-[13px]" style={{ color: "var(--muted)" }}>
+                Connecte-toi (gratuit, par email) pour faire corriger ta copie par l&apos;IA.
+              </p>
+              <Button href="/connexion" variant="soft" size="md">Se connecter</Button>
+            </div>
+          ) : (
+            <div className="mt-3">
+              <Button onClick={correct} disabled={!ready || state === "loading"} variant="soft" size="md">
+                {state === "loading" ? "Correction en cours…" : "Faire corriger ma copie"}
+              </Button>
+            </div>
+          )}
           {state === "error" && (
             <p className="mt-3 text-[13.5px]" style={{ color: "var(--bad)" }}>{error}</p>
           )}

@@ -15,3 +15,21 @@ export function getSupabase(): SupabaseClient | null {
   if (!client) client = createClient(url!, anon!, { auth: { persistSession: true } });
   return client;
 }
+
+// Les routes IA côté serveur exigent un compte : ce jeton part dans l'en-tête
+// Authorization de chaque appel pour qu'elles puissent identifier l'élève.
+export async function getAccessToken(): Promise<string | null> {
+  const sb = getSupabase();
+  if (!sb) return null;
+  try {
+    const { data } = await sb.auth.getSession();
+    return data.session?.access_token ?? null;
+  } catch {
+    return null;
+  }
+}
+
+export async function authFetchHeaders(): Promise<Record<string, string>> {
+  const token = await getAccessToken();
+  return token ? { authorization: `Bearer ${token}` } : {};
+}

@@ -1,7 +1,8 @@
 import { NextResponse } from "next/server";
 import { callModel, extractJson, getAnthropic, currentModel } from "@/lib/anthropic";
 import { fallbackCourse, splitSections } from "@/lib/ingest-fallback";
-import { checkQuota, fingerprint, lookupShared, releaseQuota, sharedCourseId, storeShared } from "@/lib/shared-courses";
+import { checkQuotaBoth, fingerprint, lookupShared, releaseQuotaAll, sharedCourseId, storeShared } from "@/lib/shared-courses";
+import { AUTH_REQUIRED_MESSAGE, authRequired, requireUser } from "@/lib/auth-server";
 import { CORPUS } from "@/lib/corpus";
 import { getAdmin } from "@/lib/supabase-admin";
 import { envoyerEmail } from "@/lib/brevo";
@@ -136,6 +137,14 @@ export async function POST(req: Request) {
     );
   }
 
+  const ip = clientIp(req);
+  let quotaKeys = [ip];
+  if (authRequired()) {
+    const user = await requireUser(req);
+    if (!user) return NextResponse.json({ error: AUTH_REQUIRED_MESSAGE }, { status: 401 });
+    quotaKeys = [`user:${user.id}`, ip];
+  }
+
   const clipped = text.slice(0, MAX_CHARS);
   const fp = fingerprint(clipped);
   const courseId = sharedCourseId(fp);
@@ -151,8 +160,7 @@ export async function POST(req: Request) {
     });
   }
 
-  const ip = clientIp(req);
-  const gate = await checkQuota(ip);
+  const gate = await checkQuotaBoth(quotaKeys);
   if (!gate.ok) {
     return NextResponse.json(
       { error: "Tu as atteint la limite de générations pour aujourd'hui. Réessaie demain, ou dépose un document déjà importé par un autre étudiant." },
@@ -163,7 +171,7 @@ export async function POST(req: Request) {
   const client = getAnthropic();
 
   if (!client) {
-    await releaseQuota(ip);
+    await releaseQuotaAll(quotaKeys);
     const course = fallbackCourse(title, clipped, courseId);
     return NextResponse.json({
       course, engine: "local",
@@ -173,7 +181,7 @@ export async function POST(req: Request) {
 
   const sections = splitSections(clipped).slice(0, MAX_LESSONS);
   if (!sections.length) {
-    await releaseQuota(ip);
+    await releaseQuotaAll(quotaKeys);
     return NextResponse.json({ error: "Impossible de découper ce cours en parties exploitables." }, { status: 400 });
   }
 
@@ -217,7 +225,7 @@ export async function POST(req: Request) {
   });
 
   if (!lessons.length) {
-    await releaseQuota(ip);
+    await releaseQuotaAll(quotaKeys);
     const course = fallbackCourse(title, clipped, courseId);
     return NextResponse.json({
       course, engine: "local",
@@ -247,6 +255,5 @@ export async function POST(req: Request) {
     engine: "claude",
     model: currentModel(),
     skipped: results.filter((r) => !r).length,
-    remaining: gate.remaining,
   });
 }
