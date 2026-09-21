@@ -1,120 +1,179 @@
 [
   {
-    "id": "intro-03",
-    "order": 3,
-    "title": "L'application de la loi dans le temps",
-    "teaser": "Non-rétroactivité, effet immédiat, survie de la loi ancienne : le trio à ne jamais confondre.",
+    "id": "intro-05",
+    "order": 5,
+    "title": "Kelsen, l'ordre juridique et l'appareil juridictionnel",
+    "teaser": "La pyramide posée sur sa pointe, la grille de Delmas-Marty, et une carte de toutes les juridictions françaises.",
     "minutes": 5,
     "brief": [
-      "Quand une loi nouvelle remplace une loi ancienne, une question surgit aussitôt : que deviennent les situations nées sous l'empire de la loi ancienne ? L'article 2 du Code civil pose le principe : « La loi ne dispose que pour l'avenir ; elle n'a point d'effet rétroactif. » C'est le principe de **non-rétroactivité**.",
-      "Ce principe protège la sécurité juridique : on ne peut pas être jugé aujourd'hui sur une règle qui n'existait pas au moment des faits. En matière pénale, il a une valeur **constitutionnelle** (article 8 de la Déclaration de 1789) et ne souffre qu'une exception : la loi pénale plus douce s'applique immédiatement aux faits non définitivement jugés (*rétroactivité in mitius*). En matière civile, il n'a que valeur législative : le législateur peut donc y déroger par une loi expressément rétroactive, notamment par les lois de validation, sous le contrôle de la Cour européenne des droits de l'homme qui exige un impérieux motif d'intérêt général.",
-      "À côté de la rétroactivité, il faut maîtriser l'**effet immédiat**. La loi nouvelle s'applique immédiatement aux situations en cours de constitution et aux effets futurs des situations légales. Exemple : une loi qui modifie les conditions de l'autorité parentale s'applique aux familles déjà constituées, pour l'avenir. Ce n'est pas de la rétroactivité : on ne remet pas en cause le passé, on régit le présent.",
-      "Enfin la **survie de la loi ancienne** : par exception, les contrats en cours restent régis par la loi en vigueur au jour de leur conclusion. La raison est que le contrat est un acte de prévision : les parties ont calculé leurs engagements sur l'état du droit du moment. L'exception à l'exception : les lois d'ordre public particulièrement impérieuses s'appliquent immédiatement, même aux contrats en cours.",
-      "Le piège d'examen est constant : on confond rétroactivité et effet immédiat. Retiens la question de contrôle : est-ce que la loi nouvelle **remet en cause des effets déjà produits** ? Si oui, elle est rétroactive. Si elle ne régit que les effets à venir, elle est d'application immédiate."
+      "**Hans Kelsen** représente l'ordre juridique comme une **pyramide posée sur sa pointe** : chaque norme tire sa validité de sa conformité à la norme supérieure. Trois **contrôles de conformité descendante** en découlent : le contrôle de **constitutionnalité** de la loi, le contrôle de **conventionnalité** de la loi, le contrôle de **légalité** du règlement. Reste un problème fondamental : en vertu de quoi la Constitution elle-même est-elle valable ? Pour Kelsen, les normes sont valides parce qu'elles sont conformes à d'autres règles supérieures — d'où la question de la norme fondamentale. Le droit peut aussi être vu comme une **institution** : toute organisation durable en sécrète, l'État bien sûr, mais aussi d'autres institutions, comme la FIFA. Une règle est valide, selon Kelsen, si elle est **conforme** à la règle supérieure et si elle est **effective**.",
+      "La grille de **Delmas-Marty** permet de reconnaître un **ordre juridique** : il faut un **groupe social identifiable** (État, fédération sportive, Église), un **intérêt commun** qui unit le groupe et justifie ses règles, une **structure unitaire**, cohérente et complète — pas une simple poussière de règles éparses —, et **trois pouvoirs** : produire, appliquer et faire respecter le droit. Le juge, en particulier, ne peut jamais refuser de statuer sous prétexte qu'aucune loi n'est applicable : ce serait un **déni de justice**.",
+      "Le juge est le symbole ancestral du droit, porté par trois attributs. La **balance** : rendre la justice n'est pas asséner une vérité, c'est l'équilibre entre deux prétentions, attribuer à chacun ce qui lui est dû (Aristote). Le **bandeau** : la justice est aveugle à l'identité des parties. Le **glaive**, apparu au XVIᵉ siècle : il incarne la force du droit, l'*imperium* — le pouvoir de commander — tandis que la balance incarne la *juridictio*, le pouvoir de dire le droit.",
+      "L'appareil juridictionnel français se répartit en deux ordres. L'**ordre judiciaire** : le tribunal judiciaire, mais aussi le tribunal de commerce, le conseil de prud'hommes, le tribunal de police ou correctionnel, la cour d'assises ; la **cour d'appel**, qui rejuge l'affaire en fait et en droit ; la **Cour de cassation**, juge du droit — ce n'est pas un troisième degré de juridiction, elle ne rejuge pas l'affaire mais vérifie si la cour d'appel a bien appliqué le droit, casse l'arrêt d'appel sans trancher elle-même, et renvoie devant une autre cour d'appel. L'**ordre administratif** : tribunaux administratifs, cours administratives d'appel, et le **Conseil d'État**, juge suprême et conseiller de l'État. À la sortie de la Révolution française (1790), la séparation des pouvoirs a été confirmée par la jurisprudence — l'**arrêt Blanco** (TC, 1873) : lorsqu'une personne subit un dommage causé par l'administration, l'action relève de l'ordre administratif. Le **Tribunal des conflits** répartit les compétences entre les deux ordres. Hors des deux ordres : le **Conseil constitutionnel**, la **Cour de justice de l'Union européenne**, qui vérifie que les États membres respectent le droit de l'Union, et la **Cour européenne des droits de l'homme**, rattachée au Conseil de l'Europe.",
+      "Enfin, l'ordre étatique n'est qu'un ordre parmi d'autres — c'est le **pluralisme**, une véritable constellation d'ordres : ordre étatique, ordre **international** (des États égaux, liés par leurs engagements), l'**Union européenne**, extrêmement organisée, ordre **religieux**, **ordres professionnels** (avocats, médecins), et ordre **sportif** (la FIFA)."
     ],
     "keyPoints": [
-      "Article 2 du Code civil : principe de non-rétroactivité.",
-      "Exception majeure : la rétroactivité in mitius de la loi pénale plus douce.",
-      "Effet immédiat pour les situations légales en cours ; survie de la loi ancienne pour les contrats en cours.",
-      "Test décisif : la loi nouvelle touche-t-elle des effets déjà produits ?"
+      "Kelsen : trois contrôles descendants — constitutionnalité, conventionnalité, légalité.",
+      "Grille de Delmas-Marty : groupe social, intérêt commun, structure unitaire, trois pouvoirs (produire, appliquer, faire respecter).",
+      "Cour de cassation = juge du droit, pas un troisième degré ; arrêt Blanco, TC 1873, fondateur du droit administratif.",
+      "Pluralisme : l'ordre étatique n'est qu'un ordre parmi d'autres (international, UE, religieux, professionnel, sportif)."
     ],
     "definitions": [
-      { "term": "Non-rétroactivité", "text": "Principe selon lequel la loi nouvelle ne peut pas régir des faits accomplis ni remettre en cause des effets juridiques déjà produits avant son entrée en vigueur.", "source": "Article 2 du Code civil" },
-      { "term": "Rétroactivité in mitius", "text": "Application immédiate de la loi pénale plus douce aux infractions commises avant son entrée en vigueur et non définitivement jugées.", "source": "Article 112-1 du Code pénal" },
-      { "term": "Effet immédiat de la loi nouvelle", "text": "Application de la loi nouvelle aux effets à venir des situations juridiques en cours, sans remise en cause des effets déjà produits." },
-      { "term": "Survie de la loi ancienne", "text": "Maintien de la loi en vigueur au jour de la conclusion du contrat pour régir ce contrat, malgré l'entrée en vigueur d'une loi nouvelle." },
-      { "term": "Loi de validation", "text": "Loi rétroactive par laquelle le législateur valide un acte administratif menacé d'annulation. Admise sous réserve d'un impérieux motif d'intérêt général." }
+      { "term": "Pyramide de Kelsen", "text": "Représentation hiérarchisée de l'ordre juridique où chaque norme tire sa validité de sa conformité à la norme supérieure, posée sur une norme fondamentale hypothétique." },
+      { "term": "Déni de justice", "text": "Refus d'un juge de statuer, y compris sous prétexte qu'aucune loi n'est applicable au litige." },
+      { "term": "Ordre juridique (grille de Delmas-Marty)", "text": "Ensemble caractérisé par un groupe social identifiable, un intérêt commun, une structure unitaire et trois pouvoirs : produire, appliquer et faire respecter le droit." },
+      { "term": "Arrêt Blanco", "text": "Décision fondatrice du droit administratif : le dommage causé par l'administration relève de l'ordre administratif, non judiciaire.", "source": "TC, 1873" },
+      { "term": "Pluralisme juridique", "text": "Coexistence de plusieurs ordres juridiques distincts — étatique, international, européen, religieux, professionnel, sportif." }
     ],
     "exam": {
       "kind": "question de cours",
-      "question": "Expliquez la différence entre la rétroactivité d'une loi et son effet immédiat, en précisant le sort des contrats en cours.",
-      "concise": "La rétroactivité et l'effet immédiat se distinguent par ce qu'ils atteignent. Une loi est **rétroactive** lorsqu'elle régit des faits entièrement accomplis avant son entrée en vigueur ou remet en cause des effets juridiques déjà produits ; l'article 2 du Code civil l'interdit en principe, et ce principe a valeur constitutionnelle en matière répressive. Une loi est d'**effet immédiat** lorsqu'elle s'applique aux situations juridiques en cours de constitution et aux effets futurs des situations légales déjà constituées : elle ne touche pas le passé, elle régit l'avenir d'une situation née antérieurement. Pour les **contrats en cours**, la règle s'inverse : par exception au principe d'effet immédiat, la loi ancienne survit et continue de régir le contrat conclu sous son empire, parce que le contrat est un acte de prévision. Cette survie cède toutefois devant les lois nouvelles d'ordre public particulièrement impérieuses.",
+      "question": "Présentez les trois contrôles de conformité descendante de la pyramide de Kelsen.",
+      "concise": "Kelsen représente l'ordre juridique comme une pyramide posée sur sa pointe : chaque norme tire sa validité de sa conformité à la norme immédiatement supérieure. Cette hiérarchie se vérifie par trois contrôles de conformité **descendante**. Le contrôle de **constitutionnalité** vérifie que la loi respecte la Constitution. Le contrôle de **conventionnalité** vérifie que la loi respecte les traités internationaux régulièrement ratifiés. Le contrôle de **légalité** vérifie que le règlement respecte la loi. Ces trois contrôles ne suffisent cependant pas à clore le système : Kelsen doit affronter la question de savoir en vertu de quoi la Constitution elle-même, au sommet, est valable — d'où l'hypothèse d'une norme fondamentale. Une règle n'est d'ailleurs valide, pour Kelsen, qu'à une double condition : être conforme à la norme supérieure, et être **effective**. Cette approche formelle éclaire aussi le droit comme institution : toute organisation durable, pas seulement l'État, sécrète ainsi son propre ordre normatif.",
       "plan": [
         {
-          "title": "I. Deux mécanismes distincts par leur objet",
+          "title": "I. Trois contrôles pour vérifier la hiérarchie",
           "children": [
-            { "title": "A. La rétroactivité : atteindre le passé", "points": ["Article 2 du Code civil : la loi ne dispose que pour l'avenir", "Valeur constitutionnelle en matière pénale : article 8 DDHC", "Exception : la rétroactivité in mitius, article 112-1 du Code pénal"] },
-            { "title": "B. L'effet immédiat : régir le présent d'une situation ancienne", "points": ["Application aux situations légales en cours (filiation, autorité parentale, propriété)", "Pas de remise en cause des effets déjà produits", "Test : la loi touche-t-elle un effet déjà consommé ?"] }
+            { "title": "A. Les contrôles portant sur la loi", "points": ["Le contrôle de constitutionnalité, au regard de la Constitution", "Le contrôle de conventionnalité, au regard des traités", "Deux contrôles distincts, exercés par des juges différents"] },
+            { "title": "B. Le contrôle portant sur le règlement", "points": ["Le contrôle de légalité, au regard de la loi", "Un contrôle qui referme la chaîne de conformité descendante", "Le juge administratif, gardien principal de ce contrôle"] }
           ]
         },
         {
-          "title": "II. Un régime propre aux situations contractuelles",
+          "title": "II. Les limites du modèle kelsénien",
           "children": [
-            { "title": "A. Le principe de survie de la loi ancienne", "points": ["Fondement : le contrat est un acte de prévision des parties", "Le contrat reste régi par la loi du jour de sa conclusion", "Illustration : l'application dans le temps de la réforme du droit des obligations de 2016"] },
-            { "title": "B. Les limites tenant à l'ordre public", "points": ["Les lois d'ordre public impérieuses s'appliquent aux contrats en cours", "Le contrôle de la CEDH sur les lois de validation : impérieux motif d'intérêt général", "Conclusion : un équilibre entre sécurité juridique et adaptation du droit"] }
+            { "title": "A. Le problème de la norme fondamentale", "points": ["En vertu de quoi la Constitution elle-même est-elle valable ?", "L'hypothèse d'une norme fondamentale, non écrite", "Une validité toujours relative à une norme supérieure"] },
+            { "title": "B. Conformité et effectivité", "points": ["Une norme valide doit être conforme à la norme supérieure", "Elle doit aussi être effective, c'est-à-dire réellement appliquée", "Le droit comme institution : toute organisation durable en sécrète"] }
           ]
         }
       ],
       "pitfalls": [
-        "Ne pas dire qu'une loi d'effet immédiat est « un peu rétroactive » : ce sont deux catégories exclusives.",
-        "La survie de la loi ancienne est l'exception, pas le principe : elle ne joue que pour les contrats."
+        "Ne pas confondre contrôle de conventionnalité (traités) et contrôle de constitutionnalité (Constitution) : ils portent sur des normes de référence différentes.",
+        "La Cour de cassation n'est pas un troisième degré de juridiction : elle est juge du droit, pas des faits."
       ]
     },
     "quiz": [
-      { "q": "Quel article du Code civil pose le principe de non-rétroactivité ?", "choices": ["Article 1", "Article 2", "Article 4", "Article 1104"], "answer": 1, "why": "L'article 2 dispose : « La loi ne dispose que pour l'avenir ; elle n'a point d'effet rétroactif. »" },
-      { "q": "La rétroactivité in mitius concerne :", "choices": ["La loi civile plus favorable", "La loi pénale plus douce", "Les lois de validation", "Les décrets"], "answer": 1, "why": "In mitius signifie « en plus doux » : la loi pénale plus douce s'applique aux faits non définitivement jugés." },
-      { "q": "Un contrat conclu en 2015 est en principe régi par :", "choices": ["La loi en vigueur au jour du litige", "La loi en vigueur au jour de sa conclusion", "La loi la plus favorable", "La loi choisie par le juge"], "answer": 1, "why": "C'est la survie de la loi ancienne : le contrat reste soumis à la loi du jour de sa conclusion, parce qu'il est un acte de prévision." },
-      { "q": "Une loi qui modifie pour l'avenir les règles de l'autorité parentale des familles déjà constituées est :", "choices": ["Rétroactive", "D'application immédiate", "Inconstitutionnelle", "Supplétive"], "answer": 1, "why": "Elle ne remet pas en cause les effets déjà produits : elle régit les effets futurs d'une situation légale en cours. C'est l'effet immédiat." },
-      { "q": "Le contrôle des lois de validation par la Cour européenne des droits de l'homme exige :", "choices": ["Un avis du Conseil d'État", "Un impérieux motif d'intérêt général", "L'unanimité du Parlement", "Un référendum"], "answer": 1, "why": "La CEDH admet ces lois rétroactives seulement si elles reposent sur d'impérieux motifs d'intérêt général, au nom du procès équitable." }
+      { "q": "Les trois contrôles de conformité descendante de Kelsen sont :", "choices": ["Légalité, conventionnalité, moralité", "Constitutionnalité, conventionnalité, légalité", "Constitutionnalité, légalité, opportunité", "Conventionnalité, opportunité, moralité"], "answer": 1, "why": "Constitutionnalité de la loi, conventionnalité de la loi, légalité du règlement : la chaîne descendante de la pyramide." },
+      { "q": "Selon la grille de Delmas-Marty, un ordre juridique suppose notamment :", "choices": ["Un territoire national", "Un groupe social identifiable et un intérêt commun", "Une monnaie propre", "Une armée"], "answer": 1, "why": "Groupe social identifiable, intérêt commun, structure unitaire, et les trois pouvoirs de produire, appliquer et faire respecter le droit." },
+      { "q": "L'arrêt Blanco (TC, 1873) pose que :", "choices": ["Le dommage causé par l'administration relève de l'ordre administratif", "La Cour de cassation est un troisième degré", "Le juge peut refuser de statuer", "L'État n'est jamais responsable"], "answer": 0, "why": "Il fonde l'autonomie du droit administratif, confirmant la séparation des pouvoirs sortie de la Révolution de 1790." },
+      { "q": "La Cour de cassation :", "choices": ["Rejuge les faits comme un troisième degré", "Vérifie seulement l'application du droit et peut casser sans trancher elle-même", "Est hors des deux ordres", "N'existe que pour le droit administratif"], "answer": 1, "why": "Elle casse l'arrêt d'appel et renvoie devant une autre cour d'appel, sans jamais rejuger l'affaire elle-même." },
+      { "q": "Le pluralisme juridique signifie que :", "choices": ["Seul l'ordre étatique produit du droit", "L'ordre étatique coexiste avec d'autres ordres (international, religieux, sportif...)", "Le droit international n'existe pas", "Les ordres professionnels sont hors du droit"], "answer": 1, "why": "L'ordre sportif de la FIFA ou l'ordre religieux, par exemple, produisent aussi leurs propres règles." }
     ]
   },
   {
-    "id": "intro-04",
-    "order": 4,
-    "title": "La pyramide de Kelsen : le bloc de constitutionnalité",
-    "teaser": "Au sommet, la Constitution du 4 octobre 1958 — et tout ce que le préambule y a fait entrer.",
+    "id": "intro-06",
+    "order": 6,
+    "title": "La relativité de l'ordre juridique",
+    "teaser": "Du droit romain au Code civil de 1804, puis quatre grandes familles de droit à travers le monde.",
     "minutes": 5,
     "brief": [
-      "Hans Kelsen a proposé de représenter l'ordre juridique comme une **pyramide de normes** : chaque norme tire sa validité de sa conformité à la norme qui lui est supérieure, jusqu'à une norme fondamentale hypothétique. L'intérêt est immense pour un étudiant de L1 : il donne une méthode pour résoudre n'importe quel conflit de normes. La norme inférieure qui contredit la supérieure est irrégulière, et un mécanisme de contrôle doit permettre de la faire disparaître.",
-      "Au sommet de la pyramide française se trouve le **bloc de constitutionnalité**. Il ne se réduit pas au texte de la Constitution du 4 octobre 1958. Par sa décision **Liberté d'association du 16 juillet 1971**, le Conseil constitutionnel a jugé que le préambule de la Constitution avait valeur contraignante : il a donc fait entrer dans le bloc tout ce à quoi ce préambule renvoie.",
-      "Le bloc comprend aujourd'hui : le texte de la Constitution de 1958 lui-même ; la **Déclaration des droits de l'homme et du citoyen de 1789** ; le **préambule de la Constitution de 1946**, qui contient les principes politiques, économiques et sociaux particulièrement nécessaires à notre temps ; la **Charte de l'environnement de 2004** ; et les **principes fondamentaux reconnus par les lois de la République** (PFRLR), dégagés par le Conseil constitutionnel lui-même à partir de lois républicaines antérieures à 1946.",
-      "La décision de 1971 est un basculement. Avant elle, le Conseil constitutionnel n'était guère qu'un régulateur des pouvoirs publics, chargé de tenir le Parlement dans les limites de l'article 34. Après elle, il devient le **garant des droits et libertés**. La révision constitutionnelle de 1974, en ouvrant la saisine à soixante députés ou soixante sénateurs, donnera à ce pouvoir sa portée réelle en permettant à l'opposition de saisir.",
-      "Piège classique : ne pas confondre bloc de constitutionnalité et **bloc de conventionnalité**. Le premier réunit les normes de valeur constitutionnelle, contrôlées par le Conseil constitutionnel ; le second réunit les traités, qui ont une valeur supérieure aux lois mais inférieure à la Constitution, et dont le respect est contrôlé par les juges ordinaires."
+      "L'ordre juridique n'est pas un absolu : il est **relatif** dans le temps comme dans l'espace. Dans le temps, le **droit romain**, dont les grandes compilations remontent au VIᵉ siècle, a exercé une influence considérable sur notre droit. Sous l'**ancien droit** (jusqu'en 1789), le nord de la France vivait sous un système de **coutumes**, le sud sous l'influence persistante du droit romain écrit ; jusqu'en 1804, on parle de **droit intermédiaire**.",
+      "Le **21 mars 1804** marque l'unification du droit civil par le **Code civil napoléonien**, suivi notamment du Code de commerce en 1806. **Portalis**, l'un de ses quatre rédacteurs, l'a présenté publiquement dans son *Discours préliminaire sur le Code civil*, expliquant pourquoi et comment codifier. Le Code est rédigé dans une langue volontairement accessible, conçue pour durer, et son influence a été immense : les juristes du XIXᵉ siècle ont eu du mal à s'en détacher. **Aubry et Rau** importent ensuite la doctrine allemande en France : on cesse de suivre strictement les articles pour réfléchir à partir de grandes conceptions doctrinales — une méthode qui permet de mieux traiter la jurisprudence à venir.",
+      "Le Code civil a considérablement évolué depuis : refonte complète du droit des personnes et de la famille dans les années 1960-1970 ; une deuxième grande vague de réformes depuis 2004 (filiation, mariage, sûretés) ; l'ordonnance du 10 février 2016, qui réforme le droit des obligations. En dehors même du Code civil, les années 1970 ont vu un grand mouvement de codification, destiné à réorganiser l'ensemble du système législatif français.",
+      "Dans l'espace, la doctrine distingue classiquement **quatre grandes familles de droit**. Le **droit civil**, droit rationnel dont le symbole est le Code civil, commandé par la loi, en Europe continentale et en Amérique latine. La **common law**, droit pragmatique dont le symbole est le précédent, commandée par l'action en justice, en Angleterre et dans le Commonwealth — environ un tiers des systèmes juridiques mondiaux. Le **droit musulman**, droit révélé (la parole divine), dont le symbole est la charia, commandé par le Coran et la Sunna, en Afrique du Nord et au Proche et Moyen-Orient. Les **droits traditionnels**, droit ancestral dont le symbole est la coutume, commandés par la tradition du groupe, en Afrique et en Océanie.",
+      "Ces familles ne sont pas cloisonnées : la *common law* n'est pas composée que de jurisprudence, elle comprend aussi une part importante de loi écrite, et la manière de comprendre et d'apprendre le droit diffère selon le système dans lequel on se situe. Se pose alors la question de la **circulation des modèles** : faut-il s'inspirer du droit étranger ? Des démarches de **rapprochement des systèmes juridiques** existent, notamment au sein de l'Union européenne — preuve que le droit s'inscrit toujours dans une **logique de culture**."
     ],
     "keyPoints": [
-      "Kelsen : chaque norme tire sa validité de la norme supérieure.",
-      "Décision Liberté d'association, 16 juillet 1971 : le préambule devient contraignant.",
-      "Le bloc : Constitution 1958 + DDHC 1789 + préambule 1946 + Charte de l'environnement 2004 + PFRLR.",
-      "1974 : l'ouverture de la saisine à 60 parlementaires donne sa portée au contrôle."
+      "21 mars 1804 : Code civil napoléonien, unification après le droit intermédiaire (coutumes au nord, droit romain écrit au sud).",
+      "Portalis : Discours préliminaire ; Aubry et Rau importent la doctrine allemande, réflexion par grandes conceptions.",
+      "Quatre grandes familles de droit : droit civil, common law, droit musulman, droits traditionnels.",
+      "La common law comprend aussi de la loi écrite ; le droit s'inscrit dans une logique de culture."
     ],
     "definitions": [
-      { "term": "Pyramide de Kelsen", "text": "Représentation hiérarchisée de l'ordre juridique dans laquelle la validité de chaque norme dépend de sa conformité à la norme immédiatement supérieure." },
-      { "term": "Bloc de constitutionnalité", "text": "Ensemble des normes de valeur constitutionnelle au regard desquelles le Conseil constitutionnel contrôle la conformité des lois." },
-      { "term": "Décision Liberté d'association", "text": "Décision du Conseil constitutionnel du 16 juillet 1971 reconnaissant valeur constitutionnelle au préambule de la Constitution et, par renvoi, aux textes qu'il vise.", "source": "CC, 16 juillet 1971, n° 71-44 DC" },
-      { "term": "PFRLR", "text": "Principes fondamentaux reconnus par les lois de la République : principes dégagés par le Conseil constitutionnel à partir de lois républicaines antérieures à 1946, auxquels il reconnaît valeur constitutionnelle." },
-      { "term": "Bloc de conventionnalité", "text": "Ensemble des engagements internationaux régulièrement ratifiés, qui ont, dès leur publication, une autorité supérieure à celle des lois.", "source": "Article 55 de la Constitution" }
+      { "term": "Droit intermédiaire", "text": "Période allant de la Révolution de 1789 à l'adoption du Code civil en 1804, durant laquelle le droit français n'était pas encore unifié." },
+      { "term": "Code civil", "text": "Code unifiant le droit civil français, adopté le 21 mars 1804, rédigé notamment par Portalis, conçu dans une langue accessible pour durer." },
+      { "term": "Common law", "text": "Famille de droit pragmatique fondée sur le précédent judiciaire et l'action en justice, dominante en Angleterre et dans le Commonwealth." },
+      { "term": "Droit musulman", "text": "Famille de droit révélé, fondée sur le Coran et la Sunna, dont le symbole est la charia." },
+      { "term": "Circulation des modèles juridiques", "text": "Phénomène par lequel les systèmes juridiques s'inspirent les uns des autres et se rapprochent, notamment au sein de l'Union européenne." }
     ],
     "exam": {
       "kind": "dissertation",
-      "question": "La décision Liberté d'association du 16 juillet 1971 a-t-elle transformé la nature du Conseil constitutionnel ?",
-      "concise": "En 1958, le Conseil constitutionnel est conçu comme le gardien du parlementarisme rationalisé : sa mission est de cantonner le Parlement dans le domaine de l'article 34, non de protéger des droits. La décision du 16 juillet 1971 change radicalement la donne en conférant valeur contraignante au préambule de la Constitution : le Conseil s'attribue ainsi la compétence de contrôler les lois au regard de la Déclaration de 1789, du préambule de 1946 et des principes fondamentaux reconnus par les lois de la République. D'un régulateur des compétences, il devient un **juge des libertés**. Cette transformation reste toutefois incomplète en 1971 : elle n'acquiert sa portée réelle qu'avec la révision de 1974 ouvrant la saisine à l'opposition parlementaire, puis avec celle de 2008 instituant la question prioritaire de constitutionnalité, qui ouvre enfin le prétoire au justiciable.",
+      "question": "Le droit français est-il resté fidèle à ses origines romaines ?",
+      "concise": "Le droit français porte incontestablement l'empreinte du droit romain : sous l'ancien droit, le sud du pays vivait sous son influence écrite directe, et le Code civil de 1804 en a hérité une partie de ses catégories et de son esprit rationnel, au point de fonder la famille du **droit civil**, aujourd'hui répandue en Europe continentale et en Amérique latine. Mais cette fidélité n'est pas figée : le passage par le droit intermédiaire, la doctrine allemande importée par Aubry et Rau, puis les vagues successives de réformes du Code civil (années 1960-1970, 2004, ordonnance de 2016) montrent un droit qui se **transforme** en profondeur tout en gardant sa cohérence rationnelle et codifiée. Sur la scène internationale, cette famille du droit civil coexiste avec trois autres grandes familles — common law, droit musulman, droits traditionnels — dans un mouvement de circulation des modèles qui invite à relativiser toute prétention à l'universalité : le droit reste, toujours, une affaire de culture.",
       "plan": [
         {
-          "title": "I. Une transformation opérée par le Conseil lui-même",
+          "title": "I. Un héritage romain incontestable mais recomposé",
           "children": [
-            { "title": "A. Un Conseil initialement conçu comme régulateur des pouvoirs", "points": ["L'intention des constituants de 1958 : discipliner le Parlement", "Une composition non juridictionnelle : 9 membres nommés, membres de droit", "Un contrôle a priori, réservé à quatre autorités"] },
-            { "title": "B. L'auto-saisine d'une compétence nouvelle en 1971", "points": ["La valeur contraignante reconnue au préambule", "L'intégration de la DDHC, du préambule de 1946 et des PFRLR", "Une décision rendue contre le gouvernement : la liberté d'association préservée"] }
+            { "title": "A. De l'ancien droit au droit intermédiaire", "points": ["Coutumes au nord, droit romain écrit au sud", "Le droit intermédiaire, de 1789 à 1804", "Le Code civil de 1804 : rupture et synthèse"] },
+            { "title": "B. Un Code sans cesse retravaillé", "points": ["Portalis et le Discours préliminaire, une langue conçue pour durer", "Aubry et Rau : la doctrine allemande et les grandes conceptions", "Les réformes de 1960-1970, de 2004, et l'ordonnance de 2016"] }
           ]
         },
         {
-          "title": "II. Une transformation achevée par le constituant",
+          "title": "II. Une famille parmi d'autres, dans un monde de circulation des modèles",
           "children": [
-            { "title": "A. 1974 : l'ouverture de la saisine parlementaire", "points": ["60 députés ou 60 sénateurs peuvent saisir le Conseil", "La constitutionnalité devient une arme de l'opposition", "Multiplication des saisines et densification de la jurisprudence"] },
-            { "title": "B. 2008 : l'accès du justiciable par la QPC", "points": ["Article 61-1 : contrôle a posteriori des atteintes aux droits et libertés", "Le filtrage par le Conseil d'État et la Cour de cassation", "Le risque du gouvernement des juges et l'autolimitation du Conseil"] }
+            { "title": "A. Les quatre grandes familles de droit", "points": ["Le droit civil, rationnel, commandé par la loi", "La common law, pragmatique, commandée par le précédent", "Le droit musulman et les droits traditionnels"] },
+            { "title": "B. La circulation des modèles juridiques", "points": ["La common law comprend aussi de la loi écrite", "Les démarches de rapprochement, notamment au sein de l'Union européenne", "Conclusion : le droit s'inscrit toujours dans une logique de culture"] }
           ]
         }
       ],
       "pitfalls": [
-        "Ne pas écrire que le Conseil constitutionnel est une cour suprême : il ne juge ni les litiges, ni les décisions des deux ordres.",
-        "1971 ne crée pas la QPC : celle-ci date de la révision du 23 juillet 2008."
+        "Ne pas dire que la France n'a jamais eu de droit unifié avant 1804 : il y avait des coutumes et le droit romain écrit, simplement pas de code unique.",
+        "La common law n'est pas un droit purement jurisprudentiel : elle contient aussi une part importante de loi écrite."
       ]
     },
     "quiz": [
-      { "q": "La décision Liberté d'association date du :", "choices": ["16 juillet 1971", "4 octobre 1958", "23 juillet 2008", "29 juillet 1998"], "answer": 0, "why": "Décision n° 71-44 DC du 16 juillet 1971, qui reconnaît la valeur constitutionnelle du préambule." },
-      { "q": "Lequel de ces textes ne fait PAS partie du bloc de constitutionnalité ?", "choices": ["La DDHC de 1789", "Le préambule de 1946", "La Charte de l'environnement de 2004", "La Convention européenne des droits de l'homme"], "answer": 3, "why": "La CEDH relève du bloc de conventionnalité : supérieure aux lois par l'article 55, elle reste inférieure à la Constitution." },
-      { "q": "Les PFRLR sont dégagés à partir :", "choices": ["Des traités européens", "De lois républicaines antérieures à 1946", "De la jurisprudence administrative", "Du Code civil"], "answer": 1, "why": "Le Conseil constitutionnel les déduit de lois républicaines adoptées avant l'entrée en vigueur du préambule de 1946." },
-      { "q": "La révision de 1974 a :", "choices": ["Créé le Conseil constitutionnel", "Ouvert la saisine à 60 députés ou 60 sénateurs", "Créé la QPC", "Supprimé les membres de droit"], "answer": 1, "why": "Elle élargit la saisine à l'opposition parlementaire, ce qui donne au contrôle de 1971 sa portée pratique." },
-      { "q": "Selon Kelsen, la validité d'une norme dépend :", "choices": ["De son efficacité sociale", "De sa conformité à la norme supérieure", "De son ancienneté", "De son caractère écrit"], "answer": 1, "why": "C'est le cœur de la théorie pure du droit : la validité est formelle et découle de la hiérarchie, non du contenu ou du fait." }
+      { "q": "Le Code civil napoléonien est adopté le :", "choices": ["14 juillet 1789", "21 mars 1804", "4 octobre 1958", "16 juillet 1971"], "answer": 1, "why": "Il unifie le droit civil français et marque la fin du droit intermédiaire." },
+      { "q": "Avant 1789, le nord de la France vivait sous :", "choices": ["Le droit romain écrit", "Un système de coutumes", "La charia", "La common law"], "answer": 1, "why": "Le sud, lui, restait sous l'influence persistante du droit romain écrit : deux France juridiques coexistaient." },
+      { "q": "La famille de la common law est commandée par :", "choices": ["La loi", "L'action en justice et le précédent", "Le Coran", "La coutume ancestrale"], "answer": 1, "why": "C'est un droit pragmatique, dont le symbole est le précédent judiciaire, dominant en Angleterre et dans le Commonwealth." },
+      { "q": "L'ordonnance du 10 février 2016 réforme :", "choices": ["Le droit de la famille", "Le droit des obligations", "Le droit constitutionnel", "Le droit pénal"], "answer": 1, "why": "Elle s'inscrit dans la deuxième grande vague de réformes du Code civil, après celle de 2004." },
+      { "q": "Aubry et Rau sont connus pour avoir :", "choices": ["Rédigé le Code civil de 1804", "Importé la doctrine allemande en France", "Créé la Cour de cassation", "Fondé la laïcité"], "answer": 1, "why": "Leur apport a permis de réfléchir à partir de grandes conceptions doctrinales plutôt que de suivre strictement les articles du Code." }
+    ]
+  },
+  {
+    "id": "intro-07",
+    "order": 7,
+    "title": "Le langage du droit",
+    "teaser": "Trois strates de mots, la méthode pour traduire un fait en droit, et negotium contre instrumentum.",
+    "minutes": 5,
+    "brief": [
+      "Le droit parle une langue à **trois strates de mots**. Les **mots propres au droit** n'existent que dans le langage juridique — usufruit, emphytéose, synallagmatique. Les **mots communs à sens technique** sont des mots du langage courant auxquels le droit donne un sens précis, différent du sens usuel : le **fruit** est un bien produit périodiquement par un autre bien, sans que la substance de ce dernier soit entamée (loyers, récoltes, intérêts d'un capital), à distinguer du **produit**, qui entame la substance du bien (le minerai extrait d'une carrière). Enfin, les **mots communs conservés** — vente, prêt — sont gardés tels quels, mais leur emploi déclenche l'application d'un régime juridique précis.",
+      "Traduire un fait en droit suit une méthode en quatre étapes. Prenons l'exemple : « j'ai prêté 100 euros à un ami mais il ne me rembourse pas. » D'abord la **qualification de l'opération** : c'est un contrat de prêt. Ensuite le **droit subjectif qui en naît** : une créance exigible. Puis le **préalable de l'exécution** : une mise en demeure. Enfin le **chemin vers le juge** : une action en paiement.",
+      "L'**acte juridique** — une manifestation de volonté destinée à produire des effets de droit — recouvre deux réalités qu'il ne faut jamais confondre. Le ***negotium*** est l'acte comme opération intellectuelle, l'accord de volontés lui-même. L'***instrumentum*** est l'acte comme écrit qui le constate, le support matériel. L'instrumentum n'est que la **preuve** du negotium : un contrat peut exister sans écrit, sauf lorsque la loi exige un écrit à peine de nullité.",
+      "Le droit garde enfin la mémoire de ses raisonnements les plus fréquents dans des **adages** latins : *specialia generalibus derogant* (le spécial déroge au général, outil quotidien pour résoudre un conflit entre règle générale et règle spéciale), *ubi lex non distinguit, nec nos distinguere debemus* (là où la loi ne distingue pas, il ne faut pas distinguer), *accessorium sequitur principale* (l'accessoire suit le principal), *fraus omnia corrumpit* (la fraude corrompt tout), *nemo auditur propriam turpitudinem allegans* (nul ne peut invoquer sa propre turpitude), et la règle selon laquelle les exceptions sont d'interprétation stricte.",
+      "Ces adages n'ont, à proprement parler, pas valeur de règles de droit — sauf lorsqu'un texte les reprend expressément, auquel cas ils ont la valeur de ce texte. En dehors de ce cas, ce ne sont pas non plus de simples proverbes : ce sont de grands principes, extrêmement anciens, qui s'appliquent en pratique parce qu'ils sont reconnus depuis longtemps par les juristes — leur autorité vient de la tradition, pas d'un texte qui les fonderait."
+    ],
+    "keyPoints": [
+      "Trois strates de mots : propres au droit, communs à sens technique (fruit ≠ produit), communs conservés (vente, prêt).",
+      "Méthode en 4 étapes pour traduire un fait en droit : qualification, droit subjectif, préalable, chemin vers le juge.",
+      "Negotium (l'accord de volontés) contre instrumentum (l'écrit qui le prouve) : l'instrumentum n'est que la preuve du negotium.",
+      "Les adages : ni règles de droit à proprement parler, ni simples proverbes — leur autorité vient de la tradition."
+    ],
+    "definitions": [
+      { "term": "Mot commun à sens technique", "text": "Mot du langage courant auquel le droit donne un sens précis et différent du sens usuel, comme le fruit, opposé au produit." },
+      { "term": "Negotium", "text": "L'acte juridique envisagé comme opération intellectuelle, l'accord de volontés lui-même, indépendamment de tout écrit." },
+      { "term": "Instrumentum", "text": "L'acte juridique envisagé comme écrit qui le constate, simple preuve du negotium, sauf lorsque la loi l'exige à peine de nullité." },
+      { "term": "Adage", "text": "Formule latine ancienne exprimant un principe juridique reconnu par la tradition des juristes, sans valeur de règle de droit sauf reprise expresse par un texte." },
+      { "term": "Mise en demeure", "text": "Préalable formel à l'exécution forcée d'une obligation, sommant le débiteur de s'exécuter avant toute action en justice." }
+    ],
+    "exam": {
+      "kind": "question de cours",
+      "question": "Distinguez le negotium et l'instrumentum d'un acte juridique, et expliquez pourquoi cette distinction compte.",
+      "concise": "L'acte juridique se définit comme une manifestation de volonté destinée à produire des effets de droit, mais le mot « acte » recouvre deux réalités distinctes. Le **negotium** est l'acte comme opération intellectuelle : l'accord de volontés lui-même, la rencontre des consentements qui donne naissance au contrat, indépendamment de toute trace écrite. L'**instrumentum** est l'acte comme écrit qui le constate : le support matériel, la trace papier ou numérique de cet accord. La distinction est décisive parce qu'elle hiérarchise les deux notions : l'instrumentum n'est que la **preuve** du negotium, jamais sa condition d'existence. Un contrat peut donc parfaitement exister sans aucun écrit — c'est le principe en droit français — sauf dans les cas où la loi exige expressément un écrit à peine de nullité (par exemple pour certains actes solennels). Confondre les deux conduit à l'erreur classique consistant à croire qu'un accord verbal ne serait « pas un vrai contrat » : il l'est, seule sa preuve est plus difficile à rapporter en cas de litige.",
+      "plan": [
+        {
+          "title": "I. Deux réalités distinctes recouvertes par le même mot",
+          "children": [
+            { "title": "A. Le negotium, l'accord de volontés", "points": ["Une opération purement intellectuelle", "La rencontre des consentements, cœur de l'acte juridique", "Indépendant de toute trace matérielle"] },
+            { "title": "B. L'instrumentum, le support de la preuve", "points": ["L'écrit qui constate l'accord déjà formé", "Un rôle probatoire, non constitutif", "Support papier ou, désormais, numérique"] }
+          ]
+        },
+        {
+          "title": "II. Une hiérarchie aux conséquences pratiques",
+          "children": [
+            { "title": "A. Le principe : l'écrit n'est pas une condition d'existence", "points": ["Un contrat peut exister sans aucun écrit", "L'instrumentum ne fait que prouver le negotium déjà formé", "L'exception : les actes solennels exigeant un écrit à peine de nullité"] },
+            { "title": "B. L'enjeu pratique de la distinction", "points": ["Éviter l'erreur consistant à nier la validité d'un accord verbal", "La difficulté de la preuve en l'absence d'instrumentum", "Conclusion : negotium et instrumentum, deux moments distincts de l'acte juridique"] }
+          ]
+        }
+      ],
+      "pitfalls": [
+        "Ne pas confondre l'exigence d'un écrit à peine de nullité (condition de validité) et l'exigence d'un écrit à des fins de preuve (condition probatoire) : ce sont deux régimes différents.",
+        "Un contrat sans écrit n'est pas un contrat imparfait : il est valide, seule sa preuve est plus délicate."
+      ]
+    },
+    "quiz": [
+      { "q": "Le fruit, en droit, se distingue du produit parce qu'il :", "choices": ["Vaut plus cher", "Est produit sans entamer la substance du bien", "N'existe qu'en droit rural", "Est toujours un bien immobilier"], "answer": 1, "why": "Le produit entame la substance du bien (le minerai d'une carrière), le fruit non (loyers, récoltes, intérêts)." },
+      { "q": "Dans la méthode de traduction d'un fait en droit, la première étape est :", "choices": ["L'action en justice", "La qualification de l'opération", "La mise en demeure", "Le droit subjectif"], "answer": 1, "why": "Il faut d'abord qualifier les faits avant d'en tirer un droit subjectif, un préalable, puis un chemin vers le juge." },
+      { "q": "Le negotium désigne :", "choices": ["L'écrit qui prouve l'accord", "L'accord de volontés lui-même", "Le juge qui tranche", "La sanction de l'inexécution"], "answer": 1, "why": "C'est l'opération intellectuelle ; l'instrumentum, à l'inverse, est le support écrit qui la constate." },
+      { "q": "Un contrat peut exister :", "choices": ["Uniquement s'il est écrit", "Sans écrit, sauf exigence légale à peine de nullité", "Uniquement devant notaire", "Jamais sans témoin"], "answer": 1, "why": "L'instrumentum n'est que la preuve du negotium, pas sa condition d'existence, sauf exception légale." },
+      { "q": "L'adage « specialia generalibus derogant » signifie :", "choices": ["La fraude corrompt tout", "Le spécial déroge au général", "L'accessoire suit le principal", "Nul ne peut invoquer sa propre turpitude"], "answer": 1, "why": "Outil quotidien pour résoudre un conflit entre une règle générale et une règle spéciale applicables au même cas." }
     ]
   }
 ]
