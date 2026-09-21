@@ -46,11 +46,31 @@ export async function GET(req: Request) {
 
   const { data: abonnements, error } = await sb
     .from("push_subscriptions")
-    .select("endpoint, p256dh, auth")
+    .select("endpoint, p256dh, auth, user_id")
     .eq("hour", heure);
 
   if (error) return NextResponse.json({ error: error.message }, { status: 500 });
   if (!abonnements?.length) return NextResponse.json({ envoyes: 0, heure });
+
+  // Un élève qui a déjà fait sa séance du jour n'a pas besoin qu'on le lui
+  // rappelle : on ne filtre que ceux dont l'abonnement est relié à un compte
+  // (élève connecté), faute de pouvoir savoir ce qu'un visiteur en mode
+  // appareil uniquement a déjà fait.
+  const idsConnus = [...new Set(abonnements.map((a) => a.user_id).filter((id): id is string => Boolean(id)))];
+  const dejaFaitAujourdhui = new Set<string>();
+  if (idsConnus.length) {
+    const aujourdhui = new Intl.DateTimeFormat("fr-CA", { timeZone: "Europe/Paris" }).format(new Date());
+    const { data: progressions } = await sb
+      .from("progress")
+      .select("user_id, state")
+      .in("user_id", idsConnus);
+    for (const p of progressions ?? []) {
+      const lastDay = (p.state as { streak?: { lastDay?: string } } | null)?.streak?.lastDay;
+      if (lastDay === aujourdhui) dejaFaitAujourdhui.add(p.user_id as string);
+    }
+  }
+
+  const aEnvoyer = abonnements.filter((a) => !a.user_id || !dejaFaitAujourdhui.has(a.user_id));
 
   const message = MESSAGES[new Date().getDate() % MESSAGES.length];
   const charge = JSON.stringify({ ...message, url: "/" });
@@ -59,7 +79,7 @@ export async function GET(req: Request) {
   const perimes: string[] = [];
 
   await Promise.all(
-    abonnements.map(async (a) => {
+    aEnvoyer.map(async (a) => {
       try {
         await wp.sendNotification(
           { endpoint: a.endpoint, keys: { p256dh: a.p256dh, auth: a.auth } },
@@ -78,5 +98,10 @@ export async function GET(req: Request) {
     await sb.from("push_subscriptions").delete().in("endpoint", perimes);
   }
 
-  return NextResponse.json({ envoyes, nettoyes: perimes.length, heure });
+  return NextResponse.json({
+    envoyes,
+    nettoyes: perimes.length,
+    dejaFait: dejaFaitAujourdhui.size,
+    heure,
+  });
 }

@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { useStudiJur } from "@/lib/state";
+import { getSupabase } from "@/lib/supabase";
 import { Button, SectionTitle } from "./ui";
 import { Check, Cross, Flame } from "./icons";
 
@@ -60,10 +61,16 @@ export default function Rappel() {
           applicationServerKey: cleVersOctets(CLE) as BufferSource,
         }));
 
+      // Si l'élève est connecté, on relie l'abonnement push à son compte pour
+      // que le cron puisse vérifier s'il a déjà fait sa leçon du jour avant
+      // d'envoyer le rappel (sinon il n'y a aucun moyen de le savoir).
+      const sb = getSupabase();
+      const userId = sb ? (await sb.auth.getUser()).data.user?.id ?? null : null;
+
       const res = await fetch("/api/push/subscribe", {
         method: "POST",
         headers: { "content-type": "application/json" },
-        body: JSON.stringify({ subscription: sub.toJSON(), hour: heure }),
+        body: JSON.stringify({ subscription: sub.toJSON(), hour: heure, userId }),
       });
       const data = await res.json();
       if (!res.ok) {

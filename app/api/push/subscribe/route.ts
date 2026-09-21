@@ -8,6 +8,7 @@ type Corps = {
   subscription?: { endpoint?: string; keys?: { p256dh?: string; auth?: string } };
   hour?: number;
   email?: string | null;
+  userId?: string | null;
 };
 
 export async function POST(req: Request) {
@@ -43,6 +44,11 @@ export async function POST(req: Request) {
       auth: sub.keys.auth,
       hour,
       email: corps.email ?? null,
+      // Permet au cron de vérifier, via la table `progress`, si la leçon du
+      // jour est déjà faite avant d'envoyer le rappel. Optionnel : un
+      // visiteur non connecté (mode appareil uniquement) reste notifié sans
+      // ce filtre, faute de pouvoir savoir ce qu'il a déjà fait.
+      user_id: corps.userId ?? null,
       updated_at: new Date().toISOString(),
     },
     { onConflict: "endpoint" },
