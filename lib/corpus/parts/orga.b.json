@@ -230,5 +230,63 @@
       { "q": "Le contrôle est obligatoire pour :", "choices": ["Les lois ordinaires", "Les lois organiques et les règlements des assemblées", "Les décrets", "Les traités"], "answer": 1, "why": "Ces deux catégories sont systématiquement contrôlées avant leur entrée en vigueur ; les autres supposent une saisine." },
       { "q": "Si un engagement international est déclaré contraire à la Constitution :", "choices": ["Il est nul", "Il s'applique quand même", "Il faut réviser la Constitution avant de le ratifier", "Le juge l'écarte"], "answer": 2, "why": "Mécanisme de l'article 54, mis en œuvre notamment avant la ratification du traité de Maastricht en 1992." }
     ]
+  },
+  {
+    "id": "orga-09",
+    "order": 9,
+    "title": "Les juridictions supranationales",
+    "teaser": "CIJ contre CPI, CEDH contre CJUE : quatre juridictions, quatre logiques, un seul piège.",
+    "minutes": 5,
+    "brief": [
+      "Au-delà des deux ordres français et du Conseil constitutionnel existent des juridictions **supranationales**, rattachées à des organisations internationales distinctes. Les confondre est l'erreur la plus fréquente de cette partie du programme : chacune a son rattachement, son public à juger, son siège et sa composition propres.",
+      "La **Cour internationale de justice (CIJ)** et la **Cour pénale internationale (CPI)** sont toutes deux rattachées à l'**ONU** et siègent à **La Haye**, mais elles ne jugent pas les mêmes sujets. La CIJ juge des **États** — différends territoriaux, frontaliers, diplomatiques — avec 15 juges élus pour 9 ans. La CPI juge des **individus**, pour les crimes les plus graves (génocide, crimes de guerre, crimes contre l'humanité, crime d'agression), avec 18 juges élus pour 9 ans ; elle est née du **Statut de Rome** de 1998, entré en vigueur en 2002. L'**Organe de règlement des différends (ORD)** de l'**OMC**, créé en 1995 et siégeant à Genève, juge quant à lui des différends commerciaux entre États.",
+      "La **Cour de justice de l'Union européenne (CJUE)** ne doit jamais être confondue avec la **Cour européenne des droits de l'homme (CEDH)** — c'est le piège le plus classique de tout le chapitre. La CJUE est rattachée à l'**Union européenne**, siège à **Luxembourg**, compte 27 juges (un par État membre) élus pour 6 ans, et veille au respect du droit de l'Union par les États comme par les actes des institutions. Elle dispose de quatre recours principaux, retenus par le mnémo **« MIAC »** : **M**anquement (contre un État qui viole le droit de l'Union), **I**nterprétation ou question préjudicielle (posée par un juge national), **A**nnulation (d'un acte de l'Union), **C**arence (contre une institution qui s'abstient d'agir).",
+      "La **CEDH** est rattachée au **Conseil de l'Europe** — 46 États, une organisation bien plus large que l'Union européenne — et siège à **Strasbourg**, avec 46 juges élus pour 9 ans. Elle juge les États pour violation de la Convention européenne des droits de l'homme, adoptée le 4 novembre 1950, à la demande de tout particulier ayant **épuisé toutes les voies de recours internes** (dans un délai de 4 mois après le pourvoi en cassation). Ni la CEDH ni la CJUE ne peuvent annuler une norme de droit national : la CEDH indemnise le requérant, la CJUE demande à l'État de se mettre en conformité, puis le sanctionne financièrement s'il n'obtempère pas."
+    ],
+    "keyPoints": [
+      "CIJ (États, ONU, La Haye, 15 juges) ≠ CPI (individus, ONU, La Haye, 18 juges).",
+      "CEDH (Conseil de l'Europe, 46 États, Strasbourg) ≠ CJUE (Union européenne, 27 juges, Luxembourg) — le piège le plus classique.",
+      "Les 4 recours devant la CJUE, mnémo « MIAC » : Manquement, Interprétation, Annulation, Carence.",
+      "Ni la CEDH ni la CJUE n'annulent le droit national : indemnisation d'un côté, sanction financière progressive de l'autre."
+    ],
+    "definitions": [
+      { "term": "Cour internationale de justice (CIJ)", "text": "Juridiction de l'ONU, siégeant à La Haye, qui juge les différends entre États. 15 juges élus pour 9 ans." },
+      { "term": "Cour pénale internationale (CPI)", "text": "Juridiction de l'ONU, siégeant à La Haye, qui juge des individus pour génocide, crimes de guerre, crimes contre l'humanité et crime d'agression.", "source": "Statut de Rome, 1998" },
+      { "term": "Cour de justice de l'Union européenne (CJUE)", "text": "Juridiction de l'Union européenne, siégeant à Luxembourg, composée de 27 juges élus pour 6 ans, chargée de faire respecter le droit de l'Union." },
+      { "term": "Cour européenne des droits de l'homme (CEDH)", "text": "Juridiction du Conseil de l'Europe (46 États), siégeant à Strasbourg, qui juge les États pour violation de la Convention européenne des droits de l'homme.", "source": "Convention adoptée le 4 novembre 1950" },
+      { "term": "Épuisement des voies de recours internes", "text": "Condition de recevabilité d'une requête devant la CEDH : le requérant doit avoir utilisé tous les recours disponibles dans son pays avant de saisir la Cour, dans un délai de 4 mois après le pourvoi en cassation." }
+    ],
+    "exam": {
+      "kind": "question de cours",
+      "question": "Distinguez la CEDH et la CJUE : rattachement, mission, composition et pouvoirs.",
+      "concise": "La confusion entre ces deux juridictions est le piège le plus classique du chapitre, alors qu'elles n'ont ni le même rattachement, ni la même mission. La **CEDH** dépend du **Conseil de l'Europe**, une organisation de 46 États bien plus large que l'Union européenne ; elle siège à **Strasbourg**, compte 46 juges élus pour 9 ans, et juge les **États** pour violation de la Convention européenne des droits de l'homme de 1950, sur requête d'un particulier ayant épuisé les voies de recours internes. La **CJUE** dépend de l'**Union européenne** ; elle siège à **Luxembourg**, compte 27 juges élus pour 6 ans (un par État membre), et veille au respect du **droit de l'Union**, aussi bien par les États que par les institutions elles-mêmes, au moyen de quatre recours principaux (manquement, interprétation, annulation, carence). Aucune des deux ne peut annuler une norme de droit national : la CEDH se borne à indemniser le requérant, tandis que la CJUE peut, après un premier arrêt en manquement resté sans effet, infliger à l'État une sanction financière.",
+      "plan": [
+        {
+          "title": "I. Deux rattachements et deux publics distincts",
+          "children": [
+            { "title": "A. La CEDH, juridiction du Conseil de l'Europe", "points": ["46 États membres, une organisation distincte de l'Union européenne", "Siège à Strasbourg, 46 juges élus pour 9 ans", "Juge les États, sur requête individuelle, pour violation de la Convention de 1950"] },
+            { "title": "B. La CJUE, juridiction de l'Union européenne", "points": ["27 juges, un par État membre, élus pour 6 ans", "Siège à Luxembourg", "Veille au respect du droit de l'Union par les États et par les institutions"] }
+          ]
+        },
+        {
+          "title": "II. Des voies de droit et des pouvoirs différents",
+          "children": [
+            { "title": "A. La recevabilité devant la CEDH", "points": ["Épuisement préalable de toutes les voies de recours internes", "Délai de 4 mois après le pourvoi en cassation", "Issue : un constat de violation, jamais une annulation du droit national"] },
+            { "title": "B. Les quatre recours devant la CJUE", "points": ["Le mnémo MIAC : manquement, interprétation (question préjudicielle), annulation, carence", "La question préjudicielle, posée par le juge national lui-même", "La sanction financière en cas de manquement persistant d'un État"] }
+          ]
+        }
+      ],
+      "pitfalls": [
+        "Ne jamais confondre CEDH et CJUE : rattachement, siège, composition et pouvoirs sont entièrement différents.",
+        "Ni la CEDH ni la CJUE n'annulent une loi nationale : elles indemnisent ou sanctionnent, elles ne se substituent pas au législateur national."
+      ]
+    },
+    "quiz": [
+      { "q": "La CIJ et la CPI sont toutes deux rattachées :", "choices": ["À l'Union européenne", "Au Conseil de l'Europe", "À l'ONU", "À l'OMC"], "answer": 2, "why": "Les deux siègent à La Haye et dépendent de l'ONU, mais la CIJ juge des États et la CPI des individus." },
+      { "q": "La CEDH est rattachée :", "choices": ["À l'Union européenne", "Au Conseil de l'Europe", "À l'ONU", "À l'OMC"], "answer": 1, "why": "Le Conseil de l'Europe compte 46 États, bien plus que l'Union européenne : c'est une organisation distincte." },
+      { "q": "Le mnémo « MIAC » désigne les recours devant :", "choices": ["La CEDH", "La CJUE", "La CIJ", "La CPI"], "answer": 1, "why": "Manquement, Interprétation, Annulation, Carence : les quatre recours principaux devant la Cour de justice de l'Union européenne." },
+      { "q": "Pour saisir la CEDH, un particulier doit d'abord :", "choices": ["Obtenir l'accord de son gouvernement", "Épuiser toutes les voies de recours internes", "Saisir la CJUE", "Payer une caution"], "answer": 1, "why": "Condition de recevabilité classique, dans un délai de 4 mois après le pourvoi en cassation." },
+      { "q": "Ni la CEDH ni la CJUE ne peuvent :", "choices": ["Juger un État", "Annuler une norme de droit national", "Être saisies par un particulier ou un juge national", "Condamner financièrement"], "answer": 1, "why": "La CEDH indemnise, la CJUE sanctionne financièrement en cas de manquement persistant : aucune des deux n'annule directement le droit national." }
+    ]
   }
 ]
