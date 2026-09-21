@@ -1,0 +1,350 @@
+[
+  {
+    "id": "histoire-07",
+    "order": 7,
+    "title": "L'époque franque : société et royauté mérovingienne",
+    "teaser": "Clovis, la loi salique et le bannum — un pouvoir royal absolu mais patrimonial.",
+    "minutes": 5,
+    "brief": [
+      "En 480, la Gaule romaine est partagée entre plusieurs royaumes barbares : les Francs au nord, les Wisigoths au sud, les Alamans à l'est. Le territoire reste majoritairement peuplé de Gallo-romains chrétiens, mais les peuples barbares, minoritaires, s'imposent politiquement, avec des confessions diverses — les Francs sont païens, les Burgondes ariens. **Clovis**, qui règne de 481 à 511, réunit sous son autorité la communauté franque jusque-là divisée, étend son territoire par des victoires successives. Dès 486, après la bataille de Soissons, un épisode symbolique — celui du **vase de Soissons**, qu'un guerrier franc brise malgré l'accord conclu entre Clovis et l'évêque pour le restituer au clergé — illustre déjà la volonté de Clovis de s'appuyer sur l'Église pour administrer les territoires conquis. En 496, après une bataille où il invoque avec succès le dieu de son épouse chrétienne Clotilde, il reçoit le baptême et devient chrétien lui-même, gagnant ainsi la confiance des populations gallo-romaines, déjà largement catholiques. Il est considéré comme le fondateur de la monarchie française ; c'est en sa mémoire que la plupart des rois de France porteront le nom de Louis. Deux dynasties se succèdent chez les Francs : les **Mérovingiens** (Ve-VIIIe siècle) puis les **Carolingiens** (VIIIe-Xe siècle).",
+      "La société franque distingue les **libres**, juridiquement capables — se marier, transmettre des biens — mais hiérarchisés en fait entre une aristocratie influente et de simples hommes libres, et les **non-libres**, les esclaves, frappés d'une lourde incapacité juridique : ils ne peuvent détenir de patrimoine ni agir en justice, et peuvent être achetés ou vendus. Entre les deux, des situations intermédiaires : l'**affranchi**, qui garde des devoirs envers son ancien maître, et le **colon**, homme libre attaché à une terre qu'il ne peut quitter mais dont les enfants restent libres. La **commendatio**, ancêtre de la vassalité, permet à un homme libre de se placer sous la protection d'un plus puissant en échange de services.",
+      "Le roi mérovingien tire sa légitimité de deux sources : l'**hérédité**, la conviction que le sang royal donne un droit à régner, héritée de croyances païennes antérieures à la christianisation ; et l'**approbation** de l'aristocratie, une légitimité élective qui vient compléter la première. Le roi est nécessairement un chef de guerre — la guerre est source de prestige et de butin pour l'aristocratie qui l'accompagne. Son pouvoir est **absolu**, délié de tout contrat, exercé sans contre-pouvoir institutionnalisé sur l'ensemble du royaume. Il détient deux attributs majeurs : le **bannum**, pouvoir de commandement qui lui donne le droit d'ordonner, d'interdire et de contraindre ; et le **mundium**, pouvoir protecteur, comparable à celui du mari envers sa femme ou du père envers ses enfants.",
+      "Enfin, la conception mérovingienne du royaume est **patrimoniale** : à la mort du roi, le royaume est partagé entre ses fils, en application de la **loi salique**, qui exclut les filles de la terre salique — la terre des ancêtres. À la mort de Clovis, le royaume est ainsi partagé en quatre, chaque fils gouvernant sa part selon sa propre logique, sans coordination, ce qui est source récurrente de guerre et de violence entre héritiers."
+    ],
+    "keyPoints": [
+      "Clovis (481-511) : unifie les Francs, s'étend militairement, se convertit au christianisme.",
+      "Société : libres (hiérarchisés) / non-libres (esclaves) / situations intermédiaires (affranchis, colons).",
+      "Légitimité royale mérovingienne : hérédité (sang royal) + approbation de l'aristocratie.",
+      "Bannum (commandement) et mundium (protection) ; royaume patrimonial partagé entre fils à la mort du roi (loi salique)."
+    ],
+    "definitions": [
+      { "term": "Commendatio", "text": "Acte par lequel un homme libre entre dans la dépendance d'un homme libre plus puissant, en échange de sa protection ; ancêtre de la vassalité." },
+      { "term": "Bannum", "text": "Attribut du pouvoir royal mérovingien donnant au roi le droit d'ordonner, d'interdire et de contraindre ses sujets sur l'ensemble du royaume." },
+      { "term": "Mundium", "text": "Pouvoir protecteur du roi, comparable à celui du mari envers sa femme ou du père envers ses enfants, second attribut du pouvoir royal mérovingien avec le bannum." },
+      { "term": "Loi salique", "text": "Loi d'origine coutumière des Francs saliens, mise par écrit sous Clovis, disposant que la terre salique doit être partagée entre les fils à l'exclusion des filles." },
+      { "term": "Conception patrimoniale du royaume", "text": "Conception selon laquelle le royaume, comme un bien privé, est partagé entre les héritiers du roi à sa mort, chacun gouvernant sa part sans coordination avec les autres." }
+    ],
+    "exam": {
+      "kind": "question de cours",
+      "question": "Sur quoi repose la légitimité du roi mérovingien ?",
+      "concise": "La légitimité royale mérovingienne repose sur deux fondements complémentaires. Le premier est l'**hérédité** : aux yeux des Francs, seules les personnes issues de la famille mérovingienne sont légitimes à régner, une conviction du sang qui remonte à d'anciennes croyances païennes et qui subsiste malgré la christianisation progressive du royaume. Le second est l'**approbation**, une forme de légitimité élective, dans la mesure où le roi a besoin du soutien de l'aristocratie pour exercer effectivement son pouvoir — un roi mérovingien est nécessairement un chef de guerre, et la guerre profite à l'aristocratie qui l'accompagne par le prestige et le butin qu'elle rapporte. Cette légitimité se traduit concrètement par deux attributs de pouvoir : le **bannum**, pouvoir de commandement qui permet au roi d'ordonner, d'interdire et de contraindre, et le **mundium**, pouvoir protecteur exercé sur l'ensemble du royaume. Le pouvoir royal est ainsi présenté comme absolu et délié de tout contrat, mais il reste en pratique dépendant du soutien de l'aristocratie qui l'a porté au pouvoir.",
+      "plan": [
+        {
+          "title": "I. Une légitimité à double fondement",
+          "children": [
+            { "title": "A. L'hérédité, fondement premier", "points": ["La conviction du sang royal, issue de croyances païennes", "Une légitimité qui subsiste malgré la christianisation", "Seuls les Mérovingiens peuvent régner"] },
+            { "title": "B. L'approbation de l'aristocratie", "points": ["Une légitimité élective complémentaire de l'hérédité", "Le roi, nécessairement chef de guerre", "La guerre comme source de prestige pour l'aristocratie qui suit le roi"] }
+          ]
+        },
+        {
+          "title": "II. Un pouvoir concrètement défini par deux attributs",
+          "children": [
+            { "title": "A. Le bannum, pouvoir de commandement", "points": ["Le droit d'ordonner, d'interdire, de contraindre", "Un pouvoir exercé sur l'ensemble du royaume", "Une absence de contre-pouvoir institutionnalisé"] },
+            { "title": "B. Le mundium, pouvoir protecteur", "points": ["Une puissance protectrice comparable au pouvoir du père de famille", "Un pouvoir qui complète le bannum sans le limiter", "Conclusion : un pouvoir affiché comme absolu, mais dépendant du soutien aristocratique"] }
+          ]
+        }
+      ],
+      "pitfalls": [
+        "Ne pas dire que le pouvoir mérovingien est uniquement héréditaire : l'approbation de l'aristocratie est un second fondement essentiel.",
+        "La loi salique exclut les filles de la terre salique ; elle ne signifie pas que le royaume n'est jamais partagé — c'est le contraire, il l'est entre les fils."
+      ]
+    },
+    "quiz": [
+      { "q": "Clovis règne de :", "choices": ["481 à 511", "509 à 543", "751 à 768", "800 à 814"], "answer": 0, "why": "751 est l'avènement de Pépin le Bref, 800 le couronnement impérial de Charlemagne." },
+      { "q": "Le bannum est :", "choices": ["Un pouvoir protecteur", "Un pouvoir de commandement (ordonner, interdire, contraindre)", "Un impôt royal", "Une assemblée du royaume"], "answer": 1, "why": "Le mundium, à distinguer du bannum, est le pouvoir protecteur du roi." },
+      { "q": "La loi salique dispose que la terre salique :", "choices": ["Revient entièrement à l'aîné", "Est partagée entre les fils, à l'exclusion des filles", "Est partagée entre tous les enfants sans distinction", "Revient à l'Église"], "answer": 1, "why": "Une conception patrimoniale du royaume, source de partages et de conflits entre héritiers." },
+      { "q": "Le colon, dans la société franque, est :", "choices": ["Un esclave", "Un homme libre attaché à une terre qu'il ne peut quitter", "Un magistrat royal", "Un membre du clergé"], "answer": 1, "why": "Situation intermédiaire : il reste juridiquement libre, mais sa liberté de mouvement est limitée." },
+      { "q": "La commendatio est l'ancêtre :", "choices": ["Du bannum", "De la vassalité", "De la loi salique", "Du mundium"], "answer": 1, "why": "Un homme libre se place sous la protection d'un plus puissant en échange de services : c'est l'origine du lien vassalique." }
+    ]
+  },
+  {
+    "id": "histoire-08",
+    "order": 8,
+    "title": "L'époque franque : administration et église mérovingiennes",
+    "teaser": "Le palais, les comtes, les référendaires — une administration qui écrit déjà beaucoup.",
+    "minutes": 5,
+    "brief": [
+      "Le **palais** est le cœur de l'administration mérovingienne : ce n'est pas un lieu fixe, mais la structure qui rassemble les résidences où le roi se déplace en permanence. On y trouve des **officiers palatins**, nommés par le roi, aux fonctions à la fois domestiques et politiques. Les **référendaires** mettent par écrit les actes officiels transmettant la volonté du roi et scellent le sceau royal, seul gage d'authenticité — sans lui, un acte n'a pas de valeur. Ils sont en latin, langue du pouvoir jusqu'au XVIe siècle. Le **maire du palais**, premier des officiers palatins et premier conseiller du roi, prend une importance croissante à partir du VIIe siècle, au point de concurrencer le roi lui-même dans la prise de décision — c'est de cette fonction que naîtra la dynastie carolingienne. Le **tribunal du palais**, enfin, est une juridiction d'exception réservée aux affaires où le roi est directement impliqué.",
+      "Les **plaides** sont des assemblées populaires réunissant les principaux cadres du royaume — l'élite de l'aristocratie, jamais le peuple — pour conseiller le roi sur les décisions importantes. Le principal plaide de l'année, en mars, s'appelle le **champ de mars**, moment de mobilisation militaire. Quand le roi est en position de force, le plaide valide sa volonté ; quand il est faible, il devient un contre-pouvoir. Localement, le royaume est divisé en **comtés**, à la tête desquels le roi nomme un **comte** — ancêtre de notre préfet — qui exerce en son nom le bannum et le mundium : maintien de l'ordre, justice (il préside le tribunal comtal, le *mallus*), levée de l'impôt et des troupes. Le **duc**, chef de guerre temporaire, rassemble parfois plusieurs comtés pour des missions militaires.",
+      "L'**Église** mérovingienne est une institution particulière, sans chef unique avant le XIe siècle. Le **clergé séculier**, connecté au quotidien des laïcs, est organisé autour de l'**évêque**, à la tête d'un diocèse ; certains, **métropolitains**, coordonnent plusieurs diocèses au sein d'une province. Le rôle de l'évêque est à la fois religieux et politique : il facilite les relations entre le comte et la population, conseille le roi, vient en aide aux plus vulnérables, et exerce parfois des attributions comtales par dérogation.",
+      "Le **clergé régulier**, à l'inverse, se retire du monde dans des **monastères** — des lieux qui favorisent l'aménagement du territoire et deviennent d'importants centres culturels. L'époque mérovingienne décline progressivement, à mesure que le pouvoir royal s'affaiblit face à des rois de plus en plus jeunes ou fainéants et à des maires du palais de plus en plus puissants. Au début du VIIIe siècle, un maire du palais et son fils, également maire du palais, préparent le coup d'État qui mettra fin à la dynastie mérovingienne."
+    ],
+    "keyPoints": [
+      "Palais : structure mobile, référendaires (actes écrits, sceau), maire du palais (concurrence croissante du roi dès le VIIe siècle).",
+      "Localement : comtes (bannum, mundium, justice au mallus), ducs (chefs de guerre temporaires).",
+      "Plaides : assemblées de l'aristocratie, pas du peuple ; le champ de mars en mars.",
+      "Église : clergé séculier (évêques, diocèses) / clergé régulier (monastères) ; pas de chef unique avant le XIe siècle."
+    ],
+    "definitions": [
+      { "term": "Référendaire", "text": "Officier palatin mérovingien chargé de mettre par écrit les actes royaux et d'y apposer le sceau du roi, seul gage de leur authenticité." },
+      { "term": "Maire du palais", "text": "Premier des officiers palatins et premier conseiller du roi ; sa fonction, d'abord subordonnée, prend une importance croissante à partir du VIIe siècle jusqu'à concurrencer le roi lui-même." },
+      { "term": "Comte", "text": "Agent royal à la tête d'un comté, exerçant au nom du roi le bannum et le mundium : maintien de l'ordre, justice au mallus, levée de l'impôt et des troupes ; ancêtre du préfet." },
+      { "term": "Plaide", "text": "Assemblée populaire réunissant les principaux cadres de l'aristocratie pour conseiller le roi sur les décisions importantes, jamais le peuple lui-même." },
+      { "term": "Métropolitain", "text": "Évêque à la tête d'une province regroupant plusieurs diocèses, chargé de coordonner les évêques de sa province sans avoir vocation à leur donner des ordres." }
+    ],
+    "exam": {
+      "kind": "question de cours",
+      "question": "Comment expliquer la montée en puissance du maire du palais jusqu'à concurrencer le roi ?",
+      "concise": "Le maire du palais est, à l'origine, le premier des officiers palatins et le premier conseiller du roi : sa fonction est de superviser le fonctionnement du palais, structure mobile qui suit les déplacements royaux. Cette position centrale, proche du roi et de l'ensemble de son administration, lui donne progressivement un poids croissant. À partir du **VIIe siècle**, les maires du palais commencent à concurrencer le roi lui-même dans la prise de décision, à mesure que la royauté mérovingienne s'affaiblit — des rois de plus en plus jeunes, parfois qualifiés de « rois fainéants », laissent le pouvoir réel glisser vers cette fonction. Le roi finit même par perdre la capacité de nommer lui-même son maire du palais, signe que le rapport de force s'est inversé. C'est de cette fonction que naît, au début du VIIIe siècle, la dynastie **carolingienne** : un maire du palais, puis son fils après lui, préparent le coup d'État qui mettra fin à la lignée mérovingienne — la fonction technique d'origine s'est transformée en position de pouvoir réel, prête à devenir un titre royal.",
+      "plan": [
+        {
+          "title": "I. Une fonction d'origine subordonnée mais centrale",
+          "children": [
+            { "title": "A. Le premier des officiers palatins", "points": ["Une fonction de supervision du palais", "Le premier conseiller du roi", "Une position d'accès privilégié à l'administration royale"] },
+            { "title": "B. Une centralité qui devient un atout politique", "points": ["Une présence continue auprès du roi", "Un contrôle croissant des rouages administratifs", "Un point de passage obligé pour les décisions importantes"] }
+          ]
+        },
+        {
+          "title": "II. Une inversion progressive du rapport de force",
+          "children": [
+            { "title": "A. L'affaiblissement de la royauté mérovingienne", "points": ["Des rois de plus en plus jeunes ou passifs (« rois fainéants »)", "Un pouvoir royal réduit à une fonction symbolique", "Le maire du palais qui gouverne effectivement à sa place"] },
+            { "title": "B. La naissance de la dynastie carolingienne", "points": ["Le roi perd même la capacité de nommer son maire du palais", "Une fonction héréditaire de fait dès le début du VIIIe siècle", "Conclusion : le coup d'État qui transforme la fonction en titre royal"] }
+          ]
+        }
+      ],
+      "pitfalls": [
+        "Le maire du palais n'est pas, à l'origine, un poste destiné à devenir royal : sa montée en puissance est progressive, liée à l'affaiblissement de la royauté.",
+        "Ne pas confondre le tribunal du palais (juridiction d'exception pour les affaires royales) et le mallus (tribunal comtal, local)."
+      ]
+    },
+    "quiz": [
+      { "q": "Le référendaire est chargé notamment :", "choices": ["De la police de la ville", "De mettre par écrit les actes royaux et d'y apposer le sceau", "De commander l'armée", "De présider le tribunal comtal"], "answer": 1, "why": "Sans le sceau, l'acte royal n'a pas de valeur : c'est le référendaire qui l'appose." },
+      { "q": "Le comte exerce au nom du roi :", "choices": ["Le bannum et le mundium", "L'auctoritas", "Le cursus honorum", "L'impérium pro-consulaire"], "answer": 0, "why": "Attributs du pouvoir royal, prolongés localement par le comte dans son comté." },
+      { "q": "Le champ de mars est :", "choices": ["Un tribunal", "Le principal plaide de l'année, en mars", "Une province ecclésiastique", "Un impôt"], "answer": 1, "why": "Une assemblée aristocratique liée à la mobilisation militaire de l'année." },
+      { "q": "L'évêque métropolitain :", "choices": ["Commande à un seul diocèse", "Coordonne plusieurs diocèses au sein d'une province", "Est nommé par le comte", "N'a aucun rôle politique"], "answer": 1, "why": "Il coordonne sans donner d'ordre : le rôle des évêques reste à la fois religieux et politique." },
+      { "q": "La dynastie carolingienne naît :", "choices": ["D'une élection populaire", "De la fonction de maire du palais", "D'une décision du pape seul", "D'une conquête étrangère"], "answer": 1, "why": "Un maire du palais, puis son fils, préparent le coup d'État qui met fin aux Mérovingiens." }
+    ]
+  },
+  {
+    "id": "histoire-09",
+    "order": 9,
+    "title": "L'époque carolingienne : le sacre et le renouveau du pouvoir royal",
+    "teaser": "751, 800 : comment l'onction transforme une usurpation en dynastie sacrée.",
+    "minutes": 5,
+    "brief": [
+      "En **751**, **Pépin le Bref** dépose le dernier roi mérovingien avec le soutien du pape et de l'aristocratie franque. N'étant pas lui-même mérovingien, il compense ce défaut de légitimité familiale par une **légitimité religieuse** nouvelle : le **sacre**. Une première cérémonie a lieu en 751, une seconde en 754 avec ses deux fils, assurant sa succession. L'**onction du saint chrême** est le moment décisif : le roi y devient sacré, « élu de Dieu », ce qui rend sa personne **inviolable** — s'en prendre à lui devient un sacrilège. Le sacre brouille ainsi les frontières entre le religieux et le politique, entre Dieu et l'État : on parle de **théocratie royale** lorsque ce couple est dominé par le roi.",
+      "Charlemagne porte cette dynamique à son apogée (768-814). Le souvenir romain n'a jamais disparu des esprits ; à mesure que le pouvoir franc gagne en puissance, on en vient à le comparer à l'ancien Empire. En l'an **800**, le pape couronne Charlemagne **empereur** à Rome, le jour de Noël, en trois temps : le couronnement par le diadème, l'acclamation de l'assemblée, puis la prosternation devant l'empereur. Charlemagne se dit empereur mais continue de se proclamer roi des Francs. Le titre impérial ne survit cependant pas à la division de l'empire entre ses héritiers : en 843, le **traité de Verdun** partage l'empire en trois entre les petits-fils de Charlemagne, et le titre impérial disparaît d'Occident après cette date, jusqu'à la fondation d'un nouvel empire en 962.",
+      "L'époque carolingienne développe une véritable théorie du pouvoir royal comme **service**. Le roi devient un **ministre** au sens ancien du terme, serviteur de Dieu et du peuple qui lui a été confié. **Jonas d'Orléan**, évêque de l'époque, donne vers 830 une définition marquante de ce ministère royal : gouverner le peuple avec équité et justice, procurer la paix, défendre les églises, les serviteurs de Dieu, les veuves, les orphelins et les indigents. Le roi n'est donc plus seulement un chef de guerre : il doit s'armer de vertus, être juste, modeste, raisonnable — et il ne rendra de comptes, à sa mort, qu'à Dieu seul.",
+      "Les liens de fidélité, hérités de la commendatio mérovingienne, sont eux aussi transformés : la **vassalité** se développe, avec un serment de fidélité qui n'existait pas à l'origine, et le service dû au seigneur devient avant tout **militaire**, en échange d'un **bénéfice** — une terre confiée par le seigneur à son vassal. Le **capitulaire de Mersen** (847) généralise ces liens vassaliques : le roi veut que tout homme libre devienne le vassal d'un seigneur — une mesure qui, à terme, affaiblira paradoxalement le pouvoir royal lui-même."
+    ],
+    "keyPoints": [
+      "751 : Pépin le Bref, sacré, compense par la légitimité religieuse son absence de légitimité héréditaire mérovingienne.",
+      "Onction du saint chrême : rend le roi sacré et inviolable ; théocratie royale.",
+      "800 : couronnement impérial de Charlemagne par le pape ; 843, traité de Verdun, fin du titre impérial en Occident.",
+      "Le roi devient « ministre » (serviteur) selon Jonas d'Orléan ; capitulaire de Mersen (847) généralise la vassalité."
+    ],
+    "definitions": [
+      { "term": "Sacre", "text": "Cérémonie d'origine biblique, dont le moment décisif est l'onction du saint chrême, qui rend le roi sacré, élu de Dieu, et sa personne inviolable." },
+      { "term": "Théocratie royale", "text": "Situation dans laquelle le couple formé par la religion et la royauté est dominé par le roi, qui exerce une influence déterminante sur le fonctionnement du clergé." },
+      { "term": "Ministère royal", "text": "Conception carolingienne selon laquelle le roi est un serviteur (ministre) de Dieu et du peuple qui lui est confié, tenu de gouverner avec équité, justice et vertu." },
+      { "term": "Vassalité", "text": "Évolution de la commendatio à l'époque carolingienne : un serment de fidélité lie le vassal à son seigneur, en échange d'un bénéfice — une terre — et d'un service désormais principalement militaire." },
+      { "term": "Capitulaire de Mersen (847)", "text": "Texte par lequel le pouvoir carolingien tente de généraliser les liens vassaliques en exigeant que tout homme libre se choisisse un seigneur." }
+    ],
+    "exam": {
+      "kind": "dissertation",
+      "question": "Le sacre a-t-il renforcé ou fragilisé le pouvoir royal carolingien ?",
+      "concise": "Le sacre renforce, dans un premier temps, le pouvoir royal de façon décisive. Il permet à **Pépin le Bref**, dépourvu de légitimité héréditaire mérovingienne, de fonder une nouvelle dynastie sur une **légitimité religieuse** inédite : l'onction du saint chrême rend le roi sacré et inviolable, s'en prendre à lui devient un sacrilège. Cette légitimité culmine avec le couronnement impérial de **Charlemagne** en 800, qui inscrit la dynastie dans la continuité du prestige romain. Le sacre nourrit également une conception exigeante du pouvoir comme **service** — le roi « ministre » de Dieu et du peuple, selon Jonas d'Orléan — qui donne au pouvoir royal une assise morale forte. Mais cette confusion volontaire entre le religieux et le politique produit aussi des effets fragilisants. Elle donne au clergé un droit de regard croissant sur le pouvoir royal, jusqu'à une véritable **tutelle ecclésiastique** revendiquée par certains papes. Et la généralisation de la vassalité, censée renforcer la fidélité au roi par le capitulaire de Mersen, aboutit à terme à l'inverse : chaque seigneur, fort de ses propres vassaux, devient un rival potentiel du pouvoir royal qu'il était censé consolider. Le sacre a donc légitimé le pouvoir carolingien sans jamais suffire, à lui seul, à le préserver de sa propre dislocation.",
+      "plan": [
+        {
+          "title": "I. Un renforcement décisif de la légitimité royale",
+          "children": [
+            { "title": "A. Une réponse à un défaut de légitimité", "points": ["Pépin le Bref, non mérovingien, sacré en 751", "L'onction du saint chrême : un roi désormais inviolable", "Le couronnement impérial de Charlemagne en 800"] },
+            { "title": "B. Une conception exigeante du pouvoir comme service", "points": ["Le roi « ministre » de Dieu et du peuple selon Jonas d'Orléan", "Une obligation de justice, d'équité, de protection des plus faibles", "Une légitimité qui dépasse la seule force militaire"] }
+          ]
+        },
+        {
+          "title": "II. Des effets fragilisants sur le temps long",
+          "children": [
+            { "title": "A. Une confusion croissante du religieux et du politique", "points": ["Le droit de regard croissant du clergé sur le pouvoir royal", "L'amorce d'une tutelle ecclésiastique sur l'institution royale", "Un pouvoir royal de moins en moins maître de sa propre légitimité"] },
+            { "title": "B. Une vassalité généralisée qui se retourne contre le roi", "points": ["Le capitulaire de Mersen (847) : tout homme libre doit avoir un seigneur", "Des seigneurs de plus en plus puissants grâce à leurs propres vassaux", "Conclusion : un instrument de cohésion devenu facteur de dislocation"] }
+          ]
+        }
+      ],
+      "pitfalls": [
+        "Ne pas confondre le sacre de Pépin le Bref (751) et le couronnement impérial de Charlemagne (800) : deux cérémonies distinctes, à un demi-siècle d'écart.",
+        "Le titre impérial ne s'éteint pas à la mort de Charlemagne mais après le traité de Verdun (843), avec la division de l'empire."
+      ]
+    },
+    "quiz": [
+      { "q": "Pépin le Bref est sacré roi en :", "choices": ["511", "751", "800", "843"], "answer": 1, "why": "751, avec un second sacre en 754 associant ses deux fils." },
+      { "q": "Le moment décisif de la cérémonie du sacre est :", "choices": ["L'acclamation de l'assemblée", "L'onction du saint chrême", "Le port du diadème", "Le serment de fidélité"], "answer": 1, "why": "C'est ce moment qui rend le roi sacré et sa personne inviolable." },
+      { "q": "Charlemagne est couronné empereur en :", "choices": ["768", "800", "814", "843"], "answer": 1, "why": "800, par le pape, à Rome, le jour de Noël." },
+      { "q": "Le traité de Verdun (843) a pour conséquence :", "choices": ["Le renforcement du titre impérial", "Le partage de l'empire en trois et la fin du titre impérial en Occident", "Le sacre de Charlemagne", "La création de la vassalité"], "answer": 1, "why": "L'empire est partagé entre les petits-fils de Charlemagne ; le titre impérial disparaît d'Occident jusqu'en 962." },
+      { "q": "Selon Jonas d'Orléan, le roi est :", "choices": ["Un dieu vivant", "Un ministre, serviteur de Dieu et du peuple", "Un simple chef de guerre", "Un magistrat élu"], "answer": 1, "why": "Une conception du pouvoir royal comme service, développée vers 830." }
+    ]
+  },
+  {
+    "id": "histoire-10",
+    "order": 10,
+    "title": "L'époque carolingienne : justice et sources du droit",
+    "teaser": "Ordalies, personnalité des lois, missi dominici — la justice de Dieu et l'administration qui surveille.",
+    "minutes": 5,
+    "brief": [
+      "Deux types de procédure coexistent à l'époque franque et carolingienne. La procédure **accusatoire**, civile, est orale, publique et **contradictoire** : chaque partie doit connaître la demande et le fondement de l'autre. La procédure **inquisitoire**, pénale, est secrète, écrite et non contradictoire. Ce qui distingue les deux, c'est le **mode d'introduction de l'instance** : par principe, la procédure accusatoire domine, et il n'est pas possible d'agir d'office. Mais l'époque carolingienne développe la procédure inquisitoire pour les crimes les plus graves — homicide, viol, incendie — où l'État peut agir d'office, même sans plainte de la victime.",
+      "Faute de preuve certaine, le procès recourt à divers **modes de preuve**. Le **serment purgatoire** : on gagne son procès en jurant sur un texte sacré, appuyé par des **co-jureurs**, témoins de moralité ; dans une société chrétienne, le parjure conduisait, croyait-on, à la damnation, ce qui rendait la pratique dissuasive. Les **ordalies** — jugements de Dieu — soumettent l'accusé à une épreuve physique : brûlure au fer, immersion dans l'eau froide, ou duel bilatéral où le premier qui cède ses bras perd. Le principe : seul Dieu peut juger, et l'épreuve sert surtout à convaincre l'opinion locale de la justesse de la décision déjà prise par le juge. L'**aveu**, le **témoignage** et l'**écrit** complètent ces modes de preuve.",
+      "Les sources du droit reposent, à l'origine, sur le **système de la personnalité des lois** : chacun est soumis à la loi de son peuple d'origine, qui le suit où qu'il aille — un Gallo-romain reste soumis au droit romain même dans le royaume des Francs, tandis qu'un Franc salien applique la **loi salique**. Cette loi met fin à la **faida**, le cycle de vengeance privée entre familles, en fixant à l'avance un **wergeld** — le « prix de l'homme » — pour chaque préjudice : deux tiers de la somme reviennent à la victime, un tiers à l'État, ce qui en fait un droit essentiellement privé, sans peine de mort. D'autres peuples ont leur propre loi personnelle : le **Code Euric** chez les Wisigoths, la **loi Gombette** chez les Burgondes, la **loi ripuaire** chez les Francs ripuaires. Les Romains, eux, suivent le **bréviaire d'Alaric**, résumé du droit romain rédigé pour le royaume wisigoth. Ce système, censé faciliter la coexistence pacifique des peuples, se révèle vite compliqué : comment déterminer la loi applicable en cas de mariage mixte, de créance entre personnes de statuts différents ? Des spécialistes, les **rachimbourgs**, sont nécessaires pour connaître l'ensemble de ces lois.",
+      "La **territorialité du droit** s'impose progressivement, d'abord par la volonté d'unification carolingienne — Charlemagne légifère pour tous les habitants de l'empire par la voie des **capitulaires**, courts chapitres d'application territoriale, ancêtres de nos articles — puis, paradoxalement, par la **dislocation politique** elle-même : le capitulaire de **Mersen** (847) généralise la vassalité, celui de **Kiersy-sur-Oise** (877) rend héréditaire de fait la charge de comte en cas d'absence — deux textes qui affaiblissent durablement le pouvoir royal, chaque seigneurie finissant par imposer ses propres règles à l'échelle locale."
+    ],
+    "keyPoints": [
+      "Procédure accusatoire (civile, orale, contradictoire) / inquisitoire (pénale, secrète, non contradictoire, développée pour les crimes graves).",
+      "Preuves : serment purgatoire (co-jureurs), ordalies (jugement de Dieu), aveu, témoignage, écrit.",
+      "Personnalité des lois : loi salique pour les Francs, bréviaire d'Alaric pour les Romains ; rachimbourgs pour trancher les conflits de lois.",
+      "Territorialité : capitulaires carolingiens (unification), puis Mersen (847) et Kiersy-sur-Oise (877) : dislocation du pouvoir royal."
+    ],
+    "definitions": [
+      { "term": "Procédure accusatoire / inquisitoire", "text": "L'accusatoire (civile) est orale, publique et contradictoire ; l'inquisitoire (pénale) est secrète, écrite et non contradictoire, et permet à l'État d'agir d'office pour les crimes les plus graves." },
+      { "term": "Ordalies", "text": "Jugements de Dieu soumettant l'accusé à une épreuve physique (feu, eau froide, duel) : seul Dieu pouvant juger, l'épreuve sert surtout à convaincre l'opinion locale de la décision du juge." },
+      { "term": "Personnalité des lois", "text": "Système selon lequel chaque individu est soumis à la loi de son peuple d'origine, qui le suit quel que soit l'endroit où il se trouve, par opposition à la territorialité du droit." },
+      { "term": "Wergeld", "text": "Le « prix de l'homme » : somme fixée par la loi salique pour chaque préjudice corporel, dont deux tiers reviennent à la victime et un tiers à l'État, mettant fin à la faida, le cycle de vengeance privée entre familles." },
+      { "term": "Capitulaire", "text": "Texte législatif carolingien rédigé sous forme de courts chapitres, d'application territoriale, ancêtre de nos articles de loi." }
+    ],
+    "exam": {
+      "kind": "dissertation",
+      "question": "Le passage de la personnalité à la territorialité des lois marque-t-il un progrès juridique ?",
+      "concise": "Le système de la **personnalité des lois**, hérité de l'époque franque, répond à un objectif louable : préserver la paix entre peuples différents en laissant chacun soumis à sa propre loi d'origine, romaine, salique ou autre. Mais ce système se révèle rapidement **impraticable** : déterminer la loi applicable à un mariage mixte ou à une créance entre personnes de statuts différents exige des règles de rattachement complexes, et connaître l'ensemble des lois en présence suppose des spécialistes, les rachimbourgs, que tout juge ne possède pas. La **territorialité**, qui s'impose progressivement, simplifie en apparence les choses : une même loi pour un même territoire. Elle naît pourtant de deux logiques opposées. D'un côté, une logique d'**unification** voulue par Charlemagne, qui légifère par capitulaires pour l'ensemble de son empire. De l'autre, une logique de **dislocation** : à mesure que le pouvoir carolingien s'affaiblit, ce sont les seigneuries elles-mêmes, et non plus le royaume entier, qui deviennent le territoire d'application du droit — chaque seigneur imposant ses propres règles. La territorialité du droit n'est donc pas, en elle-même, un progrès : elle est le signe tantôt d'une centralisation réussie, tantôt, à l'inverse, d'une fragmentation politique poussée à l'extrême.",
+      "plan": [
+        {
+          "title": "I. Les limites pratiques de la personnalité des lois",
+          "children": [
+            { "title": "A. Un système pensé pour la coexistence pacifique", "points": ["Chaque peuple soumis à sa propre loi d'origine", "La loi salique pour les Francs, le bréviaire d'Alaric pour les Romains", "Un objectif d'harmonie entre populations différentes"] },
+            { "title": "B. Une application concrètement très complexe", "points": ["La difficulté à déterminer la loi applicable en cas de mariage mixte", "Le recours nécessaire aux rachimbourgs, spécialistes des différentes lois", "Une insécurité juridique croissante"] }
+          ]
+        },
+        {
+          "title": "II. Une territorialité aux origines contradictoires",
+          "children": [
+            { "title": "A. Une territorialité d'unification", "points": ["Les capitulaires carolingiens, d'application sur tout l'empire", "La volonté de Charlemagne de légiférer pour tous ses sujets", "Un droit territorial au service de la centralisation"] },
+            { "title": "B. Une territorialité de dislocation", "points": ["Le capitulaire de Mersen (847) et celui de Kiersy-sur-Oise (877)", "L'affaiblissement progressif du pouvoir royal", "Conclusion : un même mot pour deux logiques opposées, unification puis fragmentation"] }
+          ]
+        }
+      ],
+      "pitfalls": [
+        "Ne pas confondre les ordalies (épreuves physiques) et le serment purgatoire (serment appuyé par des co-jureurs) : deux modes de preuve distincts.",
+        "Le capitulaire de Mersen (847) et celui de Kiersy-sur-Oise (877) sont deux textes distincts, à trente ans d'écart, tous deux affaiblissant le pouvoir royal."
+      ]
+    },
+    "quiz": [
+      { "q": "La procédure inquisitoire se caractérise par :", "choices": ["Le caractère public et contradictoire", "Le caractère secret, écrit et non contradictoire", "L'oralité systématique", "L'absence de tout jugement"], "answer": 1, "why": "À la différence de la procédure accusatoire, civile, orale, publique et contradictoire." },
+      { "q": "Les ordalies reposent sur l'idée que :", "choices": ["Le juge doit toujours consulter le sénat", "Seul Dieu peut juger", "La preuve écrite prime sur toute autre", "Le coupable doit avouer avant jugement"], "answer": 1, "why": "L'épreuve physique sert à faire accepter par l'opinion locale une décision déjà prise par le juge." },
+      { "q": "Sous la personnalité des lois, un Gallo-romain dans le royaume des Francs :", "choices": ["Doit appliquer la loi salique", "Reste soumis au droit romain", "N'a plus aucun droit applicable", "Doit se convertir au christianisme"], "answer": 1, "why": "Chacun suit la loi de son peuple d'origine, quel que soit le royaume où il se trouve." },
+      { "q": "Le wergeld a pour effet de :", "choices": ["Instaurer la peine de mort", "Mettre fin à la faida en fixant à l'avance le prix de chaque préjudice", "Créer les capitulaires", "Abolir la loi salique"], "answer": 1, "why": "Une réparation pécuniaire fixée à l'avance, qui met fin au cycle de vengeance privée entre familles." },
+      { "q": "Le capitulaire de Kiersy-sur-Oise (877) a pour effet :", "choices": ["De renforcer le pouvoir royal", "De rendre héréditaire de fait la charge de comte en cas d'absence", "D'abolir la vassalité", "D'instaurer la personnalité des lois"], "answer": 1, "why": "Un facteur supplémentaire de décentralisation et d'affaiblissement du pouvoir royal." }
+    ]
+  },
+  {
+    "id": "histoire-11",
+    "order": 11,
+    "title": "L'effondrement carolingien et l'avènement des Capétiens",
+    "teaser": "Scandinaves, ducs émancipés et un roi qui n'a plus de royaume à gouverner : 987.",
+    "minutes": 5,
+    "brief": [
+      "L'empire reste unitaire sous Louis le Pieux, mais après sa mort ses trois fils se font la guerre pendant trois ans avant que le **traité de Verdun** (843) ne le partage entre eux : à **Charles le Chauve** la Francie occidentale, à **Louis le Germanique** la Francie orientale, à **Lothaire** la Lotharingie, bande intermédiaire convoitée par les deux autres. En Occident, le pouvoir royal s'affaiblit considérablement. Le soutien de l'aristocratie devient un rapport de force que le roi doit constamment négocier : en 843 déjà, les grands aristocrates obtiennent de **Charles le Chauve** l'engagement de ne plus les priver de leurs fonctions sans motif jugé lors d'un plaide — le roi n'est plus en position de révoquer librement un duc ou un comte.",
+      "Les **invasions scandinaves** s'intensifient à cette époque : remontant les fleuves en drakkars, elles pillent en profondeur les terres carolingiennes, en particulier les établissements religieux, sans que l'armée franque parvienne à rassembler ses forces assez vite pour y faire face. Les rois tentent alors de négocier, en échange d'argent puis, en **911**, d'un accord de christianisation en échange d'une protection militaire. Pour renforcer la défense face à cette menace, le roi multiplie les duchés et les marquisats — solution qui se retourne contre lui, chaque nouvel administrateur puissant devenant un rival potentiel plutôt qu'un simple exécutant.",
+      "À partir de la fin du IXe siècle, les rois perdent progressivement le contrôle de leur administration, en plusieurs étapes : d'abord l'émancipation des grands commandements régionaux — ducs et marquis, qui arrachent au roi l'**hérédité de leurs charges** et gouvernent désormais dans leur intérêt propre ; puis, au milieu du Xe siècle, celle des comtes, eux-mêmes émancipés de la tutelle des ducs et marquis ; enfin celle des vassaux, qui échappent à leur tour au contrôle de leurs seigneurs. Le royaume devient une mosaïque de principautés. La justice royale elle-même perd toute capacité à arbitrer les conflits entre les plus puissants.",
+      "En **888**, **Charles le Gros**, déposé après avoir préféré acheter la paix aux Scandinaves plutôt que les combattre, est remplacé par **Eudes**, marquis de Neustrie — première rupture de la lignée carolingienne depuis 751. S'amorce alors une conception **élective** de la royauté : ce sont désormais les grands du royaume qui élisent le roi, même si la donnée héréditaire demeure importante. La suite le confirme : en 898, les grands redonnent la couronne à un carolingien, Charles III le Simple ; en 922, ils élisent le robertien Robert Ier, qui meurt dès 923 et cède la place à Raoul (Rodolphe) ; en 936, un carolingien revient encore sur le trône, jusqu'à Louis V, dit « le Fainéant », dont le règne ne dure qu'un an. En **987**, les grands élisent enfin **Hugues Capet**, un Robertien, inaugurant une nouvelle ère de stabilité dynastique qui rétablit progressivement le principe héréditaire — et une nouvelle dynastie, les **Capétiens**, qui gouvernera la France jusqu'à la Révolution."
+    ],
+    "keyPoints": [
+      "843 (traité de Verdun) : partage de l'empire en trois ; les grands obtiennent des garanties contre les révocations arbitraires.",
+      "Invasions scandinaves : pillages, négociations, christianisation en échange de protection (911).",
+      "Émancipation progressive : ducs/marquis (hérédité des charges) → comtes → vassaux ; royaume en mosaïque de principautés.",
+      "888 : Eudes, premier roi non carolingien depuis 751 ; 987 : Hugues Capet, élu, fonde la dynastie capétienne."
+    ],
+    "definitions": [
+      { "term": "Traité de Verdun (843)", "text": "Traité qui partage l'empire carolingien en trois royaumes entre les petits-fils de Charlemagne, marquant le début de l'affaiblissement durable du pouvoir impérial en Occident." },
+      { "term": "Émancipation des grands commandements", "text": "Processus par lequel ducs, marquis puis comtes, à partir de la fin du IXe siècle, échappent progressivement au contrôle royal et rendent leurs charges héréditaires de fait." },
+      { "term": "Conception élective de la royauté", "text": "Conception apparue après 888, selon laquelle le roi est choisi par les grands du royaume plutôt que désigné par la seule hérédité, bien que le choix reste cantonné à certaines familles." },
+      { "term": "Hugues Capet", "text": "Robertien élu roi en 987 par les grands du royaume, fondateur de la dynastie capétienne, qui rétablira progressivement le principe héréditaire de la couronne." },
+      { "term": "Mosaïque de principautés", "text": "Situation politique de la fin de l'époque carolingienne, dans laquelle le royaume se fragmente en une multitude de seigneuries et principautés largement indépendantes du pouvoir royal." }
+    ],
+    "exam": {
+      "kind": "question de cours",
+      "question": "Quelles sont les trois étapes de l'émancipation des administrateurs royaux à la fin de l'époque carolingienne ?",
+      "concise": "L'effondrement du pouvoir carolingien procède par trois étapes successives. La première intervient entre la fin du IXe et le début du Xe siècle : les **grands commandements régionaux** — ducs et marquis — s'émancipent du pouvoir royal, en arrachant au roi l'**hérédité de leurs charges** ; ils exercent désormais leur fonction en leur nom et dans leur intérêt propre, et non plus comme simples délégués du roi. La deuxième étape, à partir du milieu du Xe siècle, voit les **comtes**, eux-mêmes jusque-là sous la tutelle des ducs et marquis, s'émanciper à leur tour de leurs propres administrateurs. La troisième étape enfin concerne les **vassaux**, qui échappent au contrôle de leurs seigneurs et commencent à servir leurs propres intérêts plutôt que ceux de la chaîne vassalique qui les liait en principe au roi. À l'issue de ce processus, la royauté devient virtuellement impuissante, incapable de mener une politique dans son propre royaume et même de rendre la justice entre les plus puissants — un pouvoir royal réduit, jusqu'à l'avènement des Capétiens en 987, à sa seule seigneurie personnelle.",
+      "plan": [
+        {
+          "title": "I. L'émancipation des grands, entre fin IXe et début Xe siècle",
+          "children": [
+            { "title": "A. L'hérédité arrachée des grandes charges", "points": ["Ducs et marquis, jusque-là révocables, deviennent héréditaires de fait", "Une gestion désormais menée dans l'intérêt propre de chacun", "Le roi perd tout contrôle réel sur ces grandes fonctions"] },
+            { "title": "B. Un roi contraint de composer", "points": ["Les garanties arrachées dès 843 contre les révocations arbitraires", "Une multiplication des duchés qui affaiblit paradoxalement le roi", "Un pouvoir royal déjà largement négocié plutôt qu'imposé"] }
+          ]
+        },
+        {
+          "title": "II. Une émancipation qui se propage vers le bas",
+          "children": [
+            { "title": "A. L'émancipation des comtes puis des vassaux", "points": ["Les comtes s'émancipent à leur tour des ducs et marquis, milieu du Xe siècle", "Les vassaux échappent ensuite au contrôle de leurs propres seigneurs", "Une chaîne de fidélité qui se rompt à chaque échelon"] },
+            { "title": "B. Un pouvoir royal réduit à l'impuissance", "points": ["Une royauté incapable de mener une politique dans son royaume", "Une justice royale incapable d'arbitrer entre les plus puissants", "Conclusion : l'avènement des Capétiens en 987 sur les ruines de cette autorité"] }
+          ]
+        }
+      ],
+      "pitfalls": [
+        "L'émancipation ne se produit pas d'un seul coup : elle suit un ordre précis, des grands commandements vers les comtes puis les vassaux.",
+        "Ne pas confondre Eudes (888, premier roi non carolingien) et Hugues Capet (987, fondateur de la dynastie capétienne) : deux ruptures distinctes, à un siècle d'écart."
+      ]
+    },
+    "quiz": [
+      { "q": "Le traité de Verdun (843) a pour effet immédiat :", "choices": ["De renforcer l'unité de l'empire", "De partager l'empire en trois royaumes", "D'instaurer la vassalité", "De sacrer Hugues Capet"], "answer": 1, "why": "Entre les petits-fils de Charlemagne, marquant le début du déclin carolingien." },
+      { "q": "En 911, un accord est trouvé avec les Scandinaves autour :", "choices": ["D'un partage territorial permanent", "D'une christianisation en échange d'une protection militaire", "D'une alliance militaire offensive", "D'un tribut versé par les Scandinaves"], "answer": 1, "why": "Le chef scandinave accepte de se christianiser en échange d'une certaine défense." },
+      { "q": "La première étape de l'émancipation des administrateurs royaux concerne :", "choices": ["Les vassaux", "Les comtes", "Les ducs et marquis", "Les évêques"], "answer": 2, "why": "Fin IXe – début Xe siècle : les grands commandements régionaux s'émancipent en premier." },
+      { "q": "En 888, Eudes devient roi :", "choices": ["Par hérédité mérovingienne", "Étant le premier roi non carolingien depuis 751", "Par élection du pape seul", "Grâce au traité de Verdun"], "answer": 1, "why": "Une rupture de la lignée carolingienne, avant le retour à l'hérédité avec les Capétiens." },
+      { "q": "En 987, les grands du royaume élisent :", "choices": ["Charles le Gros", "Eudes", "Hugues Capet", "Louis le Pieux"], "answer": 2, "why": "Un Robertien, fondateur de la dynastie capétienne." }
+    ]
+  },
+  {
+    "id": "histoire-12",
+    "order": 12,
+    "title": "L'époque féodale : institutions et sources du droit",
+    "teaser": "Le roi n'est plus qu'un seigneur parmi d'autres — et le droit dépend de son ordre, de son corps, de sa terre.",
+    "minutes": 5,
+    "brief": [
+      "À l'époque féodale, le pouvoir se fragmente au niveau de la **seigneurie**. Le seigneur impose sa propre loi sur son territoire et dispose de **serfs**, habitants de la seigneurie disposant d'un peu plus de droits que des esclaves. Tout le monde dépend de quelqu'un, même les plus puissants ayant des devoirs envers ceux qui leur sont soumis ; la valeur d'une terre dépend directement du nombre de serfs qui la peuplent. On distingue les **terres serviles** (pour les serfs), les **terres roturières** (pour les personnes libres non nobles) et les **fiefs**, terres seigneuriales concédées dans le cadre des relations **féodo-vassaliques**. La **censive**, redevance versée au propriétaire, devient une pratique courante, tout comme la justice rendue directement par le seigneur.",
+      "L'**administration centrale** devient **résiduelle** : le roi n'est plus qu'un seigneur parmi tant d'autres, sans plus pouvoir légiférer, lever d'armée ou d'impôt autrement qu'en tant que tel sur ses propres terres. Chaque seigneur contrôlant sa seigneurie, le roi ne dispose plus d'autorité que sur son propre domaine — une situation de fait qui contraste fortement avec les prétentions théoriques du pouvoir royal.",
+      "L'**Église**, à l'inverse, reste une structure internationale très puissante et hiérarchisée, avec le pape à son sommet et des évêques à la tête de diocèses dont les limites ne coïncident pas nécessairement avec celles des comtés. Le **droit canonique** — textes sacrés, canons conciliaires, décrétales du pape — s'applique aux clercs comme aux laïcs, à travers la **justice ecclésiastique** : l'évêque juge en premier ressort, avec appel possible jusqu'au pape. Cette justice, contrairement à la justice laïque, ne peut prononcer ni châtiment corporel ni peine de mort — *Ecclesia abhorret a sanguine*, l'Église a horreur du sang. La participation de l'Église à la vie sociale et politique est totale : elle accompagne chaque étape de la vie, de la naissance à la mort, et forme, par ses clercs souvent seuls à savoir lire et écrire, l'entourage indispensable de tout homme politique.",
+      "Les sources du droit reflètent cette fragmentation. La société est divisée en trois **ordres** — ceux qui prient (*oratores*), ceux qui combattent (*bellatores*), ceux qui travaillent (*laboratores*), théorisés par **Adalbéron de Laon** — chacun bénéficiant de privilèges spécifiques, et en **corps** professionnels (métiers, corps religieux, corps administratifs, noblesse), également porteurs de règles propres. S'y ajoute une diversité **ratione loci** : sous le **régime seigneurial**, les paysans (roturiers) paient le **cens** et effectuent des **corvées** en échange du droit d'exploiter la terre — sauf les **alleux**, terres libres de toute obligation. Le pouvoir repose ainsi moins sur des liens personnels que sur la possession de la **terre** : le paysan est lié au domaine qu'il cultive plus qu'à une personne, ce qui fait de chaque seigneurie une petite entité quasi indépendante, avec ses propres lois et coutumes."
+    ],
+    "keyPoints": [
+      "Seigneurie : serfs, terres serviles/roturières/fiefs, censive ; administration royale résiduelle (le roi n'est qu'un seigneur parmi d'autres).",
+      "Église : droit canonique, justice ecclésiastique (appel jusqu'au pape), Ecclesia abhorret a sanguine (pas de peine de mort).",
+      "Trois ordres (oratores, bellatores, laboratores, selon Adalbéron de Laon) et corps professionnels, chacun avec ses privilèges.",
+      "Régime seigneurial : cens et corvées ; prééminence du lien à la terre sur le lien personnel."
+    ],
+    "definitions": [
+      { "term": "Serf", "text": "Habitant d'une seigneurie disposant d'un peu plus de droits qu'un esclave, mais dépendant étroitement du seigneur dont la terre gagne en valeur à proportion du nombre de serfs qui la peuplent." },
+      { "term": "Droit canonique", "text": "Droit de l'Église, fondé sur les textes sacrés, les canons conciliaires et les décrétales du pape, applicable aux clercs comme aux laïcs à travers la justice ecclésiastique." },
+      { "term": "Ecclesia abhorret a sanguine", "text": "Principe selon lequel l'Église a horreur du sang : la justice ecclésiastique ne peut prononcer ni châtiment corporel ni peine de mort, à la différence de la justice laïque." },
+      { "term": "Théorie des trois ordres", "text": "Théorisation, par Adalbéron de Laon, de la société en trois catégories : ceux qui prient (oratores), ceux qui combattent (bellatores), ceux qui travaillent (laboratores), chacune dotée de privilèges spécifiques." },
+      { "term": "Censive / cens", "text": "La censive est le régime de la terre concédée par le seigneur ; le cens est la redevance que le paysan lui verse en échange du droit de l'exploiter." }
+    ],
+    "exam": {
+      "kind": "dissertation",
+      "question": "Peut-on encore parler d'un pouvoir royal à l'époque féodale ?",
+      "concise": "À l'époque féodale, le pouvoir royal existe encore en droit, mais s'est vidé de l'essentiel de sa substance. Le roi conserve son titre et sa place au sommet de la hiérarchie féodale, mais il **n'est plus qu'un seigneur parmi d'autres** : il ne peut légiférer, lever une armée ou un impôt que sur ses propres terres, exactement comme n'importe quel autre seigneur sur les siennes. L'administration centrale est devenue **résiduelle** : chaque seigneurie fonctionne comme une entité quasi indépendante, avec ses propres lois, sa propre justice, sa propre fiscalité. Le pouvoir réel s'est déplacé vers la possession de la **terre** : c'est elle, plus que les liens personnels, qui structure désormais l'autorité, chaque seigneur exerçant sa domination sur ceux qui vivent et travaillent sur son domaine. Dans ce paysage fragmenté, deux forces contrebalancent partiellement l'émiettement du pouvoir royal : l'**Église**, seule institution véritablement internationale et hiérarchisée, qui maintient une forme d'unité par le droit canonique ; et le souvenir même de la fonction royale, sommet théorique d'une pyramide féodale que les rois capétiens, à partir du XIe siècle, s'emploieront patiemment à reconstituer en pouvoir réel.",
+      "plan": [
+        {
+          "title": "I. Un pouvoir royal vidé de sa substance",
+          "children": [
+            { "title": "A. Le roi réduit au rang de simple seigneur", "points": ["Un pouvoir de légiférer, lever l'impôt et l'armée limité à ses propres terres", "Une administration centrale devenue résiduelle", "Une autorité de fait équivalente à celle de n'importe quel grand seigneur"] },
+            { "title": "B. Un pouvoir dispersé au niveau des seigneuries", "points": ["Chaque seigneur impose sa propre loi sur son territoire", "Une justice rendue directement par le seigneur", "Une fragmentation poussée jusqu'au niveau local"] }
+          ]
+        },
+        {
+          "title": "II. Des forces de cohésion qui subsistent malgré tout",
+          "children": [
+            { "title": "A. L'Église, seule structure véritablement unifiée", "points": ["Une hiérarchie internationale, du pape aux évêques", "Le droit canonique, applicable au-delà des frontières seigneuriales", "Une justice ecclésiastique qui transcende le morcellement féodal"] },
+            { "title": "B. La pyramide féodale, cadre théorique d'un pouvoir à reconstruire", "points": ["Le roi, sommet théorique de la hiérarchie féodale", "Un titre qui subsiste malgré l'absence de pouvoir réel", "Conclusion : la base sur laquelle les Capétiens reconstruiront un pouvoir effectif"] }
+          ]
+        }
+      ],
+      "pitfalls": [
+        "Ne pas dire que le roi féodal n'a plus aucun pouvoir : il conserve une pleine autorité de seigneur, mais seulement sur son propre domaine.",
+        "Ne pas confondre les trois ordres (oratores, bellatores, laboratores) et les corps professionnels : deux classifications sociales distinctes, qui se superposent."
+      ]
+    },
+    "quiz": [
+      { "q": "À l'époque féodale, le roi :", "choices": ["Conserve un pouvoir de légiférer sur tout le royaume", "N'est plus qu'un seigneur parmi d'autres, limité à ses propres terres", "A disparu en tant qu'institution", "Est élu chaque année"], "answer": 1, "why": "L'administration centrale devient résiduelle : le roi ne gouverne réellement que son propre domaine." },
+      { "q": "Ecclesia abhorret a sanguine signifie que la justice ecclésiastique :", "choices": ["Peut prononcer la peine de mort", "Ne peut prononcer ni châtiment corporel ni peine de mort", "Ne juge que les clercs", "N'existe pas au Moyen Âge"], "answer": 1, "why": "L'Église a horreur du sang : une limite qui la distingue nettement de la justice laïque." },
+      { "q": "Les trois ordres théorisés par Adalbéron de Laon sont :", "choices": ["Le clergé, la noblesse, le tiers état", "Oratores, bellatores, laboratores", "Les libres, les non-libres, les affranchis", "Les seigneurs, les vassaux, les serfs"], "answer": 1, "why": "Ceux qui prient, ceux qui combattent, ceux qui travaillent — une classification reprise plus tard sous l'Ancien Régime." },
+      { "q": "Le cens est :", "choices": ["Un impôt royal direct", "Une redevance versée par le paysan au seigneur", "Un droit d'entrée dans un corps de métier", "Une taxe ecclésiastique"], "answer": 1, "why": "En échange du droit d'exploiter la terre du seigneur, sous le régime seigneurial." },
+      { "q": "Les alleux sont des terres :", "choices": ["Réservées aux serfs", "Libres de toute obligation envers un seigneur", "Propriété exclusive de l'Église", "Interdites à l'exploitation agricole"], "answer": 1, "why": "Leurs propriétaires n'ont ni corvées ni taxes à payer, à la différence des terres roturières classiques." }
+    ]
+  }
+]
