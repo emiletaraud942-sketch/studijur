@@ -1,0 +1,350 @@
+[
+  {
+    "id": "histoire-13",
+    "order": 13,
+    "title": "De la suzeraineté à la souveraineté royale",
+    "teaser": "Comment le roi capétien redevient maître chez lui, puis l'égal du pape et de l'empereur.",
+    "minutes": 5,
+    "brief": [
+      "**987** ouvre le règne d'Hugues Capet et marque le début d'un renforcement très progressif du pouvoir royal, qui se poursuit jusqu'à la mort de Louis XVI. Du Xe au XIVe siècle, l'autorité du roi reste limitée : elle n'a que peu d'emprise sur les seigneurs locaux, et l'idée d'une autorité centralisée par le droit royal n'est pas encore envisagée. La **suzeraineté** est le concept qui organise alors les rapports de pouvoir : c'est le lien personnel entre le roi, suzerain suprême, et ses vassaux, fondé sur un serment de fidélité — le roi n'est chef que de ceux qui l'ont reconnu comme tel, pas de l'ensemble du royaume.",
+      "À **l'intérieur** du royaume, le roi renforce son autorité par la théorie de la **mouvance** : les terres et fiefs rattachés au roi par l'hommage s'opposent au domaine royal proprement dit, constitué de ses biens personnels. Par des mariages (Henri II et Aliénor d'Aquitaine), des cessions (le Dauphiné, d'où le titre de « dauphin » pour l'héritier) ou des conflits (la Normandie, reprise à Jean sans Terre en 1204 après son refus de se soumettre à la sanction féodale), le roi étend son domaine. L'**hommage lige**, fidélité totale et prioritaire envers un seul seigneur, se distingue de l'**hommage simple**, plus limité.",
+      "À **l'extérieur**, le roi affirme son indépendance à l'égard de deux puissances rivales. Face à l'**empereur** du Saint-Empire, qui prétend dominer tous les royaumes chrétiens sur le modèle de l'ancien Empire romain, **Philippe Auguste** se fait appeler « Auguste » et bat l'empereur Otton IV ; plus tard, **Charles V** impose des règles diplomatiques strictes — comme le fait de chevaucher un cheval blanc en entrant dans une ville — pour affirmer l'égalité de statut entre le roi et l'empereur. Face au **pape**, qui, par la voix de Boniface VIII, affirme la supériorité du pouvoir spirituel sur le pouvoir royal, **Philippe le Bel** réplique par l'épisode dit de l'**attentat d'Anagni** : le pape en meurt, et son successeur se montre plus favorable au roi de France.",
+      "Cette lutte donne naissance au **gallicanisme** : l'idée que le roi contrôle l'Église de France dans les affaires non religieuses, dites temporelles. Le **Concordat de Bologne** confirme cette indépendance en reconnaissant le roi comme chef temporel de l'Église en France. Le roi recouvre ensuite progressivement ses **prérogatives régaliennes**, notamment par la **paix du roi**, mesure de protection instaurée par ordonnance royale pour une décennie, avec l'accord des seigneurs — un premier pas vers un pouvoir législatif que le roi n'exerce, à ce stade, qu'avec le consentement des grands du royaume."
+    ],
+    "keyPoints": [
+      "Suzeraineté : lien personnel roi-vassal fondé sur l'hommage, distinct de la souveraineté sur l'ensemble du royaume.",
+      "Mouvance (terres rattachées par l'hommage) vs domaine royal (biens personnels) ; extension par mariages, cessions, conquêtes.",
+      "Indépendance extérieure : face à l'empereur (Philippe Auguste, Charles V) et face au pape (Philippe le Bel, attentat d'Anagni) → gallicanisme.",
+      "Recouvrement progressif des prérogatives régaliennes, par exemple la « paix du roi », avec l'accord des seigneurs."
+    ],
+    "definitions": [
+      { "term": "Suzeraineté", "text": "Concept féodal désignant le lien personnel entre le roi, suzerain suprême, et ses vassaux, fondé sur un serment de fidélité, par opposition à la souveraineté exercée sur l'ensemble du royaume." },
+      { "term": "Mouvance", "text": "Ensemble des terres et fiefs rattachés au roi par l'hommage, par opposition au domaine royal constitué des seuls biens personnels du souverain." },
+      { "term": "Hommage lige / hommage simple", "text": "L'hommage lige impose une fidélité totale et prioritaire envers le seigneur principal ; l'hommage simple permet à un vassal de s'engager envers un autre seigneur de manière plus limitée." },
+      { "term": "Gallicanisme", "text": "Doctrine née de la lutte entre le roi de France et le pape, selon laquelle le roi contrôle l'Église de France dans les affaires temporelles, non religieuses." },
+      { "term": "Paix du roi", "text": "Mesure de protection instaurée par ordonnance royale pour une durée de dix ans dans tout le royaume, avec l'accord des seigneurs, permettant au roi de recouvrer certaines prérogatives législatives." }
+    ],
+    "exam": {
+      "kind": "dissertation",
+      "question": "Le passage de la suzeraineté à la souveraineté est-il seulement une affaire de politique intérieure ?",
+      "concise": "Le renforcement du pouvoir royal capétien se joue d'abord à **l'intérieur** du royaume : par la théorie de la mouvance, par l'extension du domaine royal via mariages, cessions et conquêtes, le roi transforme un lien de suzeraineté purement personnel, limité à ses vassaux directs, en une autorité qui s'étend progressivement sur l'ensemble du territoire. Mais cette affirmation intérieure ne suffit pas : elle doit s'accompagner d'une reconnaissance **extérieure**, car la souveraineté suppose de n'avoir, comme le dira plus tard Jean Bodin, aucune puissance au-dessus de soi. Or deux puissances contestent précisément cette autonomie : l'empereur du Saint-Empire, qui se veut l'héritier universel de Rome, et le pape, qui revendique une supériorité du pouvoir spirituel sur le pouvoir temporel. Philippe Auguste puis Charles V répondent à la première prétention par des symboles d'égalité ; Philippe le Bel répond à la seconde par un rapport de force qui aboutit au gallicanisme. La souveraineté royale se construit donc sur deux fronts indissociables : l'un, intérieur, par l'extension effective de l'autorité sur le territoire ; l'autre, extérieur, par le refus de toute tutelle impériale ou pontificale. Sans cette double affirmation, le roi resterait un suzerain parmi d'autres, jamais un souverain.",
+      "plan": [
+        {
+          "title": "I. Une affirmation d'abord intérieure",
+          "children": [
+            { "title": "A. L'extension du domaine royal", "points": ["La théorie de la mouvance : les terres rattachées par l'hommage", "Mariages, cessions, conquêtes : les instruments de l'extension territoriale", "L'exemple de la Normandie, reprise à Jean sans Terre en 1204"] },
+            { "title": "B. Le recouvrement des prérogatives régaliennes", "points": ["La paix du roi, avec l'accord des seigneurs", "Un pouvoir législatif encore négocié, non imposé", "Une souveraineté en construction, pas encore acquise"] }
+          ]
+        },
+        {
+          "title": "II. Une affirmation nécessairement extérieure",
+          "children": [
+            { "title": "A. L'indépendance face à l'empereur", "points": ["La prétention impériale à dominer tous les royaumes chrétiens", "Philippe Auguste, « Auguste », vainqueur d'Otton IV", "Charles V et les symboles diplomatiques de l'égalité de statut"] },
+            { "title": "B. L'indépendance face au pape", "points": ["Boniface VIII et la supériorité affirmée du pouvoir spirituel", "L'attentat d'Anagni et ses suites favorables au roi de France", "Conclusion : le gallicanisme, aboutissement institutionnel de cette double affirmation"] }
+          ]
+        }
+      ],
+      "pitfalls": [
+        "Ne pas confondre suzeraineté (lien personnel avec les vassaux directs) et souveraineté (autorité sur l'ensemble du royaume, sans puissance supérieure).",
+        "L'attentat d'Anagni vise le pape Boniface VIII, qui en meurt peu après : ne pas le confondre avec un attentat contre le roi de France."
+      ]
+    },
+    "quiz": [
+      { "q": "La suzeraineté désigne :", "choices": ["L'autorité du roi sur tout le royaume", "Le lien personnel entre le roi et ses vassaux", "Le pouvoir du pape sur le roi", "Un impôt royal"], "answer": 1, "why": "Un lien fondé sur l'hommage et le serment de fidélité, distinct de la souveraineté sur l'ensemble du territoire." },
+      { "q": "Le domaine royal se distingue de la mouvance en ce qu'il est :", "choices": ["Constitué des biens personnels du roi", "L'ensemble des terres rattachées par l'hommage", "Réservé à l'Église", "Une notion apparue seulement en 1789"], "answer": 0, "why": "La mouvance regroupe les terres rattachées par l'hommage ; le domaine royal, les biens propres du souverain." },
+      { "q": "Philippe Auguste affirme l'indépendance du roi face à :", "choices": ["Le pape", "L'empereur du Saint-Empire", "Les comices romaines", "Les Capétiens rivaux"], "answer": 1, "why": "En se faisant appeler « Auguste » et en battant l'empereur Otton IV." },
+      { "q": "Le gallicanisme est né de la lutte entre :", "choices": ["Le roi et l'empereur", "Le roi et le pape", "Le roi et les États généraux", "Le roi et les Parlements"], "answer": 1, "why": "Une doctrine affirmant le contrôle royal sur l'Église de France dans les affaires temporelles." },
+      { "q": "La paix du roi est instaurée pour une durée de :", "choices": ["Un an", "Dix ans", "Toute la vie du roi", "Cent ans"], "answer": 1, "why": "Une mesure de protection avec l'accord des seigneurs, renouvelable, qui permet au roi de recouvrer certaines prérogatives." }
+    ]
+  },
+  {
+    "id": "histoire-14",
+    "order": 14,
+    "title": "La monarchie capétienne : une solide fonction publique",
+    "teaser": "Hôtel du roi, Curia Regis, États généraux — l'administration qui rend l'autorité royale réelle.",
+    "minutes": 5,
+    "brief": [
+      "Le renforcement de l'autorité royale passe aussi par la **justice**. À partir des XIIe-XIIIe siècles, sous des rois comme Saint Louis, le roi est attendu pour rendre la justice à différents niveaux. Le **droit d'appel** se développe : un jugement rendu par un petit seigneur peut être porté devant un seigneur plus puissant, ce qui profite à la fois aux populations et au contrôle royal sur l'ensemble du système judiciaire. Les **cas royaux**, délits jugés trop graves pour rester à la décision des seigneurs locaux, imposent l'intervention directe du roi. Sur le plan normatif, le roi légifère d'abord au coup par coup, en fonction des circonstances, avant que les **ordonnances de réformation** puis les **ordonnances de codification** ne se multiplient — dont celle d'**Orléans** (1439), qui fait de la taille royale un impôt permanent, affranchissant le roi de la seule volonté des seigneurs pour financer ses armées.",
+      "L'**Hôtel du roi** regroupe les services domestiques (la « Maison du roi »), avec des titres honorifiques comme celui de « palatin », et les **grands officiers** : le **connétable**, en charge de l'armée ; le **chambrier**, gérant les finances royales via le trésor ; le **chancelier**, dirigeant les secrétaires qui rédigent les actes officiels — une fonction juridique et administrative essentielle. Ces officiers deviennent progressivement **patrimoniaux** : ils ne peuvent être destitués que pour faute grave, et peuvent même transmettre leur charge à condition de payer la **paulette**, taxe annuelle instaurée en 1604 sous Henri IV.",
+      "Les **organes de conseil** évoluent eux aussi. La **Curia Regis**, cour du roi de l'époque féodale, traite les questions de paix, de guerre, d'administration et surtout de justice féodale ; mais les grands vassaux y sont rarement tous présents. À partir des XIe-XIIe siècles, le **Conseil du roi** devient permanent : le roi n'a plus besoin de réunir tous ses grands vassaux et peut convoquer librement les experts dont il a besoin — une évolution qui marque un net renforcement de l'autorité royale et une centralisation accrue.",
+      "Les **États généraux**, enfin, sont convoqués par le roi pour traiter des questions d'intérêt public, notamment lever des fonds : avant l'instauration de la taille permanente, le roi consultait les trois ordres — clergé, noblesse, tiers état — pour obtenir leur soutien financier. Localement, les **officiers**, au statut permanent et patrimonial, coexistent avec les **commissaires**, aux missions temporaires et révocables *ad nutum* (selon la seule volonté du roi). Les **grands du royaume** conservent un rôle de conseillers, et les **États provinciaux** gèrent, au niveau des provinces, les affaires fiscales locales tout en restant subordonnés à l'autorité royale."
+    ],
+    "keyPoints": [
+      "Justice royale : droit d'appel, cas royaux ; ordonnance d'Orléans (1439) : la taille devient un impôt permanent.",
+      "Hôtel du roi : grands officiers (connétable, chambrier, chancelier), patrimonialité et paulette (1604).",
+      "Curia Regis (féodale) → Conseil du roi permanent (XIe-XIIe siècle) : centralisation croissante.",
+      "États généraux (3 ordres, fonds) ; officiers (permanents) vs commissaires (révocables ad nutum) ; États provinciaux."
+    ],
+    "definitions": [
+      { "term": "Cas royaux", "text": "Délits jugés trop graves pour être laissés à la décision des seigneurs locaux, dont le jugement impose l'intervention directe de la justice royale." },
+      { "term": "Chancelier", "text": "Grand officier de l'Hôtel du roi dirigeant les secrétaires et clercs du palais chargés de rédiger les actes officiels et les décisions royales." },
+      { "term": "Paulette", "text": "Taxe annuelle instaurée en 1604 sous Henri IV, permettant à un officier de transmettre sa charge patrimoniale en échange d'un revenu versé au roi." },
+      { "term": "Curia Regis", "text": "Cour du roi de l'époque féodale, ancêtre du Conseil royal, traitant les questions de paix, de guerre, d'administration et surtout de justice féodale, mais rarement réunie au complet." },
+      { "term": "Commissaire (Ancien Régime)", "text": "Agent royal local aux missions temporaires, nommé et révocable « ad nutum », c'est-à-dire selon la seule volonté du roi et sans justification, par opposition à l'officier, permanent et patrimonial." }
+    ],
+    "exam": {
+      "kind": "question de cours",
+      "question": "En quoi la distinction entre officiers et commissaires révèle-t-elle une tension dans l'administration royale ?",
+      "concise": "L'administration locale de la monarchie capétienne repose sur deux catégories d'agents aux statuts radicalement différents. L'**officier** dispose d'un statut permanent et **patrimonial** : sa fonction est intégrée à son patrimoine personnel, il ne peut être destitué qu'en cas de faute grave, et peut même transmettre sa charge à condition de s'acquitter de la **paulette**, instaurée en 1604. Ce statut protège l'agent, mais prive corrélativement le roi de tout moyen de contrôle rapide sur lui. Le **commissaire**, à l'inverse, a une mission **temporaire** et est nommé « ad nutum », selon la seule volonté du roi, qui peut le révoquer à tout moment sans justification. Cette dualité révèle une tension propre à toute construction d'un pouvoir centralisé : les officiers offrent une administration stable et compétente, mais échappant largement au contrôle royal une fois en poste ; les commissaires offrent au contraire un instrument souple et immédiatement révocable, donc plus fidèle, mais moins enraciné et moins expert. La monarchie française a ainsi fait coexister ces deux logiques jusqu'à la fin de l'Ancien Régime, sans jamais totalement trancher entre stabilité administrative et contrôle royal direct.",
+      "plan": [
+        {
+          "title": "I. L'officier, une administration stable mais peu contrôlable",
+          "children": [
+            { "title": "A. Un statut patrimonial protecteur", "points": ["Une fonction intégrée au patrimoine personnel de l'agent", "Une destitution réservée aux fautes graves", "La transmission de la charge moyennant la paulette (1604)"] },
+            { "title": "B. Une perte corrélative de contrôle royal", "points": ["Un agent difficile à révoquer une fois en place", "Une administration qui échappe partiellement à l'autorité centrale", "Un risque d'enracinement local au détriment du roi"] }
+          ]
+        },
+        {
+          "title": "II. Le commissaire, un instrument de contrôle direct mais précaire",
+          "children": [
+            { "title": "A. Une nomination et une révocation ad nutum", "points": ["Une mission temporaire, selon la seule volonté du roi", "Aucune justification requise pour la révocation", "Un instrument de fidélité immédiate au pouvoir royal"] },
+            { "title": "B. Les limites de cette souplesse", "points": ["Un agent moins enraciné, potentiellement moins compétent localement", "Une coexistence durable des deux statuts jusqu'à la fin de l'Ancien Régime", "Conclusion : une tension jamais totalement résolue entre stabilité et contrôle"] }
+          ]
+        }
+      ],
+      "pitfalls": [
+        "Ne pas confondre la Curia Regis (assemblée féodale des grands vassaux) et le Conseil du roi (organe permanent apparu aux XIe-XIIe siècles) : le second succède au premier.",
+        "La paulette permet de transmettre une charge d'officier ; elle ne concerne pas les commissaires, révocables ad nutum sans possibilité de transmission."
+      ]
+    },
+    "quiz": [
+      { "q": "L'ordonnance d'Orléans (1439) a pour effet notable :", "choices": ["De créer les États généraux", "De faire de la taille un impôt royal permanent", "D'abolir la Curia Regis", "D'instaurer la paulette"], "answer": 1, "why": "Le roi peut désormais lever des fonds sans dépendre uniquement des volontés des seigneurs." },
+      { "q": "La paulette (1604) permet à un officier :", "choices": ["D'être révoqué sans motif", "De transmettre sa charge moyennant une taxe annuelle", "D'accéder au Conseil du roi", "De lever l'impôt royal"], "answer": 1, "why": "Un mécanisme lié à la patrimonialité croissante des offices sous l'Ancien Régime." },
+      { "q": "Le Conseil du roi, à partir des XIe-XIIe siècles, se distingue de la Curia Regis par :", "choices": ["Sa disparition rapide", "Son caractère permanent et sa composition librement choisie par le roi", "Sa composition exclusivement religieuse", "Son absence de tout pouvoir"], "answer": 1, "why": "Le roi n'a plus besoin de réunir tous les grands vassaux et convoque qui il souhaite." },
+      { "q": "Un commissaire royal est nommé et révocable :", "choices": ["Par les États généraux", "Ad nutum, selon la seule volonté du roi", "Par le chancelier uniquement", "Pour une durée fixe de dix ans"], "answer": 1, "why": "À la différence de l'officier, permanent et patrimonial." },
+      { "q": "Les États généraux sont convoqués notamment pour :", "choices": ["Juger les cas royaux", "Obtenir le soutien financier des trois ordres", "Élire le roi", "Administrer les provinces au quotidien"], "answer": 1, "why": "Avant la taille permanente, le roi devait consulter clergé, noblesse et tiers état pour lever des fonds." }
+    ]
+  },
+  {
+    "id": "histoire-15",
+    "order": 15,
+    "title": "L'absolutisme royal et ses limites",
+    "teaser": "Bodin, Bossuet et les lois fondamentales — un pouvoir absolu, mais jamais totalement sans bornes.",
+    "minutes": 5,
+    "brief": [
+      "**Jean Bodin**, dans *Les Six Livres de la République*, écrits peu après les guerres de religion, théorise la monarchie absolue : la souveraineté du monarque doit être **absolue** (le roi ne dépend de personne pour gouverner), **perpétuelle** (elle se transmet au successeur, indépendamment de la vie du monarque : « le roi est mort, vive le roi ») et **indivisible** (il ne peut y avoir qu'une seule autorité souveraine). **Guy Coquille** compare le roi à la tête d'un corps dont les trois ordres seraient les membres ; **Cardin Le Bret** insiste : « la souveraineté n'est non plus divisible que le point en géométrie ». **Bossuet**, dans la *Politique tirée des propres paroles de l'Écriture sainte*, ajoute une justification religieuse : le roi est le représentant de Dieu sur terre, lui désobéir équivaut à désobéir à Dieu — une conception qui perdra de sa force au XVIIIe siècle sous l'effet des idées des Lumières.",
+      "Dans l'exercice de l'absolutisme, le roi détient des prérogatives étendues — hiérarchique, militaire, diplomatique, fiscale, économique, et même religieuse (perception de taxes sur le clergé). Mais des **limites** encadrent ce pouvoir en principe absolu. Une limite **juridique** : le roi doit respecter les coutumes de droit privé et les privilèges des ordres, sans pouvoir retirer leur titre aux officiers, protégés par leur statut. Une limite **morale** : il doit agir conformément aux lois divines et naturelles. Une limite **structurelle** : pour instaurer un impôt, il doit en principe consulter les États généraux, et les régions conservent leurs coutumes propres. Une limite **conjoncturelle**, enfin : peu de rois tentent de réformer en profondeur le droit privé, et le roi doit composer avec les **Parlements**, qui disposent d'un pouvoir de **remontrance**.",
+      "Les **lois fondamentales** constituent un second type de limite, fixant les règles de succession et de gestion du domaine royal pour assurer la stabilité de l'État — une véritable **constitution coutumière** du royaume. La transmission de la couronne obéit à quatre règles : l'**hérédité** (de père en fils, sans consultation), la **primogéniture** (seul l'aîné hérite, les cadets recevant un apanage), la **masculinité** (les femmes et leurs descendants exclus, règle renforcée sous Louis X) et la **catholicité** (le roi doit être catholique, ce qu'illustre la conversion d'Henri IV).",
+      "La **protection du domaine royal** complète ce dispositif : le **traité de Troyes** (1420), qui désigne Henri V d'Angleterre comme héritier du trône français, illustre un cas exceptionnel de contestation de la succession. Le juriste **Jean de Terre Vermeil** soutient alors que la couronne de France est **indisponible**, relevant du droit public et non du droit privé : la succession devient une affaire d'intérêt général, inaliénable. D'où plusieurs conséquences : le roi ne peut ni abdiquer, ni renoncer à ses droits par anticipation, ni déshériter un successeur légitime, ni appeler au trône une personne extérieure à la lignée royale ; et le **domaine de la Couronne** lui-même est inaliénable, préservé pour les générations futures."
+    ],
+    "keyPoints": [
+      "Bodin : souveraineté absolue, perpétuelle, indivisible. Bossuet : droit divin de la monarchie.",
+      "Limites de l'absolutisme : juridique (coutumes, statut des officiers), morale, structurelle (États généraux, coutumes locales), conjoncturelle (Parlements, remontrances).",
+      "Lois fondamentales (constitution coutumière) : hérédité, primogéniture, masculinité, catholicité.",
+      "Indisponibilité de la couronne (Jean de Terre Vermeil, après le traité de Troyes 1420) : pas d'abdication, de renonciation, de déshéritement ; domaine royal inaliénable."
+    ],
+    "definitions": [
+      { "term": "Souveraineté absolue, perpétuelle et indivisible", "text": "Selon Jean Bodin, la souveraineté du monarque ne dépend de personne (absolue), se transmet indépendamment de la vie du roi (perpétuelle) et ne peut être partagée entre plusieurs autorités (indivisible)." },
+      { "term": "Droit de remontrance", "text": "Pouvoir des Parlements d'Ancien Régime de critiquer une loi royale avant son enregistrement, limite conjoncturelle à l'exercice de l'absolutisme." },
+      { "term": "Lois fondamentales", "text": "Ensemble de règles coutumières encadrant la transmission de la couronne et la gestion du domaine royal, formant une véritable constitution coutumière du royaume : hérédité, primogéniture, masculinité, catholicité." },
+      { "term": "Indisponibilité de la couronne", "text": "Principe, défendu par Jean de Terre Vermeil après le traité de Troyes (1420), selon lequel la couronne de France relève du droit public et non du droit privé, ce qui interdit au roi d'y renoncer ou de la léguer librement." },
+      { "term": "Inaliénabilité du domaine royal", "text": "Principe interdisant au roi de céder les terres et ressources constituant le domaine de la Couronne, afin d'en assurer la préservation pour les générations futures." }
+    ],
+    "exam": {
+      "kind": "dissertation",
+      "question": "L'absolutisme royal français est-il un pouvoir sans limites ?",
+      "concise": "En théorie, l'absolutisme tel que le formule **Jean Bodin** ne connaît aucune limite : la souveraineté royale est absolue, perpétuelle et indivisible, et **Bossuet** y ajoute une justification divine qui rend toute désobéissance sacrilège. Dans les faits, pourtant, le pouvoir royal reste encadré par quatre catégories de limites. Une limite **juridique** : le roi doit respecter les coutumes de droit privé et ne peut priver un officier de son titre sans motif. Une limite **morale** : il doit se conformer aux lois divines et naturelles. Une limite **structurelle** : l'instauration de nouveaux impôts suppose, en principe, la consultation des États généraux, et les provinces conservent leurs coutumes propres. Une limite **conjoncturelle** : peu de rois réforment en profondeur le droit privé, et le pouvoir royal doit composer avec le droit de remontrance des Parlements. À ces limites s'ajoutent les **lois fondamentales**, véritable constitution coutumière que le roi lui-même ne peut modifier à sa guise : il ne peut ni abdiquer, ni déshériter un successeur légitime, ni aliéner le domaine de la Couronne. L'absolutisme français n'est donc pas l'absence de toute limite, mais un pouvoir qui échappe au contrôle **institutionnalisé** — il n'existe aucune instance habilitée à sanctionner le roi — tout en restant contraint par un ensemble de règles coutumières, juridiques et morales qu'il ne songe généralement pas à transgresser frontalement.",
+      "plan": [
+        {
+          "title": "I. Une théorie sans limite affichée",
+          "children": [
+            { "title": "A. La souveraineté selon Bodin", "points": ["Absolue : le roi ne dépend de personne", "Perpétuelle : la souveraineté survit au monarque", "Indivisible : une seule autorité souveraine possible"] },
+            { "title": "B. Une légitimation religieuse renforcée", "points": ["Bossuet et le droit divin de la monarchie", "Désobéir au roi, désobéir à Dieu", "Un déclin de cette légitimation au XVIIIe siècle face aux Lumières"] }
+          ]
+        },
+        {
+          "title": "II. Des limites réelles, bien que non institutionnalisées",
+          "children": [
+            { "title": "A. Des limites juridiques, morales et structurelles", "points": ["Le respect des coutumes de droit privé et des statuts protégés", "La conformité exigée aux lois divines et naturelles", "La consultation de principe des États généraux pour l'impôt"] },
+            { "title": "B. Les lois fondamentales, une constitution coutumière intangible", "points": ["Hérédité, primogéniture, masculinité, catholicité", "L'indisponibilité de la couronne et l'inaliénabilité du domaine royal", "Conclusion : un pouvoir sans juge, mais non sans règles"] }
+          ]
+        }
+      ],
+      "pitfalls": [
+        "Ne pas dire que l'absolutisme signifie l'absence totale de règles : il signifie l'absence de contrôle institutionnalisé, non l'absence de toute limite.",
+        "Le traité de Troyes (1420) tente de déroger aux lois fondamentales ; il ne les incarne pas — c'est un cas de contestation exceptionnel."
+      ]
+    },
+    "quiz": [
+      { "q": "Selon Jean Bodin, la souveraineté du monarque doit être :", "choices": ["Divisible entre plusieurs organes", "Absolue, perpétuelle et indivisible", "Limitée aux affaires militaires", "Soumise à un contrôle parlementaire permanent"], "answer": 1, "why": "Trois caractères cumulatifs théorisés dans Les Six Livres de la République." },
+      { "q": "Le droit de remontrance appartient :", "choices": ["Aux États généraux", "Aux Parlements", "Aux officiers royaux", "À l'Église"], "answer": 1, "why": "Une limite conjoncturelle à l'absolutisme : les Parlements peuvent critiquer une loi avant enregistrement." },
+      { "q": "La règle de masculinité, dans les lois fondamentales, est renforcée sous :", "choices": ["Louis XIV", "Louis X", "Henri IV", "Louis XVI"], "answer": 1, "why": "Pour écarter sa fille de la succession, considérée comme illégitime." },
+      { "q": "L'indisponibilité de la couronne signifie notamment que le roi :", "choices": ["Peut abdiquer librement", "Ne peut ni abdiquer, ni déshériter un successeur légitime", "Peut vendre le domaine royal", "Peut désigner qui il veut comme successeur"], "answer": 1, "why": "La succession relève du droit public, intérêt général, non de la libre volonté personnelle du roi." },
+      { "q": "Le traité de Troyes (1420) illustre :", "choices": ["Un cas de succession normale", "Une tentative de déroger aux lois fondamentales", "L'instauration de la paulette", "La naissance du gallicanisme"], "answer": 1, "why": "En désignant Henri V d'Angleterre comme héritier, contestant ainsi les règles habituelles de succession." }
+    ]
+  },
+  {
+    "id": "histoire-16",
+    "order": 16,
+    "title": "Le pluralisme juridique de l'Ancien Droit",
+    "teaser": "Droit canonique, droit romain redécouvert : comment la doctrine savante encadre le pouvoir royal.",
+    "minutes": 5,
+    "brief": [
+      "L'Ancien Droit se caractérise par une diversité juridique fondée à la fois sur les **personnes** et sur les **lieux**. Certains privilèges tiennent à l'appartenance à un ordre : un clerc poursuivi en justice peut demander à être jugé par son évêque plutôt que par un tribunal laïc — une séparation juridictionnelle qui reprend la distinction, déjà vue chez Adalbéron, entre *oratores* jugés par les tribunaux ecclésiastiques et *bellatores*/*laboratores* jugés par les tribunaux laïcs. D'autres droits varient selon les territoires : les **chartes de franchises**, octroyées par les seigneurs, confèrent des droits particuliers à certains bourgs ; les **coutumes**, fondées sur des usages locaux, restent la principale source de droit, leur mise par écrit aux XIe-XIIe siècles marquant un tournant vers plus de structure.",
+      "À côté de ce droit local se développe le **ius commune**, les « droits savants » : le **droit canonique**, droit de l'Église, et le **droit civil romain**, redécouvert. Le droit canonique se construit par étapes : le **Décret de Gratien** (1140-1150) rassemble et organise les règles canoniques ; la décrétale **Per venerabilem** (1202) voit le pape reconnaître l'autorité politique du roi tout en réservant son propre pouvoir aux questions spirituelles ; les **Décrétales de Grégoire IX** (1234) compilent l'ensemble des décisions papales ayant force de loi. Le droit romain, lui, connaît un renouveau en Italie vers 1070, particulièrement influent dans le sud de la France ; la **Grande Glose d'Accurse** (1220-1234) en commente le Code de Justinien ; interdit d'enseignement à Paris, il se diffuse néanmoins à **Orléans**, où il devient très influent au XIIIe siècle.",
+      "L'influence des droits savants sur la pratique se fait progressive mais réelle : dès la première moitié du XIIe siècle, avocats et notaires empruntent au droit romain pour rédiger contrats et actes, les juges pour structurer la procédure. Cet apport façonne des notions décisives : le **pouvoir législatif du roi**, selon le principe romain « ce qui plaît au prince a force de loi » ; la **procédure romano-canonique**, de type inquisitoire, qui renforce le pouvoir centralisé de l'État ; la **présomption d'innocence**, qui deviendra un pilier de la justice ; un **système de preuves structuré** ; et, plus contestée, la réintroduction de la **torture judiciaire**, réservée aux crimes graves passibles de mort et strictement encadrée.",
+      "Ces droits savants **coexistent** avec les coutumes locales selon un principe de **subsidiarité** : ils s'appliquent quand l'État les juge plus adaptés ou efficaces. Le nord de la France reste dominé par le droit germanique, le sud (pays d'Oc) par le droit romain. Mais progressivement, l'idée s'impose que le roi seul a le pouvoir exclusif de légiférer, à la place des coutumes et des droits savants — **Philippe de Beaumanoir**, auteur des *Coutumes du Beauvaisis*, défend cette conception. L'**ordonnance de Montils-lès-Tours** (1454), promulguée par Charles VII, marque un tournant décisif : elle codifie la procédure judiciaire, définit les compétences des juridictions comme le Parlement de Paris, et exige, par son paragraphe 125, que les coutumes soient mises par écrit — un pas de plus vers l'unification du droit sous l'autorité royale."
+    ],
+    "keyPoints": [
+      "Pluralisme ratione personae (clercs jugés par l'évêque) et ratione loci (chartes de franchises, coutumes locales).",
+      "Droit canonique (Décret de Gratien 1140-1150, Décrétales de Grégoire IX 1234) et droit romain (renouveau v. 1070, enseigné à Orléans).",
+      "Apports des droits savants : pouvoir législatif du roi, procédure inquisitoire, présomption d'innocence, système de preuves, torture encadrée.",
+      "Ordonnance de Montils-lès-Tours (1454) : codification de la procédure et mise par écrit des coutumes — vers l'unification royale du droit."
+    ],
+    "definitions": [
+      { "term": "Ius commune (droits savants)", "text": "Ensemble formé par le droit canonique (droit de l'Église) et le droit civil romain redécouvert, enseignés et développés par la doctrine médiévale, en concurrence et en coexistence avec les coutumes locales." },
+      { "term": "Décret de Gratien (1140-1150)", "text": "Texte rassemblant et organisant les règles de droit canonique en vigueur, afin d'en concilier les différentes interprétations et de fonder un système juridique cohérent." },
+      { "term": "Procédure romano-canonique", "text": "Procédure de type inquisitoire inspirée du droit romain et du droit canonique, permettant à l'État de poursuivre une affaire de sa propre initiative, renforçant ainsi le pouvoir centralisé." },
+      { "term": "Principe de subsidiarité (droits savants)", "text": "Principe selon lequel les droits savants (romain, canonique) s'appliquent lorsque l'État les juge plus appropriés ou efficaces que les coutumes locales, qui continuent par ailleurs de s'appliquer." },
+      { "term": "Ordonnance de Montils-lès-Tours (1454)", "text": "Ordonnance de Charles VII codifiant la procédure judiciaire, définissant les compétences des juridictions et exigeant, par son paragraphe 125, la mise par écrit des coutumes." }
+    ],
+    "exam": {
+      "kind": "dissertation",
+      "question": "Les droits savants (droit romain et droit canonique) ont-ils affaibli ou renforcé le pouvoir royal ?",
+      "concise": "À première vue, les droits savants pourraient sembler concurrencer le pouvoir royal : le droit canonique relève de l'autorité du pape, le droit romain d'une tradition doctrinale indépendante enseignée dans les universités. Leur influence a pourtant, paradoxalement, **renforcé** l'autorité royale. Le droit romain fournit au roi le principe même de son pouvoir législatif — « ce qui plaît au prince a force de loi » — directement transposé de l'empereur romain au monarque français. La **procédure romano-canonique**, de type inquisitoire, permet à l'État de poursuivre une affaire de sa propre initiative, renforçant l'ordre public et l'autorité centralisée face à la justice seigneuriale dispersée. Ces apports coexistent certes avec les coutumes locales selon un principe de subsidiarité, ce qui limite en apparence leur portée. Mais c'est précisément sur cette base doctrinale que des juristes comme Philippe de Beaumanoir défendent l'idée que le roi seul a le pouvoir exclusif de légiférer, à la place des coutumes et des droits savants eux-mêmes. L'**ordonnance de Montils-lès-Tours** (1454) parachève ce mouvement : en exigeant la mise par écrit des coutumes sous le contrôle royal, elle absorbe la diversité juridique héritée du Moyen Âge dans un projet d'unification porté par la couronne. Les droits savants ont donc fourni au pouvoir royal les instruments intellectuels de sa propre centralisation.",
+      "plan": [
+        {
+          "title": "I. Des sources doctrinales en apparence concurrentes du pouvoir royal",
+          "children": [
+            { "title": "A. Le droit canonique, sous l'autorité du pape", "points": ["Le Décret de Gratien et les Décrétales de Grégoire IX", "Une autorité normative distincte du pouvoir royal", "Une compétence propre sur les affaires spirituelles"] },
+            { "title": "B. Le droit romain, une tradition doctrinale autonome", "points": ["Le renouveau du droit romain à partir de 1070", "Un enseignement universitaire indépendant du pouvoir politique", "Une influence particulièrement forte dans le sud de la France"] }
+          ]
+        },
+        {
+          "title": "II. Des apports qui nourrissent en réalité la centralisation royale",
+          "children": [
+            { "title": "A. Des concepts directement transposables au pouvoir royal", "points": ["« Ce qui plaît au prince a force de loi » : le fondement du pouvoir législatif royal", "La procédure romano-canonique inquisitoire au service de l'ordre public", "Une doctrine qui légitime un pouvoir normatif centralisé"] },
+            { "title": "B. Une absorption progressive sous contrôle royal", "points": ["Philippe de Beaumanoir : le roi seul légifère", "L'ordonnance de Montils-lès-Tours (1454) et la mise par écrit des coutumes", "Conclusion : les droits savants, instruments intellectuels de la centralisation royale"] }
+          ]
+        }
+      ],
+      "pitfalls": [
+        "Ne pas confondre le Décret de Gratien (droit canonique, 1140-1150) et les compilations justiniennes (droit romain, VIe siècle) : deux corpus distincts, séparés de plusieurs siècles.",
+        "Le droit romain est interdit d'enseignement à Paris, mais pas en France : il reste enseigné, notamment à Orléans."
+      ]
+    },
+    "quiz": [
+      { "q": "Le Décret de Gratien (1140-1150) relève :", "choices": ["Du droit romain", "Du droit canonique", "Du droit royal", "Du droit coutumier germanique"], "answer": 1, "why": "Il rassemble et organise les règles de droit de l'Église." },
+      { "q": "Le principe « ce qui plaît au prince a force de loi » est issu :", "choices": ["Du droit canonique", "Du droit romain", "De la coutume germanique", "Des États généraux"], "answer": 1, "why": "Un principe romain directement transposé au pouvoir législatif du roi de France." },
+      { "q": "Le droit romain est interdit d'enseignement à :", "choices": ["Orléans", "Paris", "Toulouse", "Montpellier"], "answer": 1, "why": "Il se développe malgré tout ailleurs, notamment à Orléans où il devient très influent." },
+      { "q": "L'ordonnance de Montils-lès-Tours (1454) exige notamment :", "choices": ["L'abolition des coutumes locales", "La mise par écrit des coutumes", "L'interdiction du droit romain", "La création des Parlements"], "answer": 1, "why": "Son paragraphe 125, un pas vers l'unification du droit sous contrôle royal." },
+      { "q": "Un clerc poursuivi en justice pouvait demander à être jugé :", "choices": ["Par le Parlement de Paris", "Par son évêque", "Par les États généraux", "Par un commissaire royal"], "answer": 1, "why": "Un privilège fondé sur la distinction entre oratores et les autres ordres de la société." }
+    ]
+  },
+  {
+    "id": "histoire-17",
+    "order": 17,
+    "title": "La contestation de l'Ancien Régime",
+    "teaser": "Turgot, Voltaire, l'affaire Callas — pourquoi une monarchie millénaire devient impossible à réformer de l'intérieur.",
+    "minutes": 5,
+    "brief": [
+      "À la veille de la Révolution, la contestation touche d'abord l'**organisation de l'État monarchique**. Le **découpage administratif** du territoire crée des inégalités entre citoyens de moins en moins acceptées, au point que les cahiers de doléances du tiers état réclament une réorganisation pour harmoniser le système. Le **système des offices**, par lequel le roi a multiplié des postes de fonctionnaires achetés par leurs titulaires — une source de revenus pour l'État —, favorise l'enrichissement de certains au détriment de la majorité, en particulier du tiers état. Les **corps intermédiaires**, groupes sociaux autonomes comme les corporations, sont également critiqués : le ministre **Turgot**, qui tentera de réformer le système, dénonce « une société composée de différents ordres mal unis, où personne n'est occupé que de son intérêt particulier ».",
+      "L'**action de l'État** lui-même est remise en cause, sur deux terrains. La **fiscalité** d'abord : la France est endettée, les ministres Turgot et Necker tentent en vain de réformer un système d'impôts inégalement réparti entre les ordres. La **justice** ensuite : l'organisation judiciaire est très critiquée, l'opinion publique se fait virulente contre ses injustices — l'**affaire Callas**, dans laquelle le suicide d'un homme est imputé à tort à un meurtre pour des raisons de préjugé religieux, et que Voltaire dénonce avec force, en est l'exemple le plus marquant. En 1788, Louis XVI abolit la torture, pratique déjà largement tombée en désuétude, et un adoucissement des peines est demandé, notamment pour la peine de mort.",
+      "La contestation touche aussi les **sources du droit** elles-mêmes. Les **privates leges** — les privilèges issus des coutumes et des ordres — sont remises en cause au nom de l'unité et de l'égalité : Voltaire critique la multiplicité des lois locales, qui varient d'une région à l'autre et rendent le droit confus et inégal. Les privilèges de la noblesse et du clergé sont contestés, y compris par certains membres de ces ordres eux-mêmes, ce qui accentue encore les tensions sociales.",
+      "Enfin, l'exercice du pouvoir normatif se heurte à la **querelle parlementaire**. Sous Louis XIV, le roi met fin, une fois adulte, au droit des Parlements de faire des remontrances avant l'enregistrement des lois, puis impose leur enregistrement automatique, les remontrances n'étant plus permises qu'après coup — les rendant inefficaces ; entre 1673 et 1715, le seul Parlement de Navarre adresse malgré tout 39 remontrances, auxquelles le roi répond par des **lettres de jussion** forçant l'enregistrement. Sous Louis XVI, la déclaration royale du 1er mai 1788, qui cherche à abolir la torture préparatoire et renforcer la présomption d'innocence, se heurte au rejet du Parlement — de même que les réformes fiscales — créant une rupture entre pouvoir royal et Parlements, perçus comme des obstacles à tout changement, tandis que les États généraux, réunis pour la première fois depuis plus de cent cinquante ans, cristallisent le mécontentement."
+    ],
+    "keyPoints": [
+      "Contestation des institutions : découpage administratif inégal, système des offices (achat de charges), corps intermédiaires (critique de Turgot).",
+      "Contestation de l'action de l'État : fiscalité inégale (Turgot, Necker), justice injuste (affaire Callas, Voltaire) ; abolition de la torture en 1788.",
+      "Contestation des sources du droit : privilèges des coutumes et des ordres remis en cause au nom de l'égalité.",
+      "Querelle parlementaire : Louis XIV limite les remontrances ; Louis XVI se heurte au refus des Parlements, États généraux réunis en 1789."
+    ],
+    "definitions": [
+      { "term": "Système des offices", "text": "Système par lequel le roi multiplie des postes de fonctionnaires achetés par leurs titulaires, source de revenus pour l'État mais générateur d'inégalités contestées à la veille de la Révolution." },
+      { "term": "Corps intermédiaires", "text": "Groupes sociaux autonomes situés entre l'individu et l'État, comme les corporations, imposés par le pouvoir et critiqués notamment par le ministre Turgot pour leur défense d'intérêts particuliers." },
+      { "term": "Affaire Callas", "text": "Affaire dans laquelle le suicide d'un homme est imputé à tort à un meurtre pour des raisons de préjugé religieux ; défendue par Voltaire, elle symbolise les critiques adressées à la justice de la fin de l'Ancien Régime." },
+      { "term": "Lettre de jussion", "text": "Lettre par laquelle le roi force un Parlement à enregistrer une loi malgré ses remontrances, instrument utilisé notamment par Louis XIV pour limiter le pouvoir de contestation des Parlements." },
+      { "term": "Privates leges", "text": "Expression désignant les privilèges particuliers issus des coutumes locales et des ordres sociaux, remis en cause à la fin de l'Ancien Régime au nom de l'unité et de l'égalité." }
+    ],
+    "exam": {
+      "kind": "dissertation",
+      "question": "La contestation de l'Ancien Régime est-elle d'abord une contestation des institutions ou une contestation des sources du droit ?",
+      "concise": "La contestation qui précède la Révolution se déploie sur **deux fronts distincts mais convergents**. D'une part, elle vise les **institutions** de l'État monarchique : le découpage administratif jugé inégal, le système des offices qui permet à certains de s'enrichir par l'achat de charges, les corps intermédiaires accusés de ne défendre que des intérêts particuliers, et l'action même de l'État en matière fiscale et judiciaire, cristallisée par des affaires retentissantes comme l'affaire Callas. D'autre part, elle vise les **sources mêmes du droit** : les privilèges issus des coutumes locales et de l'appartenance aux différents ordres — les *privates leges* — sont dénoncés au nom de l'unité et de l'égalité, notamment par Voltaire, qui critique la confusion née de la multiplicité des règles locales. Ces deux contestations se rejoignent dans la **querelle parlementaire** : en refusant les réformes proposées par Louis XVI en 1788, les Parlements, censés incarner un contre-pouvoir modérateur, apparaissent au contraire comme des obstacles à tout changement, qu'il porte sur les institutions ou sur le fond du droit. La convocation des États généraux, en 1789, répond ainsi à une double exigence : réformer les institutions de l'État et refonder les sources du droit lui-même, deux mouvements qui, loin de s'opposer, s'alimentent l'un l'autre jusqu'à rendre la Révolution inévitable.",
+      "plan": [
+        {
+          "title": "I. Une contestation des institutions de l'État",
+          "children": [
+            { "title": "A. Une administration jugée inéquitable", "points": ["Le découpage administratif source d'inégalités territoriales", "Le système des offices et l'enrichissement par l'achat de charges", "La critique des corps intermédiaires par Turgot"] },
+            { "title": "B. Une action publique contestée", "points": ["Une fiscalité inégalement répartie entre les ordres", "L'affaire Callas et la critique virulente de la justice", "L'abolition de la torture par Louis XVI en 1788"] }
+          ]
+        },
+        {
+          "title": "II. Une contestation des sources mêmes du droit",
+          "children": [
+            { "title": "A. Le rejet des privates leges", "points": ["Les privilèges issus des coutumes locales", "Les privilèges attachés aux ordres, noblesse et clergé", "La critique de Voltaire : confusion et inégalité du droit local"] },
+            { "title": "B. La querelle parlementaire, point de convergence", "points": ["Louis XIV et la limitation des remontrances", "Le rejet par les Parlements des réformes de Louis XVI en 1788", "Conclusion : la convocation des États généraux, réponse à une double exigence"] }
+          ]
+        }
+      ],
+      "pitfalls": [
+        "Ne pas réduire la contestation de l'Ancien Régime à la seule fiscalité : elle porte aussi, et fondamentalement, sur les sources du droit et sur la justice.",
+        "Les Parlements ne sont pas des assemblées représentatives comme les États généraux : ce sont des cours de justice disposant d'un droit de remontrance."
+      ]
+    },
+    "quiz": [
+      { "q": "Le système des offices consiste à :", "choices": ["Élire les fonctionnaires", "Vendre des postes de fonctionnaires", "Les attribuer par tirage au sort", "Les réserver au clergé"], "answer": 1, "why": "Une source de revenus pour l'État, mais génératrice d'inégalités contestées." },
+      { "q": "L'affaire Callas illustre la contestation :", "choices": ["Du système fiscal", "De la justice de l'Ancien Régime", "Du droit canonique", "Des lois fondamentales"], "answer": 1, "why": "Défendue par Voltaire, elle symbolise les critiques contre les injustices judiciaires." },
+      { "q": "Louis XVI abolit la torture en :", "choices": ["1715", "1788", "1791", "1804"], "answer": 1, "why": "Une pratique déjà largement tombée en désuétude à cette date." },
+      { "q": "Une lettre de jussion sert à :", "choices": ["Convoquer les États généraux", "Forcer l'enregistrement d'une loi malgré les remontrances d'un Parlement", "Abolir un privilège", "Nommer un commissaire royal"], "answer": 1, "why": "Un instrument utilisé notamment par Louis XIV face à la résistance des Parlements." },
+      { "q": "Les États généraux sont réunis en 1789 après une interruption de :", "choices": ["Environ 50 ans", "Plus de 150 ans", "10 ans", "Depuis toujours réunis annuellement"], "answer": 1, "why": "Une convocation exceptionnelle qui cristallise le mécontentement accumulé." }
+    ]
+  },
+  {
+    "id": "histoire-18",
+    "order": 18,
+    "title": "La Révolution : refondation des institutions et mutation du droit",
+    "teaser": "Du serment du Jeu de paume au légicentrisme : la loi devient la seule vraie souveraine.",
+    "minutes": 5,
+    "brief": [
+      "**1789**, « l'année sans pareille », s'ouvre le **5 mai** avec la convocation des États généraux par Louis XVI, où siègent les trois ordres. Le roi accepte de doubler le nombre de députés du tiers état, mais laisse en suspens la question décisive du mode de vote — par ordre ou par tête. Le **17 juin**, le tiers état se proclame **Assemblée nationale**, considérant représenter à lui seul la nation entière — une proclamation techniquement illégale, que le roi finit par reconnaître. Le **9 juillet**, l'Assemblée nationale devient **Assemblée constituante**, chargée d'établir une nouvelle constitution ; le **14 juillet**, la prise de la Bastille marque, symboliquement, le début de la Révolution. Le **4 août**, les privilèges féodaux sont abolis ; le **26 août**, la **Déclaration des droits de l'homme et du citoyen** est adoptée.",
+      "La DDHC n'est pas une constitution : c'est une déclaration fondamentale de droits, fondée sur l'idée de **droit naturel** — des droits inaliénables acquis dès la naissance. Elle évoque la séparation des pouvoirs législatif et exécutif, sans préciser clairement le rôle du judiciaire, et s'oppose à la torture. Son **article 1er** proclame liberté et égalité, imposant l'abolition des privilèges ; l'**article 2** définit les droits naturels et inaliénables ; l'**article 6** fait de la loi l'expression de la volonté générale, valant pour tous ; l'**article 11** garantit la liberté d'expression, de croyance et de pensée. En septembre 1791, l'Assemblée constituante rend sa constitution, établissant une **monarchie constitutionnelle** : « la nation est une et indivisible », « il n'y a point en France d'autorité supérieure à la loi, le roi ne règne que par elle » — le roi garde certains pouvoirs (choisir ses ministres, un droit de veto suspensif) mais ne peut dissoudre seul l'Assemblée. Le **suffrage censitaire**, proposé par l'abbé Sieyès, distingue citoyens actifs (votants) et citoyens passifs.",
+      "Cette monarchie constitutionnelle, éphémère (1791-1792), s'effondre rapidement : la fuite du roi à **Varennes** en juin 1791 détruit la confiance populaire ; le **10 août 1792**, les Parisiens prennent les Tuileries et le roi est emprisonné ; après la victoire de **Valmy**, la royauté est abolie et la **République** proclamée le **21 septembre 1792**. Les révolutionnaires font du **légicentrisme** — placer la loi et le pouvoir législatif au cœur du régime — l'instrument de leur projet politique, dans un climat de violence marqué notamment par les massacres de septembre 1792.",
+      "La mutation des sources du droit repose sur trois **nouveaux paradigmes**. La **nation souveraine** remplace le roi comme titulaire de la souveraineté, entité éternelle et inaliénable. La **séparation des pouvoirs** s'installe, sans égalité stricte entre eux — le législatif étant censé dominer l'exécutif. L'**égalité devant la loi** devient un principe fondamental, qui ne peut plus être fondée sur la naissance ou les privilèges hérités. Le moyen de cette refondation est le **légicentrisme** : la loi, expression de la volonté générale, devient l'instrument central et la norme suprême, au-dessus même du roi ; le juge n'a plus de pouvoir d'interprétation, il **applique** la loi de manière mécanique. Les autres sources du droit — coutume, jurisprudence, doctrine — sont largement **reléguées**, jugées archaïques et inégalitaires, la volonté générale de la nation primant sur toute opinion, même savante."
+    ],
+    "keyPoints": [
+      "1789 : États généraux (5 mai) → Assemblée nationale (17 juin) → Constituante (9 juillet) → Bastille (14 juillet) → abolition des privilèges (4 août) → DDHC (26 août).",
+      "1791 : monarchie constitutionnelle (« la loi » au-dessus du roi) ; 1792 : Varennes, chute de la monarchie, proclamation de la République (21 septembre).",
+      "Nouveaux paradigmes : nation souveraine, séparation des pouvoirs, égalité devant la loi.",
+      "Légicentrisme : la loi, volonté générale, devient norme suprême ; coutume, jurisprudence et doctrine reléguées."
+    ],
+    "definitions": [
+      { "term": "Déclaration des droits de l'homme et du citoyen (26 août 1789)", "text": "Texte fondateur, fondé sur l'idée de droit naturel, proclamant liberté, égalité et droits inaliénables ; ce n'est pas une constitution mais une déclaration de principes." },
+      { "term": "Suffrage censitaire", "text": "Système, proposé par l'abbé Sieyès, réservant le droit de vote aux citoyens payant un montant minimal d'impôt (le cens), distinguant citoyens actifs et citoyens passifs sous la monarchie constitutionnelle." },
+      { "term": "Nation souveraine", "text": "Nouveau paradigme révolutionnaire selon lequel la souveraineté, auparavant détenue par le roi, appartient désormais à la nation, entité éternelle et inaliénable." },
+      { "term": "Légicentrisme", "text": "Doctrine révolutionnaire plaçant la loi, expression de la volonté générale, au centre du système juridique et politique, au-dessus de toute autre source du droit et de toute autorité, y compris le roi." },
+      { "term": "Relégation des autres sources du droit", "text": "Effet du légicentrisme révolutionnaire : la coutume, la jurisprudence et la doctrine perdent leur rôle central au profit de la loi écrite, seule expression jugée légitime de la volonté générale." }
+    ],
+    "exam": {
+      "kind": "dissertation",
+      "question": "En quoi le légicentrisme révolutionnaire constitue-t-il une rupture avec les sources du droit de l'Ancien Régime ?",
+      "concise": "Sous l'Ancien Régime, le droit procédait d'un **pluralisme** assumé : coutumes locales, droits savants (romain, canonique), ordonnances royales et jurisprudence des cours coexistaient selon des logiques de subsidiarité et de territorialité. Le **légicentrisme** révolutionnaire rompt radicalement avec cette logique. Il repose sur trois paradigmes nouveaux — la **nation souveraine**, qui remplace le roi comme titulaire de la souveraineté ; la **séparation des pouvoirs**, qui organise différemment l'exercice de l'autorité ; l'**égalité devant la loi**, qui interdit désormais toute justification par la naissance ou le privilège. Dans ce nouveau cadre, la **loi**, expression de la volonté générale proclamée par l'article 6 de la DDHC, devient l'unique source normative légitime, au-dessus même du roi selon la Constitution de 1791. Les autres sources héritées de l'Ancien Droit sont délibérément **reléguées** : la coutume, jugée archaïque et porteuse d'inégalités locales, perd son rôle central ; la jurisprudence devient obsolète puisque le juge, désormais simple « bouche de la loi », n'a plus de pouvoir d'interprétation ; la doctrine elle-même, fût-elle savante, ne saurait refléter la volonté générale de la nation. Cette rupture n'est pas seulement technique : elle traduit un changement complet de conception du droit, qui cesse d'être un pluralisme hérité de l'histoire pour devenir l'expression unique et rationnelle d'une volonté collective.",
+      "plan": [
+        {
+          "title": "I. La fin du pluralisme juridique de l'Ancien Droit",
+          "children": [
+            { "title": "A. Des sources plurielles sous l'Ancien Régime", "points": ["Coutumes locales, droits savants, ordonnances royales", "Une coexistence organisée par la subsidiarité et la territorialité", "Un droit fragmenté, reflet d'une société d'ordres et de corps"] },
+            { "title": "B. L'avènement de nouveaux paradigmes", "points": ["La nation souveraine, remplaçant le roi", "La séparation des pouvoirs", "L'égalité devant la loi, interdisant tout privilège hérité"] }
+          ]
+        },
+        {
+          "title": "II. La loi, source unique et suprême",
+          "children": [
+            { "title": "A. La loi comme expression de la volonté générale", "points": ["L'article 6 de la DDHC", "Une loi supérieure même au roi selon la Constitution de 1791", "Un juge réduit à une application mécanique de la loi"] },
+            { "title": "B. La relégation des autres sources", "points": ["La coutume jugée archaïque et inégalitaire", "La jurisprudence privée de tout rôle interprétatif", "Conclusion : une doctrine elle-même disqualifiée face à la volonté générale"] }
+          ]
+        }
+      ],
+      "pitfalls": [
+        "La DDHC (26 août 1789) n'est pas une constitution : la première constitution révolutionnaire date de septembre 1791.",
+        "Ne pas confondre la monarchie constitutionnelle (1791-1792) et la République : la royauté n'est abolie qu'en septembre 1792, après la chute des Tuileries."
+      ]
+    },
+    "quiz": [
+      { "q": "La Déclaration des droits de l'homme et du citoyen est adoptée le :", "choices": ["14 juillet 1789", "26 août 1789", "21 septembre 1792", "3 septembre 1791"], "answer": 1, "why": "Le 14 juillet est la prise de la Bastille ; le 21 septembre 1792, la proclamation de la République." },
+      { "q": "La République est proclamée le :", "choices": ["10 août 1792", "21 septembre 1792", "26 août 1789", "9 juillet 1789"], "answer": 1, "why": "Après la victoire de Valmy et l'abolition de la royauté." },
+      { "q": "Le légicentrisme place au centre du système :", "choices": ["La coutume", "La jurisprudence", "La loi, expression de la volonté générale", "La doctrine des jurisconsultes"], "answer": 2, "why": "Une rupture nette avec le pluralisme des sources de l'Ancien Droit." },
+      { "q": "Le suffrage censitaire, proposé par l'abbé Sieyès, réserve le vote :", "choices": ["Aux seuls nobles", "Aux citoyens payant un montant minimal d'impôt", "À tous les citoyens sans distinction", "Aux seuls membres du clergé"], "answer": 1, "why": "Une distinction entre citoyens actifs et citoyens passifs sous la monarchie constitutionnelle." },
+      { "q": "Sous le régime issu du légicentrisme, le juge :", "choices": ["Crée le droit comme le préteur romain", "Applique la loi de manière mécanique, sans pouvoir d'interprétation", "Est élu par la nation souveraine", "Conserve un pouvoir de remontrance"], "answer": 1, "why": "Le pouvoir d'interprétation est retiré au juge, la loi devant s'appliquer telle qu'elle est écrite." }
+    ]
+  }
+]

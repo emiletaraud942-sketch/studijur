@@ -2,233 +2,349 @@
   {
     "id": "histoire-01",
     "order": 1,
-    "title": "Les droits cunéiformes",
-    "teaser": "Hammurabi, la loi du talion et la première mise par écrit du droit.",
+    "title": "Pourquoi étudier l'histoire du droit ?",
+    "teaser": "Droit comparé dans le temps, droit positif, et les quatre grandes périodes à connaître par cœur.",
     "minutes": 5,
     "brief": [
-      "Les premiers témoignages de droit public nous viennent de **Mésopotamie**, entre le Tigre et l'Euphrate, à partir du troisième millénaire avant notre ère. On les appelle **droits cunéiformes**, du nom de l'écriture en forme de coins gravée sur des tablettes d'argile. Leur découverte a bouleversé l'histoire du droit : elle montre que la mise par écrit des règles précède de très loin la Grèce et Rome.",
-      "Le texte le plus célèbre est le **Code de Hammurabi**, roi de Babylone, gravé vers 1750 avant notre ère sur une stèle de basalte conservée au Louvre. Il rassemble environ 280 dispositions. Le mot « code » est trompeur : ce n'est pas un code au sens moderne, c'est-à-dire un ensemble systématique et exhaustif de règles générales. C'est plutôt un recueil de **solutions casuistiques** — « si un homme a fait ceci, alors il subira cela » — présentées comme des décisions royales exemplaires.",
-      "Deux traits sont à retenir. Le premier est la **loi du talion** : « œil pour œil, dent pour dent ». On y voit souvent une barbarie ; c'est en réalité un progrès, car le talion **limite** la vengeance en la proportionnant à l'offense, là où la vengeance privée était sans mesure. Le second est l'**inégalité des peines selon le statut social** : la sanction diffère selon que la victime est un homme libre, un subalterne ou un esclave. Le droit décrit et consacre une société hiérarchisée.",
-      "Le prologue de la stèle éclaire la fonction politique de l'écrit. Hammurabi y affirme avoir reçu sa mission du dieu Shamash, dieu du soleil et de la justice, pour « faire régner la justice dans le pays » et empêcher que le fort n'opprime le faible. Le droit est ainsi placé sous une **légitimation religieuse**, et l'écrit sert autant à afficher la puissance du roi qu'à informer ses sujets."
+      "**Historia**, en grec, signifie « recherche », « enquête » — le mot vient d'Hérodote, considéré comme le premier historien. L'histoire du droit n'est donc pas un supplément d'érudition : c'est, selon la formule à retenir, **du droit comparé dans le temps**. Toute règle actuelle prolonge, infléchit ou rompt avec ce qui précède ; le droit français est très largement issu du droit romain pour le droit privé, et des ruptures révolutionnaires pour le droit public. Comprendre l'esprit du droit suppose donc de connaître son histoire, non pour tout apprendre par cœur, mais pour raisonner et développer un esprit critique.",
+      "L'histoire du droit repose sur la **critique des sources** : la critique externe porte sur l'authenticité et la provenance d'un document (qui l'a écrit, quand, comment nous est-il parvenu) ; la critique interne porte sur son contenu — idées, valeurs, intentions de l'auteur — pour juger de sa crédibilité. Il faut aussi distinguer le **juridique**, relatif au droit, du **judiciaire**, relatif à la justice : en général, quand le juridique n'est pas respecté, le judiciaire prend le relais.",
+      "Le **droit positif** est le droit tel qu'il est posé, en vigueur à un moment donné et en un lieu donné, qu'il faut respecter ici et maintenant sous peine de sanction. Ces deux conditions — temporelle et spatiale — sont **cumulatives** : il faut être ici *et* maintenant, non l'une ou l'autre (ce qui serait une condition alternative). Maintenant mais pas ici, c'est le droit étranger ; ici mais pas maintenant, c'est précisément l'histoire du droit. On y ajoute la distinction cardinale entre **droit privé**, qui régit les relations entre personnes privées, et **droit public**, qui organise l'État et ses institutions et encadre l'action des autorités publiques — une distinction héritée de l'Antiquité romaine.",
+      "L'histoire du droit commence avec l'apparition de l'écriture, en Mésopotamie, vers le IVe millénaire avant notre ère : avant, on ne peut que supposer l'existence de règles de droit. On distingue quatre grandes périodes. **L'Antiquité**, de l'invention de l'écriture cunéiforme (v. -3500) à la chute de l'Empire romain d'Occident (**476**). **Le Moyen Âge**, de 476 à la chute de l'Empire romain d'Orient et la fin de la guerre de Cent Ans (**1453**). **L'époque moderne**, de 1453 à la Révolution française (**1789**). **L'époque contemporaine**, depuis 1789."
     ],
     "keyPoints": [
-      "Droits cunéiformes : Mésopotamie, IIIe millénaire, tablettes d'argile.",
-      "Code de Hammurabi, vers 1750 av. J.-C., environ 280 dispositions casuistiques — pas un code moderne.",
-      "Loi du talion : non pas une barbarie mais une limitation proportionnée de la vengeance.",
-      "Peines inégales selon le statut social ; légitimation religieuse du pouvoir royal."
+      "L'histoire du droit = du droit comparé dans le temps ; critique externe (provenance) et critique interne (contenu) des sources.",
+      "Juridique (relatif au droit) ≠ judiciaire (relatif à la justice).",
+      "Droit positif : conditions temporelle et spatiale cumulatives. Droit privé (personnes privées) ≠ droit public (l'État).",
+      "Quatre périodes : Antiquité (jusqu'en 476), Moyen Âge (476–1453), époque moderne (1453–1789), époque contemporaine (depuis 1789)."
     ],
     "definitions": [
-      { "term": "Droits cunéiformes", "text": "Ensemble des droits du Proche-Orient ancien consignés en écriture cunéiforme sur tablettes d'argile, à partir du IIIe millénaire avant notre ère." },
-      { "term": "Code de Hammurabi", "text": "Recueil d'environ 280 dispositions gravé vers 1750 avant notre ère sur une stèle de basalte, au nom du roi de Babylone Hammurabi." },
-      { "term": "Casuistique", "text": "Méthode consistant à énoncer le droit par des solutions d'espèce successives plutôt que par des règles générales et abstraites." },
-      { "term": "Loi du talion", "text": "Principe de proportionnalité de la peine à l'offense, qui limite la vengeance privée en la mesurant au dommage subi." },
-      { "term": "Légitimation religieuse du droit", "text": "Procédé par lequel le pouvoir présente ses règles comme reçues d'une divinité, afin d'en renforcer l'autorité." }
+      { "term": "Droit positif", "text": "Le droit tel qu'il est posé dans un système juridique : l'ensemble des règles en vigueur, applicables à un moment donné et en un lieu donné, sous peine de sanction." },
+      { "term": "Conditions cumulatives / alternatives", "text": "Cumulatives : toutes les conditions doivent être remplies ensemble. Alternatives : il suffit qu'une seule le soit. Le droit positif suppose deux conditions cumulatives, temporelle et spatiale." },
+      { "term": "Critique externe / critique interne", "text": "La critique externe porte sur l'authenticité et la provenance d'un document ; la critique interne porte sur son contenu — informations, idées, intentions de l'auteur — pour en juger la crédibilité." },
+      { "term": "Droit privé / droit public", "text": "Le droit privé régit les relations entre personnes privées ; le droit public organise l'État et ses institutions et encadre l'action des autorités publiques. Distinction héritée de l'Antiquité romaine." },
+      { "term": "Terminus a quo / terminus ad quem", "text": "Le terminus a quo est le point de départ d'une période ; le terminus ad quem, son point d'arrivée." }
     ],
     "exam": {
       "kind": "question de cours",
-      "question": "Peut-on qualifier le Code de Hammurabi de code au sens moderne du terme ?",
-      "concise": "Non. Un code au sens moderne, tel que le Code civil de 1804, présente trois caractères : il est **systématique**, organisé selon un plan rationnel ; il est **général et abstrait**, posant des règles valant pour des catégories de situations ; et il prétend à une certaine **exhaustivité** dans sa matière. Le texte de Hammurabi ne remplit aucun de ces critères. Il procède par **cas concrets** successifs, sur le modèle « si un homme a fait ceci, alors… », sans plan d'ensemble rigoureux. Il ne couvre pas l'intégralité des rapports juridiques de son temps, laissant subsister à côté de lui coutumes et pratiques locales. Et il se présente moins comme une loi impersonnelle que comme un recueil de **décisions royales exemplaires**, destinées à manifester la justice du souverain. Il s'agit donc d'un monument juridique et politique majeur, mais dont la logique est casuistique et non codificatrice.",
+      "question": "Pourquoi dit-on que l'histoire du droit est « du droit comparé dans le temps » ?",
+      "concise": "Le droit comparé confronte des systèmes juridiques différents dans l'espace, à un même moment ; l'histoire du droit confronte les **mêmes** questions juridiques à travers le **temps**. Étudier le droit positif ne suffit pas à en comprendre le sens : une règle actuelle n'est intelligible que rapportée à ce qu'elle prolonge, infléchit ou rompt. Le droit privé français doit énormément au droit romain ; le droit public français, lui, est d'abord le produit d'une rupture, celle de 1789. L'enjeu n'est donc pas la mémorisation de dates, mais la compréhension d'un raisonnement : pourquoi telle institution a-t-elle pris telle forme, et pas une autre, compte tenu de ce qui existait avant elle. C'est cette démarche comparative dans le temps qui donne son sens propre à l'histoire du droit, distincte à la fois du droit positif et du droit comparé classique.",
       "plan": [
         {
-          "title": "I. Un monument juridique d'une portée considérable",
+          "title": "I. Une discipline qui interroge le droit positif par le temps",
           "children": [
-            { "title": "A. Une mise par écrit précoce du droit", "points": ["Vers 1750 avant notre ère, environ 280 dispositions", "Une stèle de basalte exposée publiquement, aujourd'hui au Louvre", "Un droit rendu visible et opposable, antérieur de plus d'un millénaire à Rome"] },
-            { "title": "B. Des principes d'une réelle modernité", "points": ["La loi du talion comme proportionnalité de la peine", "Le prologue : empêcher que le fort n'opprime le faible", "Une ébauche de fonction protectrice du droit"] }
+            { "title": "A. La définition du droit positif et ses limites", "points": ["Conditions cumulatives temporelle et spatiale", "« Ici et maintenant » : ce qui échappe à l'une des deux conditions échappe au droit positif", "Le droit positif décrit un état du droit, sans en expliquer l'origine"] },
+            { "title": "B. Une méthode fondée sur la critique des sources", "points": ["Critique externe : authenticité et provenance du document", "Critique interne : contenu, idées, intentions de l'auteur", "Le jugement porté sur les sources anciennes conditionne toute la discipline"] }
           ]
         },
         {
-          "title": "II. Une logique étrangère à celle de la codification",
+          "title": "II. Une clé de lecture du droit contemporain",
           "children": [
-            { "title": "A. Une méthode casuistique", "points": ["Des solutions d'espèce et non des règles générales", "Absence de plan systématique et d'exhaustivité", "Coexistence avec les coutumes locales non écrites"] },
-            { "title": "B. Une inégalité incompatible avec l'idée de code", "points": ["Des peines variables selon le statut social de la victime", "Un droit qui consacre la hiérarchie sociale plutôt que l'égalité", "Conclusion : un recueil de décisions royales, non un code"] }
+            { "title": "A. La filiation romaine du droit privé", "points": ["Le droit privé français très largement issu du droit romain", "La redécouverte du droit romain au Moyen Âge (Bologne, XIe siècle)", "Une continuité malgré les réformes successives"] },
+            { "title": "B. La rupture révolutionnaire du droit public", "points": ["Le droit public français né des ruptures de 1789", "La distinction droit privé / droit public héritée de l'Antiquité romaine", "Conclusion : comparer dans le temps pour comprendre, non pour mémoriser"] }
           ]
         }
       ],
       "pitfalls": [
-        "Ne pas présenter le talion comme une simple cruauté : c'est d'abord une limitation de la vengeance.",
-        "Ne pas dire que le Code de Hammurabi est « le premier texte juridique » : d'autres recueils mésopotamiens lui sont antérieurs."
+        "Ne pas confondre juridique (relatif au droit) et judiciaire (relatif à la justice) : le judiciaire est un sous-ensemble qui n'intervient qu'en cas de non-respect du juridique.",
+        "Les conditions du droit positif sont cumulatives, pas alternatives : il faut les deux, pas l'une ou l'autre."
       ]
     },
     "quiz": [
-      { "q": "Le Code de Hammurabi date d'environ :", "choices": ["3000 av. J.-C.", "1750 av. J.-C.", "450 av. J.-C.", "530 apr. J.-C."], "answer": 1, "why": "Vers 1750 avant notre ère. 450 av. J.-C. correspond à la Loi des XII Tables romaine, 530 au Code de Justinien." },
-      { "q": "La loi du talion a pour effet de :", "choices": ["Supprimer toute sanction", "Limiter la vengeance en la proportionnant", "Instaurer l'égalité des peines", "Confier la peine au roi seul"], "answer": 1, "why": "Face à une vengeance privée sans mesure, le talion impose une proportion : c'est en cela un progrès juridique." },
-      { "q": "Le Code de Hammurabi procède :", "choices": ["Par règles générales et abstraites", "Par solutions casuistiques", "Par principes philosophiques", "Par renvoi à la coutume"], "answer": 1, "why": "Sa forme est « si un homme a fait ceci, alors… » : des cas concrets, non des catégories abstraites." },
-      { "q": "Dans le Code de Hammurabi, la peine varie selon :", "choices": ["L'âge du coupable", "Le statut social de la victime", "La région", "La saison"], "answer": 1, "why": "Homme libre, subalterne ou esclave : la sanction diffère. Le droit consacre la hiérarchie sociale." },
-      { "q": "L'écriture cunéiforme tire son nom :", "choices": ["Du nom de son inventeur", "De la forme en coins des signes", "De la ville de Cunée", "Du matériau utilisé"], "answer": 1, "why": "Du latin cuneus, le coin : les signes étaient imprimés dans l'argile au moyen d'un calame à section triangulaire." }
+      { "q": "L'histoire du droit peut être définie comme :", "choices": ["Du droit comparé dans l'espace", "Du droit comparé dans le temps", "Une branche du droit public", "Une discipline sans lien avec le droit positif"], "answer": 1, "why": "Le droit comparé confronte des systèmes différents à un instant donné ; l'histoire du droit confronte les mêmes questions à travers le temps." },
+      { "q": "Les deux conditions du droit positif sont :", "choices": ["Alternatives : temporelle ou spatiale", "Cumulatives : temporelle et spatiale", "Uniquement spatiale", "Uniquement temporelle"], "answer": 1, "why": "Il faut être « ici » et « maintenant » : les deux conditions doivent être réunies ensemble." },
+      { "q": "L'Antiquité s'achève, pour les juristes, en :", "choices": ["1453", "1789", "476", "987"], "answer": 2, "why": "476 : chute de l'Empire romain d'Occident, qui ouvre le Moyen Âge." },
+      { "q": "La critique externe d'une source porte sur :", "choices": ["Son contenu et ses idées", "Son authenticité et sa provenance", "Sa traduction", "Sa longueur"], "answer": 1, "why": "La critique interne, elle, porte sur le contenu : idées, valeurs, intentions de l'auteur." },
+      { "q": "Le droit public, par opposition au droit privé :", "choices": ["Régit les relations entre particuliers", "Organise l'État et encadre l'action des autorités publiques", "N'existe que depuis 1789", "Est une invention médiévale"], "answer": 1, "why": "Distinction héritée de l'Antiquité romaine, indépendante de la date de naissance de tel ou tel État." }
     ]
   },
   {
     "id": "histoire-02",
     "order": 2,
-    "title": "Le droit grec : l'exemple d'Athènes",
-    "teaser": "Isonomie, tirage au sort, héliée : une démocratie sans État et sans juristes.",
+    "title": "Les droits cunéiformes",
+    "teaser": "Mésopotamie, cités-États et légitimité divine du roi — avant même l'idée de droit public.",
     "minutes": 5,
     "brief": [
-      "Athènes est l'exemple canonique du droit public grec. Sa démocratie repose sur un principe cardinal : l'**isonomie**, l'égalité de tous les citoyens devant la loi et dans l'accès aux charges. Attention au périmètre : la citoyenneté est étroite, elle exclut les femmes, les **métèques** — étrangers domiciliés — et les esclaves, qui forment ensemble la grande majorité de la population.",
-      "Les institutions s'articulent autour de trois organes. L'**ecclesia**, assemblée de tous les citoyens, vote les lois et les décrets, décide de la guerre et de la paix. La **boulè**, conseil de cinq cents membres tirés au sort, prépare les travaux de l'assemblée. Les **magistratures** sont pour la plupart attribuées par **tirage au sort**, annuelles et collégiales, sauf les fonctions militaires — la stratégie — qui restent électives parce qu'elles exigent une compétence.",
-      "Le tirage au sort est la clé du système. Il n'est pas un aveu d'incompétence mais une garantie **anti-oligarchique** : l'élection favorise mécaniquement les notables riches et connus ; le sort donne à chaque citoyen une chance égale d'exercer le pouvoir. Il s'accompagne de contrôles rigoureux — examen d'entrée en charge, reddition de comptes en sortie — et de la rotation annuelle des fonctions.",
-      "La justice est rendue par l'**héliée**, tribunal populaire composé de citoyens tirés au sort, siégeant par centaines pour éviter la corruption. Il n'y a ni juge professionnel, ni avocat au sens moderne, ni science juridique autonome : le plaideur parle lui-même, souvent aidé d'un logographe qui lui a écrit son discours. C'est pourquoi l'héritage grec est **politique et philosophique** plutôt que technique : les Grecs ont pensé la démocratie, la loi et la justice, mais ils n'ont pas construit la dogmatique juridique — cela sera l'œuvre de Rome."
+      "Les droits cunéiformes tirent leur nom du lieu où on les retrouve : la **Mésopotamie**, entre le Tigre et l'Euphrate — *cunéiforme* désigne l'écriture en forme de coins gravée sur tablettes d'argile, apparue vers **3500 avant notre ère**. Les deux fleuves ont permis sédentarisation, agriculture et commerce, donnant naissance à une civilisation qui a laissé une documentation juridique considérable, bien plus abondante que celle de l'Égypte ancienne sur une période comparable.",
+      "La Mésopotamie ne forme pas un État unique : c'est un ensemble de **cités-États indépendantes**, sans autorité centrale ni capitale commune. Chaque ville a ses propres institutions, généralement une petite monarchie. Le roi est censé être choisi par les dieux : sa légitimité est d'origine sacrée, mais il n'est pas lui-même divin — il est l'**intermédiaire** entre les hommes et la divinité, devant assumer les fautes de son peuple auprès d'elle. Cette légitimation religieuse est centrale, et varie selon la religion propre à chaque cité.",
+      "On sait beaucoup, par les tablettes, sur le droit des contrats et le droit commercial — les commerçants écrivaient pour se prémunir des litiges. En revanche, il n'existe encore **aucune doctrine**, et **aucun droit public** véritablement écrit : l'organisation des petits États est connue de manière indirecte, non par des textes qui la décriraient précisément. Ce que les tablettes transmettent relève donc surtout du droit privé.",
+      "Parmi les sources, le plus connu est le **Code de Hammurabi**, roi de Babylone au XVIIIe siècle avant notre ère (retrouvé seulement au XXe siècle). Ce n'est pas un code au sens moderne : il ne généralise pas, il procède par une succession d'**hypothèses casuistiques** qui qualifient des situations concrètes — par exemple le vol — et leur associent des peines fixes. Le lien entre le roi et le divin y est manifeste. On notera un point de méthode utile pour la suite du cours : la légalité criminelle, l'idée que la loi doit fixer par avance les peines, n'est pas une invention de l'Ancien Régime français — on en trouve déjà une application dans ce droit du XVIIIe siècle avant notre ère."
     ],
     "keyPoints": [
-      "Isonomie : égalité devant la loi, mais citoyenneté étroite (ni femmes, ni métèques, ni esclaves).",
-      "Ecclesia (assemblée), boulè (500 membres tirés au sort), magistratures annuelles et collégiales.",
-      "Tirage au sort = garantie anti-oligarchique, assortie de contrôles d'entrée et de sortie de charge.",
-      "Héliée : tribunal populaire, sans juges professionnels ni science juridique autonome."
+      "Droits cunéiformes : Mésopotamie, écriture en coins sur argile, à partir de -3500.",
+      "Un ensemble de cités-États indépendantes, sans autorité centrale ; rois légitimés par les dieux, intermédiaires entre hommes et divinité.",
+      "Beaucoup de droit des contrats et de droit commercial connu ; pas encore de doctrine, pas de droit public écrit.",
+      "Code de Hammurabi, XVIIIe siècle av. J.-C. : suite d'hypothèses casuistiques, non un code moderne."
     ],
     "definitions": [
-      { "term": "Isonomie", "text": "Principe grec d'égalité des citoyens devant la loi et dans l'accès aux magistratures, fondement de la démocratie athénienne." },
-      { "term": "Ecclesia", "text": "Assemblée de tous les citoyens athéniens, souveraine pour voter les lois et les décrets et décider de la guerre et de la paix." },
-      { "term": "Boulè", "text": "Conseil de cinq cents membres tirés au sort, chargé de préparer l'ordre du jour et les délibérations de l'ecclesia." },
-      { "term": "Héliée", "text": "Tribunal populaire athénien composé de citoyens tirés au sort, siégeant en formations très nombreuses pour prévenir la corruption." },
-      { "term": "Métèque", "text": "Étranger libre résidant durablement à Athènes, soumis à l'impôt et au service militaire mais exclu de la citoyenneté." }
+      { "term": "Droits cunéiformes", "text": "Ensemble des droits du Proche-Orient ancien consignés dans une écriture en forme de coins, sur tablettes d'argile, en Mésopotamie, à partir de 3500 avant notre ère." },
+      { "term": "Cité-État", "text": "Ville organisée comme un État indépendant, dotée de ses propres institutions et de son propre droit, sans dépendre d'une autorité centrale ; forme dominante en Mésopotamie ancienne." },
+      { "term": "Légitimité divine du roi", "text": "Conception selon laquelle le pouvoir du roi lui vient des dieux, qui le choisissent ; le roi n'est pas lui-même une divinité mais l'intermédiaire entre son peuple et le divin." },
+      { "term": "Casuistique", "text": "Méthode consistant à énoncer le droit par une succession de solutions d'espèce (« si un homme a fait ceci, alors… ») plutôt que par des règles générales et abstraites." },
+      { "term": "Code de Hammurabi", "text": "Recueil de dispositions casuistiques, gravé au XVIIIe siècle avant notre ère au nom du roi de Babylone Hammurabi, retrouvé seulement au XXe siècle." }
     ],
     "exam": {
-      "kind": "dissertation",
-      "question": "Le tirage au sort est-il démocratique ?",
-      "concise": "Pour les Athéniens, le tirage au sort est le procédé démocratique par excellence, et l'élection est au contraire un procédé **aristocratique** — l'analyse est déjà chez Aristote. Le sort réalise l'isonomie en donnant à chaque citoyen une chance strictement égale d'exercer une charge, il empêche la constitution d'une classe politique professionnelle, et il rend la corruption difficile puisque nul ne sait à l'avance qui sera désigné. Les contrôles d'entrée et de sortie de charge, ainsi que la rotation annuelle, en corrigent les inconvénients. Le procédé souffre pourtant de limites sérieuses. Il suppose une **compétence également répartie**, ce que les Athéniens eux-mêmes ne croyaient pas puisqu'ils réservaient l'élection aux stratèges. Il s'applique dans une cité de quelques dizaines de milliers de citoyens, non dans un État de millions d'habitants. Et il repose sur une citoyenneté **étroite**, excluant femmes, métèques et esclaves — ce qui relativise fortement l'égalité proclamée. Démocratique dans son principe, le tirage au sort n'est donc transposable qu'à certaines fonctions.",
+      "kind": "question de cours",
+      "question": "Pourquoi le droit cunéiforme mésopotamien ne comporte-t-il pas de véritable droit public ?",
+      "concise": "Le droit cunéiforme est d'abord un droit de **cités-États** : chaque ville a son organisation propre, ses institutions, son roi légitimé par les dieux — mais rien de cela n'est fixé dans des textes qui décriraient précisément l'organisation publique. Ce que les tablettes transmettent en abondance, c'est du droit des **contrats** et du **commerce** : les commerçants ressentent le besoin d'écrire pour se prémunir des litiges, ce que confirme la masse de documents cunéiformes retrouvés. L'organisation publique, elle, reste de l'ordre du su, de l'implicite, transmis par la pratique plutôt que par l'écrit. Il n'existe pas non plus de **doctrine** au sens où on l'entendra plus tard à Rome — pas de juristes professionnels réfléchissant sur le droit pour lui-même. Le droit cunéiforme est donc riche et précoce, mais c'est un droit essentiellement **privé** dans sa forme écrite, la dimension publique restant de l'ordre de la pratique institutionnelle non consignée.",
       "plan": [
         {
-          "title": "I. Un procédé démocratique par nature",
+          "title": "I. Une documentation abondante, mais orientée vers le droit privé",
           "children": [
-            { "title": "A. L'égalité stricte des chances", "points": ["L'isonomie réalisée : chaque citoyen peut exercer une charge", "Aristote : le sort est démocratique, l'élection est aristocratique", "La rotation annuelle empêche la professionnalisation du pouvoir"] },
-            { "title": "B. Un procédé assorti de garanties", "points": ["Examen d'aptitude à l'entrée en charge", "Reddition de comptes en fin de mandat", "Collégialité des magistratures et difficulté de la corruption"] }
+            { "title": "A. Le poids du droit des contrats", "points": ["Le besoin d'écrire ressenti par les commerçants", "Une masse considérable de tablettes retrouvées", "Un droit commercial et contractuel très développé pour l'époque"] },
+            { "title": "B. L'absence de doctrine", "points": ["Pas de juristes réfléchissant sur le droit pour lui-même", "Un droit pratique, non théorisé", "Une différence majeure avec ce que produira Rome plus tard"] }
           ]
         },
         {
-          "title": "II. Un procédé aux conditions d'application étroites",
+          "title": "II. Une organisation publique implicite, non consignée",
           "children": [
-            { "title": "A. Une exigence de compétence mal satisfaite", "points": ["Les stratèges restent élus : la compétence militaire ne se tire pas au sort", "Le risque d'incompétence dans les fonctions techniques", "La critique platonicienne du gouvernement par le nombre"] },
-            { "title": "B. Une démocratie à l'assise restreinte", "points": ["Exclusion des femmes, des métèques et des esclaves", "Une cité de taille réduite, incomparable à l'État moderne", "Conclusion : un procédé réactualisé aujourd'hui pour les conventions citoyennes et les jurys d'assises"] }
+            { "title": "A. Le morcellement en cités-États", "points": ["Pas d'autorité centrale ni de capitale commune", "Chaque cité a ses propres institutions", "Une diversité qui rend difficile toute généralisation écrite"] },
+            { "title": "B. Une légitimité fondée sur le sacré, non sur un texte", "points": ["Le roi choisi par les dieux, intermédiaire avec le divin", "Une légitimité qui n'a pas besoin d'être écrite pour être admise", "Conclusion : le droit public existe en pratique, mais pas encore par écrit"] }
           ]
         }
       ],
       "pitfalls": [
-        "Ne pas présenter la démocratie athénienne comme universelle : la citoyenneté y est très restreinte.",
-        "Ne pas oublier que les stratèges étaient élus : c'est l'exception qui révèle la logique du système."
+        "Ne pas présenter le Code de Hammurabi comme un code au sens moderne : il procède par cas concrets, non par règles générales.",
+        "Le roi mésopotamien n'est pas un dieu lui-même : il est l'intermédiaire entre les hommes et la divinité."
       ]
     },
     "quiz": [
-      { "q": "L'isonomie désigne :", "choices": ["Le tirage au sort", "L'égalité devant la loi et dans l'accès aux charges", "Le droit de vote des femmes", "L'égalité des fortunes"], "answer": 1, "why": "C'est le principe fondateur de la démocratie athénienne, dont le tirage au sort n'est que le moyen." },
-      { "q": "La boulè comptait :", "choices": ["100 membres", "500 membres", "1000 membres", "9 membres"], "answer": 1, "why": "Cinq cents membres tirés au sort, chargés de préparer les travaux de l'ecclesia." },
-      { "q": "Quelle magistrature restait élue à Athènes ?", "choices": ["Les archontes", "Les stratèges", "Les héliastes", "Les bouleutes"], "answer": 1, "why": "La fonction militaire exigeait une compétence : elle échappait au tirage au sort. C'est ainsi que Périclès fut réélu stratège chaque année." },
-      { "q": "L'héliée était :", "choices": ["Une assemblée législative", "Un tribunal populaire tiré au sort", "Un conseil de magistrats", "Une juridiction d'appel"], "answer": 1, "why": "Composée de centaines de citoyens tirés au sort pour rendre la corruption impossible." },
-      { "q": "Selon Aristote, l'élection est un procédé :", "choices": ["Démocratique", "Aristocratique", "Monarchique", "Tyrannique"], "answer": 1, "why": "Parce qu'elle favorise les notables riches et connus. Le tirage au sort est, lui, le procédé démocratique." }
+      { "q": "Les droits cunéiformes se situent en :", "choices": ["Égypte", "Mésopotamie", "Grèce", "Gaule"], "answer": 1, "why": "Entre le Tigre et l'Euphrate, à partir de 3500 avant notre ère." },
+      { "q": "La Mésopotamie ancienne est organisée en :", "choices": ["Un empire unique et centralisé", "Un ensemble de cités-États indépendantes", "Une fédération de royaumes", "Une théocratie unifiée"], "answer": 1, "why": "Chaque cité a ses propres institutions, sans capitale ni autorité centrale commune." },
+      { "q": "Le roi mésopotamien tire sa légitimité :", "choices": ["D'une élection populaire", "De son appartenance à une caste guerrière", "De son choix par les dieux", "D'un texte constitutionnel"], "answer": 2, "why": "Il est l'intermédiaire entre les hommes et la divinité, sans être lui-même un dieu." },
+      { "q": "Le droit cunéiforme est surtout documenté en matière :", "choices": ["De droit public", "De droit des contrats et de commerce", "De droit pénal international", "De droit constitutionnel"], "answer": 1, "why": "Les commerçants écrivaient pour se prémunir des litiges, d'où l'abondance de tablettes de droit privé." },
+      { "q": "Le Code de Hammurabi procède principalement par :", "choices": ["Des règles générales et abstraites", "Des hypothèses casuistiques", "Des principes philosophiques", "Un renvoi systématique à la coutume"], "answer": 1, "why": "Une succession de « si un homme a fait ceci, alors… », non des catégories générales." }
     ]
   },
   {
     "id": "histoire-03",
     "order": 3,
-    "title": "Rome : les magistratures et le cursus honorum",
-    "teaser": "Annalité, collégialité, responsabilité — et l'exception qui confirme tout : la dictature.",
+    "title": "Le droit grec : Athènes",
+    "teaser": "Magistrats, aréopage et ecclesia — mais aussi Dracon, Solon et la publication du droit.",
     "minutes": 5,
     "brief": [
-      "Sous la République, les magistratures romaines obéissent à trois principes structurants. L'**annalité** : la charge dure un an, ce qui empêche l'accaparement du pouvoir. La **collégialité** : chaque magistrature est exercée par au moins deux titulaires, dotés d'un droit d'opposition réciproque — l'*intercessio* — qui permet à l'un de bloquer l'autre. La **responsabilité** : le magistrat rend des comptes à l'issue de sa charge et peut être poursuivi.",
-      "Le **cursus honorum** est l'ordre obligatoire de parcours de ces charges, fixé notamment par la *lex Villia annalis* de 180 avant notre ère. On gravit successivement la **questure**, qui gère les finances ; l'**édilité**, chargée de la police de la ville, des marchés et des jeux ; la **préture**, qui dit le droit et rend la justice ; enfin le **consulat**, magistrature suprême, exercée par deux consuls qui commandent l'armée et convoquent le Sénat. La **censure**, exercée par d'anciens consuls, établit le cens et surveille les mœurs ; elle est prestigieuse mais hors du cursus ordinaire.",
-      "Deux magistratures échappent au schéma. Le **tribunat de la plèbe** est une magistrature plébéienne, non patricienne : le tribun est **sacro-saint**, sa personne est inviolable, et il dispose d'un droit de veto sur les actes des magistrats et du Sénat. C'est l'institution qui donne à la plèbe un contre-pouvoir réel.",
-      "La **dictature** est la magistrature **extraordinaire** par excellence. En cas de péril grave, un dictateur est nommé pour **six mois au maximum**, concentrant tous les pouvoirs. Elle rompt délibérément avec les trois principes : elle n'est ni collégiale, ni annale, et le dictateur n'est pas responsable de ses actes pendant sa charge. Cette exception, strictement bornée dans le temps, éclaire la logique de tout le système : la République accepte de suspendre ses garanties, mais jamais sans terme fixé d'avance."
+      "À Athènes, les **magistrats** — du latin *magistri*, « ceux qui sont au-dessus des autres » dans leur fonction, par opposition aux *ministri*, en dessous des autres — n'ont, dans l'exercice de leur mission, aucune autorité supérieure à la leur. On les appelle les **archontes** : « ceux qui commandent », chacun dans un domaine de compétence spécifique. Les magistrats sont pour la plupart **tirés au sort** ; seuls les **stratèges**, chargés de la fonction militaire, sont **élus** — un système démocratique dans lequel n'importe quel citoyen peut être désigné sans programme ni compétence préalable, sauf pour la guerre, où l'on exige une aptitude reconnue.",
+      "Le **judiciaire** est distinct du **juridique** : à Athènes, le rôle des magistrats n'est pas nécessairement de juger. Les **assemblées** jouent un rôle décisif à côté d'eux, en particulier pour le vote des lois : l'**ecclesia** est le lieu de réunion où sont conviés tous les citoyens, expression de la démocratie athénienne — mais imparfaite, car sans indemnité parlementaire, seuls ceux qui avaient le temps de s'y rendre, souvent les aristocrates, y étaient réellement représentés. L'**aréopage**, conseil des anciens, est une assemblée aristocratique composée de nobles — un « sénat » avant l'heure — au rôle majeur dans l'élaboration du droit, aux côtés de la chambre plus démocratique qu'est l'ecclesia.",
+      "Les **sources du droit** athénien sont plurielles. Il existe d'abord des **lois non écrites**, issues de la coutume et des mœurs religieuses grecques, considérées par les Athéniens comme supérieures aux lois votées, bien que non votées par les assemblées. Puis vient la **loi de la cité**, écrite : le législateur **Dracon** a permis la **publication** du droit — jusque-là, le droit reposait sur des coutumes connues des seuls aristocrates, qui pouvaient en abuser face aux « gens d'en bas ». Rendre le droit public et accessible à tous est un progrès considérable, un pas vers la démocratisation de l'accès au droit.",
+      "**Solon**, autre législateur athénien, réforme ensuite de nombreuses institutions et facilite l'accès à l'assemblée. Il crée l'**action populaire** : lorsqu'une infraction est commise, chaque citoyen peut engager des poursuites et saisir les juges, alors même qu'il n'existe à Athènes ni ministère public ni magistrat spécialisé pour défendre l'intérêt général — tout citoyen peut intervenir dans une affaire qui ne le concerne pas directement, précisément parce qu'elle concerne la cité tout entière."
     ],
     "keyPoints": [
-      "Trois principes : annalité, collégialité (avec intercessio), responsabilité.",
-      "Cursus honorum : questure → édilité → préture → consulat ; censure à part.",
-      "Tribun de la plèbe : sacro-saint, doté d'un droit de veto.",
-      "Dictature : magistrature extraordinaire de six mois maximum, qui rompt les trois principes."
+      "Magistrats (archontes) : tirés au sort, sauf les stratèges (élus, fonction militaire).",
+      "Ecclesia : assemblée de tous les citoyens, mais accès de fait réservé aux aristocrates (pas d'indemnité).",
+      "Aréopage : conseil aristocratique des anciens, rôle majeur dans l'élaboration du droit.",
+      "Dracon publie le droit (fin du monopole aristocratique) ; Solon crée l'action populaire."
     ],
     "definitions": [
-      { "term": "Cursus honorum", "text": "Ordre obligatoire de parcours des magistratures romaines, fixant pour chacune un âge minimum et des délais entre les charges." },
-      { "term": "Collégialité (Rome)", "text": "Principe selon lequel chaque magistrature est exercée par plusieurs titulaires égaux, dotés d'un droit d'opposition réciproque appelé intercessio." },
-      { "term": "Préteur", "text": "Magistrat romain chargé de dire le droit et de rendre la justice, dont l'édit annuel a joué un rôle majeur dans la formation du droit romain." },
-      { "term": "Tribun de la plèbe", "text": "Magistrat plébéien inviolable, disposant d'un droit de veto sur les actes des magistrats et du Sénat, institué pour protéger la plèbe." },
-      { "term": "Dictature", "text": "Magistrature extraordinaire romaine concentrant tous les pouvoirs entre les mains d'un seul homme pour six mois au maximum, en cas de péril grave." }
+      { "term": "Magistrat (Athènes)", "text": "Personne qui, dans l'exercice de sa fonction, n'a aucune autorité au-dessus d'elle dans son domaine de compétence ; les archontes athéniens en sont l'exemple, pour la plupart tirés au sort." },
+      { "term": "Ecclesia", "text": "Assemblée athénienne réunissant tous les citoyens, en particulier pour le vote des lois ; expression de la démocratie, mais de fait dominée par ceux qui avaient le temps de s'y rendre." },
+      { "term": "Aréopage", "text": "Conseil des anciens à Athènes, assemblée aristocratique composée de nobles, jouant un rôle majeur dans la création et l'élaboration du droit." },
+      { "term": "Publication du droit (Dracon)", "text": "Réforme par laquelle le législateur Dracon rend le droit, jusque-là connu des seuls aristocrates, accessible à l'ensemble des citoyens." },
+      { "term": "Action populaire (Solon)", "text": "Faculté créée par Solon permettant à tout citoyen d'engager des poursuites judiciaires lorsqu'une infraction a été commise, même s'il n'en est pas directement victime, faute de ministère public à Athènes." }
     ],
     "exam": {
       "kind": "dissertation",
-      "question": "Les magistratures romaines organisent-elles une limitation efficace du pouvoir ?",
-      "concise": "Le système magistratuel romain met en place une limitation du pouvoir remarquablement pensée. L'**annalité** interdit qu'une charge se transforme en position acquise ; la **collégialité**, assortie de l'*intercessio*, permet à chaque magistrat de paralyser son collègue ; la **responsabilité** expose le magistrat à des poursuites une fois sorti de charge ; le **cursus honorum** impose une progression lente et contrôlée ; et le **tribunat de la plèbe** offre à la partie la plus nombreuse du corps social un droit de veto. Cette limitation connaît toutefois des failles décisives. La **dictature**, quoique bornée à six mois, montre que la République admet la suspension de ses propres garanties ; le **Sénat**, qui n'est pas une magistrature, exerce une influence considérable sans être soumis à ces contraintes ; et la fin de la République révèle que ces règles cèdent devant le fait militaire, lorsque Sylla puis César obtiennent des dictatures de durée indéfinie, puis perpétuelle. La limitation était donc efficace tant que le consensus civique la soutenait, et impuissante dès qu'il s'est rompu.",
+      "question": "La publication du droit par Dracon marque-t-elle une véritable démocratisation du droit athénien ?",
+      "concise": "La réforme de Dracon constitue un progrès réel : avant lui, le droit reposait sur des coutumes connues des seuls aristocrates, qui pouvaient en détourner l'application au détriment des « gens d'en bas ». En rendant le droit **public**, Dracon met fin à ce monopole de la connaissance juridique et permet à chacun de savoir ce qui est permis ou interdit. Cette avancée reste cependant à nuancer. La démocratie athénienne demeure structurellement **inégalitaire** : l'ecclesia, ouverte à tous les citoyens en droit, est en fait dominée par les aristocrates, seuls à disposer du temps nécessaire pour y siéger faute d'indemnité parlementaire ; et l'aréopage, organe majeur de création du droit, reste une assemblée strictement aristocratique. La publication du droit ne change donc rien à qui **fait** le droit, seulement à qui peut le **connaître**. Solon ira plus loin en ouvrant l'accès à la justice elle-même par l'action populaire, mais l'élaboration du droit reste, tout au long de la période classique, largement contrôlée par les élites.",
       "plan": [
         {
-          "title": "I. Un dispositif de limitation soigneusement construit",
+          "title": "I. Un progrès réel dans l'accès au droit",
           "children": [
-            { "title": "A. Les trois principes des magistratures ordinaires", "points": ["Annalité : la charge dure un an", "Collégialité et intercessio : le droit d'opposition entre collègues", "Responsabilité : reddition de comptes et poursuites possibles"] },
-            { "title": "B. Les garanties complémentaires", "points": ["Le cursus honorum : progression obligatoire, âges minimaux, lex Villia annalis de 180 av. J.-C.", "Le tribunat de la plèbe : inviolabilité et droit de veto", "La censure : contrôle des mœurs et de la composition du Sénat"] }
+            { "title": "A. La fin du monopole aristocratique de la connaissance", "points": ["Le droit coutumier connu des seuls nobles avant Dracon", "Le risque de détournement du droit par l'élite", "La publication comme condition de l'égalité devant la loi"] },
+            { "title": "B. Le prolongement par Solon", "points": ["La facilitation de l'accès à l'assemblée", "L'action populaire : tout citoyen peut engager des poursuites", "Une justice ouverte à défaut de ministère public"] }
           ]
         },
         {
-          "title": "II. Un dispositif qui cède devant le fait",
+          "title": "II. Une démocratisation limitée dans ses effets",
           "children": [
-            { "title": "A. Les exceptions admises par le système lui-même", "points": ["La dictature : six mois, sans collégialité ni responsabilité", "L'influence du Sénat, non soumis aux règles magistratuelles", "Le cumul et les dispenses accordées aux grands commandements"] },
-            { "title": "B. L'effondrement à la fin de la République", "points": ["Sylla et César : des dictatures de durée indéfinie puis perpétuelle", "Le poids des armées personnelles et des clientèles", "Conclusion : des règles efficaces tant que le consensus civique les porte"] }
+            { "title": "A. Une participation de fait réservée aux notables", "points": ["L'absence d'indemnité parlementaire à l'ecclesia", "Les citoyens travaillant écartés de fait des assemblées", "Une démocratie de droit, aristocratique dans les faits"] },
+            { "title": "B. La persistance d'un pouvoir aristocratique de création du droit", "points": ["L'aréopage, assemblée de nobles, au rôle majeur dans l'élaboration du droit", "La publication du droit ne déplace pas qui le fait", "Conclusion : connaître le droit n'est pas encore le faire"] }
           ]
         }
       ],
       "pitfalls": [
-        "La censure n'appartient pas au cursus honorum ordinaire : elle est exercée par d'anciens consuls.",
-        "Ne pas confondre la dictature romaine, magistrature légale et temporaire, avec la dictature au sens moderne."
+        "Ne pas confondre les archontes (magistrats tirés au sort) et les stratèges (élus, fonction militaire).",
+        "L'ecclesia est ouverte en droit à tous les citoyens, mais dominée en fait par les aristocrates : ne pas la présenter comme purement démocratique."
       ]
     },
     "quiz": [
-      { "q": "Les trois principes des magistratures romaines sont :", "choices": ["Annalité, collégialité, responsabilité", "Égalité, continuité, mutabilité", "Superposition, autonomie, participation", "Publicité, célérité, gratuité"], "answer": 0, "why": "Ce triptyque organise la limitation du pouvoir sous la République romaine." },
-      { "q": "L'ordre du cursus honorum est :", "choices": ["Consulat, préture, édilité, questure", "Questure, édilité, préture, consulat", "Préture, questure, consulat, censure", "Édilité, consulat, questure, préture"], "answer": 1, "why": "On gravit les charges de la plus modeste à la plus haute : questure, édilité, préture, consulat." },
-      { "q": "L'intercessio désigne :", "choices": ["Le droit d'opposition entre magistrats collègues", "L'élection d'un magistrat", "La reddition de comptes", "Le tirage au sort"], "answer": 0, "why": "Elle permet à un magistrat de bloquer l'acte de son collègue : c'est la sanction concrète de la collégialité." },
-      { "q": "La dictature romaine était limitée à :", "choices": ["Un an", "Six mois", "Dix ans", "À vie"], "answer": 1, "why": "Six mois au maximum. Sylla puis César briseront cette limite, ce qui annonce la fin de la République." },
-      { "q": "Le tribun de la plèbe est :", "choices": ["Un magistrat patricien", "Sacro-saint et doté d'un droit de veto", "Élu par le Sénat", "Chargé des finances"], "answer": 1, "why": "Son inviolabilité et son veto font de lui le contre-pouvoir plébéien face aux magistrats patriciens et au Sénat." }
+      { "q": "Les magistrats athéniens (archontes) sont, pour la plupart :", "choices": ["Élus", "Tirés au sort", "Héréditaires", "Nommés par l'aréopage"], "answer": 1, "why": "Seuls les stratèges, chargés de la fonction militaire, sont élus." },
+      { "q": "L'aréopage est :", "choices": ["Une assemblée de tous les citoyens", "Un conseil aristocratique des anciens", "Un tribunal populaire", "Le nom d'un magistrat suprême"], "answer": 1, "why": "Une assemblée de nobles, jouant un rôle majeur dans l'élaboration du droit." },
+      { "q": "Dracon est connu pour avoir :", "choices": ["Créé l'action populaire", "Publié le droit, jusque-là réservé aux aristocrates", "Instauré le tirage au sort", "Aboli l'ecclesia"], "answer": 1, "why": "C'est Solon qui crée ensuite l'action populaire ; Dracon rend le droit public." },
+      { "q": "L'action populaire, créée par Solon, permet :", "choices": ["Au seul magistrat compétent d'engager des poursuites", "À tout citoyen d'engager des poursuites, même sans être victime", "Uniquement aux aristocrates de saisir la justice", "Le jugement par tirage au sort exclusivement"], "answer": 1, "why": "En l'absence de ministère public à Athènes, tout citoyen peut agir dans l'intérêt de la cité." },
+      { "q": "L'accès effectif à l'ecclesia était limité par :", "choices": ["Un examen d'entrée", "L'absence d'indemnité parlementaire", "Un tirage au sort restrictif", "Une interdiction faite aux non-aristocrates"], "answer": 1, "why": "Sans indemnité, les citoyens qui travaillaient ne pouvaient se permettre d'y siéger, ce qui favorisait de fait les aristocrates." }
     ]
   },
   {
     "id": "histoire-04",
     "order": 4,
-    "title": "Sénat, comices et sources du droit romain",
-    "teaser": "Qui vote quoi à Rome — et pourquoi le préteur compte plus que l'assemblée.",
+    "title": "Rome : la République, magistratures et assemblées",
+    "teaser": "Impérium, annualité, tribuns de la plèbe — et le sénat qui gouverne sans légiférer.",
     "minutes": 5,
     "brief": [
-      "Le **Sénat** n'est pas une assemblée élue : il réunit d'anciens magistrats, inscrits sur la liste par les censeurs. Il n'a pas, en droit, de pouvoir législatif : il rend des *senatus consulta*, des avis. Mais son autorité — l'*auctoritas* — est telle que ces avis sont suivis. Il dirige de fait la politique étrangère, les finances et la religion. C'est l'organe de la continuité aristocratique face à des magistrats annuels.",
-      "Les **comices** sont les assemblées du peuple. Les *comitia centuriata*, organisées par centuries selon la fortune, élisent les consuls et les préteurs et votent la guerre ; le système est délibérément **censitaire**, les classes les plus riches votant les premières et disposant d'une majorité de centuries. Les *comitia tributa*, organisées par tribus territoriales, élisent les magistrats inférieurs. Les **conciles de la plèbe** réunissent les seuls plébéiens et votent des *plébiscites* : depuis la *lex Hortensia* de 287 avant notre ère, ces plébiscites s'imposent à tout le peuple romain, patriciens compris — c'est l'aboutissement de la lutte des ordres.",
-      "Les **sources du droit** romain sont multiples et hiérarchisées différemment selon les époques. La plus ancienne est la **Loi des XII Tables**, vers 450 avant notre ère, première mise par écrit du droit romain, obtenue par la plèbe pour échapper à l'arbitraire de l'interprétation patricienne. Viennent ensuite les lois comitiales, les plébiscites, les sénatus-consultes, puis, sous l'Empire, les **constitutions impériales**.",
-      "Deux sources dominent en pratique. L'**édit du préteur** : chaque préteur publie en entrant en charge l'édit exposant les actions qu'il accordera ; en créant des actions nouvelles, il forge un droit parallèle au droit civil, le *droit prétorien*, souple et adapté. Et la **doctrine** : les *jurisconsultes* — Gaius, Papinien, Ulpien, Paul, Modestin — donnent des consultations dont certaines reçoivent force de loi. Le tout sera rassemblé au VIe siècle par **Justinien** dans la compilation qu'on appellera plus tard le *Corpus juris civilis*, socle de la redécouverte du droit romain à Bologne au XIe siècle et de toute la tradition juridique continentale."
+      "En 509 avant notre ère, la noblesse romaine renverse la royauté : le roi, choisi par la noblesse en son sein, ne dispose pas d'un pouvoir héréditaire, et une partie de l'aristocratie, n'ayant plus le monopole du pouvoir, fait la révolution. Les grandes familles veulent conserver l'**impérium**, pouvoir suprême civil et militaire jadis détenu par le roi. Ce pouvoir est alors confié à des **magistrats** élus pour un an — principe d'**annualité** — avec une véritable **séparation des pouvoirs** entre eux : chacun a un domaine de compétence distinct.",
+      "Parmi les **magistratures ordinaires** : les **consuls**, deux, détiennent l'impérium pour un an seulement ; les **préteurs**, en dessous, reçoivent les fonctions judiciaires que les consuls ne pouvaient plus assumer seuls, et détiennent eux aussi l'impérium ; les **édiles** gèrent les questions municipales (approvisionnement, sécurité) sans impérium ; les **questeurs** s'occupent des finances et de la fiscalité, sans impérium non plus. Une hiérarchie s'impose : il faut avoir été édile avant d'être préteur, préteur avant d'être consul — c'est le **cursus honorum**, la carrière des honneurs.",
+      "Face aux patriciens, la **plèbe**, qui n'a ni droits ni accès aux charges publiques, entre en sécession. Pour la récupérer, les patriciens publient le droit plébéien et créent les **tribuns de la plèbe** : à la fin de la République, ils sont dix, élus pour un an. Ils bénéficient d'une **inviolabilité** — on ne peut les toucher sous peine de mort — et d'un **droit de veto** qui leur permet de s'opposer à une loi votée, même à la majorité, ce qui donnera rapidement lieu à des abus. Des **magistratures extraordinaires** existent aussi : la **censure**, exercée par des censeurs élus pour un an et demi (un « lustre »), chargés du recensement et de la censure des mœurs ; et la **dictature**, sans collégialité ni annualité, limitée à six mois, réservée aux périls graves exigeant une décision rapide qu'un débat sénatorial retarderait.",
+      "Deux assemblées structurent la vie publique. Le **sénat**, assemblée aristocratique des plus âgés — jugés plus sages par l'expérience — existait déjà sous la royauté et se maintient après 509. Les **comices**, assemblées du peuple, préexistaient également et se multiplient sous la République. Les **conciles de la plèbe** réunissent, eux, les seuls plébéiens : c'est là que sont votés les **plébiscites**, à la différence des comices où l'on vote les lois proprement dites."
     ],
     "keyPoints": [
-      "Sénat : anciens magistrats, auctoritas, senatus consulta suivis en fait.",
-      "Comices centuriates censitaires ; lex Hortensia de 287 av. J.-C. : les plébiscites lient tout le peuple.",
-      "Loi des XII Tables, vers 450 av. J.-C. : première mise par écrit, arrachée par la plèbe.",
-      "Édit du préteur et jurisconsultes : les deux sources vivantes ; Justinien compile au VIe siècle."
+      "509 av. J.-C. : la noblesse renverse la royauté, mais conserve l'impérium via des magistrats annuels.",
+      "Cursus honorum : questeur → édile → préteur → consul, hiérarchie obligatoire.",
+      "Tribun de la plèbe : inviolable, droit de veto ; créé après la sécession de la plèbe.",
+      "Magistratures extraordinaires : censure (1 an et demi) et dictature (6 mois maximum, sans collégialité ni annualité)."
     ],
     "definitions": [
-      { "term": "Sénat romain", "text": "Assemblée d'anciens magistrats inscrits par les censeurs, dépourvue de pouvoir législatif formel mais dont l'autorité dirige en fait la politique romaine." },
-      { "term": "Comices centuriates", "text": "Assemblée du peuple organisée par centuries selon la fortune, élisant les magistrats supérieurs ; son mode de vote favorisait les classes les plus riches." },
-      { "term": "Lex Hortensia", "text": "Loi de 287 avant notre ère conférant aux plébiscites votés par les conciles de la plèbe force obligatoire pour l'ensemble du peuple romain." },
-      { "term": "Loi des XII Tables", "text": "Première mise par écrit du droit romain, vers 450 avant notre ère, obtenue par la plèbe pour soustraire le droit à l'interprétation arbitraire des patriciens." },
-      { "term": "Édit du préteur", "text": "Programme publié par le préteur à son entrée en charge, énumérant les actions qu'il accordera, et source du droit prétorien." }
+      { "term": "Impérium", "text": "Pouvoir suprême de commandement civil et militaire, détenu par le roi de Rome puis, sous la République, par les consuls et les préteurs pour la durée limitée de leur charge." },
+      { "term": "Annualité", "text": "Principe selon lequel une magistrature romaine ordinaire est exercée pour un an seulement, afin d'empêcher l'accaparement durable du pouvoir." },
+      { "term": "Cursus honorum", "text": "Ordre obligatoire de parcours des magistratures romaines : questure, édilité, préture, puis consulat." },
+      { "term": "Tribun de la plèbe", "text": "Magistrat plébéien créé après la sécession de la plèbe, inviolable sous peine de mort et disposant d'un droit de veto sur les actes des magistrats et du sénat." },
+      { "term": "Dictature (Rome)", "text": "Magistrature extraordinaire, sans collégialité ni annualité, limitée à six mois, instituée pour faire face rapidement à un péril grave que le débat sénatorial retarderait." }
     ],
     "exam": {
       "kind": "dissertation",
-      "question": "Le préteur est-il une source du droit romain ?",
-      "concise": "Formellement, le préteur n'a pas le pouvoir de faire la loi : celle-ci appartient aux comices, aux conciles de la plèbe et, plus tard, à l'empereur. Sa mission est de **dire le droit**, c'est-à-dire d'organiser le procès et d'accorder ou de refuser les actions. Mais c'est précisément par là qu'il devient créateur. En publiant chaque année son **édit**, il annonce les actions qu'il accordera ; en créant des actions nouvelles là où le droit civil n'en offrait pas, il fait naître des situations juridiques inédites — la possession protégée, les contrats de bonne foi, l'exception de dol. Les juristes romains le disaient déjà : le droit prétorien vient « aider, suppléer et corriger » le droit civil. L'édit finit par se stabiliser et sera codifié sous Hadrien en **édit perpétuel**. Le préteur est donc une source **matérielle** majeure du droit romain, sans en être une source **formelle** — et ce décalage entre le pouvoir affiché et le pouvoir réel est exactement celui que connaît aujourd'hui le juge français.",
+      "question": "Le système des magistratures romaines sous la République réalise-t-il une limitation efficace du pouvoir ?",
+      "concise": "Le système magistratuel romain est pensé pour limiter le pouvoir : l'**annualité** empêche qu'une charge devienne une position acquise, la **séparation des pouvoirs** entre magistrats évite leur concentration, le **cursus honorum** impose une progression lente et contrôlée, et le **tribun de la plèbe**, inviolable et doté d'un droit de veto, offre un contre-pouvoir à la partie la plus nombreuse du corps social. Ce dispositif connaît toutefois des limites qu'il porte lui-même. La **dictature**, quoique bornée à six mois, montre que la République admet de suspendre ses propres garanties dès qu'un péril grave l'exige — sans collégialité, sans annualité, sans les contrepoids habituels. Le **sénat**, qui n'est pas une magistrature et n'est donc soumis à aucune de ces règles, exerce dans les faits une influence considérable sur la politique romaine. Le droit de veto du tribun de la plèbe, enfin, donne rapidement lieu à des abus, révélant qu'un contre-pouvoir mal borné peut aussi bloquer le fonctionnement normal des institutions. Le système est donc efficace tant qu'il repose sur un consensus civique, mais porte en lui les germes de ses propres débordements.",
       "plan": [
         {
-          "title": "I. Un magistrat qui n'a pas le pouvoir de faire la loi",
+          "title": "I. Un dispositif construit pour limiter le pouvoir",
           "children": [
-            { "title": "A. Une compétence juridictionnelle", "points": ["Le préteur dit le droit, il ne légifère pas", "La loi appartient aux comices, aux conciles de la plèbe, puis à l'empereur", "Une magistrature annuelle, soumise aux principes du cursus honorum"] },
-            { "title": "B. Une intervention formellement procédurale", "points": ["Accorder ou refuser l'action, organiser l'instance", "La distinction entre la phase in jure et la phase apud judicem", "L'édit se présente comme un programme, non comme une loi"] }
+            { "title": "A. Les principes des magistratures ordinaires", "points": ["Annualité et séparation des pouvoirs entre magistrats", "Le cursus honorum : questeur, édile, préteur, consul", "Une hiérarchie qui filtre progressivement l'accès au pouvoir suprême"] },
+            { "title": "B. Le contre-pouvoir plébéien", "points": ["La sécession de la plèbe à l'origine du tribunat", "Inviolabilité et droit de veto du tribun de la plèbe", "Un rééquilibrage entre patriciens et plébéiens"] }
           ]
         },
         {
-          "title": "II. Un magistrat qui crée le droit en fait",
+          "title": "II. Un dispositif qui porte en lui ses propres limites",
           "children": [
-            { "title": "A. La création par l'action", "points": ["Pas de droit sans action : accorder une action, c'est créer un droit", "Les créations prétoriennes : possession, contrats de bonne foi, exception de dol", "Aider, suppléer et corriger le droit civil"] },
-            { "title": "B. La stabilisation d'un droit prétorien", "points": ["La reprise de l'édit d'année en année : l'edictum tralaticium", "La codification sous Hadrien : l'édit perpétuel", "Conclusion : un parallèle éclairant avec le rôle créateur du juge contemporain"] }
+            { "title": "A. Les exceptions admises par le système", "points": ["La dictature : six mois, sans collégialité ni annualité", "Le sénat, non magistrature, échappant aux règles magistratuelles", "Une influence sénatoriale considérable dans les faits"] },
+            { "title": "B. Le risque des contre-pouvoirs mal bornés", "points": ["Les abus rapides du droit de veto tribunicien", "Le blocage possible des institutions par un seul homme", "Conclusion : un équilibre qui dépend d'un consensus civique fragile"] }
           ]
         }
       ],
       "pitfalls": [
-        "Ne pas confondre les comices (tout le peuple) et les conciles de la plèbe (les seuls plébéiens).",
-        "Le Corpus juris civilis est une compilation du VIe siècle : le nom lui a été donné bien plus tard."
+        "Ne pas confondre les comices (assemblées de tout le peuple) et les conciles de la plèbe (seuls les plébéiens, votant des plébiscites).",
+        "La dictature romaine est une magistrature légale et temporaire : ne pas la confondre avec la dictature au sens moderne du terme."
       ]
     },
     "quiz": [
-      { "q": "La lex Hortensia de 287 av. J.-C. décide que :", "choices": ["Le Sénat vote les lois", "Les plébiscites s'imposent à tout le peuple romain", "Les comices sont supprimés", "Le préteur cesse de publier son édit"], "answer": 1, "why": "C'est l'aboutissement de la lutte des ordres : la plèbe obtient que ses votes lient aussi les patriciens." },
-      { "q": "La Loi des XII Tables date d'environ :", "choices": ["450 av. J.-C.", "287 av. J.-C.", "180 av. J.-C.", "530 apr. J.-C."], "answer": 0, "why": "Vers 450 avant notre ère. 287 correspond à la lex Hortensia, 530 à la compilation de Justinien." },
-      { "q": "Les comices centuriates étaient organisées :", "choices": ["Par tribus territoriales", "Par centuries selon la fortune", "Par tirage au sort", "Par tranches d'âge"], "answer": 1, "why": "Un système censitaire : les classes riches votaient en premier et détenaient la majorité des centuries." },
-      { "q": "Le Sénat romain rendait :", "choices": ["Des lois", "Des senatus consulta, des avis suivis en fait", "Des édits", "Des plébiscites"], "answer": 1, "why": "Pas de pouvoir législatif formel, mais une auctoritas telle que ses avis étaient suivis." },
-      { "q": "La compilation de Justinien date du :", "choices": ["IIe siècle av. J.-C.", "Ier siècle apr. J.-C.", "VIe siècle apr. J.-C.", "XIe siècle"], "answer": 2, "why": "VIe siècle. Le XIe siècle est celui de sa redécouverte à Bologne, à l'origine de la tradition juridique continentale." }
+      { "q": "La royauté romaine est renversée en :", "choices": ["753 av. J.-C.", "509 av. J.-C.", "27 av. J.-C.", "476 apr. J.-C."], "answer": 1, "why": "753 est la date de fondation légendaire de Rome ; 509 celle de l'instauration de la République." },
+      { "q": "Dans le cursus honorum, quel ordre est correct ?", "choices": ["Consul, préteur, édile, questeur", "Questeur, édile, préteur, consul", "Édile, consul, questeur, préteur", "Préteur, questeur, consul, édile"], "answer": 1, "why": "On gravit les charges de la plus modeste à la plus haute." },
+      { "q": "Le tribun de la plèbe dispose notamment :", "choices": ["De l'impérium", "D'un droit de veto et de l'inviolabilité", "Du pouvoir de nommer les consuls", "D'un mandat de dix ans"], "answer": 1, "why": "Créé après la sécession de la plèbe, il est protégé et peut bloquer les actes des magistrats ou du sénat." },
+      { "q": "La dictature romaine est limitée à :", "choices": ["Un an", "Six mois", "Dix-huit mois", "À vie"], "answer": 1, "why": "Une magistrature extraordinaire, sans collégialité ni annualité, mais strictement bornée à six mois." },
+      { "q": "Les plébiscites sont votés :", "choices": ["Par le sénat", "Par les comices", "Par les conciles de la plèbe", "Par les consuls"], "answer": 2, "why": "Les conciles de la plèbe réunissent les seuls plébéiens, à la différence des comices qui votent les lois." }
+    ]
+  },
+  {
+    "id": "histoire-05",
+    "order": 5,
+    "title": "Rome : de l'empereur aux fonctionnaires, du principat au dominat",
+    "teaser": "Auctoritas, imperium pro-consulaire : comment Octave devient Auguste sans jamais se dire roi.",
+    "minutes": 5,
+    "brief": [
+      "La République romaine se délite : pour Polybe, elle était un régime mixte réussi — un peu monarchique par l'impérium, un peu démocratique par les conciles de la plèbe, un peu aristocratique par le sénat — tant que chacun agissait pour l'intérêt commun. L'assassinat de Jules César précipite son déclin. Après la guerre civile qui l'oppose à Marc Antoine, **Octave** rétablit l'ordre et gagne la confiance de la société romaine, ce qui lui vaut d'être désigné consul chaque année.",
+      "En **27 avant notre ère**, avec l'appui du sénat, Octave s'impose comme empereur et prend le nom d'**Auguste**. Il obtient un **impérium pro-consulaire** — celui d'un gouverneur de province, prolongé sur dix ans, qui lui évite de revenir chaque année devant les électeurs — et une **puissance tribunicienne** qui fait de lui le protecteur des plus faibles, avec droit de veto. Il détient surtout l'**auctoritas**, l'autorité de l'ensemble des sénateurs, qui seule lui donne un monopole que l'impérium seul, partagé avec d'autres, ne pouvait lui garantir. Pour préserver les apparences républicaines, il refuse le titre de roi et se fait appeler *imperator* : les magistratures continuent d'être nommées chaque année, mais le pouvoir réel est concentré entre ses mains.",
+      "Le pouvoir impérial se développe en deux temps. Le **principat** (haut-empire, fin du Ier siècle av. J.-C. à fin du IIIe siècle apr. J.-C.) : l'empereur, *princeps* (le premier) et *imperator* (celui qui commande), tire sa suprématie de la *potestas*, la puissance, dont découle l'impérium, mais surtout de l'**auctoritas**, qui lui donne le monopole que l'impérium seul ne garantissait pas et lui permet d'agir en législateur par des **édits** et des **mandats**. Il se veut gardien de la *respublica*, la chose publique, et non un roi. Le **dominat** (bas-empire, fin du IIIe au Ve siècle) marque la rupture : l'empereur devient *dominus*, maître, un absolutisme sans contre-pouvoir où sa volonté est loi vivante ; le sénat perd toute réalité, l'armée devient le pilier du pouvoir.",
+      "Le pouvoir impérial devient enfin **chrétien**. À partir du Ier siècle, le christianisme se développe en Orient, distinct du judaïsme ; monothéiste, il refuse le culte impérial, ce qui vaut aux chrétiens persécution puis, progressivement, tolérance. **Constantin** se convertit au christianisme et le reconnaît toléré ; à la fin du IVe siècle, il devient religion officielle de l'État, les autres cultes étant condamnés. L'Église soutient alors le pouvoir impérial en insistant sur son origine divine, l'empereur devenant un « serviteur de Dieu » — et les citoyens, sous le dominat, deviennent des sujets, la citoyenneté accordée à tous par l'**édit de Caracalla** n'apportant en pratique guère plus qu'un statut nominal."
+    ],
+    "keyPoints": [
+      "27 av. J.-C. : Octave devient Auguste, avec l'appui du sénat — imperium pro-consulaire + puissance tribunicienne + auctoritas.",
+      "L'auctoritas, et non l'imperium seul, garantit le monopole du pouvoir impérial.",
+      "Principat (fin Ier av. J.-C. – fin IIIe apr. J.-C.) → Dominat (fin IIIe – Ve siècle) : de princeps à dominus, absolutisme croissant.",
+      "Christianisation : Constantin, tolérance puis religion d'État fin IVe siècle ; les citoyens deviennent des sujets."
+    ],
+    "definitions": [
+      { "term": "Auctoritas", "text": "Autorité morale de l'ensemble des sénateurs, transmise à l'empereur, qui seule lui garantit un monopole du pouvoir que l'impérium — partagé avec d'autres magistrats — ne pouvait à lui seul lui assurer." },
+      { "term": "Imperium pro-consulaire", "text": "Pouvoir de gouverneur de province accordé à Octave en 27 av. J.-C., prolongé sur dix ans, lui évitant de revenir chaque année devant les électeurs." },
+      { "term": "Principat / Dominat", "text": "Le principat (fin Ier siècle av. J.-C. – fin IIIe siècle apr. J.-C.) est le haut-empire, où l'empereur reste formellement princeps ; le dominat (fin IIIe – Ve siècle) est le bas-empire, où il devient dominus, maître absolu." },
+      { "term": "Respublica", "text": "La « chose publique », les affaires du peuple ; ce n'est pas un régime politique précis mais une notion d'État, une entité supérieure dont l'empereur, sous le principat, se veut le gardien." },
+      { "term": "Édit de Caracalla", "text": "Édit accordant la citoyenneté romaine à tous les habitants de l'Empire, qui n'apporte cependant que peu d'avantages concrets aux nouveaux citoyens." }
+    ],
+    "exam": {
+      "kind": "question de cours",
+      "question": "Sur quoi repose juridiquement le pouvoir d'Auguste en 27 avant notre ère ?",
+      "concise": "Le pouvoir d'Auguste repose sur une combinaison précise d'attributions, et non sur un titre monarchique qu'il évite soigneusement. Il détient l'**imperium pro-consulaire**, pouvoir d'un gouverneur de province prolongé sur dix ans, qui lui évite de revenir chaque année devant les électeurs. Il reçoit une **puissance tribunicienne** qui fait de lui le protecteur des plus faibles et lui donne un droit de veto, sur le modèle du tribun de la plèbe. Mais l'élément décisif est l'**auctoritas** : l'autorité de l'ensemble des sénateurs, qui lui est transférée et lui garantit, seule, le monopole que l'impérium — par nature partagé, puisque les consuls le détiennent aussi — ne pouvait lui assurer. Pour préserver les apparences républicaines, Auguste refuse tout titre de roi et se fait appeler *imperator*, « celui qui commande » ; les magistratures continuent d'être nommées chaque année. Le pouvoir impérial n'est donc pas, à l'origine, une rupture institutionnelle brutale, mais une accumulation de pouvoirs légaux existants, rendue irréversible par l'auctoritas qui la légitime.",
+      "plan": [
+        {
+          "title": "I. Une accumulation de pouvoirs légaux préexistants",
+          "children": [
+            { "title": "A. L'imperium pro-consulaire", "points": ["Le pouvoir d'un gouverneur de province, prolongé sur dix ans", "Un mécanisme qui évite le retour annuel devant les électeurs", "Une continuité avec les institutions républicaines"] },
+            { "title": "B. La puissance tribunicienne", "points": ["Le rôle de protecteur des plus faibles", "Le droit de veto, hérité du modèle du tribun de la plèbe", "Une légitimité populaire ajoutée à la légitimité sénatoriale"] }
+          ]
+        },
+        {
+          "title": "II. L'auctoritas, clé de voûte du monopole impérial",
+          "children": [
+            { "title": "A. Une autorité distincte de l'impérium", "points": ["L'impérium, par nature partagé avec d'autres magistrats", "L'auctoritas, autorité de l'ensemble des sénateurs transférée à un seul", "Le monopole que l'impérium seul ne pouvait garantir"] },
+            { "title": "B. Le maintien des apparences républicaines", "points": ["Le refus du titre de roi, le choix du titre d'imperator", "Le maintien formel des magistratures annuelles", "Conclusion : une rupture réelle sous une continuité affichée"] }
+          ]
+        }
+      ],
+      "pitfalls": [
+        "Ne pas dire qu'Auguste « se proclame roi » en 27 av. J.-C. : il refuse précisément ce titre pour préserver les apparences républicaines.",
+        "Ne pas confondre principat (empereur encore princeps) et dominat (empereur devenu dominus, maître absolu) : la rupture se situe à la fin du IIIe siècle."
+      ]
+    },
+    "quiz": [
+      { "q": "Octave devient Auguste en :", "choices": ["509 av. J.-C.", "44 av. J.-C.", "27 av. J.-C.", "313 apr. J.-C."], "answer": 2, "why": "27 av. J.-C., avec l'appui du sénat." },
+      { "q": "Ce qui garantit à l'empereur un monopole que l'impérium seul ne pouvait assurer, c'est :", "choices": ["La puissance tribunicienne seule", "L'auctoritas", "Le titre de roi", "Le cursus honorum"], "answer": 1, "why": "L'impérium est par nature partagé ; l'auctoritas, autorité de l'ensemble des sénateurs, garantit seule le monopole." },
+      { "q": "Le dominat succède au principat :", "choices": ["Dès la mort d'Auguste", "À partir de la fin du IIIe siècle", "Après la chute de Rome en 476", "Sous Constantin uniquement"], "answer": 1, "why": "Le principat s'étend de la fin du Ier siècle av. J.-C. à la fin du IIIe siècle apr. J.-C., puis vient le dominat." },
+      { "q": "Le christianisme devient religion officielle de l'Empire :", "choices": ["Dès le Ier siècle", "Sous Auguste", "À la fin du IVe siècle", "Après 476"], "answer": 2, "why": "Après la conversion de Constantin et une tolérance progressive, le christianisme s'impose comme religion d'État à la fin du IVe siècle." },
+      { "q": "L'édit de Caracalla :", "choices": ["Interdit le christianisme", "Accorde la citoyenneté romaine à tous les habitants de l'Empire", "Instaure le dominat", "Crée le sénat"], "answer": 1, "why": "Une citoyenneté qui n'apporte cependant, en pratique, que peu d'avantages nouveaux." }
+    ]
+  },
+  {
+    "id": "histoire-06",
+    "order": 6,
+    "title": "Rome : les sources du droit, du préteur à Justinien",
+    "teaser": "Coutume, édit du préteur, jurisconsultes — et la compilation qui a sauvé le droit romain.",
+    "minutes": 5,
+    "brief": [
+      "Sous la royauté puis la République, la **coutume** — règle non écrite, mais respectée parce que répétée de génération en génération — est la source dominante : la plupart des lois anciennes en sont issues. Elle a l'avantage de s'adapter aux besoins, mais l'inconvénient de pouvoir devenir inadaptée. La **loi des Douze Tables**, vers le Ve siècle avant notre ère, codifie l'essentiel de ces coutumes sans en changer le contenu, et l'affiche sur le forum pour que chacun y ait accès, favorisant l'égalité — mais sans droit d'amendement possible : une loi votée par le peuple est acceptée ou refusée en bloc.",
+      "La **législation** évolue ensuite selon qui légifère : le peuple d'abord, sans possibilité d'amendement ; puis, sous l'Empire, l'**empereur** lui-même, dont la volonté, portée par l'auctoritas, devient automatiquement loi — on parle de **constitutions impériales**, sous quatre formes : les **édits** (mesures générales, dans le domaine de compétence de leur auteur), les **décrets** (décisions judiciaires de l'empereur), les **mandats** (instructions aux fonctionnaires) et les **rescrits** (réponses de l'empereur à une question posée par un administré).",
+      "Le **droit prétorien** est le droit créé par le préteur, magistrat chargé de la justice — l'équivalent, en substance, de notre jurisprudence actuelle. Chaque préteur publie, pour son année de charge, un **édit** énumérant les actions qu'il accordera ; son successeur reprend en général ce que le précédent avait accordé, de sorte que le droit prétorien se construit et s'accumule. Cette source atteint son apogée au IIe siècle avant notre ère, avant de se figer en 130 apr. J.-C. avec l'**édit perpétuel** : l'empereur décide alors que les préteurs ne pourront plus créer de droit nouveau, chacun devant reprendre le droit de son prédécesseur.",
+      "La **jurisprudence** romaine — la *jurisprudentia*, œuvre des jurisconsultes, ce qu'on appellerait aujourd'hui la **doctrine** — devient elle aussi source du droit lorsque coutume et loi ne suffisent pas à trancher un problème. Vers le IIIe siècle, le juriste **Ulpien** estime qu'il n'y aura plus de grand jurisconsulte après lui ; en 426, la **loi des citations** hiérarchise cinq grands auteurs dont l'avis doit être suivi impérativement — un texte qui, en apparence, consacre la doctrine, mais qui en réalité en marque le déclin : on ne suit plus un auteur parce qu'il a raison, mais parce que l'empereur a décidé qu'il fallait le suivre. Au VIe siècle, l'empereur d'Orient **Justinien** (527-565), nostalgique du prestige romain, fait rassembler l'ensemble de ce droit devenu trop divers en quatre compilations : le **Code** (constitutions impériales), le **Digeste** (fragments de la doctrine classique), les **Institutes** (manuel d'enseignement) et les **Novelles** (constitutions postérieures au Code). Cette œuvre assure la transmission du droit romain à travers les siècles, jusqu'à sa redécouverte médiévale."
+    ],
+    "keyPoints": [
+      "Coutume → loi des Douze Tables (Ve siècle av. J.-C.) : codification sans amendement possible.",
+      "Constitutions impériales : édits, décrets, mandats, rescrits.",
+      "Droit prétorien : apogée au IIe siècle av. J.-C., figé par l'édit perpétuel en 130 apr. J.-C.",
+      "Jurisprudence (= doctrine) : loi des citations (426) marque son déclin ; Justinien compile tout au VIe siècle (Code, Digeste, Institutes, Novelles)."
+    ],
+    "definitions": [
+      { "term": "Loi des Douze Tables", "text": "Codification par écrit de l'essentiel des coutumes romaines, vers le Ve siècle avant notre ère, affichée sur le forum pour être accessible à tous, sans possibilité d'amendement." },
+      { "term": "Droit prétorien", "text": "Droit créé par le préteur au moyen de son édit annuel énumérant les actions qu'il accordera ; équivalent romain de la jurisprudence, figé en 130 apr. J.-C. par l'édit perpétuel." },
+      { "term": "Constitutions impériales", "text": "Lois adoptées directement par l'empereur, sous quatre formes : les édits (portée générale), les décrets (décisions judiciaires), les mandats (instructions aux fonctionnaires) et les rescrits (réponses à un administré)." },
+      { "term": "Jurisprudentia (romaine)", "text": "Faux ami : désigne à Rome l'œuvre des jurisconsultes, c'est-à-dire ce que nous appelons aujourd'hui la doctrine, et non les décisions de justice." },
+      { "term": "Compilations justiniennes", "text": "Ensemble de quatre œuvres rassemblées au VIe siècle sous l'empereur Justinien — Code, Digeste, Institutes, Novelles — pour rassembler et ordonner l'ensemble du droit romain." }
+    ],
+    "exam": {
+      "kind": "dissertation",
+      "question": "Le préteur est-il, à Rome, un législateur ?",
+      "concise": "Formellement, non : le pouvoir de faire la loi appartient au peuple, puis à l'empereur par ses constitutions impériales. Le préteur est un **magistrat judiciaire**, chargé de dire le droit et de rendre la justice, non de légiférer. Mais dans les faits, son rôle est créateur. En publiant chaque année son **édit**, il détermine les actions qu'il accordera ; en accordant une action là où le droit ancien n'en prévoyait pas, il fait naître, de fait, un droit nouveau — le droit prétorien. Cette création se stabilise au fil des années, chaque préteur reprenant largement l'édit de son prédécesseur, jusqu'à atteindre son apogée au IIe siècle avant notre ère, où elle constitue la source la plus importante du droit romain. Ce pouvoir créateur trouve cependant sa fin en 130 apr. J.-C., lorsque l'**édit perpétuel** fige définitivement le contenu de l'édit prétorien : l'empereur, qui concentre alors tous les pouvoirs, ne tolère plus qu'un magistrat continue de créer du droit en dehors de son autorité. Le préteur est donc une source **matérielle** majeure du droit romain, sans jamais en être une source **formelle** — un décalage entre pouvoir réel et pouvoir affiché que l'histoire du droit retrouvera souvent.",
+      "plan": [
+        {
+          "title": "I. Un magistrat sans pouvoir législatif formel",
+          "children": [
+            { "title": "A. Une fonction juridictionnelle", "points": ["Le préteur dit le droit, il ne légifère pas", "La loi appartient au peuple puis à l'empereur", "Une magistrature soumise à l'annualité et à la collégialité"] },
+            { "title": "B. Un pouvoir en apparence purement procédural", "points": ["L'édit se présente comme un programme d'actions, non comme une loi", "Accorder ou refuser une action : une compétence de gestion du procès", "Aucune prétention affichée à créer du droit nouveau"] }
+          ]
+        },
+        {
+          "title": "II. Un pouvoir créateur de fait, jusqu'à sa mise sous tutelle",
+          "children": [
+            { "title": "A. La création par l'action", "points": ["Accorder une action inédite, c'est créer un droit nouveau", "L'accumulation des édits d'année en année", "L'apogée du droit prétorien au IIe siècle avant notre ère"] },
+            { "title": "B. La fin du pouvoir créateur en 130 apr. J.-C.", "points": ["L'édit perpétuel : le contenu de l'édit figé pour l'avenir", "Un empereur qui concentre désormais tous les pouvoirs normatifs", "Conclusion : un décalage révélateur entre pouvoir réel et pouvoir affiché"] }
+          ]
+        }
+      ],
+      "pitfalls": [
+        "Ne pas confondre la jurisprudentia romaine (= la doctrine) avec notre jurisprudence actuelle (= les décisions de justice) : c'est un faux ami classique.",
+        "L'édit perpétuel date de 130 apr. J.-C. : ne pas le confondre avec les compilations justiniennes, bien postérieures (VIe siècle)."
+      ]
+    },
+    "quiz": [
+      { "q": "La loi des Douze Tables codifie principalement :", "choices": ["Le droit prétorien", "Des coutumes préexistantes", "Les constitutions impériales", "Le droit canonique"], "answer": 1, "why": "Elle met par écrit l'essentiel du droit coutumier, sans en changer le contenu." },
+      { "q": "L'édit perpétuel, en 130 apr. J.-C., a pour effet de :", "choices": ["Créer le droit prétorien", "Figer le contenu de l'édit du préteur", "Instaurer la loi des citations", "Compiler l'ensemble du droit romain"], "answer": 1, "why": "Les préteurs ne pourront plus modifier le droit qu'ils accordent : ils reprennent celui de leur prédécesseur." },
+      { "q": "Un rescrit est :", "choices": ["Une décision judiciaire de l'empereur", "Une réponse de l'empereur à la question d'un administré", "Une instruction aux fonctionnaires", "Une mesure de portée générale"], "answer": 1, "why": "À distinguer du décret (décision judiciaire), du mandat (instruction) et de l'édit (mesure générale)." },
+      { "q": "La jurisprudentia romaine correspond, en réalité, à notre :", "choices": ["Jurisprudence", "Coutume", "Doctrine", "Législation"], "answer": 2, "why": "C'est l'œuvre des jurisconsultes : un faux ami classique à ne pas confondre avec la jurisprudence actuelle." },
+      { "q": "Les compilations justiniennes comprennent notamment :", "choices": ["Le Code, le Digeste, les Institutes, les Novelles", "La loi des Douze Tables et l'édit perpétuel", "La loi des citations et l'édit de Caracalla", "Les Six Livres de la République"], "answer": 0, "why": "Quatre œuvres distinctes rassemblées au VIe siècle sous Justinien." }
     ]
   }
 ]
