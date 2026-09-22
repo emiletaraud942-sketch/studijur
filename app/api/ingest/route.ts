@@ -3,6 +3,7 @@ import { callModel, extractJson, getAnthropic, currentModel } from "@/lib/anthro
 import { fallbackCourse, splitSections } from "@/lib/ingest-fallback";
 import { checkQuotaBoth, fingerprint, lookupShared, releaseQuotaAll, sharedCourseId, storeShared } from "@/lib/shared-courses";
 import { AUTH_REQUIRED_MESSAGE, authRequired, requireUser } from "@/lib/auth-server";
+import { isOwner } from "@/lib/owner";
 import { CORPUS } from "@/lib/corpus";
 import { getAdmin } from "@/lib/supabase-admin";
 import { envoyerEmail } from "@/lib/brevo";
@@ -143,10 +144,12 @@ export async function POST(req: Request) {
 
   const ip = clientIp(req);
   let quotaKeys = [ip];
+  let unlimited = false;
   if (authRequired()) {
     const user = await requireUser(req);
     if (!user) return NextResponse.json({ error: AUTH_REQUIRED_MESSAGE }, { status: 401 });
     quotaKeys = [`user:${user.id}`, ip];
+    unlimited = isOwner(user.email);
   }
 
   const clipped = text.slice(0, MAX_CHARS);
@@ -181,14 +184,16 @@ export async function POST(req: Request) {
 
   // Une section = un appel modèle : le quota se consomme sur ce nombre réel
   // d'appels, pas sur la requête HTTP (voir checkQuotaBoth).
-  const gate = await checkQuotaBoth(quotaKeys, sections.length);
-  if (!gate.ok) {
-    return NextResponse.json(
-      {
-        error: `Ce cours se découpe en ${sections.length} parties, mais il ne te reste que ${gate.remaining} génération${gate.remaining > 1 ? "s" : ""} IA aujourd'hui. Réessaie demain, ou dépose un extrait plus court.`,
-      },
-      { status: 429 },
-    );
+  if (!unlimited) {
+    const gate = await checkQuotaBoth(quotaKeys, sections.length);
+    if (!gate.ok) {
+      return NextResponse.json(
+        {
+          error: `Ce cours se découpe en ${sections.length} parties, mais il ne te reste que ${gate.remaining} génération${gate.remaining > 1 ? "s" : ""} IA aujourd'hui. Réessaie demain, ou dépose un extrait plus court.`,
+        },
+        { status: 429 },
+      );
+    }
   }
 
   const results: (Draft | null)[] = new Array(sections.length).fill(null);
@@ -231,7 +236,7 @@ export async function POST(req: Request) {
   });
 
   if (!lessons.length) {
-    await releaseQuotaAll(quotaKeys, sections.length);
+    if (!unlimited) await releaseQuotaAll(quotaKeys, sections.length);
     const course = fallbackCourse(title, clipped, courseId);
     return NextResponse.json({
       course, engine: "local",

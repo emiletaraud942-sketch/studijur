@@ -2,6 +2,7 @@ import { NextResponse } from "next/server";
 import { callModel, extractJson, getAnthropic } from "@/lib/anthropic";
 import { checkQuotaBoth, releaseQuotaAll } from "@/lib/shared-courses";
 import { AUTH_REQUIRED_MESSAGE, authRequired, requireUser } from "@/lib/auth-server";
+import { isOwner } from "@/lib/owner";
 import type { EntrainementFeedback } from "@/lib/types";
 
 export const runtime = "nodejs";
@@ -60,18 +61,22 @@ export async function POST(req: Request) {
 
   const ip = clientIp(req);
   let quotaKeys = [ip];
+  let unlimited = false;
   if (authRequired()) {
     const user = await requireUser(req);
     if (!user) return NextResponse.json({ error: AUTH_REQUIRED_MESSAGE }, { status: 401 });
     quotaKeys = [`user:${user.id}`, ip];
+    unlimited = isOwner(user.email);
   }
 
-  const gate = await checkQuotaBoth(quotaKeys);
-  if (!gate.ok) {
-    return NextResponse.json(
-      { error: "Tu as atteint la limite de corrections pour aujourd'hui. Réessaie demain." },
-      { status: 429 },
-    );
+  if (!unlimited) {
+    const gate = await checkQuotaBoth(quotaKeys);
+    if (!gate.ok) {
+      return NextResponse.json(
+        { error: "Tu as atteint la limite de corrections pour aujourd'hui. Réessaie demain." },
+        { status: 429 },
+      );
+    }
   }
 
   try {
@@ -85,7 +90,7 @@ export async function POST(req: Request) {
     if (!sane(feedback)) throw new Error("réponse mal formée");
     return NextResponse.json({ feedback });
   } catch {
-    await releaseQuotaAll(quotaKeys);
+    if (!unlimited) await releaseQuotaAll(quotaKeys);
     return NextResponse.json({ error: "La correction a échoué. Réessaie dans un instant." }, { status: 502 });
   }
 }

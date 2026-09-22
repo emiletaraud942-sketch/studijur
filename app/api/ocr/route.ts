@@ -2,6 +2,7 @@ import { NextResponse } from "next/server";
 import { callModel, getAnthropic, currentModel, type ContentBlock } from "@/lib/anthropic";
 import { checkQuotaBoth, releaseQuotaAll } from "@/lib/shared-courses";
 import { AUTH_REQUIRED_MESSAGE, authRequired, requireUser } from "@/lib/auth-server";
+import { isOwner } from "@/lib/owner";
 
 export const runtime = "nodejs";
 export const maxDuration = 120;
@@ -67,22 +68,26 @@ export async function POST(req: Request) {
 
   const ip = clientIp(req);
   let quotaKeys = [ip];
+  let unlimited = false;
   if (authRequired()) {
     const user = await requireUser(req);
     if (!user) return NextResponse.json({ error: AUTH_REQUIRED_MESSAGE }, { status: 401 });
     quotaKeys = [`user:${user.id}`, ip];
+    unlimited = isOwner(user.email);
   }
 
   // Une photo = un appel modèle : le quota se consomme sur ce nombre réel
   // d'appels, pas sur la requête HTTP (voir checkQuotaBoth).
-  const gate = await checkQuotaBoth(quotaKeys, images.length);
-  if (!gate.ok) {
-    return NextResponse.json(
-      {
-        error: `Tu envoies ${images.length} photo${images.length > 1 ? "s" : ""}, mais il ne te reste que ${gate.remaining} génération${gate.remaining > 1 ? "s" : ""} IA aujourd'hui. Réessaie demain, ou colle le texte directement.`,
-      },
-      { status: 429 },
-    );
+  if (!unlimited) {
+    const gate = await checkQuotaBoth(quotaKeys, images.length);
+    if (!gate.ok) {
+      return NextResponse.json(
+        {
+          error: `Tu envoies ${images.length} photo${images.length > 1 ? "s" : ""}, mais il ne te reste que ${gate.remaining} génération${gate.remaining > 1 ? "s" : ""} IA aujourd'hui. Réessaie demain, ou colle le texte directement.`,
+        },
+        { status: 429 },
+      );
+    }
   }
 
   const results: (string | null)[] = new Array(images.length).fill(null);
@@ -117,7 +122,7 @@ export async function POST(req: Request) {
     .filter((p): p is string => Boolean(p));
 
   if (!pages.length) {
-    await releaseQuotaAll(quotaKeys, images.length);
+    if (!unlimited) await releaseQuotaAll(quotaKeys, images.length);
     return NextResponse.json(
       { error: "Impossible de lire ces photos. Vérifie qu'elles sont nettes et bien cadrées, ou copie-colle le texte à la place." },
       { status: 422 },
