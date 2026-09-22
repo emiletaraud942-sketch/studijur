@@ -6,6 +6,7 @@ import {
 import type { Course, ProgressState, StepName } from "./types";
 import { bumpStreak, gradeCard, newCard, todayKey } from "./srs";
 import { getSupabase, supabaseConfigured } from "./supabase";
+import { isOwner } from "./owner";
 
 const KEY = "lexio.state.v1";
 const TRIAL_DAYS = 7;
@@ -160,8 +161,12 @@ export function StudiJurProvider({ children }: { children: React.ReactNode }) {
       }
       // Un abonnement payé peut avoir été activé depuis un autre appareil, ou
       // juste avant que cette session ne se (re)connecte : on vérifie à
-      // chaque connexion plutôt que de ne jamais le faire.
-      if (data.user.email) {
+      // chaque connexion plutôt que de ne jamais le faire. Le compte du
+      // créateur du site passe toujours actif, sans appel réseau ni état
+      // stocké : ça marche donc pareil sur tous ses appareils.
+      if (isOwner(data.user.email)) {
+        setState((prev) => (prev.profile.plan === "active" ? prev : { ...prev, profile: { ...prev.profile, plan: "active" } }));
+      } else if (data.user.email) {
         const active = await fetchSubscriptionActive(data.user.email);
         if (!cancelled && active) {
           setState((prev) => (prev.profile.plan === "active" ? prev : { ...prev, profile: { ...prev.profile, plan: "active" } }));
@@ -230,7 +235,7 @@ export function StudiJurProvider({ children }: { children: React.ReactNode }) {
     if (!sb) return false;
     const { data } = await sb.auth.getUser();
     if (!data.user?.email) return false;
-    const active = await fetchSubscriptionActive(data.user.email);
+    const active = isOwner(data.user.email) || await fetchSubscriptionActive(data.user.email);
     if (active) update((d) => { d.profile.plan = "active"; });
     return active;
   }, [update]);

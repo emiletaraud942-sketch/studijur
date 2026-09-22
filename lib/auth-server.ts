@@ -5,6 +5,8 @@ export type AuthedUser = { id: string; email: string };
 export const AUTH_REQUIRED_MESSAGE =
   "Connecte-toi avec ton adresse email (gratuit, sans mot de passe) pour utiliser cette fonctionnalité — c'est ce qui permet de suivre correctement ton essai gratuit.";
 
+export { isOwner } from "./owner";
+
 // L'exigence de connexion ne s'applique que si les comptes sont réellement
 // disponibles (clé de service Supabase configurée) : en local sans ces
 // variables, l'app reste utilisable sans compte, comme le reste du produit.
