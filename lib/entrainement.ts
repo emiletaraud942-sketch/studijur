@@ -1,12 +1,12 @@
 // Contenu d'entraînement pour l'intero d'Introduction générale au droit,
-// construit à partir des notes de cours ET de TD d'Émile (le TD de cette
-// matière est en réalité fondu dans son document "exercices" : vocabulaire
-// des procès, jurisprudences étudiées, exercices corrigés). Pas de source
-// externe inventée — tout vient de ce qu'il a effectivement vu en cours.
+// construit à partir des notes de cours d'Émile : vocabulaire des procès,
+// questions de cours, méthodologie. Pas de question sur un arrêt ou un
+// document précis tiré de son TD personnel — seulement des notions
+// générales que tout étudiant de la matière étudie.
 
 export type QuestionEntrainement = {
   id: string;
-  categorie: "Vocabulaire des procès" | "Jurisprudence" | "Question de cours" | "Méthodologie";
+  categorie: "Vocabulaire des procès" | "Question de cours" | "Méthodologie";
   question: string;
   reponse: string;
 };
@@ -104,75 +104,7 @@ export const introGeneraleEntrainement: QuestionEntrainement[] = [
     reponse: "Un **article de code** : le code puis le numéro (« C. civ., art. 1253 »). Une **loi** : son numéro, sa date et son intitulé (« L. n°2021-1539 du 30 nov. 2021 visant à définir et protéger le patrimoine sensoriel des campagnes françaises »). Une **décision** : la juridiction, la formation, la date et le numéro — pour la Cour de cassation (« Cass. 3ᵉ civ., 21 mai 2026, n°24-10.569 »), pour une cour d'appel (« CA Bordeaux, 5ᵉ ch., 1ᵉʳ juin 2006, n°05/00492 »).",
   },
 
-  // --- Jurisprudence (les vraies décisions étudiées) ---
-  {
-    id: "juri-01",
-    categorie: "Jurisprudence",
-    question: "Dans l'affaire des clochettes de moutons (Cass. 3ᵉ civ., 21 mai 2026, n°24-10.569), qui sont les demandeurs au pourvoi, et pourquoi ?",
-    reponse: "**M. et Mme Y**, les propriétaires des moutons : ce sont eux qui contestent l'arrêt de la cour d'appel de Bourges (qui leur avait ordonné de retirer les clochettes) et qui forment le pourvoi. **M. U**, le voisin gêné par le bruit, est défendeur au pourvoi.",
-  },
-  {
-    id: "juri-02",
-    categorie: "Jurisprudence",
-    question: "Quelle règle la Cour de cassation applique-t-elle dans l'affaire des clochettes, et d'où vient cette règle ?",
-    reponse: "La règle du **trouble anormal de voisinage** (« nul ne doit causer à autrui un trouble anormal de voisinage ») — d'abord purement jurisprudentielle, forgée par la 3ᵉ chambre civile depuis les années 1970, puis consacrée dans le Code civil par la loi n°2024-346 du 15 avril 2024.",
-  },
-  {
-    id: "juri-03",
-    categorie: "Jurisprudence",
-    question: "Quelle est l'issue du pourvoi dans l'affaire des clochettes, et pourquoi ?",
-    reponse: "**Rejet du pourvoi** : la Cour de cassation ne rejuge pas les faits, elle contrôle seulement que la cour d'appel a correctement appliqué la règle du trouble anormal de voisinage — ce qui est le cas ici, le tintement permanent excédant les inconvénients normaux du voisinage.",
-  },
-  {
-    id: "juri-04",
-    categorie: "Jurisprudence",
-    question: "Dans l'affaire du legs à la \"maîtresse\" (Cass. ass. plén., 29 octobre 2004), qui conteste le testament, et que demandent-elles ?",
-    reponse: "**Mme X (l'épouse) et sa fille**, qui demandent **reconventionnellement** (en défense, mais en formulant elles-mêmes une demande) l'annulation du legs universel fait à Mme Y (la légataire), pour que le patrimoine leur revienne.",
-  },
-  {
-    id: "juri-05",
-    categorie: "Jurisprudence",
-    question: "Quelle est la portée de la décision de l'assemblée plénière dans l'affaire du legs à la \"maîtresse\" ?",
-    reponse: "Une libéralité (comme un legs) n'est plus nulle du seul fait qu'elle a été consentie dans le cadre d'une relation adultère. La Cour casse le raisonnement de la cour d'appel, qui avait annulé le legs pour ce motif en se fondant sur les anciens articles 1131 et 1133 du Code civil. La solution n'est pas totalement **nouvelle** : elle **confirme et consacre solennellement** une position déjà amorcée par la première chambre civile le 3 février 1999 (Document 2). L'assemblée plénière n'est saisie que parce qu'une cour d'appel de renvoi avait résisté à cette solution — d'où la mention « rendu sur renvoi après cassation » : la formation la plus solennelle intervient pour imposer définitivement la règle à toutes les juridictions du fond.",
-  },
-  {
-    id: "juri-08",
-    categorie: "Jurisprudence",
-    question: "Que juge la Cour de cassation dans l'arrêt du 3 février 1999 (n°96-11.946, Document 2), et qui sont les parties ?",
-    reponse: "**Mme X...**, la légataire, avait reçu 500 000 francs par testament de Roger Y..., avec qui elle entretenait une relation adultère. **M. Christian Y...**, le fils adoptif du défunt, contestait ce legs comme contraire aux bonnes mœurs. La cour d'appel de Paris avait annulé le legs sur ce fondement ; la Cour de cassation **casse** cet arrêt : « n'est pas contraire aux bonnes mœurs la cause de la libéralité dont l'auteur entend maintenir la relation adultère qu'il entretient avec le bénéficiaire. »",
-  },
-  {
-    id: "juri-06",
-    categorie: "Jurisprudence",
-    question: "Dans l'affaire du chant du coq (CA Bordeaux, 5ᵉ ch., 1ᵉʳ juin 2006, n°05/00492), qui sont les appelants, et qui est l'intimé ?",
-    reponse: "**M. et Mme Dominique X…** sont les **appelants** : ils avaient perdu en première instance (TI de Ribérac, 7 décembre 2004, qui les avait déboutés) et contestent ce jugement devant la cour d'appel. **M. Michel Y…**, leur voisin propriétaire des coqs dont le chant les gênait, est l'**intimé**.",
-  },
-  {
-    id: "juri-07",
-    categorie: "Jurisprudence",
-    question: "Quelle est l'issue de l'affaire du chant du coq, et en quoi contraste-t-elle avec l'affaire des clochettes ?",
-    reponse: "La cour d'appel de Bordeaux **confirme** le jugement de première instance : elle déboute les appelants, jugeant que le trouble n'est pas anormal (commune rurale, d'autres voisins élèvent aussi des basses-cours, absence de preuve sérieuse d'un trouble excessif). Même **principe** que dans l'affaire des clochettes (le trouble anormal de voisinage), mais **qualification opposée** des faits : là où le tintement permanent des clochettes a été jugé anormal, le chant occasionnel d'un coq à la campagne ne l'a pas été. Cela illustre que l'appréciation du caractère « anormal » est **souveraine** et dépend entièrement du contexte factuel.",
-  },
-  {
-    id: "juri-09",
-    categorie: "Jurisprudence",
-    question: "Dans l'affaire du \"burkini\" (CE, ord. réf., 26 août 2016, Ligue des droits de l'homme, n°402742), que juge le Conseil d'État, et pourquoi ?",
-    reponse: "Statuant en **référé-liberté**, le Conseil d'État **suspend** l'arrêté d'un maire interdisant, sur les plages de sa commune, une tenue vestimentaire manifestant de façon ostentatoire une appartenance religieuse à l'occasion de la baignade. Un maire ne peut restreindre une liberté fondamentale (liberté d'aller et venir, liberté de conscience, liberté personnelle) que si un **risque avéré pour l'ordre public** le justifie — ce qui n'était pas démontré ici : aucun trouble à l'ordre public n'était lié à la tenue elle-même.",
-  },
-  {
-    id: "juri-10",
-    categorie: "Jurisprudence",
-    question: "Qu'apporte l'arrêt Fairvesta (CE, ass., 21 mars 2016, Sté Fairvesta International GmbH, n°368082) à la théorie du droit souple ?",
-    reponse: "Le Conseil d'État admet, pour la première fois en assemblée, qu'un acte de **droit souple** — ici une mise en garde de l'Autorité des marchés financiers — peut être déféré au juge de l'excès de pouvoir lorsqu'il produit des **effets notables**, notamment économiques, ou vise à influencer significativement les comportements de ses destinataires. Le droit souple, sans force obligatoire, devient ainsi **justiciable sous conditions**.",
-  },
-  {
-    id: "juri-11",
-    categorie: "Jurisprudence",
-    question: "Dans l'affaire Gleeden (Cass. 1ʳᵉ civ., 16 décembre 2020, n°19-19.387), une association reproche à un site de rencontres extraconjugales sa publicité, en s'appuyant sur les règles déontologiques de la publicité. Comment la Cour de cassation traite-t-elle cet argument ?",
-    reponse: "La Cour **rejette** le pourvoi : les principes déontologiques de la publicité (ici, le code de la Chambre de commerce internationale, dont la violation peut être contestée devant le jury de déontologie publicitaire) **n'ont pas de valeur juridique contraignante**. Le juge peut seulement les utiliser « à titre de référence », dans le cadre de la législation applicable — ils ne peuvent, à eux seuls, fonder une interdiction. Un nouvel exemple de droit souple : il produit des effets (un jury peut sanctionner), mais n'oblige pas le juge.",
-  },
-
-  // --- Questions de cours (issues des fiches de cours et de TD) ---
+  // --- Questions de cours (issues des fiches de cours) ---
   {
     id: "cours-01",
     categorie: "Question de cours",
@@ -220,18 +152,6 @@ export const introGeneraleEntrainement: QuestionEntrainement[] = [
     categorie: "Question de cours",
     question: "Expliquez la formule de Georges Vedel : « Tout le droit constitutionnel n'est pas dans la Constitution », en l'illustrant par l'exemple du Royaume-Uni.",
     reponse: "Le droit constitutionnel ne se réduit pas au texte écrit de la Constitution : il inclut aussi les pratiques, les principes et la jurisprudence. Le Royaume-Uni l'illustre parfaitement : il a un véritable droit constitutionnel (règles sur l'organisation et le fonctionnement de l'État), sans pourtant disposer d'une Constitution écrite unique — il repose sur des textes épars, des conventions et des coutumes constitutionnelles.",
-  },
-  {
-    id: "cours-09",
-    categorie: "Question de cours",
-    question: "Appliquez le syllogisme juridique à l'affaire des clochettes de moutons.",
-    reponse: "**Majeure** : la règle du trouble anormal de voisinage pose que nul ne doit causer à autrui un trouble excédant les inconvénients normaux de voisinage. **Mineure** : le tintement des clochettes est **permanent**, jour et nuit, ce qui n'est pas caractéristique du milieu rural où vivent les parties ; une **alternative existait** pourtant pour protéger le troupeau sans ce bruit continu (des chiens de protection). **Conclusion** : le trouble excède les inconvénients normaux de voisinage — il est **anormal**, ce qui justifie la cessation du trouble et la réparation du préjudice.",
-  },
-  {
-    id: "cours-10",
-    categorie: "Question de cours",
-    question: "Le texte de Maupassant \"Une vente\" (Document 1) met en scène un mari qui \"vend\" son épouse à un tiers, au mètre cube. Un tel contrat serait-il valable aujourd'hui ? Pourquoi ?",
-    reponse: "Non : ce contrat serait **nul**, pour objet illicite. Le corps humain — et, à travers lui, la personne elle-même — est **hors du commerce juridique** : on ne peut ni le vendre, ni l'acheter. C'est tout l'intérêt d'un texte comme celui-ci en TD : il pousse à raisonner, par l'absurde, sur ce qui peut ou non faire l'objet d'un contrat.",
   },
   {
     id: "cours-11",
