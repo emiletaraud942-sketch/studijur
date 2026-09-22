@@ -1,0 +1,234 @@
+[
+  {
+    "id": "intro-11",
+    "order": 11,
+    "title": "Le bloc de constitutionnalité",
+    "teaser": "Au sommet de la pyramide de Kelsen : la Constitution de 1958, et le bloc qu'elle a fini par entraîner avec elle.",
+    "minutes": 5,
+    "brief": [
+      "Les normes juridiques françaises sont hiérarchisées pour assurer leur cohérence, sur le modèle de la **pyramide de Kelsen** : une norme inférieure ne peut ni déroger à une norme supérieure, ni l'abroger. Au sommet se trouve la **Constitution du 4 octobre 1958**, qui s'impose à toutes les normes inférieures ; sa primauté a été affirmée par le Conseil constitutionnel dans une **décision du 23 août 1985**.",
+      "Pour évoluer, la Constitution nécessite une **révision constitutionnelle**, votée par le Parlement réuni en Congrès à Versailles — la révision du **8 mars 2024**, inscrivant la liberté de recourir à l'IVG, en est l'illustration la plus récente. Le Conseil constitutionnel, chargé notamment de ce contrôle, compte neuf juges, nommés par tiers par le Président de la République, le président du Sénat et le président de l'Assemblée nationale.",
+      "Le texte constitutionnel de 1958 ne s'est pourtant pas arrêté à lui-même. Par sa décision **Liberté d'association du 16 juillet 1971**, le Conseil constitutionnel étend ses normes de référence bien au-delà des articles de 1958 et crée le **bloc de constitutionnalité**, composé de la **Déclaration des droits de l'homme et du citoyen de 1789**, du **préambule de la Constitution de 1946** et des **principes fondamentaux reconnus par les lois de la République (PFRLR)**. Ce bloc porte des principes concrets : la non-discrimination (préambule de 1946), la dignité humaine, la liberté du mariage (DDHC). Il est complété le **1er mars 2005** par l'adossement de la **Charte de l'environnement de 2004**.",
+      "L'article **54** de la Constitution organise la primauté du texte constitutionnel dans l'ordre interne : si un engagement international comporte une clause contraire à la Constitution, il ne peut être ratifié qu'après révision de celle-ci. Point de tension classique : le droit de l'Union européenne revendique, de son côté, sa propre primauté sur le droit interne — deux logiques de primauté qui se juxtaposent sans que l'une n'efface juridiquement l'autre."
+    ],
+    "keyPoints": [
+      "Pyramide de Kelsen : une norme inférieure ne peut déroger à une norme supérieure ni l'abroger.",
+      "Constitution du 4 octobre 1958, primauté affirmée par le CC le 23 août 1985 ; révision par le Congrès (ex. : 8 mars 2024, IVG).",
+      "CC, 16 juillet 1971, Liberté d'association : naissance du bloc de constitutionnalité (DDHC 1789, préambule 1946, PFRLR).",
+      "1er mars 2005 : Charte de l'environnement 2004 adossée ; article 54 : primauté de la Constitution sur les traités dans l'ordre interne."
+    ],
+    "definitions": [
+      { "term": "Pyramide de Kelsen", "text": "Modèle hiérarchique dans lequel chaque norme tire sa validité de sa conformité à la norme immédiatement supérieure, une norme inférieure ne pouvant ni y déroger ni l'abroger." },
+      { "term": "Bloc de constitutionnalité", "text": "Ensemble des normes de référence du contrôle de constitutionnalité : la Constitution de 1958, la DDHC de 1789, le préambule de 1946, les PFRLR et, depuis 2005, la Charte de l'environnement de 2004.", "source": "CC, 16 juillet 1971, Liberté d'association" },
+      { "term": "Révision constitutionnelle", "text": "Procédure de modification du texte constitutionnel, votée par le Parlement réuni en Congrès à Versailles." },
+      { "term": "Principes fondamentaux reconnus par les lois de la République (PFRLR)", "text": "Catégorie de normes constitutionnelles non écrites, dégagées par le juge constitutionnel à partir de la tradition républicaine, intégrée au bloc de constitutionnalité en 1971." },
+      { "term": "Article 54 de la Constitution", "text": "Disposition selon laquelle un engagement international comportant une clause contraire à la Constitution ne peut être ratifié qu'après révision constitutionnelle." }
+    ],
+    "exam": {
+      "kind": "question de cours",
+      "question": "Comment le bloc de constitutionnalité s'est-il constitué, et que contient-il ?",
+      "concise": "À l'origine, en 1958, le contrôle de constitutionnalité ne portait que sur le texte même de la Constitution. La décision **Liberté d'association du 16 juillet 1971** bouleverse cette lecture étroite : le Conseil constitutionnel juge que le **préambule** de la Constitution, qui renvoie à la DDHC de 1789 et au préambule de 1946, a lui-même **valeur contraignante**. Il se reconnaît dès lors compétent pour contrôler le respect de l'ensemble de ces textes, complétés par les **principes fondamentaux reconnus par les lois de la République**. Le bloc s'enrichit encore le **1er mars 2005** avec l'adossement de la **Charte de l'environnement de 2004**. Ce bloc n'est pas qu'une addition de textes : il porte des principes concrets — non-discrimination, dignité humaine, liberté du mariage — directement invocables devant le Conseil, notamment par la voie de la question prioritaire de constitutionnalité. La primauté de l'ensemble sur les normes inférieures est garantie par l'article 54 pour les engagements internationaux, et a été affirmée pour la loi par la décision du 23 août 1985.",
+      "plan": [
+        {
+          "title": "I. Un bloc élargi bien au-delà du texte de 1958",
+          "children": [
+            { "title": "A. La décision fondatrice du 16 juillet 1971", "points": ["La valeur contraignante reconnue au préambule", "L'entrée de la DDHC de 1789 et du préambule de 1946 dans le bloc", "Les principes fondamentaux reconnus par les lois de la République"] },
+            { "title": "B. Un bloc encore complété depuis", "points": ["L'adossement de la Charte de l'environnement, 1er mars 2005", "Des principes concrets : non-discrimination, dignité humaine, liberté du mariage", "Une extension par la jurisprudence, non par une révision du texte"] }
+          ]
+        },
+        {
+          "title": "II. Une primauté organisée sur les normes inférieures",
+          "children": [
+            { "title": "A. La primauté sur la loi", "points": ["CC, 23 août 1985 : affirmation de la primauté de la Constitution", "Le contrôle de constitutionnalité, a priori puis a posteriori", "La révision constitutionnelle, seule voie de modification, votée en Congrès"] },
+            { "title": "B. La primauté sur les engagements internationaux", "points": ["Article 54 : ratification impossible sans révision préalable en cas de contrariété", "Le précédent de la révision de 1992 avant Maastricht", "Conclusion : une primauté affirmée en droit interne, concurrencée par celle que revendique le droit de l'Union"] }
+          ]
+        }
+      ],
+      "pitfalls": [
+        "Ne pas confondre le bloc de constitutionnalité (les normes de référence du contrôle) et la seule Constitution de 1958 : le bloc est bien plus large depuis 1971.",
+        "La primauté de la Constitution dans l'ordre interne (article 54) coexiste avec la primauté que revendique le droit de l'Union : ce sont deux logiques, pas une hiérarchie tranchée."
+      ]
+    },
+    "quiz": [
+      { "q": "Le bloc de constitutionnalité naît de la décision du Conseil constitutionnel du :", "choices": ["4 octobre 1958", "16 juillet 1971", "23 août 1985", "1er mars 2005"], "answer": 1, "why": "Liberté d'association : le Conseil reconnaît la valeur contraignante du préambule et étend ses normes de référence." },
+      { "q": "Le bloc de constitutionnalité comprend notamment :", "choices": ["Les seuls articles de la Constitution de 1958", "La DDHC de 1789, le préambule de 1946 et les PFRLR", "Le seul Code civil", "Les traités internationaux"], "answer": 1, "why": "Complété depuis le 1er mars 2005 par la Charte de l'environnement de 2004." },
+      { "q": "La révision constitutionnelle du 8 mars 2024 a inscrit dans la Constitution :", "choices": ["La QPC", "La liberté de recourir à l'IVG", "Le droit de vote à 16 ans", "La Charte de l'environnement"], "answer": 1, "why": "Votée par le Parlement réuni en Congrès à Versailles." },
+      { "q": "L'article 54 de la Constitution dispose qu'un traité contraire à la Constitution :", "choices": ["Est automatiquement nul", "Ne peut être ratifié qu'après révision de la Constitution", "S'applique quand même", "Doit être approuvé par le Conseil d'État"], "answer": 1, "why": "C'est ce mécanisme qui a imposé une révision constitutionnelle avant la ratification du traité de Maastricht." },
+      { "q": "Le Conseil constitutionnel compte, parmi ses membres nommés :", "choices": ["9 juges, nommés par tiers par trois autorités", "12 juges élus", "6 juges à vie", "15 juges tirés au sort"], "answer": 0, "why": "Trois par le Président de la République, trois par le président du Sénat, trois par le président de l'Assemblée nationale." }
+    ]
+  },
+  {
+    "id": "intro-12",
+    "order": 12,
+    "title": "Le bloc de conventionnalité : traités, CEDH et droit de l'Union",
+    "teaser": "Article 55 : sous la Constitution, mais au-dessus de la loi — à condition d'être bien ratifié.",
+    "minutes": 5,
+    "brief": [
+      "L'**article 55** de la Constitution place les traités et accords internationaux au-dessus de la loi, sous réserve de trois conditions : les traités les plus importants doivent être **ratifiés**, par une loi ou par le Président de la République ; les autres États signataires doivent eux aussi l'appliquer, c'est le **principe de réciprocité** ; et le traité doit respecter la Constitution pour pouvoir être invoqué. Ce contrôle de conformité d'une loi à un traité, le **contrôle de conventionnalité**, a connu un départ heurté : par sa décision du **15 janvier 1975** (rendue à propos de la loi sur l'IVG), le Conseil constitutionnel refuse de l'exercer. Ce sont les juridictions suprêmes des deux ordres qui s'en chargent : la Cour de cassation dès **1975** (*Jacques Vabre*), le Conseil d'État seulement à partir de **1989** (*Nicolo*).",
+      "La **Convention européenne des droits de l'homme**, adoptée à Rome le **4 novembre 1950** et ratifiée par la France en **1974**, a un domaine d'application très large : son article **6 § 1**, le droit au procès équitable, s'applique à tous les procès. Elle est invocable directement par les justiciables. La **Cour européenne des droits de l'homme** peut être saisie par un État ou par un particulier ayant **épuisé les voies de recours internes**, à condition que la requête ne soit ni abusive ni manifestement mal fondée ; la France a accepté ce **recours individuel** en **1981**. En cas de violation, la Cour peut accorder une « satisfaction équitable » qui oblige l'État à indemniser le requérant. Le **Protocole n° 16** permet à une juridiction suprême d'un État membre de solliciter un avis consultatif de la Cour — la France a été la première à l'utiliser, à propos de la GPA. Certains droits sont dits **absolus ou indérogeables** : l'interdiction de la torture, le droit à la vie.",
+      "Le **droit de l'Union européenne** procède d'une construction bien plus intégrée. Le **traité de Paris**, signé le 18 avril 1951 et entré en vigueur le 25 juillet 1952, crée la Communauté européenne du charbon et de l'acier (CECA). Les **traités de Rome de 1957** créent la Communauté économique européenne (CEE) et la Communauté européenne de l'énergie atomique (Euratom), entre **six États fondateurs** — France, Italie, Allemagne, Pays-Bas, Belgique, Luxembourg. L'Union s'élargit ensuite progressivement jusqu'à 28 États, puis revient à **27** après le Brexit. Le **traité de Maastricht (1992)** crée l'Union européenne et prépare la monnaie unique ; le **traité d'Amsterdam (1997)** renforce la coopération en matière de justice et d'affaires intérieures et intègre l'espace Schengen ; le **traité de Lisbonne**, signé en 2007 et entré en vigueur en 2009, réforme les institutions et donne la personnalité juridique à l'Union.",
+      "Trois institutions structurent l'Union : la **Commission européenne**, exécutif comptant un commissaire par État ; le **Conseil de l'Union européenne**, qui réunit les ministres des États membres ; et la **Cour de justice de l'Union européenne**, qui siège à Luxembourg, interprète le droit de l'Union et dont les décisions s'imposent. Le droit de l'Union **prime** sur la loi française. Son **droit dérivé** prend quatre formes : le **règlement**, d'application immédiate sans transposition ; la **directive**, qui fixe un objectif à atteindre par **transposition**, et peut produire un effet direct si l'État tarde ; la **décision**, obligatoire pour ses seuls destinataires ; les **recommandations et avis**, non contraignants. La **Charte des droits fondamentaux de l'UE** a la même valeur juridique que les traités, certains États ayant obtenu des clauses d'*opt-out*."
+    ],
+    "keyPoints": [
+      "Article 55 : traités > lois, sous conditions de ratification, réciprocité et conformité à la Constitution.",
+      "Contrôle de conventionnalité : CC le refuse (15 janvier 1975) ; Cass. l'accepte en 1975 (Jacques Vabre), CE en 1989 (Nicolo).",
+      "CEDH : Rome 1950, ratifiée 1974, art. 6 § 1 ; recours individuel accepté en 1981 ; épuisement des voies internes ; Protocole 16.",
+      "UE : CECA 1951/52, traités de Rome 1957 (6 États), Maastricht 1992, Amsterdam 1997, Lisbonne 2007/2009 ; droit dérivé : règlement, directive, décision, recommandations/avis."
+    ],
+    "definitions": [
+      { "term": "Contrôle de conventionnalité", "text": "Vérification de la conformité d'une loi à un traité international, exercée par la Cour de cassation depuis 1975 (Jacques Vabre) et le Conseil d'État depuis 1989 (Nicolo), mais refusée par le Conseil constitutionnel (15 janvier 1975)." },
+      { "term": "Principe de réciprocité", "text": "Condition d'application d'un traité en France selon laquelle les autres États signataires doivent également l'appliquer." },
+      { "term": "Épuisement des voies de recours internes", "text": "Condition de recevabilité d'une requête devant la Cour européenne des droits de l'homme : le requérant doit avoir utilisé tous les recours disponibles dans son pays avant de la saisir." },
+      { "term": "Règlement européen", "text": "Acte de droit dérivé de l'Union européenne, d'application directe et immédiate dans tous les États membres, sans transposition." },
+      { "term": "Directive européenne", "text": "Acte de droit dérivé de l'Union européenne fixant un objectif à atteindre, laissant aux États le choix des moyens par une transposition en droit interne." }
+    ],
+    "exam": {
+      "kind": "dissertation",
+      "question": "Le contrôle de conventionnalité a-t-il mis du temps à s'imposer en France ?",
+      "concise": "L'article 55 de la Constitution pose, dès 1958, la supériorité des traités sur la loi. Il faudra pourtant attendre plus de quinze ans pour que cette supériorité soit effectivement contrôlée. Saisi le premier, le **Conseil constitutionnel** refuse, par sa décision du **15 janvier 1975**, de vérifier la conformité d'une loi à un traité : il estime que ce contrôle, relatif et contingent, ne relève pas de sa mission de gardien de la Constitution. C'est donc aux **juridictions suprêmes des deux ordres** qu'il revient de s'en charger, mais avec un net décalage entre elles. La **Cour de cassation** franchit le pas dès **1975**, par l'arrêt *Jacques Vabre*. Le **Conseil d'État**, plus prudent, attend **1989** et l'arrêt *Nicolo* pour accepter à son tour d'écarter une loi contraire à un traité. Ce retard s'explique par la réticence historique du juge administratif à contrôler la loi, expression de la volonté générale. Le contrôle de conventionnalité est donc aujourd'hui pleinement acquis, mais son acquisition a été progressive, échelonnée sur près de vingt ans entre le refus initial du Conseil constitutionnel et le ralliement tardif du Conseil d'État.",
+      "plan": [
+        {
+          "title": "I. Un contrôle d'abord refusé par le juge constitutionnel",
+          "children": [
+            { "title": "A. La décision du 15 janvier 1975", "points": ["Rendue à propos de la loi relative à l'IVG", "Le Conseil constitutionnel refuse de contrôler la conformité d'une loi à un traité", "Un contrôle jugé relatif et contingent, étranger à sa mission"] },
+            { "title": "B. Le renvoi aux juridictions suprêmes des deux ordres", "points": ["Le contrôle de conventionnalité confié à la Cour de cassation et au Conseil d'État", "Un contrôle de la loi par le juge ordinaire, non par le juge constitutionnel", "Une solution transitoire devenue durable"] }
+          ]
+        },
+        {
+          "title": "II. Une acceptation progressive et inégale",
+          "children": [
+            { "title": "A. La Cour de cassation, précoce (1975)", "points": ["Arrêt Jacques Vabre : le traité prime sur la loi, même postérieure", "Une jurisprudence judiciaire pionnière", "Un alignement rapide sur l'article 55"] },
+            { "title": "B. Le Conseil d'État, tardif (1989)", "points": ["Arrêt Nicolo : le Conseil d'État accepte enfin d'écarter une loi contraire à un traité", "Quatorze ans d'écart avec la Cour de cassation", "Conclusion : un contrôle aujourd'hui unifié, mais acquis par étapes"] }
+          ]
+        }
+      ],
+      "pitfalls": [
+        "Ne pas confondre contrôle de constitutionnalité (loi/Constitution, Conseil constitutionnel) et contrôle de conventionnalité (loi/traité, Cass. et CE).",
+        "Jacques Vabre est un arrêt de la Cour de cassation (1975) ; Nicolo un arrêt du Conseil d'État (1989) : ne pas les inverser."
+      ]
+    },
+    "quiz": [
+      { "q": "Le Conseil constitutionnel refuse de contrôler la conformité d'une loi à un traité par sa décision du :", "choices": ["16 juillet 1971", "15 janvier 1975", "23 août 1985", "23 juillet 2008"], "answer": 1, "why": "Rendue à propos de la loi relative à l'IVG ; le contrôle est ensuite exercé par la Cour de cassation et le Conseil d'État." },
+      { "q": "Le contrôle de conventionnalité est accepté par le Conseil d'État à partir de :", "choices": ["1975, Jacques Vabre", "1989, Nicolo", "1974, ratification de la CEDH", "1958, article 55"], "answer": 1, "why": "La Cour de cassation l'avait accepté quatorze ans plus tôt, en 1975, par l'arrêt Jacques Vabre." },
+      { "q": "Pour saisir la Cour européenne des droits de l'homme, un particulier doit d'abord :", "choices": ["Obtenir l'accord de son gouvernement", "Épuiser les voies de recours internes", "Saisir la CJUE", "Payer une caution"], "answer": 1, "why": "La requête ne doit en outre être ni abusive ni manifestement mal fondée." },
+      { "q": "Les traités de Rome de 1957 créent :", "choices": ["La CECA", "La CEE et Euratom", "L'Union européenne", "L'espace Schengen"], "answer": 1, "why": "Entre six États fondateurs : France, Italie, Allemagne, Pays-Bas, Belgique, Luxembourg. La CECA, elle, date du traité de Paris de 1951." },
+      { "q": "Un règlement européen, à la différence d'une directive :", "choices": ["Doit être transposé", "S'applique directement, sans transposition", "N'est jamais obligatoire", "Ne concerne qu'un seul État"], "answer": 1, "why": "La directive fixe un objectif que chaque État transpose à sa manière ; le règlement s'applique tel quel, immédiatement." }
+    ]
+  },
+  {
+    "id": "intro-13",
+    "order": 13,
+    "title": "Blocs de légalité, réglementaire et infra-réglementaire",
+    "teaser": "Lois organiques, ordonnances, règlements, circulaires : le bas de la pyramide, souvent négligé.",
+    "minutes": 5,
+    "brief": [
+      "Sous les blocs de constitutionnalité et de conventionnalité vient le **bloc de légalité**. Au sens large, la « loi » désigne toute règle juridique promulguée par l'autorité étatique ; au sens matériel, plus restreint, c'est une règle générale et abstraite prise par le pouvoir législatif, distincte de la Constitution et des règlements. Les **lois organiques**, votées par le Parlement pour fixer les modalités de fonctionnement des pouvoirs publics, ont un domaine restreint et une procédure particulière fixée par l'**article 46**. Les **lois ordinaires**, dont le domaine est précisé par l'**article 34**, se déclinent en quatre types : loi de finances, loi de financement de la sécurité sociale, loi de programmation, et lois ordinaires proprement dites.",
+      "Deux mécanismes permettent à l'exécutif d'empiéter, exceptionnellement, sur le domaine législatif. L'**article 16** autorise le Président de la République à intervenir dans le domaine de la loi si la nation est menacée — un seul précédent : le putsch des généraux, en **1961**, sous de Gaulle. Les **ordonnances de l'article 38** permettent au Parlement d'habiliter le gouvernement à légiférer lui-même, sous réserve de ratification ultérieure.",
+      "Le **bloc réglementaire** contient les **règlements autonomes** et les règlements d'application. L'**article 37** de la Constitution attribue au pouvoir réglementaire tout ce qui n'est pas expressément réservé au domaine de la loi par l'article 34. C'est le **juge administratif** qui contrôle la légalité d'un règlement, au moyen du **recours pour excès de pouvoir**.",
+      "Tout en bas de la pyramide se trouve le **bloc infra-réglementaire**. La **circulaire**, acte par lequel un ministère explique comment interpréter une loi ou un règlement, n'a en principe **aucune valeur contraignante** — sauf lorsqu'elle est impérative, auquel cas elle devient attaquable devant le juge. La **jurisprudence**, ensemble des décisions rendues par les juridictions, fait l'objet d'un débat doctrinal : certains auteurs y voient une source de droit, d'autres non — pour **Gény**, ce n'est qu'une simple autorité, non l'égale de la loi. L'**article 5 du Code civil** interdit les **arrêts de règlement** : le juge statue sur le cas dont il est saisi, jamais sur l'ensemble des cas futurs, et la France ne connaît pas la règle du précédent propre à la *common law*. La **coutume**, enfin, suppose deux éléments — un élément **matériel**, la consécration par le temps d'un comportement répété, et un élément **moral** (*opinio juris*), le sentiment de s'y sentir lié. Elle peut **compléter** la loi (*praeter legem*) ou même, plus rarement, lui être **contraire** (*contra legem*)."
+    ],
+    "keyPoints": [
+      "Bloc de légalité : lois organiques (art. 46), lois ordinaires (art. 34, 4 types) ; article 16 (précédent de 1961) ; ordonnances (art. 38).",
+      "Bloc réglementaire : règlements autonomes, article 37 ; contrôle du juge administratif par le recours pour excès de pouvoir.",
+      "Circulaires : en principe non contraignantes, sauf circulaire impérative (attaquable).",
+      "Jurisprudence : débat doctrinal (Gény) ; art. 5 C. civ., interdiction des arrêts de règlement. Coutume : élément matériel + opinio juris ; praeter legem / contra legem."
+    ],
+    "definitions": [
+      { "term": "Loi organique", "text": "Loi votée par le Parlement selon une procédure particulière pour fixer les modalités de fonctionnement et d'organisation des pouvoirs publics.", "source": "Article 46 de la Constitution" },
+      { "term": "Recours pour excès de pouvoir", "text": "Recours porté devant le juge administratif tendant à faire annuler un acte administratif, notamment un règlement, pour illégalité." },
+      { "term": "Arrêt de règlement", "text": "Décision par laquelle un juge poserait une règle générale valable pour tous les litiges futurs ; interdite en France, où le juge ne statue que sur le cas dont il est saisi.", "source": "Article 5 du Code civil" },
+      { "term": "Opinio juris", "text": "Élément psychologique de la coutume : le sentiment, partagé par ceux qui suivent un comportement répété, que ce comportement est juridiquement obligatoire." },
+      { "term": "Coutume praeter legem / contra legem", "text": "Coutume praeter legem : qui complète la loi sur un point qu'elle ne règle pas. Coutume contra legem : qui, plus rarement, va à l'encontre de la loi." }
+    ],
+    "exam": {
+      "kind": "question de cours",
+      "question": "La jurisprudence est-elle une source du droit en France ?",
+      "concise": "La question divise la doctrine. Pour une partie des auteurs, la jurisprudence — l'ensemble des décisions rendues par les juridictions — est bien une **source du droit** : elle interprète la loi, comble ses lacunes, et ses solutions sont largement suivies par les juridictions inférieures et par les praticiens. Pour d'autres, au premier rang desquels **Gény**, elle n'est qu'une **simple autorité**, non l'égale de la loi : le juge ne fait qu'appliquer et interpréter une règle qui lui préexiste, il ne la crée pas. Le droit positif français penche vers cette seconde lecture. L'**article 5 du Code civil** interdit les **arrêts de règlement** : un juge ne peut statuer par voie de disposition générale valable pour les litiges futurs, il tranche le cas dont il est saisi. La France ne connaît donc pas, à la différence de la *common law*, de **règle du précédent** qui lierait formellement les juridictions à leurs décisions antérieures. En pratique cependant, la cohérence de la jurisprudence, l'autorité de la Cour de cassation et du Conseil d'État, et le risque de cassation en cas de solution isolée, donnent à la jurisprudence un poids qui, sans valoir loi, oriente durablement l'application du droit.",
+      "plan": [
+        {
+          "title": "I. Une jurisprudence formellement écartée des sources du droit",
+          "children": [
+            { "title": "A. L'interdiction des arrêts de règlement", "points": ["Article 5 du Code civil : le juge tranche le litige, pas l'avenir", "Une décision de justice n'a d'autorité que pour le cas jugé", "Absence de règle du précédent, à la différence de la common law"] },
+            { "title": "B. La thèse de Gény", "points": ["La jurisprudence, simple autorité et non source formelle du droit", "Le juge interprète et applique, il ne légifère pas", "Une position dominante en doctrine française classique"] }
+          ]
+        },
+        {
+          "title": "II. Une influence pratique difficile à nier",
+          "children": [
+            { "title": "A. Une cohérence recherchée en pratique", "points": ["Le rôle unificateur de la Cour de cassation et du Conseil d'État", "Le risque de cassation dissuade les solutions isolées", "Une prévisibilité attendue par les praticiens"] },
+            { "title": "B. Une source matérielle, sinon formelle", "points": ["La jurisprudence oriente durablement l'interprétation de la loi", "Elle comble les silences et les imprécisions du texte", "Conclusion : ni loi, ni simple fait, un statut intermédiaire"] }
+          ]
+        }
+      ],
+      "pitfalls": [
+        "Ne pas confondre jurisprudence française (les décisions de justice) et jurisprudentia romaine (la doctrine des jurisconsultes) : un faux ami classique.",
+        "L'interdiction des arrêts de règlement n'empêche pas le juge de suivre en pratique ses propres précédents : elle interdit seulement de les ériger en règle générale."
+      ]
+    },
+    "quiz": [
+      { "q": "Les lois organiques sont votées selon une procédure particulière fixée par :", "choices": ["L'article 34", "L'article 37", "L'article 46", "L'article 55"], "answer": 2, "why": "L'article 34, lui, précise le domaine des lois ordinaires." },
+      { "q": "L'article 16 de la Constitution a été mis en œuvre :", "choices": ["Plusieurs fois par siècle", "Une seule fois, en 1961, lors du putsch des généraux", "Jamais", "À chaque état d'urgence"], "answer": 1, "why": "Seul précédent connu, sous la présidence du général de Gaulle." },
+      { "q": "Le contrôle de légalité d'un règlement, par le recours pour excès de pouvoir, relève :", "choices": ["Du Conseil constitutionnel", "Du juge administratif", "De la Cour de cassation", "Du Parlement"], "answer": 1, "why": "L'article 37 attribue au pouvoir réglementaire tout ce qui n'est pas réservé à la loi ; le juge administratif en contrôle la légalité." },
+      { "q": "Une circulaire ministérielle a, en principe :", "choices": ["Une valeur contraignante générale", "Aucune valeur contraignante, sauf si elle est impérative", "La valeur d'une loi", "La valeur d'un règlement autonome"], "answer": 1, "why": "Une circulaire impérative devient attaquable devant le juge administratif." },
+      { "q": "La coutume suppose deux éléments :", "choices": ["Un élément matériel et un élément moral (opinio juris)", "Un écrit et une signature", "Une loi et un décret", "Un vote et une promulgation"], "answer": 0, "why": "La répétition d'un comportement (élément matériel) et le sentiment qu'il est obligatoire (opinio juris)." }
+    ]
+  },
+  {
+    "id": "intro-14",
+    "order": 14,
+    "title": "Le rôle de la règle de droit et son application dans le temps et l'espace",
+    "teaser": "Organiser, imposer — et depuis quand, sur quel territoire.",
+    "minutes": 5,
+    "brief": [
+      "La règle de droit remplit deux fonctions. **Organiser** : elle régit les rapports entre individus et structure la vie en société. **Imposer** : elle est en principe **impérative**, relevant de l'**ordre public**, auquel on ne peut déroger par sa seule volonté. Il existe cependant des **règles supplétives de volonté**, auxquelles les parties peuvent déroger par accord — le régime de séparation des patrimoines lors d'un mariage en est un exemple : à défaut de contrat de mariage, un régime légal s'applique, mais les époux peuvent lui en substituer un autre.",
+      "L'application de la règle de droit **dans le temps** obéit à l'**article 1er du Code civil**. Une loi entre en vigueur à la date fixée par le législateur ; à défaut, le **lendemain de sa publication au Journal officiel**. En cas d'urgence, elle peut entrer en vigueur le jour même de sa publication. Le législateur peut aussi prévoir des **dispositions transitoires** pour certains articles, le temps d'organiser le passage de l'ancien au nouveau droit. Une fois en vigueur, nul ne peut se défendre en invoquant son ignorance : c'est le principe **nul n'est censé ignorer la loi**.",
+      "Dans **l'espace**, une règle de droit française s'applique en principe sur l'ensemble du territoire national, sous réserve de dispositions spéciales pour certains territoires : l'**Alsace-Moselle**, soumise à un régime concordataire particulier hérité de son histoire, et les **territoires d'outre-mer**, où des adaptations existent selon les collectivités.",
+      "Le caractère **obligatoire** de la règle de droit, déjà rencontré, se résume dans l'expression latine ***vinculum juris*** — le « lien de droit » : sa violation est sanctionnée par l'État, qui dispose d'un pouvoir de contrainte répressif ou préventif, sur la personne ou sur l'acte. C'est ce lien qui manque à la morale, laquelle ne connaît aucune condamnation étatique possible ni aucun juge saisissable — sauf lorsque le droit reprend certaines exigences morales à son compte pour les rendre, elles, sanctionnables."
+    ],
+    "keyPoints": [
+      "Rôle de la règle de droit : organiser les rapports sociaux, imposer (ordre public), sauf règles supplétives de volonté.",
+      "Dans le temps : article 1er C. civ., entrée en vigueur au lendemain de la publication au JO (ou immédiate si urgence), dispositions transitoires possibles.",
+      "Nul n'est censé ignorer la loi ; application territoriale avec régimes spéciaux (Alsace-Moselle, outre-mer).",
+      "Vinculum juris : le lien de droit qui distingue la sanction étatique de la sanction morale."
+    ],
+    "definitions": [
+      { "term": "Règle supplétive de volonté", "text": "Règle à laquelle les parties peuvent déroger par un accord contraire, contrairement à la règle impérative qui relève de l'ordre public." },
+      { "term": "Entrée en vigueur d'une loi", "text": "Moment à partir duquel une loi devient applicable : la date fixée par le législateur ou, à défaut, le lendemain de sa publication au Journal officiel (immédiatement en cas d'urgence).", "source": "Article 1er du Code civil" },
+      { "term": "Disposition transitoire", "text": "Règle prévue par le législateur pour organiser le passage de l'ancien droit au nouveau, le temps d'une période déterminée." },
+      { "term": "Nul n'est censé ignorer la loi", "text": "Principe selon lequel un justiciable ne peut invoquer son ignorance de la loi pour se soustraire à son application." },
+      { "term": "Vinculum juris", "text": "Le « lien de droit » : caractéristique de la règle de droit dont la violation est sanctionnée par une contrainte étatique organisée, à la différence de la règle morale." }
+    ],
+    "exam": {
+      "kind": "question de cours",
+      "question": "Comment une loi française entre-t-elle en vigueur, et à partir de quand s'impose-t-elle aux justiciables ?",
+      "concise": "L'entrée en vigueur d'une loi obéit à l'**article 1er du Code civil**. Le principe est celui de la **date fixée par le législateur** lui-même dans le texte de la loi. À défaut d'une telle date, la loi entre en vigueur le **lendemain de sa publication au Journal officiel** — la publicité de la loi étant la condition de son opposabilité à tous. En cas d'**urgence**, le texte peut prévoir une entrée en vigueur **immédiate**, dès le jour de sa publication. Le législateur peut également ménager des **dispositions transitoires**, propres à certains articles, pour organiser en douceur le passage de l'ancien droit au nouveau et éviter de bouleverser des situations en cours. Une fois entrée en vigueur, la loi s'impose à tous **sans exception d'ignorance** : le principe *nul n'est censé ignorer la loi* interdit à un justiciable de se soustraire à son application au motif qu'il ne la connaissait pas. Ce principe, en apparence sévère, est la contrepartie logique de la publicité de la loi : puisque chacun est mis en mesure de la connaître par sa publication, nul ne peut se prévaloir de ne pas l'avoir consultée.",
+      "plan": [
+        {
+          "title": "I. Une entrée en vigueur organisée par la loi elle-même",
+          "children": [
+            { "title": "A. Le principe de la date fixée par le législateur", "points": ["La loi peut prévoir sa propre date d'entrée en vigueur", "À défaut, le lendemain de la publication au Journal officiel", "L'urgence, cause d'entrée en vigueur immédiate"] },
+            { "title": "B. L'aménagement du passage à la loi nouvelle", "points": ["Les dispositions transitoires, propres à certains articles", "Un objectif : ne pas bouleverser brutalement les situations en cours", "Une technique fréquente dans les grandes réformes"] }
+          ]
+        },
+        {
+          "title": "II. Une application qui ne souffre pas l'ignorance",
+          "children": [
+            { "title": "A. Le principe nul n'est censé ignorer la loi", "points": ["Aucune exception d'ignorance recevable devant le juge", "La contrepartie logique de la publicité de la loi", "Un principe sévère mais nécessaire à l'effectivité du droit"] },
+            { "title": "B. Les limites territoriales de cette application", "points": ["Application en principe sur tout le territoire national", "Régimes spéciaux : Alsace-Moselle, territoires d'outre-mer", "Conclusion : une entrée en vigueur organisée, une application quasi générale"] }
+          ]
+        }
+      ],
+      "pitfalls": [
+        "Le lendemain de la publication au JO n'est qu'un principe par défaut : la loi peut fixer elle-même une autre date.",
+        "Ne pas confondre disposition transitoire (aménagement temporaire du passage au nouveau droit) et entrée en vigueur différée (report pur et simple de toute la loi)."
+      ]
+    },
+    "quiz": [
+      { "q": "À défaut de date fixée par le législateur, une loi entre en vigueur :", "choices": ["Le jour de son vote", "Le lendemain de sa publication au Journal officiel", "Un mois après sa promulgation", "Le 1er janvier suivant"], "answer": 1, "why": "Article 1er du Code civil ; en cas d'urgence, l'entrée en vigueur peut être immédiate." },
+      { "q": "Une règle supplétive de volonté se distingue d'une règle impérative parce qu'elle :", "choices": ["Ne s'applique jamais", "Peut être écartée par un accord contraire des parties", "Relève exclusivement de l'ordre public", "N'a aucune force obligatoire"], "answer": 1, "why": "Exemple : le régime matrimonial légal, auquel les époux peuvent substituer un autre régime par contrat de mariage." },
+      { "q": "Le principe « nul n'est censé ignorer la loi » a pour contrepartie :", "choices": ["La gratuité de la justice", "La publicité de la loi, notamment au Journal officiel", "Le droit à l'oubli", "La présomption d'innocence"], "answer": 1, "why": "Puisque la loi est publiée et donc accessible à tous, son ignorance ne peut être invoquée." },
+      { "q": "L'Alsace-Moselle est un exemple :", "choices": ["D'un territoire sans droit français applicable", "D'un régime spécial d'application territoriale du droit", "D'une juridiction supranationale", "D'une source de droit international"], "answer": 1, "why": "Un régime concordataire particulier y coexiste avec le droit commun français." },
+      { "q": "Le vinculum juris désigne :", "choices": ["Le lien de droit dont la violation est sanctionnée par l'État", "Un adage sur la preuve", "Le lien contractuel entre deux parties", "La hiérarchie des normes"], "answer": 0, "why": "C'est ce qui distingue la règle de droit de la règle morale, dépourvue de sanction étatique." }
+    ]
+  }
+]
