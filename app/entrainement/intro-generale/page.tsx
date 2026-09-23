@@ -2,12 +2,14 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { Tag, Button } from "@/components/ui";
 import { Arrow, Chevron } from "@/components/icons";
 import { inlineMarkup } from "@/lib/format";
 import { introGeneraleEntrainement, type QuestionEntrainement } from "@/lib/entrainement";
 import { useStudiJur, entrainementCorrectionCapReached, ENTRAINEMENT_CORRECTION_LIMIT, supabaseConfigured } from "@/lib/state";
 import { authFetchHeaders } from "@/lib/supabase";
+import { connexionHref } from "@/lib/nav";
 import type { EntrainementFeedback } from "@/lib/types";
 
 export default function EntrainementIntroGeneralePage() {
@@ -49,6 +51,7 @@ export default function EntrainementIntroGeneralePage() {
 }
 
 function QuestionCard({ q }: { q: QuestionEntrainement }) {
+  const pathname = usePathname();
   const { state, update, signedInAs } = useStudiJur();
   const [reponse, setReponse] = useState("");
   const [revealed, setRevealed] = useState(false);
@@ -111,7 +114,7 @@ function QuestionCard({ q }: { q: QuestionEntrainement }) {
         </button>
 
         {connexionRequise ? (
-          <Link href="/connexion"
+          <Link href={connexionHref(pathname)}
             className="rounded-xl px-3.5 py-2 text-[13px] font-semibold"
             style={{ background: "var(--gold-soft)", color: "var(--gold)" }}>
             Se connecter pour corriger par l&apos;IA

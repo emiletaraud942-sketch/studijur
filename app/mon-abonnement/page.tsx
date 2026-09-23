@@ -1,8 +1,10 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
 import { useStudiJur, supabaseConfigured, trialDaysLeft } from "@/lib/state";
 import { getSupabase } from "@/lib/supabase";
+import { connexionHref } from "@/lib/nav";
 import { Button, SectionTitle, Tag } from "@/components/ui";
 import { Check } from "@/components/icons";
 
@@ -12,6 +14,7 @@ const MAILTO = `mailto:${CONTACT}?subject=${encodeURIComponent("Résiliation de 
 )}`;
 
 export default function MonAbonnementPage() {
+  const pathname = usePathname();
   const { state, ready, signedInAs } = useStudiJur();
   const [stripeOn, setStripeOn] = useState<boolean | null>(null);
   const [busy, setBusy] = useState(false);
@@ -88,7 +91,7 @@ export default function MonAbonnementPage() {
               Connecte-toi avec l&apos;adresse email utilisée lors du paiement : c&apos;est elle qui relie
               ton abonnement à ton compte.
             </div>
-            <div className="mt-3"><Button href="/connexion" full>Me connecter</Button></div>
+            <div className="mt-3"><Button href={connexionHref(pathname)} full>Me connecter</Button></div>
           </div>
         ) : stripeOn === false ? (
           <p className="mt-4 rounded-xl p-4 text-[13.5px]" style={{ background: "var(--surface-2)", color: "var(--muted)" }}>
@@ -151,7 +154,7 @@ export default function MonAbonnementPage() {
           </li>
         </ol>
         <div className="mt-4 flex flex-wrap gap-3">
-          <Button href="/connexion" variant="soft" size="sm">Page de connexion</Button>
+          <Button href={connexionHref(pathname)} variant="soft" size="sm">Page de connexion</Button>
           {/* Lien mailto en <a> brut : next/link est fait pour la navigation
               interne, pas pour ouvrir le client mail de l'appareil. */}
           <a href={MAILTO}

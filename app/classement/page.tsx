@@ -1,13 +1,16 @@
 "use client";
 
+import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { useStudiJur, supabaseConfigured } from "@/lib/state";
 import { fetchLeaderboard, syncLeaderboardEntry } from "@/lib/leaderboard";
+import { connexionHref } from "@/lib/nav";
 import { Button, SectionTitle, Tag } from "@/components/ui";
 import { Check, Flame } from "@/components/icons";
 import type { LeaderboardRow } from "@/lib/types";
 
 export default function ClassementPage() {
+  const pathname = usePathname();
   const { state, ready, update, signedInAs } = useStudiJur();
   const [rows, setRows] = useState<LeaderboardRow[] | null>(null);
   const [loading, setLoading] = useState(false);
@@ -53,7 +56,7 @@ export default function ClassementPage() {
         <p className="mx-auto mt-2 max-w-sm text-[14.5px]" style={{ color: "var(--muted)" }}>
           Connecte-toi pour comparer ta série et tes définitions sues à celles de ta promo, de façon anonyme.
         </p>
-        <div className="mt-5"><Button href="/connexion">Se connecter</Button></div>
+        <div className="mt-5"><Button href={connexionHref(pathname)}>Se connecter</Button></div>
       </div>
     );
   }
