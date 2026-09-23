@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useStudiJur, trialDaysLeft } from "@/lib/state";
+import { useStudiJur, trialDaysLeft, supabaseConfigured } from "@/lib/state";
 import { Books, Chart, Gear, Grid, Home, Quill, Scales, Upload, Flame } from "./icons";
 import { longDate } from "@/lib/format";
 import InstallPrompt from "./InstallPrompt";
@@ -19,11 +19,16 @@ const NAV = [
 
 export default function Shell({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
-  const { state, ready } = useStudiJur();
+  const { state, ready, signedInAs } = useStudiJur();
   const inLesson = pathname?.startsWith("/lecon/");
   const publique = pathname === "/presentation";
   const daysLeft = trialDaysLeft(state);
-  const showTrial = ready && state.profile.plan !== "active" && daysLeft <= 7;
+  // Sans compte, le vrai palier n'est pas le compte à rebours de 7 jours
+  // (inopérant tant qu'aucun compte ne l'ancre) mais la connexion, requise
+  // après une leçon complète — voir anonymousLessonCapReached.
+  const anonyme = supabaseConfigured && !signedInAs;
+  const showTrial = ready && !anonyme && state.profile.plan !== "active" && daysLeft <= 7;
+  const showConnexion = ready && anonyme;
 
   return (
     <div className="min-h-dvh">
@@ -68,6 +73,16 @@ export default function Shell({ children }: { children: React.ReactNode }) {
       )}
 
       {!inLesson && !publique && <InstallPrompt />}
+
+      {showConnexion && !inLesson && !publique && (
+        <div className="mx-auto max-w-[1080px] px-4 pt-3">
+          <Link href="/connexion" className="flex items-center justify-between gap-3 rounded-2xl px-4 py-2.5 text-[13px] font-medium"
+            style={{ background: "var(--gold-soft)", color: "var(--gold)" }}>
+            <span>Une leçon complète en libre accès — connecte-toi gratuitement pour continuer</span>
+            <span className="font-bold">Se connecter →</span>
+          </Link>
+        </div>
+      )}
 
       {showTrial && !inLesson && !publique && (
         <div className="mx-auto max-w-[1080px] px-4 pt-3">

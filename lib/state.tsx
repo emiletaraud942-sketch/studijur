@@ -63,6 +63,12 @@ export function hasAccess(state: ProgressState): boolean {
   return state.profile.plan === "active" || trialDaysLeft(state) > 0;
 }
 
+function completedLessonIds(state: ProgressState): Set<string> {
+  return new Set(
+    Object.values(state.lessons).filter((l) => l.completedAt).map((l) => l.lessonId),
+  );
+}
+
 // Le corpus fait 32 leçons : sans plafond, un élève motivé peut tout finir
 // pendant les 7 jours d'essai, avant même d'être passé à la caisse. Deux
 // leçons suffisent à donner un aperçu sans vider le corpus. Une leçon déjà
@@ -71,11 +77,23 @@ export const TRIAL_LESSON_LIMIT = 2;
 
 export function trialLessonCapReached(state: ProgressState, lessonId: string): boolean {
   if (state.profile.plan === "active") return false;
-  const dejaFaites = new Set(
-    Object.values(state.lessons).filter((l) => l.completedAt).map((l) => l.lessonId),
-  );
+  const dejaFaites = completedLessonIds(state);
   if (dejaFaites.has(lessonId)) return false;
   return dejaFaites.size >= TRIAL_LESSON_LIMIT;
+}
+
+// Un visiteur sans compte peut terminer une leçon complète en libre accès —
+// de quoi se faire une idée du produit. Au-delà, on lui demande de se
+// connecter (gratuit, pas un palier payant) : sans compte, rien n'empêche de
+// vider le stockage local pour repartir à zéro, donc ce plafond n'a de sens
+// que comme aperçu, jamais comme verrou fiable — voir trialLessonCapReached
+// pour le vrai plafond d'essai, applicable une fois connecté.
+export const ANONYMOUS_LESSON_LIMIT = 1;
+
+export function anonymousLessonCapReached(state: ProgressState, lessonId: string): boolean {
+  const dejaFaites = completedLessonIds(state);
+  if (dejaFaites.has(lessonId)) return false;
+  return dejaFaites.size >= ANONYMOUS_LESSON_LIMIT;
 }
 
 // Le module d'entraînement (questions de cours d'intro générale) est

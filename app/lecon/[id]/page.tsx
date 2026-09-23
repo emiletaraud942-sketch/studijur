@@ -3,7 +3,10 @@
 import Link from "next/link";
 import { useParams, useRouter } from "next/navigation";
 import { useEffect, useMemo, useState } from "react";
-import { useStudiJur, hasAccess, trialLessonCapReached, TRIAL_LESSON_LIMIT, supabaseConfigured } from "@/lib/state";
+import {
+  useStudiJur, hasAccess, trialLessonCapReached, TRIAL_LESSON_LIMIT,
+  anonymousLessonCapReached, supabaseConfigured,
+} from "@/lib/state";
 import { findLesson, findCourse, neighbours, corpusStats } from "@/lib/corpus";
 import { Button, Prose, Tag } from "@/components/ui";
 import { inlineMarkup } from "@/lib/format";
@@ -21,7 +24,7 @@ const STEPS: { key: StepName; label: string; Icon: typeof Quill }[] = [
 export default function LessonPage() {
   const params = useParams<{ id: string }>();
   const router = useRouter();
-  const { state, ready, completeStep, saveDraft, recordQuiz, gradeDefinition } = useStudiJur();
+  const { state, ready, signedInAs, completeStep, saveDraft, recordQuiz, gradeDefinition } = useStudiJur();
   const [step, setStep] = useState(0);
 
   const lesson = useMemo(
@@ -35,18 +38,6 @@ export default function LessonPage() {
 
   if (!ready) return <div className="py-24 text-center text-[14px]" style={{ color: "var(--muted)" }}>Chargement…</div>;
 
-  if (!hasAccess(state)) {
-    return (
-      <div className="mx-auto max-w-md py-20 text-center">
-        <h1 className="serif text-[24px] font-bold">Ton essai gratuit est terminé</h1>
-        <p className="mt-2 text-[15px]" style={{ color: "var(--muted)" }}>
-          Abonne-toi pour continuer les séances quotidiennes. Ta progression et ta série sont conservées.
-        </p>
-        <div className="mt-6"><Button href="/abonnement" size="lg">Voir les formules</Button></div>
-      </div>
-    );
-  }
-
   if (!lesson || !course) {
     return (
       <div className="py-24 text-center">
@@ -56,17 +47,48 @@ export default function LessonPage() {
     );
   }
 
-  if (trialLessonCapReached(state, lesson.id)) {
-    return (
-      <div className="mx-auto max-w-md py-20 text-center">
-        <h1 className="serif text-[24px] font-bold">Tes {TRIAL_LESSON_LIMIT} leçons d&apos;essai sont faites</h1>
-        <p className="mt-2 text-[15px]" style={{ color: "var(--muted)" }}>
-          Abonne-toi pour débloquer les {corpusStats(state.customCourses).lessons} leçons du corpus et continuer
-          tes séances quotidiennes. Ta progression et ta série sont conservées.
-        </p>
-        <div className="mt-6"><Button href="/abonnement" size="lg">Voir les formules</Button></div>
-      </div>
-    );
+  // Sans compte, un visiteur peut terminer une leçon complète en libre accès
+  // pour se faire une idée du produit ; au-delà, on lui demande de se
+  // connecter (gratuit) plutôt que de le renvoyer vers l'abonnement — sans
+  // Supabase configuré (dev local), personne n'est jamais bloqué ici.
+  if (supabaseConfigured && !signedInAs) {
+    if (anonymousLessonCapReached(state, lesson.id)) {
+      return (
+        <div className="mx-auto max-w-md py-20 text-center">
+          <h1 className="serif text-[24px] font-bold">Connecte-toi pour continuer à explorer</h1>
+          <p className="mt-2 text-[15px]" style={{ color: "var(--muted)" }}>
+            C&apos;est gratuit : un simple email, sans mot de passe. Ta première leçon reste acquise, et un
+            compte te permet de continuer à découvrir le corpus.
+          </p>
+          <div className="mt-6"><Button href="/connexion" size="lg">Se connecter</Button></div>
+        </div>
+      );
+    }
+  } else {
+    if (!hasAccess(state)) {
+      return (
+        <div className="mx-auto max-w-md py-20 text-center">
+          <h1 className="serif text-[24px] font-bold">Ton essai gratuit est terminé</h1>
+          <p className="mt-2 text-[15px]" style={{ color: "var(--muted)" }}>
+            Abonne-toi pour continuer les séances quotidiennes. Ta progression et ta série sont conservées.
+          </p>
+          <div className="mt-6"><Button href="/abonnement" size="lg">Voir les formules</Button></div>
+        </div>
+      );
+    }
+
+    if (trialLessonCapReached(state, lesson.id)) {
+      return (
+        <div className="mx-auto max-w-md py-20 text-center">
+          <h1 className="serif text-[24px] font-bold">Tes {TRIAL_LESSON_LIMIT} leçons d&apos;essai sont faites</h1>
+          <p className="mt-2 text-[15px]" style={{ color: "var(--muted)" }}>
+            Abonne-toi pour débloquer les {corpusStats(state.customCourses).lessons} leçons du corpus et continuer
+            tes séances quotidiennes. Ta progression et ta série sont conservées.
+          </p>
+          <div className="mt-6"><Button href="/abonnement" size="lg">Voir les formules</Button></div>
+        </div>
+      );
+    }
   }
 
   const done = step >= STEPS.length;
