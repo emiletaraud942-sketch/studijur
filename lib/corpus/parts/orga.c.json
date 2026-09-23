@@ -1,0 +1,235 @@
+[
+  {
+    "id": "orga-10",
+    "order": 10,
+    "title": "Les tribunaux judiciaires, juridiction de droit commun",
+    "teaser": "164 tribunaux, une collégialité en principe, un président aux pouvoirs propres — et deux ordonnances à ne pas confondre.",
+    "minutes": 6,
+    "brief": [
+      "Il existe deux types de juridictions civiles de premier degré : la juridiction de **compétence générale** (juridiction de droit commun) et les juridictions **spécialisées**, dont la compétence est donnée directement par la loi. Le **tribunal judiciaire** est cette juridiction de droit commun : il résulte de la fusion, en 2020, du tribunal d'instance et du tribunal de grande instance. Il en existe **164 en France**, au moins un par département, davantage selon la densité de population — la Seine-Maritime en compte trois : Rouen, Dieppe, Le Havre.",
+      "**Organisation.** Le tribunal judiciaire compte au moins 3 juges professionnels — le président du tribunal et deux autres juges —, qui siègent en principe en formation **collégiale**. Lorsqu'il compte plus de 5 magistrats, ce qui est fréquent, il s'organise en **chambres**, formations spécialisées par matière (sociale, commerciale...), composées de 3 juges et présidées par le président ou un vice-président assisté d'un greffier. Le président répartit les affaires entre les chambres après avis du procureur de la République et veille au bon fonctionnement du tribunal.",
+      "Le président dispose aussi de **prérogatives propres** : il peut rendre seul deux types d'**ordonnances**. L'**ordonnance sur requête** lui permet de prescrire une mesure ou d'accorder une autorisation relevant de sa compétence propre — par exemple autoriser la rectification d'un acte d'état civil. Le **référé** lui permet de prescrire des mesures provisoires lorsque l'urgence impose de réagir immédiatement, pour faire cesser un trouble manifestement illicite ou prévenir un dommage imminent — par exemple contraindre une partie à verser une provision à la victime potentielle, dans l'attente du jugement définitif.",
+      "Certains magistrats statuent à **juge unique** : le juge aux affaires familiales ; le juge du contentieux de la protection (tutelles, surendettement, litiges liés au bail d'habitation) ; le juge de l'exécution (litiges liés à l'exécution d'une décision de justice). Devant le tribunal judiciaire, le **recours à un avocat est obligatoire**, sauf pour les litiges inférieurs à 10 000 €. L'appel est possible, sauf pour les litiges inférieurs à 5 000 € : jugement alors en **premier et dernier ressort**, le pourvoi en cassation restant toujours ouvert.",
+      "**Compétence.** Le tribunal judiciaire a une compétence **générale**, non définie limitativement par la loi : loyers, consommation, droit bancaire, assurances, état des personnes, famille — tout ce qui n'est pas confié à une juridiction spécialisée. Pour les litiges civils inférieurs à 10 000 €, l'affaire peut être jugée par le **tribunal de proximité**, rattaché au tribunal judiciaire ; il est aussi compétent, quel que soit le montant, pour certains litiges spécifiques : conflits de voisinage, litiges liés à la vie rurale, litiges relatifs aux funérailles."
+    ],
+    "keyPoints": [
+      "Tribunal judiciaire = fusion en 2020 du tribunal d'instance et du tribunal de grande instance ; 164 en France, au moins un par département.",
+      "Formation collégiale par principe (≥ 3 juges) ; organisation en chambres spécialisées au-delà de 5 magistrats.",
+      "Le président rend seul deux types d'ordonnances : sur requête (mesure relevant de sa compétence propre) et de référé (urgence, trouble manifestement illicite).",
+      "Avocat obligatoire au-delà de 10 000 € ; appel fermé en dessous de 5 000 € (premier et dernier ressort), pourvoi en cassation toujours ouvert."
+    ],
+    "definitions": [
+      { "term": "Tribunal judiciaire", "text": "Juridiction civile de droit commun de premier degré, née le 1er janvier 2020 de la fusion du tribunal d'instance et du tribunal de grande instance ; 164 en France." },
+      { "term": "Chambre", "text": "Formation de jugement spécialisée par matière au sein d'un tribunal comptant plus de 5 magistrats, présidée par le président du tribunal ou un vice-président assisté d'un greffier." },
+      { "term": "Ordonnance sur requête", "text": "Décision rendue seul par le président du tribunal judiciaire, prescrivant une mesure ou une autorisation relevant de sa compétence propre." },
+      { "term": "Référé", "text": "Procédure d'urgence par laquelle le président du tribunal prescrit seul des mesures provisoires pour faire cesser un trouble manifestement illicite ou prévenir un dommage imminent." },
+      { "term": "Tribunal de proximité", "text": "Juridiction rattachée au tribunal judiciaire, compétente pour les litiges civils inférieurs à 10 000 € et, sans condition de montant, pour certains litiges spécifiques (voisinage, vie rurale, funérailles)." }
+    ],
+    "exam": {
+      "kind": "question de cours",
+      "question": "Comment le tribunal judiciaire concilie-t-il collégialité et jugement à juge unique ?",
+      "concise": "Le tribunal judiciaire applique le principe de **collégialité** hérité du droit commun : au moins 3 juges professionnels, réunis en formation collégiale ou, au-delà de 5 magistrats, organisés en **chambres** de 3 juges spécialisées par matière. Mais cette règle connaît des tempéraments organisés par la loi elle-même. D'une part, le **président du tribunal** dispose de prérogatives qu'il exerce **seul** : l'ordonnance sur requête et le référé, deux décisions rapides et souvent provisoires que l'urgence ou la nature de la mesure ne permettent pas de soumettre à une formation collégiale. D'autre part, certains contentieux sont confiés à des **juges uniques** spécialisés — juge aux affaires familiales, juge du contentieux de la protection, juge de l'exécution — au nom de l'efficacité et de la technicité de ces matières. Le tribunal judiciaire n'oppose donc pas collégialité et juge unique : il réserve la première au jugement du fond et le second aux contentieux techniques ou urgents.",
+      "plan": [
+        {
+          "title": "I. La collégialité, principe d'organisation du tribunal judiciaire",
+          "children": [
+            { "title": "A. Une formation à trois juges minimum", "points": ["Le président du tribunal et deux autres juges", "Organisation en chambres spécialisées au-delà de 5 magistrats", "Chaque chambre présidée par le président ou un vice-président, assisté d'un greffier"] },
+            { "title": "B. Le rôle d'organisation du président", "points": ["Répartition des affaires entre les chambres, après avis du procureur de la République", "Assistance aux magistrats et bon fonctionnement du tribunal", "Un rôle d'administration distinct de celui de juger"] }
+          ]
+        },
+        {
+          "title": "II. Les tempéraments organisés par la loi",
+          "children": [
+            { "title": "A. Les pouvoirs propres du président", "points": ["Ordonnance sur requête : mesure relevant de sa compétence propre", "Référé : urgence, trouble manifestement illicite, dommage imminent", "Deux décisions rendues seul, souvent provisoires"] },
+            { "title": "B. Les juges uniques spécialisés", "points": ["Juge aux affaires familiales, juge du contentieux de la protection, juge de l'exécution", "Une logique de technicité et d'efficacité, non de dérogation à la collégialité", "Conclusion : deux logiques complémentaires, non concurrentes"] }
+          ]
+        }
+      ],
+      "pitfalls": [
+        "Ne pas confondre l'ordonnance sur requête (mesure relevant de la compétence propre du président) et le référé (mesures provisoires d'urgence).",
+        "Le tribunal de proximité n'est pas une juridiction distincte du tribunal judiciaire : il lui est rattaché."
+      ]
+    },
+    "quiz": [
+      { "q": "Le tribunal judiciaire est né en 2020 de la fusion :", "choices": ["Du tribunal d'instance et du tribunal de grande instance", "Du tribunal de commerce et des prud'hommes", "Du tribunal de police et du tribunal correctionnel", "De la cour d'appel et du tribunal de grande instance"], "answer": 0, "why": "La réforme de 2019, entrée en vigueur le 1er janvier 2020, fusionne les deux juridictions en tribunal judiciaire." },
+      { "q": "Combien de tribunaux judiciaires existe-t-il en France ?", "choices": ["100", "134", "164", "210"], "answer": 2, "why": "164, au moins un par département, davantage selon la densité de population." },
+      { "q": "Au-delà de combien de magistrats un tribunal judiciaire s'organise-t-il en chambres ?", "choices": ["3", "5", "10", "2"], "answer": 1, "why": "Le cours indique qu'au-delà de 5 magistrats, le tribunal s'organise en chambres spécialisées de 3 juges." },
+      { "q": "Le référé permet au président du tribunal de :", "choices": ["Prescrire des mesures provisoires en cas d'urgence", "Trancher définitivement le litige", "Statuer en appel", "Transmettre une QPC"], "answer": 0, "why": "Le référé sert à faire cesser un trouble manifestement illicite ou à prévenir un dommage imminent, dans l'attente du jugement définitif." },
+      { "q": "Devant le tribunal judiciaire, l'avocat est obligatoire :", "choices": ["Toujours", "Jamais", "Sauf pour les litiges inférieurs à 10 000 €", "Seulement en appel"], "answer": 2, "why": "En dessous de ce seuil, les parties peuvent se défendre seules." }
+    ]
+  },
+  {
+    "id": "orga-11",
+    "order": 11,
+    "title": "Les juridictions civiles spéciales",
+    "teaser": "Prud'hommes, commerce, baux ruraux : des juges non professionnels, élus ou nommés par leurs pairs.",
+    "minutes": 6,
+    "brief": [
+      "Face au tribunal judiciaire, juridiction de droit commun, existent des juridictions civiles **spécialisées**, dont la compétence est directement fixée par la loi. Toutes trois ont un point commun : elles sont composées, en tout ou partie, de juges **non professionnels**, issus du monde qu'ils jugent.",
+      "Le **conseil de prud'hommes** juge les litiges nés de l'application — ou de l'absence — d'un contrat de travail : formation, validité, exécution, rupture. Il est prévu par le **Code du travail**, non par le Code de l'organisation judiciaire, et n'est pas compétent pour les fonctionnaires, qui relèvent du juge administratif. Composé **à parité** de représentants des employeurs et des salariés, désignés par le ministre de la Justice sur proposition des organisations professionnelles pour un mandat de **5 ans** (210 conseils en France), sa présidence alterne chaque année entre un employeur et un salarié. Le jugement est rendu par une formation d'au moins 3 conseillers employeurs et 3 conseillers salariés, après une **conciliation obligatoire**. En cas de partage des voix — environ 20 % des affaires —, un magistrat professionnel du tribunal judiciaire, le **juge départiteur**, est appelé pour dégager une majorité.",
+      "Le **tribunal de commerce** juge les litiges entre commerçants, ou entre un commerçant et un particulier, et accompagne les entreprises en difficulté en mettant en place les **procédures collectives** — sauvegarde, redressement, liquidation judiciaires. Composé de **juges consulaires**, des commerçants élus par leurs pairs pour un mandat de 4 ans renouvelable, exercé bénévolement, sous conditions d'âge (30 ans) et d'ancienneté au registre du commerce (5 ans). Il existe **134 tribunaux de commerce** en France, en principe un par région ; ils siègent en formation collégiale de 3 juges, en audience publique.",
+      "Le **tribunal paritaire des baux ruraux** juge les litiges entre propriétaires terriens et exploitants agricoles auxquels ils louent des terres ou des bâtiments — une relation hybride, à la fois bail et contrat d'exploitation. Composé de deux propriétaires et de deux exploitants, il est **présidé par un magistrat professionnel** du tribunal judiciaire ; les assesseurs sont désignés — depuis 2018, auparavant élus — sur proposition des organisations professionnelles, pour un mandat de 6 ans. Il en existe **272 en France**, au moins un par département ; à la différence des deux juridictions précédentes, il ne siège pas en permanence mais en fonction du volume d'affaires. Devant les trois juridictions, la **conciliation préalable** est de règle et l'avocat facultatif ; le jugement est rendu en premier et dernier ressort sous 5 000 €, l'appel s'ouvrant au-delà."
+    ],
+    "keyPoints": [
+      "Conseil de prud'hommes : contentieux du contrat de travail, parité employeurs/salariés, conciliation obligatoire, juge départiteur en cas de partage.",
+      "Tribunal de commerce : juges consulaires élus (commerçants), compétent pour les litiges entre commerçants et les procédures collectives.",
+      "Tribunal paritaire des baux ruraux : deux propriétaires + deux exploitants, présidé par un magistrat professionnel.",
+      "Un même seuil revient partout : avocat facultatif, premier et dernier ressort sous 5 000 €, appel possible au-delà."
+    ],
+    "definitions": [
+      { "term": "Conseil de prud'hommes", "text": "Juridiction civile spéciale, prévue par le Code du travail, compétente pour les litiges individuels nés du contrat de travail, composée à parité de conseillers employeurs et salariés." },
+      { "term": "Juge départiteur", "text": "Magistrat professionnel du tribunal judiciaire appelé à trancher devant le conseil de prud'hommes lorsque les conseillers employeurs et salariés n'ont pas dégagé de majorité." },
+      { "term": "Juge consulaire", "text": "Commerçant élu par ses pairs pour juger au tribunal de commerce, sous conditions d'âge et d'ancienneté au registre du commerce." },
+      { "term": "Procédures collectives", "text": "Procédures mises en place par le tribunal de commerce pour accompagner une entreprise en difficulté : sauvegarde, redressement judiciaire, liquidation judiciaire." },
+      { "term": "Tribunal paritaire des baux ruraux", "text": "Juridiction civile spéciale compétente pour les litiges entre propriétaires terriens et exploitants agricoles, composée de deux propriétaires et deux exploitants, présidée par un magistrat professionnel." }
+    ],
+    "exam": {
+      "kind": "question de cours",
+      "question": "Qu'est-ce qui distingue la composition des trois juridictions civiles spéciales de premier degré ?",
+      "concise": "Les trois juridictions partagent un même principe — des juges **non professionnels**, choisis pour leur connaissance du monde qu'ils jugent — mais l'appliquent selon des logiques différentes. Le **conseil de prud'hommes** est entièrement composé de non-professionnels, à **parité stricte** entre employeurs et salariés, avec un juge professionnel n'intervenant qu'en cas de blocage (le juge départiteur). Le **tribunal de commerce** est lui aussi entièrement composé de non-professionnels, mais sans parité de nature : ce sont des commerçants **élus par leurs pairs**, sans qu'un magistrat professionnel n'intervienne dans la formation de jugement elle-même. Le **tribunal paritaire des baux ruraux** retient une troisième voie : deux propriétaires et deux exploitants, mais **présidés en permanence** par un magistrat professionnel du tribunal judiciaire, qui n'intervient donc pas seulement en cas de désaccord. Ces trois modèles traduisent un même souci — rapprocher le juge du justiciable — mais avec un degré croissant de présence de la magistrature professionnelle.",
+      "plan": [
+        {
+          "title": "I. Un principe commun : le jugement par les pairs",
+          "children": [
+            { "title": "A. Des juges choisis pour leur connaissance du terrain", "points": ["Conseillers prud'homaux salariés et employeurs", "Juges consulaires, commerçants élus", "Assesseurs propriétaires et exploitants agricoles"] },
+            { "title": "B. Une conciliation préalable généralisée", "points": ["Obligatoire devant les prud'hommes et le tribunal paritaire des baux ruraux", "Une justice qui privilégie l'accord amiable avant le jugement", "Avocat facultatif et seuil de 5 000 € pour le premier et dernier ressort"] }
+          ]
+        },
+        {
+          "title": "II. Trois degrés de présence de la magistrature professionnelle",
+          "children": [
+            { "title": "A. Une intervention ponctuelle : le juge départiteur", "points": ["N'intervient qu'en cas de partage des voix aux prud'hommes", "Environ 20 % des affaires", "La formation de jugement reste, en principe, entièrement non professionnelle"] },
+            { "title": "B. Une intervention nulle puis permanente", "points": ["Aucun magistrat professionnel dans la formation du tribunal de commerce", "Un magistrat professionnel préside en permanence le tribunal paritaire des baux ruraux", "Conclusion : un dosage variable entre justice des pairs et encadrement professionnel"] }
+          ]
+        }
+      ],
+      "pitfalls": [
+        "Le conseil de prud'hommes est prévu par le Code du travail, non par le Code de l'organisation judiciaire.",
+        "Ne pas confondre le juge départiteur (prud'hommes, intervention ponctuelle) et le président du tribunal paritaire des baux ruraux (intervention permanente)."
+      ]
+    },
+    "quiz": [
+      { "q": "Le conseil de prud'hommes est prévu par :", "choices": ["Le Code du travail", "Le Code de l'organisation judiciaire", "Le Code civil", "Le Code de commerce"], "answer": 0, "why": "Contrairement aux autres juridictions civiles, sa base textuelle est le Code du travail." },
+      { "q": "Le juge départiteur intervient :", "choices": ["Toujours", "En cas de partage des voix au conseil de prud'hommes", "Uniquement en appel", "Devant le tribunal de commerce"], "answer": 1, "why": "Dans environ 20 % des affaires, quand les six conseillers ne dégagent pas de majorité." },
+      { "q": "Pour être juge consulaire, il faut être inscrit au registre du commerce depuis au moins :", "choices": ["1 an", "5 ans", "10 ans", "15 ans"], "answer": 1, "why": "Avec une condition d'âge minimale de 30 ans." },
+      { "q": "Le tribunal paritaire des baux ruraux est présidé par :", "choices": ["Un exploitant agricole", "Un propriétaire terrien", "Un magistrat professionnel du tribunal judiciaire", "Le président du tribunal de commerce"], "answer": 2, "why": "À la différence des deux autres juridictions spéciales, la présidence y est confiée en permanence à un magistrat professionnel." },
+      { "q": "Ce qui est commun aux trois juridictions civiles spéciales :", "choices": ["Le jugement en premier et dernier ressort sous 5 000 €", "La présence obligatoire d'un avocat", "L'absence de conciliation préalable", "La compétence exclusive de l'État"], "answer": 0, "why": "Avocat facultatif, seuil de 5 000 € pour le premier et dernier ressort, appel possible au-delà : ce régime est commun aux trois." }
+    ]
+  },
+  {
+    "id": "orga-12",
+    "order": 12,
+    "title": "Les juridictions pénales de droit commun : l'instruction",
+    "teaser": "Juge d'instruction et juge des libertés : deux fonctions séparées depuis 2000 pour garantir l'impartialité.",
+    "minutes": 6,
+    "brief": [
+      "Le procès pénal a une vocation répressive particulière : il défend les valeurs de la société, d'où la présence systématique du **procureur de la République** (avocat général en cour d'assises, ministère public), de la victime et du mis en cause. Le procureur, membre du **parquet** — par opposition aux magistrats du **siège** —, poursuit les auteurs d'infraction même en l'absence ou en cas de défaillance de la victime, par un **réquisitoire**. Le droit pénal distingue trois catégories d'infractions selon leur gravité : **contraventions**, **délits**, **crimes**.",
+      "Les **juridictions d'instruction** mettent en œuvre la **procédure inquisitoire** — la recherche des éléments de preuve — pour déterminer s'il existe des charges suffisantes pour renvoyer la personne devant une juridiction de jugement. Le **juge d'instruction** intervient selon la gravité de l'infraction : jamais pour les contraventions, facultativement pour les délits selon leur complexité, obligatoirement pour les crimes. Il dirige une **information judiciaire** et instruit **à charge et à décharge** : il ne présume pas la culpabilité du mis en examen et recherche aussi les preuves de son innocence, au moyen d'interrogatoires, de saisies, de perquisitions.",
+      "À l'issue de son enquête, le juge d'instruction rend soit une **ordonnance de renvoi** devant la juridiction de jugement si les preuves sont suffisantes, soit une **ordonnance de non-lieu** dans le cas contraire. Magistrat du siège, inamovible et irrévocable, il est nommé pour 3 ans renouvelables par décret du président de la République ; il existe au moins un juge d'instruction par tribunal judiciaire, saisi par le procureur de la République ou directement par la victime, et il statue seul. Ses ordonnances sont susceptibles d'appel devant la **chambre de l'instruction** de la cour d'appel.",
+      "Le **juge des libertés et de la détention (JLD)**, créé par la **loi du 15 juin 2000**, est extérieur à l'instruction : il intervient en complément, à la demande du juge d'instruction, pour garantir l'**impartialité** de la décision de placement en détention provisoire — avant 2000, le juge d'instruction cumulait ce pouvoir, ce qui posait un problème d'objectivité. Saisi par une **ordonnance motivée** du juge d'instruction, le JLD se prononce après une audience publique et contradictoire — publique seulement si la personne est majeure. Sa décision, elle-même une ordonnance motivée, peut faire l'objet d'un appel devant la chambre de l'instruction, à l'initiative du procureur de la République ou de la personne mise en détention."
+    ],
+    "keyPoints": [
+      "3 catégories d'infractions — contraventions, délits, crimes — déterminent le rôle du juge d'instruction : jamais, facultatif, obligatoire.",
+      "Le juge d'instruction instruit à charge et à décharge (information judiciaire) ; il conclut par une ordonnance de renvoi ou de non-lieu.",
+      "Le juge des libertés et de la détention (loi du 15 juin 2000) sépare le pouvoir de placer en détention provisoire de celui d'instruire, pour garantir l'impartialité.",
+      "Les ordonnances des deux juges sont susceptibles d'appel devant la chambre de l'instruction de la cour d'appel."
+    ],
+    "definitions": [
+      { "term": "Procédure inquisitoire", "text": "Mode de recherche des éléments de preuve confié à un juge, propre à l'instruction pénale, par opposition à une procédure accusatoire menée par les seules parties." },
+      { "term": "Information judiciaire", "text": "Enquête dirigée par le juge d'instruction, menée à charge et à décharge, pour déterminer s'il existe des charges suffisantes contre le mis en examen." },
+      { "term": "Ordonnance de non-lieu", "text": "Décision du juge d'instruction constatant l'insuffisance des preuves réunies et mettant fin aux poursuites contre la personne mise en examen." },
+      { "term": "Juge des libertés et de la détention (JLD)", "text": "Magistrat du siège, extérieur à l'instruction, seul compétent depuis la loi du 15 juin 2000 pour ordonner un placement en détention provisoire." },
+      { "term": "Détention provisoire", "text": "Mesure privative de liberté ordonnée par le JLD avant le jugement, sur ordonnance motivée du juge d'instruction, à l'issue d'une audience publique et contradictoire." }
+    ],
+    "exam": {
+      "kind": "question de cours",
+      "question": "Pourquoi le pouvoir de placer en détention provisoire a-t-il été retiré au juge d'instruction par la loi du 15 juin 2000 ?",
+      "concise": "Avant 2000, le juge d'instruction cumulait deux fonctions difficilement conciliables : **instruire** l'affaire à charge et à décharge, et **décider** lui-même de priver de liberté la personne qu'il mettait en cause. Ce cumul posait un problème d'**impartialité** : le juge qui a réuni les charges contre un mis en examen est structurellement enclin à estimer nécessaire de le détenir, ce qui fragilise l'objectivité de la décision. La loi du 15 juin 2000 crée le **juge des libertés et de la détention**, magistrat du siège extérieur à l'instruction, seul compétent pour statuer sur la détention provisoire, saisi par une ordonnance motivée du juge d'instruction et statuant après une audience publique et contradictoire. Cette séparation matérialise, au niveau de l'instruction, le principe général d'**indépendance et d'impartialité** de la justice : elle sépare la fonction d'enquête de la fonction de décision privative de liberté, chacune confiée à un juge différent.",
+      "plan": [
+        {
+          "title": "I. Un cumul de fonctions problématique avant 2000",
+          "children": [
+            { "title": "A. Le juge d'instruction, seul maître de l'enquête", "points": ["Il dirige l'information judiciaire, à charge et à décharge", "Interrogatoires, saisies, perquisitions", "Un pouvoir d'investigation étendu"] },
+            { "title": "B. Un même juge décidait aussi de la détention", "points": ["Le risque d'un préjugement de la culpabilité", "Une objectivité fragilisée par le cumul des rôles", "Le constat à l'origine de la réforme de 2000"] }
+          ]
+        },
+        {
+          "title": "II. La séparation opérée par la loi du 15 juin 2000",
+          "children": [
+            { "title": "A. La création du juge des libertés et de la détention", "points": ["Un magistrat du siège extérieur à l'instruction", "Saisi par ordonnance motivée du juge d'instruction", "Décision après audience publique et contradictoire"] },
+            { "title": "B. Une garantie d'impartialité", "points": ["La fonction d'enquête reste au juge d'instruction", "La fonction de décision privative de liberté revient au JLD", "Conclusion : deux juges pour deux fonctions, au nom de l'impartialité"] }
+          ]
+        }
+      ],
+      "pitfalls": [
+        "Le JLD n'instruit pas l'affaire : il ne statue que sur la détention provisoire, à la demande du juge d'instruction.",
+        "L'audience devant le JLD n'est publique que si la personne concernée est majeure."
+      ]
+    },
+    "quiz": [
+      { "q": "Pour les crimes, l'instruction est :", "choices": ["Obligatoire", "Facultative", "Interdite", "Jamais nécessaire"], "answer": 0, "why": "Contrairement aux délits (instruction facultative selon la complexité) et aux contraventions (jamais d'instruction)." },
+      { "q": "Le juge d'instruction instruit :", "choices": ["À charge uniquement", "À décharge uniquement", "À charge et à décharge", "Selon l'avis du procureur"], "answer": 2, "why": "Il recherche aussi bien les preuves de culpabilité que les preuves d'innocence, sans présumer la culpabilité du mis en examen." },
+      { "q": "Le juge des libertés et de la détention a été créé par la loi du :", "choices": ["15 juin 2000", "4 août 1789", "24 mai 1872", "23 juillet 2008"], "answer": 0, "why": "Cette loi retire au juge d'instruction le pouvoir de décider seul de la détention provisoire." },
+      { "q": "La décision du juge d'instruction de ne pas renvoyer la personne devant une juridiction de jugement s'appelle :", "choices": ["Une ordonnance de non-lieu", "Un acquittement", "Une relaxe", "Une réquisition"], "answer": 0, "why": "L'acquittement vient de la cour d'assises, la relaxe du tribunal correctionnel : le non-lieu, lui, intervient à l'issue de l'instruction." },
+      { "q": "Les ordonnances du juge d'instruction et du JLD peuvent faire l'objet d'un appel devant :", "choices": ["La chambre de l'instruction de la cour d'appel", "La Cour de cassation", "Le tribunal correctionnel", "Le Conseil constitutionnel"], "answer": 0, "why": "C'est la voie de recours commune aux deux juridictions d'instruction du premier degré." }
+    ]
+  },
+  {
+    "id": "orga-13",
+    "order": 13,
+    "title": "Les juridictions pénales de droit commun : le jugement",
+    "teaser": "Police, correctionnel, assises : trois juridictions pour trois niveaux de gravité — et une réforme de 2023 qui change la donne.",
+    "minutes": 6,
+    "brief": [
+      "Une fois l'instruction achevée — ou en son absence —, l'affaire est jugée par la juridiction correspondant à la gravité de l'infraction. Le **tribunal de police** juge les contraventions les plus graves (5e catégorie) : les autres catégories se règlent en principe par le paiement de l'amende, sauf contestation, refus de payer ou récidive. Composé d'un **juge unique**, en présence du procureur de la République, il existe **164 tribunaux de police** en France, siégeant dans les mêmes locaux que les tribunaux judiciaires ; le recours à un avocat y est facultatif.",
+      "Le **tribunal correctionnel** juge les **délits** — vol, coups et blessures, corruption, stupéfiants. Il peut prononcer des amendes et des peines d'emprisonnement pouvant aller jusqu'à **10 ans**, portées à **20 ans** en cas de récidive. Il siège en principe en formation **collégiale** (1 président + 2 juges, chambres au-delà de 5 magistrats), mais statue à **juge unique** pour une liste de délits punis d'au plus 5 ans — par exemple le vol simple ou la conduite en état d'ivresse. Il existe **168 tribunaux correctionnels** en France ; l'avocat y est facultatif.",
+      "Les crimes relèvent, depuis le **1er janvier 2023**, de deux juridictions selon leur gravité. Les **cours criminelles départementales**, créées par cette réforme, jugent les crimes les moins graves — punis d'au plus 20 ans, commis par des majeurs non récidivistes (vol à main armée, coups mortels). Composées uniquement de **5 magistrats professionnels** siégeant collégialement, **sans jury populaire**, elles répondent à un triple objectif : désengorger les cours d'assises, limiter les condamnations de la France par la CEDH pour délai déraisonnable, et limiter la **correctionnalisation** des crimes — leur requalification en délits pour les faire juger par le tribunal correctionnel.",
+      "La **cour d'assises** reste seule compétente pour les crimes les plus graves — punis de 20 ans à la perpétuité — et pour ceux commis par des récidivistes. Une par département (103 en France), elle ne siège pas en permanence mais par sessions, environ tous les trois mois. Juridiction **collégiale mixte** : 3 juges professionnels et un jury populaire de **6 citoyens** tirés au sort sur les listes électorales, âgés d'au moins **23 ans** ; juges et jurés délibèrent ensemble, d'abord sur la culpabilité, puis sur la peine — les jurés n'ayant accès qu'à l'ordonnance de mise en accusation et aux débats, non au dossier complet. Le ministère public y est représenté par l'**avocat général**. Elle n'est pas compétente pour les crimes commis par des mineurs ni pour le terrorisme, jugés par des cours d'assises spécialement composées. Ses arrêts sont susceptibles d'appel devant une cour d'assises d'appel ; l'avocat y est **obligatoire**."
+    ],
+    "keyPoints": [
+      "Tribunal de police (contraventions) → tribunal correctionnel (délits, jusqu'à 10 ans, 20 en récidive) → cour criminelle départementale ou cour d'assises (crimes).",
+      "Depuis le 1er janvier 2023 : cours criminelles départementales (5 magistrats, sans jury) pour les crimes ≤ 20 ans commis par des majeurs non récidivistes ; cour d'assises pour les autres.",
+      "Cour d'assises : 3 juges + 6 jurés populaires (23 ans minimum), délibèrent ensemble sur la culpabilité puis sur la peine.",
+      "Avocat facultatif au tribunal de police et au correctionnel ; obligatoire devant la cour d'assises."
+    ],
+    "definitions": [
+      { "term": "Tribunal de police", "text": "Juridiction pénale de premier degré, composée d'un juge unique, compétente pour juger les contraventions les plus graves (5e catégorie)." },
+      { "term": "Tribunal correctionnel", "text": "Juridiction pénale de premier degré compétente pour juger les délits, statuant en principe en formation collégiale et pouvant prononcer jusqu'à 10 ans d'emprisonnement (20 en cas de récidive)." },
+      { "term": "Cour criminelle départementale", "text": "Juridiction créée au 1er janvier 2023, composée de 5 magistrats professionnels sans jury, compétente pour les crimes punis d'au plus 20 ans commis par des majeurs non récidivistes." },
+      { "term": "Cour d'assises", "text": "Juridiction collégiale mixte (3 juges professionnels et 6 jurés populaires) compétente pour les crimes les plus graves, punis de 20 ans d'emprisonnement à la réclusion criminelle à perpétuité." },
+      { "term": "Correctionnalisation", "text": "Requalification d'un crime en délit, afin qu'il soit jugé par le tribunal correctionnel plutôt que par la cour d'assises ou une cour criminelle départementale." }
+    ],
+    "exam": {
+      "kind": "dissertation",
+      "question": "La création des cours criminelles départementales a-t-elle affaibli le jugement par le peuple en matière criminelle ?",
+      "concise": "Depuis le 1er janvier 2023, une partie des crimes — ceux punis d'au plus 20 ans, commis par des majeurs non récidivistes — échappe au **jury populaire** de la cour d'assises pour être jugée par une cour criminelle départementale composée de **5 magistrats professionnels**. Cette réforme répond à des objectifs concrets et documentés : désengorger des cours d'assises saturées, limiter les condamnations de la France par la CEDH pour délai déraisonnable, et lutter contre la **correctionnalisation**, cette pratique par laquelle des crimes étaient artificiellement requalifiés en délits pour échapper à la lenteur des assises — ce qui, paradoxalement, éloignait déjà ces affaires du jugement populaire. Le jury populaire n'est pourtant pas supprimé : il demeure pour les crimes les plus graves et pour les récidivistes, devant la cour d'assises, seule compétente au-delà de 20 ans. La réforme redistribue donc le jugement par le peuple plutôt qu'elle ne l'abolit, en le réservant aux affaires où l'enjeu — la gravité de la peine encourue — le justifie le plus.",
+      "plan": [
+        {
+          "title": "I. Une réforme qui retire le jury populaire pour une partie des crimes",
+          "children": [
+            { "title": "A. Le champ des cours criminelles départementales", "points": ["Crimes punis d'au plus 20 ans d'emprisonnement", "Commis par des majeurs non récidivistes", "5 magistrats professionnels, sans jury, siégeant obligatoirement en formation collégiale"] },
+            { "title": "B. Les objectifs affichés de la réforme", "points": ["Désengorger les cours d'assises", "Limiter les condamnations de la France par la CEDH pour délai déraisonnable", "Lutter contre la correctionnalisation des crimes"] }
+          ]
+        },
+        {
+          "title": "II. Un jugement par le peuple redistribué plutôt que supprimé",
+          "children": [
+            { "title": "A. La cour d'assises reste compétente pour les crimes les plus graves", "points": ["Crimes punis de plus de 20 ans, jusqu'à la perpétuité", "Crimes commis par des récidivistes", "3 juges et 6 jurés populaires, délibérant ensemble sur la culpabilité puis la peine"] },
+            { "title": "B. La correctionnalisation, un recul plus ancien et plus silencieux du jury", "points": ["Avant 2023, des crimes étaient déjà requalifiés en délits pour échapper aux assises", "La réforme de 2023 vise justement à limiter cette pratique", "Conclusion : un jugement par le peuple réorganisé, non supprimé"] }
+          ]
+        }
+      ],
+      "pitfalls": [
+        "La cour criminelle départementale ne comprend aucun juré : c'est sa différence essentielle avec la cour d'assises.",
+        "Ne pas confondre la création des cours criminelles départementales (2023) et celle du juge des libertés et de la détention (2000)."
+      ]
+    },
+    "quiz": [
+      { "q": "Le tribunal correctionnel peut prononcer une peine d'emprisonnement maximale de :", "choices": ["10 ans, 20 en cas de récidive", "5 ans", "20 ans sans exception", "La perpétuité"], "answer": 0, "why": "Au-delà, l'affaire relève de la cour criminelle départementale ou de la cour d'assises, selon la gravité." },
+      { "q": "Les cours criminelles départementales existent depuis :", "choices": ["Le 1er janvier 2023", "2000", "1958", "1789"], "answer": 0, "why": "Réforme entrée en vigueur le 1er janvier 2023 sur tout le territoire." },
+      { "q": "Une cour criminelle départementale est composée :", "choices": ["De 5 magistrats professionnels sans jury", "De 3 juges et 6 jurés", "D'un juge unique", "De 9 magistrats"], "answer": 0, "why": "C'est justement l'absence de jury populaire qui la distingue de la cour d'assises." },
+      { "q": "Devant la cour d'assises, les jurés doivent être âgés d'au moins :", "choices": ["23 ans", "18 ans", "25 ans", "21 ans"], "answer": 0, "why": "Ils sont par ailleurs tirés au sort sur les listes électorales." },
+      { "q": "La correctionnalisation désigne :", "choices": ["La requalification d'un crime en délit pour le faire juger par le tribunal correctionnel", "La création du tribunal correctionnel", "L'appel d'un jugement correctionnel", "La fusion des tribunaux en 2020"], "answer": 0, "why": "Une pratique que la création des cours criminelles départementales vise précisément à limiter." }
+    ]
+  }
+]
