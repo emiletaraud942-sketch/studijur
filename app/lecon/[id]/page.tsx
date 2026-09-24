@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { track } from "@vercel/analytics/react";
 import { Suspense, useEffect, useMemo, useRef, useState } from "react";
 import { useParams, usePathname, useRouter, useSearchParams } from "next/navigation";
 import {
@@ -69,10 +70,14 @@ function LessonPageInner() {
     if (anonymousLessonCapReached(state, lesson.id)) {
       return (
         <div className="mx-auto max-w-md py-20 text-center">
+          <span className="mb-4 inline-flex items-center gap-1.5 rounded-full px-3.5 py-1.5 text-[12.5px] font-bold"
+            style={{ background: "var(--gold-soft)", color: "var(--gold)" }}>
+            Gratuit · sans carte bancaire
+          </span>
           <h1 className="serif text-[24px] font-bold">Connecte-toi pour continuer à explorer</h1>
           <p className="mt-2 text-[15px]" style={{ color: "var(--muted)" }}>
-            C&apos;est gratuit : un simple email, sans mot de passe. Ta première leçon reste acquise, et un
-            compte te permet de continuer à découvrir le corpus.
+            Un simple email, sans mot de passe. Ta première leçon reste acquise, et un compte te permet de
+            continuer à découvrir le corpus.
           </p>
           <div className="mt-6"><Button href={connexionHref(pathname)} size="lg">Se connecter</Button></div>
         </div>
@@ -187,6 +192,15 @@ function CourseStep({ lesson, onNext }: { lesson: ReturnType<typeof findLesson> 
   const l = lesson as NonNullable<ReturnType<typeof findLesson>>;
   return (
     <div className="rise space-y-5">
+      <section className="card p-5" style={{ background: "var(--h-soft)", borderColor: "transparent" }}>
+        <h3 className="mb-2 text-[12px] font-bold uppercase tracking-[0.12em]" style={{ color: "var(--h)" }}>
+          Au programme de cette séance
+        </h3>
+        <p className="text-[14px] leading-relaxed" style={{ color: "var(--ink)" }}>
+          <strong>{l.definitions.length} définitions</strong> à réciter, une <strong>question type examen</strong> avec
+          correction par l&apos;IA, et un <strong>quiz de {l.quiz.length} questions</strong>.
+        </p>
+      </section>
       <article className="card p-5 sm:p-6"><Prose paragraphs={l.brief} /></article>
       <section className="card p-5" style={{ background: "var(--h-soft)", borderColor: "transparent" }}>
         <h3 className="mb-3 text-[12px] font-bold uppercase tracking-[0.12em]" style={{ color: "var(--h)" }}>
@@ -450,8 +464,11 @@ function Correction({
           </p>
           {connexionRequise ? (
             <div className="mt-3">
-              <p className="mb-2 text-[13px]" style={{ color: "var(--muted)" }}>
-                Connecte-toi (gratuit, par email) pour faire corriger ta copie par l&apos;IA.
+              <p className="mb-2 flex flex-wrap items-center gap-1.5 text-[13px]" style={{ color: "var(--ink-2)" }}>
+                <span className="rounded-full px-2 py-0.5 text-[11px] font-bold" style={{ background: "var(--gold-soft)", color: "var(--gold)" }}>
+                  Gratuit
+                </span>
+                Connecte-toi par email, sans mot de passe ni carte bancaire, pour faire corriger ta copie par l&apos;IA.
               </p>
               <Button href={connexionHref(`${pathname}?step=question&autocorrect=1`)} variant="soft" size="md">
                 Se connecter
@@ -620,6 +637,10 @@ function DoneStep({
         {nextId && <Button href={`/lecon/${nextId}`} size="lg" full>Enchaîner la leçon suivante <Arrow className="h-4 w-4" /></Button>}
         <Button onClick={onHome} variant={nextId ? "outline" : "primary"} size="lg" full>Retour à l&apos;accueil</Button>
         <button onClick={onReplay} className="text-[13px] font-semibold" style={{ color: "var(--muted)" }}>Refaire la séance</button>
+        <Link href="/mes-cours" onClick={() => track("mes_cours_lien_clic", { emplacement: "fin_lecon" })}
+          className="text-[13px] font-semibold" style={{ color: "var(--h, var(--accent))" }}>
+          Tu peux aussi transformer tes propres cours en fiches →
+        </Link>
       </div>
     </div>
   );
