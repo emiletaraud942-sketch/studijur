@@ -97,17 +97,17 @@ const QUOTA_PER_DAY = 3;
 const QUOTA_WINDOW_MS = 86400000;
 const memoryQuota = new Map<string, { count: number; resetAt: number }>();
 
-function checkQuotaInMemory(key: string, amount: number): { ok: boolean; remaining: number } {
+function checkQuotaInMemory(key: string, amount: number, limit: number): { ok: boolean; remaining: number } {
   const now = Date.now();
   const entry = memoryQuota.get(key);
   if (!entry || entry.resetAt < now) {
-    if (amount > QUOTA_PER_DAY) return { ok: false, remaining: QUOTA_PER_DAY };
+    if (amount > limit) return { ok: false, remaining: limit };
     memoryQuota.set(key, { count: amount, resetAt: now + QUOTA_WINDOW_MS });
-    return { ok: true, remaining: QUOTA_PER_DAY - amount };
+    return { ok: true, remaining: limit - amount };
   }
-  if (entry.count + amount > QUOTA_PER_DAY) return { ok: false, remaining: Math.max(0, QUOTA_PER_DAY - entry.count) };
+  if (entry.count + amount > limit) return { ok: false, remaining: Math.max(0, limit - entry.count) };
   entry.count += amount;
-  return { ok: true, remaining: QUOTA_PER_DAY - entry.count };
+  return { ok: true, remaining: limit - entry.count };
 }
 
 function releaseQuotaInMemory(key: string, amount: number) {
@@ -115,9 +115,12 @@ function releaseQuotaInMemory(key: string, amount: number) {
   if (entry) entry.count = Math.max(0, entry.count - amount);
 }
 
-export async function checkQuota(key: string, amount = 1): Promise<{ ok: boolean; remaining: number }> {
+// `limit` permet de relever le plafond quotidien pour un utilisateur abonné
+// (voir app/api/ingest/route.ts) : le compteur consommé reste le même pour
+// tout le monde, seul le seuil au-delà duquel on refuse change.
+export async function checkQuota(key: string, amount = 1, limit: number = QUOTA_PER_DAY): Promise<{ ok: boolean; remaining: number }> {
   const sb = getAdmin();
-  if (!sb) return checkQuotaInMemory(key, amount);
+  if (!sb) return checkQuotaInMemory(key, amount, limit);
 
   try {
     const nowIso = new Date().toISOString();
@@ -126,24 +129,24 @@ export async function checkQuota(key: string, amount = 1): Promise<{ ok: boolean
       .select("count, reset_at")
       .eq("key", key)
       .maybeSingle();
-    if (readError) return checkQuotaInMemory(key, amount); // table absente ou panne : dégradation gracieuse
+    if (readError) return checkQuotaInMemory(key, amount, limit); // table absente ou panne : dégradation gracieuse
 
     if (!row || row.reset_at < nowIso) {
-      if (amount > QUOTA_PER_DAY) return { ok: false, remaining: QUOTA_PER_DAY };
+      if (amount > limit) return { ok: false, remaining: limit };
       const resetAt = new Date(Date.now() + QUOTA_WINDOW_MS).toISOString();
       const { error } = await sb
         .from("api_quota")
         .upsert({ key, count: amount, reset_at: resetAt }, { onConflict: "key" });
-      if (error) return checkQuotaInMemory(key, amount);
-      return { ok: true, remaining: QUOTA_PER_DAY - amount };
+      if (error) return checkQuotaInMemory(key, amount, limit);
+      return { ok: true, remaining: limit - amount };
     }
-    if (row.count + amount > QUOTA_PER_DAY) return { ok: false, remaining: Math.max(0, QUOTA_PER_DAY - row.count) };
+    if (row.count + amount > limit) return { ok: false, remaining: Math.max(0, limit - row.count) };
     const nextCount = row.count + amount;
     const { error } = await sb.from("api_quota").update({ count: nextCount }).eq("key", key);
-    if (error) return checkQuotaInMemory(key, amount);
-    return { ok: true, remaining: QUOTA_PER_DAY - nextCount };
+    if (error) return checkQuotaInMemory(key, amount, limit);
+    return { ok: true, remaining: limit - nextCount };
   } catch {
-    return checkQuotaInMemory(key, amount);
+    return checkQuotaInMemory(key, amount, limit);
   }
 }
 
@@ -166,11 +169,11 @@ export async function releaseQuota(key: string, amount = 1): Promise<void> {
 // navigateur, le second reste un filet contre le partage d'un seul compte
 // entre plusieurs personnes. Les deux clés doivent passer pour continuer ;
 // si l'une échoue, celles déjà consommées sont immédiatement rendues.
-export async function checkQuotaBoth(keys: string[], amount = 1): Promise<{ ok: boolean; remaining: number }> {
+export async function checkQuotaBoth(keys: string[], amount = 1, limit: number = QUOTA_PER_DAY): Promise<{ ok: boolean; remaining: number }> {
   const consumed: string[] = [];
-  let minRemaining = QUOTA_PER_DAY;
+  let minRemaining = limit;
   for (const key of keys) {
-    const r = await checkQuota(key, amount);
+    const r = await checkQuota(key, amount, limit);
     if (!r.ok) {
       for (const c of consumed) await releaseQuota(c, amount);
       return { ok: false, remaining: r.remaining };

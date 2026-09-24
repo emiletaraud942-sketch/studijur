@@ -4,6 +4,7 @@ import { fallbackCourse, splitSections } from "@/lib/ingest-fallback";
 import { checkQuotaBoth, fingerprint, lookupShared, releaseQuotaAll, sharedCourseId, storeShared } from "@/lib/shared-courses";
 import { authRequired, requireUser } from "@/lib/auth-server";
 import { isOwner } from "@/lib/owner";
+import { hasActiveSubscription } from "@/lib/subscription-server";
 import { CORPUS } from "@/lib/corpus";
 import { getAdmin } from "@/lib/supabase-admin";
 import { envoyerEmail } from "@/lib/brevo";
@@ -62,10 +63,22 @@ async function signalerMatiereManquante(course: Course): Promise<void> {
 }
 
 const MAX_CHARS = 200_000;
-// Alignée sur le quota quotidien (3) : un seul dépôt de cours peut au pire
-// consommer toutes les générations du jour, jamais plus — voir shared-courses.ts.
+// Palier gratuit (essai ou sans abonnement) : alignée sur le quota quotidien
+// (3) — un seul dépôt de cours peut au pire consommer toutes les générations
+// du jour, jamais plus — voir shared-courses.ts. Juste de quoi se faire une
+// idée du produit sur un extrait.
 const MAX_LESSONS = 3;
 const SECTION_CHARS = 6000;
+// Palier abonné (voir hasActiveSubscription) : un cours de plusieurs
+// dizaines de pages doit être traité en entier, pas juste ses 3 premières
+// parties. splitSections() ne produit de toute façon jamais plus de 14
+// sections (lib/ingest-fallback.ts) : ce plafond ne fait donc que lever la
+// limite artificielle du palier gratuit, pas une limite technique. Le quota
+// quotidien est relevé en conséquence (QUOTA_PER_DAY_PREMIUM), pour qu'un
+// seul document volumineux ne se heurte pas au plafond des comptes gratuits.
+const MAX_LESSONS_PREMIUM = 14;
+const SECTION_CHARS_PREMIUM = 20_000;
+const QUOTA_PER_DAY_PREMIUM = 20;
 const SECTION_MAX_TOKENS = 1400;
 
 const SYSTEM = `Tu es agrégé de droit et tu fabriques des micro-leçons pour des étudiants français de première année de licence de droit.
@@ -145,6 +158,10 @@ export async function POST(req: Request) {
   const ip = clientIp(req);
   let quotaKeys = [ip];
   let unlimited = false;
+  // Abonné (vérifié côté serveur via la table `subscriptions`, jamais via le
+  // profil client) ou propriétaire du site : traite le cours en entier plutôt
+  // que ses 3 premières parties — voir MAX_LESSONS_PREMIUM ci-dessus.
+  let premium = false;
   // Un visiteur sans compte peut générer un premier cours pour voir un
   // exemple de fiche (voir ANONYMOUS_IMPORT_LIMIT côté client) : il passe
   // alors sur le seul quota par IP, déjà le garde-fou de coût pour un compte
@@ -155,16 +172,28 @@ export async function POST(req: Request) {
     if (user) {
       quotaKeys = [`user:${user.id}`, ip];
       unlimited = isOwner(user.email);
+      premium = unlimited || (await hasActiveSubscription(user.email));
     }
   }
+
+  const maxLessons = premium ? MAX_LESSONS_PREMIUM : MAX_LESSONS;
+  const sectionChars = premium ? SECTION_CHARS_PREMIUM : SECTION_CHARS;
+  const quotaLimit = premium ? QUOTA_PER_DAY_PREMIUM : undefined;
 
   const clipped = text.slice(0, MAX_CHARS);
   const fp = fingerprint(clipped);
   const courseId = sharedCourseId(fp);
+  const sections = splitSections(clipped).slice(0, maxLessons);
+  if (!sections.length) {
+    return NextResponse.json({ error: "Impossible de découper ce cours en parties exploitables." }, { status: 400 });
+  }
 
-  // 1. Quelqu'un a-t-il déjà déposé ce document ? La génération est alors gratuite.
+  // 1. Quelqu'un a-t-il déjà déposé ce document ? La génération est alors gratuite —
+  // sauf si ce dépôt précédent avait un plafond de sections plus bas (déposé par un
+  // compte gratuit) que celui auquel cet utilisateur a droit : un abonné ne doit
+  // jamais recevoir une version tronquée faute d'être le premier à déposer le document.
   const shared = await lookupShared(fp);
-  if (shared) {
+  if (shared && shared.course.lessons.length >= sections.length) {
     return NextResponse.json({
       course: { ...shared.course, title },
       engine: "partagé",
@@ -183,15 +212,10 @@ export async function POST(req: Request) {
     });
   }
 
-  const sections = splitSections(clipped).slice(0, MAX_LESSONS);
-  if (!sections.length) {
-    return NextResponse.json({ error: "Impossible de découper ce cours en parties exploitables." }, { status: 400 });
-  }
-
   // Une section = un appel modèle : le quota se consomme sur ce nombre réel
   // d'appels, pas sur la requête HTTP (voir checkQuotaBoth).
   if (!unlimited) {
-    const gate = await checkQuotaBoth(quotaKeys, sections.length);
+    const gate = await checkQuotaBoth(quotaKeys, sections.length, quotaLimit);
     if (!gate.ok) {
       return NextResponse.json(
         {
@@ -216,7 +240,7 @@ export async function POST(req: Request) {
           system: SYSTEM,
           cacheSystem: true,
           maxTokens: SECTION_MAX_TOKENS,
-          user: `Matière : ${title}\nPartie du cours : ${s.title}\n\n--- EXTRAIT DU COURS ---\n${s.body.slice(0, SECTION_CHARS)}\n--- FIN DE L'EXTRAIT ---\n\nProduis la leçon JSON.`,
+          user: `Matière : ${title}\nPartie du cours : ${s.title}\n\n--- EXTRAIT DU COURS ---\n${s.body.slice(0, sectionChars)}\n--- FIN DE L'EXTRAIT ---\n\nProduis la leçon JSON.`,
         });
         const draft = extractJson<Draft>(raw);
         if (sane(draft)) results[i] = tidy(draft);
