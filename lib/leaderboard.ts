@@ -52,12 +52,15 @@ export async function fetchLeaderboard(
 ): Promise<LeaderboardRow[]> {
   const sb = getSupabase();
   if (!sb) return [];
-  // On filtre par université (colonne `university` de la vue, via .eq) sans
-  // jamais la sélectionner dans la réponse : le classement affiché ne montre
-  // que le pseudonyme choisi, jamais l'établissement de chacun — sur une
-  // petite promo, pseudo + fac peut suffire à deviner qui c'est.
+  // On filtre par université (colonne `university` renvoyée par la fonction,
+  // via .eq) sans jamais la sélectionner dans la réponse : le classement
+  // affiché ne montre que le pseudonyme choisi, jamais l'établissement de
+  // chacun — sur une petite promo, pseudo + fac peut suffire à deviner qui
+  // c'est. leaderboard_public() est une fonction SECURITY DEFINER (pas une
+  // vue) : elle seule doit voir toutes les lignes malgré la RLS de
+  // `leaderboard`, qui restreint chaque utilisateur à la sienne.
   let query = sb
-    .from("leaderboard_public")
+    .rpc("leaderboard_public")
     .select("pseudonym, streak, mastered, lessons_done")
     .order("streak", { ascending: false })
     .order("mastered", { ascending: false })
