@@ -230,5 +230,121 @@
       { "q": "L'Alsace-Moselle est un exemple :", "choices": ["D'un territoire sans droit français applicable", "D'un régime spécial d'application territoriale du droit", "D'une juridiction supranationale", "D'une source de droit international"], "answer": 1, "why": "Un régime concordataire particulier y coexiste avec le droit commun français." },
       { "q": "Le vinculum juris désigne :", "choices": ["Le lien de droit dont la violation est sanctionnée par l'État", "Un adage sur la preuve", "Le lien contractuel entre deux parties", "La hiérarchie des normes"], "answer": 0, "why": "C'est ce qui distingue la règle de droit de la règle morale, dépourvue de sanction étatique." }
     ]
+  },
+  {
+    "id": "intro-15",
+    "order": 15,
+    "title": "Le déclin de la loi",
+    "teaser": "Trop de lois, des lois bavardes, et une loi elle-même sous condition de son décret.",
+    "minutes": 5,
+    "brief": [
+      "Lorsqu'une loi subordonne son application à un décret, elle n'est en principe pas applicable tant que le pouvoir réglementaire n'a pas pris ce décret. Le Conseil d'État juge toutefois que celui-ci est **tenu de prendre les mesures d'application dans un délai raisonnable** : son abstention prolongée est illégale et peut engager la responsabilité de l'État (**CE, Assemblée, 28 juin 2002, n° 220361**). En pratique, la loi est parfois appliquée malgré l'absence de son décret, lorsque ses dispositions sont suffisamment précises pour se suffire à elles-mêmes.",
+      "Depuis la Révolution, la loi est présentée comme la norme fondamentale : pour **Rousseau** (*Du contrat social*, 1762), « la loi est l'expression de la volonté générale » — formule reprise à l'**article 6 de la DDHC du 26 août 1789**. Mais elle n'est plus au sommet de la hiérarchie des normes : elle se situe en dessous de la Constitution et en dessous des traités internationaux (**art. 55 de la Constitution**). Diagnostic contemporain : un **déclin quantitatif**, l'inflation normative — plusieurs dizaines de milliers d'articles de loi sont aujourd'hui en vigueur.",
+      "Un **déclin qualitatif** l'accompagne. Les **lois de circonstance**, votées après chaque fait divers, sont une manière instable de faire du droit — certaines sont modifiées avant même d'avoir été appliquées. Les **lois déclaratives** déclarent quelque chose sans poser de règle, comme les lois mémorielles : le Conseil constitutionnel a censuré l'une d'elles, réprimant la contestation de génocides reconnus par la loi, au motif qu'une loi ne peut se contenter d'être déclarative (**Cons. const., 28 février 2012, n° 2012-647 DC**) — on parle de « **loi bavarde** ».",
+      "Déjà en 1801, **Portalis** (*Discours préliminaire du premier projet de Code civil*) assignait à la loi la fonction de fixer, par de grandes vues, les maximes générales du droit — non de descendre dans le détail de chaque question. Politiquement, la loi ne suffit d'ailleurs pas à faire un État de droit : elle en est le corollaire démocratique, une simple composante qui suppose en outre une protection juridictionnelle ; l'État de droit se construit parfois **contre** la loi elle-même."
+    ],
+    "keyPoints": [
+      "Le pouvoir réglementaire doit prendre le décret d'application dans un délai raisonnable (CE, Ass., 28 juin 2002, n° 220361), sous peine d'illégalité.",
+      "Déclin quantitatif : explosion du nombre de lois depuis le XXe siècle (inflation normative).",
+      "Déclin qualitatif : lois de circonstance, lois déclaratives et mémorielles — le Conseil constitutionnel censure la « loi bavarde » (Cons. const., 28 février 2012, n° 2012-647 DC).",
+      "La loi n'est plus au sommet de la hiérarchie des normes (en dessous de la Constitution et des traités, art. 55) ; nécessaire mais non suffisante à l'État de droit."
+    ],
+    "definitions": [
+      { "term": "Délai raisonnable (décret d'application)", "text": "Obligation du pouvoir réglementaire de prendre les mesures d'application d'une loi dans un délai raisonnable ; son abstention prolongée est illégale et peut engager la responsabilité de l'État.", "source": "CE, Assemblée, 28 juin 2002, n° 220361" },
+      { "term": "Loi de circonstance", "text": "Loi votée sous le coup d'un fait divers ou de l'actualité, de façon instable, parfois modifiée avant même d'avoir été appliquée." },
+      { "term": "Loi déclarative", "text": "Loi qui se contente de déclarer un fait ou une opinion sans poser de règle de droit ; le Conseil constitutionnel censure une loi purement déclarative, comme une loi mémorielle.", "source": "Cons. const., 28 février 2012, n° 2012-647 DC" },
+      { "term": "Loi bavarde", "text": "Expression désignant une loi qui, en multipliant les dispositions déclaratives ou de détail, s'écarte de sa fonction propre : fixer les grandes maximes générales du droit." },
+      { "term": "Inflation normative", "text": "Croissance continue du nombre de lois et d'articles en vigueur depuis le XXe siècle, présentée comme le symptôme d'un déclin quantitatif de la loi." }
+    ],
+    "exam": {
+      "kind": "question de cours",
+      "question": "En quel sens peut-on parler d'un déclin de la loi dans le droit français contemporain ?",
+      "concise": "La loi connaît aujourd'hui un double déclin. Un déclin **quantitatif** d'abord : le nombre de lois n'a cessé de croître depuis le XXe siècle, jusqu'à une véritable **inflation normative** de plusieurs dizaines de milliers d'articles en vigueur. Un déclin **qualitatif** ensuite : les **lois de circonstance**, adoptées dans l'urgence après un fait divers, sont instables — certaines sont modifiées avant même d'avoir été appliquées — et les **lois déclaratives**, qui énoncent une opinion sans poser de règle, comme les lois mémorielles, ont été censurées par le Conseil constitutionnel au nom d'une loi qui ne saurait se contenter d'être « bavarde » (Cons. const., 28 février 2012, n° 2012-647 DC). Ce déclin s'accompagne d'un affaiblissement de la position même de la loi : elle n'est plus, depuis la Constitution de 1958, au sommet de la hiérarchie des normes, mais subordonnée à la Constitution et aux traités internationaux (art. 55). Son application peut même être différée par l'inaction du pouvoir réglementaire, bien que le Conseil d'État encadre ce risque en imposant un délai raisonnable pour prendre les décrets d'application (CE, Ass., 28 juin 2002, n° 220361). La loi reste ainsi une condition nécessaire de l'État de droit, sans plus en être une condition suffisante.",
+      "plan": [
+        {
+          "title": "I. Un déclin quantitatif et qualitatif",
+          "children": [
+            { "title": "A. L'inflation normative", "points": ["Explosion du nombre de lois depuis le XXe siècle", "Plusieurs dizaines de milliers d'articles en vigueur", "Symptôme d'une loi omniprésente mais banalisée"] },
+            { "title": "B. Les lois de circonstance et déclaratives", "points": ["Lois de circonstance votées après un fait divers, instables", "Lois déclaratives (ex. lois mémorielles) sans portée normative propre", "Censure de la loi purement déclarative, la « loi bavarde » (Cons. const., 28 février 2012, n° 2012-647 DC)"] }
+          ]
+        },
+        {
+          "title": "II. Une loi affaiblie dans sa position et son effectivité",
+          "children": [
+            { "title": "A. Une norme qui n'est plus au sommet", "points": ["La loi se situe en dessous de la Constitution et des traités internationaux (art. 55)", "Rappel historique : Rousseau et l'article 6 DDHC faisaient de la loi l'expression de la volonté générale", "Nécessaire mais insuffisante à l'État de droit, qui suppose aussi une protection juridictionnelle"] },
+            { "title": "B. Une application parfois différée par l'exécutif", "points": ["La loi renvoyant à un décret n'est en principe pas applicable tant que le décret n'est pas pris", "Le Conseil d'État impose un délai raisonnable (CE, Ass., 28 juin 2002, n° 220361)", "Une loi peut toutefois s'appliquer sans décret si ses dispositions sont suffisamment précises"] }
+          ]
+        }
+      ],
+      "pitfalls": [
+        "Ne pas confondre déclin quantitatif (trop de lois) et déclin qualitatif (des lois mal faites, déclaratives) : les deux se combinent mais ne se confondent pas.",
+        "Le décret d'application manquant ne rend pas la loi automatiquement inapplicable si ses dispositions sont assez précises pour se suffire à elles-mêmes."
+      ]
+    },
+    "quiz": [
+      { "q": "Que juge le Conseil d'État dans son arrêt d'Assemblée du 28 juin 2002 (n° 220361) ?", "choices": ["Le pouvoir réglementaire n'est jamais tenu de prendre un décret d'application", "Le pouvoir réglementaire doit prendre les décrets d'application dans un délai raisonnable, sous peine d'illégalité", "Une loi sans décret d'application est nulle", "Le décret d'application doit être pris dans les 24 heures"], "answer": 1, "why": "Passé un délai raisonnable, l'abstention du pouvoir réglementaire est illégale et peut engager la responsabilité de l'État." },
+      { "q": "Qu'appelle-t-on le déclin qualitatif de la loi ?", "choices": ["La baisse du nombre de lois votées chaque année", "La multiplication de lois de circonstance et de lois purement déclaratives", "La suppression du contrôle de constitutionnalité", "La disparition des décrets d'application"], "answer": 1, "why": "Lois de circonstance (instables) et lois déclaratives (sans portée normative propre, ex. lois mémorielles) illustrent ce déclin qualitatif." },
+      { "q": "Pourquoi le Conseil constitutionnel a-t-il censuré, le 28 février 2012, la loi réprimant la contestation des génocides reconnus par la loi ?", "choices": ["Parce qu'elle violait un traité international", "Parce qu'elle était purement déclarative et ne posait pas de règle de droit", "Parce qu'elle n'avait pas été votée en Congrès", "Parce qu'elle contredisait une jurisprudence de la Cour de cassation"], "answer": 1, "why": "Le Conseil constitutionnel refuse qu'une loi se contente d'être déclarative — on parle de « loi bavarde »." },
+      { "q": "Selon Rousseau (Du contrat social, 1762), la loi est :", "choices": ["Un ordre du souverain seul", "L'expression de la volonté générale", "Une simple coutume écrite", "Un texte réservé au pouvoir exécutif"], "answer": 1, "why": "Formule reprise à l'article 6 de la Déclaration des droits de l'homme et du citoyen du 26 août 1789." },
+      { "q": "Dans la hiérarchie des normes, la loi se situe aujourd'hui :", "choices": ["Au sommet, au-dessus de la Constitution", "En dessous de la Constitution et des traités internationaux", "Au même niveau que les règlements", "Hors de la hiérarchie des normes"], "answer": 1, "why": "Article 55 de la Constitution : les traités ont une autorité supérieure à celle des lois, elles-mêmes subordonnées à la Constitution." }
+    ]
+  },
+  {
+    "id": "intro-16",
+    "order": 16,
+    "title": "Les sources vivantes du droit : jurisprudence, coutume et autorités doctrinales",
+    "teaser": "Ni loi ni règlement : comment jurisprudence, coutume et doctrine créent du droit sans en avoir la force formelle.",
+    "minutes": 6,
+    "brief": [
+      "Une décision de justice naît d'un parcours type : un **litige** porté devant une juridiction, un **jugement de première instance**, un **appel** donnant un arrêt d'appel, puis un éventuel **pourvoi en cassation**. La Cour de cassation rend surtout des **arrêts d'espèce**, qui ne tranchent que des faits particuliers, mais parfois un **arrêt de principe** : une décision très motivée, publiée et commentée par la Cour elle-même et par la doctrine. Répété, cet arrêt de principe devient de la **jurisprudence**.",
+      "En théorie, la jurisprudence est une source **refusée** : elle ne figure pas dans la hiérarchie des normes (pyramide de Kelsen). L'**article 5 du Code civil** interdit au juge les **arrêts de règlement** — il ne peut poser de règle générale, seulement statuer sur le cas dont il est saisi, héritage de la réaction contre les parlements de l'Ancien Régime, interdits en 1804. L'**article 1355 du Code civil** (ancien art. 1351) pose l'**autorité relative de la chose jugée** : une décision ne lie que les parties. Pourtant l'**article 4 du Code civil** interdit au juge le **déni de justice** : il doit statuer même face au silence de la loi, ce qui l'oblige de fait à créer du droit.",
+      "En pratique, la jurisprudence est une source **bien réelle** : si elle n'avait aucune autorité, le législateur n'interviendrait pas pour la renverser. Deux illustrations. L'arrêt **Perruche** (Cass., ass. plén., 17 novembre 2000), qui retient la responsabilité d'un médecin pour un handicap non décelé, a été suivi de la **loi du 4 mars 2002** — dont l'application rétroactive a ensuite été censurée par la **CEDH** (*Draon* et *Maurice c. France*, 6 octobre 2005). L'arrêt **Desmares** (Cass. civ. 2e, 21 juillet 1982), qui excluait l'exonération du responsable par la faute de la victime, a été suivi de la **loi Badinter du 5 juillet 1985**, qui a consolidé la protection de la victime en limitant fortement cette exonération. Si les juges du fond reproduisent le raisonnement de la Cour de cassation, c'est par crainte de la cassation, souci de cohérence du droit et, surtout, adhésion — une **autorité de persuasion et de fait**, plus que de droit.",
+      "D'autres normes vivantes complètent ce tableau. La **coutume** est un usage constant et répété (élément matériel) dont les acteurs pensent qu'il est obligatoire (*opinio juris*) : elle peut seconder la loi (*secundum legem*), combler son silence (*praeter legem*) ou s'y opposer (*contra legem*) — l'**article 521-1 du Code pénal** en reconnaît une, en exceptant de l'incrimination des sévices envers les animaux les courses de taureaux et combats de coqs relevant d'une tradition locale ininterrompue. La **doctrine** est l'ensemble des opinions de ceux qui commentent le droit — une autorité intellectuelle, non une source formelle. La ***soft law*** (avis, chartes, recommandations, comme celles de l'AMF) est dépourvue de sanction directe mais largement respectée ; les **principes généraux du droit**, dégagés par le juge, relèvent de la même autorité ; et la **pratique** — par exemple celle des notaires, qui s'échangent et harmonisent leurs clauses — crée elle aussi du droit."
+    ],
+    "keyPoints": [
+      "La jurisprudence naît d'un arrêt de principe répété ; elle n'est pas une source formelle (art. 5 C. civ., prohibition des arrêts de règlement) mais une autorité de fait et de persuasion.",
+      "Deux illustrations du rapport de force jurisprudence/législateur : Perruche (2000) → loi du 4 mars 2002, censurée par la CEDH (Draon et Maurice, 2005) ; Desmares (1982) → loi Badinter (1985).",
+      "La coutume (élément matériel + opinio juris) se décline en secundum, praeter et contra legem.",
+      "Doctrine, soft law et pratique complètent ces sources vivantes, sans avoir la force contraignante de la loi."
+    ],
+    "definitions": [
+      { "term": "Arrêt de principe", "text": "Décision de la Cour de cassation très motivée, publiée et commentée, qui énonce une solution destinée à être reprise ; répétée, elle devient de la jurisprudence — à distinguer de l'arrêt d'espèce, qui ne tranche qu'un cas particulier." },
+      { "term": "Autorité de persuasion", "text": "Force propre à la jurisprudence : les juges du fond reproduisent le raisonnement de la Cour de cassation par crainte de la cassation, souci de cohérence et adhésion — non parce que la jurisprudence aurait, en droit, la force obligatoire de la loi." },
+      { "term": "Coutume secundum legem", "text": "Type de coutume qui seconde la loi lorsque celle-ci y renvoie expressément, par opposition aux coutumes praeter legem (qui comblent un silence de la loi) et contra legem (qui s'y opposent)." },
+      { "term": "Soft law (droit souple)", "text": "Ensemble des avis, chartes, codes de conduite et recommandations dépourvus de sanction directe — comme ceux de l'Autorité des marchés financiers — mais largement respectés en pratique, sans être une source de droit au sens strict." },
+      { "term": "Principes généraux du droit (PGD)", "text": "Règles dégagées par le juge, notamment à partir de la jurisprudence, qui relèvent comme elle de l'autorité plutôt que de la source formelle du droit." }
+    ],
+    "exam": {
+      "kind": "question de cours",
+      "question": "La jurisprudence est-elle une source du droit ?",
+      "concise": "La jurisprudence occupe une place ambiguë parmi les sources du droit. En **théorie**, elle est une source **refusée** : absente de la hiérarchie des normes, elle se heurte à l'**article 5 du Code civil**, qui interdit au juge les arrêts de règlement, et à l'**article 1355**, qui limite l'autorité d'une décision aux seules parties au procès. Mais le juge ne peut se dérober : l'**article 4 du Code civil** lui interdit le déni de justice, l'obligeant de fait à trancher, et donc parfois à créer du droit, même quand la loi est silencieuse. En **pratique**, la jurisprudence est une source bien réelle : la Cour de cassation crée un droit considérable, et le législateur intervient régulièrement pour la renverser — preuve qu'elle a une autorité. L'arrêt **Perruche** (2000), suivi de la loi du 4 mars 2002 puis censuré par la CEDH pour sa rétroactivité (*Draon et Maurice*, 2005), et l'arrêt **Desmares** (1982), suivi de la loi Badinter de 1985, l'illustrent parfaitement. Si les juges du fond reprennent la solution de la Cour de cassation, c'est par crainte de la cassation, souci de cohérence et adhésion : la jurisprudence dispose ainsi d'une **autorité de persuasion et de fait**, sans avoir, en droit, la force obligatoire de la loi.",
+      "plan": [
+        {
+          "title": "I. Une source refusée en théorie",
+          "children": [
+            { "title": "A. Une place absente de la hiérarchie des normes", "points": ["La jurisprudence ne figure pas dans la pyramide de Kelsen", "Art. 5 C. civ., prohibition des arrêts de règlement (héritage de 1804)", "Art. 1355 C. civ., autorité relative de la chose jugée"] },
+            { "title": "B. Un juge pourtant tenu de statuer", "points": ["Art. 4 C. civ., interdiction du déni de justice", "Le juge doit trancher même en cas de silence de la loi", "Cette obligation le conduit de fait à créer du droit"] }
+          ]
+        },
+        {
+          "title": "II. Une source réelle en pratique",
+          "children": [
+            { "title": "A. Le rapport de force avec le législateur", "points": ["Perruche (2000) → loi du 4 mars 2002, rétroactivité censurée par la CEDH (Draon et Maurice, 2005)", "Desmares (1982) → loi Badinter du 5 juillet 1985, qui limite fortement l'exonération par la faute de la victime", "Le législateur n'interviendrait pas s'il n'y avait aucune autorité à renverser"] },
+            { "title": "B. Une autorité de persuasion et de fait", "points": ["Crainte de la cassation pour les juges du fond", "Souci de cohérence du droit entre juridictions", "Adhésion des juges du fond à la solution retenue"] }
+          ]
+        }
+      ],
+      "pitfalls": [
+        "La loi Badinter du 5 juillet 1985 renforce la protection de la victime — elle ne dit pas que « la faute de la victime exonère le responsable », c'est l'inverse.",
+        "Ne pas confondre arrêt d'espèce (tranche un cas particulier, sans portée générale) et arrêt de principe (solution destinée à être reprise, à l'origine d'une jurisprudence)."
+      ]
+    },
+    "quiz": [
+      { "q": "Que prohibe l'article 5 du Code civil ?", "choices": ["Les arrêts de la Cour de cassation", "Les arrêts de règlement, par lesquels le juge poserait une règle générale", "Le recours à la coutume", "Les lois mémorielles"], "answer": 1, "why": "Le juge statue sur le cas dont il est saisi, jamais sur l'ensemble des cas futurs — héritage de la réaction contre les parlements de l'Ancien Régime, interdits en 1804." },
+      { "q": "Que sanctionne l'article 4 du Code civil (interdiction du déni de justice) ?", "choices": ["Le juge qui refuse de juger sous prétexte du silence de la loi", "Le juge qui applique une loi inconstitutionnelle", "Le législateur qui ne vote pas de décret d'application", "Le justiciable qui ignore la loi"], "answer": 0, "why": "Cette obligation de juger, même face à une loi silencieuse ou obscure, conduit de fait le juge à créer du droit." },
+      { "q": "Dans l'affaire Perruche (Cass., ass. plén., 17 novembre 2000), la loi du 4 mars 2002 a :", "choices": ["Confirmé la solution de la Cour de cassation", "Renversé la solution, avant d'être censurée par la CEDH pour sa rétroactivité", "Supprimé la Cour de cassation", "Codifié la solution sans la modifier"], "answer": 1, "why": "La CEDH a censuré l'application rétroactive de la loi dans Draon et Maurice c. France (6 octobre 2005)." },
+      { "q": "La loi Badinter du 5 juillet 1985 est intervenue en réaction à :", "choices": ["L'arrêt Perruche", "L'arrêt Desmares (Cass. civ. 2e, 21 juillet 1982)", "Une décision du Conseil constitutionnel", "Un règlement européen"], "answer": 1, "why": "Desmares excluait l'exonération du responsable par la faute de la victime ; la loi Badinter a consolidé la protection de la victime en limitant fortement cette exonération." },
+      { "q": "Une coutume secundum legem est une coutume :", "choices": ["Contraire à la loi", "Qui seconde la loi, lorsque celle-ci y renvoie", "Qui comble un silence de la loi, sans que celle-ci y renvoie", "Abrogée par la loi"], "answer": 1, "why": "À distinguer de la coutume praeter legem (comble un silence) et contra legem (s'oppose à la loi)." }
+    ]
   }
 ]
