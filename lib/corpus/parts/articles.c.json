@@ -1,0 +1,452 @@
+[
+  {
+    "id": "articles-09",
+    "order": 9,
+    "title": "La CEDH et la Charte des Nations unies",
+    "teaser": "Article 6 § 1, article 8, article 2 § 4 : le procès équitable, la vie privée, et l'interdiction du recours à la force.",
+    "minutes": 6,
+    "brief": [
+      "La Convention européenne des droits de l'homme consacre, à son **article 6 § 1**, le droit au **procès équitable** : publicité des débats, délai raisonnable, impartialité du juge — un standard aujourd'hui incontournable de toute procédure juridictionnelle en Europe. Son **article 8**, consacré au droit au respect de la **vie privée et familiale**, a pris une importance considérable en devenant le fondement du contentieux climatique européen (arrêt *Verein KlimaSeniorinnen*, 2024). Le **Protocole n° 16** permet enfin à une juridiction suprême nationale de solliciter un **avis consultatif** de la Cour européenne des droits de l'homme, avant de trancher elle-même un litige.",
+      "La **Charte des Nations unies** organise, de son côté, les rapports entre États sur la scène internationale. Son **article 2, paragraphe 4**, pose le principe cardinal de l'**interdiction du recours à la force** dans les relations internationales — la pierre angulaire du système de sécurité collective de l'après-guerre. Deux exceptions notables l'encadrent : l'**article 51** reconnaît le droit de **légitime défense**, individuelle ou collective, en cas d'agression armée ; les **articles 41 et 42** permettent au **Conseil de sécurité**, agissant sur le fondement de l'**article 39** (constatation d'une menace ou d'une rupture de la paix), d'adopter des mesures n'impliquant pas l'emploi de la force (sanctions économiques) ou, le cas échéant, d'y recourir.",
+      "L'**article 33** de la Charte impose enfin aux États en litige de rechercher un **règlement pacifique des différends** — négociation, médiation, arbitrage ou voie judiciaire — avant tout recours à des mesures plus contraignantes."
+    ],
+    "keyPoints": [
+      "CEDH, article 6 § 1 : droit au procès équitable (publicité, délai raisonnable, impartialité).",
+      "CEDH, article 8 : droit au respect de la vie privée et familiale — fondement du contentieux climatique européen depuis 2024.",
+      "Charte de l'ONU, article 2 § 4 : interdiction du recours à la force, pierre angulaire de la sécurité collective.",
+      "Articles 39, 41, 42 (pouvoirs du Conseil de sécurité) et article 51 (légitime défense) : les mécanismes et exceptions encadrant cette interdiction."
+    ],
+    "definitions": [
+      {
+        "term": "CEDH, article 6 § 1",
+        "text": "Droit au procès équitable : publicité, délai raisonnable, impartialité du juge."
+      },
+      {
+        "term": "CEDH, article 8",
+        "text": "Droit au respect de la vie privée et familiale — fondement du contentieux climatique européen (arrêt Verein KlimaSeniorinnen, 2024)."
+      },
+      {
+        "term": "Charte de l'ONU, article 2 § 4",
+        "text": "Interdiction du recours à la force dans les relations internationales."
+      },
+      {
+        "term": "Charte de l'ONU, article 51",
+        "text": "Reconnaît le droit de légitime défense, individuelle ou collective, en cas d'agression armée."
+      },
+      {
+        "term": "Charte de l'ONU, article 33",
+        "text": "Impose la recherche d'un règlement pacifique des différends entre États."
+      }
+    ],
+    "exam": {
+      "kind": "question de cours",
+      "question": "Comment la Charte des Nations unies articule-t-elle le principe d'interdiction du recours à la force (article 2 § 4) avec ses exceptions ?",
+      "concise": "L'article 2, paragraphe 4, de la Charte des Nations unies pose un principe cardinal du droit international contemporain : les États membres s'abstiennent, dans leurs relations internationales, de recourir à la menace ou à l'emploi de la force. Ce principe n'est cependant pas absolu : la Charte elle-même organise deux voies d'exception. La première est individuelle : l'article 51 reconnaît à tout État le droit naturel de légitime défense, individuelle ou collective, en cas d'agression armée, jusqu'à ce que le Conseil de sécurité ait pris les mesures nécessaires au maintien de la paix. La seconde est collective et institutionnelle : lorsque le Conseil de sécurité constate, en application de l'article 39, l'existence d'une menace contre la paix, d'une rupture de la paix ou d'un acte d'agression, il peut décider de mesures n'impliquant pas l'emploi de la force, telles que des sanctions économiques (article 41), ou, si ces mesures se révèlent insuffisantes, autoriser le recours à la force elle-même (article 42). Avant d'en arriver là, l'article 33 impose cependant aux États en litige de rechercher d'abord un règlement pacifique — négociation, médiation, arbitrage — de sorte que le recours à la force, même encadré, demeure l'exception ultime d'un système pensé, avant tout, pour la prévenir.",
+      "plan": [
+        {
+          "title": "I. Un principe cardinal : l'interdiction du recours à la force",
+          "children": [
+            {
+              "title": "A. La portée de l'article 2 § 4",
+              "points": [
+                "Interdiction de la menace et de l'emploi de la force",
+                "Pierre angulaire du système de sécurité collective de l'après-guerre",
+                "Un principe qui s'impose à tous les États membres"
+              ]
+            },
+            {
+              "title": "B. Une obligation préalable de règlement pacifique",
+              "points": [
+                "Article 33 : négociation, médiation, arbitrage, voie judiciaire",
+                "Une étape à privilégier avant tout recours à des mesures contraignantes",
+                "Un système pensé avant tout pour prévenir le conflit"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "II. Deux voies d'exception à l'interdiction du recours à la force",
+          "children": [
+            {
+              "title": "A. La légitime défense, une exception individuelle (article 51)",
+              "points": [
+                "En cas d'agression armée, individuelle ou collective",
+                "Applicable jusqu'à l'intervention du Conseil de sécurité",
+                "Un droit naturel reconnu à tout État"
+              ]
+            },
+            {
+              "title": "B. L'action du Conseil de sécurité, une exception institutionnelle",
+              "points": [
+                "Constatation d'une menace ou rupture de la paix (article 39)",
+                "Mesures sans emploi de la force (article 41, sanctions économiques)",
+                "Recours possible à la force elle-même si nécessaire (article 42)"
+              ]
+            }
+          ]
+        }
+      ],
+      "pitfalls": [
+        "Ne pas confondre la légitime défense (article 51, réaction individuelle immédiate d'un État agressé) et l'action collective du Conseil de sécurité (articles 39, 41, 42, mécanisme institutionnel) : ce sont deux logiques distinctes d'exception au principe de l'article 2 § 4.",
+        "Ne pas présenter l'article 41 comme autorisant l'emploi de la force : il ne concerne que les mesures n'impliquant pas la force (sanctions économiques) ; c'est l'article 42 qui permet, si nécessaire, d'y recourir."
+      ]
+    },
+    "quiz": [
+      {
+        "q": "Le droit au procès équitable est consacré par :",
+        "choices": [
+          "L'article 8 de la CEDH",
+          "L'article 6 § 1 de la CEDH",
+          "L'article 2 § 4 de la Charte de l'ONU",
+          "L'article 51 de la Charte de l'ONU"
+        ],
+        "answer": 1,
+        "why": "Publicité, délai raisonnable, impartialité du juge."
+      },
+      {
+        "q": "Le contentieux climatique européen s'est notamment fondé sur :",
+        "choices": [
+          "L'article 6 § 1 de la CEDH",
+          "L'article 8 de la CEDH",
+          "L'article 33 de la Charte de l'ONU",
+          "L'article 51 de la Charte de l'ONU"
+        ],
+        "answer": 1,
+        "why": "Le droit au respect de la vie privée et familiale (arrêt Verein KlimaSeniorinnen, 2024)."
+      },
+      {
+        "q": "L'article 2, paragraphe 4, de la Charte de l'ONU pose le principe :",
+        "choices": [
+          "De la légitime défense",
+          "De l'interdiction du recours à la force",
+          "Du règlement pacifique des différends",
+          "Des sanctions économiques"
+        ],
+        "answer": 1,
+        "why": "La pierre angulaire du système de sécurité collective."
+      },
+      {
+        "q": "La légitime défense est reconnue par l'article :",
+        "choices": [
+          "39",
+          "41",
+          "42",
+          "51"
+        ],
+        "answer": 3,
+        "why": "En cas d'agression armée, individuelle ou collective."
+      },
+      {
+        "q": "Les mesures n'impliquant pas l'emploi de la force (sanctions économiques) sont prévues par l'article :",
+        "choices": [
+          "39",
+          "41",
+          "42",
+          "51"
+        ],
+        "answer": 1,
+        "why": "L'article 42, lui, permet, si nécessaire, le recours à la force elle-même."
+      }
+    ]
+  },
+  {
+    "id": "articles-10",
+    "order": 10,
+    "title": "Le droit de l'Union européenne : TUE et TFUE",
+    "teaser": "Valeurs, subsidiarité, citoyenneté, actes juridiques : les articles fondateurs des deux traités de l'Union.",
+    "minutes": 5,
+    "brief": [
+      "Le **traité sur l'Union européenne (TUE)** pose, à son **article 2**, les **valeurs** fondatrices de l'Union : dignité humaine, liberté, démocratie, égalité, État de droit, respect des droits de l'homme. Son **article 5** organise la répartition des compétences entre l'Union et les États membres, autour de trois principes : **attribution** (l'Union n'agit que dans les domaines qui lui sont confiés), **subsidiarité** (elle n'intervient que si l'objectif est mieux atteint à son échelle) et **proportionnalité** (son action n'excède pas ce qui est nécessaire).",
+      "L'**article 7** organise, quant à lui, le mécanisme de sanction d'un État membre qui violerait gravement ces valeurs communes ; l'**article 13** fixe le cadre institutionnel général de l'Union (Parlement, Conseil européen, Conseil, Commission, Cour de justice...).",
+      "Le **traité sur le fonctionnement de l'Union européenne (TFUE)** décline plus concrètement ces principes. L'**article 18** interdit toute **discrimination en raison de la nationalité** entre citoyens de l'Union ; l'**article 20** institue la **citoyenneté de l'Union**, qui s'ajoute à la nationalité de chaque État membre sans s'y substituer ; l'**article 26** organise l'**achèvement du marché intérieur**, cœur historique du projet européen. L'**article 288**, enfin, énumère les différents **actes juridiques** de l'Union — règlement, directive, décision, recommandation, avis — chacun ayant une portée et des effets juridiques distincts, à apprendre par cœur."
+    ],
+    "keyPoints": [
+      "TUE, article 2 : les valeurs de l'Union (dignité, liberté, démocratie, égalité, État de droit, droits de l'homme).",
+      "TUE, article 5 : attribution, subsidiarité, proportionnalité — les trois principes de répartition des compétences.",
+      "TFUE, article 20 : la citoyenneté de l'Union, qui s'ajoute à la nationalité sans s'y substituer.",
+      "TFUE, article 288 : les cinq types d'actes juridiques de l'Union (règlement, directive, décision, recommandation, avis)."
+    ],
+    "definitions": [
+      {
+        "term": "TUE, article 2",
+        "text": "Pose les valeurs fondatrices de l'Union : dignité humaine, liberté, démocratie, égalité, État de droit, droits de l'homme."
+      },
+      {
+        "term": "TUE, article 5",
+        "text": "Organise la répartition des compétences selon trois principes : attribution, subsidiarité, proportionnalité."
+      },
+      {
+        "term": "TFUE, article 18",
+        "text": "Interdit toute discrimination en raison de la nationalité entre citoyens de l'Union."
+      },
+      {
+        "term": "TFUE, article 20",
+        "text": "Institue la citoyenneté de l'Union, qui s'ajoute à la nationalité de chaque État membre."
+      },
+      {
+        "term": "TFUE, article 288",
+        "text": "Énumère les actes juridiques de l'Union : règlement, directive, décision, recommandation, avis."
+      }
+    ],
+    "exam": {
+      "kind": "question de cours",
+      "question": "Comment l'article 5 du TUE organise-t-il la répartition des compétences entre l'Union européenne et ses États membres ?",
+      "concise": "L'article 5 du traité sur l'Union européenne organise la répartition des compétences autour de trois principes complémentaires. Le principe d'attribution fixe la règle de base : l'Union ne dispose que des compétences que les traités lui attribuent expressément, toute compétence non attribuée demeurant de la compétence des États membres — un principe qui distingue radicalement l'Union d'un État fédéral, où la compétence de principe appartient en général à l'entité fédérée. Le principe de subsidiarité vient ensuite encadrer l'exercice des compétences partagées entre l'Union et les États : dans ces domaines, l'Union n'intervient que si l'objectif poursuivi ne peut être atteint de manière suffisante par les États membres eux-mêmes, et peut l'être mieux au niveau de l'Union en raison des dimensions ou des effets de l'action envisagée. Le principe de proportionnalité, enfin, limite le contenu et la forme de l'action de l'Union à ce qui est strictement nécessaire pour atteindre les objectifs des traités. Ensemble, ces trois principes garantissent que l'Union agit dans les limites de ce qui lui a été confié, sans excéder ni son domaine de compétence, ni la mesure nécessaire à l'atteinte de ses objectifs.",
+      "plan": [
+        {
+          "title": "I. Le principe d'attribution, fondement de la compétence de l'Union",
+          "children": [
+            {
+              "title": "A. Une compétence limitée aux domaines attribués",
+              "points": [
+                "L'Union n'agit que dans les domaines confiés par les traités",
+                "Toute compétence non attribuée reste aux États membres",
+                "Une différence essentielle avec la compétence de principe d'un État fédéré"
+              ]
+            },
+            {
+              "title": "B. Les conséquences pratiques de ce principe",
+              "points": [
+                "Nécessité d'une base juridique précise pour chaque action de l'Union",
+                "Un contrôle juridictionnel possible en cas de dépassement",
+                "Un principe protecteur de la souveraineté des États membres"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "II. Subsidiarité et proportionnalité, principes d'encadrement de l'exercice des compétences",
+          "children": [
+            {
+              "title": "A. La subsidiarité",
+              "points": [
+                "S'applique dans les domaines de compétence partagée",
+                "L'Union n'intervient que si l'objectif est mieux atteint à son échelle",
+                "Un principe qui privilégie, à égalité d'efficacité, l'échelon le plus proche des citoyens"
+              ]
+            },
+            {
+              "title": "B. La proportionnalité",
+              "points": [
+                "Limite le contenu et la forme de l'action de l'Union",
+                "L'action ne doit pas excéder ce qui est nécessaire",
+                "Complète la subsidiarité en encadrant, une fois la compétence exercée, l'intensité de cet exercice"
+              ]
+            }
+          ]
+        }
+      ],
+      "pitfalls": [
+        "Ne pas confondre le principe d'attribution (l'Union n'a que les compétences attribuées) et le principe de subsidiarité (l'Union n'exerce une compétence partagée que si elle est mieux placée pour le faire) : le premier concerne l'existence de la compétence, le second son exercice.",
+        "Ne pas présenter la citoyenneté de l'Union (article 20 TFUE) comme remplaçant la nationalité : elle s'y ajoute, sans s'y substituer."
+      ]
+    },
+    "quiz": [
+      {
+        "q": "Les valeurs de l'Union européenne (dignité, liberté, démocratie...) sont énoncées par :",
+        "choices": [
+          "TUE, article 2",
+          "TUE, article 5",
+          "TFUE, article 18",
+          "TFUE, article 288"
+        ],
+        "answer": 0,
+        "why": "Un article fondateur de l'identité de l'Union."
+      },
+      {
+        "q": "Le principe de subsidiarité signifie que l'Union :",
+        "choices": [
+          "N'a aucune compétence propre",
+          "N'intervient que si l'objectif est mieux atteint à son échelle qu'à celle des États",
+          "A compétence dans tous les domaines",
+          "Est subordonnée aux États membres en toutes circonstances"
+        ],
+        "answer": 1,
+        "why": "Un principe qui encadre l'exercice des compétences partagées."
+      },
+      {
+        "q": "La citoyenneté de l'Union européenne est instituée par :",
+        "choices": [
+          "TUE, article 2",
+          "TFUE, article 18",
+          "TFUE, article 20",
+          "TFUE, article 288"
+        ],
+        "answer": 2,
+        "why": "Elle s'ajoute à la nationalité de chaque État membre, sans s'y substituer."
+      },
+      {
+        "q": "L'article 288 du TFUE énumère :",
+        "choices": [
+          "Les valeurs de l'Union",
+          "Les États membres fondateurs",
+          "Les actes juridiques de l'Union (règlement, directive, décision...)",
+          "Les institutions de l'Union"
+        ],
+        "answer": 2,
+        "why": "Chaque acte a une portée et des effets juridiques distincts."
+      },
+      {
+        "q": "L'interdiction de toute discrimination en raison de la nationalité figure à :",
+        "choices": [
+          "TUE, article 5",
+          "TUE, article 7",
+          "TFUE, article 18",
+          "TFUE, article 26"
+        ],
+        "answer": 2,
+        "why": "Un principe fondamental de la citoyenneté européenne."
+      }
+    ]
+  },
+  {
+    "id": "articles-11",
+    "order": 11,
+    "title": "La DUDH et les constitutions étrangères de référence",
+    "teaser": "Article 15 de la DUDH, articles constitutionnels espagnol, italien, américain et allemand : le droit comparé à connaître.",
+    "minutes": 5,
+    "brief": [
+      "La **Déclaration universelle des droits de l'homme (DUDH)**, adoptée par l'ONU en 1948, proclame à son **article 15, paragraphe 1** : « Tout individu a droit à une nationalité. » Ce texte, non contraignant juridiquement à la différence de la CEDH, reste une référence morale et politique majeure du droit international des droits de l'homme.",
+      "Le droit comparé fournit plusieurs articles de référence pour comprendre les différentes formes d'État. La **Constitution espagnole** du 29 décembre 1978, à son **article 2**, proclame à la fois l'unité indissoluble de la Nation espagnole et le droit à l'autonomie des nationalités et régions qui la composent — l'exemple classique d'**État régional**. La **Constitution italienne** du 27 décembre 1947 pose, à son **article 5**, un principe comparable.",
+      "Pour l'État fédéral, deux références s'imposent. La **Constitution des États-Unis** de 1787 prévoit, à son **article V**, que sa révision suppose la ratification des **trois quarts des États** fédérés ; son **10e amendement** (1791) pose le principe de la **compétence résiduelle** des États fédérés, propriétaires de toutes les compétences non attribuées au niveau fédéral. La **Loi fondamentale allemande** de 1949 retient un principe similaire à ses **articles 30 et 70**, réservant aux Länder toute compétence non expressément confiée à la fédération."
+    ],
+    "keyPoints": [
+      "DUDH, article 15 § 1 : « Tout individu a droit à une nationalité » — texte moral et politique, non juridiquement contraignant.",
+      "Constitution espagnole (art. 2) et Constitution italienne (art. 5) : deux exemples classiques d'État régional, combinant unité nationale et autonomie locale.",
+      "Constitution américaine, 10e amendement (1791) et Loi fondamentale allemande, art. 30 et 70 (1949) : la compétence résiduelle appartient aux États fédérés/Länder.",
+      "Constitution américaine, article V : révision constitutionnelle par ratification des trois quarts des États fédérés."
+    ],
+    "definitions": [
+      {
+        "term": "DUDH, article 15 § 1",
+        "text": "« Tout individu a droit à une nationalité » — texte moral et politique, non contraignant juridiquement."
+      },
+      {
+        "term": "Constitution espagnole, article 2 (1978)",
+        "text": "Unité indissoluble de la Nation espagnole et droit à l'autonomie des nationalités et régions — exemple d'État régional."
+      },
+      {
+        "term": "Constitution italienne, article 5 (1947)",
+        "text": "Pose un principe comparable d'unité et d'autonomie régionale."
+      },
+      {
+        "term": "10e amendement américain (1791)",
+        "text": "Compétence résiduelle des États fédérés : toute compétence non attribuée au niveau fédéral leur appartient."
+      },
+      {
+        "term": "Loi fondamentale allemande, articles 30 et 70 (1949)",
+        "text": "Réservent aux Länder toute compétence non expressément confiée à la fédération."
+      }
+    ],
+    "exam": {
+      "kind": "question de cours",
+      "question": "En quoi la compétence résiduelle des États fédérés (10e amendement américain, articles 30 et 70 de la Loi fondamentale allemande) illustre-t-elle le principe d'autonomie du fédéralisme ?",
+      "concise": "Dans un État fédéral, la répartition des compétences entre l'État fédéral et les États fédérés obéit à un principe d'autonomie, qui suppose une liste précise de compétences attribuées à chaque niveau. Or, aucune liste, aussi détaillée soit-elle, ne peut anticiper exhaustivement toutes les matières possibles : il faut donc déterminer à qui appartient une compétence non expressément listée. Le choix opéré par les États-Unis, dès le 10e amendement de 1791, et repris par l'Allemagne dans sa Loi fondamentale de 1949 (articles 30 et 70), est identique : c'est aux États fédérés, et non à l'État fédéral, que revient cette compétence résiduelle. Ce choix n'est pas anodin : il traduit une conception du fédéralisme où l'État fédéral n'existe que par la délégation consentie par les États fédérés, qui demeurent, par défaut, les titulaires de la souveraineté sur tout ce qui n'a pas été expressément transféré. Cette logique se distingue de celle de la Constitution espagnole ou italienne, où les régions ne bénéficient que de statuts d'autonomie négociés, sans disposer d'une compétence de principe comparable à celle des États fédérés américains ou des Länder allemands — une différence qui marque, précisément, la frontière entre État régional et État fédéral.",
+      "plan": [
+        {
+          "title": "I. La compétence résiduelle, un principe partagé par deux grandes fédérations",
+          "children": [
+            {
+              "title": "A. Le 10e amendement américain (1791)",
+              "points": [
+                "Toute compétence non attribuée au niveau fédéral appartient aux États fédérés",
+                "Un choix fait dès les origines de la fédération américaine",
+                "Un principe toujours en vigueur aujourd'hui"
+              ]
+            },
+            {
+              "title": "B. Les articles 30 et 70 de la Loi fondamentale allemande (1949)",
+              "points": [
+                "Un principe identique appliqué aux Länder",
+                "Une reprise, plus d'un siècle et demi plus tard, du même choix fédéral",
+                "Une convergence entre deux traditions fédérales distinctes"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "II. Une différence de nature avec l'État régional",
+          "children": [
+            {
+              "title": "A. L'absence de compétence de principe pour les régions",
+              "points": [
+                "Constitution espagnole (art. 2) et italienne (art. 5) : statuts d'autonomie négociés",
+                "Aucune compétence résiduelle comparable à celle des États fédérés",
+                "Des compétences attribuées au cas par cas, non par principe"
+              ]
+            },
+            {
+              "title": "B. Une frontière conceptuelle entre État fédéral et État régional",
+              "points": [
+                "La compétence résiduelle comme marqueur du fédéralisme",
+                "Une autonomie plus poussée et plus stable pour les États fédérés",
+                "Un critère utile pour distinguer les deux formes d'État composé"
+              ]
+            }
+          ]
+        }
+      ],
+      "pitfalls": [
+        "Ne pas confondre la compétence résiduelle des États fédérés (principe général, par défaut) avec les statuts d'autonomie des régions espagnoles ou italiennes (négociés au cas par cas) : ce sont deux logiques de répartition des compétences de nature différente.",
+        "Ne pas dater le 10e amendement américain de la Constitution de 1787 elle-même : il lui est postérieur de quatre ans (1791)."
+      ]
+    },
+    "quiz": [
+      {
+        "q": "L'article 15, paragraphe 1, de la DUDH proclame :",
+        "choices": [
+          "Le droit à la propriété",
+          "Le droit à une nationalité",
+          "Le droit à un procès équitable",
+          "L'interdiction du recours à la force"
+        ],
+        "answer": 1,
+        "why": "Un texte moral et politique majeur, mais non contraignant juridiquement."
+      },
+      {
+        "q": "La compétence résiduelle des États fédérés américains est posée par :",
+        "choices": [
+          "L'article V de la Constitution",
+          "Le 10e amendement",
+          "L'article 2 de la Constitution espagnole",
+          "L'article 5 de la Constitution italienne"
+        ],
+        "answer": 1,
+        "why": "Toute compétence non attribuée au niveau fédéral appartient aux États fédérés."
+      },
+      {
+        "q": "La révision de la Constitution américaine suppose la ratification de :",
+        "choices": [
+          "La moitié des États",
+          "Les deux tiers des États",
+          "Les trois quarts des États",
+          "Tous les États sans exception"
+        ],
+        "answer": 2,
+        "why": "Conformément à l'article V de la Constitution de 1787."
+      },
+      {
+        "q": "La compétence résiduelle des Länder allemands est posée par :",
+        "choices": [
+          "Les articles 30 et 70 de la Loi fondamentale",
+          "L'article 2 de la Constitution espagnole",
+          "Le 10e amendement américain",
+          "L'article 5 de la Constitution italienne"
+        ],
+        "answer": 0,
+        "why": "La Loi fondamentale allemande de 1949 reprend le même principe que le 10e amendement américain."
+      },
+      {
+        "q": "L'article 2 de la Constitution espagnole de 1978 illustre :",
+        "choices": [
+          "Un État fédéral",
+          "Un État régional",
+          "Une confédération",
+          "Un État unitaire concentré"
+        ],
+        "answer": 1,
+        "why": "Unité indissoluble de la Nation et droit à l'autonomie des nationalités et régions."
+      }
+    ]
+  }
+]

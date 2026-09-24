@@ -1,0 +1,603 @@
+[
+  {
+    "id": "dates-01",
+    "order": 1,
+    "title": "Antiquité : Mésopotamie, Grèce, Rome",
+    "teaser": "De l'écriture cunéiforme à Justinien : la chronologie des grandes étapes du droit antique.",
+    "minutes": 6,
+    "brief": [
+      "Tout commence vers **-3500** en Mésopotamie, avec l'apparition de l'**écriture cunéiforme** dans les cités-États sumériennes. Le premier grand texte juridique qui nous soit parvenu est le **Code d'Hammurabi**, roi de Babylone au **XVIIIe siècle av. J.-C.** (vers **-1754**), gravé sur une stèle qui le représente recevant le droit des mains du dieu Shamash.",
+      "En Grèce, **Dracon** (v. -621) permet la publication du droit à Athènes, puis **Solon** (-594) crée l'héliée et l'action populaire. À Rome, la fondation légendaire de la ville se situe en **-753** ; la royauté romaine chute en **-509**, marquant le début de la **République** ; la **loi des XII Tables**, codification des coutumes affichée au forum, date du milieu du **Ve siècle av. J.-C.** (-451/-449). En **-287**, la **loi Hortensia** rend les plébiscites obligatoires pour tous les Romains, patriciens compris.",
+      "En **-27**, Octave devient Auguste : c'est le début de l'**Empire**, avec deux grandes périodes — le **principat** (fin Ier s. av. J.-C. à fin IIIe s. apr. J.-C.) puis le **dominat** (fin IIIe-Ve s.). Le droit prétorien atteint son apogée au **IIe siècle av. J.-C.**, avant d'être figé en **130 apr. J.-C.** par l'**édit perpétuel** de Salvius Julianus, sur ordre d'Hadrien. En **212**, l'**édit de Caracalla** généralise la citoyenneté romaine.",
+      "Sur le plan religieux, l'**édit de Milan** (**313**, Constantin) tolère le christianisme, puis l'**édit de Thessalonique** (**380-392**, Théodose) en fait la religion officielle de l'État. La **loi des citations** (**426**) hiérarchise les avis des cinq grands jurisconsultes. Enfin, l'empereur d'Orient **Justinien** (**527-565**) fait compiler l'ensemble du droit romain (futur *Corpus juris civilis*), peu avant que la chute de l'Empire romain d'Occident, en **476**, ne marque conventionnellement la fin de l'Antiquité."
+    ],
+    "keyPoints": [
+      "Le Code d'Hammurabi (v. -1754) est le premier code juridique qui nous soit parvenu ; la loi des XII Tables (Ve s. av. J.-C.) codifie les coutumes romaines.",
+      "-509 : chute de la royauté romaine et début de la République ; -27 : Auguste et le début de l'Empire (principat puis dominat).",
+      "130 : édit perpétuel (fin de l'évolution annuelle du droit prétorien) ; 313/380-392 : tolérance puis officialisation du christianisme ; 527-565 : compilation de Justinien.",
+      "476 marque conventionnellement la fin de l'Antiquité et le début du Moyen Âge."
+    ],
+    "definitions": [
+      {
+        "term": "v. -1754",
+        "text": "Code d'Hammurabi, roi de Babylone : premier code juridique qui nous soit parvenu, gravé sur une stèle."
+      },
+      {
+        "term": "-509",
+        "text": "Chute de la royauté romaine, début de la République romaine (magistrats annuels, sénat, comices)."
+      },
+      {
+        "term": "Ve s. av. J.-C. (-451/-449)",
+        "text": "Loi des XII Tables : première codification écrite des coutumes romaines, affichée au forum."
+      },
+      {
+        "term": "130 apr. J.-C.",
+        "text": "Édit perpétuel de Salvius Julianus (sur ordre d'Hadrien) : fixation définitive du droit prétorien, désormais réservé à l'empereur seul."
+      },
+      {
+        "term": "527-565",
+        "text": "Règne de Justinien, empereur d'Orient : compilation du droit romain en quatre textes (Code, Digeste, Institutes, Novelles)."
+      }
+    ],
+    "exam": {
+      "kind": "question de cours",
+      "question": "Retracez la chronologie de la fixation progressive du droit romain, de la loi des XII Tables à la compilation de Justinien.",
+      "concise": "Le droit romain connaît plusieurs étapes de fixation écrite. Dès le Ve siècle av. J.-C., la loi des XII Tables codifie pour la première fois les coutumes romaines, affichées publiquement au forum — une étape qui rappelle, à Rome, la publication du droit déjà amorcée par Dracon à Athènes un siècle plus tôt. Sous l'Empire, le droit prétorien, longtemps évolutif, est définitivement figé par l'édit perpétuel de 130, rédigé par Salvius Julianus sur ordre d'Hadrien : seul l'empereur peut désormais le modifier, un premier geste de centralisation impériale du droit. Un siècle plus tard, l'édit de Caracalla (212) généralise la citoyenneté romaine, tandis que les édits de Milan (313) puis de Thessalonique (380-392) transforment le statut du christianisme, de la simple tolérance à la religion officielle de l'État. La loi des citations (426) organise ensuite les avis contradictoires des grands jurisconsultes du passé. Enfin, au VIe siècle, Justinien rassemble l'ensemble de ce droit devenu trop divers en une compilation unique, aboutissement de ce long mouvement de fixation et de centralisation.",
+      "plan": [
+        {
+          "title": "I. Une fixation progressive du droit, de la République à l'Empire",
+          "children": [
+            {
+              "title": "A. La loi des XII Tables, première codification écrite",
+              "points": [
+                "Milieu du Ve siècle av. J.-C.",
+                "Affichage public au forum, dans la continuité de la publication du droit amorcée par Dracon à Athènes",
+                "Une réponse à l'arbitraire de coutumes jusque-là réservées aux patriciens"
+              ]
+            },
+            {
+              "title": "B. L'édit perpétuel, fin de l'évolution annuelle du droit prétorien",
+              "points": [
+                "130 apr. J.-C., sous Hadrien, rédigé par Salvius Julianus",
+                "Le contenu de l'édit du préteur, jusque-là renouvelé chaque année, est définitivement figé",
+                "Seul l'empereur peut désormais le modifier : centralisation impériale du droit"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "II. Vers la compilation générale du droit romain",
+          "children": [
+            {
+              "title": "A. Des textes ponctuels aux évolutions religieuses et doctrinales",
+              "points": [
+                "212 : édit de Caracalla, citoyenneté romaine généralisée",
+                "313 puis 380-392 : tolérance puis officialisation du christianisme",
+                "426 : loi des citations, hiérarchie des grands jurisconsultes"
+              ]
+            },
+            {
+              "title": "B. Justinien, aboutissement du mouvement de fixation",
+              "points": [
+                "527-565 : règne de l'empereur d'Orient",
+                "Quatre compilations réunies (Code, Digeste, Institutes, Novelles)",
+                "Une œuvre transmise à l'Europe médiévale, socle de la redécouverte du droit romain"
+              ]
+            }
+          ]
+        }
+      ],
+      "pitfalls": [
+        "Ne pas confondre l'édit perpétuel (130, fixation du droit prétorien) et la compilation de Justinien (527-565, rassemblement de l'ensemble du droit romain) : quatre siècles séparent ces deux étapes.",
+        "Ne pas dater la fin de l'Antiquité de la mort de Justinien : c'est la chute de l'Empire romain d'Occident, en 476, qui marque conventionnellement cette borne."
+      ]
+    },
+    "quiz": [
+      {
+        "q": "Le Code d'Hammurabi date d'environ :",
+        "choices": [
+          "-3500",
+          "-1754",
+          "-509",
+          "130 apr. J.-C."
+        ],
+        "answer": 1,
+        "why": "C'est le premier code juridique qui nous soit parvenu, au XVIIIe siècle av. J.-C."
+      },
+      {
+        "q": "La chute de la royauté romaine et le début de la République se situent en :",
+        "choices": [
+          "-753",
+          "-509",
+          "-287",
+          "-27"
+        ],
+        "answer": 1,
+        "why": "La noblesse romaine renverse la royauté en -509."
+      },
+      {
+        "q": "L'édit perpétuel, qui fixe définitivement le droit prétorien, est rédigé sous :",
+        "choices": [
+          "Auguste",
+          "Hadrien",
+          "Constantin",
+          "Justinien"
+        ],
+        "answer": 1,
+        "why": "Salvius Julianus le rédige vers 130 apr. J.-C., sur ordre de l'empereur Hadrien."
+      },
+      {
+        "q": "Le christianisme devient religion officielle de l'État romain avec :",
+        "choices": [
+          "L'édit de Milan (313)",
+          "L'édit de Thessalonique (380-392)",
+          "La loi des citations (426)",
+          "L'édit de Caracalla (212)"
+        ],
+        "answer": 1,
+        "why": "L'édit de Milan ne fait que tolérer le christianisme ; c'est l'édit de Thessalonique, sous Théodose, qui en fait la religion officielle."
+      },
+      {
+        "q": "Justinien fait compiler l'ensemble du droit romain :",
+        "choices": [
+          "Au IIe siècle av. J.-C.",
+          "Au VIe siècle apr. J.-C.",
+          "En 476",
+          "En 1453"
+        ],
+        "answer": 1,
+        "why": "Son règne (527-565) est celui de la grande compilation du droit romain."
+      }
+    ]
+  },
+  {
+    "id": "dates-02",
+    "order": 2,
+    "title": "Le haut Moyen Âge : Mérovingiens et Carolingiens",
+    "teaser": "De Clovis à Hugues Capet : deux dynasties, un empire éphémère, et la naissance de la féodalité.",
+    "minutes": 6,
+    "brief": [
+      "En **480**, la Gaule romaine est déjà partagée entre plusieurs royaumes barbares (Francs, Wisigoths, Alamans). **Clovis** règne de **481 à 511** : il remporte la bataille de Soissons en **486**, puis reçoit le baptême en **496**, devenant le premier roi franc chrétien — fondateur de la dynastie **mérovingienne** (Ve-VIIIe siècle). Au début du **VIIIe siècle**, un coup d'État préparé par un maire du palais et son fils met fin à cette dynastie, ouvrant celle des **Carolingiens** (VIIIe-Xe siècle).",
+      "**Charlemagne** règne de **768 à 814** ; il est couronné empereur par le pape à Rome le jour de Noël de l'an **800**. Mais l'unité de cet empire est de courte durée : le **traité de Verdun** (**843**) le partage entre les trois petits-fils de Charlemagne, éteignant le titre impérial en Occident. Le pouvoir royal se délite ensuite par étapes : le **capitulaire de Mersen** (**847**) généralise la vassalité, puis celui de **Kiersy-sur-Oise** (**877**) rend héréditaire, dans les faits, la charge de comte — amorçant l'émancipation des grands féodaux, achevée à la fin du **IXe siècle**.",
+      "La fin de la dynastie carolingienne est chaotique : Charles le Gros est déposé en **888** au profit d'Eudes, avant plusieurs allers-retours entre familles rivales (retour d'un carolingien en **898**, élection puis mort de Robert Ier en **922-923**, nouveau retour carolingien en **936**). Un nouvel empire (le futur Saint-Empire) est refondé en **962**. C'est finalement en **987** qu'**Hugues Capet** est élu, ouvrant la dynastie **capétienne** qui règnera sur la France jusqu'à la Révolution."
+    ],
+    "keyPoints": [
+      "Clovis (481-511) fonde la monarchie franque et se convertit en 496 ; les Mérovingiens cèdent la place aux Carolingiens au début du VIIIe siècle.",
+      "Charlemagne (768-814), couronné empereur en 800, voit son empire partagé dès 843 (traité de Verdun) : fin du titre impérial en Occident.",
+      "Les capitulaires de Mersen (847) et de Kiersy (877) généralisent la vassalité et l'hérédité des charges, amorçant la féodalisation du pouvoir.",
+      "987 : élection d'Hugues Capet, après une fin de dynastie carolingienne chaotique — début de la dynastie capétienne."
+    ],
+    "definitions": [
+      {
+        "term": "481-511",
+        "text": "Règne de Clovis : fondateur de la monarchie franque, baptisé en 496, premier roi franc chrétien."
+      },
+      {
+        "term": "800 (25 décembre)",
+        "text": "Couronnement impérial de Charlemagne par le pape, à Rome, jour de Noël."
+      },
+      {
+        "term": "843",
+        "text": "Traité de Verdun : partage de l'empire carolingien entre les trois petits-fils de Charlemagne ; extinction du titre impérial en Occident."
+      },
+      {
+        "term": "847 et 877",
+        "text": "Capitulaires de Mersen puis de Kiersy-sur-Oise : généralisation de la vassalité, puis hérédité de fait des charges comtales — début de la féodalisation."
+      },
+      {
+        "term": "987",
+        "text": "Élection d'Hugues Capet, après la fin chaotique de la dynastie carolingienne : début de la dynastie capétienne."
+      }
+    ],
+    "exam": {
+      "kind": "question de cours",
+      "question": "Comment le pouvoir royal carolingien, unifié sous Charlemagne, se délite-t-il progressivement jusqu'à l'avènement des Capétiens en 987 ?",
+      "concise": "Charlemagne parvient, entre 768 et 814, à unifier un vaste empire, consacré par son couronnement impérial en 800. Cette unité ne survit pourtant pas à sa disparition : dès 843, le traité de Verdun partage l'empire entre ses trois petits-fils, éteignant définitivement le titre impérial en Occident. Le pouvoir central continue ensuite de se déliter par des mécanismes juridiques précis : le capitulaire de Mersen (847) généralise la vassalité, liant les grands seigneurs au roi par un lien personnel plutôt qu'administratif, tandis que celui de Kiersy-sur-Oise (877) rend héréditaire, dans les faits, la charge de comte — jusque-là simple fonction royale révocable. Cette double évolution amorce l'émancipation des grands féodaux, achevée à la fin du IXe siècle. La fin de la dynastie carolingienne elle-même devient chaotique, entre dépositions et restaurations successives (888, 898, 922-936), jusqu'à l'élection d'Hugues Capet en 987, qui ouvre une nouvelle dynastie sur un royaume désormais profondément féodalisé.",
+      "plan": [
+        {
+          "title": "I. L'unité éphémère de l'empire carolingien",
+          "children": [
+            {
+              "title": "A. Charlemagne, l'apogée impériale",
+              "points": [
+                "Règne de 768 à 814",
+                "Couronnement impérial à Rome, le jour de Noël 800",
+                "Un empire vaste mais dépendant de l'autorité personnelle du souverain"
+              ]
+            },
+            {
+              "title": "B. Le traité de Verdun, rupture de l'unité",
+              "points": [
+                "843 : partage entre les trois petits-fils de Charlemagne",
+                "Extinction du titre impérial en Occident",
+                "Le point de départ d'une fragmentation progressive du pouvoir"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "II. La féodalisation du pouvoir et la fin des Carolingiens",
+          "children": [
+            {
+              "title": "A. Vassalité et hérédité des charges",
+              "points": [
+                "847 : capitulaire de Mersen, généralisation de la vassalité",
+                "877 : capitulaire de Kiersy-sur-Oise, hérédité de fait des comtés",
+                "Émancipation des grands féodaux achevée à la fin du IXe siècle"
+              ]
+            },
+            {
+              "title": "B. Une fin de dynastie chaotique jusqu'à Hugues Capet",
+              "points": [
+                "Dépositions et restaurations successives entre carolingiens et prétendants rivaux (888-936)",
+                "962 : refondation d'un empire (futur Saint-Empire)",
+                "987 : élection d'Hugues Capet sur un royaume déjà largement féodalisé"
+              ]
+            }
+          ]
+        }
+      ],
+      "pitfalls": [
+        "Ne pas confondre le traité de Verdun (843, partage territorial de l'empire) avec les capitulaires de Mersen et de Kiersy (847 et 877, mécanismes internes de féodalisation du pouvoir) : ce sont deux logiques distinctes de délitement du pouvoir central.",
+        "Ne pas dater l'avènement des Capétiens de la mort de Charlemagne : plus d'un siècle et demi sépare 814 de 987."
+      ]
+    },
+    "quiz": [
+      {
+        "q": "Clovis reçoit le baptême en :",
+        "choices": [
+          "481",
+          "486",
+          "496",
+          "511"
+        ],
+        "answer": 2,
+        "why": "Après sa victoire à Soissons (486), Clovis se convertit au christianisme en 496."
+      },
+      {
+        "q": "Le traité de Verdun (843) a pour effet de :",
+        "choices": [
+          "Unifier l'empire carolingien",
+          "Partager l'empire entre les trois petits-fils de Charlemagne",
+          "Créer la dynastie capétienne",
+          "Généraliser la vassalité"
+        ],
+        "answer": 1,
+        "why": "Ce partage éteint définitivement le titre impérial en Occident."
+      },
+      {
+        "q": "Le capitulaire de Kiersy-sur-Oise (877) a pour effet de :",
+        "choices": [
+          "Généraliser la vassalité",
+          "Rendre héréditaire, dans les faits, la charge de comte",
+          "Couronner Charlemagne empereur",
+          "Élire Hugues Capet"
+        ],
+        "answer": 1,
+        "why": "Il amorce l'émancipation des grands féodaux, achevée à la fin du IXe siècle."
+      },
+      {
+        "q": "Hugues Capet est élu en :",
+        "choices": [
+          "843",
+          "888",
+          "962",
+          "987"
+        ],
+        "answer": 3,
+        "why": "Cette élection ouvre la dynastie capétienne, après une fin de dynastie carolingienne chaotique."
+      },
+      {
+        "q": "Charlemagne est couronné empereur :",
+        "choices": [
+          "Le jour de Noël de l'an 800",
+          "En 843, lors du traité de Verdun",
+          "En 987",
+          "En 511, à la mort de Clovis"
+        ],
+        "answer": 0,
+        "why": "Le couronnement a lieu à Rome, par le pape, le 25 décembre 800."
+      }
+    ]
+  },
+  {
+    "id": "dates-03",
+    "order": 3,
+    "title": "Moyen Âge central : l'affirmation du pouvoir royal capétien",
+    "teaser": "Bouvines, la redécouverte du droit romain, les États généraux : comment le roi capétien reconstruit son autorité.",
+    "minutes": 6,
+    "brief": [
+      "Aux **XIe-XIIe siècles**, deux mouvements se conjuguent : la mise par écrit des coutumes locales et l'apparition d'un **Conseil du roi** permanent. C'est aussi le moment de la **redécouverte du droit romain** en Italie (glossateurs de Bologne, v. **1070**), dont le travail aboutit à la **Grande Glose d'Accurse** (**1220-1234**). Sur le plan religieux, le **Décret de Gratien** (**1140-1150**) compile le droit canonique, complété par les **Décrétales de Grégoire IX** (**1234**) ; en **1219**, la décrétale *Super speculam* interdit l'enseignement du droit romain à Paris, qui se réfugie alors à Orléans.",
+      "Le pouvoir royal se renforce nettement sous **Philippe Auguste** : l'**ordonnance de Soissons** (**1155**) instaure une première « paix du roi » ; la décrétale *Per venerabilem* (**1202**) fait reconnaître par le pape qu'aucun supérieur temporel n'existe au-dessus du roi de France ; la **bataille de Bouvines** (**1214**) consacre cette suprématie militairement, après que la **Normandie** a été reprise à Jean sans Terre dès **1204**. Sous Philippe le Bel, la bulle *Unam sanctam* (Boniface VIII) affirme au contraire la supériorité de l'Église — mais c'est ce même roi qui convoque, en **1302**, les premiers **États généraux**.",
+      "Le royaume traverse ensuite une grave **crise de succession** : à la mort de Charles IV sans héritier mâle (**1328**), les prétentions féminines (Jeanne, fille de Louis X ; Isabelle, fille de Philippe le Bel) sont écartées, Philippe de Valois est couronné, et la **guerre de Cent Ans** s'ouvre (**1316-1328**). Sur le plan procédural, **Philippe de Beaumanoir** rédige les *Coutumes de Beauvaisis* (**1283**), qui appliquent au roi la maxime « ce qui plaît au prince a force de loi » ; plus tard, l'**ordonnance de Montils-lès-Tours** (**1454**) impose la mise par écrit des coutumes et codifie la procédure judiciaire."
+    ],
+    "keyPoints": [
+      "XIe-XIIe s. : redécouverte du droit romain (glossateurs de Bologne) et compilation du droit canonique (Décret de Gratien, 1140-1150).",
+      "Philippe Auguste affirme la suprématie du roi de France : Per venerabilem (1202), reprise de la Normandie (1204), Bouvines (1214).",
+      "1283 : Coutumes de Beauvaisis (Beaumanoir) ; 1302 : premiers États généraux, sous Philippe le Bel.",
+      "1328 : mort de Charles IV sans héritier, ouverture de la crise de succession qui débouche sur la guerre de Cent Ans."
+    ],
+    "definitions": [
+      {
+        "term": "v. 1070",
+        "text": "Renouveau du droit romain en Italie : début du travail des glossateurs de Bologne, aboutissant à la Grande Glose d'Accurse (1220-1234)."
+      },
+      {
+        "term": "1202",
+        "text": "Décrétale Per venerabilem : le pape reconnaît qu'aucun supérieur temporel n'existe au-dessus du roi de France."
+      },
+      {
+        "term": "1214",
+        "text": "Bataille de Bouvines : Philippe Auguste bat l'empereur et le roi d'Angleterre, consacrant militairement la suprématie du roi de France."
+      },
+      {
+        "term": "1283",
+        "text": "Coutumes de Beauvaisis, rédigées par Philippe de Beaumanoir : applique au roi la maxime « ce qui plaît au prince a force de loi »."
+      },
+      {
+        "term": "1302",
+        "text": "Apparition officielle des États généraux, sous Philippe le Bel."
+      }
+    ],
+    "exam": {
+      "kind": "question de cours",
+      "question": "Comment le pouvoir royal capétien construit-il, entre le XIIe et le XIVe siècle, son autorité face à l'Empire, à l'Angleterre et à l'Église ?",
+      "concise": "Le règne de Philippe Auguste marque un tournant décisif dans l'affirmation du pouvoir royal français. Sur le plan territorial, la Normandie est reprise à Jean sans Terre dès 1204, et la bataille de Bouvines, en 1214, consacre militairement cette suprématie face à une coalition regroupant l'empereur et le roi d'Angleterre. Sur le plan juridique, la décrétale Per venerabilem (1202) obtient du pape lui-même la reconnaissance qu'aucun supérieur temporel n'existe au-dessus du roi de France — une victoire diplomatique qui prépare la doctrine ultérieure de l'indisponibilité de la couronne. Cette affirmation n'est cependant pas acquise une fois pour toutes face à l'Église : sous Philippe le Bel, la bulle Unam sanctam de Boniface VIII réaffirme au contraire la supériorité du pouvoir spirituel. C'est pourtant ce même roi qui convoque, en 1302, les premiers États généraux, consolidant par un autre biais l'autorité royale en l'associant, au moins formellement, aux grands corps du royaume. Cette construction progressive de la souveraineté royale se prolonge enfin sur le plan procédural, avec les Coutumes de Beauvaisis de Beaumanoir (1283), qui font du roi la seule source légitime de la loi.",
+      "plan": [
+        {
+          "title": "I. L'affirmation territoriale et militaire du pouvoir royal",
+          "children": [
+            {
+              "title": "A. La reconquête territoriale sous Philippe Auguste",
+              "points": [
+                "1204 : reprise de la Normandie à Jean sans Terre",
+                "Un affaiblissement décisif du pouvoir anglo-angevin sur le continent",
+                "La préparation d'une confrontation plus large"
+              ]
+            },
+            {
+              "title": "B. Bouvines, la consécration militaire",
+              "points": [
+                "1214 : victoire contre une coalition menée par l'empereur et le roi d'Angleterre",
+                "Un événement fondateur du sentiment national français",
+                "La légitimité du roi renforcée par la victoire"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "II. Une affirmation juridique et institutionnelle, entre Église et royaume",
+          "children": [
+            {
+              "title": "A. Une souveraineté reconnue puis contestée face à l'Église",
+              "points": [
+                "1202 : Per venerabilem, aucun supérieur temporel au-dessus du roi",
+                "Unam sanctam (Boniface VIII) : réaffirmation de la supériorité pontificale sous Philippe le Bel",
+                "Une tension durable entre pouvoir spirituel et pouvoir temporel"
+              ]
+            },
+            {
+              "title": "B. La consolidation interne du pouvoir royal",
+              "points": [
+                "1283 : les Coutumes de Beauvaisis de Beaumanoir, « ce qui plaît au prince a force de loi »",
+                "1302 : première convocation des États généraux",
+                "Une autorité royale à la fois centralisée et associée, au moins formellement, aux corps du royaume"
+              ]
+            }
+          ]
+        }
+      ],
+      "pitfalls": [
+        "Ne pas confondre la décrétale Per venerabilem (1202, reconnaissance pontificale de la souveraineté royale) et la bulle Unam sanctam (sous Philippe le Bel, affirmation inverse de la supériorité de l'Église) : les rapports entre royaume et papauté restent tendus et non linéaires sur toute la période.",
+        "Ne pas dater les premiers États généraux de la crise de succession de 1328 : ils sont convoqués près de trente ans plus tôt, en 1302, sous Philippe le Bel."
+      ]
+    },
+    "quiz": [
+      {
+        "q": "La bataille de Bouvines, en 1214, est remportée par :",
+        "choices": [
+          "Jean sans Terre",
+          "Philippe Auguste",
+          "Philippe le Bel",
+          "Hugues Capet"
+        ],
+        "answer": 1,
+        "why": "Cette victoire consacre militairement la suprématie du roi de France."
+      },
+      {
+        "q": "La décrétale Per venerabilem (1202) établit que :",
+        "choices": [
+          "Le pape est supérieur au roi de France",
+          "Aucun supérieur temporel n'existe au-dessus du roi de France",
+          "Le roi doit convoquer les États généraux",
+          "La Normandie appartient à l'Angleterre"
+        ],
+        "answer": 1,
+        "why": "C'est une reconnaissance pontificale de la souveraineté du roi de France."
+      },
+      {
+        "q": "Les Coutumes de Beauvaisis sont rédigées par :",
+        "choices": [
+          "Jean de Terre Vermeil",
+          "Philippe de Beaumanoir",
+          "Guy Coquille",
+          "Cardin Le Bret"
+        ],
+        "answer": 1,
+        "why": "Beaumanoir y applique au roi la maxime « ce qui plaît au prince a force de loi » (1283)."
+      },
+      {
+        "q": "Les premiers États généraux apparaissent officiellement en :",
+        "choices": [
+          "1214",
+          "1283",
+          "1302",
+          "1328"
+        ],
+        "answer": 2,
+        "why": "Ils sont convoqués sous Philippe le Bel."
+      },
+      {
+        "q": "La crise de succession qui ouvre la guerre de Cent Ans commence à la mort de :",
+        "choices": [
+          "Philippe Auguste",
+          "Philippe le Bel",
+          "Charles IV",
+          "Jean sans Terre"
+        ],
+        "answer": 2,
+        "why": "Charles IV meurt sans héritier mâle en 1328, ouvrant la crise de succession (1316-1328)."
+      }
+    ]
+  },
+  {
+    "id": "dates-04",
+    "order": 4,
+    "title": "Ancien Régime : absolutisme, crises et Lumières",
+    "teaser": "De Louis XI à la veille de 1789 : la construction, puis la critique, du pouvoir absolu.",
+    "minutes": 6,
+    "brief": [
+      "**Louis XI** (**1461-1483**) réduit fortement l'autonomie des grands féodaux, poursuivant la centralisation royale. En **1566**, l'**édit de Moulins** proclame l'**inaliénabilité du domaine de la Couronne** ; en **1604**, Henri IV instaure la **paulette**, taxe annuelle qui rend héréditaire la transmission des offices royaux. Sur le plan doctrinal, **Jean Bodin** publie *Les Six Livres de la République* en **1576** — quatre ans après le massacre de la Saint-Barthélemy, en pleine guerre de Religion —, théorisant une souveraineté absolue, perpétuelle et indivisible.",
+      "Cette théorie trouve son prolongement juridique avec **Cardin Le Bret**, dont *De la souveraineté du Roy* (**1632**) affirme que la souveraineté « n'est non plus divisible que le point en géométrie », puis sa justification religieuse avec **Bossuet**, dont la *Politique tirée des propres paroles de l'Écriture sainte* n'est publiée qu'en **1709**. Entre-temps, le pouvoir royal traverse une crise majeure avec la **Fronde** (**1648-1653**), révolte de la noblesse pendant la minorité de Louis XIV — la même année, **1648**, les **traités de Westphalie** consacrent à l'échelle européenne la naissance du système des États souverains.",
+      "Les résistances parlementaires persistent tout au long du siècle suivant : entre **1673 et 1715**, le seul Parlement de Navarre adresse 39 remontrances au roi. Les **États généraux** ne sont plus réunis après **1614**, et ce jusqu'à la veille de la Révolution. Les Lumières critiquent alors les effets concrets de cette centralisation théorique : Voltaire dénonce la multiplicité des lois locales, Turgot une société d'ordres mal unis. Le **1er mai 1788**, Louis XVI tente une dernière réforme en abolissant la torture préparatoire — rejetée par le Parlement, symbole d'un système à bout de souffle à la veille de 1789."
+    ],
+    "keyPoints": [
+      "Louis XI (1461-1483) centralise le pouvoir ; l'édit de Moulins (1566) proclame l'inaliénabilité du domaine royal ; la paulette (1604) rend héréditaires les offices.",
+      "Bodin (1576) théorise la souveraineté absolue ; Cardin Le Bret (1632) puis Bossuet (1709) la prolongent juridiquement et religieusement.",
+      "1648 : traités de Westphalie (naissance des États souverains) et début de la Fronde (1648-1653), qui menace le pouvoir royal.",
+      "Les États généraux ne sont plus réunis après 1614 ; les Lumières (Voltaire, Turgot) critiquent les effets de la centralisation avant 1789."
+    ],
+    "definitions": [
+      {
+        "term": "1576",
+        "text": "Les Six Livres de la République de Jean Bodin : théorie de la souveraineté absolue, perpétuelle et indivisible."
+      },
+      {
+        "term": "1604",
+        "text": "Instauration de la paulette sous Henri IV : taxe annuelle qui rend héréditaire la transmission des offices royaux."
+      },
+      {
+        "term": "1632",
+        "text": "De la souveraineté du Roy de Cardin Le Bret : « la souveraineté n'est non plus divisible que le point en géométrie »."
+      },
+      {
+        "term": "1648-1653",
+        "text": "La Fronde : révolte de la noblesse de robe et d'épée pendant la minorité de Louis XIV."
+      },
+      {
+        "term": "1614",
+        "text": "Dernière réunion des États généraux avant 1789."
+      }
+    ],
+    "exam": {
+      "kind": "question de cours",
+      "question": "Retracez la construction doctrinale de l'absolutisme français, de Jean Bodin à Bossuet, et les résistances qu'elle rencontre.",
+      "concise": "La théorie de l'absolutisme se construit en plusieurs étapes doctrinales successives. Jean Bodin, en 1576, forge le premier le concept moderne de souveraineté, définie comme une puissance absolue, perpétuelle et indivisible. Cardin Le Bret prolonge cette théorie sur le terrain strictement juridique en 1632 : la souveraineté ne peut être partagée avec aucun autre corps du royaume, pas plus qu'un point ne peut être divisé en géométrie. Bossuet y ajoute, mais seulement en 1709, une justification religieuse : le roi est le représentant de Dieu sur terre. Cette construction théorique ne va cependant pas sans résistances pratiques : la Fronde (1648-1653) menace directement le pouvoir royal pendant la minorité de Louis XIV, tandis que les parlements provinciaux continuent, tout au long du XVIIe et du XVIIIe siècle, d'adresser des remontrances au pouvoir central — pas moins de 39 pour le seul Parlement de Navarre entre 1673 et 1715. Les États généraux, eux, ne sont plus réunis après 1614, symbole d'un absolutisme qui se passe des corps intermédiaires — jusqu'à ce que les Lumières, au XVIIIe siècle, en révèlent les limites concrètes.",
+      "plan": [
+        {
+          "title": "I. Une construction doctrinale progressive de l'absolutisme",
+          "children": [
+            {
+              "title": "A. Bodin, le fondateur du concept de souveraineté",
+              "points": [
+                "1576, en pleine guerre de Religion",
+                "Une puissance absolue, perpétuelle et indivisible",
+                "Une théorie encore abstraite, sans application institutionnelle précise"
+              ]
+            },
+            {
+              "title": "B. Le Bret puis Bossuet : justification juridique et religieuse",
+              "points": [
+                "1632 : l'indivisibilité de la souveraineté comme argument juridique",
+                "1709 : le roi représentant de Dieu, argument religieux complémentaire",
+                "Deux justifications distinctes, mais convergentes"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "II. Des résistances persistantes à l'absolutisme théorique",
+          "children": [
+            {
+              "title": "A. La Fronde, une crise directe du pouvoir royal",
+              "points": [
+                "1648-1653 : révolte de la noblesse pendant la minorité de Louis XIV",
+                "Une remise en cause frontale, mais finalement surmontée",
+                "1648, la même année : naissance du système des États souverains à l'échelle européenne (Westphalie)"
+              ]
+            },
+            {
+              "title": "B. Des résistances institutionnelles plus diffuses",
+              "points": [
+                "Remontrances parlementaires répétées tout au long du siècle",
+                "États généraux non réunis après 1614",
+                "Une centralisation théorique qui laisse subsister des tensions pratiques jusqu'aux Lumières"
+              ]
+            }
+          ]
+        }
+      ],
+      "pitfalls": [
+        "Ne pas confondre la théorie de Bodin (1576, fondation du concept de souveraineté) et sa reprise juridique par Cardin Le Bret (1632) : ce sont deux étapes distinctes, séparées par plus d'un demi-siècle.",
+        "Ne pas dater la Politique de Bossuet de son vivant (mort en 1704) : l'ouvrage n'est publié qu'en 1709."
+      ]
+    },
+    "quiz": [
+      {
+        "q": "Jean Bodin théorise le concept de souveraineté absolue dans un ouvrage publié en :",
+        "choices": [
+          "1566",
+          "1576",
+          "1632",
+          "1709"
+        ],
+        "answer": 1,
+        "why": "Les Six Livres de la République, publiés en pleine guerre de Religion."
+      },
+      {
+        "q": "La formule « la souveraineté n'est non plus divisible que le point en géométrie » est de :",
+        "choices": [
+          "Jean Bodin",
+          "Cardin Le Bret",
+          "Bossuet",
+          "Montesquieu"
+        ],
+        "answer": 1,
+        "why": "Cardin Le Bret la formule dans De la souveraineté du Roy (1632)."
+      },
+      {
+        "q": "La Fronde se déroule pendant :",
+        "choices": [
+          "Le règne de Louis XI",
+          "La minorité de Louis XIV",
+          "Le règne de Louis XVI",
+          "La Révolution française"
+        ],
+        "answer": 1,
+        "why": "Cette révolte de la noblesse (1648-1653) menace directement le pouvoir royal."
+      },
+      {
+        "q": "La dernière réunion des États généraux avant 1789 a lieu en :",
+        "choices": [
+          "1576",
+          "1614",
+          "1648",
+          "1709"
+        ],
+        "answer": 1,
+        "why": "Les États généraux ne sont plus réunis entre 1614 et 1789."
+      },
+      {
+        "q": "L'édit de Moulins (1566) proclame :",
+        "choices": [
+          "L'inaliénabilité du domaine de la Couronne",
+          "La souveraineté absolue du roi",
+          "La convocation des États généraux",
+          "L'abolition de la torture"
+        ],
+        "answer": 0,
+        "why": "Le domaine royal ne peut plus être aliéné, même par le roi lui-même."
+      }
+    ]
+  }
+]

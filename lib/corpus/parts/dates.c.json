@@ -1,0 +1,453 @@
+[
+  {
+    "id": "dates-09",
+    "order": 9,
+    "title": "L'organisation juridictionnelle : institutions et réformes",
+    "teaser": "De la fin des justices seigneuriales au tribunal judiciaire : deux siècles et demi de construction des juridictions françaises.",
+    "minutes": 6,
+    "brief": [
+      "Le monopole étatique de la justice naît dans la **nuit du 4 août 1789**, avec l'abolition des privilèges : les seigneurs ne peuvent plus rendre la justice. La séparation des autorités administrative et judiciaire s'organise presque aussitôt : la **loi des 16 et 24 août 1790** interdit au juge judiciaire de juger l'administration, principe renforcé par le **décret du 2 septembre 1795**. Le **Conseil d'État**, créé le **13 décembre 1799**, fonctionne d'abord en **justice retenue** (le ministre décide, le Conseil ne fait que conseiller) ; il faut attendre la loi du **24 mai 1872** pour que la justice administrative devienne autonome, puis l'arrêt ***Cadot*** du Conseil d'État (**13 décembre 1889**) pour consacrer la **justice déléguée**.",
+      "Le **Tribunal des conflits**, chargé de résoudre les conflits d'attribution entre les deux ordres, est créé une première fois en **1848**, puis rétabli durablement par la loi de **1872** ; sa composition est réformée en **2015**. L'arrêt ***Blanco*** (TC, **8 février 1873**) fonde la distinction entre droit public et droit privé ; l'arrêt du **Bac d'Eloka** (TC, **22 janvier 1921**) précise la frontière entre service public administratif et service public industriel et commercial.",
+      "Plusieurs garanties constitutionnelles de la justice sont posées par le Conseil constitutionnel : décision du **29 juillet 1998** et décision QPC du **21 mars 2019** sur l'indépendance et l'impartialité des juges. Sur le plan pénal, l'arrêt ***Morsang-sur-Orge*** (CE Assemblée, **27 octobre 1995**) consacre la dignité de la personne humaine comme composante de l'ordre public ; la **loi du 15 juin 2000** crée le **juge des libertés et de la détention (JLD)**, jusque-là confondu avec le juge d'instruction ; la même année, la **cour d'assises d'appel** est créée sous l'impulsion de la CEDH.",
+      "Les réformes les plus récentes touchent l'organisation même des juridictions : au **1er janvier 2020**, le **tribunal judiciaire** naît de la fusion des tribunaux d'instance et de grande instance ; en **2018**, les assesseurs du tribunal paritaire des baux ruraux, jusque-là élus, deviennent désignés ; au **1er janvier 2023**, les **cours criminelles départementales** allègent la charge des cours d'assises pour les crimes les moins graves."
+    ],
+    "keyPoints": [
+      "1789-1872 : construction du dualisme juridictionnel, de l'abolition des privilèges (1789) à l'autonomie de la justice administrative (1872) puis à la justice déléguée (Cadot, 1889).",
+      "1873 (Blanco) et 1921 (Bac d'Eloka) : deux décisions du Tribunal des conflits qui fondent puis précisent la distinction droit public/droit privé.",
+      "2000 : création du JLD (15 juin) et de la cour d'assises d'appel, sous l'influence de la CEDH.",
+      "1er janvier 2020 : création du tribunal judiciaire ; 1er janvier 2023 : création des cours criminelles départementales — deux réformes récentes de l'organisation juridictionnelle."
+    ],
+    "definitions": [
+      {
+        "term": "4 août 1789 (nuit du)",
+        "text": "Abolition des privilèges féodaux : fin des justices seigneuriales, naissance du monopole étatique de la justice."
+      },
+      {
+        "term": "8 février 1873, arrêt Blanco (TC)",
+        "text": "Fonde la distinction entre droit public et droit privé, à l'origine de l'autonomie du droit administratif."
+      },
+      {
+        "term": "13 décembre 1889, arrêt Cadot (CE)",
+        "text": "Consacre la justice déléguée : le Conseil d'État statue directement, sans passer par un ministre."
+      },
+      {
+        "term": "15 juin 2000",
+        "text": "Loi créant le juge des libertés et de la détention (JLD), auparavant confondu avec le juge d'instruction."
+      },
+      {
+        "term": "1er janvier 2020",
+        "text": "Entrée en vigueur de la fusion des tribunaux d'instance et de grande instance en tribunal judiciaire."
+      }
+    ],
+    "exam": {
+      "kind": "question de cours",
+      "question": "Retracez la construction du dualisme juridictionnel français, de l'abolition des privilèges (1789) à la consécration de la justice déléguée (1889).",
+      "concise": "La construction du dualisme juridictionnel français commence par la disparition des justices privées : dans la nuit du 4 août 1789, l'abolition des privilèges féodaux met fin aux justices seigneuriales, consacrant le monopole étatique de la justice. Presque aussitôt, la loi des 16 et 24 août 1790 puis le décret du 2 septembre 1795 interdisent au juge judiciaire de connaître des actes de l'administration, posant les bases du futur dualisme entre ordre judiciaire et ordre administratif. Le Conseil d'État, créé le 13 décembre 1799, ne dispose d'abord d'aucun pouvoir de décision autonome : c'est le système de la justice retenue, où le ministre tranche après avoir consulté le Conseil. Il faut attendre la loi du 24 mai 1872 pour que la justice administrative devienne véritablement autonome et indépendante de l'administration active. Mais c'est seulement avec l'arrêt Cadot du 13 décembre 1889 que le Conseil d'État accepte de statuer directement, sans intermédiaire ministériel : la justice déléguée succède enfin à la justice retenue, achevant un siècle de construction progressive de l'indépendance de la justice administrative.",
+      "plan": [
+        {
+          "title": "I. La séparation des autorités administrative et judiciaire (1789-1799)",
+          "children": [
+            {
+              "title": "A. La fin des justices privées",
+              "points": [
+                "4 août 1789 : abolition des privilèges, fin des justices seigneuriales",
+                "Naissance du monopole étatique de la justice",
+                "Une justice désormais rendue au nom de l'intérêt général"
+              ]
+            },
+            {
+              "title": "B. L'interdiction faite au juge judiciaire de juger l'administration",
+              "points": [
+                "Loi des 16 et 24 août 1790",
+                "Décret du 2 septembre 1795",
+                "Le risque, en creux, d'une administration devenue son propre juge"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "II. De la justice retenue à la justice déléguée (1799-1889)",
+          "children": [
+            {
+              "title": "A. Le Conseil d'État, un organe d'abord consultatif",
+              "points": [
+                "Création le 13 décembre 1799",
+                "Système de la justice retenue : le ministre décide, le Conseil conseille",
+                "Une administration encore juge de ses propres actes"
+              ]
+            },
+            {
+              "title": "B. L'autonomie puis l'indépendance de la justice administrative",
+              "points": [
+                "Loi du 24 mai 1872 : autonomie de la justice administrative",
+                "Arrêt Cadot (1889) : consécration de la justice déléguée",
+                "Le Conseil d'État statue désormais directement, sans intermédiaire ministériel"
+              ]
+            }
+          ]
+        }
+      ],
+      "pitfalls": [
+        "Ne pas confondre l'autonomie de la justice administrative (loi de 1872) et la justice déléguée (arrêt Cadot, 1889) : l'autonomie institutionnelle précède de dix-sept ans la reconnaissance d'un pouvoir de décision direct.",
+        "Ne pas dater la création du Conseil d'État de la loi de 1872 : le Conseil d'État existe depuis 1799, mais ne devient autonome qu'en 1872."
+      ]
+    },
+    "quiz": [
+      {
+        "q": "Le monopole étatique de la justice naît avec :",
+        "choices": [
+          "La création du Conseil d'État (1799)",
+          "L'abolition des privilèges, nuit du 4 août 1789",
+          "L'arrêt Blanco (1873)",
+          "La loi de 1872"
+        ],
+        "answer": 1,
+        "why": "Les seigneurs ne peuvent plus rendre la justice après cette date."
+      },
+      {
+        "q": "La justice déléguée est consacrée par l'arrêt :",
+        "choices": [
+          "Blanco (1873)",
+          "Cadot (1889)",
+          "Bac d'Eloka (1921)",
+          "Nicolo (1989)"
+        ],
+        "answer": 1,
+        "why": "Le Conseil d'État accepte de statuer directement, sans passer par un ministre."
+      },
+      {
+        "q": "L'arrêt Blanco (1873) est rendu par :",
+        "choices": [
+          "Le Conseil d'État",
+          "La Cour de cassation",
+          "Le Tribunal des conflits",
+          "Le Conseil constitutionnel"
+        ],
+        "answer": 2,
+        "why": "Il fonde la distinction entre droit public et droit privé."
+      },
+      {
+        "q": "Le juge des libertés et de la détention (JLD) est créé par une loi de :",
+        "choices": [
+          "1872",
+          "1921",
+          "2000",
+          "2020"
+        ],
+        "answer": 2,
+        "why": "La loi du 15 juin 2000 sépare cette fonction de celle du juge d'instruction."
+      },
+      {
+        "q": "Le tribunal judiciaire, issu de la fusion des tribunaux d'instance et de grande instance, entre en vigueur :",
+        "choices": [
+          "Le 1er janvier 2000",
+          "Le 1er janvier 2010",
+          "Le 1er janvier 2020",
+          "Le 1er janvier 2023"
+        ],
+        "answer": 2,
+        "why": "Les cours criminelles départementales, elles, datent du 1er janvier 2023."
+      }
+    ]
+  },
+  {
+    "id": "dates-10",
+    "order": 10,
+    "title": "Les juridictions internationales et européennes",
+    "teaser": "De l'ONU (1945) au Parquet européen (2017) : la chronologie des grandes institutions judiciaires internationales.",
+    "minutes": 5,
+    "brief": [
+      "L'**Organisation des Nations unies (ONU)** est créée en **1945** ; elle compte aujourd'hui 193 États membres. Son **Conseil de tutelle**, chargé d'accompagner les territoires non autonomes vers l'indépendance, suspend ses activités en **1994**, une fois sa mission achevée. Le **Conseil de l'Europe**, organisation distincte tournée vers la protection des droits de l'homme, est créé en **1949**.",
+      "Sur le plan pénal international, le **statut de Rome** (**1998**) crée la **Cour pénale internationale (CPI)**, effectivement opérationnelle à partir de son entrée en vigueur, en **2002**. Dans le domaine commercial, l'**Organe de règlement des différends (ORD)** de l'Organisation mondiale du commerce est créé en **1995**, pour éviter les mesures de rétorsion commerciales unilatérales entre États.",
+      "Plus récemment, le **Parquet européen**, chargé des fraudes aux fonds de l'Union, est créé en **2017** et devient opérationnel en **2021**. Sur le plan institutionnel, la **Russie** est exclue du Conseil de l'Europe en **2022**, en raison de la guerre en Ukraine, tout en continuant d'être jugée par la Cour européenne des droits de l'homme pour les faits antérieurs à cette exclusion."
+    ],
+    "keyPoints": [
+      "1945 : création de l'ONU ; 1949 : création du Conseil de l'Europe, deux organisations aux vocations distinctes (sécurité collective / droits de l'homme).",
+      "1998/2002 : statut de Rome puis entrée en vigueur, création de la Cour pénale internationale.",
+      "1995 : création de l'Organe de règlement des différends de l'OMC.",
+      "2017/2021 : création puis mise en fonction du Parquet européen ; 2022 : exclusion de la Russie du Conseil de l'Europe."
+    ],
+    "definitions": [
+      {
+        "term": "1945",
+        "text": "Création de l'Organisation des Nations unies (ONU), aujourd'hui 193 États membres."
+      },
+      {
+        "term": "1949",
+        "text": "Création du Conseil de l'Europe, organisation distincte de l'ONU, tournée vers la protection des droits de l'homme."
+      },
+      {
+        "term": "1998 / 2002",
+        "text": "Statut de Rome puis entrée en vigueur : création de la Cour pénale internationale (CPI)."
+      },
+      {
+        "term": "1995",
+        "text": "Création de l'Organe de règlement des différends (ORD) de l'Organisation mondiale du commerce."
+      },
+      {
+        "term": "2017 / 2021",
+        "text": "Création puis mise en fonction du Parquet européen, chargé des fraudes aux fonds de l'Union européenne."
+      }
+    ],
+    "exam": {
+      "kind": "question de cours",
+      "question": "Distinguez les vocations respectives de l'ONU, du Conseil de l'Europe et de la Cour pénale internationale, à partir de leurs dates de création.",
+      "concise": "Ces trois institutions, bien que toutes nées de la volonté d'organiser les rapports entre États après les grands conflits du XXe siècle, poursuivent des finalités distinctes. L'ONU, créée en 1945 au lendemain de la Seconde Guerre mondiale, a d'abord une vocation de sécurité collective et de coopération internationale généraliste, incarnée notamment par son Conseil de sécurité — son Conseil de tutelle, chargé d'accompagner les anciens territoires coloniaux vers l'indépendance, n'a d'ailleurs suspendu ses activités qu'en 1994, une fois cette mission achevée. Le Conseil de l'Europe, créé séparément en 1949, poursuit une vocation plus spécifique : la protection des droits de l'homme, incarnée par la Convention européenne des droits de l'homme et sa Cour. La Cour pénale internationale, enfin, naît beaucoup plus tardivement, avec le statut de Rome de 1998 puis son entrée en vigueur en 2002 : sa vocation est étroite mais précise, juger les individus responsables des crimes les plus graves (génocide, crimes contre l'humanité, crimes de guerre), et seulement lorsque les juridictions nationales sont défaillantes. Ces trois institutions se distinguent donc autant par leur date de création que par leur objet : la paix et la coopération pour l'une, les droits de l'homme pour l'autre, la répression pénale internationale pour la dernière.",
+      "plan": [
+        {
+          "title": "I. Deux organisations généralistes aux vocations distinctes",
+          "children": [
+            {
+              "title": "A. L'ONU, la sécurité collective (1945)",
+              "points": [
+                "Créée au lendemain de la Seconde Guerre mondiale",
+                "193 États membres aujourd'hui",
+                "Conseil de tutelle : mission achevée, activités suspendues en 1994"
+              ]
+            },
+            {
+              "title": "B. Le Conseil de l'Europe, les droits de l'homme (1949)",
+              "points": [
+                "Une organisation distincte de l'ONU",
+                "Vocation centrée sur la protection des droits de l'homme",
+                "Porte la Convention européenne des droits de l'homme et sa Cour"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "II. Des juridictions plus spécialisées, nées plus tardivement",
+          "children": [
+            {
+              "title": "A. La Cour pénale internationale (1998-2002)",
+              "points": [
+                "Statut de Rome (1998) puis entrée en vigueur (2002)",
+                "Juge les individus, pas les États",
+                "Intervient seulement si les juridictions nationales sont défaillantes"
+              ]
+            },
+            {
+              "title": "B. Des mécanismes encore plus récents et spécialisés",
+              "points": [
+                "1995 : Organe de règlement des différends de l'OMC (litiges commerciaux entre États)",
+                "2017/2021 : Parquet européen (fraudes aux fonds de l'Union)",
+                "Une spécialisation croissante des juridictions internationales au fil du temps"
+              ]
+            }
+          ]
+        }
+      ],
+      "pitfalls": [
+        "Ne pas confondre l'ONU (1945, sécurité collective) et le Conseil de l'Europe (1949, droits de l'homme) : ce sont deux organisations internationales distinctes, sans lien institutionnel direct.",
+        "Ne pas dater l'opérationnalité de la CPI du statut de Rome lui-même : le statut est signé en 1998, mais la Cour ne devient opérationnelle qu'en 2002, à son entrée en vigueur."
+      ]
+    },
+    "quiz": [
+      {
+        "q": "L'ONU est créée en :",
+        "choices": [
+          "1919",
+          "1945",
+          "1949",
+          "1958"
+        ],
+        "answer": 1,
+        "why": "Au lendemain de la Seconde Guerre mondiale."
+      },
+      {
+        "q": "Le Conseil de l'Europe est créé en :",
+        "choices": [
+          "1945",
+          "1949",
+          "1950",
+          "1958"
+        ],
+        "answer": 1,
+        "why": "Une organisation distincte de l'ONU, tournée vers les droits de l'homme."
+      },
+      {
+        "q": "La Cour pénale internationale devient opérationnelle en :",
+        "choices": [
+          "1998",
+          "2000",
+          "2002",
+          "2010"
+        ],
+        "answer": 2,
+        "why": "Le statut de Rome, signé en 1998, entre en vigueur en 2002."
+      },
+      {
+        "q": "L'Organe de règlement des différends de l'OMC est créé en :",
+        "choices": [
+          "1945",
+          "1995",
+          "1998",
+          "2017"
+        ],
+        "answer": 1,
+        "why": "Il vise à éviter les mesures de rétorsion commerciales unilatérales entre États."
+      },
+      {
+        "q": "Le Parquet européen devient opérationnel en :",
+        "choices": [
+          "2002",
+          "2017",
+          "2021",
+          "2022"
+        ],
+        "answer": 2,
+        "why": "Créé en 2017, il ne devient effectivement opérationnel qu'en 2021."
+      }
+    ]
+  },
+  {
+    "id": "dates-11",
+    "order": 11,
+    "title": "La construction européenne : chronologie complète",
+    "teaser": "De la déclaration Schuman (1950) au Brexit (2020) : soixante-dix ans d'intégration européenne, traité par traité.",
+    "minutes": 6,
+    "brief": [
+      "Tout commence avec la **déclaration Schuman**, le **9 mai 1950**, qui propose de placer la production franco-allemande de charbon et d'acier sous une autorité commune. Le **traité de Paris**, signé le **18 avril 1951** et entré en vigueur le **25 juillet 1952**, crée la **CECA**. Les **traités de Rome** de **1957** (signés le 25 mars, entrés en vigueur en 1958) créent ensuite la **CEE** et l'**Euratom**. En **1979**, le Parlement européen est élu pour la première fois au suffrage universel direct.",
+      "L'**Acte unique européen** (**1986**) organise l'achèvement du marché intérieur. Le **traité de Maastricht**, signé en **1992** et entré en vigueur en **1993**, crée l'**Union européenne** et prépare la monnaie unique ; l'Union s'élargit dès **1995** à l'Autriche, la Finlande et la Suède. Le **traité d'Amsterdam** (signé en **1997**, entré en vigueur en **1999**) et le **traité de Nice** (signé en **2001**, entré en vigueur en **2003**) poursuivent l'approfondissement institutionnel, tandis que l'**euro** entre en circulation, sous forme de pièces et de billets, en **2002**.",
+      "L'année **2004** marque le plus grand élargissement de l'histoire de l'Union. Le **traité de Lisbonne**, signé le **13 décembre 2007** et entré en vigueur le **1er décembre 2009**, réforme en profondeur le fonctionnement institutionnel de l'Union. Plus récemment, le **Brexit** devient effectif en **2020** — le Royaume-Uni quittant l'Union après un long processus de sortie — et les dernières élections du Parlement européen se sont tenues du **6 au 9 juin 2024**."
+    ],
+    "keyPoints": [
+      "9 mai 1950 : déclaration Schuman ; 1951/1952 : traité de Paris et CECA ; 1957/1958 : traités de Rome, CEE et Euratom.",
+      "1992/1993 : traité de Maastricht, création de l'Union européenne et préparation de l'euro ; 2002 : mise en circulation de l'euro.",
+      "1997/1999 (Amsterdam) et 2001/2003 (Nice) : deux traités d'approfondissement institutionnel ; 2004 : plus grand élargissement de l'histoire de l'UE.",
+      "2007/2009 : traité de Lisbonne ; 2020 : Brexit effectif."
+    ],
+    "definitions": [
+      {
+        "term": "9 mai 1950",
+        "text": "Déclaration Schuman : propose de placer la production franco-allemande de charbon et d'acier sous une autorité commune, point de départ de la construction européenne."
+      },
+      {
+        "term": "1957 / 1958",
+        "text": "Signature puis entrée en vigueur des traités de Rome : création de la CEE et d'Euratom."
+      },
+      {
+        "term": "1992 / 1993",
+        "text": "Signature puis entrée en vigueur du traité de Maastricht : création de l'Union européenne, préparation de l'euro."
+      },
+      {
+        "term": "2007 / 2009",
+        "text": "Signature puis entrée en vigueur du traité de Lisbonne : réforme institutionnelle profonde de l'Union européenne."
+      },
+      {
+        "term": "2020",
+        "text": "Sortie effective du Royaume-Uni de l'Union européenne (Brexit)."
+      }
+    ],
+    "exam": {
+      "kind": "question de cours",
+      "question": "Retracez les grandes étapes des traités fondateurs de la construction européenne, de la déclaration Schuman au traité de Lisbonne.",
+      "concise": "La construction européenne s'ouvre par un acte politique fondateur : la déclaration Schuman du 9 mai 1950, qui propose de placer la production franco-allemande de charbon et d'acier sous une autorité commune, afin de rendre la guerre entre les deux pays « non seulement impensable mais matériellement impossible ». Cette déclaration débouche sur le traité de Paris (1951-1952), créant la CECA, puis sur les traités de Rome (1957-1958), qui élargissent considérablement le projet en créant la CEE et Euratom. Après plusieurs décennies d'approfondissement économique, le traité de Maastricht (1992-1993) marque un tournant politique majeur en créant l'Union européenne elle-même et en préparant la monnaie unique, mise en circulation en 2002. Les traités d'Amsterdam (1997-1999) et de Nice (2001-2003) poursuivent cet approfondissement institutionnel, avant que le traité de Lisbonne (2007-2009) ne vienne réformer en profondeur le fonctionnement de l'Union, dans le contexte d'élargissements territoriaux considérables, notamment celui de 2004. Cette dynamique d'intégration continue n'est cependant pas irréversible, comme le montre le Brexit, effectif depuis 2020.",
+      "plan": [
+        {
+          "title": "I. Les origines économiques de la construction européenne (1950-1958)",
+          "children": [
+            {
+              "title": "A. La déclaration Schuman, acte fondateur",
+              "points": [
+                "9 mai 1950",
+                "Mise en commun de la production franco-allemande de charbon et d'acier",
+                "Un projet pensé comme garantie de paix"
+              ]
+            },
+            {
+              "title": "B. De la CECA à la CEE",
+              "points": [
+                "Traité de Paris (1951-1952) : création de la CECA",
+                "Traités de Rome (1957-1958) : création de la CEE et d'Euratom",
+                "Un élargissement progressif du champ de l'intégration économique"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "II. De l'Union économique à l'Union politique (1992-2009)",
+          "children": [
+            {
+              "title": "A. Maastricht, le tournant politique",
+              "points": [
+                "1992-1993 : création de l'Union européenne",
+                "Préparation de la monnaie unique, mise en circulation en 2002",
+                "Un projet désormais politique, et plus seulement économique"
+              ]
+            },
+            {
+              "title": "B. Amsterdam, Nice, Lisbonne : l'approfondissement institutionnel",
+              "points": [
+                "1997-1999 puis 2001-2003 : deux traités de réforme institutionnelle",
+                "2004 : le plus grand élargissement de l'histoire de l'Union",
+                "2007-2009 : le traité de Lisbonne, réforme institutionnelle majeure"
+              ]
+            }
+          ]
+        }
+      ],
+      "pitfalls": [
+        "Ne pas confondre la date de signature et la date d'entrée en vigueur d'un traité européen : pour chacun des grands traités (Rome, Maastricht, Amsterdam, Nice, Lisbonne), un délai de un à deux ans sépare les deux dates.",
+        "Ne pas dater la création de l'euro (mise en circulation en 2002) du traité de Maastricht (1992-1993) qui la prépare seulement : dix ans séparent les deux événements."
+      ]
+    },
+    "quiz": [
+      {
+        "q": "La déclaration Schuman date du :",
+        "choices": [
+          "9 mai 1950",
+          "25 mars 1957",
+          "1992",
+          "2007"
+        ],
+        "answer": 0,
+        "why": "Point de départ symbolique de la construction européenne."
+      },
+      {
+        "q": "Le traité de Maastricht crée :",
+        "choices": [
+          "La CECA",
+          "La CEE",
+          "L'Union européenne",
+          "L'euro directement"
+        ],
+        "answer": 2,
+        "why": "Signé en 1992, entré en vigueur en 1993 ; il prépare aussi la monnaie unique, mise en circulation seulement en 2002."
+      },
+      {
+        "q": "L'euro entre en circulation (pièces et billets) en :",
+        "choices": [
+          "1993",
+          "1999",
+          "2002",
+          "2009"
+        ],
+        "answer": 2,
+        "why": "Dix ans après le traité de Maastricht qui l'a préparé."
+      },
+      {
+        "q": "Le traité de Lisbonne entre en vigueur le :",
+        "choices": [
+          "13 décembre 2007",
+          "1er décembre 2009",
+          "2004",
+          "2020"
+        ],
+        "answer": 1,
+        "why": "Il est signé le 13 décembre 2007 mais entre en vigueur seulement deux ans plus tard."
+      },
+      {
+        "q": "Le Brexit (sortie du Royaume-Uni de l'UE) devient effectif en :",
+        "choices": [
+          "2004",
+          "2009",
+          "2020",
+          "2024"
+        ],
+        "answer": 2,
+        "why": "Après un long processus de sortie engagé plusieurs années auparavant."
+      }
+    ]
+  }
+]
