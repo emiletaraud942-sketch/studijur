@@ -96,6 +96,20 @@ export function anonymousLessonCapReached(state: ProgressState, lessonId: string
   return dejaFaites.size >= ANONYMOUS_LESSON_LIMIT;
 }
 
+// Un visiteur sans compte peut aussi importer un premier cours et voir
+// l'exemple de fiche générée, sur le même principe que la leçon gratuite
+// (voir anonymousLessonCapReached) : un aperçu, jamais un verrou fiable,
+// puisque rien n'empêche de vider le stockage local pour repartir à zéro. Le
+// vrai garde-fou de coût reste côté serveur, sur le quota par IP (voir
+// checkQuotaBoth dans lib/shared-courses.ts) : /api/ingest et /api/ocr
+// laissent passer un appel anonyme sur ce même quota plutôt que de l'exiger
+// en plus d'un compte.
+export const ANONYMOUS_IMPORT_LIMIT = 1;
+
+export function anonymousImportCapReached(state: ProgressState): boolean {
+  return state.customCourses.length >= ANONYMOUS_IMPORT_LIMIT;
+}
+
 // Le module d'entraînement (questions de cours d'intro générale) est
 // gratuit et sans limite sur les questions elles-mêmes, mais la correction
 // par l'IA d'une réponse rédigée coûte un appel modèle : deux essais

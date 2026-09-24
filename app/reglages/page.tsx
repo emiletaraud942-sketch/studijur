@@ -1,15 +1,18 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { useStudiJur, supabaseConfigured, trialDaysLeft } from "@/lib/state";
 import { allCourses } from "@/lib/corpus";
 import { getSupabase } from "@/lib/supabase";
+import { connexionHref } from "@/lib/nav";
 import { Button, SectionTitle } from "@/components/ui";
 import { Check } from "@/components/icons";
 import Rappel from "@/components/Rappel";
 
 export default function SettingsPage() {
+  const pathname = usePathname();
   const { state, ready, update, reset, signedInAs, syncing } = useStudiJur();
   const [confirmReset, setConfirmReset] = useState(false);
   const courses = allCourses(state.customCourses);
@@ -108,7 +111,7 @@ export default function SettingsPage() {
             value={supabaseConfigured ? (signedInAs ? `${signedInAs}${syncing ? " (en cours…)" : ""}` : "Non connecté") : "Appareil uniquement"} />
         </div>
         <div className="mt-4 flex flex-wrap gap-3">
-          {supabaseConfigured && !signedInAs && <Button href="/connexion" variant="soft" size="sm">Se connecter</Button>}
+          {supabaseConfigured && !signedInAs && <Button href={connexionHref(pathname)} variant="soft" size="sm">Se connecter</Button>}
           {supabaseConfigured && signedInAs && (
             <Button variant="outline" size="sm" onClick={async () => { await getSupabase()?.auth.signOut(); location.reload(); }}>
               Se déconnecter

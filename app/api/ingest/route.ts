@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 import { callModel, extractJson, getAnthropic, currentModel } from "@/lib/anthropic";
 import { fallbackCourse, splitSections } from "@/lib/ingest-fallback";
 import { checkQuotaBoth, fingerprint, lookupShared, releaseQuotaAll, sharedCourseId, storeShared } from "@/lib/shared-courses";
-import { AUTH_REQUIRED_MESSAGE, authRequired, requireUser } from "@/lib/auth-server";
+import { authRequired, requireUser } from "@/lib/auth-server";
 import { isOwner } from "@/lib/owner";
 import { CORPUS } from "@/lib/corpus";
 import { getAdmin } from "@/lib/supabase-admin";
@@ -145,11 +145,17 @@ export async function POST(req: Request) {
   const ip = clientIp(req);
   let quotaKeys = [ip];
   let unlimited = false;
+  // Un visiteur sans compte peut générer un premier cours pour voir un
+  // exemple de fiche (voir ANONYMOUS_IMPORT_LIMIT côté client) : il passe
+  // alors sur le seul quota par IP, déjà le garde-fou de coût pour un compte
+  // partagé sur un même réseau — pas de clé `user:` puisqu'il n'y a personne
+  // à identifier.
   if (authRequired()) {
     const user = await requireUser(req);
-    if (!user) return NextResponse.json({ error: AUTH_REQUIRED_MESSAGE }, { status: 401 });
-    quotaKeys = [`user:${user.id}`, ip];
-    unlimited = isOwner(user.email);
+    if (user) {
+      quotaKeys = [`user:${user.id}`, ip];
+      unlimited = isOwner(user.email);
+    }
   }
 
   const clipped = text.slice(0, MAX_CHARS);

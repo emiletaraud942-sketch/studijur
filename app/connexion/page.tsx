@@ -1,12 +1,24 @@
 "use client";
 
-import { useState } from "react";
+import { Suspense, useState } from "react";
+import { useSearchParams } from "next/navigation";
 import { supabaseConfigured } from "@/lib/state";
 import { getSupabase } from "@/lib/supabase";
+import { safeNext } from "@/lib/nav";
 import { Button } from "@/components/ui";
 import { Scales } from "@/components/icons";
 
 export default function SignInPage() {
+  return (
+    <Suspense fallback={null}>
+      <SignInForm />
+    </Suspense>
+  );
+}
+
+function SignInForm() {
+  const searchParams = useSearchParams();
+  const next = safeNext(searchParams.get("next"));
   const [email, setEmail] = useState("");
   const [sent, setSent] = useState(false);
   const [error, setError] = useState("");
@@ -23,7 +35,7 @@ export default function SignInPage() {
     setError("");
     const { error: err } = await sb.auth.signInWithOtp({
       email: email.trim(),
-      options: { emailRedirectTo: typeof window !== "undefined" ? window.location.origin : undefined },
+      options: { emailRedirectTo: typeof window !== "undefined" ? `${window.location.origin}${next}` : undefined },
     });
     setBusy(false);
     if (err) setError(err.message);
@@ -55,8 +67,9 @@ export default function SignInPage() {
     }
     // Rechargement complet (comme après un clic sur le lien) pour que le
     // reste de l'appli, qui ne relit la session qu'au montage, la prenne
-    // en compte immédiatement.
-    window.location.href = "/";
+    // en compte immédiatement — vers la page d'origine, pas systématiquement
+    // l'accueil.
+    window.location.href = next;
   }
 
   return (

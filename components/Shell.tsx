@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useStudiJur, trialDaysLeft, supabaseConfigured } from "@/lib/state";
+import { connexionHref } from "@/lib/nav";
 import { Books, Chart, Gear, Grid, Home, Quill, Scales, Upload, Flame } from "./icons";
 import { longDate } from "@/lib/format";
 import InstallPrompt from "./InstallPrompt";
@@ -76,7 +77,7 @@ export default function Shell({ children }: { children: React.ReactNode }) {
 
       {showConnexion && !inLesson && !publique && (
         <div className="mx-auto max-w-[1080px] px-4 pt-3">
-          <Link href="/connexion" className="flex items-center justify-between gap-3 rounded-2xl px-4 py-2.5 text-[13px] font-medium"
+          <Link href={connexionHref(pathname)} className="flex items-center justify-between gap-3 rounded-2xl px-4 py-2.5 text-[13px] font-medium"
             style={{ background: "var(--gold-soft)", color: "var(--gold)" }}>
             <span>Une leçon complète en libre accès — connecte-toi gratuitement pour continuer</span>
             <span className="font-bold">Se connecter →</span>

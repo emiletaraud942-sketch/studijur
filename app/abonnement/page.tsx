@@ -1,9 +1,11 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { useStudiJur, supabaseConfigured, trialDaysLeft } from "@/lib/state";
 import { corpusStats } from "@/lib/corpus";
+import { connexionHref } from "@/lib/nav";
 import { Button, SectionTitle, Tag } from "@/components/ui";
 import { Check } from "@/components/icons";
 
@@ -20,6 +22,7 @@ const FEATURES = [
 type Plan = "annual" | "monthly";
 
 export default function SubscribePage() {
+  const pathname = usePathname();
   const { state, ready, signedInAs } = useStudiJur();
   const [stripeOn, setStripeOn] = useState<boolean | null>(null);
   const [busy, setBusy] = useState<Plan | null>(null);
@@ -96,7 +99,7 @@ export default function SubscribePage() {
                 <Button href="/mon-abonnement" variant="outline" full>Gérer ou résilier mon abonnement</Button>
               </div>
             ) : ready && stripeOn && needsAccount ? (
-              <Button href="/connexion" size="lg" full>Se connecter pour s&apos;abonner</Button>
+              <Button href={connexionHref(pathname)} size="lg" full>Se connecter pour s&apos;abonner</Button>
             ) : ready && stripeOn ? (
               <Button onClick={() => checkout("annual")} disabled={busy !== null} size="lg" full>
                 {busy === "annual" ? "Redirection…" : "Démarrer l'essai gratuit"}
@@ -126,7 +129,7 @@ export default function SubscribePage() {
         {!abonne && ready && stripeOn && (
           <div className="mt-4">
             {needsAccount ? (
-              <Button href="/connexion" variant="outline" full>Se connecter pour s&apos;abonner</Button>
+              <Button href={connexionHref(pathname)} variant="outline" full>Se connecter pour s&apos;abonner</Button>
             ) : (
               <Button onClick={() => checkout("monthly")} disabled={busy !== null} variant="outline" full>
                 {busy === "monthly" ? "Redirection…" : "Prendre la formule mensuelle"}

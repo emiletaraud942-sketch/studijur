@@ -1,11 +1,13 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useRef, useState } from "react";
-import { hasAccess, supabaseConfigured, useStudiJur } from "@/lib/state";
+import { anonymousImportCapReached, hasAccess, supabaseConfigured, useStudiJur } from "@/lib/state";
 import { TRIAL_IMPORT_LIMIT } from "@/lib/limits";
 import { prepareImage } from "@/lib/image-prep";
 import { authFetchHeaders } from "@/lib/supabase";
+import { connexionHref } from "@/lib/nav";
 import { Button, SectionTitle, Tag } from "@/components/ui";
 import { Camera, Check, Cross, Upload } from "@/components/icons";
 import type { Course } from "@/lib/types";
@@ -16,6 +18,7 @@ type Photo = { id: string; mediaType: "image/jpeg"; base64: string };
 const MAX_PHOTOS = 3;
 
 export default function MyCoursesPage() {
+  const pathname = usePathname();
   const { state, ready, addCustomCourse, removeCustomCourse, signedInAs } = useStudiJur();
   const [title, setTitle] = useState("");
   const [text, setText] = useState("");
@@ -29,14 +32,18 @@ export default function MyCoursesPage() {
   const importes = state.customCourses.length;
   const abonne = state.profile.plan === "active";
   const acces = hasAccess(state);
+  // Sans compte, le vrai palier n'est pas l'essai de 7 jours (inopérant tant
+  // qu'aucun compte ne l'ancre) mais un import gratuit, puis la connexion —
+  // même principe que la leçon gratuite sur /lecon/[id], voir
+  // anonymousImportCapReached. Une fois connecté, on repasse sur le plafond
+  // d'essai classique.
+  const anonyme = supabaseConfigured && !signedInAs;
+  const connexionRequise = anonyme && anonymousImportCapReached(state);
   // Bloqué soit parce que l'essai est fini (plus d'accès du tout), soit parce
   // que le plafond d'imports de l'essai est atteint alors que l'essai court
   // encore — sans ce premier cas, un essai expiré avec un import inutilisé
   // pouvait continuer à appeler l'IA (ingest/ocr) indéfiniment.
-  const plafondAtteint = !acces || (!abonne && importes >= TRIAL_IMPORT_LIMIT);
-  // L'OCR et la génération de leçons consomment de l'IA : sans compte, un
-  // élève pouvait réinitialiser son essai en vidant simplement son cache.
-  const connexionRequise = supabaseConfigured && !signedInAs;
+  const plafondAtteint = !anonyme && (!acces || (!abonne && importes >= TRIAL_IMPORT_LIMIT));
   const bloque = connexionRequise || plafondAtteint;
 
   async function readFile(file: File) {
@@ -271,13 +278,13 @@ export default function MyCoursesPage() {
           {connexionRequise ? (
             <div className="rounded-xl p-4 text-center" style={{ background: "var(--gold-soft)" }}>
               <p className="text-[14px] font-semibold" style={{ color: "var(--gold)" }}>
-                Connecte-toi pour importer un cours
+                Connecte-toi pour importer d&apos;autres cours
               </p>
               <p className="mt-1 text-[13.5px] leading-relaxed" style={{ color: "var(--ink-2)" }}>
-                L&apos;OCR et la génération de leçons utilisent l&apos;IA : un compte gratuit (email, sans mot de
-                passe) est nécessaire pour suivre correctement ton essai.
+                C&apos;est gratuit : un simple email, sans mot de passe. Ton premier cours importé reste
+                accessible, et un compte te permet d&apos;en déposer d&apos;autres.
               </p>
-              <div className="mt-3"><Button href="/connexion" size="sm">Se connecter</Button></div>
+              <div className="mt-3"><Button href={connexionHref(pathname)} size="sm">Se connecter</Button></div>
             </div>
           ) : plafondAtteint ? (
             <div className="rounded-xl p-4 text-center" style={{ background: "var(--gold-soft)" }}>
@@ -298,7 +305,9 @@ export default function MyCoursesPage() {
           )}
           {!abonne && !bloque && (
             <p className="mt-2 text-center text-[12.5px]" style={{ color: "var(--muted)" }}>
-              Essai gratuit : {TRIAL_IMPORT_LIMIT - importes} import{TRIAL_IMPORT_LIMIT - importes > 1 ? "s" : ""} restant{TRIAL_IMPORT_LIMIT - importes > 1 ? "s" : ""}
+              {anonyme
+                ? "Import gratuit sans compte — connecte-toi ensuite pour continuer"
+                : `Essai gratuit : ${TRIAL_IMPORT_LIMIT - importes} import${TRIAL_IMPORT_LIMIT - importes > 1 ? "s" : ""} restant${TRIAL_IMPORT_LIMIT - importes > 1 ? "s" : ""}`}
             </p>
           )}
         </div>

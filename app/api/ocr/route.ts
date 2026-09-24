@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 import { callModel, getAnthropic, currentModel, type ContentBlock } from "@/lib/anthropic";
 import { checkQuotaBoth, releaseQuotaAll } from "@/lib/shared-courses";
-import { AUTH_REQUIRED_MESSAGE, authRequired, requireUser } from "@/lib/auth-server";
+import { authRequired, requireUser } from "@/lib/auth-server";
 import { isOwner } from "@/lib/owner";
 
 export const runtime = "nodejs";
@@ -69,11 +69,16 @@ export async function POST(req: Request) {
   const ip = clientIp(req);
   let quotaKeys = [ip];
   let unlimited = false;
+  // Un visiteur sans compte peut transcrire ses photos pour un premier import
+  // gratuit (voir ANONYMOUS_IMPORT_LIMIT côté client) : il passe alors sur le
+  // seul quota par IP, déjà le garde-fou de coût pour un compte partagé sur
+  // un même réseau — pas de clé `user:` puisqu'il n'y a personne à identifier.
   if (authRequired()) {
     const user = await requireUser(req);
-    if (!user) return NextResponse.json({ error: AUTH_REQUIRED_MESSAGE }, { status: 401 });
-    quotaKeys = [`user:${user.id}`, ip];
-    unlimited = isOwner(user.email);
+    if (user) {
+      quotaKeys = [`user:${user.id}`, ip];
+      unlimited = isOwner(user.email);
+    }
   }
 
   // Une photo = un appel modèle : le quota se consomme sur ce nombre réel

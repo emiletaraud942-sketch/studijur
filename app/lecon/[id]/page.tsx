@@ -1,8 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { useParams, useRouter } from "next/navigation";
-import { useEffect, useMemo, useState } from "react";
+import { Suspense, useEffect, useMemo, useRef, useState } from "react";
+import { useParams, usePathname, useRouter, useSearchParams } from "next/navigation";
 import {
   useStudiJur, hasAccess, trialLessonCapReached, TRIAL_LESSON_LIMIT,
   anonymousLessonCapReached, supabaseConfigured,
@@ -11,6 +11,7 @@ import { findLesson, findCourse, neighbours, corpusStats } from "@/lib/corpus";
 import { Button, Prose, Tag } from "@/components/ui";
 import { inlineMarkup } from "@/lib/format";
 import { authFetchHeaders } from "@/lib/supabase";
+import { connexionHref } from "@/lib/nav";
 import { Arrow, Cards, Check, Cross, Flame, Quill, Target } from "@/components/icons";
 import type { EssayFeedback, StepName } from "@/lib/types";
 
@@ -22,10 +23,23 @@ const STEPS: { key: StepName; label: string; Icon: typeof Quill }[] = [
 ];
 
 export default function LessonPage() {
+  return (
+    <Suspense fallback={<div className="py-24 text-center text-[14px]" style={{ color: "var(--muted)" }}>Chargement…</div>}>
+      <LessonPageInner />
+    </Suspense>
+  );
+}
+
+function LessonPageInner() {
   const params = useParams<{ id: string }>();
+  const pathname = usePathname();
   const router = useRouter();
+  const searchParams = useSearchParams();
   const { state, ready, signedInAs, completeStep, saveDraft, recordQuiz, gradeDefinition } = useStudiJur();
-  const [step, setStep] = useState(0);
+  // Retour de connexion depuis la correction IA (voir Correction ci-dessous) :
+  // on rouvre directement l'étape "Question" plutôt que de repartir du cours.
+  const [step, setStep] = useState(() => (searchParams.get("step") === "question" ? 2 : 0));
+  const autocorrect = searchParams.get("autocorrect") === "1";
 
   const lesson = useMemo(
     () => (ready ? findLesson(params.id, state.customCourses) : undefined),
@@ -60,7 +74,7 @@ export default function LessonPage() {
             C&apos;est gratuit : un simple email, sans mot de passe. Ta première leçon reste acquise, et un
             compte te permet de continuer à découvrir le corpus.
           </p>
-          <div className="mt-6"><Button href="/connexion" size="lg">Se connecter</Button></div>
+          <div className="mt-6"><Button href={connexionHref(pathname)} size="lg">Se connecter</Button></div>
         </div>
       );
     }
@@ -146,6 +160,7 @@ export default function LessonPage() {
           draft={state.lessons[lesson.id]?.draft ?? ""}
           onDraft={(d) => saveDraft(lesson.id, d)}
           onNext={() => { completeStep(lesson.id, "question"); setStep(3); }}
+          autocorrect={autocorrect}
         />
       )}
       {step === 3 && (
@@ -259,12 +274,13 @@ function DefinitionsStep({
 }
 
 function QuestionStep({
-  lesson, draft, onDraft, onNext,
+  lesson, draft, onDraft, onNext, autocorrect,
 }: {
   lesson: NonNullable<ReturnType<typeof findLesson>>;
   draft: string;
   onDraft: (d: string) => void;
   onNext: () => void;
+  autocorrect: boolean;
 }) {
   const [showConcise, setShowConcise] = useState(false);
   const [showPlan, setShowPlan] = useState(false);
@@ -291,7 +307,7 @@ function QuestionStep({
         </div>
       </section>
 
-      <Correction lesson={lesson} draft={draft} wordCount={wordCount} />
+      <Correction lesson={lesson} draft={draft} wordCount={wordCount} autocorrect={autocorrect} />
 
       <div className="grid gap-3 sm:grid-cols-2">
         <button onClick={() => setShowConcise((v) => !v)}
@@ -358,18 +374,32 @@ function QuestionStep({
 }
 
 function Correction({
-  lesson, draft, wordCount,
+  lesson, draft, wordCount, autocorrect,
 }: {
   lesson: NonNullable<ReturnType<typeof findLesson>>;
   draft: string;
   wordCount: number;
+  autocorrect: boolean;
 }) {
+  const pathname = usePathname();
   const { signedInAs } = useStudiJur();
   const [state, setState] = useState<"idle" | "loading" | "done" | "error">("idle");
   const [feedback, setFeedback] = useState<EssayFeedback | null>(null);
   const [error, setError] = useState("");
   const ready = wordCount >= 30;
   const connexionRequise = supabaseConfigured && !signedInAs;
+  const autoTriggered = useRef(false);
+
+  // Retour de connexion pendant la rédaction : on relance directement la
+  // correction que l'élève voulait faire, sans lui faire recliquer.
+  useEffect(() => {
+    if (!autocorrect || autoTriggered.current) return;
+    if (connexionRequise || !ready || state !== "idle") return;
+    autoTriggered.current = true;
+    correct();
+    window.history.replaceState(null, "", pathname);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [autocorrect, connexionRequise, ready, state]);
 
   async function correct() {
     setState("loading");
@@ -423,7 +453,9 @@ function Correction({
               <p className="mb-2 text-[13px]" style={{ color: "var(--muted)" }}>
                 Connecte-toi (gratuit, par email) pour faire corriger ta copie par l&apos;IA.
               </p>
-              <Button href="/connexion" variant="soft" size="md">Se connecter</Button>
+              <Button href={connexionHref(`${pathname}?step=question&autocorrect=1`)} variant="soft" size="md">
+                Se connecter
+              </Button>
             </div>
           ) : (
             <div className="mt-3">
