@@ -1,0 +1,302 @@
+[
+  {
+    "id": "dates-12",
+    "order": 12,
+    "title": "État, nation et décentralisation",
+    "teaser": "De Westphalie (1648) à la loi Defferre (1982) : la naissance des États souverains et l'histoire de la décentralisation française.",
+    "minutes": 5,
+    "brief": [
+      "Les **traités de Westphalie** (**1648**) consacrent à l'échelle européenne la naissance du **système des États souverains**, chacun reconnu comme égal en droit sur la scène internationale — le socle du droit international moderne. Plus tard, deux conceptions concurrentes de la Nation s'affrontent : celle, volontariste, de Renan (**11 mars 1882**), et celle, objective, de Fichte (**1807-1808**).",
+      "Le droit international continue de s'étendre à de nouveaux espaces au XXe siècle : le **traité de l'espace** (**27 janvier 1967**, Londres, Washington, Moscou) proclame la neutralité de l'espace extra-atmosphérique ; la **convention de Montego Bay** (**1982**) crée la **zone économique exclusive (ZEE)** en droit de la mer.",
+      "En France, la **décentralisation** s'organise par étapes : la **loi Defferre** (**2 mars 1982**, n° 82-213) transforme les régions en collectivités territoriales et remplace la tutelle administrative par un simple contrôle juridictionnel de légalité ; les premières élections régionales au suffrage universel direct ont lieu en **1986** ; l'**avis Badinter** (**29 novembre 1991**) applique les trois critères de l'État aux entités contestées ; enfin, la **révision constitutionnelle du 28 mars 2003** inscrit à l'article 1er de la Constitution que « son organisation est décentralisée »."
+    ],
+    "keyPoints": [
+      "1648 : traités de Westphalie, naissance du système des États souverains en droit international.",
+      "1882 (Renan) et 1807-1808 (Fichte) : deux conceptions concurrentes et classiques de la Nation.",
+      "1967 (traité de l'espace) et 1982 (convention de Montego Bay) : extension du droit international à de nouveaux espaces.",
+      "1982 (loi Defferre) puis 2003 (révision constitutionnelle) : deux étapes majeures de la décentralisation française."
+    ],
+    "definitions": [
+      {
+        "term": "1648",
+        "text": "Traités de Westphalie : naissance du système des États souverains, égaux en droit sur la scène internationale."
+      },
+      {
+        "term": "27 janvier 1967",
+        "text": "Traité de l'espace (Londres, Washington, Moscou) : neutralité de l'espace extra-atmosphérique."
+      },
+      {
+        "term": "1982, convention de Montego Bay",
+        "text": "Crée la zone économique exclusive (ZEE) en droit de la mer."
+      },
+      {
+        "term": "2 mars 1982, loi Defferre",
+        "text": "Les régions deviennent des collectivités territoriales ; fin de la tutelle administrative, remplacée par le contrôle juridictionnel de légalité."
+      },
+      {
+        "term": "28 mars 2003",
+        "text": "Révision constitutionnelle inscrivant à l'article 1er que l'organisation de la République « est décentralisée »."
+      }
+    ],
+    "exam": {
+      "kind": "question de cours",
+      "question": "En quoi les traités de Westphalie (1648) et la décentralisation française (1982-2003) répondent-ils à deux logiques opposées d'organisation du pouvoir ?",
+      "concise": "Les traités de Westphalie, en 1648, consacrent le système des États souverains : chaque État, sur son territoire, exerce une autorité pleine et entière, reconnue par les autres États comme son égale sur la scène internationale — c'est le socle du droit international moderne, fondé sur la juxtaposition d'États indépendants. La décentralisation française, à l'inverse, ne remet nullement en cause l'unité de l'État français lui-même : elle organise, à l'intérieur de cette souveraineté unique, un partage de compétences entre l'État central et des collectivités territoriales dotées d'une autonomie propre. La loi Defferre du 2 mars 1982 marque le tournant décisif de ce mouvement, en transformant les régions en véritables collectivités territoriales et en substituant à la tutelle administrative, exercée a priori sur les actes locaux, un contrôle de légalité confié au juge administratif, exercé a posteriori. La révision constitutionnelle du 28 mars 2003 vient consacrer ce mouvement au plus haut niveau des normes, en inscrivant à l'article 1er de la Constitution que l'organisation de la République « est décentralisée » — sans pour autant transformer la France en État fédéral : la souveraineté française reste unique et indivisible.",
+      "plan": [
+        {
+          "title": "I. Westphalie : la souveraineté des États sur la scène internationale",
+          "children": [
+            {
+              "title": "A. La naissance du système des États souverains",
+              "points": [
+                "1648, traités de Westphalie",
+                "Chaque État reconnu comme souverain et égal en droit",
+                "Le socle du droit international moderne"
+              ]
+            },
+            {
+              "title": "B. Une logique de juxtaposition entre États indépendants",
+              "points": [
+                "Aucune autorité supérieure aux États eux-mêmes",
+                "Un ordre international horizontal, non hiérarchisé",
+                "Une logique bien distincte de celle de la décentralisation interne à un État"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "II. La décentralisation française : un partage de compétences sans remise en cause de l'unité de l'État",
+          "children": [
+            {
+              "title": "A. La loi Defferre, tournant décisif de 1982",
+              "points": [
+                "Les régions deviennent des collectivités territoriales",
+                "Fin de la tutelle a priori, remplacée par un contrôle de légalité a posteriori",
+                "Une autonomie locale accrue, sans souveraineté propre"
+              ]
+            },
+            {
+              "title": "B. La consécration constitutionnelle de 2003",
+              "points": [
+                "Article 1er : « son organisation est décentralisée »",
+                "Une inscription au plus haut niveau des normes",
+                "La France demeure un État unitaire, non un État fédéral"
+              ]
+            }
+          ]
+        }
+      ],
+      "pitfalls": [
+        "Ne pas confondre la souveraineté des États sur la scène internationale (Westphalie, 1648) et la décentralisation interne à un État unitaire (France, depuis 1982) : ce sont deux logiques d'organisation du pouvoir de nature différente, l'une entre États, l'autre à l'intérieur d'un même État.",
+        "Ne pas présenter la décentralisation française comme une forme de fédéralisme : la révision de 2003 ne remet pas en cause l'unicité de l'ordre politique et constitutionnel français."
+      ]
+    },
+    "quiz": [
+      {
+        "q": "Les traités de Westphalie (1648) consacrent :",
+        "choices": [
+          "La décentralisation française",
+          "Le système des États souverains",
+          "La création de l'Union européenne",
+          "La séparation des pouvoirs"
+        ],
+        "answer": 1,
+        "why": "Chaque État y est reconnu comme souverain et égal en droit sur la scène internationale."
+      },
+      {
+        "q": "La loi Defferre (1982) a pour effet de :",
+        "choices": [
+          "Créer les régions",
+          "Transformer les régions en collectivités territoriales et remplacer la tutelle par un contrôle de légalité",
+          "Fédéraliser la France",
+          "Créer le Conseil constitutionnel"
+        ],
+        "answer": 1,
+        "why": "Un tournant décisif de la décentralisation française."
+      },
+      {
+        "q": "La zone économique exclusive (ZEE) est créée par :",
+        "choices": [
+          "Le traité de l'espace (1967)",
+          "La convention de Montego Bay (1982)",
+          "La loi Defferre (1982)",
+          "Les traités de Westphalie (1648)"
+        ],
+        "answer": 1,
+        "why": "Cette convention de droit de la mer crée la ZEE."
+      },
+      {
+        "q": "La révision constitutionnelle inscrivant la décentralisation à l'article 1er date de :",
+        "choices": [
+          "1982",
+          "1991",
+          "2003",
+          "2010"
+        ],
+        "answer": 2,
+        "why": "Le 28 mars 2003, consacrant au plus haut niveau des normes le mouvement engagé en 1982."
+      },
+      {
+        "q": "Le traité de l'espace, proclamant la neutralité de l'espace extra-atmosphérique, date de :",
+        "choices": [
+          "1948",
+          "1967",
+          "1982",
+          "1995"
+        ],
+        "answer": 1,
+        "why": "Signé à Londres, Washington et Moscou, le 27 janvier 1967."
+      }
+    ]
+  },
+  {
+    "id": "dates-13",
+    "order": 13,
+    "title": "Sources du droit et évolutions sociétales",
+    "teaser": "De la loi Naquet (1884) à l'AI Act (2024) : quand le droit s'adapte, parfois en retard, aux évolutions de la société.",
+    "minutes": 5,
+    "brief": [
+      "La laïcisation du droit français s'organise par étapes : en **1792**, le mariage religieux est interdit avant le mariage civil ; la **loi du 9 décembre 1905** organise la **séparation des Églises et de l'État**. Le droit de la famille évolue ensuite plus lentement que les mœurs : la **loi Naquet** du **27 juillet 1884** rétablit le **divorce**, aboli depuis la Restauration ; il faudra attendre la **loi du 17 mai 2013** pour ouvrir le **mariage** aux couples de personnes de même sexe. Le droit peut aussi se retourner contre ses propres principes, comme le rappellent les **lois antisémites de 1940**, exemple classique de lois injustes bien que juridiquement en vigueur.",
+      "La qualité de la loi elle-même devient un enjeu : la **loi organique du 15 avril 2009** (n° 2009-403) impose une **étude d'impact** obligatoire pour tout projet de loi. Sur le terrain jurisprudentiel, un arrêt ancien de la Cour de cassation (**25 mai 1870**) pose le principe selon lequel **le silence ne vaut pas acceptation**, aujourd'hui codifié à l'article 1120 du Code civil.",
+      "Le contentieux climatique illustre enfin l'apparition de préoccupations sociétales nouvelles dans le champ du droit : la **Convention citoyenne pour le climat** (**2019-2020**) associe des citoyens tirés au sort à l'élaboration de mesures climatiques ; le tribunal administratif de Paris, dans l'affaire dite **« L'Affaire du Siècle »** (**3 février 2021**, jugement complémentaire le **14 octobre 2021**), reconnaît une carence fautive de l'État en matière climatique. Plus récemment, le règlement européen sur l'intelligence artificielle, dit **AI Act** (règlement (UE) 2024/1689 du **13 juin 2024**), encadre pour la première fois cette technologie à l'échelle de l'Union."
+    ],
+    "keyPoints": [
+      "1792 puis 1905 (loi de séparation) : la laïcisation progressive du droit français.",
+      "1884 (loi Naquet, rétablissement du divorce) et 2013 (mariage pour tous) : le droit de la famille en retard sur les mœurs, puis rattrapé par la loi.",
+      "25 mai 1870 : origine jurisprudentielle du principe selon lequel le silence ne vaut pas acceptation (codifié à l'article 1120 du Code civil).",
+      "2021 (L'Affaire du Siècle) et 2024 (AI Act) : deux illustrations récentes de l'adaptation du droit à des enjeux sociétaux nouveaux (climat, intelligence artificielle)."
+    ],
+    "definitions": [
+      {
+        "term": "9 décembre 1905",
+        "text": "Loi de séparation des Églises et de l'État, étape majeure de la laïcisation du droit français."
+      },
+      {
+        "term": "27 juillet 1884, loi Naquet",
+        "text": "Rétablit le divorce, aboli depuis la Restauration — exemple classique du droit en retard sur les mœurs."
+      },
+      {
+        "term": "25 mai 1870",
+        "text": "Arrêt de la Cour de cassation à l'origine du principe selon lequel le silence ne vaut pas acceptation, codifié depuis à l'article 1120 du Code civil."
+      },
+      {
+        "term": "17 mai 2013",
+        "text": "Loi n° 2013-404 ouvrant le mariage aux couples de personnes de même sexe."
+      },
+      {
+        "term": "3 février 2021, L'Affaire du Siècle",
+        "text": "Le tribunal administratif de Paris reconnaît une carence fautive de l'État en matière climatique (jugement complémentaire le 14 octobre 2021)."
+      }
+    ],
+    "exam": {
+      "kind": "question de cours",
+      "question": "En quoi la loi Naquet (1884) et la loi ouvrant le mariage aux couples de même sexe (2013) illustrent-elles toutes deux un droit en retard sur les évolutions de la société ?",
+      "concise": "Ces deux réformes, bien que séparées de près de cent trente ans, obéissent à la même logique : le droit ne précède pas les évolutions sociales, il les suit, parfois avec un décalage considérable. La loi Naquet du 27 juillet 1884 rétablit le divorce en France, aboli depuis la Restauration en 1816 : pendant près de soixante-dix ans, le droit français a ainsi ignoré une réalité sociale — l'échec de certains mariages — que d'autres pays européens avaient déjà intégrée à leur législation. La loi du 17 mai 2013 connaît une dynamique similaire : l'ouverture du mariage aux couples de personnes de même sexe intervient après des décennies de débat social et de reconnaissance progressive de ces couples dans d'autres domaines du droit (pacte civil de solidarité de 1999, notamment). Dans les deux cas, la réforme législative vient consacrer juridiquement une évolution des mœurs déjà largement engagée dans la société, plutôt que de l'anticiper — illustrant une caractéristique structurelle du droit de la famille, plus lent à évoluer que d'autres branches du droit, précisément parce qu'il touche à des représentations sociales profondément ancrées.",
+      "plan": [
+        {
+          "title": "I. La loi Naquet (1884), un rattrapage tardif",
+          "children": [
+            {
+              "title": "A. Le divorce aboli puis rétabli",
+              "points": [
+                "Aboli sous la Restauration (1816)",
+                "Absent du droit français pendant près de soixante-dix ans",
+                "Rétabli par la loi du 27 juillet 1884"
+              ]
+            },
+            {
+              "title": "B. Un décalage révélateur entre droit et société",
+              "points": [
+                "Une réalité sociale (l'échec de certains mariages) longtemps ignorée par la loi",
+                "D'autres pays européens avaient déjà légiféré",
+                "Le droit de la famille, particulièrement sensible aux représentations sociales"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "II. La loi de 2013, une dynamique comparable un siècle plus tard",
+          "children": [
+            {
+              "title": "A. Une reconnaissance progressive avant la réforme",
+              "points": [
+                "Le pacte civil de solidarité (1999), première étape de reconnaissance",
+                "Des débats sociaux engagés depuis plusieurs décennies",
+                "La loi vient consacrer une évolution déjà largement amorcée"
+              ]
+            },
+            {
+              "title": "B. Une même logique structurelle du droit de la famille",
+              "points": [
+                "Le droit suit les évolutions sociales, il ne les précède pas",
+                "Un décalage temporel qui varie selon les sujets, mais existe presque systématiquement",
+                "Un parallèle éclairant entre deux réformes séparées de plus d'un siècle"
+              ]
+            }
+          ]
+        }
+      ],
+      "pitfalls": [
+        "Ne pas confondre la loi Naquet (1884, rétablissement du divorce) avec la création du divorce lui-même : le divorce existait déjà avant la Révolution, la loi de 1884 le rétablit après son abolition sous la Restauration.",
+        "Ne pas dater la loi ouvrant le mariage aux couples de même sexe de la création du PACS : dix-quatre ans séparent le PACS (1999) et la loi de 2013."
+      ]
+    },
+    "quiz": [
+      {
+        "q": "La loi de séparation des Églises et de l'État date de :",
+        "choices": [
+          "1792",
+          "1884",
+          "1905",
+          "1958"
+        ],
+        "answer": 2,
+        "why": "Loi du 9 décembre 1905."
+      },
+      {
+        "q": "La loi Naquet (1884) a pour effet de :",
+        "choices": [
+          "Créer le mariage civil",
+          "Rétablir le divorce, aboli depuis la Restauration",
+          "Ouvrir le mariage aux couples de même sexe",
+          "Créer le PACS"
+        ],
+        "answer": 1,
+        "why": "Un exemple classique de droit en retard sur les mœurs."
+      },
+      {
+        "q": "Le principe selon lequel le silence ne vaut pas acceptation trouve son origine dans un arrêt de :",
+        "choices": [
+          "1870",
+          "1905",
+          "1991",
+          "2016"
+        ],
+        "answer": 0,
+        "why": "Arrêt de la Cour de cassation du 25 mai 1870, codifié depuis à l'article 1120 du Code civil."
+      },
+      {
+        "q": "La loi ouvrant le mariage aux couples de personnes de même sexe date de :",
+        "choices": [
+          "1999",
+          "2009",
+          "2013",
+          "2016"
+        ],
+        "answer": 2,
+        "why": "Loi n° 2013-404 du 17 mai 2013."
+      },
+      {
+        "q": "L'AI Act, règlement européen encadrant l'intelligence artificielle, date de :",
+        "choices": [
+          "2013",
+          "2019",
+          "2021",
+          "2024"
+        ],
+        "answer": 3,
+        "why": "Règlement (UE) 2024/1689 du 13 juin 2024."
+      }
+    ]
+  }
+]

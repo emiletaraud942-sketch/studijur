@@ -1,0 +1,602 @@
+[
+  {
+    "id": "dates-05",
+    "order": 5,
+    "title": "La Révolution française : chronologie 1789-1792",
+    "teaser": "Des États généraux à la proclamation de la République : cinq mois qui font basculer le royaume, puis trois ans qui l'achèvent.",
+    "minutes": 6,
+    "brief": [
+      "Convoqués le **5 mai 1789**, les **États généraux** se transforment le **17 juin** en **Assemblée nationale**, proclamée par le tiers état, puis en **Assemblée constituante** le **9 juillet**. La **prise de la Bastille**, le **14 juillet**, devient le symbole de l'insurrection populaire.",
+      "Dans la nuit du **4 août**, l'Assemblée abolit les **privilèges féodaux**, mettant fin notamment au monopole seigneurial de la justice. Le mouvement s'achève, sur le plan des principes, avec l'adoption de la **Déclaration des droits de l'homme et du citoyen** le **26 août 1789**.",
+      "La monarchie devient **constitutionnelle** : la première Constitution française écrite est adoptée le **3 septembre 1791**, encadrant les pouvoirs du roi. Mais la confiance est déjà rompue depuis la **fuite à Varennes**, en **juin 1791** : la tentative de Louis XVI de quitter le royaume discrédite durablement la monarchie. La monarchie constitutionnelle ne dure en réalité qu'un an (**1791-1792**) : le **10 août 1792**, le peuple prend les **Tuileries** et fait arrêter le roi ; le mois suivant, les **massacres de septembre** ensanglantent Paris, tandis que la victoire de Valmy permet, le **21 septembre 1792**, la **proclamation de la République**."
+    ],
+    "keyPoints": [
+      "5 mai → 26 août 1789 : des États généraux à la DDHC, en passant par l'Assemblée nationale (17 juin), la Constituante (9 juillet), la Bastille (14 juillet) et l'abolition des privilèges (4 août).",
+      "3 septembre 1791 : première Constitution française écrite, instaurant une monarchie constitutionnelle.",
+      "La fuite à Varennes (juin 1791) discrédite durablement la monarchie, qui ne survit qu'un an.",
+      "10 août 1792 : prise des Tuileries ; 21 septembre 1792 : proclamation de la République, après la victoire de Valmy."
+    ],
+    "definitions": [
+      {
+        "term": "5 mai 1789",
+        "text": "Convocation des États généraux, premier maillon de la chaîne d'événements révolutionnaires."
+      },
+      {
+        "term": "14 juillet 1789",
+        "text": "Prise de la Bastille : symbole de l'insurrection populaire parisienne."
+      },
+      {
+        "term": "26 août 1789",
+        "text": "Adoption de la Déclaration des droits de l'homme et du citoyen (DDHC)."
+      },
+      {
+        "term": "3 septembre 1791",
+        "text": "Première Constitution française écrite : instauration d'une monarchie constitutionnelle."
+      },
+      {
+        "term": "21 septembre 1792",
+        "text": "Proclamation de la République, après la prise des Tuileries (10 août) et la victoire de Valmy."
+      }
+    ],
+    "exam": {
+      "kind": "question de cours",
+      "question": "Retracez les grandes étapes qui mènent, entre mai 1789 et septembre 1792, des États généraux à la proclamation de la République.",
+      "concise": "Le processus révolutionnaire s'enclenche dès la convocation des États généraux, le 5 mai 1789. En moins de deux mois, le tiers état transforme cette assemblée consultative en Assemblée nationale (17 juin), puis en Assemblée constituante chargée de doter le royaume d'une Constitution (9 juillet) : la prise de la Bastille, le 14 juillet, en est le symbole populaire, et l'abolition des privilèges féodaux, dans la nuit du 4 août, en tire les premières conséquences institutionnelles. Ce premier temps révolutionnaire s'achève avec l'adoption de la DDHC, le 26 août 1789, qui pose les grands principes du nouvel ordre juridique. S'ouvre alors une phase de monarchie constitutionnelle, consacrée par la Constitution du 3 septembre 1791 — mais cette expérience est fragilisée dès juin 1791 par la fuite à Varennes, qui discrédite durablement Louis XVI. La rupture définitive intervient un an plus tard : la prise des Tuileries, le 10 août 1792, entraîne l'arrestation du roi, et la victoire militaire de Valmy permet, le 21 septembre 1792, la proclamation de la République — clôturant en trois ans et demi un cycle qui a vu se succéder monarchie absolue, monarchie constitutionnelle, puis République.",
+      "plan": [
+        {
+          "title": "I. De la convocation des États généraux à la Déclaration des droits (mai-août 1789)",
+          "children": [
+            {
+              "title": "A. La transformation des États généraux en pouvoir constituant",
+              "points": [
+                "5 mai : convocation des États généraux",
+                "17 juin : proclamation de l'Assemblée nationale par le tiers état",
+                "9 juillet : l'Assemblée devient constituante"
+              ]
+            },
+            {
+              "title": "B. De l'insurrection populaire aux premiers principes",
+              "points": [
+                "14 juillet : prise de la Bastille",
+                "4 août : abolition des privilèges féodaux",
+                "26 août : adoption de la DDHC"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "II. De la monarchie constitutionnelle à la République (1791-1792)",
+          "children": [
+            {
+              "title": "A. Une monarchie constitutionnelle fragilisée d'emblée",
+              "points": [
+                "3 septembre 1791 : première Constitution française écrite",
+                "Juin 1791 : la fuite à Varennes discrédite durablement Louis XVI",
+                "Une expérience institutionnelle qui ne dure qu'un an"
+              ]
+            },
+            {
+              "title": "B. La rupture révolutionnaire de l'été 1792",
+              "points": [
+                "10 août 1792 : prise des Tuileries, arrestation du roi",
+                "Septembre 1792 : massacres de septembre, puis victoire de Valmy",
+                "21 septembre 1792 : proclamation de la République"
+              ]
+            }
+          ]
+        }
+      ],
+      "pitfalls": [
+        "Ne pas confondre la prise de la Bastille (14 juillet, symbole populaire) et l'abolition des privilèges féodaux (nuit du 4 août, acte institutionnel de l'Assemblée) : ce sont deux moments distincts, séparés de trois semaines.",
+        "Ne pas dater la proclamation de la République de la prise des Tuileries : celle-ci (10 août 1792) précède la proclamation de six semaines (21 septembre 1792)."
+      ]
+    },
+    "quiz": [
+      {
+        "q": "L'Assemblée nationale est proclamée par le tiers état le :",
+        "choices": [
+          "5 mai 1789",
+          "17 juin 1789",
+          "14 juillet 1789",
+          "26 août 1789"
+        ],
+        "answer": 1,
+        "why": "C'est la première transformation des États généraux en pouvoir représentatif autonome."
+      },
+      {
+        "q": "La Déclaration des droits de l'homme et du citoyen est adoptée le :",
+        "choices": [
+          "14 juillet 1789",
+          "4 août 1789",
+          "26 août 1789",
+          "3 septembre 1791"
+        ],
+        "answer": 2,
+        "why": "Elle clôture le premier temps révolutionnaire de l'été 1789."
+      },
+      {
+        "q": "La première Constitution française écrite est adoptée en :",
+        "choices": [
+          "1789",
+          "1791",
+          "1792",
+          "1804"
+        ],
+        "answer": 1,
+        "why": "Le 3 septembre 1791, instaurant une monarchie constitutionnelle."
+      },
+      {
+        "q": "La fuite à Varennes a lieu :",
+        "choices": [
+          "Juillet 1789",
+          "Juin 1791",
+          "Août 1792",
+          "Septembre 1792"
+        ],
+        "answer": 1,
+        "why": "Cette tentative de fuite de Louis XVI discrédite durablement la monarchie constitutionnelle."
+      },
+      {
+        "q": "La République est proclamée le :",
+        "choices": [
+          "10 août 1792",
+          "21 septembre 1792",
+          "3 septembre 1791",
+          "14 juillet 1789"
+        ],
+        "answer": 1,
+        "why": "Après la prise des Tuileries et la victoire de Valmy."
+      }
+    ]
+  },
+  {
+    "id": "dates-06",
+    "order": 6,
+    "title": "Le Code civil : de 1804 aux réformes contemporaines",
+    "teaser": "Du droit intermédiaire à la réforme de 2016 : deux siècles de vie du Code civil.",
+    "minutes": 5,
+    "brief": [
+      "Entre la Révolution et **1804**, la France traverse une période de **droit intermédiaire** : les lois révolutionnaires cohabitent avec des pans entiers de l'ancien droit. Le **Code civil**, rédigé notamment par Portalis, est adopté le **21 mars 1804** ; le **Code de commerce** suit en **1806**. Ces codes sont profondément marqués par l'héritage du droit romain, redécouvert dès le Moyen Âge et transmis par les grandes compilations du **VIe siècle** (Justinien).",
+      "Le Code civil connaît ensuite deux grandes vagues de réformes contemporaines. La première, dans les **années 1960-1970**, refond entièrement le droit des personnes et de la famille (autorité parentale, filiation, régimes matrimoniaux). La seconde, **depuis 2004**, touche à nouveau la filiation, le mariage et les sûretés. Le droit du travail, le droit de la consommation et bien d'autres branches se codifient de leur côté, en dehors du Code civil, dans un grand mouvement de codification propre aux **années 1970**.",
+      "Plus récemment, l'**ordonnance du 10 février 2016** réforme en profondeur le droit des obligations : elle simplifie les conditions de validité du contrat (l'article 1128 n'en retient plus que trois, contre quatre auparavant) et supprime toute référence aux « bonnes mœurs » dans le Code civil. Entre ces deux dates, la **loi du 10 juillet 1991** a instauré l'aide juridictionnelle, garantissant l'accès à la justice aux personnes les plus démunies."
+    ],
+    "keyPoints": [
+      "21 mars 1804 : adoption du Code civil ; 1806 : Code de commerce ; avant 1804, période du « droit intermédiaire ».",
+      "Deux grandes vagues de réforme du Code civil : années 1960-1970 (droit des personnes et de la famille) et depuis 2004 (filiation, mariage, sûretés).",
+      "10 février 2016 : ordonnance réformant le droit des obligations — simplification des conditions de validité du contrat, suppression de la référence aux bonnes mœurs.",
+      "10 juillet 1991 : loi instaurant l'aide juridictionnelle."
+    ],
+    "definitions": [
+      {
+        "term": "21 mars 1804",
+        "text": "Adoption du Code civil, rédigé notamment par Portalis ; succède à la période du droit intermédiaire."
+      },
+      {
+        "term": "1806",
+        "text": "Adoption du Code de commerce, peu après le Code civil."
+      },
+      {
+        "term": "Années 1960-1970",
+        "text": "Première grande vague de réforme du Code civil : refonte du droit des personnes et de la famille."
+      },
+      {
+        "term": "10 juillet 1991",
+        "text": "Loi instaurant l'aide juridictionnelle, garantissant l'accès à la justice aux personnes démunies."
+      },
+      {
+        "term": "10 février 2016",
+        "text": "Ordonnance réformant le droit des obligations : simplification des conditions de validité du contrat, suppression de la référence aux bonnes mœurs."
+      }
+    ],
+    "exam": {
+      "kind": "question de cours",
+      "question": "Retracez les grandes étapes de la réforme du Code civil, de son adoption en 1804 à l'ordonnance de 2016.",
+      "concise": "Le Code civil, adopté le 21 mars 1804 après une période de droit intermédiaire marquée par l'instabilité normative révolutionnaire, connaît ensuite plusieurs vagues de transformation profonde. La première, dans les années 1960-1970, refond entièrement le droit des personnes et de la famille, adaptant le texte napoléonien aux évolutions sociales du XXe siècle (autorité parentale, filiation, régimes matrimoniaux). Une seconde vague, engagée depuis 2004, prolonge ce mouvement sur les mêmes terrains (filiation, mariage, sûretés), avant que l'ordonnance du 10 février 2016 ne s'attaque spécifiquement au droit des obligations : elle simplifie les conditions de validité du contrat, réduites à trois critères par le nouvel article 1128, et supprime toute référence aux « bonnes mœurs », notion jugée datée et peu opérante. Entre ces grandes réformes de fond, des textes plus ponctuels viennent compléter le dispositif d'accès au droit, comme la loi du 10 juillet 1991 sur l'aide juridictionnelle, qui garantit aux personnes les plus démunies une prise en charge financière des frais de justice.",
+      "plan": [
+        {
+          "title": "I. De l'adoption du Code civil à ses premières grandes réformes",
+          "children": [
+            {
+              "title": "A. La naissance du Code civil en 1804",
+              "points": [
+                "21 mars 1804, après une période de droit intermédiaire",
+                "Rédigé notamment par Portalis",
+                "Suivi de près par le Code de commerce (1806)"
+              ]
+            },
+            {
+              "title": "B. La refonte du droit des personnes et de la famille",
+              "points": [
+                "Années 1960-1970",
+                "Adaptation aux évolutions sociales du XXe siècle",
+                "Autorité parentale, filiation, régimes matrimoniaux"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "II. Les réformes les plus récentes",
+          "children": [
+            {
+              "title": "A. La deuxième vague, depuis 2004",
+              "points": [
+                "Filiation, mariage, sûretés",
+                "Une adaptation continue du Code aux évolutions sociétales",
+                "Un mouvement encore en cours aujourd'hui"
+              ]
+            },
+            {
+              "title": "B. L'ordonnance du 10 février 2016, réforme du droit des obligations",
+              "points": [
+                "Simplification des conditions de validité du contrat (article 1128)",
+                "Suppression de la référence aux bonnes mœurs",
+                "Une réforme technique, mais aux effets pratiques considérables sur le contentieux contractuel"
+              ]
+            }
+          ]
+        }
+      ],
+      "pitfalls": [
+        "Ne pas confondre les deux vagues de réforme du droit de la famille (années 1960-1970, puis depuis 2004) avec la réforme du droit des obligations (2016) : ce sont des branches distinctes du Code civil, réformées à des rythmes différents.",
+        "Ne pas dater le Code de commerce de la même année que le Code civil : deux années séparent les deux textes (1804 puis 1806)."
+      ]
+    },
+    "quiz": [
+      {
+        "q": "Le Code civil est adopté le :",
+        "choices": [
+          "4 août 1789",
+          "21 mars 1804",
+          "1806",
+          "10 février 2016"
+        ],
+        "answer": 1,
+        "why": "Après la période de droit intermédiaire qui suit la Révolution."
+      },
+      {
+        "q": "La première grande refonte du droit des personnes et de la famille intervient :",
+        "choices": [
+          "Dans les années 1960-1970",
+          "En 1804",
+          "En 1991",
+          "En 2016"
+        ],
+        "answer": 0,
+        "why": "Une adaptation du Code civil aux évolutions sociales du XXe siècle."
+      },
+      {
+        "q": "La loi sur l'aide juridictionnelle date de :",
+        "choices": [
+          "1970",
+          "1991",
+          "2004",
+          "2016"
+        ],
+        "answer": 1,
+        "why": "La loi du 10 juillet 1991 garantit l'accès à la justice aux personnes démunies."
+      },
+      {
+        "q": "L'ordonnance réformant le droit des obligations date de :",
+        "choices": [
+          "1804",
+          "1970",
+          "1991",
+          "2016"
+        ],
+        "answer": 3,
+        "why": "L'ordonnance du 10 février 2016 simplifie les conditions de validité du contrat."
+      },
+      {
+        "q": "Le Code de commerce est adopté :",
+        "choices": [
+          "Avant le Code civil",
+          "La même année que le Code civil",
+          "Deux ans après le Code civil",
+          "Un siècle après le Code civil"
+        ],
+        "answer": 2,
+        "why": "Le Code civil date de 1804, le Code de commerce de 1806."
+      }
+    ]
+  },
+  {
+    "id": "dates-07",
+    "order": 7,
+    "title": "Naissance et consolidation du droit constitutionnel (1834-2024)",
+    "teaser": "De la première chaire de droit constitutionnel à la QPC : la chronologie d'une discipline et de ses outils de contrôle.",
+    "minutes": 6,
+    "brief": [
+      "Le droit constitutionnel naît comme discipline universitaire en France par l'**ordonnance de Guizot** de **1834**, qui crée la première chaire, confiée à Pellegrino Rossi. Plus d'un siècle plus tard, la **Constitution de la Ve République** est adoptée le **4 octobre 1958**. Le seul précédent d'application de l'article 16 (pouvoirs exceptionnels) reste le **putsch des généraux de 1961** ; en **1962**, le président de la République devient élu au **suffrage universel direct**.",
+      "Le Conseil constitutionnel construit progressivement sa jurisprudence : la décision ***Liberté d'association*** du **16 juillet 1971** donne naissance au **bloc de constitutionnalité**, en reconnaissant valeur contraignante au préambule de la Constitution. La **révision constitutionnelle de 1974** élargit la saisine *a priori* à 60 députés ou 60 sénateurs, ouvrant la contestation à l'opposition. Le **23 août 1985**, une décision affirme la primauté de la Constitution sur l'ensemble de l'ordre juridique interne.",
+      "Le bloc de constitutionnalité continue de s'enrichir : la **Charte de l'environnement** de 2004 y est adossée le **1er mars 2005** ; la **révision du 28 mars 2003** relative à l'organisation décentralisée de la République ajoute à l'article 1er que « son organisation est décentralisée ». La grande réforme du contrôle intervient avec la **révision du 23 juillet 2008**, qui crée la **question prioritaire de constitutionnalité (QPC)**, entrée en vigueur le **1er mars 2010** — permettant enfin à tout justiciable de contester la constitutionnalité d'une loi déjà promulguée. Plus récemment, la révision du **8 mars 2024** inscrit dans la Constitution la liberté de recourir à l'IVG."
+    ],
+    "keyPoints": [
+      "1834 : ordonnance de Guizot, naissance du droit constitutionnel comme discipline universitaire ; 4 octobre 1958 : Constitution de la Ve République.",
+      "16 juillet 1971 : décision Liberté d'association, naissance du bloc de constitutionnalité ; 1974 : élargissement de la saisine a priori à 60 parlementaires.",
+      "23 juillet 2008 / 1er mars 2010 : création puis entrée en vigueur de la QPC, contrôle a posteriori ouvert au justiciable.",
+      "2003, 2005, 2024 : trois révisions successives enrichissent le contenu constitutionnel (décentralisation, Charte de l'environnement, IVG)."
+    ],
+    "definitions": [
+      {
+        "term": "1834",
+        "text": "Ordonnance de Guizot : création de la première chaire de droit constitutionnel en France, confiée à Pellegrino Rossi."
+      },
+      {
+        "term": "4 octobre 1958",
+        "text": "Adoption de la Constitution de la Ve République."
+      },
+      {
+        "term": "16 juillet 1971",
+        "text": "Décision Liberté d'association du Conseil constitutionnel : naissance du bloc de constitutionnalité."
+      },
+      {
+        "term": "23 juillet 2008",
+        "text": "Révision constitutionnelle créant la question prioritaire de constitutionnalité (QPC), entrée en vigueur le 1er mars 2010."
+      },
+      {
+        "term": "8 mars 2024",
+        "text": "Révision constitutionnelle inscrivant dans la Constitution la liberté de recourir à l'interruption volontaire de grossesse."
+      }
+    ],
+    "exam": {
+      "kind": "question de cours",
+      "question": "Retracez la construction progressive du contrôle de constitutionnalité en France, de la décision Liberté d'association (1971) à la création de la QPC (2008-2010).",
+      "concise": "Le contrôle de constitutionnalité, créé en même temps que la Constitution de 1958, se construit par étapes successives. La décision Liberté d'association, le 16 juillet 1971, marque un premier tournant décisif : le Conseil constitutionnel reconnaît une valeur contraignante au préambule de la Constitution, donnant naissance au bloc de constitutionnalité, qui inclut désormais la DDHC de 1789 et le préambule de 1946. La révision constitutionnelle de 1974 élargit ensuite la saisine a priori, jusque-là réservée à quatre autorités, à 60 députés ou 60 sénateurs : elle ouvre ainsi la contestation des lois aux partis minoritaires et à l'opposition parlementaire, avant même leur promulgation. Le 23 août 1985, une nouvelle décision vient affirmer la primauté de la Constitution sur l'ensemble de l'ordre juridique interne. Mais il faut attendre la révision du 23 juillet 2008, entrée en vigueur le 1er mars 2010, pour qu'un contrôle a posteriori soit enfin ouvert au justiciable lui-même : la question prioritaire de constitutionnalité permet, à l'occasion d'un litige, de contester la constitutionnalité d'une loi déjà promulguée — complétant ainsi, près de quarante ans après 1971, la protection constitutionnelle des droits et libertés.",
+      "plan": [
+        {
+          "title": "I. La construction du bloc de constitutionnalité et l'élargissement de la saisine",
+          "children": [
+            {
+              "title": "A. La décision Liberté d'association (1971)",
+              "points": [
+                "Reconnaissance de la valeur contraignante du préambule",
+                "Naissance du bloc de constitutionnalité (DDHC, préambule de 1946)",
+                "Le Conseil constitutionnel devient garant des droits et libertés"
+              ]
+            },
+            {
+              "title": "B. L'élargissement de la saisine a priori (1974)",
+              "points": [
+                "Extension à 60 députés ou 60 sénateurs",
+                "Ouverture de la contestation aux partis minoritaires",
+                "Un contrôle qui reste néanmoins limité à la loi non encore promulguée"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "II. Vers un contrôle ouvert au justiciable",
+          "children": [
+            {
+              "title": "A. La primauté de la Constitution réaffirmée (1985)",
+              "points": [
+                "Décision du 23 août 1985",
+                "Confirmation de la place suprême de la Constitution dans l'ordre juridique interne",
+                "Une étape de consolidation plutôt que d'innovation"
+              ]
+            },
+            {
+              "title": "B. La création de la QPC (2008-2010)",
+              "points": [
+                "Révision du 23 juillet 2008, entrée en vigueur le 1er mars 2010",
+                "Un contrôle a posteriori, ouvert à tout justiciable à l'occasion d'un litige",
+                "L'aboutissement de près de quarante ans de construction du contrôle de constitutionnalité"
+              ]
+            }
+          ]
+        }
+      ],
+      "pitfalls": [
+        "Ne pas confondre la révision de 1974 (élargissement de la saisine a priori à 60 parlementaires) avec celle de 2008 (création de la QPC, contrôle a posteriori ouvert au justiciable) : ce sont deux réformes distinctes, séparées de plus de trente ans.",
+        "Ne pas dater l'entrée en vigueur de la QPC de la révision constitutionnelle elle-même : la révision date de 2008, mais la QPC n'entre en vigueur que le 1er mars 2010."
+      ]
+    },
+    "quiz": [
+      {
+        "q": "La première chaire de droit constitutionnel en France est créée en :",
+        "choices": [
+          "1789",
+          "1834",
+          "1958",
+          "1971"
+        ],
+        "answer": 1,
+        "why": "Par l'ordonnance de Guizot, confiée à Pellegrino Rossi."
+      },
+      {
+        "q": "Le bloc de constitutionnalité naît avec la décision :",
+        "choices": [
+          "Nicolo (1989)",
+          "Liberté d'association (1971)",
+          "Jacques Vabre (1975)",
+          "IVG (1975)"
+        ],
+        "answer": 1,
+        "why": "Le 16 juillet 1971, le Conseil constitutionnel reconnaît la valeur contraignante du préambule."
+      },
+      {
+        "q": "La révision constitutionnelle de 1974 a pour effet de :",
+        "choices": [
+          "Créer le Conseil constitutionnel",
+          "Élargir la saisine a priori à 60 députés ou sénateurs",
+          "Créer la QPC",
+          "Créer le bloc de constitutionnalité"
+        ],
+        "answer": 1,
+        "why": "Ouvrant ainsi la contestation des lois à l'opposition parlementaire."
+      },
+      {
+        "q": "La QPC entre en vigueur le :",
+        "choices": [
+          "23 juillet 2008",
+          "1er mars 2010",
+          "23 août 1985",
+          "8 mars 2024"
+        ],
+        "answer": 1,
+        "why": "La révision de 2008 crée la QPC, mais son entrée en vigueur n'intervient qu'en 2010."
+      },
+      {
+        "q": "La liberté de recourir à l'IVG est inscrite dans la Constitution en :",
+        "choices": [
+          "1975",
+          "2005",
+          "2010",
+          "2024"
+        ],
+        "answer": 3,
+        "why": "Révision constitutionnelle du 8 mars 2024."
+      }
+    ]
+  },
+  {
+    "id": "dates-08",
+    "order": 8,
+    "title": "Le bloc de conventionnalité : la France et le droit européen des droits de l'homme",
+    "teaser": "De l'adoption de la CEDH au contentieux climatique : comment le contrôle de conventionnalité s'impose en France.",
+    "minutes": 5,
+    "brief": [
+      "La **Convention européenne des droits de l'homme (CEDH)** est adoptée à Rome le **4 novembre 1950**, mais la France ne la ratifie qu'en **1974** — un retard révélateur de la réticence française à admettre un contrôle externe. Dès le **15 janvier 1975**, à l'occasion de la décision **IVG**, le Conseil constitutionnel refuse pourtant de contrôler lui-même la conformité d'une loi à un traité international, renvoyant cette tâche aux juges ordinaires.",
+      "C'est la **Cour de cassation** qui accepte la première ce contrôle de conventionnalité, avec l'arrêt ***Jacques Vabre*** en **1975** ; le **Conseil d'État** ne la suit qu'en **1989**, avec l'arrêt ***Nicolo***. Entre les deux, en **1981**, la France accepte le **droit de recours individuel** devant la Cour européenne des droits de l'homme, permettant à tout particulier de la saisir directement.",
+      "Plus récemment, le contentieux climatique s'est invité devant la Cour : dans l'arrêt ***Verein KlimaSeniorinnen Schweiz*** du **9 avril 2024**, la Grande Chambre de la CEDH reconnaît des **obligations climatiques** aux États au titre de l'article 8 de la Convention (droit au respect de la vie privée et familiale). Sur un plan institutionnel, la **Russie** a été exclue du Conseil de l'Europe en **2022**, en raison de la guerre en Ukraine — tout en continuant d'être jugée pour les faits antérieurs à cette date."
+    ],
+    "keyPoints": [
+      "4 novembre 1950 : adoption de la CEDH ; 1974 : ratification par la France, avec un net retard.",
+      "1975 (Jacques Vabre, Cour de cassation) puis 1989 (Nicolo, Conseil d'État) : les deux ordres juridictionnels acceptent successivement le contrôle de conventionnalité.",
+      "1981 : la France accepte le recours individuel devant la Cour européenne des droits de l'homme.",
+      "9 avril 2024 : l'arrêt Verein KlimaSeniorinnen reconnaît des obligations climatiques aux États au titre de l'article 8 de la CEDH."
+    ],
+    "definitions": [
+      {
+        "term": "4 novembre 1950",
+        "text": "Adoption de la Convention européenne des droits de l'homme (CEDH), à Rome."
+      },
+      {
+        "term": "1975, Jacques Vabre",
+        "text": "La Cour de cassation accepte, la première, le contrôle de conventionnalité des lois."
+      },
+      {
+        "term": "1989, Nicolo",
+        "text": "Le Conseil d'État accepte à son tour le contrôle de conventionnalité, quatorze ans après la Cour de cassation."
+      },
+      {
+        "term": "1981",
+        "text": "La France accepte le droit de recours individuel devant la Cour européenne des droits de l'homme."
+      },
+      {
+        "term": "9 avril 2024",
+        "text": "Arrêt Verein KlimaSeniorinnen (CEDH, Grande Chambre) : reconnaissance d'obligations climatiques des États au titre de l'article 8."
+      }
+    ],
+    "exam": {
+      "kind": "question de cours",
+      "question": "Pourquoi le contrôle de conventionnalité s'impose-t-il en France de manière aussi progressive et décalée, entre 1975 et 1989 ?",
+      "concise": "Le contrôle de conventionnalité — la vérification de la conformité d'une loi à un traité international — s'impose en France de façon particulièrement échelonnée. Le Conseil constitutionnel refuse dès 1975, dans sa décision IVG du 15 janvier, d'exercer lui-même ce contrôle, estimant que cette tâche ne relève pas de sa mission de contrôle de constitutionnalité. Ce refus laisse la question ouverte aux juges ordinaires, qui ne s'en saisissent que progressivement et de manière dissociée selon l'ordre juridictionnel : la Cour de cassation accepte la première, dès 1975, avec l'arrêt Jacques Vabre, tandis que le Conseil d'État attend 1989, avec l'arrêt Nicolo, pour franchir le même pas — un décalage de quatorze ans qui illustre la prudence particulière de la juridiction administrative face à un contrôle susceptible d'écarter une loi votée par le Parlement. Ce mouvement d'ouverture progressive au droit international s'accompagne, en 1981, de l'acceptation par la France du recours individuel devant la Cour européenne des droits de l'homme, complétant ainsi, sur près de deux décennies, l'intégration du droit conventionnel dans l'ordre juridique français.",
+      "plan": [
+        {
+          "title": "I. Un contrôle que le Conseil constitutionnel refuse d'exercer lui-même",
+          "children": [
+            {
+              "title": "A. La décision IVG de 1975",
+              "points": [
+                "15 janvier 1975",
+                "Le Conseil constitutionnel refuse de contrôler la conformité d'une loi à un traité",
+                "Une répartition des tâches entre contrôle de constitutionnalité et contrôle de conventionnalité"
+              ]
+            },
+            {
+              "title": "B. Le renvoi aux juges ordinaires",
+              "points": [
+                "La question du contrôle de conventionnalité reste ouverte aux juges judiciaire et administratif",
+                "Chaque ordre juridictionnel devra s'en saisir séparément",
+                "Un contrôle diffus plutôt que centralisé"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "II. Une acceptation progressive et décalée par les deux ordres",
+          "children": [
+            {
+              "title": "A. La Cour de cassation, précurseur en 1975",
+              "points": [
+                "Arrêt Jacques Vabre",
+                "Une acceptation rapide, la même année que la décision IVG",
+                "Le juge judiciaire, traditionnellement moins réticent face au contrôle de la loi"
+              ]
+            },
+            {
+              "title": "B. Le Conseil d'État, quatorze ans plus tard",
+              "points": [
+                "Arrêt Nicolo, 1989",
+                "Une prudence propre à la juridiction administrative",
+                "Un décalage révélateur des réticences françaises face au contrôle du pouvoir législatif"
+              ]
+            }
+          ]
+        }
+      ],
+      "pitfalls": [
+        "Ne pas confondre le contrôle de constitutionnalité (loi/Constitution, exercé par le Conseil constitutionnel) et le contrôle de conventionnalité (loi/traité international, exercé par les juges ordinaires) : la décision IVG de 1975 sépare précisément ces deux contrôles.",
+        "Ne pas dater l'acceptation du contrôle de conventionnalité par le Conseil d'État de la même année que la Cour de cassation : quatorze ans séparent Jacques Vabre (1975) et Nicolo (1989)."
+      ]
+    },
+    "quiz": [
+      {
+        "q": "La CEDH est ratifiée par la France en :",
+        "choices": [
+          "1950",
+          "1958",
+          "1974",
+          "1981"
+        ],
+        "answer": 2,
+        "why": "Vingt-quatre ans après son adoption à Rome, en 1950."
+      },
+      {
+        "q": "La Cour de cassation accepte le contrôle de conventionnalité avec l'arrêt :",
+        "choices": [
+          "Nicolo",
+          "Jacques Vabre",
+          "Blanco",
+          "Cadot"
+        ],
+        "answer": 1,
+        "why": "En 1975, la même année que la décision IVG du Conseil constitutionnel."
+      },
+      {
+        "q": "Le Conseil d'État accepte le contrôle de conventionnalité avec l'arrêt :",
+        "choices": [
+          "Nicolo (1989)",
+          "Jacques Vabre (1975)",
+          "Morsang-sur-Orge (1995)",
+          "Blanco (1873)"
+        ],
+        "answer": 0,
+        "why": "Quatorze ans après la Cour de cassation."
+      },
+      {
+        "q": "La France accepte le recours individuel devant la Cour EDH en :",
+        "choices": [
+          "1950",
+          "1975",
+          "1981",
+          "1989"
+        ],
+        "answer": 2,
+        "why": "Permettant à tout particulier de saisir directement la Cour."
+      },
+      {
+        "q": "L'arrêt Verein KlimaSeniorinnen (2024) reconnaît des obligations climatiques aux États au titre de :",
+        "choices": [
+          "L'article 6 § 1 de la CEDH",
+          "L'article 8 de la CEDH",
+          "L'article 2 § 4 de la Charte de l'ONU",
+          "L'article 16 de la DDHC"
+        ],
+        "answer": 1,
+        "why": "Le droit au respect de la vie privée et familiale fonde ce contentieux climatique européen."
+      }
+    ]
+  }
+]

@@ -1,0 +1,598 @@
+[
+  {
+    "id": "articles-01",
+    "order": 1,
+    "title": "La Constitution de 1958 (I) : la fabrique de la loi",
+    "teaser": "Articles 34, 37, 38, 45, 46, 49-3, 89 : qui fait la loi, comment, et jusqu'où.",
+    "minutes": 6,
+    "brief": [
+      "La Constitution de 1958 répartit strictement le pouvoir normatif entre la loi et le règlement. L'**article 34** fixe le **domaine de la loi** : une compétence **d'attribution**, énumérée limitativement (libertés publiques, droit pénal, nationalité...). L'**article 37**, à l'inverse, donne au pouvoir réglementaire une compétence **de droit commun** : tout ce qui n'est pas réservé à la loi par l'article 34 relève du règlement. L'**article 38** permet exceptionnellement au gouvernement de légiférer par **ordonnances**, sur habilitation du Parlement et sous réserve de ratification.",
+      "La procédure d'adoption de la loi elle-même est organisée par l'**article 45**, qui prévoit la **navette parlementaire** entre les deux chambres ; en cas de désaccord persistant, une **commission mixte paritaire** est réunie, et le dernier mot revient, en cas d'échec, à l'**Assemblée nationale**. L'**article 46** est consacré aux **lois organiques**, catégorie intermédiaire entre la Constitution et la loi ordinaire, dont l'adoption obéit à des règles procédurales renforcées.",
+      "L'**article 49, alinéa 3**, permet au gouvernement d'engager sa responsabilité sur un texte, qui est alors considéré comme adopté **sans vote**, sauf motion de censure votée dans les 24 heures — un outil de rationalisation du parlementarisme propre à la Ve République. Enfin, l'**article 89** organise la procédure de **révision constitutionnelle**, qui suppose un vote identique des deux chambres puis, selon les cas, un référendum ou un vote du Congrès à la majorité des trois cinquièmes."
+    ],
+    "keyPoints": [
+      "Article 34 (domaine de la loi, compétence d'attribution) et article 37 (domaine du règlement, compétence de droit commun) : la répartition fondamentale du pouvoir normatif.",
+      "Article 38 : les ordonnances, délégation temporaire du pouvoir législatif au gouvernement.",
+      "Article 45 (navette parlementaire, commission mixte paritaire) et article 46 (lois organiques) : la procédure d'adoption de la loi.",
+      "Article 49 al. 3 (engagement de responsabilité, adoption sans vote) et article 89 (révision constitutionnelle)."
+    ],
+    "definitions": [
+      {
+        "term": "Article 34",
+        "text": "Fixe le domaine de la loi : une compétence d'attribution, énumérée limitativement par la Constitution."
+      },
+      {
+        "term": "Article 37",
+        "text": "Donne au pouvoir réglementaire une compétence de droit commun : tout ce qui n'est pas réservé à la loi relève du règlement."
+      },
+      {
+        "term": "Article 38",
+        "text": "Permet au gouvernement de légiférer par ordonnances, sur habilitation du Parlement, sous réserve de ratification."
+      },
+      {
+        "term": "Article 45",
+        "text": "Organise la navette parlementaire entre les deux chambres ; en cas de désaccord persistant, commission mixte paritaire puis dernier mot à l'Assemblée nationale."
+      },
+      {
+        "term": "Article 49, alinéa 3",
+        "text": "Permet au gouvernement d'engager sa responsabilité sur un texte, considéré comme adopté sans vote sauf motion de censure votée dans les 24 heures."
+      }
+    ],
+    "exam": {
+      "kind": "question de cours",
+      "question": "Comment les articles 34 et 37 de la Constitution de 1958 organisent-ils la répartition du pouvoir normatif entre la loi et le règlement ?",
+      "concise": "La Constitution de 1958 inverse la logique traditionnelle de la IIIe et de la IVe République, où la loi pouvait tout régir. L'article 34 énumère limitativement les matières relevant du domaine de la loi — libertés publiques, droit pénal, nationalité, et d'autres matières précisément listées : c'est une compétence d'attribution, qui ne peut s'étendre au-delà de cette liste. L'article 37, en miroir, confie au pouvoir réglementaire une compétence de droit commun : tout ce qui n'entre pas dans le domaine de la loi tel que défini par l'article 34 relève du pouvoir réglementaire du gouvernement, sans qu'il soit besoin d'une habilitation particulière. Cette répartition n'est cependant pas totalement rigide : l'article 38 permet au gouvernement, sur habilitation expresse du Parlement et pour un temps limité, de prendre par ordonnances des mesures qui relèvent normalement du domaine de la loi — sous réserve d'une ratification ultérieure, à défaut de laquelle l'ordonnance devient caduque. Ce mécanisme illustre la souplesse pratique d'un partage de compétences par ailleurs strictement défini par le texte constitutionnel.",
+      "plan": [
+        {
+          "title": "I. Une répartition inversée du pouvoir normatif",
+          "children": [
+            {
+              "title": "A. L'article 34, une compétence d'attribution pour la loi",
+              "points": [
+                "Énumération limitative des matières législatives",
+                "Rupture avec la tradition antérieure d'une loi compétente en tout",
+                "Libertés publiques, droit pénal, nationalité, parmi les matières listées"
+              ]
+            },
+            {
+              "title": "B. L'article 37, une compétence de droit commun pour le règlement",
+              "points": [
+                "Tout ce qui n'est pas réservé à la loi relève du règlement",
+                "Aucune habilitation particulière nécessaire pour le pouvoir réglementaire",
+                "Une inversion de la hiérarchie traditionnelle loi/règlement"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "II. Un partage assoupli par la pratique institutionnelle",
+          "children": [
+            {
+              "title": "A. Les ordonnances de l'article 38",
+              "points": [
+                "Habilitation expresse et temporaire du Parlement",
+                "Le gouvernement légifère dans le domaine normalement réservé à la loi",
+                "Ratification nécessaire, à défaut de quoi l'ordonnance devient caduque"
+              ]
+            },
+            {
+              "title": "B. La procédure législative encadrée par les articles 45 et 46",
+              "points": [
+                "Navette parlementaire et commission mixte paritaire (article 45)",
+                "Dernier mot à l'Assemblée nationale en cas d'échec persistant",
+                "Régime procédural renforcé pour les lois organiques (article 46)"
+              ]
+            }
+          ]
+        }
+      ],
+      "pitfalls": [
+        "Ne pas inverser les articles 34 et 37 : le 34 est la compétence d'attribution (la loi), le 37 la compétence de droit commun (le règlement) — c'est l'erreur la plus fréquente en copie.",
+        "Ne pas confondre une ordonnance de l'article 38 (délégation temporaire du pouvoir législatif) avec un règlement pris sur le fondement de l'article 37 (exercice normal du pouvoir réglementaire) : la nature et le régime juridique des deux actes diffèrent."
+      ]
+    },
+    "quiz": [
+      {
+        "q": "L'article 34 de la Constitution fixe :",
+        "choices": [
+          "Le domaine du règlement",
+          "Le domaine de la loi, par une liste limitative",
+          "La procédure de révision constitutionnelle",
+          "Les pouvoirs exceptionnels du président"
+        ],
+        "answer": 1,
+        "why": "Une compétence d'attribution, contrairement à l'article 37 qui donne compétence de droit commun au règlement."
+      },
+      {
+        "q": "Les ordonnances sont prévues par l'article :",
+        "choices": [
+          "34",
+          "37",
+          "38",
+          "45"
+        ],
+        "answer": 2,
+        "why": "Le gouvernement légifère alors sur habilitation du Parlement, sous réserve de ratification."
+      },
+      {
+        "q": "En cas d'échec de la commission mixte paritaire, le dernier mot revient :",
+        "choices": [
+          "Au Sénat",
+          "À l'Assemblée nationale",
+          "Au Conseil constitutionnel",
+          "Au président de la République"
+        ],
+        "answer": 1,
+        "why": "Conformément à l'article 45 sur la procédure législative."
+      },
+      {
+        "q": "L'article 49, alinéa 3, permet :",
+        "choices": [
+          "De dissoudre l'Assemblée nationale",
+          "D'engager la responsabilité du gouvernement sur un texte, adopté sans vote",
+          "De réviser la Constitution",
+          "De saisir le Conseil constitutionnel"
+        ],
+        "answer": 1,
+        "why": "Sauf motion de censure votée dans les 24 heures."
+      },
+      {
+        "q": "La procédure de révision constitutionnelle est organisée par l'article :",
+        "choices": [
+          "46",
+          "49",
+          "89",
+          "34"
+        ],
+        "answer": 2,
+        "why": "Vote identique des deux chambres, puis référendum ou vote du Congrès aux trois cinquièmes."
+      }
+    ]
+  },
+  {
+    "id": "articles-02",
+    "order": 2,
+    "title": "La Constitution de 1958 (II) : institutions et contrôle de constitutionnalité",
+    "teaser": "Articles 3, 7, 8, 11, 12, 13, 16, 27, 54, 55, 61 et 61-1 : le président, le Parlement, et le contrôle de la loi.",
+    "minutes": 6,
+    "brief": [
+      "L'**article 3** affirme que la **souveraineté nationale** appartient au peuple, qui l'exerce par ses représentants et par la voie du référendum — synthèse entre souveraineté nationale (Sieyès) et souveraineté populaire (Rousseau). Le président de la République dispose de pouvoirs propres : l'**article 8** lui permet de nommer le Premier ministre, l'**article 12** de dissoudre l'Assemblée nationale, l'**article 13** de procéder aux nominations en Conseil des ministres. En cas de **vacance de la présidence**, l'**article 7** confie l'intérim au président du Sénat. L'**article 16** lui accorde des **pouvoirs exceptionnels** en cas de menace grave sur la nation — appliqué une seule fois, en 1961.",
+      "Le Parlement est encadré par plusieurs garanties : l'**article 11** organise le **référendum**, y compris le référendum d'initiative partagée depuis 2008 ; l'**article 27** interdit le **mandat impératif**, principe classique de la représentation politique.",
+      "Le contrôle de la loi obéit à une hiérarchie précise : l'**article 54** interdit de ratifier un traité contraire à la Constitution sans révision préalable ; l'**article 55** organise la **hiérarchie entre traités et lois**, donnant primauté aux premiers sur les secondes. Le contrôle de constitutionnalité lui-même se déploie en deux temps : l'**article 61, alinéa 2**, permet la saisine *a priori* du Conseil constitutionnel (notamment par 60 députés ou 60 sénateurs, depuis 1974) ; l'**article 61-1**, issu de la révision de 2008, crée la **question prioritaire de constitutionnalité (QPC)**, contrôle *a posteriori* ouvert à tout justiciable."
+    ],
+    "keyPoints": [
+      "Article 3 : la souveraineté nationale appartient au peuple, exercée par représentants ou référendum — synthèse Sieyès/Rousseau.",
+      "Articles 7, 8, 12, 13, 16 : les pouvoirs du président de la République (intérim, nomination du Premier ministre, dissolution, nominations, pouvoirs exceptionnels).",
+      "Articles 54 et 55 : les rapports entre traités internationaux et Constitution, puis entre traités et lois.",
+      "Article 61 al. 2 (contrôle a priori) et article 61-1 (QPC, contrôle a posteriori) : les deux voies du contrôle de constitutionnalité."
+    ],
+    "definitions": [
+      {
+        "term": "Article 3",
+        "text": "La souveraineté nationale appartient au peuple, qui l'exerce par ses représentants et par la voie du référendum."
+      },
+      {
+        "term": "Article 16",
+        "text": "Pouvoirs exceptionnels du président de la République en cas de menace grave et immédiate sur la nation — appliqué une seule fois, en 1961."
+      },
+      {
+        "term": "Article 55",
+        "text": "Organise la hiérarchie entre traités et lois : les traités priment sur les lois internes."
+      },
+      {
+        "term": "Article 61, alinéa 2",
+        "text": "Permet la saisine a priori du Conseil constitutionnel, notamment par 60 députés ou 60 sénateurs (depuis 1974)."
+      },
+      {
+        "term": "Article 61-1",
+        "text": "Crée la question prioritaire de constitutionnalité (QPC), contrôle a posteriori ouvert à tout justiciable (révision de 2008)."
+      }
+    ],
+    "exam": {
+      "kind": "question de cours",
+      "question": "Comment les articles 61, alinéa 2, et 61-1 de la Constitution organisent-ils deux voies complémentaires de contrôle de constitutionnalité ?",
+      "concise": "Le contrôle de constitutionnalité en France se déploie selon deux logiques temporelles complémentaires. L'article 61, alinéa 2, organise un contrôle a priori : une loi peut être déférée au Conseil constitutionnel avant sa promulgation, par le président de la République, le Premier ministre, les présidents des deux assemblées, ou, depuis la révision de 1974, par 60 députés ou 60 sénateurs — un élargissement qui a considérablement démocratisé cette voie de contrôle, jusque-là réservée aux plus hautes autorités de l'État. L'article 61-1, issu de la révision constitutionnelle de 2008, entrée en vigueur en 2010, ouvre une seconde voie, radicalement différente : le contrôle a posteriori, par la question prioritaire de constitutionnalité. Un justiciable peut désormais, à l'occasion d'un litige devant n'importe quelle juridiction, soulever l'inconstitutionnalité d'une disposition légale déjà en vigueur et déjà appliquée. Ces deux articles se complètent ainsi pour couvrir l'ensemble du cycle de vie de la loi : avant sa promulgation pour l'un, après sa promulgation et jusque dans son application concrète pour l'autre — offrant une protection constitutionnelle continue des droits et libertés.",
+      "plan": [
+        {
+          "title": "I. Le contrôle a priori de l'article 61, alinéa 2",
+          "children": [
+            {
+              "title": "A. Une saisine initialement restreinte",
+              "points": [
+                "Président de la République, Premier ministre, présidents des assemblées",
+                "Un contrôle réservé aux plus hautes autorités de l'État",
+                "Exercé avant la promulgation de la loi"
+              ]
+            },
+            {
+              "title": "B. Un élargissement démocratisant, en 1974",
+              "points": [
+                "Ouverture à 60 députés ou 60 sénateurs",
+                "Permet à l'opposition parlementaire de saisir le Conseil constitutionnel",
+                "Un contrôle qui reste néanmoins limité à la loi non encore promulguée"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "II. Le contrôle a posteriori de l'article 61-1",
+          "children": [
+            {
+              "title": "A. La question prioritaire de constitutionnalité",
+              "points": [
+                "Créée par la révision de 2008, entrée en vigueur en 2010",
+                "Ouverte à tout justiciable, à l'occasion d'un litige",
+                "Porte sur une loi déjà promulguée et appliquée"
+              ]
+            },
+            {
+              "title": "B. Une protection constitutionnelle désormais continue",
+              "points": [
+                "Complémentarité avec le contrôle a priori de l'article 61",
+                "Couverture de l'ensemble du cycle de vie de la loi",
+                "Un renforcement majeur de la protection des droits et libertés constitutionnellement garantis"
+              ]
+            }
+          ]
+        }
+      ],
+      "pitfalls": [
+        "Ne pas confondre l'article 61 (contrôle a priori, avant promulgation) et l'article 61-1 (QPC, contrôle a posteriori, après promulgation) : ce sont deux mécanismes temporellement et procéduralement distincts.",
+        "Ne pas dater l'élargissement de la saisine a priori (1974) de la création de la QPC (2008) : plus de trente ans séparent ces deux réformes du contrôle de constitutionnalité."
+      ]
+    },
+    "quiz": [
+      {
+        "q": "L'article 3 de la Constitution dispose que la souveraineté nationale appartient :",
+        "choices": [
+          "Au seul président de la République",
+          "Au peuple, qui l'exerce par ses représentants et par le référendum",
+          "Au Conseil constitutionnel",
+          "Aux collectivités territoriales"
+        ],
+        "answer": 1,
+        "why": "Une synthèse entre souveraineté nationale et souveraineté populaire."
+      },
+      {
+        "q": "En cas de vacance de la présidence, l'intérim est assuré, selon l'article 7, par :",
+        "choices": [
+          "Le Premier ministre",
+          "Le président du Sénat",
+          "Le président de l'Assemblée nationale",
+          "Le président du Conseil constitutionnel"
+        ],
+        "answer": 1,
+        "why": "C'est l'article 7 de la Constitution qui organise cet intérim."
+      },
+      {
+        "q": "L'article 55 organise :",
+        "choices": [
+          "Le domaine de la loi",
+          "La hiérarchie entre traités et lois",
+          "Les pouvoirs exceptionnels du président",
+          "La révision constitutionnelle"
+        ],
+        "answer": 1,
+        "why": "Les traités priment sur les lois internes."
+      },
+      {
+        "q": "La saisine a priori du Conseil constitutionnel par 60 députés ou 60 sénateurs est prévue par :",
+        "choices": [
+          "L'article 16",
+          "L'article 55",
+          "L'article 61, alinéa 2",
+          "L'article 61-1"
+        ],
+        "answer": 2,
+        "why": "Un élargissement introduit par la révision constitutionnelle de 1974."
+      },
+      {
+        "q": "La question prioritaire de constitutionnalité (QPC) est créée par :",
+        "choices": [
+          "L'article 16",
+          "L'article 61",
+          "L'article 61-1",
+          "L'article 89"
+        ],
+        "answer": 2,
+        "why": "Issu de la révision constitutionnelle de 2008, entrée en vigueur en 2010."
+      }
+    ]
+  },
+  {
+    "id": "articles-03",
+    "order": 3,
+    "title": "La Constitution de 1958 (III) : décentralisation et collectivités territoriales",
+    "teaser": "Articles 1er, 72, 72-2, 73 et 74 : la République « une et indivisible », mais décentralisée.",
+    "minutes": 5,
+    "brief": [
+      "L'**article 1er** de la Constitution proclame la République « indivisible, laïque, démocratique et sociale » — et, depuis la révision constitutionnelle du 28 mars 2003, précise que **« son organisation est décentralisée »**. Cet ajout ne remet pas en cause l'unité de la République : il consacre, au plus haut niveau des normes, un mouvement de décentralisation engagé depuis la loi Defferre de 1982.",
+      "L'**article 72** pose le principe de la **libre administration** des collectivités territoriales par des conseils élus. L'**article 72-2**, ajouté par la même révision de 2003, garantit leur **autonomie financière**, en encadrant la part des ressources propres dans leurs recettes totales.",
+      "Les **articles 73 et 74**, enfin, organisent des **statuts particuliers** pour certaines collectivités d'outre-mer — la Corse et les territoires ultramarins pouvant ainsi bénéficier d'adaptations spécifiques au droit commun, sans pour autant remettre en cause l'unité de la République."
+    ],
+    "keyPoints": [
+      "Article 1er (depuis 2003) : « son organisation est décentralisée », sans remise en cause du caractère indivisible de la République.",
+      "Article 72 : libre administration des collectivités territoriales par des conseils élus.",
+      "Article 72-2 : autonomie financière des collectivités territoriales.",
+      "Articles 73 et 74 : statuts particuliers pour les collectivités d'outre-mer et la Corse."
+    ],
+    "definitions": [
+      {
+        "term": "Article 1er",
+        "text": "République indivisible, laïque, démocratique et sociale ; depuis 2003, « son organisation est décentralisée »."
+      },
+      {
+        "term": "Article 72",
+        "text": "Libre administration des collectivités territoriales par des conseils élus."
+      },
+      {
+        "term": "Article 72-2",
+        "text": "Garantit l'autonomie financière des collectivités territoriales."
+      },
+      {
+        "term": "Articles 73 et 74",
+        "text": "Organisent des statuts particuliers pour les collectivités d'outre-mer."
+      }
+    ],
+    "exam": {
+      "kind": "question de cours",
+      "question": "En quoi l'ajout, en 2003, de la mention « son organisation est décentralisée » à l'article 1er de la Constitution ne remet-il pas en cause le caractère indivisible de la République ?",
+      "concise": "La révision constitutionnelle du 28 mars 2003 complète l'article 1er, qui proclamait déjà la République « indivisible, laïque, démocratique et sociale », en y ajoutant que « son organisation est décentralisée ». Cette formulation est soigneusement choisie : c'est l'organisation de la République qui est décentralisée, non la République elle-même qui cesserait d'être indivisible. La décentralisation, organisée par l'article 72 (libre administration des collectivités territoriales par des conseils élus) et renforcée par l'article 72-2 (autonomie financière), consiste en un partage de compétences à l'intérieur d'un ordre juridique et politique qui demeure unique. Elle se distingue ainsi radicalement du fédéralisme, où chaque État fédéré dispose de sa propre constitution et d'un ordre juridique distinct. Les statuts particuliers accordés par les articles 73 et 74 à certaines collectivités d'outre-mer, aussi poussés soient-ils, restent eux aussi des adaptations du droit commun décidées par l'État central, et non des prérogatives propres à ces collectivités.",
+      "plan": [
+        {
+          "title": "I. Une décentralisation constitutionnellement encadrée",
+          "children": [
+            {
+              "title": "A. L'article 1er, entre indivisibilité et décentralisation",
+              "points": [
+                "République indivisible, laïque, démocratique et sociale",
+                "Ajout de 2003 : « son organisation est décentralisée »",
+                "C'est l'organisation, non la République elle-même, qui est décentralisée"
+              ]
+            },
+            {
+              "title": "B. La libre administration des collectivités territoriales",
+              "points": [
+                "Article 72 : conseils élus",
+                "Article 72-2 : autonomie financière",
+                "Un partage de compétences, non une souveraineté propre aux collectivités"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "II. Une décentralisation distincte du fédéralisme",
+          "children": [
+            {
+              "title": "A. L'absence d'ordre juridique propre aux collectivités",
+              "points": [
+                "Pas de constitution locale, contrairement à un État fédéré",
+                "Un ordre politique et constitutionnel qui reste unique",
+                "Une différence de nature, non seulement de degré, avec le fédéralisme"
+              ]
+            },
+            {
+              "title": "B. Des statuts particuliers qui restent décidés par l'État central",
+              "points": [
+                "Articles 73 et 74 : adaptations pour l'outre-mer et la Corse",
+                "Des dérogations au droit commun, accordées et non conquises",
+                "Une souplesse compatible avec l'indivisibilité de la République"
+              ]
+            }
+          ]
+        }
+      ],
+      "pitfalls": [
+        "Ne pas présenter la décentralisation comme une remise en cause de l'indivisibilité de la République affirmée par l'article 1er : ce sont deux principes constitutionnels qui coexistent explicitement dans le même article depuis 2003.",
+        "Ne pas confondre les statuts particuliers des articles 73 et 74 (adaptations décidées par l'État) avec une autonomie constitutionnelle propre aux collectivités concernées : elles restent soumises à la Constitution française."
+      ]
+    },
+    "quiz": [
+      {
+        "q": "La mention « son organisation est décentralisée » est ajoutée à l'article 1er en :",
+        "choices": [
+          "1982",
+          "1991",
+          "2003",
+          "2010"
+        ],
+        "answer": 2,
+        "why": "Par la révision constitutionnelle du 28 mars 2003."
+      },
+      {
+        "q": "L'article 72 pose le principe de :",
+        "choices": [
+          "La souveraineté nationale",
+          "La libre administration des collectivités territoriales",
+          "La primauté des traités",
+          "La révision constitutionnelle"
+        ],
+        "answer": 1,
+        "why": "Par des conseils élus."
+      },
+      {
+        "q": "L'autonomie financière des collectivités territoriales est garantie par l'article :",
+        "choices": [
+          "72",
+          "72-2",
+          "73",
+          "74"
+        ],
+        "answer": 1,
+        "why": "Ajouté par la même révision constitutionnelle de 2003."
+      },
+      {
+        "q": "Les statuts particuliers pour les collectivités d'outre-mer sont organisés par les articles :",
+        "choices": [
+          "1er et 72",
+          "72 et 72-2",
+          "73 et 74",
+          "89"
+        ],
+        "answer": 2,
+        "why": "Permettant des adaptations spécifiques au droit commun."
+      },
+      {
+        "q": "La décentralisation française se distingue du fédéralisme parce que :",
+        "choices": [
+          "Les collectivités disposent de leur propre constitution",
+          "L'ordre politique et constitutionnel reste unique",
+          "L'État central n'a plus aucune compétence",
+          "Les régions peuvent faire sécession"
+        ],
+        "answer": 1,
+        "why": "Contrairement à un État fédéral, il n'existe pas d'ordre juridique propre aux collectivités territoriales françaises."
+      }
+    ]
+  },
+  {
+    "id": "articles-04",
+    "order": 4,
+    "title": "La Déclaration des droits de l'homme et du citoyen de 1789",
+    "teaser": "Sept articles fondateurs, du principe d'égalité à la séparation des pouvoirs.",
+    "minutes": 5,
+    "brief": [
+      "La DDHC ouvre par deux articles de portée générale : l'**article 1er** proclame que les hommes « naissent et demeurent libres et égaux en droits », consacrant l'abolition des privilèges ; l'**article 2** énonce les **droits naturels et inaliénables** de l'homme (liberté, propriété, sûreté, résistance à l'oppression). L'**article 3** affirme que le **principe de toute souveraineté réside essentiellement dans la Nation** — fondement textuel de la théorie de la souveraineté nationale défendue par Sieyès.",
+      "Sur le plan pénal, l'**article 6** exige que la loi soit **la même pour tous**, qu'elle protège ou qu'elle punisse — principe d'**égalité devant la loi** ; l'**article 8** pose le principe de **légalité des délits et des peines**, garantie fondamentale du droit pénal. L'**article 11** proclame la **liberté d'expression, de croyance et de pensée**, l'une des libertés les plus fondamentales du texte.",
+      "Enfin, l'**article 16** contient la formule sans doute la plus célèbre de la Déclaration : « Toute société dans laquelle la garantie des droits n'est pas assurée, ni la séparation des pouvoirs déterminée, n'a point de Constitution. » Cet article fonde à lui seul deux exigences essentielles du droit constitutionnel moderne : la garantie des droits et libertés, et la séparation des pouvoirs — il est notamment le fondement textuel de l'**indépendance de la justice**."
+    ],
+    "keyPoints": [
+      "Articles 1er et 2 : égalité en droits et droits naturels et inaliénables (liberté, propriété, sûreté, résistance à l'oppression).",
+      "Article 3 : la souveraineté réside dans la Nation — fondement de la souveraineté nationale (Sieyès).",
+      "Articles 6 et 8 : égalité devant la loi, légalité des délits et des peines.",
+      "Article 16 : garantie des droits et séparation des pouvoirs — fondement de l'indépendance de la justice."
+    ],
+    "definitions": [
+      {
+        "term": "Article 1er",
+        "text": "Les hommes naissent et demeurent libres et égaux en droits — abolition des privilèges."
+      },
+      {
+        "term": "Article 3",
+        "text": "Le principe de toute souveraineté réside essentiellement dans la Nation — fondement de la souveraineté nationale."
+      },
+      {
+        "term": "Article 6",
+        "text": "La loi doit être la même pour tous, qu'elle protège ou qu'elle punisse — égalité devant la loi."
+      },
+      {
+        "term": "Article 8",
+        "text": "Légalité des délits et des peines : garantie fondamentale du droit pénal."
+      },
+      {
+        "term": "Article 16",
+        "text": "« Toute société dans laquelle la garantie des droits n'est pas assurée, ni la séparation des pouvoirs déterminée, n'a point de Constitution. »"
+      }
+    ],
+    "exam": {
+      "kind": "question de cours",
+      "question": "En quoi l'article 16 de la DDHC de 1789 pose-t-il les deux exigences fondatrices du constitutionnalisme moderne ?",
+      "concise": "L'article 16 de la Déclaration des droits de l'homme et du citoyen énonce une formule d'une portée considérable : « Toute société dans laquelle la garantie des droits n'est pas assurée, ni la séparation des pouvoirs déterminée, n'a point de Constitution. » Cette phrase pose deux exigences cumulatives, sans lesquelles un texte, même appelé « Constitution », ne mériterait pas ce nom au sens du constitutionnalisme moderne. La première est la garantie effective des droits : il ne suffit pas de proclamer des droits, comme le font les articles 1er (égalité), 2 (droits naturels), 6 (égalité devant la loi) ou 8 (légalité des délits et des peines) — encore faut-il que leur respect soit effectivement assuré, notamment par un juge indépendant. La seconde exigence, la séparation des pouvoirs, est directement liée à la première : sans une organisation du pouvoir qui empêche sa concentration entre les mêmes mains, aucune garantie des droits ne peut être durable. C'est sur ce fondement textuel que repose, aujourd'hui encore, la valeur constitutionnelle reconnue à l'indépendance de la justice — une garantie de droits sans séparation des pouvoirs, ou une séparation des pouvoirs sans garantie des droits, ne suffiraient pas, l'une comme l'autre, à fonder une véritable Constitution.",
+      "plan": [
+        {
+          "title": "I. La garantie des droits, première exigence de l'article 16",
+          "children": [
+            {
+              "title": "A. Des droits proclamés dès les premiers articles",
+              "points": [
+                "Article 1er : égalité en droits",
+                "Article 2 : droits naturels et inaliénables",
+                "Articles 6 et 8 : égalité devant la loi, légalité des délits et des peines"
+              ]
+            },
+            {
+              "title": "B. Une garantie qui ne se réduit pas à la proclamation",
+              "points": [
+                "La simple énonciation d'un droit ne suffit pas",
+                "Nécessité d'un mécanisme effectif de protection",
+                "Le rôle du juge dans cette garantie effective"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "II. La séparation des pouvoirs, condition de cette garantie",
+          "children": [
+            {
+              "title": "A. Une exigence directement liée à la première",
+              "points": [
+                "Sans séparation des pouvoirs, aucune garantie durable des droits",
+                "Le risque de concentration du pouvoir entre les mêmes mains",
+                "Un lien logique entre les deux moitiés de la formule"
+              ]
+            },
+            {
+              "title": "B. Le fondement constitutionnel de l'indépendance de la justice",
+              "points": [
+                "L'article 16 comme source textuelle de cette indépendance",
+                "Une valeur constitutionnelle reconnue par le Conseil constitutionnel",
+                "Deux exigences cumulatives, aucune ne suffisant seule à fonder une Constitution"
+              ]
+            }
+          ]
+        }
+      ],
+      "pitfalls": [
+        "Ne pas résumer l'article 16 à la seule séparation des pouvoirs : la garantie des droits en est le premier terme, tout aussi essentiel.",
+        "Ne pas confondre l'article 3 (souveraineté dans la Nation) avec l'article 16 (garantie des droits et séparation des pouvoirs) : ce sont deux apports distincts de la DDHC, sur des sujets différents."
+      ]
+    },
+    "quiz": [
+      {
+        "q": "L'article 3 de la DDHC affirme que le principe de toute souveraineté réside dans :",
+        "choices": [
+          "Le roi",
+          "La Nation",
+          "Le peuple directement",
+          "Le Parlement"
+        ],
+        "answer": 1,
+        "why": "Fondement textuel de la théorie de la souveraineté nationale."
+      },
+      {
+        "q": "Le principe de légalité des délits et des peines est posé par l'article :",
+        "choices": [
+          "1er",
+          "6",
+          "8",
+          "16"
+        ],
+        "answer": 2,
+        "why": "Une garantie fondamentale du droit pénal."
+      },
+      {
+        "q": "L'article 6 pose le principe :",
+        "choices": [
+          "De la séparation des pouvoirs",
+          "De l'égalité devant la loi",
+          "De la légalité des peines",
+          "De la souveraineté nationale"
+        ],
+        "answer": 1,
+        "why": "La loi doit être la même pour tous, qu'elle protège ou qu'elle punisse."
+      },
+      {
+        "q": "L'article 16 énonce deux exigences cumulatives :",
+        "choices": [
+          "Égalité et fraternité",
+          "Garantie des droits et séparation des pouvoirs",
+          "Liberté et propriété",
+          "Souveraineté nationale et suffrage universel"
+        ],
+        "answer": 1,
+        "why": "Sans ces deux éléments réunis, une société « n'a point de Constitution »."
+      },
+      {
+        "q": "Les droits naturels et inaliénables de l'homme sont énumérés par l'article :",
+        "choices": [
+          "1er",
+          "2",
+          "3",
+          "11"
+        ],
+        "answer": 1,
+        "why": "Liberté, propriété, sûreté et résistance à l'oppression."
+      }
+    ]
+  }
+]

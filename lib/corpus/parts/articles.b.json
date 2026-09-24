@@ -1,0 +1,602 @@
+[
+  {
+    "id": "articles-05",
+    "order": 5,
+    "title": "Le Code civil : sources, principes généraux et personnes",
+    "teaser": "Articles 1er, 4, 5, 6, 9, 425 et 544 : les fondations du droit civil, avant même le contrat.",
+    "minutes": 5,
+    "brief": [
+      "Les tout premiers articles du Code civil posent les règles du jeu de l'ordre juridique lui-même. L'**article 1er** fixe les modalités d'**entrée en vigueur des lois**. L'**article 4** interdit au juge tout **déni de justice** : il ne peut refuser de juger sous prétexte que la loi est obscure ou insuffisante. L'**article 5** interdit symétriquement les **arrêts de règlement** : un juge ne peut trancher un litige par voie de disposition générale s'imposant aux affaires futures — il n'existe pas, en droit français, de règle stricte du précédent.",
+      "L'**article 6** interdit de déroger, par convention, aux lois qui intéressent l'**ordre public et les bonnes mœurs** — un principe qui limite la liberté contractuelle au nom de l'intérêt général. L'**article 9** consacre le **droit au respect de la vie privée**, fondement civil de nombreux contentieux contemporains (image, correspondance, données personnelles).",
+      "Deux autres articles protègent la personne elle-même : l'**article 425** organise les régimes de protection des **majeurs vulnérables** (sauvegarde de justice, curatelle, tutelle) ; l'**article 544**, enfin, définit la **propriété** comme « le droit de jouir et disposer des choses de la manière la plus absolue », la présentant comme le droit réel le plus étendu que le Code civil reconnaisse."
+    ],
+    "keyPoints": [
+      "Article 4 (interdiction du déni de justice) et article 5 (interdiction des arrêts de règlement) : deux garanties de la fonction de juger.",
+      "Article 6 : l'ordre public et les bonnes mœurs, limites à la liberté contractuelle.",
+      "Article 9 : le droit au respect de la vie privée.",
+      "Article 425 (majeurs protégés) et article 544 (la propriété, droit le plus absolu)."
+    ],
+    "definitions": [
+      {
+        "term": "Article 4",
+        "text": "Interdit au juge tout déni de justice : il ne peut refuser de juger au motif que la loi est obscure ou insuffisante."
+      },
+      {
+        "term": "Article 5",
+        "text": "Interdit les arrêts de règlement : un juge ne peut trancher par une disposition générale s'imposant aux litiges futurs."
+      },
+      {
+        "term": "Article 6",
+        "text": "Interdit de déroger, par convention, aux lois qui intéressent l'ordre public et les bonnes mœurs."
+      },
+      {
+        "term": "Article 9",
+        "text": "Consacre le droit au respect de la vie privée."
+      },
+      {
+        "term": "Article 544",
+        "text": "Définit la propriété comme le droit de jouir et disposer des choses de la manière la plus absolue."
+      }
+    ],
+    "exam": {
+      "kind": "question de cours",
+      "question": "En quoi les articles 4 et 5 du Code civil organisent-ils, ensemble, la place du juge dans l'ordre juridique français ?",
+      "concise": "Les articles 4 et 5 du Code civil définissent, en miroir l'un de l'autre, les limites de l'office du juge. L'article 4 lui interdit le déni de justice : quelle que soit l'obscurité ou l'insuffisance de la loi, le juge a l'obligation de trancher le litige qui lui est soumis, sous peine d'engager sa responsabilité. Cette obligation positive de juger a pour contrepartie, à l'article 5, une interdiction symétrique : celle des arrêts de règlement, par lesquels un juge prétendrait fixer, à l'occasion d'un litige particulier, une règle générale s'imposant à toutes les affaires futures similaires. Ensemble, ces deux articles dessinent la place précise du juge dans l'ordre juridique français : il doit trancher chaque litige qui lui est soumis, aussi difficile soit-il, mais sa décision ne vaut que pour ce litige — elle ne crée pas de règle de portée générale, à la différence de ce que permet le système de precedent des pays de common law. C'est cette combinaison qui explique, en droit français, le rôle secondaire traditionnellement reconnu à la jurisprudence comme source du droit, par rapport à la loi elle-même.",
+      "plan": [
+        {
+          "title": "I. Une obligation positive de juger (article 4)",
+          "children": [
+            {
+              "title": "A. L'interdiction du déni de justice",
+              "points": [
+                "Le juge doit trancher, même si la loi est obscure ou insuffisante",
+                "Un refus de juger engagerait sa responsabilité",
+                "Une garantie essentielle de l'accès à la justice"
+              ]
+            },
+            {
+              "title": "B. Une obligation qui suppose l'interprétation",
+              "points": [
+                "Face à une loi lacunaire, le juge doit interpréter, pas s'abstenir",
+                "Le rôle de la jurisprudence comme source d'interprétation",
+                "Un équilibre entre obéissance à la loi et nécessité de trancher"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "II. Une interdiction symétrique de légiférer par jugement (article 5)",
+          "children": [
+            {
+              "title": "A. L'interdiction des arrêts de règlement",
+              "points": [
+                "Le juge ne peut fixer une règle générale s'imposant aux affaires futures",
+                "Chaque décision ne vaut que pour le litige tranché",
+                "Une différence fondamentale avec le système de precedent anglo-saxon"
+              ]
+            },
+            {
+              "title": "B. Les conséquences sur la place de la jurisprudence",
+              "points": [
+                "La jurisprudence n'est pas, en France, une source formelle du droit comparable à la loi",
+                "Un rôle d'interprétation et d'harmonisation, plutôt que de création normative générale",
+                "Un équilibre propre à la tradition juridique française, différent de la common law"
+              ]
+            }
+          ]
+        }
+      ],
+      "pitfalls": [
+        "Ne pas confondre le déni de justice (article 4, refus illégitime de juger) et un simple rejet de la demande au fond (le juge a bien jugé, il a seulement donné tort au demandeur) : ce sont deux situations totalement différentes.",
+        "Ne pas présenter l'article 5 comme interdisant toute évolution de la jurisprudence : il interdit seulement qu'un jugement particulier prenne la forme d'une règle générale et abstraite, pas que la jurisprudence évolue progressivement, décision après décision."
+      ]
+    },
+    "quiz": [
+      {
+        "q": "L'article 4 du Code civil interdit :",
+        "choices": [
+          "Les arrêts de règlement",
+          "Le déni de justice",
+          "La dérogation aux bonnes mœurs",
+          "Les atteintes à la vie privée"
+        ],
+        "answer": 1,
+        "why": "Le juge ne peut refuser de juger au motif que la loi est obscure ou insuffisante."
+      },
+      {
+        "q": "Les arrêts de règlement sont interdits par l'article :",
+        "choices": [
+          "4",
+          "5",
+          "6",
+          "9"
+        ],
+        "answer": 1,
+        "why": "Un juge ne peut trancher un litige par une règle générale s'imposant aux affaires futures."
+      },
+      {
+        "q": "L'article 6 du Code civil interdit de déroger, par convention, aux lois qui intéressent :",
+        "choices": [
+          "Le droit de propriété",
+          "L'ordre public et les bonnes mœurs",
+          "La vie privée",
+          "Le déni de justice"
+        ],
+        "answer": 1,
+        "why": "Une limite classique à la liberté contractuelle."
+      },
+      {
+        "q": "Le droit au respect de la vie privée est consacré par l'article :",
+        "choices": [
+          "4",
+          "5",
+          "6",
+          "9"
+        ],
+        "answer": 3,
+        "why": "Fondement civil de nombreux contentieux contemporains."
+      },
+      {
+        "q": "La propriété est définie, à l'article 544, comme :",
+        "choices": [
+          "Un droit relatif et limité",
+          "Le droit de jouir et disposer des choses de la manière la plus absolue",
+          "Un droit réservé à l'État",
+          "Un droit subordonné à l'intérêt général uniquement"
+        ],
+        "answer": 1,
+        "why": "Le droit réel le plus étendu que reconnaisse le Code civil."
+      }
+    ]
+  },
+  {
+    "id": "articles-06",
+    "order": 6,
+    "title": "Le Code civil : la formation du contrat",
+    "teaser": "Articles 1100-1 à 1121 : de la définition du contrat à la théorie de la réception, la mécanique de sa formation.",
+    "minutes": 6,
+    "brief": [
+      "Le Code civil distingue, aux **articles 1100-1 et 1100-2**, l'**acte juridique** (manifestation de volonté destinée à produire des effets de droit) du **fait juridique** (événement auquel la loi attache des effets de droit, indépendamment de toute volonté). Le **contrat**, défini à l'**article 1101**, est l'acte juridique par excellence : « un accord de volontés entre deux ou plusieurs personnes destiné à créer, modifier, transmettre ou éteindre des obligations ». Avant la réforme de 2016, l'**article 1108 (ancien)** exigeait quatre conditions de validité (consentement, capacité, objet certain, cause licite) — un texte aujourd'hui abrogé.",
+      "La formation du contrat proprement dite repose sur la rencontre de deux volontés, organisée par l'**article 1113** : une **offre** et une **acceptation**. L'**article 1114** définit l'offre par sa **fermeté** et sa **précision** ; l'**article 1115** autorise sa **libre rétractation** tant qu'elle n'est pas parvenue à son destinataire, tandis que l'**article 1116** engage la **responsabilité extracontractuelle** de son auteur en cas de rétractation fautive après réception. L'**article 1117** prévoit la **caducité** de l'offre en cas de décès ou d'incapacité de son auteur.",
+      "L'**article 1118** définit à son tour l'**acceptation**. Principe classique du droit des contrats, l'**article 1120** dispose que le **silence ne vaut pas acceptation** — sauf circonstances particulières (usage, relations d'affaires habituelles). Enfin, l'**article 1121** consacre la **théorie de la réception** : le contrat est formé au moment où l'acceptation **parvient** à l'auteur de l'offre, et non au moment où elle est simplement émise."
+    ],
+    "keyPoints": [
+      "Article 1100-1/1100-2 : acte juridique et fait juridique ; article 1101 : définition du contrat.",
+      "Article 1113 : formation du contrat par la rencontre de l'offre (art. 1114) et de l'acceptation (art. 1118).",
+      "Article 1120 : le silence ne vaut pas acceptation — principe classique, avec des exceptions.",
+      "Article 1121 : théorie de la réception, le contrat se forme quand l'acceptation parvient à l'offrant."
+    ],
+    "definitions": [
+      {
+        "term": "Article 1101",
+        "text": "Définit le contrat comme un accord de volontés destiné à créer, modifier, transmettre ou éteindre des obligations."
+      },
+      {
+        "term": "Article 1114",
+        "text": "Définit l'offre par sa fermeté et sa précision."
+      },
+      {
+        "term": "Article 1116",
+        "text": "La rétractation fautive d'une offre déjà reçue engage la responsabilité extracontractuelle de son auteur."
+      },
+      {
+        "term": "Article 1120",
+        "text": "Le silence ne vaut pas acceptation, sauf circonstances particulières."
+      },
+      {
+        "term": "Article 1121",
+        "text": "Théorie de la réception : le contrat se forme au moment où l'acceptation parvient à l'auteur de l'offre."
+      }
+    ],
+    "exam": {
+      "kind": "question de cours",
+      "question": "Comment les articles 1114 à 1121 du Code civil organisent-ils la rencontre de l'offre et de l'acceptation dans la formation du contrat ?",
+      "concise": "La formation du contrat repose, selon l'article 1113 du Code civil, sur la rencontre d'une offre et d'une acceptation. L'offre, définie à l'article 1114, doit être ferme et précise pour valoir engagement ; elle peut être librement rétractée tant qu'elle n'est pas parvenue à son destinataire (article 1115), mais sa rétractation devient fautive, et engage la responsabilité extracontractuelle de son auteur, une fois qu'elle a été reçue (article 1116). Elle devient enfin caduque en cas de décès ou d'incapacité de son auteur (article 1117). Face à cette offre, l'acceptation, définie à l'article 1118, doit exprimer une volonté claire de conclure le contrat aux conditions proposées : le silence, en principe, ne vaut pas acceptation, sauf circonstances particulières prévues à l'article 1120 (usages, relations d'affaires habituelles, offre faite dans l'intérêt exclusif de son destinataire). Le moment précis de la formation du contrat est enfin fixé par l'article 1121, qui consacre la théorie de la réception : ce n'est pas le moment où l'acceptant exprime son accord qui compte, mais celui où cette acceptation parvient effectivement à l'auteur de l'offre — une précision essentielle pour déterminer, notamment, le lieu et la date de formation d'un contrat conclu à distance.",
+      "plan": [
+        {
+          "title": "I. L'offre, premier élément de la rencontre des volontés",
+          "children": [
+            {
+              "title": "A. Une offre ferme et précise",
+              "points": [
+                "Définition à l'article 1114",
+                "La fermeté distingue l'offre d'une simple invitation à entrer en pourparlers",
+                "La précision permet la formation immédiate du contrat par la seule acceptation"
+              ]
+            },
+            {
+              "title": "B. Le régime de la rétractation et de la caducité",
+              "points": [
+                "Libre rétractation avant réception (article 1115)",
+                "Rétractation fautive après réception : responsabilité extracontractuelle (article 1116)",
+                "Caducité en cas de décès ou d'incapacité de l'offrant (article 1117)"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "II. L'acceptation et le moment de formation du contrat",
+          "children": [
+            {
+              "title": "A. L'acceptation et le principe du silence",
+              "points": [
+                "Définition à l'article 1118",
+                "Le silence ne vaut pas acceptation (article 1120)",
+                "Des exceptions limitées : usages, relations d'affaires habituelles"
+              ]
+            },
+            {
+              "title": "B. La théorie de la réception (article 1121)",
+              "points": [
+                "Le contrat se forme quand l'acceptation parvient à l'offrant",
+                "Une importance pratique pour les contrats conclus à distance",
+                "Détermine le lieu et la date de formation du contrat"
+              ]
+            }
+          ]
+        }
+      ],
+      "pitfalls": [
+        "Ne pas confondre la rétractation de l'offre avant réception (libre, article 1115) et après réception (fautive, article 1116) : le régime dépend uniquement du moment où l'offre parvient à son destinataire.",
+        "Ne pas présenter le principe du silence ne valant pas acceptation (article 1120) comme absolu : le même article prévoit des exceptions, notamment en présence d'usages ou de relations d'affaires habituelles entre les parties."
+      ]
+    },
+    "quiz": [
+      {
+        "q": "Le contrat est défini par l'article :",
+        "choices": [
+          "1100-1",
+          "1101",
+          "1113",
+          "1121"
+        ],
+        "answer": 1,
+        "why": "Un accord de volontés destiné à créer, modifier, transmettre ou éteindre des obligations."
+      },
+      {
+        "q": "L'offre doit être, selon l'article 1114 :",
+        "choices": [
+          "Écrite et enregistrée",
+          "Ferme et précise",
+          "Irrévocable en toutes circonstances",
+          "Adressée à une personne déterminée uniquement"
+        ],
+        "answer": 1,
+        "why": "Ces deux qualités distinguent l'offre d'une simple invitation à entrer en pourparlers."
+      },
+      {
+        "q": "La rétractation d'une offre déjà reçue par son destinataire :",
+        "choices": [
+          "Est toujours libre",
+          "Engage la responsabilité extracontractuelle de son auteur",
+          "Rend le contrat automatiquement formé",
+          "Est sans conséquence juridique"
+        ],
+        "answer": 1,
+        "why": "Article 1116 du Code civil."
+      },
+      {
+        "q": "Le principe selon lequel le silence ne vaut pas acceptation est posé par l'article :",
+        "choices": [
+          "1114",
+          "1117",
+          "1120",
+          "1121"
+        ],
+        "answer": 2,
+        "why": "Avec des exceptions limitées (usages, relations d'affaires habituelles)."
+      },
+      {
+        "q": "Selon la théorie de la réception (article 1121), le contrat se forme :",
+        "choices": [
+          "Quand l'offre est émise",
+          "Quand l'acceptation est émise",
+          "Quand l'acceptation parvient à l'auteur de l'offre",
+          "Quand le contrat est signé par un notaire"
+        ],
+        "answer": 2,
+        "why": "Une précision essentielle pour les contrats conclus à distance."
+      }
+    ]
+  },
+  {
+    "id": "articles-07",
+    "order": 7,
+    "title": "Le Code civil : validité du contrat et vices du consentement",
+    "teaser": "Articles 1128 à 1145 : les trois conditions de validité et les trois vices qui peuvent l'annuler.",
+    "minutes": 6,
+    "brief": [
+      "Depuis la réforme de 2016, l'**article 1128** ne retient plus que **trois conditions de validité** du contrat : le **consentement** des parties, leur **capacité** de contracter (article 1145) et un **contenu licite et certain** (article 1162, qui interdit toute dérogation à l'ordre public, et article 1163, sur la prestation, présente ou future, déterminée ou déterminable, et possible) — contre quatre conditions auparavant.",
+      "Le consentement doit être **exempt de vices**, sous peine de **nullité relative** (article 1131) : les **articles 1130 à 1144** organisent le régime de ces vices. L'**erreur** (articles 1132-1133) n'est cause de nullité que si elle porte sur les **qualités essentielles** de la prestation ou du cocontractant ; l'erreur sur la valeur ou sur un simple motif n'est en principe pas sanctionnée (articles 1135-1136). Le **dol** (article 1137) recouvre les manœuvres frauduleuses, y compris la **réticence dolosive** — le silence gardé sur une information déterminante.",
+      "La **violence** (article 1140) est le troisième vice du consentement : elle peut être physique ou morale, et l'**article 1143** reconnaît désormais expressément la **violence économique**, exercée en abusant de l'état de dépendance d'un cocontractant pour obtenir un avantage manifestement excessif."
+    ],
+    "keyPoints": [
+      "Article 1128 : depuis 2016, trois conditions de validité du contrat (consentement, capacité, contenu licite et certain), contre quatre auparavant.",
+      "Article 1131 : les vices du consentement sont sanctionnés par la nullité relative.",
+      "Erreur (art. 1132-1133, qualités essentielles), dol (art. 1137, y compris réticence dolosive), violence (art. 1140, y compris violence économique, art. 1143) : les trois vices du consentement.",
+      "Articles 1162 et 1163 : le contenu du contrat doit être licite (conforme à l'ordre public) et certain (prestation déterminée ou déterminable, possible)."
+    ],
+    "definitions": [
+      {
+        "term": "Article 1128",
+        "text": "Fixe les trois conditions de validité du contrat depuis 2016 : consentement, capacité, contenu licite et certain."
+      },
+      {
+        "term": "Article 1131",
+        "text": "Les vices du consentement sont sanctionnés par la nullité relative du contrat."
+      },
+      {
+        "term": "Article 1132",
+        "text": "L'erreur n'est cause de nullité que si elle porte sur les qualités essentielles de la prestation ou du cocontractant."
+      },
+      {
+        "term": "Article 1137",
+        "text": "Définit le dol, y compris la réticence dolosive (silence gardé sur une information déterminante)."
+      },
+      {
+        "term": "Article 1143",
+        "text": "Consacre la violence économique, exercée en abusant de l'état de dépendance d'un cocontractant."
+      }
+    ],
+    "exam": {
+      "kind": "question de cours",
+      "question": "Comparez les trois vices du consentement organisés par les articles 1130 à 1144 du Code civil.",
+      "concise": "Le Code civil organise trois vices du consentement, tous sanctionnés par la nullité relative du contrat en application de l'article 1131. L'erreur, régie par les articles 1132 et 1133, suppose une représentation inexacte de la réalité par l'une des parties : elle n'est cause de nullité que si elle porte sur les qualités essentielles de la prestation attendue ou, dans certains cas, du cocontractant lui-même — l'erreur sur la valeur ou sur un simple motif restant en principe indifférente, conformément aux articles 1135 et 1136. Le dol, défini à l'article 1137, suppose au contraire une manœuvre frauduleuse d'une partie destinée à tromper l'autre : il inclut désormais expressément la réticence dolosive, c'est-à-dire le silence gardé sur une information dont on savait le caractère déterminant pour le consentement du cocontractant. La violence, enfin, régie par l'article 1140, se distingue des deux précédents en ce qu'elle n'affecte pas la représentation de la réalité mais la liberté même du consentement : la partie contracte sous la contrainte, qu'elle soit physique, morale, ou, depuis la reconnaissance de la violence économique à l'article 1143, tirée de l'exploitation abusive d'un état de dépendance économique. Ces trois vices, bien que sanctionnés de la même manière, protègent ainsi des aspects distincts du consentement : sa lucidité pour l'erreur, sa loyauté pour le dol, sa liberté pour la violence.",
+      "plan": [
+        {
+          "title": "I. L'erreur et le dol : des vices affectant la représentation de la réalité",
+          "children": [
+            {
+              "title": "A. L'erreur, une représentation inexacte",
+              "points": [
+                "Doit porter sur les qualités essentielles (article 1132)",
+                "L'erreur sur la valeur ou le motif n'est en principe pas sanctionnée",
+                "Un vice qui n'implique aucune faute du cocontractant"
+              ]
+            },
+            {
+              "title": "B. Le dol, une tromperie intentionnelle",
+              "points": [
+                "Manœuvres frauduleuses (article 1137)",
+                "Inclut désormais la réticence dolosive",
+                "Un vice qui suppose, à la différence de l'erreur, une faute du cocontractant"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "II. La violence, un vice affectant la liberté du consentement",
+          "children": [
+            {
+              "title": "A. Une atteinte distincte de l'erreur et du dol",
+              "points": [
+                "Article 1140 : violence physique ou morale",
+                "N'affecte pas la lucidité mais la liberté de consentir",
+                "Une contrainte exercée pour obtenir le consentement"
+              ]
+            },
+            {
+              "title": "B. La reconnaissance de la violence économique",
+              "points": [
+                "Article 1143, apport de la réforme de 2016",
+                "Abus de l'état de dépendance économique d'un cocontractant",
+                "Avantage manifestement excessif obtenu par cet abus"
+              ]
+            }
+          ]
+        }
+      ],
+      "pitfalls": [
+        "Ne pas confondre l'erreur sur les qualités essentielles (sanctionnée) et l'erreur sur la valeur ou le simple motif (non sanctionnée, sauf exception) : c'est une distinction essentielle des articles 1132 à 1136.",
+        "Ne pas oublier que les trois vices du consentement, bien que de nature différente, sont tous sanctionnés par la même nullité relative (article 1131), et non par des sanctions distinctes."
+      ]
+    },
+    "quiz": [
+      {
+        "q": "Depuis la réforme de 2016, l'article 1128 retient :",
+        "choices": [
+          "Quatre conditions de validité du contrat",
+          "Trois conditions de validité du contrat",
+          "Deux conditions de validité du contrat",
+          "Aucune condition explicite"
+        ],
+        "answer": 1,
+        "why": "Consentement, capacité, contenu licite et certain — contre quatre conditions auparavant."
+      },
+      {
+        "q": "Les vices du consentement sont sanctionnés par :",
+        "choices": [
+          "La nullité absolue",
+          "La nullité relative",
+          "La résolution du contrat",
+          "Des dommages et intérêts uniquement"
+        ],
+        "answer": 1,
+        "why": "Conformément à l'article 1131 du Code civil."
+      },
+      {
+        "q": "La réticence dolosive est intégrée au vice de :",
+        "choices": [
+          "L'erreur",
+          "Le dol",
+          "La violence",
+          "L'incapacité"
+        ],
+        "answer": 1,
+        "why": "L'article 1137 l'inclut expressément dans la définition du dol."
+      },
+      {
+        "q": "La violence économique est reconnue par l'article :",
+        "choices": [
+          "1131",
+          "1137",
+          "1140",
+          "1143"
+        ],
+        "answer": 3,
+        "why": "Abus de l'état de dépendance économique d'un cocontractant."
+      },
+      {
+        "q": "L'erreur n'est cause de nullité que si elle porte sur :",
+        "choices": [
+          "La valeur de la prestation",
+          "Un simple motif personnel",
+          "Les qualités essentielles de la prestation ou du cocontractant",
+          "Le prix uniquement"
+        ],
+        "answer": 2,
+        "why": "Conformément aux articles 1132 et 1133 ; l'erreur sur la valeur ou le motif n'est en principe pas sanctionnée."
+      }
+    ]
+  },
+  {
+    "id": "articles-08",
+    "order": 8,
+    "title": "Le Code civil : bonne foi, inexécution du contrat et responsabilité",
+    "teaser": "Articles 1104, 1217 à 1240 : que se passe-t-il quand un contrat n'est pas exécuté ?",
+    "minutes": 6,
+    "brief": [
+      "L'**article 1104** impose l'**exécution de bonne foi** des contrats, à toutes les étapes de leur vie (négociation, formation, exécution) — une exigence d'ordre public, que les parties ne peuvent écarter. Avant 2016, l'**article 1184 (ancien)** organisait la **résolution judiciaire** comme voie de droit commun en cas d'inexécution ; ce n'est plus le cas aujourd'hui.",
+      "L'**article 1217** dresse la liste des **sanctions de l'inexécution** contractuelle, parmi lesquelles l'**exécution forcée en nature**, de principe (article 1221), la **réduction proportionnelle du prix** (article 1223), ou la **résolution** du contrat, organisée par les **articles 1224 à 1230** — celle-ci pouvant désormais intervenir par simple **notification unilatérale** du créancier (article 1226), sans intervention systématique du juge. Le créancier dispose aussi de deux mécanismes préventifs : l'**exception d'inexécution** (article 1219), qui lui permet de suspendre sa propre prestation face à l'inexécution de l'autre partie, et l'**exception pour risque d'inexécution** (article 1220), anticipant une inexécution future manifeste.",
+      "Hors du champ contractuel, l'**article 1240** fonde la **responsabilité civile extracontractuelle** — deuxième grande source des obligations avec le contrat. Sur le plan probatoire, l'**article 1359** exige une **preuve écrite** au-delà de 1 500 euros. Enfin, l'**article 1582**, resté célèbre, définit le **contrat de vente** — l'un des contrats spéciaux les plus anciens et les plus étudiés du Code civil."
+    ],
+    "keyPoints": [
+      "Article 1104 : exécution de bonne foi des contrats, exigence d'ordre public.",
+      "Article 1217 : liste des sanctions de l'inexécution (exécution forcée, réduction du prix, résolution...).",
+      "Articles 1219-1220 (exceptions d'inexécution) et 1224-1230 (résolution, notamment par notification unilatérale, art. 1226) : les réponses à l'inexécution.",
+      "Article 1240 (responsabilité extracontractuelle), article 1359 (preuve écrite au-delà de 1 500 €), article 1582 (définition de la vente)."
+    ],
+    "definitions": [
+      {
+        "term": "Article 1104",
+        "text": "Impose l'exécution de bonne foi des contrats, à toutes les étapes de leur vie — exigence d'ordre public."
+      },
+      {
+        "term": "Article 1217",
+        "text": "Dresse la liste des sanctions de l'inexécution contractuelle."
+      },
+      {
+        "term": "Article 1221",
+        "text": "Pose le principe de l'exécution forcée en nature en cas d'inexécution."
+      },
+      {
+        "term": "Article 1226",
+        "text": "Permet la résolution du contrat par simple notification unilatérale du créancier, sans intervention systématique du juge."
+      },
+      {
+        "term": "Article 1240",
+        "text": "Fonde la responsabilité civile extracontractuelle, deuxième grande source des obligations avec le contrat."
+      }
+    ],
+    "exam": {
+      "kind": "question de cours",
+      "question": "Quelles sont les principales sanctions de l'inexécution contractuelle prévues par les articles 1217 à 1230 du Code civil, et comment s'articulent-elles ?",
+      "concise": "L'article 1217 du Code civil dresse une liste ouverte des sanctions applicables en cas d'inexécution du contrat, que le créancier peut mobiliser selon les circonstances. Deux mécanismes lui permettent d'abord de réagir sans attendre l'intervention du juge : l'exception d'inexécution (article 1219), qui l'autorise à suspendre l'exécution de sa propre prestation tant que son cocontractant n'exécute pas la sienne, et l'exception pour risque d'inexécution (article 1220), qui anticipe une inexécution future manifeste. Lorsque l'inexécution est avérée, le créancier peut réclamer l'exécution forcée en nature, sanction de principe posée par l'article 1221 : le débiteur est contraint d'exécuter la prestation promise, plutôt que de se libérer par des dommages et intérêts. À défaut, une réduction proportionnelle du prix reste possible (article 1223), ou, plus radicalement, la résolution du contrat, organisée par les articles 1224 à 1230 — celle-ci pouvant désormais résulter d'une simple notification unilatérale du créancier au débiteur défaillant, sans passage obligatoire devant le juge (article 1226), une innovation majeure de la réforme de 2016 qui accélère considérablement le règlement des litiges contractuels les plus simples.",
+      "plan": [
+        {
+          "title": "I. Des mécanismes préventifs, sans intervention du juge",
+          "children": [
+            {
+              "title": "A. L'exception d'inexécution (article 1219)",
+              "points": [
+                "Suspension de sa propre prestation face à l'inexécution du cocontractant",
+                "Un mécanisme d'autoprotection du créancier",
+                "Aucune intervention préalable du juge nécessaire"
+              ]
+            },
+            {
+              "title": "B. L'exception pour risque d'inexécution (article 1220)",
+              "points": [
+                "Anticipation d'une inexécution future manifeste",
+                "Une innovation de la réforme de 2016",
+                "Renforce la protection du créancier avant même que l'inexécution ne survienne"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "II. Les sanctions de l'inexécution avérée",
+          "children": [
+            {
+              "title": "A. L'exécution forcée en nature, sanction de principe",
+              "points": [
+                "Article 1221",
+                "Le débiteur est contraint d'exécuter la prestation promise",
+                "Une priorité donnée à l'exécution réelle du contrat sur sa simple compensation financière"
+              ]
+            },
+            {
+              "title": "B. La résolution, entre intervention du juge et notification unilatérale",
+              "points": [
+                "Articles 1224 à 1230",
+                "Possibilité d'une résolution par simple notification (article 1226), sans juge",
+                "Une accélération du règlement des litiges contractuels les plus simples"
+              ]
+            }
+          ]
+        }
+      ],
+      "pitfalls": [
+        "Ne pas présenter l'exécution forcée en nature comme la seule sanction possible de l'inexécution : l'article 1217 en prévoit plusieurs, mobilisables selon les circonstances et parfois cumulativement.",
+        "Ne pas croire que la résolution du contrat nécessite toujours l'intervention du juge : depuis 2016, l'article 1226 permet une résolution par simple notification unilatérale du créancier."
+      ]
+    },
+    "quiz": [
+      {
+        "q": "L'exécution de bonne foi des contrats est exigée par l'article :",
+        "choices": [
+          "1101",
+          "1104",
+          "1217",
+          "1240"
+        ],
+        "answer": 1,
+        "why": "Une exigence d'ordre public, à toutes les étapes de la vie du contrat."
+      },
+      {
+        "q": "L'exception d'inexécution, prévue à l'article 1219, permet :",
+        "choices": [
+          "De résoudre immédiatement le contrat",
+          "De suspendre sa propre prestation face à l'inexécution du cocontractant",
+          "D'obtenir des dommages et intérêts automatiques",
+          "De modifier unilatéralement le contrat"
+        ],
+        "answer": 1,
+        "why": "Un mécanisme d'autoprotection du créancier, sans intervention du juge."
+      },
+      {
+        "q": "La sanction de principe de l'inexécution contractuelle est :",
+        "choices": [
+          "La résolution automatique",
+          "L'exécution forcée en nature",
+          "Les seuls dommages et intérêts",
+          "La nullité du contrat"
+        ],
+        "answer": 1,
+        "why": "Posée par l'article 1221 du Code civil."
+      },
+      {
+        "q": "Depuis 2016, la résolution du contrat peut intervenir :",
+        "choices": [
+          "Uniquement par décision du juge",
+          "Par simple notification unilatérale du créancier",
+          "Uniquement par accord des deux parties",
+          "Jamais sans procès"
+        ],
+        "answer": 1,
+        "why": "Article 1226 : une innovation qui accélère le règlement des litiges simples."
+      },
+      {
+        "q": "La responsabilité civile extracontractuelle est fondée sur l'article :",
+        "choices": [
+          "1104",
+          "1217",
+          "1240",
+          "1582"
+        ],
+        "answer": 2,
+        "why": "Deuxième grande source des obligations, avec le contrat."
+      }
+    ]
+  }
+]

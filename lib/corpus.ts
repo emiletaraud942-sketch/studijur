@@ -18,6 +18,13 @@ import obligationsA from "./corpus/parts/obligations.a.json";
 import auteursA from "./corpus/parts/auteurs.a.json";
 import auteursB from "./corpus/parts/auteurs.b.json";
 import auteursC from "./corpus/parts/auteurs.c.json";
+import datesA from "./corpus/parts/dates.a.json";
+import datesB from "./corpus/parts/dates.b.json";
+import datesC from "./corpus/parts/dates.c.json";
+import datesD from "./corpus/parts/dates.d.json";
+import articlesA from "./corpus/parts/articles.a.json";
+import articlesB from "./corpus/parts/articles.b.json";
+import articlesC from "./corpus/parts/articles.c.json";
 
 type RawLesson = Omit<Lesson, "courseId">;
 
@@ -32,6 +39,8 @@ const PARTS: Record<string, RawLesson[][]> = {
   methodo: [methodoA] as unknown as RawLesson[][],
   obligations: [obligationsA] as unknown as RawLesson[][],
   auteurs: [auteursA, auteursB, auteursC] as unknown as RawLesson[][],
+  dates: [datesA, datesB, datesC, datesD] as unknown as RawLesson[][],
+  articles: [articlesA, articlesB, articlesC] as unknown as RawLesson[][],
 };
 
 type Meta = {

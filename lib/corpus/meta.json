@@ -55,5 +55,21 @@
   "subtitle": "Les juristes, philosophes et penseurs cités dans tes cours : siècle, rôle, ouvrage, doctrine",
   "hue": "plum",
   "prefix": "auteurs"
+ },
+ {
+  "id": "dates",
+  "title": "Dates et événements",
+  "short": "Dates",
+  "subtitle": "Les repères chronologiques à connaître, de l'Antiquité aux réformes les plus récentes",
+  "hue": "gold",
+  "prefix": "dates"
+ },
+ {
+  "id": "articles",
+  "title": "Articles",
+  "short": "Articles",
+  "subtitle": "Les articles de loi et de traité à connaître, classés par texte et par thème",
+  "hue": "rust",
+  "prefix": "articles"
  }
 ]
