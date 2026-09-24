@@ -1,0 +1,623 @@
+[
+  {
+    "id": "auteurs-01",
+    "order": 1,
+    "title": "Les grands repères de la philosophie du droit",
+    "teaser": "D'Aristote à Kelsen : comment définir le droit, sa finalité et sa validité.",
+    "minutes": 6,
+    "brief": [
+      "**Aristote** (IVe siècle av. J.-C.), philosophe grec, pose l'une des définitions les plus anciennes de la justice : **attribuer à chacun ce qui lui est dû**. C'est le point de départ de toute réflexion sur la finalité du droit, encore citée aujourd'hui en introduction au droit.",
+      "**Emmanuel Kant** (1724-1804), philosophe allemand, souligne au contraire la difficulté de définir le droit lui-même : il y aurait, selon lui, **autant de définitions du droit que de personnes pour le proposer** — un paradoxe qui ouvre toute réflexion sur la notion de droit en L1.",
+      "**Rudolf von Ihering** (1818-1892), juriste allemand, résume dans une formule restée célèbre (1872) la fonction du droit dans la société : *« la fin du droit, c'est la paix ; le moyen d'y parvenir, c'est la lutte »* — le droit n'est pas un donné paisible, il se construit par le conflit d'intérêts qu'il vient ensuite discipliner.",
+      "**Hans Kelsen** (1881-1973), juriste et philosophe autrichien, fondateur du **positivisme normativiste**, représente l'ordre juridique comme une **pyramide posée sur sa pointe** : chaque norme tire sa validité non d'une quelconque conformité à la morale ou à la justice, mais de sa **conformité à la norme supérieure** — c'est la hiérarchie des normes, l'un des outils les plus utilisés du raisonnement juridique.",
+      "**Mireille Delmas-Marty** (1941-2022), professeure au Collège de France (chaire « Études juridiques comparatives et internationalisation du droit »), a consacré ses travaux au pluralisme juridique et à l'internationalisation du droit — la question de savoir comment reconnaître et articuler entre eux différents **ordres juridiques** (national, européen, international) à l'heure de la mondialisation du droit."
+    ],
+    "keyPoints": [
+      "Aristote : la justice, c'est attribuer à chacun ce qui lui est dû — la définition la plus ancienne du cours.",
+      "Kant souligne qu'il n'existe pas de définition unanime du droit ; Ihering le définit par sa fonction, la paix obtenue par la lutte.",
+      "Kelsen fonde le positivisme normativiste : une norme est valide parce que conforme à la norme supérieure, pas parce qu'elle est juste ou morale.",
+      "Delmas-Marty prolonge la réflexion à l'échelle internationale : comment penser la pluralité des ordres juridiques."
+    ],
+    "definitions": [
+      {
+        "term": "Aristote (IVe s. av. J.-C.)",
+        "text": "Philosophe grec : la justice consiste à attribuer à chacun ce qui lui est dû — l'une des définitions fondatrices de la justice en philosophie du droit."
+      },
+      {
+        "term": "Emmanuel Kant (1724-1804)",
+        "text": "Philosophe allemand : il y aurait autant de définitions du droit que de personnes pour le proposer, ce qui illustre la difficulté fondamentale de définir la notion même de droit."
+      },
+      {
+        "term": "Rudolf von Ihering (1818-1892)",
+        "text": "Juriste allemand : « la fin du droit, c'est la paix ; le moyen d'y parvenir, c'est la lutte » (1872) — le droit discipline un conflit d'intérêts, il ne le précède pas.",
+        "source": "1872"
+      },
+      {
+        "term": "Hans Kelsen (1881-1973)",
+        "text": "Juriste et philosophe autrichien, fondateur du positivisme normativiste : l'ordre juridique est une pyramide posée sur sa pointe, où chaque norme tire sa validité de sa conformité à la norme supérieure."
+      },
+      {
+        "term": "Mireille Delmas-Marty (1941-2022)",
+        "text": "Professeure au Collège de France : travaux sur le pluralisme juridique et l'internationalisation du droit, sur la manière de reconnaître et d'articuler différents ordres juridiques."
+      }
+    ],
+    "exam": {
+      "kind": "question de cours",
+      "question": "En quoi le positivisme normativiste de Kelsen renouvelle-t-il la question, posée dès Aristote, de ce qui rend une règle de droit valide ?",
+      "concise": "Pour Aristote, la justice consiste à attribuer à chacun ce qui lui est dû : la validité d'une règle se rattache alors, implicitement, à sa conformité à une finalité morale. Kant, en constatant qu'il existe autant de définitions du droit que d'auteurs pour le proposer, révèle la difficulté de fonder objectivement cette validité sur une notion aussi disputée que la justice. Kelsen répond à cette difficulté en rompant radicalement avec toute référence à la morale ou à la justice : une norme est valide, non parce qu'elle est juste, mais parce qu'elle est conforme à la norme qui lui est supérieure dans la hiérarchie des normes — la fameuse pyramide posée sur sa pointe. Cette approche positiviste, formaliste et autosuffisante du droit s'oppose donc aux conceptions plus anciennes qui rattachaient la validité de la règle à sa finalité (Aristote) ou à sa fonction sociale (Ihering, pour qui le droit est le moyen d'obtenir la paix par la discipline de la lutte).",
+      "plan": [
+        {
+          "title": "I. Une validité longtemps rattachée à une finalité extérieure au droit",
+          "children": [
+            {
+              "title": "A. Aristote : la justice comme fondement de la règle",
+              "points": [
+                "Attribuer à chacun ce qui lui est dû",
+                "Une conception téléologique, tournée vers la finalité de la règle",
+                "Une définition encore citée, mais insuffisante pour fonder juridiquement la validité"
+              ]
+            },
+            {
+              "title": "B. Ihering : le droit comme fonction sociale",
+              "points": [
+                "« La fin du droit, c'est la paix ; le moyen d'y parvenir, c'est la lutte »",
+                "Le droit discipline un conflit d'intérêts préexistant",
+                "Une validité toujours rattachée à une fonction, non à une forme"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "II. Kelsen : une validité purement formelle, indépendante de la morale",
+          "children": [
+            {
+              "title": "A. La pyramide des normes",
+              "points": [
+                "Chaque norme tire sa validité de sa conformité à la norme supérieure",
+                "Rupture avec toute référence à la justice ou à la morale",
+                "Fondement du positivisme normativiste contemporain"
+              ]
+            },
+            {
+              "title": "B. Une réponse au constat kantien de l'indéfinissabilité du droit",
+              "points": [
+                "Kant : autant de définitions du droit que de personnes pour le définir",
+                "Kelsen contourne la difficulté en formalisant la validité plutôt qu'en la fondant sur une notion disputée",
+                "Prolongement contemporain : Delmas-Marty et la pluralité des ordres juridiques"
+              ]
+            }
+          ]
+        }
+      ],
+      "pitfalls": [
+        "Ne pas confondre la validité d'une norme chez Kelsen (conformité formelle à la norme supérieure) avec sa légitimité morale ou sa justice : ce sont deux questions que le positivisme normativiste dissocie délibérément.",
+        "Ne pas présenter la formule d'Ihering comme une définition du droit : c'est une définition de sa fonction sociale, pas de sa nature."
+      ]
+    },
+    "quiz": [
+      {
+        "q": "Pour Aristote, la justice consiste à :",
+        "choices": [
+          "Imposer la volonté du plus fort",
+          "Attribuer à chacun ce qui lui est dû",
+          "Suivre la coutume",
+          "Appliquer la loi du souverain"
+        ],
+        "answer": 1,
+        "why": "C'est l'une des définitions les plus anciennes de la justice, encore citée en introduction au droit."
+      },
+      {
+        "q": "Selon Kant :",
+        "choices": [
+          "Le droit a une définition unique et incontestée",
+          "Il existe autant de définitions du droit que de personnes pour le proposer",
+          "Le droit se confond avec la morale",
+          "La loi et le droit sont identiques"
+        ],
+        "answer": 1,
+        "why": "Ce constat kantien illustre la difficulté fondamentale de définir la notion même de droit."
+      },
+      {
+        "q": "La formule « la fin du droit, c'est la paix ; le moyen d'y parvenir, c'est la lutte » est d'Ihering, publiée en :",
+        "choices": [
+          "1748",
+          "1872",
+          "1920",
+          "1999"
+        ],
+        "answer": 1,
+        "why": "Ihering résume ainsi, en 1872, la fonction sociale du droit."
+      },
+      {
+        "q": "Chez Kelsen, une norme est valide parce que :",
+        "choices": [
+          "Elle est juste et morale",
+          "Elle est conforme à la norme qui lui est supérieure",
+          "Elle est ancienne",
+          "Elle est votée à l'unanimité"
+        ],
+        "answer": 1,
+        "why": "C'est le principe même de la pyramide des normes : une validité purement formelle, indépendante de la morale."
+      },
+      {
+        "q": "Mireille Delmas-Marty est connue pour ses travaux sur :",
+        "choices": [
+          "Le droit des successions",
+          "Le pluralisme juridique et l'internationalisation du droit",
+          "Le droit du travail",
+          "Le droit pénal des mineurs uniquement"
+        ],
+        "answer": 1,
+        "why": "Professeure au Collège de France, elle a beaucoup travaillé sur l'articulation entre ordres juridiques national, européen et international."
+      }
+    ]
+  },
+  {
+    "id": "auteurs-02",
+    "order": 2,
+    "title": "Les artisans du droit civil français",
+    "teaser": "De Portalis à Carbonnier : ceux qui ont écrit, puis réinterprété, le Code civil.",
+    "minutes": 6,
+    "brief": [
+      "**Jean-Étienne-Marie Portalis** (1746-1807), l'un des quatre rédacteurs du Code civil de 1804, l'a présenté publiquement dans son *Discours préliminaire sur le Code civil*, où il explique pourquoi et comment codifier : un code ne doit pas tout prévoir, il fixe les grands principes et laisse au juge et à la doctrine le soin de les appliquer aux cas particuliers.",
+      "**Charles Aubry** (1803-1883) et **Charles-Frédéric Rau** (1803-1877), professeurs à la faculté de droit de Strasbourg, publient ensemble le *Cours de droit civil français* (1839-1846), qui importe en France les méthodes de la doctrine allemande (pandectistique) : on cesse de suivre article par article le Code civil pour réfléchir à partir des **grandes conceptions** proposées par la doctrine — une présentation synthétique qui marque durablement l'enseignement du droit civil.",
+      "**François Gény** (1861-1959), professeur puis doyen de la faculté de droit de Nancy, théorise dans sa *Méthode d'interprétation et sources en droit privé positif* (1899) la méthode de la **libre recherche scientifique**, contre l'école de l'exégèse pure du Code civil. Sur la doctrine comme source du droit, il tranche : elle n'est qu'une simple **autorité** d'interprétation, non l'égale de la loi, seule source formelle du droit avec la coutume.",
+      "**Georges Ripert** (1880-1958), doyen de la faculté de droit de Paris, professeur de droit commercial, publie *Le Déclin du droit* (1949), critique célèbre de l'évolution du droit contemporain envahi par la réglementation économique et administrative — il y met en garde contre l'excès inverse d'un intérêt général qui, à trop vouloir s'imposer, finirait par étouffer les intérêts particuliers légitimes.",
+      "**Jean Carbonnier** (1908-2003), professeur de droit civil à Paris puis fondateur de la sociologie juridique française, artisan des grandes réformes du droit de la famille sous la Ve République, développe dans *Flexible droit* (1969) le concept de **non-droit** : les rapports sociaux organisés par la morale ou la religion, que le droit choisit délibérément de ne pas régir, par souci d'équilibre social — le droit, montre-t-il, reste toujours plus petit que l'ensemble des rapports sociaux (contre l'idée d'un **panjurisme** total)."
+    ],
+    "keyPoints": [
+      "Portalis fixe la philosophie du Code civil : un texte de principes, pas un règlement de détail.",
+      "Aubry et Rau importent la méthode allemande, Gény théorise la libre recherche scientifique et range la doctrine parmi les simples autorités, non les sources formelles.",
+      "Ripert critique le déclin du droit privé face à la réglementation ; Carbonnier, à l'inverse, montre que le droit reste toujours plus petit que l'ensemble des rapports sociaux (le non-droit)."
+    ],
+    "definitions": [
+      {
+        "term": "Jean-Étienne-Marie Portalis (1746-1807)",
+        "text": "L'un des quatre rédacteurs du Code civil de 1804 : dans son Discours préliminaire, il explique qu'un code doit fixer des principes généraux, laissés à l'interprétation du juge et de la doctrine.",
+        "source": "Discours préliminaire sur le Code civil"
+      },
+      {
+        "term": "Aubry et Rau",
+        "text": "Professeurs à Strasbourg, auteurs du Cours de droit civil français (1839-1846) : ils importent la doctrine allemande en France, substituant aux commentaires article par article une présentation par grandes conceptions.",
+        "source": "Cours de droit civil français, 1839-1846"
+      },
+      {
+        "term": "François Gény (1861-1959)",
+        "text": "Doyen de la faculté de droit de Nancy, théoricien de la libre recherche scientifique : pour lui, la doctrine n'est qu'une simple autorité d'interprétation, non l'égale de la loi comme source du droit.",
+        "source": "Méthode d'interprétation et sources en droit privé positif, 1899"
+      },
+      {
+        "term": "Georges Ripert (1880-1958)",
+        "text": "Doyen de la faculté de droit de Paris, auteur du Déclin du droit (1949) : critique de l'évolution du droit privé sous la pression croissante de la réglementation économique et administrative.",
+        "source": "Le Déclin du droit, 1949"
+      },
+      {
+        "term": "Jean Carbonnier (1908-2003)",
+        "text": "Professeur de droit civil et fondateur de la sociologie juridique française, auteur de Flexible droit (1969) : théorise le non-droit, ces rapports sociaux que le droit choisit délibérément de ne pas régir.",
+        "source": "Flexible droit, 1969"
+      }
+    ],
+    "exam": {
+      "kind": "question de cours",
+      "question": "Comment l'école scientifique (Aubry et Rau, Gény) a-t-elle transformé la manière d'étudier et d'interpréter le Code civil hérité de Portalis ?",
+      "concise": "Portalis conçoit le Code civil comme un texte de principes généraux, volontairement incomplet, laissant au juge et à la doctrine le soin de l'appliquer aux cas particuliers. Au XIXe siècle, l'école de l'exégèse s'en tient pourtant à un commentaire strictement article par article, sans s'écarter du texte. Aubry et Rau rompent avec cette méthode en importurant la doctrine allemande : leur Cours de droit civil français réorganise la matière autour de grandes conceptions doctrinales (comme la théorie du patrimoine), plutôt que de suivre l'ordre du Code. Gény pousse cette évolution plus loin en théorisant explicitement la méthode de la libre recherche scientifique, qui autorise l'interprète à aller au-delà du texte lorsque celui-ci est insuffisant — tout en maintenant une hiérarchie stricte des sources : la doctrine reste une simple autorité, non une source formelle comme la loi ou la coutume. Cette évolution méthodologique annonce les critiques plus larges du XXe siècle (Ripert, Carbonnier) sur la place du droit civil face à la loi et à la société.",
+      "plan": [
+        {
+          "title": "I. Du texte de principes à son interprétation stricte",
+          "children": [
+            {
+              "title": "A. Portalis : un code de principes, pas de détails",
+              "points": [
+                "Le Discours préliminaire : la loi fixe les grands principes",
+                "L'application aux cas particuliers revient au juge et à la doctrine",
+                "Un texte volontairement incomplet"
+              ]
+            },
+            {
+              "title": "B. L'école de l'exégèse : un attachement strict au texte",
+              "points": [
+                "Commentaire article par article du Code civil",
+                "Refus de s'écarter de la lettre du texte",
+                "Une méthode bientôt jugée trop rigide face à l'évolution sociale"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "II. La rupture de l'école scientifique",
+          "children": [
+            {
+              "title": "A. Aubry et Rau : l'importation de la méthode allemande",
+              "points": [
+                "Le Cours de droit civil français (1839-1846)",
+                "Une présentation par grandes conceptions doctrinales plutôt que par articles",
+                "Le passage d'un commentaire de texte à une construction théorique du droit civil"
+              ]
+            },
+            {
+              "title": "B. Gény : la libre recherche scientifique et la hiérarchie des sources",
+              "points": [
+                "Aller au-delà du texte quand il est insuffisant, sans l'ignorer",
+                "La doctrine reste une simple autorité, non une source formelle du droit",
+                "Une méthode qui annonce les critiques du XXe siècle sur le rôle du droit civil (Ripert, Carbonnier)"
+              ]
+            }
+          ]
+        }
+      ],
+      "pitfalls": [
+        "Ne pas confondre la libre recherche scientifique de Gény avec une remise en cause de la hiérarchie des sources : pour lui, la doctrine reste subordonnée à la loi.",
+        "Ne pas présenter Aubry et Rau comme des codificateurs : ce sont des commentateurs, dont l'apport est méthodologique (l'importation de la doctrine allemande), pas législatif."
+      ]
+    },
+    "quiz": [
+      {
+        "q": "Portalis est l'un des quatre rédacteurs :",
+        "choices": [
+          "De la Déclaration des droits de l'homme de 1789",
+          "Du Code civil de 1804",
+          "De la Constitution de 1958",
+          "Du Code pénal de 1810"
+        ],
+        "answer": 1,
+        "why": "Il en a présenté la philosophie générale dans son Discours préliminaire sur le Code civil."
+      },
+      {
+        "q": "Aubry et Rau sont connus pour avoir :",
+        "choices": [
+          "Rédigé le Code civil",
+          "Importé la doctrine allemande en France, dans leur Cours de droit civil français",
+          "Créé le Conseil constitutionnel",
+          "Théorisé la séparation des pouvoirs"
+        ],
+        "answer": 1,
+        "why": "Leur Cours (1839-1846) réorganise le droit civil autour de grandes conceptions doctrinales plutôt que par article."
+      },
+      {
+        "q": "Pour Gény, la doctrine est :",
+        "choices": [
+          "Une source formelle du droit, à l'égal de la loi",
+          "Une simple autorité d'interprétation, non l'égale de la loi",
+          "Sans aucune valeur juridique",
+          "Supérieure à la loi"
+        ],
+        "answer": 1,
+        "why": "Gény distingue les sources formelles (loi, coutume) des simples autorités (jurisprudence, doctrine)."
+      },
+      {
+        "q": "Georges Ripert est l'auteur de :",
+        "choices": [
+          "Flexible droit",
+          "Le Déclin du droit",
+          "De l'esprit des lois",
+          "Du contrat social"
+        ],
+        "answer": 1,
+        "why": "Publié en 1949, cet ouvrage critique l'évolution du droit privé sous la pression de la réglementation économique."
+      },
+      {
+        "q": "Le concept de « non-droit » est développé par :",
+        "choices": [
+          "Jean Carbonnier",
+          "François Gény",
+          "Georges Ripert",
+          "Portalis"
+        ],
+        "answer": 0,
+        "why": "Carbonnier montre, dans Flexible droit (1969), que le droit reste toujours plus petit que l'ensemble des rapports sociaux."
+      }
+    ]
+  },
+  {
+    "id": "auteurs-03",
+    "order": 3,
+    "title": "Les théoriciens du contrat social",
+    "teaser": "De Marsile de Padoue à Rousseau : d'où vient le pouvoir politique, et à quel prix le cède-t-on ?",
+    "minutes": 6,
+    "brief": [
+      "Trois siècles avant Machiavel, **Marsile de Padoue** (v. 1275 – v. 1342), théologien et philosophe italien, rompt déjà avec les conceptions théocratiques du pouvoir dans le *Defensor pacis* (1324) : il fait reposer l'autorité politique sur la communauté des citoyens — le « legislator humain » — et non sur l'Église. C'est une rupture précoce, dont hériteront les théories de la souveraineté populaire.",
+      "**Machiavel** (1469-1527), penseur florentin, poursuit ce mouvement de sécularisation dans *Le Prince* (1513) et les *Discours sur la première décade de Tite-Live* : pour lui, la politique a sa propre logique, jugée sur son efficacité à maintenir l'État et à dompter la nature « noire » de l'homme, indépendamment de la morale ou de la religion.",
+      "**Thomas Hobbes** (1588-1679), philosophe anglais, pousse la question plus loin dans le *Léviathan* (1651) : l'état de nature y est un chaos, la loi du plus fort — « l'homme est un loup pour l'homme ». Le contrat social transfère alors au souverain **tous** les pouvoirs, de façon **totale et inconditionnelle** : c'est le prix à payer pour échapper à la guerre de tous contre tous.",
+      "**John Locke** (1632-1704) part d'un constat opposé dans le *Traité du gouvernement civil* (1689) : l'état de nature y est déjà **heureux**, porteur de droits naturels. Le transfert de pouvoir reste donc **conditionnel** — fondement du constitutionnalisme et de la monarchie limitée.",
+      "**Jean-Jacques Rousseau** (1712-1778) déplace encore la question dans *Du contrat social* (1762) : l'homme y est naturellement bon, corrompu par la société. La souveraineté ne se transfère à personne : elle reste au peuple, qui l'exerce directement par la **volonté générale**."
+    ],
+    "keyPoints": [
+      "Marsile de Padoue (XIVe s.) : le pouvoir vient du peuple, pas de l'Église — un précurseur oublié.",
+      "Hobbes (état de nature = guerre, transfert total) s'oppose frontalement à Locke (état de nature = paix, transfert conditionnel).",
+      "Rousseau ne délègue la souveraineté à personne : elle reste au peuple, exercée par la volonté générale.",
+      "Machiavel sécularise le pouvoir : il est jugé sur son efficacité, non sur sa conformité à la morale."
+    ],
+    "definitions": [
+      {
+        "term": "Marsile de Padoue (v. 1275 – v. 1342)",
+        "text": "Théologien et philosophe italien, auteur du Defensor pacis (1324) : il fait reposer l'autorité politique sur le peuple (« legislator humain ») et non sur l'Église.",
+        "source": "Defensor pacis, 1324"
+      },
+      {
+        "term": "Machiavel (1469-1527)",
+        "text": "Penseur florentin, auteur du Prince (1513) : il sécularise le pouvoir, jugé sur son efficacité à maintenir l'État plutôt que sur sa conformité à la morale.",
+        "source": "Le Prince, 1513"
+      },
+      {
+        "term": "Thomas Hobbes (1588-1679)",
+        "text": "Philosophe anglais, auteur du Léviathan (1651) : l'état de nature est une guerre de tous contre tous ; le contrat social transfère au souverain un pouvoir total et inconditionnel.",
+        "source": "Léviathan, 1651"
+      },
+      {
+        "term": "John Locke (1632-1704)",
+        "text": "Philosophe anglais, auteur du Traité du gouvernement civil (1689) : l'état de nature est paisible et porteur de droits naturels ; le transfert de pouvoir reste conditionnel et limité.",
+        "source": "Traité du gouvernement civil, 1689"
+      },
+      {
+        "term": "Jean-Jacques Rousseau (1712-1778)",
+        "text": "Philosophe genevois, auteur de Du contrat social (1762) : la souveraineté reste au peuple, exercée directement par la volonté générale ; l'homme, naturellement bon, est corrompu par la société.",
+        "source": "Du contrat social, 1762"
+      }
+    ],
+    "exam": {
+      "kind": "question de cours",
+      "question": "Comparez les conceptions de l'état de nature et du contrat social chez Hobbes, Locke et Rousseau : qu'est-ce qui les oppose ?",
+      "concise": "Les trois auteurs partent d'une représentation opposée de l'état de nature. Chez Hobbes, c'est un chaos, une guerre de tous contre tous, qui impose un transfert total et inconditionnel du pouvoir au souverain — fondement de l'absolutisme. Chez Locke, l'état de nature est au contraire paisible et déjà porteur de droits naturels : le transfert de pouvoir reste conditionnel et limité, ce qui fonde le constitutionnalisme et la monarchie limitée. Rousseau déplace encore la question : l'homme y est naturellement bon, corrompu par la société ; il ne transfère sa souveraineté à personne, il continue de l'exercer lui-même, directement, par la volonté générale — rupture avec les deux logiques de délégation de Hobbes et Locke.",
+      "plan": [
+        {
+          "title": "I. Trois représentations opposées de l'état de nature",
+          "children": [
+            {
+              "title": "A. Hobbes : un état de chaos et de rapport de force",
+              "points": [
+                "Guerre de tous contre tous, « l'homme est un loup pour l'homme »",
+                "Prolongement de la sécularisation du pouvoir amorcée par Machiavel",
+                "Un pouvoir fort et centralisé apparaît alors nécessaire"
+              ]
+            },
+            {
+              "title": "B. Locke et Rousseau : un état de nature plus favorable à l'homme",
+              "points": [
+                "Locke : un état de nature paisible, déjà porteur de droits naturels",
+                "Rousseau : l'homme naturellement bon, corrompu par la société et la propriété",
+                "Conséquence commune : le pouvoir n'a pas à être absolu pour être légitime"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "II. Des transferts de souveraineté aux conséquences politiques opposées",
+          "children": [
+            {
+              "title": "A. Un transfert total ou conditionnel",
+              "points": [
+                "Hobbes : transfert total et inconditionnel au souverain, fondement de l'absolutisme",
+                "Locke : transfert conditionnel et limité, fondement du constitutionnalisme",
+                "Deux lectures opposées du même mécanisme contractuel"
+              ]
+            },
+            {
+              "title": "B. La volonté générale, spécificité rousseauiste",
+              "points": [
+                "La souveraineté s'exerce directement par la volonté générale, non représentée",
+                "Rupture avec Hobbes et Locke, qui confient le pouvoir à un souverain ou un représentant",
+                "Héritage : la démocratie directe et la légitimité populaire comme fondement du pouvoir"
+              ]
+            }
+          ]
+        }
+      ],
+      "pitfalls": [
+        "Ne pas confondre Hobbes (transfert total, absolutisme) et Locke (transfert conditionnel, libéralisme) : c'est l'opposition la plus citée en copie.",
+        "Rousseau ne théorise pas une délégation du pouvoir à un souverain : la souveraineté reste au peuple lui-même, ce n'est ni le schéma de Hobbes ni celui de Locke."
+      ]
+    },
+    "quiz": [
+      {
+        "q": "Chez Hobbes, l'état de nature est :",
+        "choices": [
+          "Un état de paix garanti par des droits naturels",
+          "Une guerre de tous contre tous",
+          "Un état organisé par l'Église",
+          "Une démocratie directe"
+        ],
+        "answer": 1,
+        "why": "« L'homme est un loup pour l'homme » : c'est ce chaos qui justifie le transfert total de pouvoir au souverain."
+      },
+      {
+        "q": "Quel philosophe fait reposer le pouvoir politique sur le peuple dès le XIVe siècle, avant Machiavel ?",
+        "choices": [
+          "Thomas Hobbes",
+          "Marsile de Padoue",
+          "John Locke",
+          "Jean Bodin"
+        ],
+        "answer": 1,
+        "why": "Dans le Defensor pacis (1324), Marsile de Padoue fait déjà reposer l'autorité sur le « legislator humain »."
+      },
+      {
+        "q": "Chez Locke, le transfert de pouvoir au souverain est :",
+        "choices": [
+          "Total et inconditionnel",
+          "Conditionnel et limité",
+          "Inexistant",
+          "Réservé au clergé"
+        ],
+        "answer": 1,
+        "why": "L'état de nature étant déjà paisible chez Locke, le transfert reste limité — fondement du constitutionnalisme."
+      },
+      {
+        "q": "Chez Rousseau, la souveraineté :",
+        "choices": [
+          "Est transférée totalement au souverain",
+          "Est transférée sous condition",
+          "Reste au peuple, exercée par la volonté générale",
+          "N'existe pas avant le contrat"
+        ],
+        "answer": 2,
+        "why": "Rousseau ne délègue la souveraineté à personne : le peuple l'exerce lui-même, directement."
+      },
+      {
+        "q": "Machiavel est resté célèbre pour avoir :",
+        "choices": [
+          "Théorisé la séparation des pouvoirs",
+          "Sécularisé le pouvoir politique, jugé sur son efficacité",
+          "Inventé le contrat social",
+          "Défendu la monarchie de droit divin"
+        ],
+        "answer": 1,
+        "why": "Dans Le Prince (1513), la politique est jugée sur son efficacité à maintenir l'État, indépendamment de la morale."
+      }
+    ]
+  },
+  {
+    "id": "auteurs-04",
+    "order": 4,
+    "title": "Bodin, Montesquieu et les théories de l'État",
+    "teaser": "De la souveraineté absolue de Bodin à la séparation des pouvoirs de Montesquieu : comment penser le pouvoir de l'État.",
+    "minutes": 6,
+    "brief": [
+      "**Jean Bodin** (1530-1596), théoricien du pouvoir absolu à l'époque de la monarchie absolue, accomplit dans *Les Six Livres de la République* (1576) la seconde grande rupture après Machiavel : il forge le concept moderne de **souveraineté**, une puissance **absolue, perpétuelle et indivisible** — l'essence même de l'État (la « République » dans son vocabulaire).",
+      "**Montesquieu** (1689-1755), dans *De l'esprit des lois* (1748), s'attaque au problème inverse : comment éviter que cette puissance ne devienne tyrannique ? Sa réponse, la **séparation des pouvoirs** (législatif, exécutif, judiciaire), reste la référence classique de toute réflexion constitutionnelle sur l'organisation du pouvoir.",
+      "**Max Weber** (1864-1920), sociologue allemand, propose la définition la plus citée de l'État en sciences sociales : la communauté humaine qui revendique avec succès le **monopole de la violence physique légitime** sur un territoire donné. Il critique le contrat social comme une fiction sans réalité historique : on ne choisit jamais d'adhérer à l'État, on y naît déjà soumis — la distinction entre gouvernants et gouvernés résulte d'un **processus progressif d'accaparement du pouvoir**, non d'un accord.",
+      "**Raymond Carré de Malberg** (1861-1935), professeur de droit public à la faculté de Strasbourg, formule dans sa *Contribution à la théorie générale de l'État* (1920-1922) la définition juridique de référence : l'État est une collectivité humaine fixée sur un territoire déterminé et soumise à une puissance publique organisée. Son œuvre combine la rigueur de la doctrine allemande (dont il hérite la chaire, tenue avant lui par Paul Laband) et l'étude du droit public français.",
+      "**Émile Durkheim** (1858-1917), fondateur de la sociologie française, adopte une **vision fonctionnaliste** de l'État et du pouvoir : ils existent parce qu'ils répondent à un besoin d'organisation sociale, assuré par la **solidarité** entre les membres du groupe — solidarité mécanique dans les sociétés peu différenciées, solidarité organique dans les sociétés complexes où la division du travail crée l'interdépendance."
+    ],
+    "keyPoints": [
+      "Bodin invente la souveraineté (absolue, perpétuelle, indivisible) ; Montesquieu invente son antidote, la séparation des pouvoirs.",
+      "Weber : l'État a le monopole de la violence physique légitime ; le contrat social n'est qu'une fiction, le pouvoir résulte d'un accaparement historique.",
+      "Durkheim explique l'État par la solidarité sociale (mécanique puis organique) ; Carré de Malberg en donne la définition juridique de référence (territoire, population, puissance publique organisée)."
+    ],
+    "definitions": [
+      {
+        "term": "Jean Bodin (1530-1596)",
+        "text": "Théoricien du pouvoir absolu, auteur des Six Livres de la République (1576) : il forge le concept de souveraineté, puissance absolue, perpétuelle et indivisible.",
+        "source": "Les Six Livres de la République, 1576"
+      },
+      {
+        "term": "Montesquieu (1689-1755)",
+        "text": "Auteur de De l'esprit des lois (1748) : théorise la séparation des pouvoirs législatif, exécutif et judiciaire, pour prévenir la tyrannie.",
+        "source": "De l'esprit des lois, 1748"
+      },
+      {
+        "term": "Max Weber (1864-1920)",
+        "text": "Sociologue allemand : l'État est la communauté humaine qui revendique avec succès le monopole de la violence physique légitime sur un territoire donné ; critique le contrat social comme une fiction historique.",
+        "source": "Le Savant et le politique"
+      },
+      {
+        "term": "Raymond Carré de Malberg (1861-1935)",
+        "text": "Professeur de droit public à Strasbourg, auteur de la Contribution à la théorie générale de l'État (1920-1922) : l'État est une collectivité humaine fixée sur un territoire déterminé et soumise à une puissance publique organisée.",
+        "source": "Contribution à la théorie générale de l'État, 1920-1922"
+      },
+      {
+        "term": "Émile Durkheim (1858-1917)",
+        "text": "Fondateur de la sociologie française : vision fonctionnaliste de l'État, qui répond à un besoin d'organisation sociale assuré par la solidarité entre les membres du groupe (mécanique puis organique)."
+      }
+    ],
+    "exam": {
+      "kind": "question de cours",
+      "question": "En quoi la définition de l'État par Max Weber renouvelle-t-elle la question de sa légitimité, par rapport aux théories classiques de la souveraineté (Bodin) et du contrat social ?",
+      "concise": "Bodin définit la souveraineté par ses attributs juridiques — absolue, perpétuelle, indivisible — sans interroger son origine. Les théories du contrat social (Hobbes, Locke, Rousseau) expliquent au contraire cette origine par un accord fondateur entre individus. Weber rompt avec les deux approches : il ne définit plus l'État par un attribut juridique ni par un consentement fictif, mais par un critère empirique et sociologique — le monopole de la violence physique légitime sur un territoire donné. Pour lui, le contrat social est une fiction sans réalité historique : personne ne choisit d'adhérer à l'État, on y naît déjà soumis. La distinction entre gouvernants et gouvernés résulte d'un processus progressif d'accaparement du pouvoir, non d'un accord — une lecture que Durkheim et Norbert Elias prolongeront chacun à leur manière, l'un par la solidarité sociale, l'autre par la monopolisation historique des ressources fiscales et militaires.",
+      "plan": [
+        {
+          "title": "I. Les théories classiques : la souveraineté comme attribut ou comme accord",
+          "children": [
+            {
+              "title": "A. Bodin : la souveraineté comme puissance juridique absolue",
+              "points": [
+                "Absolue, perpétuelle, indivisible : des attributs, pas une origine",
+                "Théorie forgée pour légitimer la monarchie absolue",
+                "Aucune interrogation sur le consentement des gouvernés"
+              ]
+            },
+            {
+              "title": "B. Le contrat social : légitimer le pouvoir par le consentement",
+              "points": [
+                "Hobbes, Locke, Rousseau : le pouvoir naît d'un accord fondateur",
+                "Trois lectures opposées de cet accord (transfert total, conditionnel, ou souveraineté populaire)",
+                "Un accord toujours fictif, jamais historiquement observé"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "II. Weber : une définition empirique et sociologique de l'État",
+          "children": [
+            {
+              "title": "A. Le monopole de la violence physique légitime",
+              "points": [
+                "Critère empirique, vérifiable, plutôt que juridique ou contractuel",
+                "La définition la plus citée en sciences sociales",
+                "Rupture avec l'idée d'un pouvoir fondé sur un attribut ou un accord"
+              ]
+            },
+            {
+              "title": "B. Le pouvoir comme accaparement historique, non comme contrat",
+              "points": [
+                "Le contrat social critiqué comme fiction sans réalité historique",
+                "La distinction gouvernants/gouvernés résulte d'un processus progressif",
+                "Prolongements : Durkheim (solidarité sociale), Elias (monopolisation fiscale et militaire)"
+              ]
+            }
+          ]
+        }
+      ],
+      "pitfalls": [
+        "Ne pas présenter la définition de Weber comme une théorie juridique de la souveraineté : c'est une définition sociologique et empirique de l'État, d'une autre nature que celle de Bodin.",
+        "Ne pas confondre la critique weberienne du contrat social avec un rejet du contractualisme par Bodin : Bodin est antérieur au contrat social et ne s'y oppose pas, il théorise simplement autre chose (les attributs de la souveraineté)."
+      ]
+    },
+    "quiz": [
+      {
+        "q": "Jean Bodin est l'auteur de :",
+        "choices": [
+          "De l'esprit des lois",
+          "Les Six Livres de la République",
+          "Le Léviathan",
+          "Du contrat social"
+        ],
+        "answer": 1,
+        "why": "C'est dans cet ouvrage de 1576 que Bodin forge le concept de souveraineté absolue, perpétuelle et indivisible."
+      },
+      {
+        "q": "La séparation des pouvoirs (législatif, exécutif, judiciaire) est théorisée par :",
+        "choices": [
+          "Jean Bodin",
+          "Montesquieu",
+          "Max Weber",
+          "Émile Durkheim"
+        ],
+        "answer": 1,
+        "why": "De l'esprit des lois (1748) reste la référence classique de la séparation des pouvoirs."
+      },
+      {
+        "q": "Pour Max Weber, l'État se définit par :",
+        "choices": [
+          "La souveraineté absolue et indivisible",
+          "Le monopole de la violence physique légitime sur un territoire",
+          "Le contrat social librement consenti",
+          "La solidarité organique"
+        ],
+        "answer": 1,
+        "why": "C'est la définition sociologique de l'État la plus citée, fondée sur un critère empirique plutôt que juridique."
+      },
+      {
+        "q": "Qui critique le contrat social comme une fiction sans réalité historique ?",
+        "choices": [
+          "Jean Bodin",
+          "Montesquieu",
+          "Max Weber",
+          "Carré de Malberg"
+        ],
+        "answer": 2,
+        "why": "Pour Weber, on ne choisit jamais d'adhérer à l'État : le pouvoir résulte d'un accaparement progressif, pas d'un accord."
+      },
+      {
+        "q": "La définition juridique de référence de l'État (territoire, population, puissance publique organisée) revient à :",
+        "choices": [
+          "Raymond Carré de Malberg",
+          "Émile Durkheim",
+          "Norbert Elias",
+          "Jean Bodin"
+        ],
+        "answer": 0,
+        "why": "Carré de Malberg la formule dans sa Contribution à la théorie générale de l'État (1920-1922)."
+      }
+    ]
+  }
+]
