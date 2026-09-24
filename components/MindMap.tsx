@@ -2,10 +2,22 @@
 
 import { useEffect, useMemo, useRef, useState } from "react";
 import type { MindNode } from "@/lib/mindmap";
+import type { Course } from "@/lib/types";
 
 const WIDTH_BY_DEPTH = [180, 162, 148, 140];
 const COL_GAP = 40;
 const ROW_GAP = 12;
+
+// Une couleur pastel par branche (réutilise la palette de teintes déjà
+// utilisée pour les matières, cf. HUES dans lib/types.ts) : ça donne des
+// repères visuels immédiats pour relire la carte, comme sur une vraie carte
+// mentale annotée à la main. La racine garde la teinte du cours (var(--h)
+// hérité de data-hue={course.hue} posé plus haut dans la page) ; on exclut
+// cette teinte de la palette des branches pour qu'aucune ne s'y confonde.
+const ALL_HUES: Course["hue"][] = ["gold", "blue", "plum", "green", "rust"];
+function branchHues(exclude?: Course["hue"]): Course["hue"][] {
+  return ALL_HUES.filter((h) => h !== exclude);
+}
 
 function widthAt(depth: number): number {
   return WIDTH_BY_DEPTH[Math.min(depth, WIDTH_BY_DEPTH.length - 1)];
@@ -36,14 +48,17 @@ function defaultCollapsed(node: MindNode, depth = 0, acc = new Set<string>()): S
   return acc;
 }
 
-type Placed = { node: MindNode; depth: number; x: number; y: number; w: number; h: number; hasHiddenChildren: boolean };
+type Placed = {
+  node: MindNode; depth: number; x: number; y: number; w: number; h: number;
+  hasHiddenChildren: boolean; hue?: Course["hue"];
+};
 
-function layoutTree(root: MindNode, collapsed: Set<string>, open: Set<string>) {
+function layoutTree(root: MindNode, collapsed: Set<string>, open: Set<string>, hues: Course["hue"][]) {
   const placed: Placed[] = [];
   const links: { from: Placed; to: Placed }[] = [];
   let cursorY = 0;
 
-  function visit(node: MindNode, depth: number): Placed {
+  function visit(node: MindNode, depth: number, hue: Course["hue"] | undefined): Placed {
     const w = widthAt(depth);
     const labelH = estimateHeight(node.label, w);
     const detailH = node.detail && open.has(node.id) ? estimateHeight(node.detail, w) : 0;
@@ -52,24 +67,24 @@ function layoutTree(root: MindNode, collapsed: Set<string>, open: Set<string>) {
 
     let self: Placed;
     if (!showChildren) {
-      self = { node, depth, x: xAt(depth), y: cursorY, w, h: ownH, hasHiddenChildren: Boolean(node.children?.length) && collapsed.has(node.id) };
+      self = { node, depth, x: xAt(depth), y: cursorY, w, h: ownH, hasHiddenChildren: Boolean(node.children?.length) && collapsed.has(node.id), hue };
       placed.push(self);
       cursorY += ownH + ROW_GAP;
     } else {
       const startY = cursorY;
-      const kids = node.children!.map((k) => visit(k, depth + 1));
+      const kids = node.children!.map((k, i) => visit(k, depth + 1, depth === 0 ? hues[i % hues.length] : hue));
       const first = kids[0];
       const last = kids[kids.length - 1];
       const centerY = (first.y + first.h / 2 + last.y + last.h / 2) / 2;
       const y = Math.max(startY, centerY - ownH / 2);
-      self = { node, depth, x: xAt(depth), y, w, h: ownH, hasHiddenChildren: false };
+      self = { node, depth, x: xAt(depth), y, w, h: ownH, hasHiddenChildren: false, hue };
       placed.push(self);
       for (const k of kids) links.push({ from: self, to: k });
     }
     return self;
   }
 
-  visit(root, 0);
+  visit(root, 0, undefined);
   const width = Math.max(...placed.map((p) => p.x + p.w));
   const height = Math.max(...placed.map((p) => p.y + p.h), cursorY);
   return { placed, links, width, height };
@@ -82,15 +97,16 @@ function linkPath(from: Placed, to: Placed): string {
   return `M ${x1} ${y1} C ${cx} ${y1}, ${cx} ${y2}, ${x2} ${y2}`;
 }
 
-export function MindMap({ root }: { root: MindNode }) {
+export function MindMap({ root, courseHue }: { root: MindNode; courseHue?: Course["hue"] }) {
   const [collapsed, setCollapsed] = useState<Set<string>>(() => defaultCollapsed(root));
   const [open, setOpen] = useState<Set<string>>(() => new Set());
   const containerRef = useRef<HTMLDivElement>(null);
   const revealTarget = useRef<string | null>(null);
+  const hues = useMemo(() => branchHues(courseHue), [courseHue]);
 
   const { placed, links, width, height } = useMemo(
-    () => layoutTree(root, collapsed, open),
-    [root, collapsed, open],
+    () => layoutTree(root, collapsed, open, hues),
+    [root, collapsed, open, hues],
   );
 
   // Une branche dépliée pousse ses enfants plus loin à droite (et parfois
@@ -129,7 +145,14 @@ export function MindMap({ root }: { root: MindNode }) {
       <svg width={width + PAD * 2} height={height + PAD * 2} className="block">
         <g transform={`translate(${PAD},${PAD})`}>
           {links.map((l, i) => (
-            <path key={i} d={linkPath(l.from, l.to)} fill="none" stroke="var(--line-strong)" strokeWidth={1.5} />
+            <path
+              key={i}
+              data-hue={l.to.hue}
+              d={linkPath(l.from, l.to)}
+              fill="none"
+              stroke="var(--h-strong, var(--line-strong))"
+              strokeWidth={1.5}
+            />
           ))}
           {placed.map((p) => {
             const isRoot = p.depth === 0;
@@ -140,6 +163,7 @@ export function MindMap({ root }: { root: MindNode }) {
               <foreignObject key={p.node.id} x={p.x} y={p.y} width={p.w} height={p.h} overflow="visible">
                 <div
                   data-node-id={p.node.id}
+                  data-hue={p.hue}
                   role={clickable ? "button" : undefined}
                   tabIndex={clickable ? 0 : undefined}
                   onClick={() => {
@@ -150,7 +174,8 @@ export function MindMap({ root }: { root: MindNode }) {
                   style={{
                     background: isRoot ? "var(--h, var(--accent))" : isBranch ? "var(--h-soft, var(--accent-soft))" : "var(--surface-2)",
                     color: isRoot ? "var(--accent-ink)" : isBranch ? "var(--h, var(--accent))" : "var(--ink)",
-                    borderColor: isRoot ? "transparent" : isBranch ? "transparent" : "var(--line)",
+                    borderColor: isRoot ? "transparent" : isBranch ? "var(--h-soft, var(--accent-soft))" : "var(--h, var(--line))",
+                    borderWidth: isRoot ? 1 : isBranch ? 1 : 1.5,
                     fontWeight: isRoot || isBranch ? 700 : 500,
                     cursor: clickable ? "pointer" : "default",
                   }}

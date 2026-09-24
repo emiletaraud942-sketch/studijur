@@ -16,7 +16,7 @@ import { connexionHref } from "@/lib/nav";
 import { Arrow, Cards, Check, Cross, Flame, Quill, Sitemap, Target } from "@/components/icons";
 import { MindMap } from "@/components/MindMap";
 import { lessonMindMap } from "@/lib/mindmap";
-import type { EssayFeedback, StepName } from "@/lib/types";
+import type { Course, EssayFeedback, StepName } from "@/lib/types";
 
 const STEPS: { key: StepName; label: string; Icon: typeof Quill }[] = [
   { key: "cours", label: "Le cours", Icon: Quill },
@@ -174,7 +174,7 @@ function LessonPageInner() {
         />
       )}
       {step === 2 && (
-        <MindMapStep lesson={lesson} onNext={() => { completeStep(lesson.id, "mindmap"); setStep(3); }} />
+        <MindMapStep lesson={lesson} courseHue={course.hue} onNext={() => { completeStep(lesson.id, "mindmap"); setStep(3); }} />
       )}
       {step === 3 && (
         <QuestionStep
@@ -238,7 +238,9 @@ function CourseStep({ lesson, onNext }: { lesson: ReturnType<typeof findLesson> 
   );
 }
 
-function MindMapStep({ lesson, onNext }: { lesson: NonNullable<ReturnType<typeof findLesson>>; onNext: () => void }) {
+function MindMapStep({
+  lesson, courseHue, onNext,
+}: { lesson: NonNullable<ReturnType<typeof findLesson>>; courseHue: Course["hue"]; onNext: () => void }) {
   const tree = useMemo(() => lessonMindMap(lesson), [lesson]);
   return (
     <div className="rise space-y-4">
@@ -246,7 +248,7 @@ function MindMapStep({ lesson, onNext }: { lesson: NonNullable<ReturnType<typeof
         Vue d&apos;ensemble de la leçon, construite depuis ses points clés, ses définitions et son plan d&apos;examen.
         Touche une branche pour la déplier.
       </p>
-      <MindMap root={tree} />
+      <MindMap root={tree} courseHue={courseHue} />
       <Button onClick={onNext} size="lg" full>Passer à la question <Arrow className="h-4 w-4" /></Button>
     </div>
   );
