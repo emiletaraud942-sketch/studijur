@@ -13,12 +13,15 @@ import { Button, Prose, Tag } from "@/components/ui";
 import { inlineMarkup } from "@/lib/format";
 import { authFetchHeaders } from "@/lib/supabase";
 import { connexionHref } from "@/lib/nav";
-import { Arrow, Cards, Check, Cross, Flame, Quill, Target } from "@/components/icons";
+import { Arrow, Cards, Check, Cross, Flame, Quill, Sitemap, Target } from "@/components/icons";
+import { MindMap } from "@/components/MindMap";
+import { lessonMindMap } from "@/lib/mindmap";
 import type { EssayFeedback, StepName } from "@/lib/types";
 
 const STEPS: { key: StepName; label: string; Icon: typeof Quill }[] = [
   { key: "cours", label: "Le cours", Icon: Quill },
   { key: "definitions", label: "Définitions", Icon: Cards },
+  { key: "mindmap", label: "Carte mentale", Icon: Sitemap },
   { key: "question", label: "Question", Icon: Target },
   { key: "quiz", label: "Quiz", Icon: Check },
 ];
@@ -39,7 +42,7 @@ function LessonPageInner() {
   const { state, ready, signedInAs, completeStep, saveDraft, recordQuiz, gradeDefinition } = useStudiJur();
   // Retour de connexion depuis la correction IA (voir Correction ci-dessous) :
   // on rouvre directement l'étape "Question" plutôt que de repartir du cours.
-  const [step, setStep] = useState(() => (searchParams.get("step") === "question" ? 2 : 0));
+  const [step, setStep] = useState(() => (searchParams.get("step") === "question" ? 3 : 0));
   const autocorrect = searchParams.get("autocorrect") === "1";
 
   const lesson = useMemo(
@@ -171,18 +174,21 @@ function LessonPageInner() {
         />
       )}
       {step === 2 && (
+        <MindMapStep lesson={lesson} onNext={() => { completeStep(lesson.id, "mindmap"); setStep(3); }} />
+      )}
+      {step === 3 && (
         <QuestionStep
           lesson={lesson}
           draft={state.lessons[lesson.id]?.draft ?? ""}
           onDraft={(d) => saveDraft(lesson.id, d)}
-          onNext={() => { completeStep(lesson.id, "question"); setStep(3); }}
+          onNext={() => { completeStep(lesson.id, "question"); setStep(4); }}
           autocorrect={autocorrect}
         />
       )}
-      {step === 3 && (
+      {step === 4 && (
         <QuizStep
           lesson={lesson}
-          onFinish={(score) => { recordQuiz(lesson.id, score, lesson.quiz.length); completeStep(lesson.id, "quiz"); setStep(4); }}
+          onFinish={(score) => { recordQuiz(lesson.id, score, lesson.quiz.length); completeStep(lesson.id, "quiz"); setStep(5); }}
         />
       )}
       {done && (
@@ -208,8 +214,9 @@ function CourseStep({ lesson, onNext }: { lesson: ReturnType<typeof findLesson> 
           Au programme de cette séance
         </h3>
         <p className="text-[14px] leading-relaxed" style={{ color: "var(--ink)" }}>
-          <strong>{l.definitions.length} définitions</strong> à réciter, une <strong>question type examen</strong> avec
-          correction par l&apos;IA, et un <strong>quiz de {l.quiz.length} questions</strong>.
+          <strong>{l.definitions.length} définitions</strong> à réciter, une <strong>carte mentale</strong> pour tout
+          revoir d&apos;un coup d&apos;œil, une <strong>question type examen</strong> avec correction par l&apos;IA, et un{" "}
+          <strong>quiz de {l.quiz.length} questions</strong>.
         </p>
       </section>
       <article className="card p-5 sm:p-6"><Prose paragraphs={l.brief} /></article>
@@ -227,6 +234,20 @@ function CourseStep({ lesson, onNext }: { lesson: ReturnType<typeof findLesson> 
         </ul>
       </section>
       <Button onClick={onNext} size="lg" full>Passer aux définitions <Arrow className="h-4 w-4" /></Button>
+    </div>
+  );
+}
+
+function MindMapStep({ lesson, onNext }: { lesson: NonNullable<ReturnType<typeof findLesson>>; onNext: () => void }) {
+  const tree = useMemo(() => lessonMindMap(lesson), [lesson]);
+  return (
+    <div className="rise space-y-4">
+      <p className="text-[13.5px] leading-relaxed" style={{ color: "var(--muted)" }}>
+        Vue d&apos;ensemble de la leçon, construite depuis ses points clés, ses définitions et son plan d&apos;examen.
+        Touche une branche pour la déplier.
+      </p>
+      <MindMap root={tree} />
+      <Button onClick={onNext} size="lg" full>Passer à la question <Arrow className="h-4 w-4" /></Button>
     </div>
   );
 }
