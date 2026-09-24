@@ -51,7 +51,7 @@ export type Course = {
   niveau?: "L1" | "L2" | "L3";
 };
 
-export type StepName = "cours" | "definitions" | "question" | "quiz";
+export type StepName = "cours" | "definitions" | "mindmap" | "question" | "quiz";
 
 export type LessonRecord = {
   lessonId: string;

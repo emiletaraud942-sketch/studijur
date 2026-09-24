@@ -57,3 +57,6 @@ export function Grid({ className }: P) {
 export function Camera({ className }: P) {
   return (<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" className={className ?? base} aria-hidden="true"><path d="M4 8.5A1.5 1.5 0 0 1 5.5 7h2l1-2h7l1 2h2A1.5 1.5 0 0 1 20 8.5v10A1.5 1.5 0 0 1 18.5 20h-13A1.5 1.5 0 0 1 4 18.5Z" /><circle cx="12" cy="13" r="3.5" /></svg>);
 }
+export function Sitemap({ className }: P) {
+  return (<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" className={className ?? base} aria-hidden="true"><circle cx="4.5" cy="12" r="2.3" /><circle cx="18" cy="5" r="2.3" /><circle cx="18" cy="12" r="2.3" /><circle cx="18" cy="19" r="2.3" /><path d="M6.6 12h3M12 12h3.7M9.6 12 15.8 6.6M9.6 12l6.2 5.4" /></svg>);
+}
