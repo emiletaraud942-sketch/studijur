@@ -15,6 +15,9 @@ import histoireB from "./corpus/parts/histoire.b.json";
 import histoireC from "./corpus/parts/histoire.c.json";
 import methodoA from "./corpus/parts/methodo.a.json";
 import obligationsA from "./corpus/parts/obligations.a.json";
+import auteursA from "./corpus/parts/auteurs.a.json";
+import auteursB from "./corpus/parts/auteurs.b.json";
+import auteursC from "./corpus/parts/auteurs.c.json";
 
 type RawLesson = Omit<Lesson, "courseId">;
 
@@ -28,6 +31,7 @@ const PARTS: Record<string, RawLesson[][]> = {
   histoire: [histoireA, histoireB, histoireC] as unknown as RawLesson[][],
   methodo: [methodoA] as unknown as RawLesson[][],
   obligations: [obligationsA] as unknown as RawLesson[][],
+  auteurs: [auteursA, auteursB, auteursC] as unknown as RawLesson[][],
 };
 
 type Meta = {

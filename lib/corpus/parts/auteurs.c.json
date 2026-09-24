@@ -1,0 +1,597 @@
+[
+  {
+    "id": "auteurs-09",
+    "order": 9,
+    "title": "Rome : jurisconsultes et codification",
+    "teaser": "Salvius Julianus, Ulpien, Justinien : comment le droit romain se fixe, se hiérarchise, puis se compile.",
+    "minutes": 5,
+    "brief": [
+      "**Salvius Julianus** (v. 110 – v. 170), juriste romain d'origine nord-africaine, plusieurs fois consul, reçoit de l'empereur **Hadrien** (vers 130) la mission de rassembler et de fixer par écrit, de façon définitive, l'**édit perpétuel** : les règles jusque-là disséminées et renouvelées chaque année dans les édits successifs des préteurs (le droit prétorien). Une fois cette codification réalisée, l'édit ne peut plus être modifié que par l'empereur lui-même — une étape clé de la centralisation impériale du droit romain.",
+      "**Ulpien** (IIIe siècle apr. J.-C.), l'un des plus grands jurisconsultes romains, affirme qu'il n'y aura plus, après lui, d'autre grand jurisconsulte : la doctrine cesse alors d'être une source vivante du droit. La **loi des citations** (426 apr. J.-C.) hiérarchisera plus tard les avis des cinq plus grands jurisconsultes — **Papinien, Paul, Ulpien, Modestin et Gaius** — en cas de désaccord entre eux, avec la prééminence de Papinien en cas de partage égal des voix.",
+      "**Justinien** (empereur d'Orient, 527-565), nostalgique du prestige juridique romain, fait rassembler l'ensemble de ce droit devenu trop divers en **quatre grandes compilations** : le **Code**, le **Digeste**, les **Institutes** et les **Novelles** — ensemble connu plus tard sous le nom de *Corpus juris civilis*. Cette entreprise de codification, réalisée au VIe siècle, transmet à la postérité l'essentiel du droit romain classique et servira de socle à la redécouverte du droit romain en Europe à partir du Moyen Âge."
+    ],
+    "keyPoints": [
+      "Salvius Julianus fixe définitivement l'édit du préteur sous Hadrien (v. 130) : le droit prétorien cesse d'évoluer chaque année.",
+      "Ulpien clôt symboliquement l'âge d'or des jurisconsultes ; la loi des citations (426) hiérarchise ensuite leurs avis.",
+      "Justinien (527-565) compile l'ensemble du droit romain en quatre textes (Code, Digeste, Institutes, Novelles) — le futur Corpus juris civilis."
+    ],
+    "definitions": [
+      {
+        "term": "Salvius Julianus (v. 110 – v. 170)",
+        "text": "Juriste romain : rédige, sur ordre d'Hadrien (v. 130), l'édit perpétuel qui fixe définitivement le contenu de l'édit du préteur, désormais réservé à l'empereur seul."
+      },
+      {
+        "term": "Ulpien (IIIe s.)",
+        "text": "L'un des plus grands jurisconsultes romains : affirme qu'aucun grand jurisconsulte ne lui succédera — la doctrine cesse d'être une source vivante du droit."
+      },
+      {
+        "term": "Loi des citations (426 apr. J.-C.)",
+        "text": "Hiérarchise les avis des cinq plus grands jurisconsultes (Papinien, Paul, Ulpien, Modestin, Gaius) en cas de désaccord, avec prééminence de Papinien en cas de partage égal."
+      },
+      {
+        "term": "Justinien (empereur, 527-565)",
+        "text": "Fait rassembler l'ensemble du droit romain en quatre compilations — Code, Digeste, Institutes, Novelles — connues plus tard sous le nom de Corpus juris civilis."
+      }
+    ],
+    "exam": {
+      "kind": "question de cours",
+      "question": "Retracez les grandes étapes de la fixation du droit romain, de l'édit perpétuel de Salvius Julianus à la compilation de Justinien.",
+      "concise": "Le droit romain a connu plusieurs étapes successives de fixation. Sous Hadrien, vers 130, Salvius Julianus rédige l'édit perpétuel : jusque-là, chaque préteur pouvait modifier chaque année le contenu de l'édit qui organisait la procédure civile ; désormais, ce contenu est figé, et seul l'empereur peut encore le modifier — un premier geste de centralisation impériale du droit, au détriment du pouvoir normatif autonome des magistrats. Un siècle plus tard, Ulpien symbolise la fin de l'âge d'or de la doctrine des jurisconsultes : après lui, plus aucun juriste n'aura une autorité comparable. Pour organiser malgré tout les avis contradictoires des grands jurisconsultes du passé, la loi des citations de 426 impose une hiérarchie entre Papinien, Paul, Ulpien, Modestin et Gaius. Enfin, au VIe siècle, l'empereur d'Orient Justinien, nostalgique du prestige juridique de Rome, fait rassembler l'ensemble de ce droit devenu trop divers et parfois contradictoire en quatre grandes compilations (Code, Digeste, Institutes, Novelles) : c'est l'aboutissement d'un long mouvement de centralisation et de rationalisation du droit romain, qui permettra sa transmission et sa redécouverte en Europe médiévale.",
+      "plan": [
+        {
+          "title": "I. La centralisation progressive du pouvoir normatif",
+          "children": [
+            {
+              "title": "A. L'édit perpétuel de Salvius Julianus",
+              "points": [
+                "Fixation définitive de l'édit du préteur, vers 130",
+                "Fin du pouvoir normatif annuel et autonome des préteurs",
+                "Seul l'empereur peut désormais le modifier"
+              ]
+            },
+            {
+              "title": "B. La fin de l'âge d'or des jurisconsultes",
+              "points": [
+                "Ulpien : plus aucun grand jurisconsulte après lui",
+                "La doctrine cesse d'être une source vivante et évolutive du droit",
+                "La loi des citations (426) organise les avis déjà produits, plutôt que d'en susciter de nouveaux"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "II. L'aboutissement : la compilation de Justinien",
+          "children": [
+            {
+              "title": "A. Quatre textes pour un droit devenu trop divers",
+              "points": [
+                "Le Code, le Digeste, les Institutes, les Novelles",
+                "Réunis plus tard sous le nom de Corpus juris civilis",
+                "Une entreprise réalisée au VIe siècle, sous l'empereur d'Orient"
+              ]
+            },
+            {
+              "title": "B. Une transmission décisive pour l'histoire du droit",
+              "points": [
+                "Le socle de la redécouverte du droit romain au Moyen Âge",
+                "Une influence durable sur les juristes européens",
+                "Le symbole d'un droit voulu rationnel, cohérent et centralisé"
+              ]
+            }
+          ]
+        }
+      ],
+      "pitfalls": [
+        "Ne pas confondre l'édit perpétuel de Salvius Julianus (fixation du droit prétorien, IIe siècle) avec la compilation de Justinien (rassemblement de l'ensemble du droit romain, VIe siècle) : quatre siècles séparent ces deux étapes.",
+        "Ne pas présenter la loi des citations comme une œuvre de codification complète : elle se limite à hiérarchiser les avis de cinq jurisconsultes déjà connus."
+      ]
+    },
+    "quiz": [
+      {
+        "q": "L'édit perpétuel est rédigé par Salvius Julianus sur ordre de :",
+        "choices": [
+          "Justinien",
+          "Hadrien",
+          "Auguste",
+          "Constantin"
+        ],
+        "answer": 1,
+        "why": "C'est vers 130, sous le règne d'Hadrien, que l'édit du préteur est définitivement fixé."
+      },
+      {
+        "q": "Ulpien est resté célèbre pour avoir affirmé que :",
+        "choices": [
+          "La doctrine deviendrait la seule source du droit",
+          "Aucun grand jurisconsulte ne lui succéderait",
+          "L'édit du préteur devait changer chaque année",
+          "Le droit romain devait être codifié immédiatement"
+        ],
+        "answer": 1,
+        "why": "Cette affirmation marque symboliquement la fin de l'âge d'or de la doctrine des jurisconsultes romains."
+      },
+      {
+        "q": "La loi des citations (426 apr. J.-C.) hiérarchise les avis de :",
+        "choices": [
+          "Trois empereurs",
+          "Cinq jurisconsultes (Papinien, Paul, Ulpien, Modestin, Gaius)",
+          "Dix préteurs",
+          "Deux consuls"
+        ],
+        "answer": 1,
+        "why": "En cas de désaccord entre eux, l'avis de Papinien prévaut en cas de partage égal."
+      },
+      {
+        "q": "Les quatre compilations réunies par Justinien sont :",
+        "choices": [
+          "Le Code, le Digeste, les Institutes, les Novelles",
+          "L'édit perpétuel, la loi des citations, le Digeste et le Code civil",
+          "Les Douze Tables et le Digeste",
+          "Le Corpus juris civilis et la loi des citations uniquement"
+        ],
+        "answer": 0,
+        "why": "Ensemble connu plus tard sous le nom de Corpus juris civilis, réalisé au VIe siècle."
+      },
+      {
+        "q": "Justinien était :",
+        "choices": [
+          "Un juriste romain de la République",
+          "L'empereur d'Orient (527-565)",
+          "Un préteur du IIe siècle",
+          "Le successeur direct d'Hadrien"
+        ],
+        "answer": 1,
+        "why": "Nostalgique du prestige de Rome, il fait compiler l'ensemble du droit romain au VIe siècle."
+      }
+    ]
+  },
+  {
+    "id": "auteurs-10",
+    "order": 10,
+    "title": "Moyen Âge : la construction de l'État royal",
+    "teaser": "D'Adalbéron de Laon à Guy Coquille : comment le Moyen Âge pense la société, la fonction royale et le pouvoir de légiférer.",
+    "minutes": 6,
+    "brief": [
+      "**Adalbéron de Laon** (v. 947-1030), évêque de Laon, formule dans son *Carmen ad Rodbertum regem* (« Poème au roi Robert », 1027-1030), adressé au roi Robert II, l'une des premières expressions claires de la théorie des **trois ordres** de la société médiévale : les *oratores* (ceux qui prient), les *bellatores* (ceux qui combattent) et les *laboratores* (ceux qui travaillent) — une tripartition fonctionnelle et hiérarchisée qui légitime l'ordre social sous l'autorité royale.",
+      "**Jonas d'Orléans** (v. 760-843), évêque d'Orléans, donne dans son *De institutione regia* (v. 830-831), adressé à Pépin Ier d'Aquitaine, l'une des premières définitions marquantes du **ministère royal** : gouverner le peuple avec équité et justice, procurer la paix, défendre les églises, les serviteurs de Dieu, les veuves, les orphelins et les indigents. Le roi n'est pas propriétaire de son royaume : il en est le « ministre de Dieu », comptable devant lui de sa justice envers les plus faibles.",
+      "**Jean de Terre Vermeil** (v. 1370-1430), juriste au service de la couronne de France pendant la crise franco-anglaise, soutient dans son *Contra rebelles suorum regum* (1419) que la couronne de France est **indisponible** : elle relève d'une coutume publique supérieure à la volonté même du roi, qui ne peut ni la vendre, ni la léguer, ni la transmettre comme un bien privé ordinaire — une thèse écrite pour défendre les droits du dauphin Charles contre le traité de Troyes (1420), et qui fondera plus tard les « lois fondamentales du royaume ».",
+      "**Philippe de Beaumanoir** (v. 1250-1296), bailli royal sous Saint Louis puis Philippe le Bel, rédige les *Coutumes de Beauvaisis* (1283), l'un des meilleurs recueils de droit coutumier médiéval — loué plus tard par Montesquieu. Il y applique au roi de France la maxime d'origine romaine « **ce qui plaît au prince a force de loi** », défendant l'idée que le roi seul détient le pouvoir exclusif de légiférer, au-dessus des barons.",
+      "**Guy Coquille** (1523-1603), avocat et représentant du Tiers État aux États généraux, popularise dans son *Institution au droit des François* (1595) une image restée célèbre : « le Roi est le chef, et les trois états sont les membres ; et tous ensemble composent le corps politique et mystique, duquel la liaison et union est indivisible et inséparable » — une métaphore organiciste qui justifie une monarchie forte, mais organiquement unie à son royaume."
+    ],
+    "keyPoints": [
+      "Adalbéron de Laon théorise les trois ordres (prier, combattre, travailler) ; Jonas d'Orléans définit le roi comme « ministre de Dieu » au service des plus faibles.",
+      "Jean de Terre Vermeil fonde l'indisponibilité de la couronne ; Beaumanoir applique au roi la maxime « ce qui plaît au prince a force de loi ».",
+      "Guy Coquille résume cette construction par une image organiciste : le roi est la tête, les trois ordres sont les membres d'un même corps politique."
+    ],
+    "definitions": [
+      {
+        "term": "Adalbéron de Laon (v. 947-1030)",
+        "text": "Évêque de Laon : théorise dans son Poème au roi Robert (1027-1030) les trois ordres de la société médiévale — ceux qui prient, ceux qui combattent, ceux qui travaillent.",
+        "source": "Carmen ad Rodbertum regem, 1027-1030"
+      },
+      {
+        "term": "Jonas d'Orléans (v. 760-843)",
+        "text": "Évêque d'Orléans : définit dans le De institutione regia (v. 830) le roi comme ministre de Dieu, chargé de gouverner avec justice et de protéger les plus faibles (veuves, orphelins, indigents).",
+        "source": "De institutione regia, v. 830"
+      },
+      {
+        "term": "Jean de Terre Vermeil (v. 1370-1430)",
+        "text": "Juriste au service de la couronne de France : soutient que la couronne est indisponible, relevant d'une coutume publique supérieure à la volonté du roi lui-même.",
+        "source": "Contra rebelles suorum regum, 1419"
+      },
+      {
+        "term": "Philippe de Beaumanoir (v. 1250-1296)",
+        "text": "Bailli royal, auteur des Coutumes de Beauvaisis (1283) : applique au roi la maxime « ce qui plaît au prince a force de loi », fondant son pouvoir exclusif de légiférer.",
+        "source": "Coutumes de Beauvaisis, 1283"
+      },
+      {
+        "term": "Guy Coquille (1523-1603)",
+        "text": "Avocat et représentant du Tiers État : compare le roi à la tête d'un corps politique dont les trois ordres seraient les membres, indivisiblement unis.",
+        "source": "Institution au droit des François, 1595"
+      }
+    ],
+    "exam": {
+      "kind": "question de cours",
+      "question": "Comment la doctrine médiévale, d'Adalbéron de Laon à Guy Coquille, a-t-elle progressivement construit l'idée d'un pouvoir royal à la fois hiérarchisé, limité par une fonction et exclusif dans la fabrication du droit ?",
+      "concise": "La construction doctrinale du pouvoir royal médiéval suit plusieurs étapes complémentaires. Adalbéron de Laon fournit d'abord un cadre social hiérarchisé, celui des trois ordres — prier, combattre, travailler — qui légitime un ordre social organisé sous l'autorité du roi. Jonas d'Orléans complète ce cadre en donnant à la fonction royale un contenu moral et religieux : le roi n'est pas propriétaire de son royaume, il en est le ministre de Dieu, comptable de sa justice envers les plus faibles — une conception qui limite le pouvoir royal par les devoirs qu'elle lui impose. Plus tard, Jean de Terre Vermeil transforme cette idée en principe juridique : la couronne, relevant d'une coutume publique supérieure à la volonté du roi, devient indisponible — ni vendable, ni léguée comme un bien privé. Beaumanoir, de son côté, affirme le monopole royal du pouvoir de légiférer, au détriment des seigneurs locaux. Guy Coquille, enfin, synthétise cette évolution dans une image organiciste : le roi est la tête d'un corps politique dont les trois ordres sont les membres, indivisiblement unis — un pouvoir royal fort, mais qui ne peut prospérer contre l'intérêt du corps social sans se nuire à lui-même.",
+      "plan": [
+        {
+          "title": "I. Un pouvoir royal hiérarchisé et moralement encadré",
+          "children": [
+            {
+              "title": "A. Adalbéron de Laon : la société des trois ordres",
+              "points": [
+                "Oratores, bellatores, laboratores",
+                "Une tripartition fonctionnelle et hiérarchisée",
+                "Un ordre social légitimé sous l'autorité royale"
+              ]
+            },
+            {
+              "title": "B. Jonas d'Orléans : le roi, ministre de Dieu",
+              "points": [
+                "Le roi n'est pas propriétaire mais gestionnaire de son royaume",
+                "Un devoir de justice envers les plus faibles (veuves, orphelins, indigents)",
+                "Une conception ministérielle qui limite moralement le pouvoir royal"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "II. Un pouvoir royal juridiquement exclusif",
+          "children": [
+            {
+              "title": "A. L'indisponibilité de la couronne (Jean de Terre Vermeil)",
+              "points": [
+                "La couronne relève d'une coutume publique, supérieure à la volonté du roi",
+                "Ni vente, ni legs possibles, contrairement à un bien privé",
+                "Fondement des futures lois fondamentales du royaume"
+              ]
+            },
+            {
+              "title": "B. Le monopole royal de la loi (Beaumanoir, Guy Coquille)",
+              "points": [
+                "« Ce qui plaît au prince a force de loi » : le roi seul légifère, au-dessus des barons",
+                "L'image du corps politique : le roi comme tête, les trois ordres comme membres",
+                "Un pouvoir fort mais organiquement lié au corps social qu'il gouverne"
+              ]
+            }
+          ]
+        }
+      ],
+      "pitfalls": [
+        "Ne pas confondre la théorie des trois ordres (organisation sociale) avec la doctrine de l'indisponibilité de la couronne (statut juridique du pouvoir royal) : ce sont deux apports distincts, séparés de plusieurs siècles.",
+        "Ne pas présenter Beaumanoir comme un théoricien de l'absolutisme au sens du XVIIe siècle : son propos porte sur le monopole législatif du roi face aux seigneurs, pas sur l'indivisibilité de la souveraineté (thèse plus tardive, chez Bodin puis Cardin Le Bret)."
+      ]
+    },
+    "quiz": [
+      {
+        "q": "La théorie des trois ordres (oratores, bellatores, laboratores) est formulée par :",
+        "choices": [
+          "Jonas d'Orléans",
+          "Adalbéron de Laon",
+          "Jean de Terre Vermeil",
+          "Guy Coquille"
+        ],
+        "answer": 1,
+        "why": "Dans son Poème au roi Robert (1027-1030), Adalbéron de Laon fournit l'une des premières formulations claires de cette tripartition."
+      },
+      {
+        "q": "Selon Jonas d'Orléans, le roi doit avant tout :",
+        "choices": [
+          "Accumuler des richesses personnelles",
+          "Gouverner avec équité et justice, en défendant les plus faibles",
+          "Se soumettre entièrement à la noblesse",
+          "Éviter tout contact avec l'Église"
+        ],
+        "answer": 1,
+        "why": "Le roi est présenté comme le « ministre de Dieu », comptable de sa justice envers veuves, orphelins et indigents."
+      },
+      {
+        "q": "La thèse de l'indisponibilité de la couronne de France est défendue par :",
+        "choices": [
+          "Philippe de Beaumanoir",
+          "Jean de Terre Vermeil",
+          "Guy Coquille",
+          "Adalbéron de Laon"
+        ],
+        "answer": 1,
+        "why": "Dans le Contra rebelles suorum regum (1419), écrit pour défendre les droits du dauphin Charles contre le traité de Troyes."
+      },
+      {
+        "q": "Beaumanoir applique au roi de France la maxime :",
+        "choices": [
+          "« La souveraineté n'est pas divisible comme un point en géométrie »",
+          "« Ce qui plaît au prince a force de loi »",
+          "« Le même marteau, mais un manche raccourci »",
+          "« Toute la Constitution n'est pas dans la Constitution »"
+        ],
+        "answer": 1,
+        "why": "Dans les Coutumes de Beauvaisis (1283), il fonde ainsi le monopole législatif du roi."
+      },
+      {
+        "q": "Guy Coquille compare le royaume à :",
+        "choices": [
+          "Une confédération d'États indépendants",
+          "Un corps politique dont le roi est la tête et les trois ordres les membres",
+          "Une pyramide de normes",
+          "Un contrat librement résiliable"
+        ],
+        "answer": 1,
+        "why": "Cette image organiciste souligne l'union indivisible entre le roi et le corps social qu'il gouverne."
+      }
+    ]
+  },
+  {
+    "id": "auteurs-11",
+    "order": 11,
+    "title": "Absolutisme et Lumières : justifier puis critiquer le pouvoir royal",
+    "teaser": "Cardin Le Bret et Bossuet justifient l'absolutisme ; Voltaire et Turgot en dénoncent les excès.",
+    "minutes": 5,
+    "brief": [
+      "**Cardin Le Bret** (1558-1655), juriste proche du cardinal de Richelieu, avocat général puis haut fonctionnaire royal, est l'un des grands théoriciens de l'absolutisme français, aux côtés de Jean Bodin. Dans *De la souveraineté du Roy* (1632), il forge la formule restée célèbre : « **la souveraineté n'est non plus divisible que le point en géométrie** » — la souveraineté ne peut être partagée entre le roi et d'autres corps (parlements, États généraux, princes) sans cesser d'être souveraineté.",
+      "**Bossuet** (1627-1704), évêque et précepteur du Dauphin, ajoute dans sa *Politique tirée des propres paroles de l'Écriture sainte* (publiée en 1709) une justification religieuse à l'absolutisme : le roi est le **représentant de Dieu sur terre**, et lui désobéir équivaut à désobéir à Dieu lui-même — l'apogée de la théorie du droit divin monarchique.",
+      "**Voltaire** (1694-1778), figure majeure des Lumières, retourne cette centralisation contre elle-même : il critique la **multiplicité des lois locales**, qui varient d'une région à l'autre et rendent le droit confus et inégal, et plaide, dans le domaine judiciaire, pour l'**intime conviction** et le système du jury, sur le modèle anglais — un combat mené notamment lors de ses interventions dans des affaires judiciaires retentissantes de l'époque.",
+      "**Turgot** (1727-1781), ministre réformateur sous Louis XVI, dénonce dans le même esprit une société « composée de différents ordres mal unis, où personne n'est occupé que de son intérêt particulier » — une critique de la fragmentation juridique et sociale de l'Ancien Régime, que ses réformes économiques et administratives tenteront, sans succès durable, de corriger."
+    ],
+    "keyPoints": [
+      "Cardin Le Bret théorise l'indivisibilité de la souveraineté ; Bossuet y ajoute une justification religieuse (le roi, représentant de Dieu).",
+      "Voltaire critique la multiplicité des lois locales et plaide pour l'intime conviction et le jury ; Turgot dénonce une société d'ordres mal unis, dominés par les intérêts particuliers.",
+      "Deux siècles séparent la théorisation de l'absolutisme (XVIIe s.) de sa critique par les Lumières (XVIIIe s.), sur les mêmes terrains : l'unité du droit et la légitimité du pouvoir."
+    ],
+    "definitions": [
+      {
+        "term": "Cardin Le Bret (1558-1655)",
+        "text": "Juriste proche de Richelieu : « la souveraineté n'est non plus divisible que le point en géométrie » — l'un des grands théoriciens de l'absolutisme français.",
+        "source": "De la souveraineté du Roy, 1632"
+      },
+      {
+        "term": "Bossuet (1627-1704)",
+        "text": "Évêque et précepteur du Dauphin : justifie religieusement l'absolutisme, le roi étant le représentant de Dieu sur terre.",
+        "source": "Politique tirée des propres paroles de l'Écriture sainte, publiée en 1709"
+      },
+      {
+        "term": "Voltaire (1694-1778)",
+        "text": "Figure des Lumières : critique la multiplicité des lois locales, source de confusion et d'inégalité, et plaide pour l'intime conviction et le jury, sur le modèle anglais."
+      },
+      {
+        "term": "Turgot (1727-1781)",
+        "text": "Ministre réformateur sous Louis XVI : dénonce une société composée de différents ordres mal unis, où chacun ne poursuit que son intérêt particulier."
+      }
+    ],
+    "exam": {
+      "kind": "question de cours",
+      "question": "En quoi les critiques de Voltaire et Turgot au XVIIIe siècle s'opposent-elles à la justification de l'absolutisme par Cardin Le Bret et Bossuet au siècle précédent ?",
+      "concise": "Au XVIIe siècle, Cardin Le Bret et Bossuet justifient conjointement l'absolutisme royal : le premier par un argument juridique — la souveraineté, indivisible par nature, ne peut être partagée sans se dissoudre — le second par un argument religieux — le roi, représentant de Dieu sur terre, tient de lui une autorité à laquelle nul ne peut légitimement désobéir. Cette double justification, juridique et religieuse, fonde un pouvoir royal fort et centralisé, incontesté dans son principe. Un siècle plus tard, Voltaire et Turgot retournent cette centralisation contre elle-même, non pas en contestant frontalement le principe monarchique, mais en dénonçant ses effets concrets : la France reste, malgré l'unité proclamée de la souveraineté, une juxtaposition de droits locaux disparates (critique de Voltaire) et une société d'ordres mal unis, où l'intérêt particulier prime sur l'intérêt commun (critique de Turgot). Le paradoxe est donc le suivant : la théorie affirme l'unité et l'indivisibilité du pouvoir, mais la pratique du royaume reste fragmentée — c'est cette contradiction que les Lumières mettent en évidence, ouvrant la voie aux réformes, puis à la remise en cause révolutionnaire de l'Ancien Régime.",
+      "plan": [
+        {
+          "title": "I. La justification théorique de l'absolutisme au XVIIe siècle",
+          "children": [
+            {
+              "title": "A. Cardin Le Bret : l'indivisibilité juridique de la souveraineté",
+              "points": [
+                "« La souveraineté n'est non plus divisible que le point en géométrie »",
+                "Aucun partage possible avec parlements, États généraux ou princes",
+                "Un prolongement de la théorie de Bodin"
+              ]
+            },
+            {
+              "title": "B. Bossuet : une justification religieuse complémentaire",
+              "points": [
+                "Le roi, représentant de Dieu sur terre",
+                "Désobéir au roi, c'est désobéir à Dieu",
+                "L'apogée de la théorie du droit divin monarchique"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "II. La critique des Lumières : une centralisation en trompe-l'œil",
+          "children": [
+            {
+              "title": "A. Voltaire : la persistance d'un droit fragmenté",
+              "points": [
+                "Multiplicité des lois locales, confuses et inégales",
+                "Plaidoyer pour l'intime conviction et le jury, sur le modèle anglais",
+                "Une critique portée par des affaires judiciaires retentissantes"
+              ]
+            },
+            {
+              "title": "B. Turgot : une société d'ordres mal unis",
+              "points": [
+                "Une critique de la fragmentation sociale de l'Ancien Régime",
+                "L'intérêt particulier qui prime sur l'intérêt commun",
+                "Des réformes tentées, sans succès durable, avant la Révolution"
+              ]
+            }
+          ]
+        }
+      ],
+      "pitfalls": [
+        "Ne pas confondre la critique de Voltaire et Turgot avec une remise en cause du principe monarchique lui-même : ils critiquent les effets concrets de la fragmentation, pas la légitimité de la monarchie en tant que telle.",
+        "Ne pas dater la Politique tirée des propres paroles de l'Écriture sainte de Bossuet de son vivant : l'ouvrage n'est publié qu'en 1709, après sa mort en 1704."
+      ]
+    },
+    "quiz": [
+      {
+        "q": "La formule « la souveraineté n'est non plus divisible que le point en géométrie » est de :",
+        "choices": [
+          "Jean Bodin",
+          "Cardin Le Bret",
+          "Bossuet",
+          "Montesquieu"
+        ],
+        "answer": 1,
+        "why": "Cardin Le Bret la formule dans De la souveraineté du Roy (1632), prolongeant la théorie de Bodin."
+      },
+      {
+        "q": "Bossuet justifie l'absolutisme royal par :",
+        "choices": [
+          "Un argument uniquement économique",
+          "Une justification religieuse : le roi, représentant de Dieu sur terre",
+          "La théorie du contrat social",
+          "La séparation des pouvoirs"
+        ],
+        "answer": 1,
+        "why": "Publiée en 1709, sa Politique tirée des propres paroles de l'Écriture sainte fonde le droit divin monarchique."
+      },
+      {
+        "q": "Voltaire critique notamment :",
+        "choices": [
+          "L'unité excessive du droit français",
+          "La multiplicité des lois locales, source de confusion et d'inégalité",
+          "L'existence du jury populaire",
+          "La séparation des pouvoirs"
+        ],
+        "answer": 1,
+        "why": "Il plaide par ailleurs pour l'intime conviction et le jury, sur le modèle anglais."
+      },
+      {
+        "q": "Turgot dénonce une société :",
+        "choices": [
+          "Parfaitement unifiée autour de l'intérêt général",
+          "Composée d'ordres mal unis, où chacun poursuit son intérêt particulier",
+          "Sans aucune hiérarchie sociale",
+          "Uniquement rurale"
+        ],
+        "answer": 1,
+        "why": "Cette critique de la fragmentation sociale de l'Ancien Régime nourrira ses tentatives de réforme sous Louis XVI."
+      },
+      {
+        "q": "Cardin Le Bret était proche de :",
+        "choices": [
+          "Voltaire",
+          "Turgot",
+          "Le cardinal de Richelieu",
+          "Bossuet uniquement"
+        ],
+        "answer": 2,
+        "why": "Avocat général puis haut fonctionnaire, il théorise l'absolutisme dans le contexte du gouvernement de Richelieu."
+      }
+    ]
+  },
+  {
+    "id": "auteurs-12",
+    "order": 12,
+    "title": "Les grandes théories des relations internationales",
+    "teaser": "Kant, Morgenthau, Aron, Nye : de la paix perpétuelle au soft power, comment penser la puissance entre États.",
+    "minutes": 5,
+    "brief": [
+      "**Emmanuel Kant** (1724-1804), déjà cité pour sa réflexion sur la difficulté de définir le droit, est aussi associé en relations internationales à l'idée de **paix perpétuelle** : dans un texte resté célèbre, il imagine les conditions institutionnelles (régimes républicains, fédération d'États libres, droit cosmopolite) permettant de limiter durablement la guerre entre nations — un idéal encore invoqué aujourd'hui dans les réflexions sur les organisations internationales.",
+      "**Hans Morgenthau** (1904-1980), juriste et politologue germano-américain, est une figure majeure du **réalisme classique** en relations internationales : contre les approches idéalistes héritées de Kant, il insiste sur la **puissance** et l'**intérêt national** comme moteurs premiers du comportement des États, dans un système international par nature anarchique où chaque État cherche avant tout à assurer sa propre sécurité.",
+      "**Raymond Aron** (1905-1983), philosophe et sociologue français, prolonge cette tradition réaliste dans une œuvre majeure sur les relations internationales, où il analyse les rapports entre **puissance, guerre et diplomatie** : pour lui, la diplomatie et la stratégie militaire sont indissociables, et la paix entre États reste toujours relative, jamais acquise définitivement.",
+      "**Joseph Nye** (né en 1937), politologue américain, introduit à la fin du XXe siècle le concept de **soft power** : la capacité d'un État à obtenir ce qu'il veut par l'attraction et la persuasion (culture, valeurs, diplomatie) plutôt que par la contrainte militaire ou économique (*hard power*) — un concept devenu incontournable pour analyser la puissance des États au XXIe siècle, aux côtés des approches réalistes plus classiques."
+    ],
+    "keyPoints": [
+      "Kant imagine les conditions institutionnelles d'une paix perpétuelle entre États — un idéalisme fondateur.",
+      "Morgenthau et Aron, dans la tradition réaliste, insistent au contraire sur la puissance, l'intérêt national et l'anarchie du système international.",
+      "Nye renouvelle la réflexion avec le soft power : la capacité d'attraction et de persuasion, distincte de la puissance militaire ou économique (hard power)."
+    ],
+    "definitions": [
+      {
+        "term": "Emmanuel Kant (1724-1804)",
+        "text": "Philosophe allemand : associé à l'idée de paix perpétuelle, imaginant les conditions institutionnelles permettant de limiter durablement la guerre entre nations."
+      },
+      {
+        "term": "Hans Morgenthau (1904-1980)",
+        "text": "Juriste et politologue germano-américain : figure majeure du réalisme classique, insiste sur la puissance et l'intérêt national comme moteurs du comportement des États."
+      },
+      {
+        "term": "Raymond Aron (1905-1983)",
+        "text": "Philosophe et sociologue français : analyse les relations entre puissance, guerre et diplomatie, dans la tradition réaliste des relations internationales."
+      },
+      {
+        "term": "Joseph Nye (né en 1937)",
+        "text": "Politologue américain : introduit le concept de soft power, la capacité d'un État à obtenir ce qu'il veut par l'attraction et la persuasion plutôt que par la contrainte."
+      }
+    ],
+    "exam": {
+      "kind": "question de cours",
+      "question": "Opposez l'idéalisme kantien et le réalisme de Morgenthau et Aron dans l'analyse des relations internationales.",
+      "concise": "Kant, avec l'idée de paix perpétuelle, propose une lecture idéaliste des relations internationales : la guerre n'est pas une fatalité, elle peut être durablement limitée par des institutions adaptées — régimes républicains, fédération d'États libres, droit cosmopolite. Morgenthau et Aron s'inscrivent au contraire dans la tradition réaliste, qui prend acte du caractère fondamentalement anarchique du système international, où aucune autorité supérieure ne contraint les États : dans ce contexte, ce sont la puissance et l'intérêt national qui déterminent en dernier ressort le comportement des États, la diplomatie et la stratégie militaire restant indissociablement liées. Loin de rejeter tout ordre international, Aron souligne toutefois que la paix entre États demeure toujours relative, jamais acquise définitivement — une nuance qui distingue le réalisme d'un simple cynisme de la force. Joseph Nye, plus récemment, vient enrichir ce débat en montrant que la puissance d'un État ne se réduit pas à sa force militaire ou économique (hard power) : elle inclut aussi sa capacité d'attraction et de persuasion (soft power), sans pour autant remettre en cause le cadre réaliste d'un système international où chaque État demeure responsable de sa propre sécurité.",
+      "plan": [
+        {
+          "title": "I. L'idéalisme kantien : limiter durablement la guerre par les institutions",
+          "children": [
+            {
+              "title": "A. La paix perpétuelle comme horizon",
+              "points": [
+                "La guerre n'est pas une fatalité",
+                "Des conditions institutionnelles précises : régimes républicains, fédération d'États libres",
+                "Un idéal encore invoqué dans les réflexions sur les organisations internationales"
+              ]
+            },
+            {
+              "title": "B. Les limites de cette approche",
+              "points": [
+                "Une lecture jugée trop optimiste par les réalistes",
+                "Le rôle des institutions surestimé face aux rapports de puissance",
+                "Un idéal difficile à traduire dans la pratique diplomatique"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "II. Le réalisme de Morgenthau et Aron : la puissance au cœur du système",
+          "children": [
+            {
+              "title": "A. Un système international anarchique",
+              "points": [
+                "Aucune autorité supérieure ne contraint les États",
+                "La puissance et l'intérêt national déterminent le comportement des États",
+                "Diplomatie et stratégie militaire indissociables (Aron)"
+              ]
+            },
+            {
+              "title": "B. Le prolongement contemporain : le soft power de Nye",
+              "points": [
+                "La puissance ne se réduit pas à la contrainte militaire ou économique (hard power)",
+                "L'attraction et la persuasion comme nouvelles formes de puissance",
+                "Un concept qui enrichit, sans le renier, le cadre réaliste"
+              ]
+            }
+          ]
+        }
+      ],
+      "pitfalls": [
+        "Ne pas présenter le réalisme d'Aron comme un simple cynisme de la force : il insiste sur le caractère toujours relatif, jamais acquis, de la paix entre États.",
+        "Ne pas confondre soft power et idéalisme kantien : le concept de Nye reste une analyse de la puissance, pas une théorie de la paix perpétuelle par les institutions."
+      ]
+    },
+    "quiz": [
+      {
+        "q": "L'idée de paix perpétuelle, par des institutions limitant durablement la guerre, est associée à :",
+        "choices": [
+          "Hans Morgenthau",
+          "Emmanuel Kant",
+          "Raymond Aron",
+          "Joseph Nye"
+        ],
+        "answer": 1,
+        "why": "Kant imagine les conditions institutionnelles (régimes républicains, fédération d'États libres) permettant de limiter la guerre entre nations."
+      },
+      {
+        "q": "Hans Morgenthau est une figure majeure :",
+        "choices": [
+          "De l'idéalisme kantien",
+          "Du réalisme classique en relations internationales",
+          "Du soft power",
+          "Du fédéralisme"
+        ],
+        "answer": 1,
+        "why": "Il insiste sur la puissance et l'intérêt national comme moteurs du comportement des États."
+      },
+      {
+        "q": "Raymond Aron analyse les relations internationales à travers :",
+        "choices": [
+          "Le seul droit international",
+          "La puissance, la guerre et la diplomatie",
+          "Le soft power exclusivement",
+          "La paix perpétuelle kantienne"
+        ],
+        "answer": 1,
+        "why": "Il s'inscrit dans la tradition réaliste, où diplomatie et stratégie militaire restent indissociables."
+      },
+      {
+        "q": "Le concept de « soft power » est introduit par :",
+        "choices": [
+          "Joseph Nye",
+          "Hans Morgenthau",
+          "Emmanuel Kant",
+          "Raymond Aron"
+        ],
+        "answer": 0,
+        "why": "Il désigne la capacité d'un État à obtenir ce qu'il veut par l'attraction et la persuasion, plutôt que par la contrainte."
+      },
+      {
+        "q": "Pour les réalistes comme Morgenthau et Aron, le système international est :",
+        "choices": [
+          "Régi par une autorité supérieure contraignante",
+          "Fondamentalement anarchique",
+          "Entièrement pacifié depuis Kant",
+          "Organisé uniquement par le soft power"
+        ],
+        "answer": 1,
+        "why": "Aucune autorité supérieure ne contraint les États, ce qui explique le rôle central de la puissance."
+      }
+    ]
+  }
+]

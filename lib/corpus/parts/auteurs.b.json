@@ -1,0 +1,606 @@
+[
+  {
+    "id": "auteurs-05",
+    "order": 5,
+    "title": "Comment naît l'État : sociologie, fédéralisme et souveraineté nationale",
+    "teaser": "Elias, Scelle, Beaud, Sieyès : d'où vient historiquement le pouvoir, et comment plusieurs États peuvent-ils s'unir.",
+    "minutes": 6,
+    "brief": [
+      "**Norbert Elias** (1897-1990), sociologue et historien allemand naturalisé britannique, retrace dans *La Dynamique de l'Occident* (partie de son ouvrage majeur *Sur le processus de civilisation*, 1939) la formation historique de l'État moderne comme un processus de **monopolisation progressive**, par une autorité centrale, de deux ressources interdépendantes : le pouvoir **fiscal** (les prélèvements financiers) et le pouvoir **militaire** (la violence légitime) — un mécanisme non concerté, résultant de luttes concurrentielles entre seigneurs rivaux, jusqu'à l'affirmation d'un pouvoir central hégémonique.",
+      "**Emmanuel-Joseph Sieyès** (1748-1836), théoricien et acteur de la Révolution française, formule la théorie de la **souveraineté nationale** : elle attribue la souveraineté non aux individus pris un par un, mais à la **Nation**, entité abstraite, indivisible et distincte de la somme des citoyens — une conception qui s'oppose à la souveraineté populaire et qui justifiera longtemps le suffrage censitaire.",
+      "**Georges Scelle** (1878-1961), juriste français, théoricien majeur du droit international et auteur du *Précis de droit des gens* (1932-1934), développe par ailleurs une **théorie du fédéralisme** distinguant deux voies de formation de l'État fédéral : le **fédéralisme par association** (des États indépendants s'unissent, souvent après être passés par une confédération — États-Unis, Suisse) et le **fédéralisme par dissociation** (un État unitaire se fédéralise pour éviter d'éclater — Belgique). Il en tire trois principes structurants : **superposition** (deux ordres juridiques complets coexistent), **participation** (les États fédérés participent aux organes et à la création du droit fédéral) et **autonomie** (répartition constitutionnelle des compétences).",
+      "**Olivier Beaud** (né en 1958), professeur de droit public à l'université Paris II, propose dans sa *Théorie de la Fédération* (2007) une définition de la fédération comme **libre association d'États** qui entendent fonder un **nouveau corps politique** tout en restant eux-mêmes des entités politiques — une théorie qui renouvelle la réflexion sur les liens entre souveraineté et fédéralisme, longtemps considérés comme incompatibles."
+    ],
+    "keyPoints": [
+      "Elias explique historiquement la formation de l'État par la monopolisation conjointe du pouvoir fiscal et du pouvoir militaire.",
+      "Sieyès fonde la souveraineté nationale : elle appartient à la Nation, entité abstraite et indivisible, non à la somme des individus.",
+      "Scelle distingue fédéralisme par association et par dissociation, et pose trois principes (superposition, participation, autonomie) ; Beaud définit la fédération comme une libre association fondant un nouveau corps politique."
+    ],
+    "definitions": [
+      {
+        "term": "Norbert Elias (1897-1990)",
+        "text": "Sociologue et historien allemand naturalisé britannique : retrace la formation historique de l'État par la monopolisation progressive du pouvoir fiscal et du pouvoir militaire par une autorité centrale.",
+        "source": "Sur le processus de civilisation, 1939"
+      },
+      {
+        "term": "Emmanuel-Joseph Sieyès (1748-1836)",
+        "text": "Théoricien et acteur de la Révolution française : formule la théorie de la souveraineté nationale, qui attribue la souveraineté à la Nation, entité abstraite et indivisible, distincte de la somme des citoyens."
+      },
+      {
+        "term": "Georges Scelle (1878-1961)",
+        "text": "Juriste français, théoricien du droit international et du fédéralisme : distingue le fédéralisme par association et par dissociation, et pose les principes de superposition, participation et autonomie.",
+        "source": "Précis de droit des gens, 1932-1934"
+      },
+      {
+        "term": "Olivier Beaud (né en 1958)",
+        "text": "Professeur de droit public à Paris II : définit la fédération comme la libre association d'États qui entendent fonder un nouveau corps politique tout en restant eux-mêmes des entités politiques.",
+        "source": "Théorie de la Fédération, 2007"
+      }
+    ],
+    "exam": {
+      "kind": "question de cours",
+      "question": "En quoi la théorie du fédéralisme de Georges Scelle éclaire-t-elle deux trajectoires historiques opposées de formation de l'État fédéral ?",
+      "concise": "Georges Scelle distingue deux voies de formation d'un État fédéral. Le fédéralisme par association réunit des États jusque-là indépendants, qui choisissent de s'unir — souvent après être passés par une simple confédération, union plus lâche entre États souverains — pour former un État fédéral plus intégré : c'est la trajectoire des États-Unis (1777-1787) ou de la Suisse (1848). Le fédéralisme par dissociation suit le chemin inverse : un État jusque-là unitaire se fédéralise pour éviter d'éclater sous l'effet de tensions internes, comme la Belgique depuis 1993. Ces deux trajectoires aboutissent cependant à un même résultat structurel, que Scelle décrit par trois principes : la superposition de deux ordres juridiques complets (l'État fédéral et les États fédérés ont chacun leur constitution, leurs institutions), la participation des États fédérés aux organes et à la création du droit fédéral (bicamérisme, révision constitutionnelle), et l'autonomie, qui répartit les compétences entre les deux niveaux. Olivier Beaud, plus récemment, définit la fédération comme une libre association d'États fondant un nouveau corps politique tout en restant eux-mêmes des entités politiques — une définition qui englobe les deux trajectoires décrites par Scelle.",
+      "plan": [
+        {
+          "title": "I. Deux trajectoires opposées vers l'État fédéral",
+          "children": [
+            {
+              "title": "A. Le fédéralisme par association",
+              "points": [
+                "Des États indépendants choisissent de s'unir",
+                "Souvent après un passage par une confédération",
+                "Exemples : États-Unis, Suisse"
+              ]
+            },
+            {
+              "title": "B. Le fédéralisme par dissociation",
+              "points": [
+                "Un État unitaire se fédéralise pour éviter d'éclater",
+                "Une réponse institutionnelle à des tensions internes",
+                "Exemple : la Belgique depuis 1993"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "II. Un même résultat structurel, décrit par trois principes",
+          "children": [
+            {
+              "title": "A. Superposition et participation",
+              "points": [
+                "Deux ordres juridiques complets coexistent (superposition)",
+                "Les États fédérés participent aux organes et à la création du droit fédéral (participation)",
+                "Bicamérisme et révision constitutionnelle comme mécanismes concrets"
+              ]
+            },
+            {
+              "title": "B. L'autonomie et son prolongement contemporain",
+              "points": [
+                "Répartition constitutionnelle des compétences entre les deux niveaux",
+                "Beaud : la fédération comme libre association fondant un nouveau corps politique",
+                "Une théorie qui dépasse l'opposition classique entre souveraineté et fédéralisme"
+              ]
+            }
+          ]
+        }
+      ],
+      "pitfalls": [
+        "Ne pas confondre confédération (union d'États souverains, régie par un traité international) et fédéralisme par association (formation d'un véritable État fédéral, souvent après un passage par une confédération).",
+        "Ne pas présenter le fédéralisme par dissociation comme un simple approfondissement de la décentralisation : c'est un changement de nature de l'État, pas seulement de degré."
+      ]
+    },
+    "quiz": [
+      {
+        "q": "Norbert Elias explique la formation historique de l'État par :",
+        "choices": [
+          "Un contrat social librement consenti",
+          "La monopolisation conjointe du pouvoir fiscal et du pouvoir militaire",
+          "La volonté générale du peuple",
+          "La séparation des pouvoirs"
+        ],
+        "answer": 1,
+        "why": "Ce double monopole, interdépendant, résulte de luttes concurrentielles entre seigneurs rivaux."
+      },
+      {
+        "q": "Pour Sieyès, la souveraineté nationale appartient :",
+        "choices": [
+          "À chaque citoyen individuellement",
+          "À la Nation, entité abstraite et indivisible",
+          "Au seul roi",
+          "Aux seuls propriétaires"
+        ],
+        "answer": 1,
+        "why": "C'est ce qui distingue la souveraineté nationale de la souveraineté populaire, qui l'attribue directement au peuple."
+      },
+      {
+        "q": "Le fédéralisme par dissociation désigne :",
+        "choices": [
+          "L'union de plusieurs États indépendants",
+          "Un État unitaire qui se fédéralise pour éviter d'éclater",
+          "La dissolution d'un État fédéral",
+          "Une confédération qui devient indépendante"
+        ],
+        "answer": 1,
+        "why": "C'est la trajectoire suivie par la Belgique depuis 1993 — la voie opposée au fédéralisme par association."
+      },
+      {
+        "q": "Parmi les trois principes du fédéralisme selon Scelle, la « participation » désigne :",
+        "choices": [
+          "La possibilité de quitter la fédération à tout moment",
+          "L'association des États fédérés aux organes et à la création du droit fédéral",
+          "L'absence de toute constitution locale",
+          "Le droit de veto de chaque État fédéré"
+        ],
+        "answer": 1,
+        "why": "Elle se manifeste notamment par le bicamérisme et par la participation à la révision de la constitution fédérale."
+      },
+      {
+        "q": "Olivier Beaud définit la fédération comme :",
+        "choices": [
+          "Un simple traité international entre États",
+          "Une libre association d'États fondant un nouveau corps politique",
+          "Une décentralisation poussée de l'État unitaire",
+          "Une union régie exclusivement par le droit international"
+        ],
+        "answer": 1,
+        "why": "Cette définition (2007) souligne que les États fédérés restent eux-mêmes des entités politiques."
+      }
+    ]
+  },
+  {
+    "id": "auteurs-06",
+    "order": 6,
+    "title": "La Nation et la naissance du droit constitutionnel comme discipline",
+    "teaser": "Renan contre Fichte sur la Nation ; Rossi et Guizot à l'origine du premier cours de droit constitutionnel en France.",
+    "minutes": 6,
+    "brief": [
+      "**Ernest Renan** (1823-1892), philosophe et écrivain français, défend dans sa conférence *Qu'est-ce qu'une nation ?* (Sorbonne, 11 mars 1882) une conception **volontariste** de la Nation : elle est une communauté de personnes ayant la **volonté de construire un projet commun** — Renan parle d'un « **plébiscite de tous les jours** ».",
+      "**Johann Gottlieb Fichte** (1762-1814), philosophe allemand, défend à l'inverse une conception **objective et naturaliste** dans ses *Discours à la nation allemande* (1807-1808) : la nation repose sur le **partage de traits communs objectifs** (langue, culture, origine), et non sur une adhésion volontaire — un débat classique, opposant la conception française et la conception allemande de la nation.",
+      "**Pellegrino Rossi** (1787-1848), juriste et économiste italien naturalisé français, est le titulaire de la **toute première chaire de droit constitutionnel** créée en France, à la faculté de droit de Paris en 1834 ; son *Cours de droit constitutionnel*, publié à titre posthume (1866-1867), est considéré comme le premier traité de droit constitutionnel publié en France.",
+      "**François Guizot** (1787-1874), historien et homme d'État, ministre de l'Instruction publique sous la Monarchie de Juillet, crée par l'**ordonnance de 1834** la chaire confiée à Pellegrino Rossi : c'est cet acte institutionnel qui fait naître, en France, l'enseignement académique du droit constitutionnel comme discipline autonome.",
+      "**Odilon Barrot** (1791-1873), avocat et homme politique, chef du gouvernement sous la Deuxième République, critique dans *De la centralisation et de ses effets* (1861) la permanence du modèle administratif centralisé français, quel que soit le régime en place — formule restée célèbre : « c'est toujours le même marteau qui frappe, mais on en a raccourci le manche »."
+    ],
+    "keyPoints": [
+      "Renan (conception volontariste : « plébiscite de tous les jours ») s'oppose à Fichte (conception objective, fondée sur des traits communs).",
+      "Rossi occupe la première chaire de droit constitutionnel, créée en 1834 par ordonnance de Guizot, alors ministre de l'Instruction publique.",
+      "Odilon Barrot illustre la continuité du modèle administratif centralisé français par-delà les changements de régime politique."
+    ],
+    "definitions": [
+      {
+        "term": "Ernest Renan (1823-1892)",
+        "text": "Philosophe et écrivain français : conception volontariste de la nation, communauté ayant la volonté de construire un projet commun — le « plébiscite de tous les jours ».",
+        "source": "Qu'est-ce qu'une nation ?, 1882"
+      },
+      {
+        "term": "Johann Gottlieb Fichte (1762-1814)",
+        "text": "Philosophe allemand : conception objective et naturaliste de la nation, fondée sur le partage de traits communs (langue, culture, origine), non sur une adhésion volontaire.",
+        "source": "Discours à la nation allemande, 1807-1808"
+      },
+      {
+        "term": "Pellegrino Rossi (1787-1848)",
+        "text": "Juriste et économiste italien naturalisé français : premier titulaire de la chaire de droit constitutionnel créée à Paris en 1834, auteur du premier Cours de droit constitutionnel publié en France.",
+        "source": "Cours de droit constitutionnel, publié 1866-1867"
+      },
+      {
+        "term": "François Guizot (1787-1874)",
+        "text": "Historien et homme d'État, ministre de l'Instruction publique : crée par ordonnance de 1834 la première chaire de droit constitutionnel en France, confiée à Pellegrino Rossi."
+      },
+      {
+        "term": "Odilon Barrot (1791-1873)",
+        "text": "Avocat et homme politique, chef du gouvernement sous la Deuxième République : « c'est toujours le même marteau qui frappe, mais on en a raccourci le manche », sur la continuité du modèle administratif centralisé français.",
+        "source": "De la centralisation et de ses effets, 1861"
+      }
+    ],
+    "exam": {
+      "kind": "question de cours",
+      "question": "Opposez les conceptions française et allemande de la Nation défendues par Renan et Fichte.",
+      "concise": "Renan, dans sa conférence de 1882, défend une conception volontariste et subjective de la Nation : elle repose sur la volonté de ses membres de vivre ensemble et de perpétuer un projet commun, ce qu'il résume par la formule du « plébiscite de tous les jours » — la Nation se choisit et se renouvelle en permanence. Fichte, au contraire, défend dans ses Discours à la nation allemande (1807-1808) une conception objective et naturaliste : la Nation existe indépendamment de la volonté de ses membres, parce qu'elle repose sur le partage de traits communs — langue, culture, origine. Cette opposition, devenue classique, correspond à deux traditions politiques distinctes : la conception française, héritée de la Révolution et associée à la citoyenneté et à l'adhésion volontaire, et la conception allemande, plus ethnique et culturelle, qui a nourri les revendications d'unification nationale allemande au XIXe siècle. Elle continue d'éclairer aujourd'hui les débats sur la nationalité et l'appartenance nationale.",
+      "plan": [
+        {
+          "title": "I. Deux conceptions opposées de la Nation",
+          "children": [
+            {
+              "title": "A. Renan : une conception volontariste",
+              "points": [
+                "La Nation comme volonté de construire un projet commun",
+                "Le « plébiscite de tous les jours »",
+                "Une conception subjective, fondée sur l'adhésion"
+              ]
+            },
+            {
+              "title": "B. Fichte : une conception objective et naturaliste",
+              "points": [
+                "La Nation fondée sur des traits communs objectifs (langue, culture, origine)",
+                "Une conception indépendante de la volonté individuelle",
+                "Contexte : les Discours à la nation allemande de 1807-1808"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "II. Deux traditions politiques distinctes",
+          "children": [
+            {
+              "title": "A. La tradition française, héritée de la Révolution",
+              "points": [
+                "La Nation associée à la citoyenneté et à l'adhésion volontaire",
+                "Fondement de la théorie de la souveraineté nationale (Sieyès)",
+                "Une conception ouverte, susceptible d'intégrer de nouveaux membres"
+              ]
+            },
+            {
+              "title": "B. La tradition allemande, plus ethnique et culturelle",
+              "points": [
+                "Une conception qui nourrit les revendications d'unification nationale allemande au XIXe siècle",
+                "Un fondement plus fermé, lié à l'origine et à la culture",
+                "Un débat qui continue d'éclairer les questions contemporaines de nationalité"
+              ]
+            }
+          ]
+        }
+      ],
+      "pitfalls": [
+        "Ne pas confondre la conception de la Nation chez Renan (volontariste) avec la théorie de la souveraineté nationale de Sieyès (qui porte sur le titulaire de la souveraineté, pas sur la définition de la Nation elle-même) — les deux se complètent mais ne répondent pas à la même question.",
+        "Ne pas dater le Cours de droit constitutionnel de Rossi de 1834 (date de la création de la chaire) : le cours lui-même n'est publié qu'à titre posthume, en 1866-1867."
+      ]
+    },
+    "quiz": [
+      {
+        "q": "La formule du « plébiscite de tous les jours » pour définir la Nation est de :",
+        "choices": [
+          "Johann Gottlieb Fichte",
+          "Ernest Renan",
+          "Emmanuel-Joseph Sieyès",
+          "Georges Vedel"
+        ],
+        "answer": 1,
+        "why": "C'est la formule centrale de la conception volontariste de la Nation défendue par Renan en 1882."
+      },
+      {
+        "q": "Fichte défend une conception de la Nation fondée sur :",
+        "choices": [
+          "La volonté de vivre ensemble",
+          "Le partage de traits communs objectifs (langue, culture, origine)",
+          "Le seul critère du territoire",
+          "L'élection populaire"
+        ],
+        "answer": 1,
+        "why": "C'est la conception objective et naturaliste, exposée dans ses Discours à la nation allemande (1807-1808)."
+      },
+      {
+        "q": "La première chaire de droit constitutionnel en France est créée en 1834 par :",
+        "choices": [
+          "Pellegrino Rossi lui-même",
+          "Une ordonnance de Guizot",
+          "Le Conseil constitutionnel",
+          "Georges Vedel"
+        ],
+        "answer": 1,
+        "why": "Guizot, alors ministre de l'Instruction publique, crée la chaire, confiée à Pellegrino Rossi."
+      },
+      {
+        "q": "Odilon Barrot est resté célèbre pour une formule sur :",
+        "choices": [
+          "La séparation des pouvoirs",
+          "La continuité du modèle administratif centralisé français malgré les changements de régime",
+          "La souveraineté nationale",
+          "Le fédéralisme"
+        ],
+        "answer": 1,
+        "why": "« C'est toujours le même marteau qui frappe, mais on en a raccourci le manche » : seul l'agent local change, pas la nature centralisée du pouvoir."
+      },
+      {
+        "q": "Le Cours de droit constitutionnel de Pellegrino Rossi est publié :",
+        "choices": [
+          "De son vivant, en 1834",
+          "À titre posthume, en 1866-1867",
+          "Jamais publié",
+          "En 1958"
+        ],
+        "answer": 1,
+        "why": "Rossi meurt assassiné en 1848 ; son cours n'est publié qu'après sa mort."
+      }
+    ]
+  },
+  {
+    "id": "auteurs-07",
+    "order": 7,
+    "title": "Les grandes définitions doctrinales du droit public contemporain",
+    "teaser": "Vedel, Comanducci, Le Divellec, Rolland : qu'est-ce qu'une constitution, un État unitaire, un service public ?",
+    "minutes": 5,
+    "brief": [
+      "**Georges Vedel** (1910-2002), doyen de la faculté de droit de Paris (1962-1969) puis membre du Conseil constitutionnel (1980-1989), est l'un des pères de la doctrine constitutionnaliste française d'après-guerre, auteur du *Manuel élémentaire de droit constitutionnel* (1949). Dans un texte de 1998, il retient une formule devenue classique — souvent résumée en cours par « **tout le droit constitutionnel n'est pas dans la Constitution** » — pour souligner que le droit constitutionnel positif déborde le texte écrit : préambule, Déclaration des droits de l'homme, principes fondamentaux reconnus par les lois de la République, jurisprudence du Conseil constitutionnel.",
+      "**Paolo Comanducci**, philosophe du droit italien contemporain de l'**école de Gênes** (avec Riccardo Guastini), distingue **deux sens** du terme constitution : une **conception organiciste**, où la constitution est la loi naturelle de la société telle qu'elle se structure politiquement (chez Montesquieu), et une **conception normative**, celle héritée de la Révolution française, où la constitution est une règle de droit positif, posée par la volonté de l'homme et suprême dans l'ordre juridique.",
+      "**Armel Le Divellec**, professeur de droit public à l'université Paris II depuis 2009, spécialiste de droit constitutionnel comparé et de droit parlementaire, codirige avec Michel de Villiers le *Dictionnaire du droit constitutionnel* : on lui doit la définition de référence de l'**État unitaire** — « un État qui assume l'ensemble des compétences attachées à la souveraineté, de telle sorte que l'ordre politique et constitutionnel est unique ».",
+      "**Louis Rolland** (1877-1956), l'un des fondateurs du droit administratif français moderne, systématise dans son *Précis de droit administratif* (autour de 1928) les trois grands principes du **service public**, restés dans l'histoire sous le nom de **lois de Rolland** : la **continuité** (fonctionner sans interruption), la **mutabilité** (s'adapter aux besoins de l'intérêt général) et l'**égalité** (traiter tous les usagers sans discrimination) — des principes toujours enseignés comme le socle commun du régime juridique des services publics."
+    ],
+    "keyPoints": [
+      "Vedel : le droit constitutionnel positif déborde le texte écrit de la Constitution (préambule, DDHC, PFRLR, jurisprudence).",
+      "Comanducci distingue conception organiciste (la constitution comme loi naturelle de la société) et conception normative (la constitution comme règle de droit positif suprême).",
+      "Le Divellec définit l'État unitaire par l'unicité de l'ordre politique et constitutionnel ; Rolland systématise les trois lois du service public (continuité, mutabilité, égalité)."
+    ],
+    "definitions": [
+      {
+        "term": "Georges Vedel (1910-2002)",
+        "text": "Doyen de la faculté de droit de Paris, membre du Conseil constitutionnel : retient que le droit constitutionnel positif déborde le texte écrit de la Constitution (préambule, DDHC, PFRLR, jurisprudence).",
+        "source": "Manuel élémentaire de droit constitutionnel, 1949"
+      },
+      {
+        "term": "Paolo Comanducci",
+        "text": "Philosophe du droit italien, école de Gênes : distingue une conception organiciste de la constitution (loi naturelle de la société) et une conception normative (règle de droit positif suprême, héritée de la Révolution française)."
+      },
+      {
+        "term": "Armel Le Divellec",
+        "text": "Professeur de droit public à Paris II, codirecteur du Dictionnaire du droit constitutionnel : définit l'État unitaire comme celui où l'ordre politique et constitutionnel est unique."
+      },
+      {
+        "term": "Louis Rolland (1877-1956)",
+        "text": "Fondateur du droit administratif français moderne : systématise les trois lois du service public (continuité, mutabilité, égalité), toujours enseignées aujourd'hui.",
+        "source": "Précis de droit administratif, v. 1928"
+      }
+    ],
+    "exam": {
+      "kind": "question de cours",
+      "question": "En quoi la conception normative de la constitution, décrite par Comanducci, éclaire-t-elle l'idée défendue par Vedel selon laquelle le droit constitutionnel positif déborde le texte écrit ?",
+      "concise": "Comanducci distingue deux sens du mot constitution : la conception organiciste, pour laquelle la constitution est la loi naturelle de toute société politiquement structurée, et la conception normative, héritée de la Révolution française, pour laquelle la constitution est une règle de droit positif, posée par la volonté humaine et suprême dans l'ordre juridique. C'est cette seconde conception qui permet de comprendre la formule de Vedel : si la constitution est une norme positive parmi d'autres, rien n'empêche que plusieurs textes de nature et de date différentes (la Constitution de 1958, mais aussi son préambule, la Déclaration des droits de l'homme de 1789, les principes fondamentaux reconnus par les lois de la République, ou encore la jurisprudence du Conseil constitutionnel qui les interprète) participent ensemble de ce bloc de constitutionnalité. Le droit constitutionnel positif déborde alors nécessairement le texte écrit de 1958 seul, sans pour autant cesser d'être un droit positif au sens de Comanducci.",
+      "plan": [
+        {
+          "title": "I. Deux conceptions possibles de la constitution",
+          "children": [
+            {
+              "title": "A. La conception organiciste",
+              "points": [
+                "La constitution comme loi naturelle de la société",
+                "Une approche héritée de Montesquieu",
+                "Une constitution qui décrit, plus qu'elle ne prescrit"
+              ]
+            },
+            {
+              "title": "B. La conception normative",
+              "points": [
+                "La constitution comme règle de droit positif, posée par la volonté humaine",
+                "Héritage direct de la Révolution française et de la DDHC de 1789",
+                "Une constitution suprême dans l'ordre juridique"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "II. La formule de Vedel à la lumière de la conception normative",
+          "children": [
+            {
+              "title": "A. Un droit constitutionnel positif pluriel",
+              "points": [
+                "Le texte de 1958, mais aussi son préambule et la DDHC de 1789",
+                "Les principes fondamentaux reconnus par les lois de la République",
+                "La jurisprudence du Conseil constitutionnel, qui interprète cet ensemble"
+              ]
+            },
+            {
+              "title": "B. Une cohérence rendue possible par la conception normative",
+              "points": [
+                "Plusieurs textes de nature et de date différentes peuvent former un même bloc de constitutionnalité",
+                "Le droit positif ne se limite pas au texte constitutionnel formel de 1958",
+                "Une lecture qui reste compatible avec la suprématie de la constitution sur le reste de l'ordre juridique"
+              ]
+            }
+          ]
+        }
+      ],
+      "pitfalls": [
+        "Ne pas confondre la conception organiciste de Comanducci avec une négation de la valeur juridique de la constitution : c'est une description sociologique de la constitution, pas un rejet du droit positif.",
+        "Ne pas réduire la formule de Vedel à une remise en cause de la suprématie de la Constitution : elle élargit le périmètre du droit constitutionnel positif, elle n'en affaiblit pas la force contraignante."
+      ]
+    },
+    "quiz": [
+      {
+        "q": "Georges Vedel a été :",
+        "choices": [
+          "Premier ministre",
+          "Doyen de la faculté de droit de Paris et membre du Conseil constitutionnel",
+          "Rédacteur du Code civil",
+          "Président de la Cour de cassation"
+        ],
+        "answer": 1,
+        "why": "Doyen de 1962 à 1969, il a ensuite siégé au Conseil constitutionnel de 1980 à 1989."
+      },
+      {
+        "q": "Selon Comanducci, la conception normative de la constitution :",
+        "choices": [
+          "La réduit à une loi naturelle de la société",
+          "En fait une règle de droit positif, posée par la volonté humaine et suprême dans l'ordre juridique",
+          "L'assimile à une simple coutume",
+          "La rend facultative"
+        ],
+        "answer": 1,
+        "why": "C'est la conception héritée de la Révolution française, par opposition à la conception organiciste."
+      },
+      {
+        "q": "Armel Le Divellec définit l'État unitaire par :",
+        "choices": [
+          "La pluralité des ordres constitutionnels",
+          "L'unicité de l'ordre politique et constitutionnel",
+          "L'existence de plusieurs constitutions locales",
+          "L'absence de toute compétence étatique"
+        ],
+        "answer": 1,
+        "why": "L'État unitaire assume l'ensemble des compétences attachées à la souveraineté dans un ordre unique."
+      },
+      {
+        "q": "Les « lois de Rolland » concernent :",
+        "choices": [
+          "Le droit des successions",
+          "Les principes du service public",
+          "La procédure pénale",
+          "Le droit des sociétés"
+        ],
+        "answer": 1,
+        "why": "Continuité, mutabilité et égalité : les trois principes du service public systématisés par Louis Rolland."
+      },
+      {
+        "q": "Parmi les trois lois de Rolland, la « mutabilité » désigne :",
+        "choices": [
+          "L'obligation de fonctionner sans interruption",
+          "La capacité du service public à s'adapter aux besoins de l'intérêt général",
+          "Le traitement égal des usagers",
+          "L'interdiction de toute réforme"
+        ],
+        "answer": 1,
+        "why": "Elle justifie qu'un service public puisse être réorganisé ou supprimé s'il n'est plus utile à la société."
+      }
+    ]
+  },
+  {
+    "id": "auteurs-08",
+    "order": 8,
+    "title": "L'Antiquité : naissance du droit écrit",
+    "teaser": "Hammurabi, Dracon, Solon, Hérodote, Polybe : les premiers pas de la publication du droit et de la réflexion sur les régimes politiques.",
+    "minutes": 6,
+    "brief": [
+      "**Hammurabi**, roi de Babylone au XVIIIe siècle av. J.-C. (le code qui porte son nom date de vers **1754 av. J.-C.**), fait graver sur une stèle le **premier code juridique qui nous soit parvenu**. La stèle représente le roi recevant le code des mains du dieu Shamash : le droit y est présenté comme d'origine divine, mais fixé et rendu public par l'autorité royale.",
+      "**Dracon**, législateur athénien actif vers **621 av. J.-C.**, est resté célèbre pour avoir permis la **publication du droit** : jusque-là, le droit reposait à Athènes sur des coutumes connues des seuls aristocrates, qui pouvaient donc l'interpréter à leur avantage. La rédaction de lois écrites et accessibles marque une étape décisive vers l'égalité devant la règle.",
+      "**Solon**, autre législateur athénien (réformes de **594 av. J.-C.**), va plus loin en ouvrant l'accès au droit : il crée une nouvelle assemblée judiciaire, **l'héliée**, et instaure l'**action populaire**, qui permet à tout citoyen — pas seulement à la victime — de porter plainte pour une infraction commise contre autrui.",
+      "**Hérodote** (Ve siècle av. J.-C.), considéré comme le **premier historien**, donne son nom même à la discipline : le mot *historia* (« recherche », « enquête », « savoir ») vient de lui. Ses *Histoires* constituent l'un des premiers grands récits systématiques du monde antique, mêlant événements politiques et observations sur les régimes des peuples qu'il décrit.",
+      "**Polybe**, historien grec du IIe siècle av. J.-C., analyse la Constitution romaine comme un **régime mixte** particulièrement réussi, combinant trois logiques à la fois : un peu monarchique (par l'*imperium* des consuls), un peu démocratique (par les conciles de la plèbe) et un peu aristocratique (par le Sénat). Pour lui, ce système fonctionnait remarquablement bien **tant que chacun agissait dans l'intérêt commun** — une mise en garde qui annonce déjà les théories modernes de l'équilibre des pouvoirs."
+    ],
+    "keyPoints": [
+      "Hammurabi (v. 1754 av. J.-C.) : le premier code juridique connu, d'origine divine mais rendu public par le roi.",
+      "Dracon publie le droit (621 av. J.-C.) ; Solon l'ouvre davantage en créant l'héliée et l'action populaire (594 av. J.-C.).",
+      "Hérodote invente l'histoire comme discipline (historia = enquête) ; Polybe théorise la Constitution romaine comme un régime mixte équilibré."
+    ],
+    "definitions": [
+      {
+        "term": "Hammurabi (v. 1754 av. J.-C.)",
+        "text": "Roi de Babylone : fait graver le premier code juridique qui nous soit parvenu, présenté comme reçu du dieu Shamash mais rendu public par l'autorité royale.",
+        "source": "Code d'Hammurabi"
+      },
+      {
+        "term": "Dracon (v. 621 av. J.-C.)",
+        "text": "Législateur athénien : permet la publication du droit, jusque-là réservé à la connaissance des seuls aristocrates."
+      },
+      {
+        "term": "Solon (594 av. J.-C.)",
+        "text": "Législateur athénien : crée l'héliée, nouvelle assemblée judiciaire, et l'action populaire, qui ouvre le droit de porter plainte à tout citoyen, pas seulement à la victime."
+      },
+      {
+        "term": "Hérodote (Ve s. av. J.-C.)",
+        "text": "Considéré comme le premier historien : le mot historia (« recherche », « enquête ») vient de lui et donne son nom à la discipline historique."
+      },
+      {
+        "term": "Polybe (IIe s. av. J.-C.)",
+        "text": "Historien grec : analyse la Constitution romaine comme un régime mixte (monarchique, démocratique, aristocratique), efficace tant que chacun agit dans l'intérêt commun."
+      }
+    ],
+    "exam": {
+      "kind": "question de cours",
+      "question": "En quoi les réformes de Dracon puis de Solon marquent-elles des étapes successives vers l'accessibilité du droit à Athènes ?",
+      "concise": "Avant Dracon, le droit athénien repose sur des coutumes non écrites, connues des seuls aristocrates, qui peuvent donc les interpréter à leur avantage lors des jugements. Vers 621 av. J.-C., Dracon franchit une première étape décisive en faisant rédiger et publier des lois écrites, accessibles à tous : le droit cesse d'être un savoir réservé à une élite. Solon, quelques décennies plus tard (594 av. J.-C.), va plus loin encore : il ne se contente pas de rendre le droit lisible, il en élargit l'usage. La création de l'héliée, nouvelle assemblée judiciaire plus largement ouverte, et surtout l'instauration de l'action populaire — qui permet à tout citoyen de porter plainte pour une infraction, même s'il n'en est pas lui-même la victime — transforment la justice d'un privilège aristocratique en un droit plus largement partagé par la cité. Ces deux réformes successives illustrent un mouvement progressif, caractéristique de la démocratie athénienne naissante : de la simple publicité du droit (Dracon) à sa réelle accessibilité pratique (Solon).",
+      "plan": [
+        {
+          "title": "I. Dracon : la publication du droit",
+          "children": [
+            {
+              "title": "A. Un droit jusque-là réservé aux aristocrates",
+              "points": [
+                "Des coutumes non écrites, connues des seuls juges aristocrates",
+                "Un risque d'interprétation arbitraire, au détriment du plus grand nombre",
+                "L'absence de sécurité juridique pour le citoyen ordinaire"
+              ]
+            },
+            {
+              "title": "B. La rédaction et la publicité des lois",
+              "points": [
+                "Vers 621 av. J.-C., des lois écrites et accessibles à tous",
+                "Une première étape vers l'égalité devant la règle",
+                "Une réforme encore incomplète : le droit est connu, mais son usage reste limité"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "II. Solon : l'élargissement de l'accès à la justice",
+          "children": [
+            {
+              "title": "A. L'héliée, une justice plus largement ouverte",
+              "points": [
+                "Création d'une nouvelle assemblée judiciaire (594 av. J.-C.)",
+                "Une justice qui s'éloigne du monopole aristocratique",
+                "Un pas supplémentaire vers la participation civique"
+              ]
+            },
+            {
+              "title": "B. L'action populaire, un droit de porter plainte élargi",
+              "points": [
+                "Tout citoyen peut agir, pas seulement la victime directe",
+                "Une conception de l'infraction comme atteinte à la cité, pas seulement à un particulier",
+                "Un mécanisme précurseur des logiques modernes d'intérêt général"
+              ]
+            }
+          ]
+        }
+      ],
+      "pitfalls": [
+        "Ne pas confondre publication du droit (Dracon) et démocratisation de son usage (Solon) : ce sont deux étapes distinctes et successives.",
+        "Ne pas dater l'action populaire de la réforme de Dracon : c'est une innovation propre à Solon, postérieure d'une génération."
+      ]
+    },
+    "quiz": [
+      {
+        "q": "Le Code d'Hammurabi date d'environ :",
+        "choices": [
+          "1754 av. J.-C.",
+          "621 av. J.-C.",
+          "594 av. J.-C.",
+          "480 apr. J.-C."
+        ],
+        "answer": 0,
+        "why": "C'est le premier code juridique qui nous soit parvenu, gravé sur une stèle sous l'autorité du roi de Babylone."
+      },
+      {
+        "q": "Dracon est resté célèbre pour avoir :",
+        "choices": [
+          "Créé l'héliée",
+          "Permis la publication du droit à Athènes",
+          "Institué l'action populaire",
+          "Écrit les premières Histoires"
+        ],
+        "answer": 1,
+        "why": "Avant lui, le droit reposait sur des coutumes connues des seuls aristocrates."
+      },
+      {
+        "q": "L'action populaire, qui permet à tout citoyen de porter plainte, est instaurée par :",
+        "choices": [
+          "Dracon",
+          "Solon",
+          "Hérodote",
+          "Polybe"
+        ],
+        "answer": 1,
+        "why": "Solon (594 av. J.-C.) élargit ainsi l'accès à la justice au-delà de la seule victime."
+      },
+      {
+        "q": "Le mot « histoire » (historia) vient du grec et signifie à l'origine :",
+        "choices": [
+          "Récit officiel de l'État",
+          "Recherche, enquête",
+          "Loi écrite",
+          "Tribunal populaire"
+        ],
+        "answer": 1,
+        "why": "Hérodote, considéré comme le premier historien, donne son nom à cette discipline."
+      },
+      {
+        "q": "Pour Polybe, la Constitution romaine était un régime mixte, réussi :",
+        "choices": [
+          "Uniquement grâce à la force militaire",
+          "Tant que chacun agissait dans l'intérêt commun",
+          "Parce qu'il n'y avait qu'un seul organe de pouvoir",
+          "Grâce à l'absence totale de hiérarchie"
+        ],
+        "answer": 1,
+        "why": "Un régime combinant logiques monarchique, démocratique et aristocratique, mais fragile sans vertu civique partagée."
+      }
+    ]
+  }
+]

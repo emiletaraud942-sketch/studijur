@@ -47,5 +47,13 @@
   "hue": "blue",
   "prefix": "obligations",
   "niveau": "L2"
+ },
+ {
+  "id": "auteurs",
+  "title": "Auteurs et doctrines",
+  "short": "Auteurs",
+  "subtitle": "Les juristes, philosophes et penseurs cités dans tes cours : siècle, rôle, ouvrage, doctrine",
+  "hue": "plum",
+  "prefix": "auteurs"
  }
 ]
