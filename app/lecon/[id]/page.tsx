@@ -69,17 +69,28 @@ function LessonPageInner() {
   if (supabaseConfigured && !signedInAs) {
     if (anonymousLessonCapReached(state, lesson.id)) {
       return (
-        <div className="mx-auto max-w-md py-20 text-center">
-          <span className="mb-4 inline-flex items-center gap-1.5 rounded-full px-3.5 py-1.5 text-[12.5px] font-bold"
-            style={{ background: "var(--gold-soft)", color: "var(--gold)" }}>
+        <div className="mx-auto max-w-md py-16 text-center">
+          <span className="mb-4 inline-flex items-center gap-1.5 rounded-full px-4 py-2 text-[13.5px] font-bold"
+            style={{ background: "var(--gold)", color: "var(--accent-ink)" }}>
             Gratuit · sans carte bancaire
           </span>
-          <h1 className="serif text-[24px] font-bold">Connecte-toi pour continuer à explorer</h1>
+          <h1 className="serif text-[26px] font-bold leading-tight">Crée ton compte pour continuer</h1>
           <p className="mt-2 text-[15px]" style={{ color: "var(--muted)" }}>
-            Un simple email, sans mot de passe. Ta première leçon reste acquise, et un compte te permet de
-            continuer à découvrir le corpus.
+            Ta première leçon reste acquise. Un simple email, sans mot de passe, pour débloquer tout le reste.
           </p>
-          <div className="mt-6"><Button href={connexionHref(pathname)} size="lg">Se connecter</Button></div>
+          <ul className="mx-auto mt-5 max-w-xs space-y-2 text-left">
+            {[
+              "Toutes les leçons du corpus, pas juste la première",
+              "Ta progression et ta série de jours sauvegardées",
+              "La correction IA de tes réponses type examen",
+            ].map((benefit) => (
+              <li key={benefit} className="flex items-start gap-2 text-[14px] leading-snug" style={{ color: "var(--ink-2)" }}>
+                <span className="mt-0.5 h-4 w-4 shrink-0" style={{ color: "var(--gold)" }}><Check className="h-4 w-4" /></span>
+                {benefit}
+              </li>
+            ))}
+          </ul>
+          <div className="mt-6"><Button href={connexionHref(pathname)} size="lg" full>Créer mon compte gratuit <Arrow className="h-4 w-4" /></Button></div>
         </div>
       );
     }
@@ -463,16 +474,31 @@ function Correction({
             conseils, comme un chargé de TD.
           </p>
           {connexionRequise ? (
-            <div className="mt-3">
-              <p className="mb-2 flex flex-wrap items-center gap-1.5 text-[13px]" style={{ color: "var(--ink-2)" }}>
-                <span className="rounded-full px-2 py-0.5 text-[11px] font-bold" style={{ background: "var(--gold-soft)", color: "var(--gold)" }}>
-                  Gratuit
-                </span>
-                Connecte-toi par email, sans mot de passe ni carte bancaire, pour faire corriger ta copie par l&apos;IA.
+            <div className="mt-4 rounded-2xl p-5" style={{ background: "var(--gold-soft)" }}>
+              <span className="inline-flex items-center gap-1.5 rounded-full px-3 py-1 text-[12px] font-bold"
+                style={{ background: "var(--gold)", color: "var(--accent-ink)" }}>
+                Gratuit · sans carte bancaire
+              </span>
+              <p className="mt-3 text-[16px] font-bold leading-snug" style={{ color: "var(--ink)" }}>
+                Crée ton compte pour débloquer ta correction par l&apos;IA
               </p>
-              <Button href={connexionHref(`${pathname}?step=question&autocorrect=1`)} variant="soft" size="md">
-                Se connecter
-              </Button>
+              <ul className="mt-3 space-y-1.5">
+                {[
+                  "Note sur 20 en quelques secondes, comme un chargé de TD",
+                  "Accès à toutes les leçons du corpus, pas seulement celle-ci",
+                  "Un simple email, sans mot de passe ni carte bancaire",
+                ].map((benefit) => (
+                  <li key={benefit} className="flex items-start gap-2 text-[13.5px] leading-snug" style={{ color: "var(--ink-2)" }}>
+                    <span className="mt-0.5 h-3.5 w-3.5 shrink-0" style={{ color: "var(--gold)" }}><Check className="h-3.5 w-3.5" /></span>
+                    {benefit}
+                  </li>
+                ))}
+              </ul>
+              <div className="mt-4">
+                <Button href={connexionHref(`${pathname}?step=question&autocorrect=1`)} size="lg" full>
+                  Créer mon compte gratuit <Arrow className="h-4 w-4" />
+                </Button>
+              </div>
             </div>
           ) : (
             <div className="mt-3">
@@ -612,6 +638,9 @@ function DoneStep({
   streak: number; score: number; total: number; nextId?: string;
   onReplay: () => void; onHome: () => void;
 }) {
+  const pathname = usePathname();
+  const { signedInAs } = useStudiJur();
+  const connexionRequise = supabaseConfigured && !signedInAs;
   const pct = Math.round((score / total) * 100);
   const verdict = pct >= 80 ? "Cours maîtrisé." : pct >= 50 ? "Bon début, à consolider." : "À reprendre demain.";
   return (
@@ -632,6 +661,25 @@ function DoneStep({
           <div className="text-[12px]" style={{ color: "var(--muted)" }}>jours de série</div>
         </div>
       </div>
+
+      {connexionRequise && (
+        <div className="mx-auto mt-6 max-w-sm rounded-2xl p-5 text-left" style={{ background: "var(--gold-soft)" }}>
+          <span className="inline-flex items-center gap-1.5 rounded-full px-3 py-1 text-[12px] font-bold"
+            style={{ background: "var(--gold)", color: "var(--accent-ink)" }}>
+            Gratuit · sans carte bancaire
+          </span>
+          <p className="mt-3 text-[16px] font-bold leading-snug" style={{ color: "var(--ink)" }}>
+            Ne perds pas ta série : crée ton compte
+          </p>
+          <p className="mt-1.5 text-[13.5px] leading-relaxed" style={{ color: "var(--ink-2)" }}>
+            Sans compte, ta progression reste sur cet appareil et peut disparaître. Un simple email, sans mot de
+            passe, pour la garder et débloquer tout le corpus.
+          </p>
+          <div className="mt-4">
+            <Button href={connexionHref(pathname)} size="lg" full>Créer mon compte gratuit <Arrow className="h-4 w-4" /></Button>
+          </div>
+        </div>
+      )}
 
       <div className="mx-auto mt-6 flex max-w-sm flex-col gap-3">
         {nextId && <Button href={`/lecon/${nextId}`} size="lg" full>Enchaîner la leçon suivante <Arrow className="h-4 w-4" /></Button>}
