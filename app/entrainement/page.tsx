@@ -7,7 +7,7 @@ const MODULES = [
     hue: "gold",
     Icon: Quill,
     title: "Introduction générale au droit",
-    text: "30 questions pour le CC1 du 29/09, même format que le sujet d'entraînement, plus vocabulaire des procès et questions de cours.",
+    text: "Deux onglets : 30 questions basées sur le sujet d'entraînement du CC1 du 29/09, et les questions de révision générale.",
   },
   {
     href: "/entrainement/organisation-juridictionnelle",
