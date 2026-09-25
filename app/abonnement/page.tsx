@@ -25,7 +25,7 @@ export default function SubscribePage() {
   const pathname = usePathname();
   const { state, ready, signedInAs } = useStudiJur();
   const [stripeOn, setStripeOn] = useState<boolean | null>(null);
-  const [busy, setBusy] = useState<Plan | null>(null);
+  const [busy, setBusy] = useState<{ plan: Plan; skipTrial: boolean } | null>(null);
   const [error, setError] = useState("");
   const stats = corpusStats(state.customCourses);
 
@@ -38,9 +38,9 @@ export default function SubscribePage() {
   // payer plutôt que de laisser un paiement qui ne débloquerait jamais rien.
   const needsAccount = supabaseConfigured && !signedInAs;
 
-  async function checkout(plan: Plan) {
+  async function checkout(plan: Plan, skipTrial = false) {
     if (!signedInAs) return;
-    setBusy(plan);
+    setBusy({ plan, skipTrial });
     setError("");
     try {
       const res = await fetch("/api/checkout", {
@@ -50,7 +50,7 @@ export default function SubscribePage() {
         // link) est stockée par le navigateur pour ce domaine précis, donc
         // si Stripe nous ramène sur un autre domaine après paiement, on
         // paraît « déconnecté » alors que le compte est intact (voir /api/checkout).
-        body: JSON.stringify({ plan, email: signedInAs, origin: window.location.origin }),
+        body: JSON.stringify({ plan, email: signedInAs, origin: window.location.origin, skipTrial }),
       });
       const data = await res.json();
       if (data.url) { window.location.href = data.url; return; }
@@ -101,9 +101,16 @@ export default function SubscribePage() {
             ) : ready && stripeOn && needsAccount ? (
               <Button href={connexionHref(pathname)} size="lg" full>Se connecter pour s&apos;abonner</Button>
             ) : ready && stripeOn ? (
-              <Button onClick={() => checkout("annual")} disabled={busy !== null} size="lg" full>
-                {busy === "annual" ? "Redirection…" : "Démarrer l'essai gratuit"}
-              </Button>
+              <div className="space-y-2">
+                <Button onClick={() => checkout("annual")} disabled={busy !== null} size="lg" full>
+                  {busy?.plan === "annual" && !busy.skipTrial ? "Redirection…" : "Démarrer l'essai gratuit"}
+                </Button>
+                <button onClick={() => checkout("annual", true)} disabled={busy !== null}
+                  className="block w-full text-center text-[12.5px] font-semibold underline"
+                  style={{ color: "var(--muted)" }}>
+                  {busy?.plan === "annual" && busy.skipTrial ? "Redirection…" : "Payer tout de suite, sans les 7 jours d'essai"}
+                </button>
+              </div>
             ) : (
               <div className="rounded-xl p-4 text-center text-[13.5px]" style={{ background: "var(--surface-2)", color: "var(--muted)" }}>
                 Le paiement n&apos;est pas encore branché : l&apos;accès reste ouvert. Ajoute les clés Stripe pour activer l&apos;abonnement.
@@ -131,9 +138,16 @@ export default function SubscribePage() {
             {needsAccount ? (
               <Button href={connexionHref(pathname)} variant="outline" full>Se connecter pour s&apos;abonner</Button>
             ) : (
-              <Button onClick={() => checkout("monthly")} disabled={busy !== null} variant="outline" full>
-                {busy === "monthly" ? "Redirection…" : "Prendre la formule mensuelle"}
-              </Button>
+              <div className="space-y-2">
+                <Button onClick={() => checkout("monthly")} disabled={busy !== null} variant="outline" full>
+                  {busy?.plan === "monthly" && !busy.skipTrial ? "Redirection…" : "Prendre la formule mensuelle"}
+                </Button>
+                <button onClick={() => checkout("monthly", true)} disabled={busy !== null}
+                  className="block w-full text-center text-[12.5px] font-semibold underline"
+                  style={{ color: "var(--muted)" }}>
+                  {busy?.plan === "monthly" && busy.skipTrial ? "Redirection…" : "Payer tout de suite, sans les 7 jours d'essai"}
+                </button>
+              </div>
             )}
           </div>
         )}

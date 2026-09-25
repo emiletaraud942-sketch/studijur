@@ -8,11 +8,13 @@ export async function POST(req: Request) {
   let plan = "monthly";
   let email: string | undefined;
   let clientOrigin: string | undefined;
+  let skipTrial = false;
   try {
-    const body = (await req.json()) as { plan?: string; email?: string; origin?: string };
+    const body = (await req.json()) as { plan?: string; email?: string; origin?: string; skipTrial?: boolean };
     if (body?.plan === "annual") plan = "annual";
     if (typeof body?.email === "string" && body.email.includes("@")) email = body.email.trim();
     if (typeof body?.origin === "string") clientOrigin = body.origin;
+    if (body?.skipTrial === true) skipTrial = true;
   } catch {
     /* corps vide : on reste sur la formule mensuelle */
   }
@@ -64,7 +66,11 @@ export async function POST(req: Request) {
     const session = await stripe.checkout.sessions.create({
       mode: "subscription",
       line_items: [{ price, quantity: 1 }],
-      subscription_data: { trial_period_days: 7 },
+      // Par défaut, 7 jours d'essai avant le premier prélèvement — mais
+      // certains savent déjà qu'ils veulent payer tout de suite (essai déjà
+      // fait sur l'appareil, ou juste envie d'un accès immédiat) : skipTrial
+      // leur évite d'être coincés dans un essai qu'ils ne voulaient pas.
+      ...(skipTrial ? {} : { subscription_data: { trial_period_days: 7 } }),
       allow_promotion_codes: true,
       locale: "fr",
       customer_email: email,
