@@ -7,7 +7,7 @@ const MODULES = [
     hue: "gold",
     Icon: Quill,
     title: "Introduction générale au droit",
-    text: "Questions de cours : vocabulaire des procès, jurisprudence étudiée en TD, questions type examen.",
+    text: "30 questions pour le CC1 du 29/09, même format que le sujet d'entraînement, plus vocabulaire des procès et questions de cours.",
   },
   {
     href: "/entrainement/organisation-juridictionnelle",
