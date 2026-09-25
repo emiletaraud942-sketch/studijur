@@ -12,10 +12,21 @@ import { authFetchHeaders } from "@/lib/supabase";
 import { connexionHref } from "@/lib/nav";
 import type { EntrainementFeedback } from "@/lib/types";
 
+const cc1Questions = introGeneraleEntrainement.filter((q) => q.categorie === "Entraînement CC1");
+const reviserQuestions = introGeneraleEntrainement.filter((q) => q.categorie !== "Entraînement CC1");
+
+type Onglet = "cc1" | "reviser";
+
 export default function EntrainementIntroGeneralePage() {
-  const [i, setI] = useState(0);
-  const total = introGeneraleEntrainement.length;
-  const q = introGeneraleEntrainement[i];
+  const [onglet, setOnglet] = useState<Onglet>("cc1");
+  const [iCc1, setICc1] = useState(0);
+  const [iReviser, setIReviser] = useState(0);
+
+  const list = onglet === "cc1" ? cc1Questions : reviserQuestions;
+  const i = onglet === "cc1" ? iCc1 : iReviser;
+  const setI = onglet === "cc1" ? setICc1 : setIReviser;
+  const total = list.length;
+  const q = list[i];
 
   return (
     <div className="space-y-6">
@@ -23,12 +34,51 @@ export default function EntrainementIntroGeneralePage() {
         <Link href="/entrainement" className="text-[13px] font-semibold" style={{ color: "var(--muted)" }}>← Entraînement intero</Link>
         <h1 className="serif mt-1.5 text-[28px] font-bold tracking-tight">Introduction générale au droit</h1>
         <p className="mt-1.5 text-[14.5px]" style={{ color: "var(--muted)" }}>
-          Les 30 premières questions préparent le CC1 du 29 septembre, dans le même format que le sujet
-          d&apos;entraînement distribué en cours. Suivent le vocabulaire des procès, les questions de cours et
-          la méthodologie. Écris ta réponse si tu veux, fais-la corriger par l&apos;IA, puis révèle la réponse
-          attendue.
+          Deux parcours séparés : l&apos;entraînement pour le CC1 de la semaine prochaine d&apos;un côté, les
+          questions de révision générale de l&apos;autre. Écris ta réponse si tu veux, fais-la corriger par
+          l&apos;IA, puis révèle la réponse attendue.
         </p>
       </div>
+
+      <div className="grid grid-cols-2 gap-1.5 rounded-2xl p-1.5" style={{ background: "var(--surface-2)" }}>
+        <button
+          onClick={() => setOnglet("cc1")}
+          className="rounded-xl py-2.5 text-[13.5px] font-semibold transition-all"
+          style={{
+            background: onglet === "cc1" ? "var(--accent)" : "transparent",
+            color: onglet === "cc1" ? "var(--accent-ink)" : "var(--muted)",
+          }}
+        >
+          Entraînement CC1
+        </button>
+        <button
+          onClick={() => setOnglet("reviser")}
+          className="rounded-xl py-2.5 text-[13.5px] font-semibold transition-all"
+          style={{
+            background: onglet === "reviser" ? "var(--accent)" : "transparent",
+            color: onglet === "reviser" ? "var(--accent-ink)" : "var(--muted)",
+          }}
+        >
+          Réviser
+        </button>
+      </div>
+
+      {onglet === "cc1" ? (
+        <div className="rounded-2xl p-4" style={{ background: "var(--accent-soft)" }}>
+          <p className="text-[13.5px] leading-relaxed" style={{ color: "var(--accent-strong)" }}>
+            <strong>Basées sur le sujet d&apos;entraînement distribué par le professeur</strong> pour le CC1 du
+            mardi 29 septembre (45 minutes, 5 questions notées sur 20). Ces 30 questions reprennent exactement
+            les mêmes thèmes et le même type de question que celles de l&apos;épreuve — définitions et
+            distinctions, question de compréhension, question de méthode : c&apos;est donc le même genre de
+            question qui tombera à l&apos;examen.
+          </p>
+        </div>
+      ) : (
+        <p className="text-[13px]" style={{ color: "var(--muted)" }}>
+          Vocabulaire des procès, questions de cours, méthodologie — pour réviser tout au long de l&apos;année,
+          au-delà du seul CC1.
+        </p>
+      )}
 
       <div className="flex items-center justify-between text-[12.5px]" style={{ color: "var(--muted)" }}>
         <span className="tabular">Question {i + 1} sur {total}</span>
