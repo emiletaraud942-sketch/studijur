@@ -3,20 +3,9 @@
 import { useEffect, useState } from "react";
 import { useStudiJur } from "@/lib/state";
 import { getSupabase } from "@/lib/supabase";
+import { activerRappel, pushSupporte } from "@/lib/push-client";
 import { Button, SectionTitle } from "./ui";
 import { Check, Cross, Flame } from "./icons";
-
-const CLE = process.env.NEXT_PUBLIC_VAPID_PUBLIC_KEY ?? "";
-
-function cleVersOctets(base64: string): Uint8Array {
-  const rempli = (base64 + "=".repeat((4 - (base64.length % 4)) % 4))
-    .replace(/-/g, "+")
-    .replace(/_/g, "/");
-  const brut = atob(rempli);
-  const octets = new Uint8Array(brut.length);
-  for (let i = 0; i < brut.length; i++) octets[i] = brut.charCodeAt(i);
-  return octets;
-}
 
 type Etat = "inconnu" | "indisponible" | "inactif" | "actif" | "refuse";
 
@@ -28,13 +17,7 @@ export default function Rappel() {
   const heure = state.profile.reminderHour ?? 19;
 
   useEffect(() => {
-    const supporte =
-      typeof window !== "undefined" &&
-      "serviceWorker" in navigator &&
-      "PushManager" in window &&
-      "Notification" in window &&
-      CLE.length > 0;
-    if (!supporte) { setEtat("indisponible"); return; }
+    if (!pushSupporte()) { setEtat("indisponible"); return; }
     if (Notification.permission === "denied") { setEtat("refuse"); return; }
 
     navigator.serviceWorker.ready
@@ -74,46 +57,20 @@ export default function Rappel() {
   async function activer() {
     setOccupe(true);
     setMessage("");
-    try {
-      const permission = await Notification.requestPermission();
-      if (permission !== "granted") {
-        setEtat(permission === "denied" ? "refuse" : "inactif");
-        setOccupe(false);
-        return;
-      }
-      const reg = await navigator.serviceWorker.ready;
-      const sub =
-        (await reg.pushManager.getSubscription()) ??
-        (await reg.pushManager.subscribe({
-          userVisibleOnly: true,
-          applicationServerKey: cleVersOctets(CLE) as BufferSource,
-        }));
-
-      // Si l'élève est connecté, on relie l'abonnement push à son compte pour
-      // que le cron puisse vérifier s'il a déjà fait sa leçon du jour avant
-      // d'envoyer le rappel (sinon il n'y a aucun moyen de le savoir).
-      const sb = getSupabase();
-      const userId = sb ? (await sb.auth.getUser()).data.user?.id ?? null : null;
-
-      const res = await fetch("/api/push/subscribe", {
-        method: "POST",
-        headers: { "content-type": "application/json" },
-        body: JSON.stringify({ subscription: sub.toJSON(), hour: heure, userId }),
-      });
-      const data = await res.json();
-      if (!res.ok) {
-        setMessage(data.error ?? "L'enregistrement du rappel a échoué.");
-        setEtat("inactif");
-      } else {
-        setEtat("actif");
-        setMessage(`Rappel enregistré pour ${heure} h.`);
-      }
-    } catch {
-      setMessage("Impossible d'activer les notifications sur cet appareil.");
-      setEtat("inactif");
-    } finally {
-      setOccupe(false);
+    // Si l'élève est connecté, on relie l'abonnement push à son compte pour
+    // que le cron puisse vérifier s'il a déjà fait sa leçon du jour avant
+    // d'envoyer le rappel (sinon il n'y a aucun moyen de le savoir).
+    const sb = getSupabase();
+    const userId = sb ? (await sb.auth.getUser()).data.user?.id ?? null : null;
+    const resultat = await activerRappel(heure, userId);
+    if (resultat.ok) {
+      setEtat("actif");
+      setMessage(`Rappel enregistré pour ${heure} h.`);
+    } else {
+      setEtat(resultat.refuse ? "refuse" : "inactif");
+      if (resultat.message) setMessage(resultat.message);
     }
+    setOccupe(false);
   }
 
   async function desactiver() {
