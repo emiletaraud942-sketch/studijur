@@ -8,6 +8,7 @@ import { findCourse } from "@/lib/corpus";
 import { Prose, Tag, Button } from "@/components/ui";
 import { inlineMarkup } from "@/lib/format";
 import { Chevron } from "@/components/icons";
+import AccountCTA from "@/components/AccountCTA";
 
 export default function CoursMatierePage() {
   const params = useParams<{ matiereId: string }>();
@@ -96,6 +97,8 @@ export default function CoursMatierePage() {
           </article>
         ))}
       </div>
+
+      <AccountCTA />
     </div>
   );
 }
