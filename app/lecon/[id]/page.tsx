@@ -174,7 +174,7 @@ function LessonPageInner() {
         />
       )}
       {step === 2 && (
-        <MindMapStep lesson={lesson} courseHue={course.hue} onNext={() => { completeStep(lesson.id, "mindmap"); setStep(3); }} />
+        <MindMapStep lesson={lesson} onNext={() => { completeStep(lesson.id, "mindmap"); setStep(3); }} />
       )}
       {step === 3 && (
         <QuestionStep
@@ -239,8 +239,8 @@ function CourseStep({ lesson, onNext }: { lesson: ReturnType<typeof findLesson> 
 }
 
 function MindMapStep({
-  lesson, courseHue, onNext,
-}: { lesson: NonNullable<ReturnType<typeof findLesson>>; courseHue: Course["hue"]; onNext: () => void }) {
+  lesson, onNext,
+}: { lesson: NonNullable<ReturnType<typeof findLesson>>; onNext: () => void }) {
   const tree = useMemo(() => lessonMindMap(lesson), [lesson]);
   return (
     <div className="rise space-y-4">
@@ -248,7 +248,7 @@ function MindMapStep({
         Vue d&apos;ensemble de la leçon, construite depuis ses points clés, ses définitions et son plan d&apos;examen.
         Touche une branche pour la déplier.
       </p>
-      <MindMap root={tree} courseHue={courseHue} />
+      <MindMap root={tree} />
       <Button onClick={onNext} size="lg" full>Passer à la question <Arrow className="h-4 w-4" /></Button>
     </div>
   );
