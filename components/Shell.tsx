@@ -7,6 +7,7 @@ import { connexionHref } from "@/lib/nav";
 import { Books, Chart, Gear, Grid, Home, Quill, Scales, Upload, Flame } from "./icons";
 import { longDate } from "@/lib/format";
 import InstallPrompt from "./InstallPrompt";
+import UrgencyBanner from "./UrgencyBanner";
 
 const NAV = [
   { href: "/", label: "Aujourd'hui", Icon: Home },
@@ -73,6 +74,7 @@ export default function Shell({ children }: { children: React.ReactNode }) {
         </header>
       )}
 
+      {!inLesson && !publique && <UrgencyBanner />}
       {!inLesson && !publique && <InstallPrompt />}
 
       {showConnexion && !inLesson && !publique && (

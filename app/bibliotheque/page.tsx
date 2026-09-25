@@ -6,6 +6,7 @@ import { useStudiJur } from "@/lib/state";
 import { allCourses, corpusStats } from "@/lib/corpus";
 import { Bar, Button, SectionTitle, Tag } from "@/components/ui";
 import { Check, Chevron } from "@/components/icons";
+import AccountCTA from "@/components/AccountCTA";
 
 export default function LibraryPage() {
   const { state, ready } = useStudiJur();
@@ -92,6 +93,8 @@ export default function LibraryPage() {
         </p>
         <div className="mt-4"><Button href="/mes-cours">Déposer un cours</Button></div>
       </section>
+
+      <AccountCTA />
     </div>
   );
 }

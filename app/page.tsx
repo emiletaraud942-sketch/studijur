@@ -5,12 +5,13 @@ import { useEffect, useMemo, useState } from "react";
 import { useStudiJur } from "@/lib/state";
 import { allCourses, corpusStats, pickDailyLesson, findCourse } from "@/lib/corpus";
 import { dueCards, masteredCount, streakIsAlive, todayKey } from "@/lib/srs";
+import { fetchLeaderboard } from "@/lib/leaderboard";
 import { Bar, Button, SectionTitle, Tag } from "@/components/ui";
 import { Arrow, Cards, Check, Chevron, Flame, Quill, Sitemap, Target } from "@/components/icons";
 import { longDate } from "@/lib/format";
 
 export default function TodayPage() {
-  const { state, ready, refreshSubscription } = useStudiJur();
+  const { state, ready, signedInAs, refreshSubscription } = useStudiJur();
   const [subConfirmed, setSubConfirmed] = useState(false);
 
   // Retour de Stripe (?abonnement=ok) : le webhook peut prendre quelques
@@ -105,6 +106,10 @@ export default function TodayPage() {
           dis-moi ce qui te manque, ça compte <Chevron className="h-3.5 w-3.5" />
         </Link>
       </section>
+
+      {doneToday && signedInAs && Boolean(state.profile.leaderboardOptIn) && state.profile.pseudonym && (
+        <RangPromo university={state.profile.university?.trim() || null} pseudonym={state.profile.pseudonym} />
+      )}
 
       {daily && dailyCourse ? (
         <section data-hue={dailyCourse.hue} className="card rise overflow-hidden" style={{ boxShadow: "var(--shadow-md)" }}>
@@ -284,5 +289,45 @@ function PitchPremiereVisite({ dailyId }: { dailyId?: string }) {
         Gratuit, sans carte bancaire · connexion sans mot de passe
       </p>
     </section>
+  );
+}
+
+// Rang de l'élève dans le classement de sa promo (ou de tout StudiJur sans
+// faculté renseignée) — n'a de sens que pour quelqu'un d'inscrit au
+// classement (voir /classement) : sans compte lié, aucune position n'existe.
+function RangPromo({ university, pseudonym }: { university: string | null; pseudonym: string }) {
+  const [rang, setRang] = useState<number | null>(null);
+
+  useEffect(() => {
+    let annule = false;
+    fetchLeaderboard(university, pseudonym).then((rows) => {
+      if (annule) return;
+      const i = rows.findIndex((r) => r.isMe);
+      setRang(i === -1 ? null : i + 1);
+    });
+    return () => { annule = true; };
+  }, [university, pseudonym]);
+
+  // Absent du classement (pas encore synchronisé, ou hors du top affiché) :
+  // pas de position à annoncer plutôt qu'un chiffre trompeur.
+  if (rang === null) return null;
+
+  return (
+    <Link href="/classement" data-hue="gold"
+      className="rise card flex items-center justify-between gap-3 p-4 transition-transform hover:-translate-y-0.5">
+      <div className="flex min-w-0 items-center gap-3">
+        <span className="grid h-10 w-10 shrink-0 place-items-center rounded-xl text-[14px] font-bold tabular"
+          style={{ background: "var(--gold-soft)", color: "var(--gold)" }}>
+          {rang === 1 ? "1er" : `${rang}e`}
+        </span>
+        <div className="min-w-0">
+          <p className="truncate text-[14.5px] font-semibold">
+            Tu es {rang === 1 ? "1er" : `${rang}e`} sur ta promo
+          </p>
+          <p className="text-[12.5px]" style={{ color: "var(--muted)" }}>Voir le classement</p>
+        </div>
+      </div>
+      <span className="shrink-0" style={{ color: "var(--muted)" }}><Arrow className="h-4 w-4" /></span>
+    </Link>
   );
 }

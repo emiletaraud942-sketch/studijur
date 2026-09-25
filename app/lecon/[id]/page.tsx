@@ -16,6 +16,7 @@ import { connexionHref } from "@/lib/nav";
 import { Arrow, Cards, Check, Cross, Flame, Quill, Sitemap, Target } from "@/components/icons";
 import { MindMap } from "@/components/MindMap";
 import { lessonMindMap } from "@/lib/mindmap";
+import AccountCTA from "@/components/AccountCTA";
 import type { Course, EssayFeedback, StepName } from "@/lib/types";
 
 const STEPS: { key: StepName; label: string; Icon: typeof Quill }[] = [
@@ -201,6 +202,11 @@ function LessonPageInner() {
           onHome={() => router.push("/")}
         />
       )}
+
+      {/* La fin de séance (DoneStep) porte déjà sa propre incitation à créer
+          un compte, contextualisée à la série et au score — inutile de la
+          répéter ici. */}
+      {!done && <AccountCTA />}
     </div>
   );
 }
