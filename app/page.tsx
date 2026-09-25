@@ -6,7 +6,7 @@ import { useStudiJur } from "@/lib/state";
 import { allCourses, corpusStats, pickDailyLesson, findCourse } from "@/lib/corpus";
 import { dueCards, masteredCount, streakIsAlive, todayKey } from "@/lib/srs";
 import { Bar, Button, SectionTitle, Tag } from "@/components/ui";
-import { Arrow, Cards, Chevron, Flame, Quill, Target, Check } from "@/components/icons";
+import { Arrow, Cards, Check, Chevron, Flame, Quill, Sitemap, Target } from "@/components/icons";
 import { longDate } from "@/lib/format";
 
 export default function TodayPage() {
@@ -70,6 +70,8 @@ export default function TodayPage() {
         </div>
       )}
 
+      {doneIds.length === 0 && <PitchPremiereVisite dailyId={daily?.id} />}
+
       <Link href="/entrainement" data-hue="gold" className="rise card flex items-center gap-4 p-4 transition-transform hover:-translate-y-0.5">
         <span className="grid h-11 w-11 shrink-0 place-items-center rounded-xl" style={{ background: "var(--h-soft)", color: "var(--h)" }}>
           <Flame className="h-5 w-5" />
@@ -97,12 +99,6 @@ export default function TodayPage() {
             ? "Tu peux t'arrêter là, ou enchaîner sur une leçon supplémentaire — la série est déjà validée."
             : "Cinq minutes : le cours, cinq définitions, une question type examen corrigée, puis un quiz."}
         </p>
-        {doneIds.length === 0 && (
-          <Link href="/presentation" className="mt-3 inline-flex items-center gap-1.5 text-[13.5px] font-semibold"
-            style={{ color: "var(--accent)" }}>
-            Première visite ? Découvrir StudiJur en 30 secondes <Chevron className="h-3.5 w-3.5" />
-          </Link>
-        )}
         <Link href="/plus#suggestions" className="mt-3 inline-flex items-center gap-1.5 text-[13.5px] font-semibold"
           style={{ color: "var(--accent)" }}>
           StudiJur va continuer à s&apos;enrichir de nouvelles fonctionnalités pour te servir toujours mieux —
@@ -222,5 +218,71 @@ export default function TodayPage() {
         </div>
       </section>
     </div>
+  );
+}
+
+const ATOUTS = [
+  { Icon: Check, label: "Quiz par leçon" },
+  { Icon: Sitemap, label: "Cartes mentales" },
+  { Icon: Cards, label: "Flashcards" },
+];
+
+// Présentation courte pour qui n'a encore fait aucune leçon — remplace le
+// petit lien vers /presentation par le pitch complet, directement ici :
+// une leçon reste à un tap, pas une page de plus à traverser. Disparaît dès
+// la première leçon terminée (doneIds.length === 0 côté appelant).
+function PitchPremiereVisite({ dailyId }: { dailyId?: string }) {
+  const [eleves, setEleves] = useState<number | null>(null);
+
+  useEffect(() => {
+    let annule = false;
+    fetch("/api/eleves-inscrits")
+      .then((r) => r.json())
+      .then((d) => { if (!annule) setEleves(typeof d.eleves === "number" ? d.eleves : null); })
+      .catch(() => {});
+    return () => { annule = true; };
+  }, []);
+
+  return (
+    <section className="card rise p-6 text-center">
+      {eleves !== null && eleves > 0 && (
+        <span className="mb-4 inline-flex items-center rounded-full px-3.5 py-1.5 text-[13px] font-semibold"
+          style={{ background: "var(--gold-soft)", color: "var(--gold)" }}>
+          {eleves} élève{eleves > 1 ? "s" : ""} déjà inscrit{eleves > 1 ? "s" : ""}
+        </span>
+      )}
+      <h2 className="serif text-[24px] font-bold leading-snug sm:text-[27px]">
+        Révise ton droit en 5 minutes par jour
+      </h2>
+
+      <div className="my-5 border-t" style={{ borderColor: "var(--line)" }} />
+
+      <div className="text-[11px] font-semibold uppercase tracking-[0.14em]" style={{ color: "var(--muted)" }}>
+        Déjà dans l&apos;appli
+      </div>
+      <div className="mt-4 grid grid-cols-3 gap-3">
+        {ATOUTS.map(({ Icon, label }) => (
+          <div key={label} className="flex flex-col items-center gap-2">
+            <span className="grid h-11 w-11 place-items-center rounded-xl" style={{ background: "var(--surface-2)" }}>
+              <Icon className="h-5 w-5" />
+            </span>
+            <span className="text-[12.5px] font-medium leading-tight">{label}</span>
+          </div>
+        ))}
+      </div>
+
+      <p className="mx-auto mt-5 max-w-xs text-[13.5px] leading-relaxed" style={{ color: "var(--muted)" }}>
+        Générés aussi à partir de tes propres cours, pas seulement du programme de L1.
+      </p>
+
+      <div className="mt-6">
+        <Button href={dailyId ? `/lecon/${dailyId}` : "/bibliotheque"} size="lg" full>
+          Essayer une leçon gratuite <Arrow className="h-4 w-4" />
+        </Button>
+      </div>
+      <p className="mt-3 text-[12.5px]" style={{ color: "var(--muted)" }}>
+        Gratuit, sans carte bancaire · connexion sans mot de passe
+      </p>
+    </section>
   );
 }
