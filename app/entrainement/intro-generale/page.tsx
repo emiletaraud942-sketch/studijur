@@ -23,8 +23,10 @@ export default function EntrainementIntroGeneralePage() {
         <Link href="/entrainement" className="text-[13px] font-semibold" style={{ color: "var(--muted)" }}>← Entraînement intero</Link>
         <h1 className="serif mt-1.5 text-[28px] font-bold tracking-tight">Introduction générale au droit</h1>
         <p className="mt-1.5 text-[14.5px]" style={{ color: "var(--muted)" }}>
-          Vocabulaire des procès, questions de cours, méthodologie. Écris ta réponse si tu veux, fais-la
-          corriger par l&apos;IA, puis révèle la réponse attendue.
+          Les 30 premières questions préparent le CC1 du 29 septembre, dans le même format que le sujet
+          d&apos;entraînement distribué en cours. Suivent le vocabulaire des procès, les questions de cours et
+          la méthodologie. Écris ta réponse si tu veux, fais-la corriger par l&apos;IA, puis révèle la réponse
+          attendue.
         </p>
       </div>
 
