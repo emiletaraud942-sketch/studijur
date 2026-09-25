@@ -25,6 +25,16 @@
   --bad: #B14B3A;
   --bad-soft: #F7E1DA;
 
+  /* Carte mentale : une couleur FIXE par catégorie, la même sur toute leçon et
+     toute matière (jamais liée à --h, la teinte du cours) — pour que l'élève
+     associe "cette couleur = ce type de contenu" au fil du temps. */
+  --mm-keypoints: #9C6B14;
+  --mm-keypoints-soft: #F5E9CD;
+  --mm-definitions: #1C6E72;
+  --mm-definitions-soft: #DCEEEE;
+  --mm-plan: #8C3A4A;
+  --mm-plan-soft: #F3DEE1;
+
   /* Bordure épaisse "carte à onglets" façon GénéraQuiz : marine, pas ton chaud. */
   --card-border: rgba(30, 42, 71, 0.22);
 
@@ -55,6 +65,13 @@
   --good-soft: #15352A;
   --bad: #E8927E;
   --bad-soft: #35201B;
+
+  --mm-keypoints: #E2BC6C;
+  --mm-keypoints-soft: #332A16;
+  --mm-definitions: #5FC4C9;
+  --mm-definitions-soft: #12302F;
+  --mm-plan: #E39AA8;
+  --mm-plan-soft: #331B20;
 
   --card-border: rgba(243, 236, 217, 0.16);
 
