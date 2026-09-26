@@ -7,7 +7,7 @@ const MODULES = [
     hue: "gold",
     Icon: Quill,
     title: "Introduction générale au droit",
-    text: "Deux onglets : 30 questions basées sur le sujet d'entraînement du CC1 du 29/09, et les questions de révision générale.",
+    text: "Deux onglets : 30 questions basées sur le sujet d'entraînement du CC1, et les questions de révision générale.",
   },
   {
     href: "/entrainement/organisation-juridictionnelle",
@@ -24,7 +24,7 @@ export default function EntrainementPage() {
       <div>
         <h1 className="serif text-[28px] font-bold tracking-tight">Entraînement intero</h1>
         <p className="mt-1.5 text-[14.5px]" style={{ color: "var(--muted)" }}>
-          Pour la semaine prochaine. Gratuit, sans limite, même sans abonnement.
+          Gratuit, sans limite, même sans abonnement.
         </p>
       </div>
 

@@ -34,9 +34,9 @@ export default function EntrainementIntroGeneralePage() {
         <Link href="/entrainement" className="text-[13px] font-semibold" style={{ color: "var(--muted)" }}>← Entraînement intero</Link>
         <h1 className="serif mt-1.5 text-[28px] font-bold tracking-tight">Introduction générale au droit</h1>
         <p className="mt-1.5 text-[14.5px]" style={{ color: "var(--muted)" }}>
-          Deux parcours séparés : l&apos;entraînement pour le CC1 de la semaine prochaine d&apos;un côté, les
-          questions de révision générale de l&apos;autre. Écris ta réponse si tu veux, fais-la corriger par
-          l&apos;IA, puis révèle la réponse attendue.
+          Deux parcours séparés : l&apos;entraînement pour le CC1 d&apos;un côté, les questions de révision
+          générale de l&apos;autre. Écris ta réponse si tu veux, fais-la corriger par l&apos;IA, puis révèle la
+          réponse attendue.
         </p>
       </div>
 
@@ -66,8 +66,8 @@ export default function EntrainementIntroGeneralePage() {
       {onglet === "cc1" ? (
         <div className="rounded-2xl p-4" style={{ background: "var(--accent-soft)" }}>
           <p className="text-[13.5px] leading-relaxed" style={{ color: "var(--accent-strong)" }}>
-            <strong>Basées sur le sujet d&apos;entraînement distribué par le professeur</strong> pour le CC1 du
-            mardi 29 septembre (45 minutes, 5 questions notées sur 20). Ces 30 questions reprennent exactement
+            <strong>Basées sur le sujet d&apos;entraînement distribué par le professeur</strong> pour le CC1
+            (45 minutes, 5 questions notées sur 20). Ces 30 questions reprennent exactement
             les mêmes thèmes et le même type de question que celles de l&apos;épreuve — définitions et
             distinctions, question de compréhension, question de méthode : c&apos;est donc le même genre de
             question qui tombera à l&apos;examen.

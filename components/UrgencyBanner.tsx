@@ -9,7 +9,10 @@ import { useEffect, useState } from "react";
 // réapparaître le bandeau même chez quelqu'un qui avait fermé le précédent.
 const URGENCY = {
   id: "cc1-intro-droit-2026-09-29",
-  message: "CC1 d'Introduction générale au droit — mardi 29 septembre.",
+  // Pas de date en dur ici : le CC n'a pas lieu le même jour pour tout le
+  // monde (facs et groupes différents) — un jour précis serait faux pour
+  // une partie des élèves.
+  message: "CC1 d'Introduction générale au droit — entraîne-toi avant l'épreuve.",
   ctaLabel: "Réviser maintenant",
   href: "/entrainement/intro-generale",
   // Le bandeau ne s'affiche plus du tout à partir de cette date, même sans
