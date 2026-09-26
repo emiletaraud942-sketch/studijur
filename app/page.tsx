@@ -78,7 +78,7 @@ export default function TodayPage() {
           <Flame className="h-5 w-5" />
         </span>
         <div className="min-w-0 flex-1">
-          <h2 className="text-[15.5px] font-semibold">Intero la semaine prochaine ?</h2>
+          <h2 className="text-[15.5px] font-semibold">Un CC à préparer ?</h2>
           <p className="mt-0.5 text-[13px] leading-snug" style={{ color: "var(--muted)" }}>
             Introduction générale au droit et Organisation juridictionnelle : entraîne-toi gratuitement, sans limite.
           </p>
