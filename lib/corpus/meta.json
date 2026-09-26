@@ -71,5 +71,13 @@
   "subtitle": "Les articles de loi et de traité à connaître, classés par texte et par thème",
   "hue": "rust",
   "prefix": "articles"
+ },
+ {
+  "id": "vocabulaire-juridique",
+  "title": "Vocabulaire juridique",
+  "short": "Vocabulaire",
+  "subtitle": "Les mots importants du droit — ordonnance, décret, arrêt, jurisprudence... — expliqués et distingués",
+  "hue": "green",
+  "prefix": "vocabulaire"
  }
 ]
