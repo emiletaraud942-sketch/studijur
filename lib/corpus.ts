@@ -26,6 +26,8 @@ import articlesA from "./corpus/parts/articles.a.json";
 import articlesB from "./corpus/parts/articles.b.json";
 import articlesC from "./corpus/parts/articles.c.json";
 import vocabulaireA from "./corpus/parts/vocabulaire.a.json";
+import vocabulaireB from "./corpus/parts/vocabulaire.b.json";
+import vocabulaireC from "./corpus/parts/vocabulaire.c.json";
 
 type RawLesson = Omit<Lesson, "courseId">;
 
@@ -42,7 +44,7 @@ const PARTS: Record<string, RawLesson[][]> = {
   auteurs: [auteursA, auteursB, auteursC] as unknown as RawLesson[][],
   dates: [datesA, datesB, datesC, datesD] as unknown as RawLesson[][],
   articles: [articlesA, articlesB, articlesC] as unknown as RawLesson[][],
-  vocabulaire: [vocabulaireA] as unknown as RawLesson[][],
+  vocabulaire: [vocabulaireA, vocabulaireB, vocabulaireC] as unknown as RawLesson[][],
 };
 
 type Meta = {
