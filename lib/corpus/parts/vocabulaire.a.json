@@ -1,0 +1,257 @@
+[
+  {
+    "id": "vocabulaire-01",
+    "order": 1,
+    "title": "Les textes normatifs : de la loi au décret",
+    "teaser": "Loi, ordonnance, décret, arrêté, circulaire : qui les prend, et avec quelle autorité ?",
+    "minutes": 5,
+    "brief": [
+      "La **loi** ordinaire est votée par le Parlement (Assemblée nationale et Sénat), dans les matières que l'**article 34 de la Constitution** réserve au législateur. Au-delà de ce domaine, c'est le pouvoir réglementaire qui est compétent, en vertu de l'article 37.",
+      "L'**ordonnance de l'article 38** permet au gouvernement d'empiéter temporairement sur le domaine de la loi, mais seulement après y avoir été **habilité** par une loi du Parlement. Elle doit ensuite être **ratifiée** par le Parlement pour acquérir valeur législative ; à défaut, elle reste un acte de nature réglementaire, contestable devant le juge administratif comme n'importe quel décret.",
+      "Le **décret** est un acte réglementaire pris par le président de la République ou le Premier ministre (article 21), sans intervention du Parlement. On distingue le décret simple du **décret en Conseil d'État**, qui suppose l'avis — non contraignant — du Conseil d'État avant sa signature.",
+      "L'**arrêté** est le nom donné à l'acte réglementaire ou individuel pris par une autre autorité administrative : ministre, préfet, maire. La **circulaire**, elle, ne crée en principe pas de droit nouveau : elle donne de simples instructions à l'administration pour appliquer un texte — sauf lorsqu'elle est elle-même de nature réglementaire."
+    ],
+    "keyPoints": [
+      "La loi est votée par le Parlement dans le domaine de l'article 34 ; au-delà, c'est le pouvoir réglementaire (article 37) qui est compétent.",
+      "L'ordonnance de l'article 38 permet au gouvernement de légiférer par délégation, à condition d'être habilité puis, pour valoir loi, ratifié par le Parlement.",
+      "Le décret est pris par le président ou le Premier ministre ; l'arrêté, par une autre autorité administrative (ministre, préfet, maire).",
+      "La circulaire n'est en principe qu'une instruction interne à l'administration, pas une norme opposable — sauf si elle est elle-même de nature réglementaire."
+    ],
+    "definitions": [
+      {
+        "term": "Loi",
+        "text": "Texte voté par le Parlement (Assemblée nationale et Sénat), dans les matières que l'article 34 de la Constitution réserve au législateur.",
+        "source": "Article 34 de la Constitution"
+      },
+      {
+        "term": "Ordonnance (article 38)",
+        "text": "Acte pris par le gouvernement après habilitation du Parlement, dans une matière normalement réservée à la loi ; elle doit être ratifiée par le Parlement pour acquérir valeur législative, sinon reste un acte réglementaire.",
+        "source": "Article 38 de la Constitution"
+      },
+      {
+        "term": "Décret",
+        "text": "Acte réglementaire pris par le président de la République ou le Premier ministre, sans intervention du Parlement — simple, ou en Conseil d'État lorsque la loi l'exige.",
+        "source": "Article 21 de la Constitution"
+      },
+      {
+        "term": "Arrêté",
+        "text": "Acte réglementaire ou individuel pris par une autorité administrative autre que le président de la République ou le Premier ministre : ministre, préfet, maire."
+      },
+      {
+        "term": "Circulaire",
+        "text": "Instruction adressée par une autorité administrative à ses services pour l'application d'un texte ; ne crée en principe pas de droit nouveau, sauf lorsqu'elle est elle-même réglementaire."
+      }
+    ],
+    "exam": {
+      "kind": "question de cours",
+      "question": "Ordonnance de l'article 38 et décret : en quoi ces deux actes du pouvoir exécutif se distinguent-ils quant à leur autorité et à leur contrôle ?",
+      "concise": "L'ordonnance de l'article 38 et le décret sont deux actes pris par le pouvoir exécutif, mais leur autorité et leur contrôle diffèrent profondément. Le décret, simple ou pris en Conseil d'État, reste par nature un acte réglementaire : il ne peut intervenir que dans le domaine que l'article 37 laisse au pouvoir réglementaire, et il demeure toujours soumis au contrôle du juge administratif par la voie du recours pour excès de pouvoir. L'ordonnance, à l'inverse, permet au gouvernement d'empiéter temporairement sur le domaine de la loi, mais seulement après y avoir été habilité par le Parlement. Deux issues sont alors possibles : si le Parlement la ratifie, l'ordonnance acquiert valeur législative et échappe désormais au contrôle du juge administratif ; si elle n'est pas ratifiée, elle demeure un acte réglementaire, contestable devant le juge administratif comme n'importe quel décret.",
+      "plan": [
+        {
+          "title": "I. Deux actes du pouvoir exécutif, mais de nature différente",
+          "children": [
+            {
+              "title": "A. Le décret, toujours de nature réglementaire",
+              "points": [
+                "Simple, ou en Conseil d'État après avis de ce dernier",
+                "Compétence limitée au domaine que l'article 37 laisse au règlement",
+                "Contrôlé par le juge administratif (recours pour excès de pouvoir)"
+              ]
+            },
+            {
+              "title": "B. L'ordonnance, une incursion temporaire dans le domaine de la loi",
+              "points": [
+                "Nécessite une habilitation préalable du Parlement (article 38)",
+                "Permet de légiférer par délégation, dans une matière normalement réservée à la loi",
+                "Contrôlée par le juge administratif tant qu'elle n'est pas ratifiée"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "II. Le sort de l'ordonnance dépend de sa ratification",
+          "children": [
+            {
+              "title": "A. Ratifiée, elle devient une loi",
+              "points": [
+                "Acquiert valeur législative",
+                "Échappe désormais au contrôle du juge administratif",
+                "Distinction avec le décret, qui ne devient jamais une loi"
+              ]
+            },
+            {
+              "title": "B. Non ratifiée, elle reste un acte réglementaire",
+              "points": [
+                "Contestable devant le juge administratif, comme un décret",
+                "Reste néanmoins distincte du décret : elle porte sur une matière normalement légale",
+                "Une simple mesure d'attente tant que le Parlement ne s'est pas prononcé"
+              ]
+            }
+          ]
+        }
+      ],
+      "pitfalls": [
+        "Ne pas confondre habilitation (loi qui autorise le gouvernement à légiférer par ordonnance) et ratification (loi qui donne à l'ordonnance valeur législative) : ce sont deux lois différentes, à deux moments différents.",
+        "Une ordonnance non ratifiée n'est pas nulle : elle existe et s'applique, mais reste un acte réglementaire, contestable devant le juge administratif — elle n'est simplement pas devenue une loi."
+      ]
+    },
+    "quiz": [
+      {
+        "q": "Le décret est pris par :",
+        "choices": ["Le Parlement", "Le président de la République ou le Premier ministre", "Un maire uniquement", "Le Conseil constitutionnel"],
+        "answer": 1,
+        "why": "Le décret est un acte du pouvoir exécutif (article 21 de la Constitution), sans intervention du Parlement."
+      },
+      {
+        "q": "Une ordonnance de l'article 38 acquiert valeur législative :",
+        "choices": ["Dès sa signature", "Après ratification par le Parlement", "Après avis du Conseil d'État seulement", "Jamais"],
+        "answer": 1,
+        "why": "Sans ratification, l'ordonnance reste un acte réglementaire, contestable devant le juge administratif."
+      },
+      {
+        "q": "L'arrêté est pris par :",
+        "choices": ["Uniquement le président de la République", "Une autorité administrative autre que le président ou le Premier ministre", "Uniquement le Parlement", "Le juge administratif"],
+        "answer": 1,
+        "why": "Ministre, préfet, maire : l'arrêté est le nom donné à l'acte réglementaire ou individuel de ces autorités."
+      },
+      {
+        "q": "Une circulaire :",
+        "choices": ["Crée toujours du droit nouveau", "Est votée par le Parlement", "Ne crée en principe pas de droit nouveau, sauf si elle est elle-même réglementaire", "A systématiquement valeur de loi"],
+        "answer": 2,
+        "why": "En principe simple instruction interne à l'administration, elle peut exceptionnellement être elle-même de nature réglementaire."
+      },
+      {
+        "q": "Pour prendre une ordonnance, le gouvernement doit d'abord être :",
+        "choices": ["Élu", "Habilité par une loi du Parlement", "Autorisé par le Conseil d'État seul", "Saisi par un citoyen"],
+        "answer": 1,
+        "why": "L'habilitation est la loi par laquelle le Parlement autorise le gouvernement à légiférer par ordonnance dans un domaine et un délai déterminés."
+      }
+    ]
+  },
+  {
+    "id": "vocabulaire-02",
+    "order": 2,
+    "title": "Les décisions de justice et leurs sources",
+    "teaser": "Arrêt, jugement, ordonnance de référé, jurisprudence, doctrine : à qui doit-on chaque mot ?",
+    "minutes": 5,
+    "brief": [
+      "Le **jugement** est la décision rendue par une juridiction du premier degré : tribunal judiciaire, tribunal de commerce, tribunal administratif...",
+      "L'**arrêt** est la décision rendue par une juridiction supérieure : cour d'appel, Cour de cassation, Conseil d'État. On distingue l'**arrêt de principe**, très motivé et destiné à être repris, de l'**arrêt d'espèce**, qui ne tranche que le cas particulier.",
+      "L'**ordonnance**, au sens juridictionnel, n'a rien à voir avec l'ordonnance de l'article 38 : ici, c'est la décision rendue par un **juge unique**, souvent en urgence — par exemple une **ordonnance de référé**, qui ne tranche pas le fond du litige mais prend une mesure provisoire.",
+      "La **jurisprudence** désigne l'ensemble des décisions rendues par les tribunaux, dont les solutions répétées contribuent à interpréter, et parfois à compléter, la règle de droit. La **doctrine**, elle, désigne les travaux des auteurs qui commentent et analysent le droit — une simple autorité d'interprétation, jamais une source formelle du droit comme la loi ou la coutume."
+    ],
+    "keyPoints": [
+      "Jugement (1er degré) et arrêt (juridiction supérieure) : le nom de la décision dépend du rang de la juridiction qui la rend, pas de son contenu.",
+      "L'ordonnance juridictionnelle (juge unique, souvent en urgence) n'a rien à voir avec l'ordonnance de l'article 38 : seul le nom est identique.",
+      "Un arrêt de principe, répété, devient de la jurisprudence — à distinguer de l'arrêt d'espèce, qui ne tranche que le cas particulier.",
+      "La doctrine reste une simple autorité d'interprétation, jamais une source formelle du droit comme la loi ou la coutume."
+    ],
+    "definitions": [
+      {
+        "term": "Jugement",
+        "text": "Décision rendue par une juridiction du premier degré (tribunal judiciaire, tribunal de commerce, tribunal administratif...)."
+      },
+      {
+        "term": "Arrêt",
+        "text": "Décision rendue par une juridiction supérieure : cour d'appel, Cour de cassation, Conseil d'État."
+      },
+      {
+        "term": "Ordonnance (juridictionnelle)",
+        "text": "Décision rendue par un juge unique, souvent en urgence — par exemple une ordonnance de référé — à distinguer de l'ordonnance de l'article 38 de la Constitution, qui est un acte du gouvernement, pas un acte de justice."
+      },
+      {
+        "term": "Jurisprudence",
+        "text": "Ensemble des décisions rendues par les tribunaux, dont les solutions répétées contribuent à interpréter, et parfois à compléter, la règle de droit."
+      },
+      {
+        "term": "Doctrine",
+        "text": "Ensemble des travaux des auteurs qui commentent et analysent le droit — une simple autorité d'interprétation, non une source formelle du droit comme la loi ou la coutume."
+      }
+    ],
+    "exam": {
+      "kind": "question de cours",
+      "question": "Pourquoi peut-on dire que le mot « ordonnance » désigne, en droit français, deux actes qui n'ont rien en commun ?",
+      "concise": "Le terme « ordonnance » recouvre deux actes de nature radicalement différente. Le premier est un acte du pouvoir exécutif, pris sur le fondement de l'article 38 de la Constitution : le gouvernement, habilité par le Parlement, y légifère par délégation dans un domaine normalement réservé à la loi, avant d'être, ou non, ratifié. Le second est un acte juridictionnel : la décision rendue par un juge unique, souvent en urgence — une ordonnance de référé ne tranche pas le fond du litige, elle prend une mesure provisoire. Rien ne relie ces deux actes, sinon leur nom : l'un émane du gouvernement et touche au domaine de la loi, l'autre émane d'un juge et se prononce sur un litige entre particuliers ou avec l'administration. C'est un piège classique de vocabulaire en L1, qui illustre plus largement la nécessité de toujours vérifier le sens exact que prend un mot juridique selon le contexte où il est employé.",
+      "plan": [
+        {
+          "title": "I. Deux actes de nature radicalement différente",
+          "children": [
+            {
+              "title": "A. L'ordonnance de l'article 38, un acte du pouvoir exécutif",
+              "points": [
+                "Nécessite une habilitation préalable du Parlement",
+                "Intervient dans le domaine normalement réservé à la loi",
+                "Devient une loi si elle est ratifiée"
+              ]
+            },
+            {
+              "title": "B. L'ordonnance juridictionnelle, un acte du juge",
+              "points": [
+                "Rendue par un juge unique",
+                "Souvent rendue en urgence (référé, sur requête)",
+                "Ne tranche pas nécessairement le fond du litige"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "II. Une même appellation, aucun lien de fond",
+          "children": [
+            {
+              "title": "A. Des auteurs et des finalités opposés",
+              "points": [
+                "L'une émane du gouvernement, l'autre d'un juge",
+                "L'une touche au domaine de la loi, l'autre tranche un litige",
+                "Deux régimes de contrôle sans rapport l'un avec l'autre"
+              ]
+            },
+            {
+              "title": "B. Une leçon de méthode plus générale",
+              "points": [
+                "Toujours vérifier le sens exact d'un mot juridique selon son contexte",
+                "D'autres mots partagent ce piège : l'arrêt ne désigne que les juridictions supérieures",
+                "Un même mot peut recouvrir des réalités juridiques sans rapport"
+              ]
+            }
+          ]
+        }
+      ],
+      "pitfalls": [
+        "Ne jamais présenter l'ordonnance de référé comme une variante de l'ordonnance de l'article 38 : ce sont deux actes sans rapport, seul le nom est commun.",
+        "Ne pas confondre arrêt et jugement : le nom dépend du rang de la juridiction (supérieure ou premier degré), jamais de la matière ou de l'importance de l'affaire."
+      ]
+    },
+    "quiz": [
+      {
+        "q": "Un arrêt est rendu par :",
+        "choices": ["Une juridiction du premier degré", "Une juridiction supérieure (cour d'appel, Cour de cassation, Conseil d'État)", "Un maire", "Le gouvernement"],
+        "answer": 1,
+        "why": "Le jugement, lui, est rendu par une juridiction du premier degré."
+      },
+      {
+        "q": "Une ordonnance de référé est :",
+        "choices": ["Un acte du gouvernement pris sur le fondement de l'article 38", "Une décision rendue par un juge unique, souvent en urgence", "Une loi ordinaire", "Un décret en Conseil d'État"],
+        "answer": 1,
+        "why": "Ne pas confondre avec l'ordonnance de l'article 38 de la Constitution, qui est un acte du gouvernement."
+      },
+      {
+        "q": "La jurisprudence désigne :",
+        "choices": ["Le texte des lois votées par le Parlement", "L'ensemble des décisions rendues par les tribunaux", "Les travaux des auteurs de doctrine", "Les décrets d'application"],
+        "answer": 1,
+        "why": "Ce sont en particulier les solutions répétées qui viennent interpréter, voire compléter, la règle de droit."
+      },
+      {
+        "q": "La doctrine est :",
+        "choices": ["Une source formelle du droit, à l'égal de la loi", "Une simple autorité d'interprétation, non une source formelle du droit", "Rendue par les tribunaux", "Votée par le Parlement"],
+        "answer": 1,
+        "why": "La doctrine n'est qu'une autorité d'interprétation — la loi et la coutume restent les sources formelles du droit."
+      },
+      {
+        "q": "Un arrêt de principe, répété dans le temps :",
+        "choices": ["Reste un cas isolé sans portée", "Devient de la jurisprudence", "Se transforme en loi", "Doit être ratifié par le Parlement"],
+        "answer": 1,
+        "why": "À distinguer de l'arrêt d'espèce, qui ne tranche que le cas particulier sans vocation à être repris."
+      }
+    ]
+  }
+]
