@@ -60,3 +60,12 @@ export function Camera({ className }: P) {
 export function Sitemap({ className }: P) {
   return (<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" className={className ?? base} aria-hidden="true"><circle cx="4.5" cy="12" r="2.3" /><circle cx="18" cy="5" r="2.3" /><circle cx="18" cy="12" r="2.3" /><circle cx="18" cy="19" r="2.3" /><path d="M6.6 12h3M12 12h3.7M9.6 12 15.8 6.6M9.6 12l6.2 5.4" /></svg>);
 }
+export function Bell({ className }: P) {
+  return (<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" className={className ?? base} aria-hidden="true"><path d="M6 8a6 6 0 0 1 12 0c0 5 2 6 2 6H4s2-1 2-6Z" /><path d="M10 20a2 2 0 0 0 4 0" /></svg>);
+}
+export function Calendar({ className }: P) {
+  return (<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" className={className ?? base} aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2" /><path d="M16 3v4M8 3v4M3.5 10h17" /><path d="M9 14.5l2 2 4-4.5" /></svg>);
+}
+export function Trophy({ className }: P) {
+  return (<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" className={className ?? base} aria-hidden="true"><path d="M8 21h8" /><path d="M12 17v4" /><path d="M7 4h10v4a5 5 0 0 1-10 0V4Z" /><path d="M7 6H4.5a1 1 0 0 0-1 1c0 2 1 4 4 4" /><path d="M17 6h2.5a1 1 0 0 1 1 1c0 2-1 4-4 4" /></svg>);
+}

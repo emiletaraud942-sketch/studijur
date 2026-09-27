@@ -15,7 +15,7 @@ const NAV = [
   { href: "/cours", label: "Cours", Icon: Quill },
   { href: "/mes-cours", label: "Mes cours", Icon: Upload },
   { href: "/progression", label: "Progression", Icon: Chart },
-  { href: "/plus", label: "Plus", Icon: Grid },
+  { href: "/plus", label: "Outils", Icon: Grid },
   { href: "/reglages", label: "Réglages", Icon: Gear },
 ];
 

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { CORPUS, corpusStats } from "@/lib/corpus";
-import { Scales, Quill, Cards, Target, Check, Arrow, Flame } from "@/components/icons";
+import { Scales, Quill, Cards, Target, Check, Arrow, Flame, Sitemap, Upload, Trophy } from "@/components/icons";
 
 export const metadata: Metadata = {
   title: "StudiJur — 5 minutes de droit par jour",
@@ -39,13 +39,22 @@ const OBJECTIONS = [
   },
   {
     q: "Mon cours n'est pas le même que le vôtre.",
-    r: "Dépose-le. StudiJur le découpe sur les titres de ton propre professeur et en tire des leçons au même format, avec tes définitions et tes exemples.",
+    r: "Dépose-le (PDF ou photo). StudiJur le découpe sur les titres de ton propre professeur et en tire automatiquement un quiz, des flashcards à révision espacée et une carte mentale — la génération que d'autres sites font payer cher, incluse ici.",
   },
   {
     q: "Les fiches, je sais déjà les faire.",
     r: "Faire une fiche, c'est de la lecture active une fois. StudiJur te fait te tester, espace les rappels dans le temps et note ce que tu ne sais pas encore. C'est la différence entre relire et retenir.",
   },
 ];
+
+const OUTILS_APERCU = [
+  { Icon: Sitemap, titre: "Cartes mentales", texte: "Une leçon, vue d'un coup d'œil." },
+  { Icon: Target, titre: "Entraînement CC1", texte: "Le format exact du contrôle." },
+  { Icon: Cards, titre: "Révision espacée", texte: "Ce que tu rates revient plus souvent." },
+  { Icon: Trophy, titre: "Classement", texte: "Anonyme, comparé à ta fac." },
+  { Icon: Upload, titre: "Mes cours", texte: "Quiz, flashcards et carte mentale sur tes propres cours." },
+  { Icon: Flame, titre: "Série quotidienne", texte: "Un compteur de jours qui donne envie de continuer." },
+] as const;
 
 export default function PresentationPage() {
   const stats = corpusStats();
@@ -62,7 +71,8 @@ export default function PresentationPage() {
         </h1>
         <p className="mx-auto mt-4 max-w-xl text-[16px] leading-relaxed" style={{ color: "var(--muted)" }}>
           StudiJur est l&apos;entraînement quotidien des étudiants en première année de droit. Une séance courte,
-          guidée, qui te fait réviser pour de vrai — pas relire en diagonale la veille du partiel.
+          guidée, calée sur ce qui est vraiment vu en amphi et mise à jour tout au long du semestre — qui te fait
+          réviser pour de vrai, pas relire en diagonale la veille du partiel.
         </p>
         <div className="mt-7 flex flex-col items-center gap-3">
           <Link href="/"
@@ -113,9 +123,29 @@ export default function PresentationPage() {
       </section>
 
       <section>
+        <h2 className="serif mb-1 text-center text-[26px] font-bold">Tous les outils, en un coup d&apos;œil</h2>
+        <p className="mb-6 text-center text-[14.5px]" style={{ color: "var(--muted)" }}>
+          Chacun répond à un besoin précis. <Link href="/plus" className="underline" style={{ color: "var(--accent)" }}>Voir la liste complète</Link>.
+        </p>
+        <div className="grid grid-cols-2 gap-3 sm:grid-cols-3">
+          {OUTILS_APERCU.map(({ Icon, titre, texte }) => (
+            <div key={titre} className="card p-4">
+              <span className="mb-2 grid h-9 w-9 place-items-center rounded-lg"
+                style={{ background: "var(--accent-soft)", color: "var(--accent)" }}>
+                <Icon className="h-[18px] w-[18px]" />
+              </span>
+              <h3 className="text-[13.5px] font-bold">{titre}</h3>
+              <p className="mt-0.5 text-[12px] leading-snug" style={{ color: "var(--muted)" }}>{texte}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section>
         <h2 className="serif mb-1 text-center text-[26px] font-bold">Le programme de L1, déjà écrit</h2>
         <p className="mb-6 text-center text-[14.5px]" style={{ color: "var(--muted)" }}>
-          Et ton propre cours si tu le déposes.
+          Et ton propre cours si tu le déposes, mis à jour tout au long de l&apos;année selon ce qui est vraiment
+          vu en cours.
         </p>
         <div className="space-y-2.5">
           {CORPUS.map((c) => (
