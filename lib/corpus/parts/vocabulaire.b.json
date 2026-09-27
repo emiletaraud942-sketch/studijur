@@ -1,0 +1,231 @@
+[
+  {
+    "id": "vocabulaire-03",
+    "order": 3,
+    "title": "Les grandes branches du droit",
+    "teaser": "Droit civil, pénal, administratif, international : qui juge quoi, et devant quel ordre ?",
+    "minutes": 5,
+    "brief": [
+      "Le **droit civil** régit les rapports entre particuliers : personnes, famille, biens, contrats, responsabilité — c'est le cœur du droit privé, largement issu du Code civil de 1804.",
+      "Le **droit pénal** détermine les comportements interdits (infractions) et les peines qui les sanctionnent ; il relève, comme le droit civil, de l'ordre judiciaire, mais poursuit un objectif différent : punir et prévenir, non réparer un préjudice entre particuliers.",
+      "Le **droit administratif** régit l'organisation et l'action de l'administration, ainsi que ses rapports avec les particuliers ; il relève de l'ordre administratif, doté de règles et de juridictions propres, largement construites par la jurisprudence du Conseil d'État (arrêt Blanco, 1873).",
+      "Le **droit international public** régit les rapports entre États et organisations internationales (traités, Cour internationale de justice...) ; le **droit international privé** régit, lui, les rapports entre particuliers lorsqu'un élément d'extranéité est en cause (nationalité, loi applicable à un contrat international...) — à ne pas confondre malgré leur nom commun."
+    ],
+    "keyPoints": [
+      "Droit civil (rapports entre particuliers) et droit pénal (infractions et peines) relèvent tous deux de l'ordre judiciaire, mais poursuivent des finalités opposées : réparer, ou punir.",
+      "Le droit administratif relève de l'ordre administratif, distinct de l'ordre judiciaire, et doit beaucoup à la jurisprudence du Conseil d'État.",
+      "Droit international public (rapports entre États) et droit international privé (rapports entre particuliers avec un élément d'extranéité) ne partagent que leur nom."
+    ],
+    "definitions": [
+      { "term": "Droit civil", "text": "Branche du droit privé qui régit les rapports entre particuliers : état des personnes, famille, biens, contrats, responsabilité — issue pour l'essentiel du Code civil de 1804." },
+      { "term": "Droit pénal", "text": "Branche du droit qui détermine les infractions (comportements interdits) et les peines qui les sanctionnent ; relève de l'ordre judiciaire, mais poursuit un objectif de répression, non de réparation." },
+      { "term": "Droit administratif", "text": "Branche du droit qui régit l'organisation et l'action de l'administration ainsi que ses rapports avec les particuliers ; relève de l'ordre administratif, largement construit par la jurisprudence du Conseil d'État." },
+      { "term": "Droit international public", "text": "Branche du droit qui régit les rapports entre États et organisations internationales, notamment par la voie des traités." },
+      { "term": "Droit international privé", "text": "Branche du droit qui régit les rapports entre particuliers lorsqu'un élément d'extranéité est en cause (nationalité, loi applicable à un contrat international) — à ne pas confondre avec le droit international public malgré le nom commun." }
+    ],
+    "exam": {
+      "kind": "question de cours",
+      "question": "En quoi la distinction entre droit civil et droit pénal, tous deux rattachés à l'ordre judiciaire, tient-elle à leur finalité plutôt qu'à leur juge ?",
+      "concise": "Droit civil et droit pénal partagent le même ordre de juridiction — l'ordre judiciaire — mais poursuivent des finalités radicalement opposées. Le droit civil organise la réparation d'un préjudice entre particuliers : il vise à replacer la victime, autant que possible, dans la situation qui aurait été la sienne sans le dommage. Le droit pénal, au contraire, ne répare rien : il détermine quels comportements sont interdits en tant qu'infractions et les peines qui les sanctionnent, dans un objectif de répression et de prévention, au nom de la société tout entière et non d'une victime particulière. Une même situation de fait, un accident par exemple, peut ainsi donner lieu aux deux actions à la fois : une action civile en réparation du préjudice, et une action pénale en répression de l'infraction, devant des juridictions distinctes bien qu'appartenant au même ordre judiciaire.",
+      "plan": [
+        {
+          "title": "I. Deux branches d'un même ordre de juridiction",
+          "children": [
+            { "title": "A. Le droit civil, une branche tournée vers la réparation", "points": ["Rapports entre particuliers (personnes, famille, biens, contrats)", "Objectif : réparer un préjudice, indemniser la victime", "Issu pour l'essentiel du Code civil de 1804"] },
+            { "title": "B. Le droit pénal, une branche tournée vers la répression", "points": ["Détermine les infractions et les peines qui les sanctionnent", "Objectif : punir et prévenir, au nom de la société", "Relève, comme le droit civil, de l'ordre judiciaire"] }
+          ]
+        },
+        {
+          "title": "II. Une même situation peut relever des deux branches à la fois",
+          "children": [
+            { "title": "A. Deux actions distinctes pour un même fait", "points": ["Action civile en réparation du préjudice", "Action pénale en répression de l'infraction", "Des juridictions distinctes, au sein du même ordre"] },
+            { "title": "B. Une distinction qui ne se retrouve pas dans l'ordre administratif", "points": ["Le droit administratif relève d'un ordre entièrement séparé", "Construit largement par la jurisprudence du Conseil d'État", "Une summa divisio (droit privé / droit public) qui structure tout le système juridique français"] }
+          ]
+        }
+      ],
+      "pitfalls": [
+        "Ne pas confondre l'ordre de juridiction (judiciaire ou administratif) avec la branche du droit appliquée : droit civil et droit pénal relèvent tous deux de l'ordre judiciaire, mais ce sont deux branches différentes.",
+        "Ne pas confondre droit international public (rapports entre États) et droit international privé (rapports entre particuliers avec un élément d'extranéité) : seul le nom est commun."
+      ]
+    },
+    "quiz": [
+      { "q": "Le droit civil et le droit pénal relèvent tous deux de :", "choices": ["L'ordre administratif", "L'ordre judiciaire", "Aucun ordre en particulier", "Le droit international"], "answer": 1, "why": "Ils partagent le même ordre de juridiction, mais poursuivent des finalités différentes : réparer, ou punir." },
+      { "q": "Le droit pénal a pour objectif principal de :", "choices": ["Réparer un préjudice entre particuliers", "Déterminer les infractions et les peines qui les sanctionnent", "Régir les rapports entre États", "Organiser l'administration"], "answer": 1, "why": "À la différence du droit civil, qui vise la réparation, le droit pénal poursuit un objectif de répression et de prévention." },
+      { "q": "Le droit administratif relève de :", "choices": ["L'ordre judiciaire", "L'ordre administratif", "Aucun ordre", "Le droit international privé"], "answer": 1, "why": "Il est largement construit par la jurisprudence du Conseil d'État, sommet de l'ordre administratif." },
+      { "q": "Le droit international privé régit :", "choices": ["Les rapports entre États uniquement", "Les rapports entre particuliers lorsqu'un élément d'extranéité est en cause", "Les traités internationaux", "L'organisation de l'administration"], "answer": 1, "why": "À ne pas confondre avec le droit international public, qui régit les rapports entre États." },
+      { "q": "Un même accident peut donner lieu à :", "choices": ["Seulement une action civile", "Seulement une action pénale", "Une action civile et une action pénale, devant des juridictions distinctes", "Aucune action possible"], "answer": 2, "why": "Réparation du préjudice (civil) et répression de l'infraction (pénal) sont deux logiques distinctes, même au sein du même ordre judiciaire." }
+    ]
+  },
+  {
+    "id": "vocabulaire-04",
+    "order": 4,
+    "title": "Les sources non écrites et internationales du droit",
+    "teaser": "Coutume, usage, traité, convention, ratification : les sources du droit qui ne viennent pas du Parlement.",
+    "minutes": 5,
+    "brief": [
+      "La **coutume** est une pratique répétée dans le temps (élément matériel), assortie de la conviction qu'elle est obligatoire (**opinio juris**, élément psychologique) — elle reste, avec la loi, l'une des deux sources historiques du droit français.",
+      "L'**usage** est une pratique répétée, mais dépourvue du caractère obligatoire de la coutume : les parties peuvent s'y référer (notamment en matière commerciale) mais y déroger librement, à la différence de la coutume qui s'impose.",
+      "Le **traité international** est un accord conclu entre États, ou entre États et organisations internationales, destiné à produire des effets de droit — la source la plus formalisée du droit international public.",
+      "La **convention internationale** est un traité, souvent multilatéral, portant sur un objet déterminé (la Convention européenne des droits de l'homme, par exemple). Pour produire ses effets en droit français, un traité doit être **ratifié** par le président de la République, après autorisation du Parlement dans les cas prévus par la Constitution — un mot à ne pas confondre avec la ratification, bien différente, d'une ordonnance de l'article 38 par le Parlement."
+    ],
+    "keyPoints": [
+      "Coutume (obligatoire, opinio juris) et usage (facultatif, écarté par simple volonté contraire) se distinguent par leur caractère contraignant.",
+      "Traité et convention internationale engagent des États ; pour s'appliquer en droit français, un traité doit être ratifié par le président de la République.",
+      "Ratifier un traité (l'introduire en droit interne) et ratifier une ordonnance (lui donner valeur législative) sont deux opérations sans rapport, qui ne partagent que leur nom."
+    ],
+    "definitions": [
+      { "term": "Coutume", "text": "Source du droit non écrite, née de la répétition d'une pratique (élément matériel) assortie de la conviction qu'elle est obligatoire (opinio juris, élément psychologique)." },
+      { "term": "Usage", "text": "Pratique répétée, notamment en matière commerciale, à laquelle les parties peuvent librement déroger — à la différence de la coutume, qui s'impose." },
+      { "term": "Traité international", "text": "Accord conclu entre États, ou entre États et organisations internationales, destiné à produire des effets de droit." },
+      { "term": "Convention internationale", "text": "Traité, souvent multilatéral, portant sur un objet déterminé — par exemple la Convention européenne des droits de l'homme." },
+      { "term": "Ratification (d'un traité)", "text": "Acte par lequel le président de la République engage définitivement la France à respecter un traité, après autorisation du Parlement dans les cas prévus par la Constitution — à ne pas confondre avec la ratification d'une ordonnance par le Parlement." }
+    ],
+    "exam": {
+      "kind": "question de cours",
+      "question": "Pourquoi la coutume, source non écrite du droit, doit-elle réunir deux éléments cumulatifs pour être reconnue comme obligatoire ?",
+      "concise": "La coutume ne se réduit pas à une simple habitude répétée dans le temps : sa reconnaissance comme source du droit suppose la réunion de deux éléments cumulatifs. Le premier, matériel, est la répétition constante et prolongée d'une pratique. Le second, psychologique, est l'opinio juris : la conviction, partagée par ceux qui la suivent, que cette pratique est obligatoire, et non une simple convention sociale ou une habitude sans portée juridique. C'est cette conviction qui distingue la coutume du simple usage, pratique répétée mais à laquelle les parties peuvent librement déroger, notamment en matière commerciale. Une fois reconnue, la coutume peut jouer trois rôles distincts face à la loi : seconder la loi (coutume secundum legem), combler son silence (coutume praeter legem), ou s'y opposer (coutume contra legem, en principe écartée par le juge).",
+      "plan": [
+        {
+          "title": "I. Deux éléments cumulatifs pour reconnaître une coutume",
+          "children": [
+            { "title": "A. L'élément matériel : une pratique répétée", "points": ["Constance et ancienneté de la pratique", "Ne suffit pas, à elle seule, à créer une obligation"] },
+            { "title": "B. L'élément psychologique : l'opinio juris", "points": ["La conviction que la pratique est obligatoire", "C'est ce qui distingue la coutume du simple usage"] }
+          ]
+        },
+        {
+          "title": "II. Le rôle de la coutume face à la loi écrite",
+          "children": [
+            { "title": "A. Une source qui peut seconder ou compléter la loi", "points": ["Coutume secundum legem : elle seconde la loi", "Coutume praeter legem : elle comble son silence"] },
+            { "title": "B. Une source normalement subordonnée à la loi", "points": ["Coutume contra legem : en principe écartée par le juge", "La loi reste, en droit français, la source hiérarchiquement supérieure"] }
+          ]
+        }
+      ],
+      "pitfalls": [
+        "Ne pas confondre coutume (obligatoire, opinio juris) et usage (facultatif, écarté par la seule volonté contraire des parties) : la différence tient au caractère contraignant, pas à l'ancienneté de la pratique.",
+        "Ne pas confondre la ratification d'un traité par le président de la République et la ratification d'une ordonnance par le Parlement : deux opérations sans rapport, qui ne partagent que leur nom."
+      ]
+    },
+    "quiz": [
+      { "q": "La coutume suppose la réunion de :", "choices": ["Un seul élément, la répétition", "Deux éléments cumulatifs : la pratique et l'opinio juris", "Trois éléments", "Aucun élément particulier"], "answer": 1, "why": "L'élément matériel (la pratique répétée) doit s'accompagner de l'élément psychologique (la conviction qu'elle est obligatoire)." },
+      { "q": "À la différence de la coutume, l'usage :", "choices": ["Est toujours écrit", "Peut être écarté par la seule volonté contraire des parties", "S'impose obligatoirement", "N'existe qu'en droit international"], "answer": 1, "why": "L'usage est une pratique répétée, mais dépourvue du caractère obligatoire de la coutume." },
+      { "q": "Un traité international engage la France après :", "choices": ["Sa simple signature", "Sa ratification par le président de la République", "Un vote populaire obligatoire", "Son adoption par le Conseil d'État"], "answer": 1, "why": "La ratification, parfois précédée d'une autorisation du Parlement, engage définitivement la France à le respecter." },
+      { "q": "La Convention européenne des droits de l'homme est :", "choices": ["Une loi française", "Une convention internationale", "Un décret", "Une coutume"], "answer": 1, "why": "C'est un traité international multilatéral portant sur un objet déterminé, la protection des droits fondamentaux." },
+      { "q": "Ratifier une ordonnance et ratifier un traité :", "choices": ["Sont la même opération", "Sont deux opérations sans rapport, qui ne partagent que leur nom", "Relèvent toutes deux du seul président de la République", "N'existent pas en droit français"], "answer": 1, "why": "La première donne valeur législative à une ordonnance ; la seconde engage la France au respect d'un traité — deux logiques distinctes." }
+    ]
+  },
+  {
+    "id": "vocabulaire-05",
+    "order": 5,
+    "title": "Les institutions de la Ve République",
+    "teaser": "Président, Premier ministre, gouvernement, Assemblée nationale, Sénat : qui fait quoi, et devant qui répond-il ?",
+    "minutes": 5,
+    "brief": [
+      "Le **président de la République** est le chef de l'État sous la Ve République. Élu au suffrage universel direct depuis la réforme de 1962, pour un mandat de cinq ans, il nomme le Premier ministre et préside le Conseil des ministres.",
+      "Le **Premier ministre**, chef du gouvernement, est nommé par le président de la République. Il dirige l'action du gouvernement, mais reste, à la différence du président, responsable devant l'Assemblée nationale.",
+      "Le **gouvernement** est l'organe collégial, dirigé par le Premier ministre, qui détermine et conduit la politique de la nation et dispose de l'administration ; il est responsable devant l'Assemblée nationale, qui peut le renverser par une motion de censure.",
+      "Le Parlement compte deux chambres : l'**Assemblée nationale**, composée de députés élus au suffrage universel direct, qui peut seule renverser le gouvernement ; et le **Sénat**, composé de sénateurs élus au suffrage universel indirect par les grands électeurs, qui représente notamment les collectivités territoriales — un bicamérisme dit inégalitaire, l'Assemblée ayant le dernier mot en cas de désaccord sur un texte."
+    ],
+    "keyPoints": [
+      "Le président de la République, élu au suffrage universel direct, nomme le Premier ministre, qui dirige un gouvernement responsable devant l'Assemblée nationale.",
+      "Assemblée nationale (suffrage direct) et Sénat (suffrage indirect) forment un bicamérisme inégalitaire : seule l'Assemblée peut renverser le gouvernement.",
+      "Le Sénat vote les lois mais ne dispose d'aucun moyen de contraindre le gouvernement à démissionner."
+    ],
+    "definitions": [
+      { "term": "Président de la République", "text": "Chef de l'État sous la Ve République, élu au suffrage universel direct depuis 1962, pour un mandat de cinq ans ; il nomme le Premier ministre et préside le Conseil des ministres." },
+      { "term": "Premier ministre", "text": "Chef du gouvernement, nommé par le président de la République ; il dirige l'action du gouvernement et est responsable devant l'Assemblée nationale." },
+      { "term": "Gouvernement", "text": "Organe collégial, dirigé par le Premier ministre, qui détermine et conduit la politique de la nation et dispose de l'administration ; responsable devant l'Assemblée nationale." },
+      { "term": "Assemblée nationale", "text": "Chambre basse du Parlement, composée de députés élus au suffrage universel direct ; elle peut seule renverser le gouvernement par une motion de censure." },
+      { "term": "Sénat", "text": "Chambre haute du Parlement, composée de sénateurs élus au suffrage universel indirect (par les grands électeurs), qui représente notamment les collectivités territoriales." }
+    ],
+    "exam": {
+      "kind": "question de cours",
+      "question": "En quoi la responsabilité du gouvernement devant la seule Assemblée nationale, et non devant le Sénat, illustre-t-elle le bicamérisme inégalitaire de la Ve République ?",
+      "concise": "La Ve République organise un Parlement à deux chambres, mais dotées de pouvoirs inégaux. Sur le plan législatif, Assemblée nationale et Sénat votent tous deux la loi ; en cas de désaccord persistant, cependant, le gouvernement peut donner à l'Assemblée nationale le dernier mot. Sur le plan politique, l'inégalité est plus nette encore : seule l'Assemblée nationale, élue au suffrage universel direct, peut engager la responsabilité du gouvernement par le vote d'une motion de censure et le contraindre à démissionner. Le Sénat, élu au suffrage universel indirect par les grands électeurs, ne dispose d'aucun moyen équivalent : il peut critiquer, interpeller, mais jamais renverser. Cette asymétrie reflète une légitimité démocratique jugée plus forte pour la chambre élue directement par les citoyens, à qui revient en dernier ressort le contrôle du gouvernement.",
+      "plan": [
+        {
+          "title": "I. Deux chambres aux pouvoirs législatifs proches mais inégaux",
+          "children": [
+            { "title": "A. L'Assemblée nationale : le dernier mot en cas de désaccord", "points": ["Élue au suffrage universel direct", "Peut avoir le dernier mot sur un texte en cas de désaccord persistant avec le Sénat"] },
+            { "title": "B. Le Sénat : une chambre de réflexion sans dernier mot", "points": ["Élu au suffrage universel indirect, par les grands électeurs", "Représente notamment les collectivités territoriales"] }
+          ]
+        },
+        {
+          "title": "II. Une responsabilité politique du gouvernement strictement asymétrique",
+          "children": [
+            { "title": "A. Seule l'Assemblée nationale peut renverser le gouvernement", "points": ["La motion de censure, seule arme capable de contraindre le gouvernement à démissionner", "Une prérogative réservée à la chambre élue directement"] },
+            { "title": "B. Le Sénat, cantonné à un rôle de critique sans sanction", "points": ["Aucun moyen de contraindre le gouvernement à démissionner", "Reflet du bicamérisme inégalitaire propre à la Ve République"] }
+          ]
+        }
+      ],
+      "pitfalls": [
+        "Ne pas confondre le Gouvernement (organe collégial dirigé par le Premier ministre) et le Parlement (Assemblée nationale + Sénat) : le premier exécute, le second légifère et contrôle.",
+        "Ne pas croire que le Sénat peut renverser le gouvernement : seule l'Assemblée nationale dispose de ce pouvoir, par la motion de censure."
+      ]
+    },
+    "quiz": [
+      { "q": "Le président de la République est élu :", "choices": ["Par le Parlement", "Au suffrage universel direct", "Par les grands électeurs", "Par le Conseil constitutionnel"], "answer": 1, "why": "Depuis la réforme de 1962, le président est élu directement par les citoyens." },
+      { "q": "Le Premier ministre est :", "choices": ["Élu au suffrage universel", "Nommé par le président de la République", "Nommé par le Sénat", "Élu par l'Assemblée nationale"], "answer": 1, "why": "Il est nommé par le président, mais reste responsable devant l'Assemblée nationale." },
+      { "q": "Seule cette chambre peut renverser le gouvernement par une motion de censure :", "choices": ["Le Sénat", "L'Assemblée nationale", "Le Conseil constitutionnel", "Le Conseil d'État"], "answer": 1, "why": "C'est l'illustration du bicamérisme inégalitaire de la Ve République." },
+      { "q": "Le Sénat est élu :", "choices": ["Au suffrage universel direct", "Au suffrage universel indirect, par les grands électeurs", "Par le président de la République", "Par tirage au sort"], "answer": 1, "why": "Les grands électeurs (élus locaux principalement) élisent les sénateurs." },
+      { "q": "Le gouvernement est responsable devant :", "choices": ["Le Sénat uniquement", "L'Assemblée nationale", "Le Conseil constitutionnel", "Le président de la République uniquement"], "answer": 1, "why": "Seule l'Assemblée nationale peut engager sa responsabilité politique." }
+    ]
+  },
+  {
+    "id": "vocabulaire-06",
+    "order": 6,
+    "title": "Le vocabulaire du procès",
+    "teaser": "Demandeur, défendeur, instance, litige, prétention : les mots de base de tout procès, civil comme administratif.",
+    "minutes": 5,
+    "brief": [
+      "Le **demandeur** est la personne qui prend l'initiative d'un procès en saisissant une juridiction, pour faire valoir une **prétention**. Le **défendeur** est celle contre laquelle cette demande est formée.",
+      "Le **litige** est le désaccord de fond entre les parties, susceptible d'être porté devant une juridiction pour être tranché. L'**instance**, elle, désigne l'ensemble des actes de procédure qui se succèdent, du moment où une juridiction est saisie jusqu'au jugement qui met fin au litige : le litige peut exister sans qu'aucune instance ne soit encore engagée.",
+      "Ces qualités ne sont pas figées pour toute la durée du procès : un défendeur peut former, contre le demandeur initial, une **demande reconventionnelle** — il devient alors lui-même demandeur pour cette prétention, tout en restant défendeur pour la demande initiale.",
+      "Le vocabulaire évolue aussi selon les voies de recours : en appel, les mêmes personnes ne sont plus demandeur et défendeur, mais **appelant** et **intimé** — une terminologie différente pour des rôles pourtant très proches."
+    ],
+    "keyPoints": [
+      "Le demandeur saisit la juridiction pour faire valoir une prétention ; le défendeur est celui contre qui la demande est formée.",
+      "Litige (le désaccord de fond) et instance (la procédure qui permet de le trancher) ne se confondent pas : le premier peut exister sans la seconde.",
+      "Une demande reconventionnelle peut faire du défendeur initial un demandeur à son tour, pour sa propre prétention.",
+      "Le vocabulaire change avec la voie de recours : demandeur/défendeur en première instance, appelant/intimé en appel."
+    ],
+    "definitions": [
+      { "term": "Demandeur", "text": "Personne qui prend l'initiative d'un procès en saisissant une juridiction, pour faire valoir une prétention." },
+      { "term": "Défendeur", "text": "Personne contre laquelle une demande en justice est formée." },
+      { "term": "Instance", "text": "Ensemble des actes de procédure qui se succèdent, du moment où une juridiction est saisie jusqu'au jugement qui met fin au litige." },
+      { "term": "Litige", "text": "Désaccord entre deux ou plusieurs personnes, susceptible d'être porté devant une juridiction pour être tranché." },
+      { "term": "Prétention", "text": "Ce qu'une partie demande au juge de reconnaître ou d'ordonner à son profit." }
+    ],
+    "exam": {
+      "kind": "question de cours",
+      "question": "En quoi les qualités de demandeur et de défendeur peuvent-elles se retrouver, dans la même instance, chez une même personne ?",
+      "concise": "Demandeur et défendeur ne sont pas des statuts attachés définitivement à une personne : ils s'attachent à chaque demande formée dans l'instance. Le défendeur initial, contre lequel le demandeur a formé sa prétention, peut à son tour former une demande contre celui-ci — une demande reconventionnelle. Pour cette prétention nouvelle, il devient alors lui-même demandeur, tout en restant défendeur pour la demande initiale dont il doit répondre. Une même personne peut ainsi cumuler les deux qualités au sein d'une seule instance, selon la demande considérée. Cette logique se retrouve, sous un vocabulaire différent, à l'occasion d'un appel : les mêmes personnes ne sont plus désignées comme demandeur et défendeur, mais comme appelant (celui qui interjette appel) et intimé (celui contre qui l'appel est dirigé) — une nouvelle terminologie qui ne change rien à l'identité des parties, mais illustre la façon dont le vocabulaire du procès suit ses étapes.",
+      "plan": [
+        {
+          "title": "I. Des qualités attachées à la demande, non à la personne",
+          "children": [
+            { "title": "A. Demandeur et défendeur pour la demande initiale", "points": ["Le demandeur saisit la juridiction et formule une prétention", "Le défendeur doit y répondre"] },
+            { "title": "B. La demande reconventionnelle : le défendeur devient à son tour demandeur", "points": ["Une prétention nouvelle, formée par le défendeur contre le demandeur initial", "Une même personne peut cumuler les deux qualités dans la même instance"] }
+          ]
+        },
+        {
+          "title": "II. Une terminologie qui évolue selon les voies de recours",
+          "children": [
+            { "title": "A. En première instance : demandeur et défendeur", "points": ["Vocabulaire attaché à la saisine initiale de la juridiction"] },
+            { "title": "B. En appel : appelant et intimé", "points": ["Mêmes personnes, vocabulaire différent", "Reflet des différentes étapes possibles du procès"] }
+          ]
+        }
+      ],
+      "pitfalls": [
+        "Ne pas croire qu'un demandeur reste demandeur pour toute la durée du procès : une demande reconventionnelle peut faire du défendeur initial un demandeur pour sa propre prétention.",
+        "Ne pas confondre litige (le désaccord de fond) et instance (la procédure qui permet de le trancher) : le litige peut exister sans qu'aucune instance ne soit encore engagée."
+      ]
+    },
+    "quiz": [
+      { "q": "Le demandeur est :", "choices": ["Celui qui subit le procès", "Celui qui prend l'initiative du procès", "Le juge", "Le greffier"], "answer": 1, "why": "C'est lui qui saisit la juridiction pour faire valoir une prétention." },
+      { "q": "L'instance désigne :", "choices": ["Le désaccord de fond entre les parties", "L'ensemble des actes de procédure, de la saisine au jugement", "Le jugement lui-même uniquement", "Un type de juridiction"], "answer": 1, "why": "Le litige est le désaccord de fond ; l'instance est la procédure qui permet de le trancher." },
+      { "q": "Un défendeur qui forme une demande reconventionnelle :", "choices": ["Reste uniquement défendeur", "Devient à son tour demandeur pour cette prétention", "Perd automatiquement le procès", "Doit changer d'avocat"], "answer": 1, "why": "Les qualités de demandeur et défendeur s'attachent à chaque demande, pas définitivement à une personne." },
+      { "q": "En appel, les parties sont appelées :", "choices": ["Demandeur et défendeur", "Appelant et intimé", "Requérant et défenseur", "Plaignant et accusé"], "answer": 1, "why": "Le vocabulaire change avec la voie de recours, bien que ce soient souvent les mêmes personnes." },
+      { "q": "Une prétention est :", "choices": ["Le jugement rendu", "Ce qu'une partie demande au juge de reconnaître ou d'ordonner", "Le nom de la juridiction saisie", "Un moyen de preuve"], "answer": 1, "why": "C'est l'objet même de la demande formée devant le juge." }
+    ]
+  }
+]

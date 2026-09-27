@@ -1,0 +1,234 @@
+[
+  {
+    "id": "vocabulaire-07",
+    "order": 7,
+    "title": "Les acteurs de la justice",
+    "teaser": "Magistrat, procureur, avocat, greffier, commissaire de justice : qui fait quoi au palais de justice ?",
+    "minutes": 5,
+    "brief": [
+      "Le mot **magistrat** recouvre en réalité deux fonctions bien distinctes. Les **magistrats du siège** sont les juges proprement dits : ils tranchent les litiges en toute indépendance, protégés par le principe d'inamovibilité.",
+      "Les **magistrats du parquet**, eux, forment le **ministère public** : ils représentent la société devant les juridictions et requièrent l'application de la loi, sans jamais trancher eux-mêmes un litige. Le **procureur de la République** est le chef du parquet près un tribunal judiciaire ; il dirige l'action publique et décide de poursuivre, ou non, l'auteur d'une infraction.",
+      "L'**avocat** n'appartient pas à la juridiction : professionnel du droit indépendant, il assiste et représente les parties devant les juges, et les conseille en dehors de tout procès.",
+      "Le **greffier**, officier public, authentifie les actes de procédure et assiste le juge à l'audience ; il conserve aussi les archives de la juridiction. Depuis 2022, le **commissaire de justice** — issu de la fusion des huissiers de justice et des commissaires-priseurs judiciaires — signifie les actes de procédure et met à exécution les décisions de justice."
+    ],
+    "keyPoints": [
+      "Magistrat du siège (le juge, qui tranche) et magistrat du parquet (le ministère public, qui requiert) : une même qualité de magistrat, deux fonctions opposées.",
+      "Le procureur de la République dirige l'action publique et décide de l'opportunité des poursuites.",
+      "L'avocat assiste et représente les parties ; il n'appartient pas à la juridiction, à la différence du magistrat ou du greffier.",
+      "Le commissaire de justice réunit, depuis 2022, les fonctions des anciens huissiers de justice et commissaires-priseurs judiciaires."
+    ],
+    "definitions": [
+      { "term": "Magistrat", "text": "Personne exerçant une fonction de justice ; on distingue les magistrats du siège (les juges, qui tranchent les litiges) des magistrats du parquet (le ministère public, qui représente la société et requiert l'application de la loi)." },
+      { "term": "Procureur de la République", "text": "Magistrat du parquet, chef du ministère public près un tribunal judiciaire ; il dirige l'action publique et peut décider de poursuivre ou non un auteur d'infraction." },
+      { "term": "Avocat", "text": "Professionnel du droit chargé d'assister et de représenter les parties devant les juridictions, et de les conseiller." },
+      { "term": "Greffier", "text": "Officier public qui authentifie les actes de procédure, assiste le juge à l'audience et conserve les archives de la juridiction." },
+      { "term": "Commissaire de justice", "text": "Officier public et ministériel, issu depuis 2022 de la fusion des huissiers de justice et des commissaires-priseurs judiciaires, chargé notamment de signifier les actes de procédure et de mettre à exécution les décisions de justice." }
+    ],
+    "exam": {
+      "kind": "question de cours",
+      "question": "Pourquoi distingue-t-on, parmi les magistrats, ceux du siège et ceux du parquet ?",
+      "concise": "Le terme « magistrat » recouvre deux fonctions dont l'objet est radicalement différent. Le magistrat du siège est le juge proprement dit : il tranche les litiges qui lui sont soumis, en toute indépendance, garantie notamment par le principe d'inamovibilité qui lui interdit d'être déplacé ou destitué sans son consentement. Le magistrat du parquet, à l'inverse, ne tranche jamais un litige : il représente le ministère public, c'est-à-dire les intérêts de la société, et requiert l'application de la loi — notamment en décidant, pour le procureur de la République, de l'opportunité des poursuites pénales. Cette distinction s'accompagne d'un statut différent : les magistrats du parquet restent, dans une certaine mesure, hiérarchiquement organisés, tempérés par le principe selon lequel « la plume est serve, mais la parole est libre » — ils doivent suivre les instructions écrites de leur hiérarchie, mais peuvent s'exprimer librement à l'audience.",
+      "plan": [
+        {
+          "title": "I. Une même qualité de magistrat, deux fonctions opposées",
+          "children": [
+            { "title": "A. Le magistrat du siège : juger en toute indépendance", "points": ["Tranche les litiges qui lui sont soumis", "Protégé par le principe d'inamovibilité"] },
+            { "title": "B. Le magistrat du parquet : représenter la société et requérir", "points": ["Ne tranche aucun litige", "Le procureur de la République décide de l'opportunité des poursuites"] }
+          ]
+        },
+        {
+          "title": "II. Des statuts et des garanties différents",
+          "children": [
+            { "title": "A. L'inamovibilité, garantie propre aux magistrats du siège", "points": ["Ne peuvent être déplacés ou destitués sans leur consentement", "Garantit leur indépendance dans le jugement"] },
+            { "title": "B. Une organisation plus hiérarchisée pour le parquet", "points": ["« La plume est serve, la parole est libre »", "Suivent les instructions écrites, mais s'expriment librement à l'audience"] }
+          ]
+        }
+      ],
+      "pitfalls": [
+        "Ne pas croire que tout magistrat est un juge : le magistrat du parquet (procureur) ne tranche aucun litige, il requiert au nom de la société.",
+        "Ne pas confondre l'avocat, qui assiste et représente les parties, avec le magistrat, qui appartient à la juridiction elle-même."
+      ]
+    },
+    "quiz": [
+      { "q": "Le procureur de la République appartient à :", "choices": ["La magistrature du siège", "La magistrature du parquet", "La profession d'avocat", "Le greffe"], "answer": 1, "why": "Il représente le ministère public, distinct des juges du siège qui tranchent les litiges." },
+      { "q": "Le magistrat du siège :", "choices": ["Requiert au nom de la société", "Tranche les litiges en toute indépendance", "Authentifie les actes de procédure", "Représente les parties"], "answer": 1, "why": "C'est le juge proprement dit, protégé par le principe d'inamovibilité." },
+      { "q": "Le greffier :", "choices": ["Plaide à la place des avocats", "Authentifie les actes de procédure et assiste le juge à l'audience", "Dirige l'action publique", "Tranche les litiges"], "answer": 1, "why": "Le greffier conserve aussi les archives de la juridiction." },
+      { "q": "Le commissaire de justice résulte de la fusion, en 2022, de :", "choices": ["Avocats et notaires", "Huissiers de justice et commissaires-priseurs judiciaires", "Juges et procureurs", "Greffiers et avocats"], "answer": 1, "why": "Cette nouvelle profession réunit ces deux professions réglementées." },
+      { "q": "L'avocat a pour rôle de :", "choices": ["Trancher les litiges", "Assister et représenter les parties, et les conseiller", "Authentifier les actes de procédure", "Diriger l'action publique"], "answer": 1, "why": "À la différence du magistrat, il n'appartient pas à la juridiction elle-même." }
+    ]
+  },
+  {
+    "id": "vocabulaire-08",
+    "order": 8,
+    "title": "Les grands principes du procès",
+    "teaser": "Contradictoire, égalité des armes, charge de la preuve : les garanties communes à tout procès équitable.",
+    "minutes": 5,
+    "brief": [
+      "Le **principe du contradictoire** impose que chaque partie puisse discuter les prétentions, les arguments et les preuves de son adversaire, et soit informée en temps utile de tout ce sur quoi le juge pourrait fonder sa décision.",
+      "L'**égalité des armes** est une exigence complémentaire : chaque partie doit disposer de moyens équivalents pour faire valoir sa cause devant le juge, sans avantage substantiel accordé à son adversaire.",
+      "En matière pénale, ces exigences se prolongent dans les **droits de la défense** : le droit d'être informé des charges, d'être assisté d'un avocat, de présenter ses observations avant toute décision.",
+      "Ces garanties supposent une dernière exigence : la **loyauté de la preuve**. Une preuve obtenue par fraude, violence ou par une atteinte disproportionnée aux droits d'autrui fausserait le débat contradictoire lui-même, quelle que soit par ailleurs la répartition de la **charge de la preuve**, qui détermine qui doit prouver un fait pour que le juge le tienne pour établi — en principe celui qui réclame l'exécution d'une obligation."
+    ],
+    "keyPoints": [
+      "Le contradictoire porte sur l'information et le débat ; l'égalité des armes, sur l'équilibre des moyens : deux exigences complémentaires, pas synonymes.",
+      "Les droits de la défense prolongent ces exigences en matière pénale : être informé, assisté, entendu.",
+      "La charge de la preuve pèse en principe sur celui qui réclame l'exécution d'une obligation, mais connaît des aménagements selon les contentieux.",
+      "Une preuve déloyale (obtenue par fraude ou violence) fausse le débat contradictoire lui-même."
+    ],
+    "definitions": [
+      { "term": "Principe du contradictoire", "text": "Principe selon lequel chaque partie doit pouvoir discuter les prétentions, les arguments et les preuves de son adversaire, et être informée en temps utile de tout ce sur quoi le juge pourrait fonder sa décision." },
+      { "term": "Droits de la défense", "text": "Ensemble des garanties permettant à une personne mise en cause de se défendre effectivement : être informée des charges, être assistée d'un avocat, présenter ses observations." },
+      { "term": "Égalité des armes", "text": "Exigence que chaque partie dispose de moyens équivalents pour faire valoir sa cause devant le juge, sans avantage substantiel accordé à son adversaire." },
+      { "term": "Charge de la preuve", "text": "Détermine qui doit prouver un fait pour que le juge le tienne pour établi ; en matière civile, la charge pèse en principe sur celui qui réclame l'exécution d'une obligation." },
+      { "term": "Loyauté de la preuve", "text": "Exigence que les preuves produites devant le juge aient été obtenues sans fraude, ni violence, ni atteinte disproportionnée aux droits d'autrui." }
+    ],
+    "exam": {
+      "kind": "question de cours",
+      "question": "En quoi le principe du contradictoire et l'égalité des armes, bien que distincts, poursuivent-ils un même objectif de procès équitable ?",
+      "concise": "Le contradictoire et l'égalité des armes sont deux exigences distinctes, mais toutes deux tournées vers un même objectif : garantir un procès équitable. Le contradictoire porte sur l'information et le débat : chaque partie doit connaître, et pouvoir discuter, tout élément susceptible de fonder la décision du juge — un argument, une pièce, une preuve. L'égalité des armes porte, elle, sur l'équilibre des moyens : temps de parole, accès à un avocat, ressources procédurales équivalentes, sans qu'une partie ne bénéficie d'un avantage substantiel sur l'autre. Ces deux exigences se prolongent, en matière pénale, dans les droits de la défense, qui garantissent à la personne mise en cause d'être informée, assistée et entendue. Elles supposent enfin la loyauté de la preuve : une preuve obtenue par fraude ou par violence fausserait le débat contradictoire lui-même, quelle que soit par ailleurs la répartition de la charge de la preuve entre les parties.",
+      "plan": [
+        {
+          "title": "I. Deux exigences distinctes du procès équitable",
+          "children": [
+            { "title": "A. Le contradictoire : informer et débattre", "points": ["Connaître tout élément susceptible de fonder la décision du juge", "Pouvoir en discuter avant le jugement"] },
+            { "title": "B. L'égalité des armes : équilibrer les moyens", "points": ["Temps de parole, accès à un avocat, ressources équivalentes", "Aucun avantage substantiel accordé à une partie"] }
+          ]
+        },
+        {
+          "title": "II. Des garanties qui se combinent au bénéfice de toutes les parties",
+          "children": [
+            { "title": "A. Les droits de la défense, prolongement en matière pénale", "points": ["Être informé des charges, assisté, entendu"] },
+            { "title": "B. La loyauté de la preuve, condition de leur effectivité", "points": ["Une preuve déloyale fausserait le débat contradictoire lui-même", "Distincte de la seule question de la charge de la preuve"] }
+          ]
+        }
+      ],
+      "pitfalls": [
+        "Ne pas confondre le contradictoire (débattre de tout ce que le juge pourrait retenir) et l'égalité des armes (disposer de moyens équivalents) : ce sont deux exigences complémentaires, pas synonymes.",
+        "Ne pas croire que la charge de la preuve pèse toujours sur le demandeur : dans certains contentieux, elle est renversée ou partagée."
+      ]
+    },
+    "quiz": [
+      { "q": "Le principe du contradictoire impose que :", "choices": ["Le juge tranche seul sans débat", "Chaque partie puisse discuter les arguments et preuves de l'autre", "Seul l'avocat du demandeur soit entendu", "Aucune preuve ne soit produite"], "answer": 1, "why": "Chacun doit pouvoir débattre de tout ce sur quoi le juge pourrait fonder sa décision." },
+      { "q": "L'égalité des armes exige :", "choices": ["Que les parties aient des moyens équivalents pour faire valoir leur cause", "Que le demandeur gagne toujours", "Que seul l'État soit représenté", "Que le procès dure indéfiniment"], "answer": 0, "why": "Aucune partie ne doit bénéficier d'un avantage substantiel sur son adversaire." },
+      { "q": "La charge de la preuve, en matière civile, pèse en principe sur :", "choices": ["Le juge", "Celui qui réclame l'exécution d'une obligation", "Le greffier", "L'avocat de la partie adverse"], "answer": 1, "why": "C'est la règle de principe, qui connaît cependant des aménagements selon les contentieux." },
+      { "q": "Une preuve obtenue par fraude ou violence méconnaît :", "choices": ["Le principe de loyauté de la preuve", "Le principe de collégialité", "La règle de l'égalité des armes uniquement", "Aucun principe particulier"], "answer": 0, "why": "La loyauté de la preuve conditionne sa recevabilité devant le juge." },
+      { "q": "Les droits de la défense garantissent notamment :", "choices": ["Le droit d'être informé des charges et assisté d'un avocat", "Le droit de ne jamais être jugé", "Le droit d'ignorer la procédure", "Le droit de choisir son juge"], "answer": 0, "why": "Ce sont des garanties concrètes offertes à toute personne mise en cause." }
+    ]
+  },
+  {
+    "id": "vocabulaire-09",
+    "order": 9,
+    "title": "Responsabilité et sanction",
+    "teaser": "Faute, préjudice, dommages-intérêts : réparer n'est pas punir. Le vocabulaire de la responsabilité civile et pénale.",
+    "minutes": 5,
+    "brief": [
+      "La **responsabilité civile** est l'obligation de réparer un dommage causé à autrui, par le versement de **dommages-intérêts** ; elle peut être contractuelle (inexécution d'un contrat) ou extracontractuelle.",
+      "Elle suppose classiquement trois conditions réunies : une **faute** (manquement à une obligation ou à un devoir de comportement), un **préjudice** (l'atteinte subie, patrimoniale ou extrapatrimoniale) et un lien de causalité entre les deux.",
+      "La **responsabilité pénale** obéit à une tout autre logique : elle oblige son auteur à répondre, devant les juridictions répressives, d'une infraction légalement définie, qui peut être sanctionnée par une peine — indépendamment de toute réparation d'un préjudice.",
+      "Ces deux responsabilités sont indépendantes l'une de l'autre, mais peuvent être engagées ensemble par un même fait : un accident causant des blessures peut ainsi donner lieu, en parallèle, à une action civile en réparation du préjudice et à une action pénale en répression de l'infraction, chacune selon ses propres conditions."
+    ],
+    "keyPoints": [
+      "La responsabilité civile répare un préjudice ; la responsabilité pénale punit une infraction — deux logiques indépendantes.",
+      "La responsabilité civile pour faute suppose trois conditions cumulatives : faute, préjudice, lien de causalité.",
+      "Un préjudice peut être patrimonial (perte financière) ou extrapatrimonial (souffrance, atteinte morale).",
+      "Un même fait peut engager simultanément la responsabilité civile et la responsabilité pénale, selon des conditions autonomes."
+    ],
+    "definitions": [
+      { "term": "Responsabilité civile", "text": "Obligation de réparer un dommage causé à autrui, par le versement de dommages-intérêts ; elle peut être contractuelle (inexécution d'un contrat) ou extracontractuelle." },
+      { "term": "Responsabilité pénale", "text": "Obligation de répondre des infractions que l'on a commises devant les juridictions répressives, qui peuvent prononcer une peine — indépendante de la responsabilité civile, qui répare un préjudice." },
+      { "term": "Faute", "text": "Manquement à une obligation ou à un devoir de comportement, condition classique de la responsabilité civile pour faute." },
+      { "term": "Préjudice", "text": "Atteinte subie par une personne dans ses intérêts, patrimoniaux (perte financière) ou extrapatrimoniaux (souffrance, atteinte morale) — condition de la responsabilité civile, aux côtés de la faute et du lien de causalité." },
+      { "term": "Dommages-intérêts", "text": "Somme d'argent allouée par le juge à la victime d'un dommage, destinée à réparer le préjudice subi." }
+    ],
+    "exam": {
+      "kind": "question de cours",
+      "question": "Pourquoi la responsabilité civile et la responsabilité pénale, bien que parfois engagées par un même fait, obéissent-elles à des logiques totalement indépendantes ?",
+      "concise": "Responsabilité civile et responsabilité pénale poursuivent des finalités radicalement différentes. La responsabilité civile vise à réparer intégralement le préjudice subi par une victime : elle suppose la réunion d'une faute, d'un préjudice et d'un lien de causalité entre les deux, et se traduit par le versement de dommages-intérêts destinés à compenser la perte subie. La responsabilité pénale, à l'inverse, ne répare rien : elle suppose qu'une infraction, légalement définie, ait été commise, et se traduit par le prononcé d'une peine, au nom de la société tout entière et non d'une victime particulière. Ces deux logiques sont indépendantes : un même fait peut engager les deux responsabilités en parallèle, chacune devant ses propres juridictions et selon ses propres conditions, sans qu'une décision prise sur l'une ne lie automatiquement l'autre.",
+      "plan": [
+        {
+          "title": "I. Deux logiques indépendantes, un même fait possible",
+          "children": [
+            { "title": "A. La responsabilité civile : réparer", "points": ["Trois conditions cumulatives : faute, préjudice, lien de causalité", "Réparation intégrale par des dommages-intérêts"] },
+            { "title": "B. La responsabilité pénale : punir", "points": ["Suppose une infraction légalement définie", "Sanctionnée par une peine, au nom de la société"] }
+          ]
+        },
+        {
+          "title": "II. Une indépendance qui n'exclut pas un cumul possible",
+          "children": [
+            { "title": "A. Une même faute peut engager les deux responsabilités simultanément", "points": ["Exemple : un accident causant des blessures involontaires"] },
+            { "title": "B. Chaque action suit ses propres conditions, devant ses propres juridictions", "points": ["Aucune automaticité entre l'issue de l'une et celle de l'autre"] }
+          ]
+        }
+      ],
+      "pitfalls": [
+        "Ne pas croire qu'une relaxe au pénal empêche automatiquement toute réparation civile : les conditions de la responsabilité civile (faute, préjudice, lien de causalité) sont autonomes de celles de l'infraction pénale.",
+        "Ne pas confondre préjudice (l'atteinte subie) et dommages-intérêts (la somme qui la répare) : le second est la conséquence chiffrée du premier."
+      ]
+    },
+    "quiz": [
+      { "q": "La responsabilité civile a pour finalité :", "choices": ["Punir l'auteur d'une infraction", "Réparer un préjudice causé à autrui", "Voter une loi", "Contrôler la constitutionnalité d'un texte"], "answer": 1, "why": "À la différence de la responsabilité pénale, qui vise la répression." },
+      { "q": "La faute est :", "choices": ["La somme versée à la victime", "Un manquement à une obligation ou à un devoir de comportement", "Le nom donné au juge civil", "Une catégorie de préjudice"], "answer": 1, "why": "C'est l'une des conditions classiques de la responsabilité civile, avec le préjudice et le lien de causalité." },
+      { "q": "Un préjudice extrapatrimonial est :", "choices": ["Une perte financière chiffrable", "Une atteinte morale ou une souffrance, non directement chiffrable en argent", "Toujours nul en droit français", "Réservé au droit pénal"], "answer": 1, "why": "À distinguer du préjudice patrimonial, qui correspond à une perte financière." },
+      { "q": "Les dommages-intérêts sont :", "choices": ["Une peine prononcée par le juge pénal", "Une somme d'argent destinée à réparer le préjudice subi", "Un texte de loi", "Une voie de recours"], "answer": 1, "why": "Ils sont alloués par le juge à la victime d'un dommage." },
+      { "q": "Un même fait (par exemple des blessures involontaires) peut engager :", "choices": ["Uniquement la responsabilité civile", "Uniquement la responsabilité pénale", "À la fois la responsabilité civile et la responsabilité pénale", "Aucune des deux"], "answer": 2, "why": "Les deux actions, civile et pénale, obéissent à des conditions et poursuivent des finalités indépendantes." }
+    ]
+  },
+  {
+    "id": "vocabulaire-10",
+    "order": 10,
+    "title": "Les personnes, les biens et le contrat",
+    "teaser": "Personne morale, patrimoine, meuble et immeuble, contrat : le vocabulaire de base du droit des biens et des obligations.",
+    "minutes": 5,
+    "brief": [
+      "Une **personne physique** est un être humain titulaire de droits et d'obligations, doté de la personnalité juridique depuis sa naissance jusqu'à son décès. Une **personne morale** est un groupement — société, association, État, collectivité — auquel le droit reconnaît une personnalité juridique distincte de celle de ses membres.",
+      "Toute personne, physique ou morale, est titulaire d'un **patrimoine** : l'ensemble de ses biens et de ses obligations, envisagé comme une **universalité de droit**. Selon la théorie classique, formulée par **Aubry et Rau**, une personne ne peut avoir qu'un seul patrimoine, indivisiblement lié à elle.",
+      "Le patrimoine réunit un actif (biens, droits) et un passif (dettes) : c'est sur l'ensemble de cet actif que les créanciers d'une personne trouvent leur gage général. Les biens qui le composent se répartissent en deux grandes catégories : les **biens meubles**, qui peuvent être déplacés (objet, somme d'argent, part sociale), et les **biens immeubles**, qui ne le peuvent pas (terrain, bâtiment).",
+      "Le **contrat**, enfin, est l'accord de volontés entre deux ou plusieurs personnes destiné à créer, modifier, transmettre ou éteindre des obligations. En droit civil, le mot « convention » en est souvent un simple synonyme — à ne pas confondre avec la convention internationale, qui désigne un accord conclu entre États : un même mot pour deux réalités bien différentes selon le contexte."
+    ],
+    "keyPoints": [
+      "Personne physique (être humain) et personne morale (groupement) sont toutes deux titulaires de droits et d'obligations.",
+      "Le patrimoine est une universalité de droit, nécessairement rattachée à une personne — théorie classique d'Aubry et Rau.",
+      "Bien meuble (déplaçable) et bien immeuble (non déplaçable) : la distinction ne tient pas à la valeur du bien, mais à sa mobilité.",
+      "En droit civil, « convention » est souvent synonyme de contrat — à ne pas confondre avec la convention internationale, accord entre États."
+    ],
+    "definitions": [
+      { "term": "Personne physique", "text": "Être humain titulaire de droits et d'obligations, doté de la personnalité juridique depuis sa naissance (vivant et viable) jusqu'à son décès." },
+      { "term": "Personne morale", "text": "Groupement (société, association, État, collectivité...) auquel le droit reconnaît une personnalité juridique distincte de celle de ses membres, lui permettant d'être titulaire de droits et d'obligations." },
+      { "term": "Patrimoine", "text": "Ensemble des biens et des obligations d'une personne, envisagé comme une universalité de droit ; en principe, toute personne a un patrimoine, et un seul." },
+      { "term": "Bien meuble / bien immeuble", "text": "Un bien meuble peut être déplacé (objet, somme d'argent, part sociale) ; un bien immeuble ne le peut pas (terrain, bâtiment) — distinction fondamentale, notamment pour les règles de compétence et de preuve applicables." },
+      { "term": "Contrat", "text": "Accord de volontés entre deux ou plusieurs personnes destiné à créer, modifier, transmettre ou éteindre des obligations — à ne pas confondre avec la convention internationale, accord conclu entre États." }
+    ],
+    "exam": {
+      "kind": "question de cours",
+      "question": "Pourquoi dit-on que le patrimoine forme, en droit français, une universalité de droit indivisiblement liée à la personne ?",
+      "concise": "La théorie classique du patrimoine, formulée au XIXe siècle par Aubry et Rau, en fait une universalité de droit : un ensemble de biens et d'obligations qui, loin de constituer une simple addition d'éléments isolés, forme un tout indissociable, rattaché nécessairement à une personne. Seules les personnes, physiques ou morales, peuvent avoir un patrimoine ; et selon le principe d'unité, une même personne ne peut en principe en avoir qu'un seul — même si des mécanismes plus récents, comme les patrimoines d'affectation, en assouplissent aujourd'hui la rigueur. Cette universalité comprend indissociablement un actif, composé des biens et des droits (meubles ou immeubles) dont la personne est titulaire, et un passif, formé de ses dettes. C'est sur l'ensemble de cet actif que les créanciers trouvent leur gage général : ils peuvent, en cas de non-paiement, saisir n'importe quel bien du patrimoine de leur débiteur, sans distinction, précisément parce que le patrimoine forme un tout indivisible attaché à la personne.",
+      "plan": [
+        {
+          "title": "I. Le patrimoine, une universalité nécessairement rattachée à une personne",
+          "children": [
+            { "title": "A. Seules les personnes ont un patrimoine", "points": ["Personnes physiques ou morales", "Un bien isolé, sans personne titulaire, n'est pas un patrimoine"] },
+            { "title": "B. Le principe d'unité du patrimoine", "points": ["Théorisé par Aubry et Rau", "Assoupli aujourd'hui par des mécanismes comme le patrimoine d'affectation"] }
+          ]
+        },
+        {
+          "title": "II. Un ensemble indissociable d'actif et de passif",
+          "children": [
+            { "title": "A. L'actif : les biens et les droits, meubles ou immeubles", "points": ["Bien meuble : peut être déplacé", "Bien immeuble : ne le peut pas (terrain, bâtiment)"] },
+            { "title": "B. Le passif : les dettes, gage général des créanciers", "points": ["L'ensemble du patrimoine répond des dettes de son titulaire", "Fondement du droit de gage général des créanciers"] }
+          ]
+        }
+      ],
+      "pitfalls": [
+        "Ne pas confondre bien meuble et bien immeuble avec la valeur du bien : un meuble peut valoir bien plus qu'un immeuble, la distinction ne tient qu'à la possibilité de le déplacer.",
+        "Ne pas confondre le contrat (accord entre personnes privées ou publiques) et la convention internationale (accord entre États) : le mot « convention » est d'ailleurs, en droit civil, un simple synonyme de contrat — un même mot pour deux réalités différentes selon le contexte."
+      ]
+    },
+    "quiz": [
+      { "q": "Une personne morale est :", "choices": ["Un être humain uniquement", "Un groupement auquel le droit reconnaît une personnalité juridique distincte de ses membres", "Un synonyme de personne physique", "Un bien immeuble"], "answer": 1, "why": "Société, association, État : autant de personnes morales titulaires de droits et d'obligations." },
+      { "q": "Le patrimoine est défini comme :", "choices": ["Seulement l'ensemble des dettes d'une personne", "Une universalité de droit regroupant l'actif et le passif d'une personne", "Un bien immeuble particulier", "Un contrat spécifique"], "answer": 1, "why": "Il comprend indissociablement les biens et droits (actif) et les dettes (passif)." },
+      { "q": "Un bien immeuble se caractérise par :", "choices": ["Sa grande valeur", "L'impossibilité de le déplacer (terrain, bâtiment)", "Son caractère meuble", "Son absence de propriétaire"], "answer": 1, "why": "À la différence du bien meuble, qui peut être déplacé." },
+      { "q": "En droit civil, le mot « convention » est souvent synonyme de :", "choices": ["Traité international", "Contrat", "Loi organique", "Décret"], "answer": 1, "why": "À ne pas confondre avec la convention internationale, accord conclu entre États — un même mot, deux sens selon le contexte." },
+      { "q": "La théorie de l'unité du patrimoine est associée à :", "choices": ["Portalis", "Aubry et Rau", "Carbonnier", "Ripert"], "answer": 1, "why": "Ces professeurs de Strasbourg ont théorisé le patrimoine comme une universalité de droit rattachée à la personne." }
+    ]
+  }
+]
