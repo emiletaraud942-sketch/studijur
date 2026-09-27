@@ -9,6 +9,7 @@ import { fetchLeaderboard } from "@/lib/leaderboard";
 import { Bar, Button, SectionTitle, Tag } from "@/components/ui";
 import { Arrow, Cards, Check, Chevron, Flame, Grid, Quill, Sitemap, Target } from "@/components/icons";
 import { longDate } from "@/lib/format";
+import RevisionIntensiveBanner from "@/components/RevisionIntensiveBanner";
 
 export default function TodayPage() {
   const { state, ready, signedInAs, refreshSubscription } = useStudiJur();
@@ -72,6 +73,8 @@ export default function TodayPage() {
       )}
 
       {doneIds.length === 0 && <PitchPremiereVisite dailyId={daily?.id} />}
+
+      <RevisionIntensiveBanner />
 
       <Link href="/entrainement" data-hue="gold" className="rise card flex items-center gap-4 p-4 transition-transform hover:-translate-y-0.5">
         <span className="grid h-11 w-11 shrink-0 place-items-center rounded-xl" style={{ background: "var(--h-soft)", color: "var(--h)" }}>
