@@ -11,7 +11,7 @@ import {
 import { findLesson, findCourse, neighbours, corpusStats } from "@/lib/corpus";
 import { Button, Prose, Tag } from "@/components/ui";
 import { inlineMarkup } from "@/lib/format";
-import { authFetchHeaders } from "@/lib/supabase";
+import { authFetchHeaders, getSupabase } from "@/lib/supabase";
 import { connexionHref } from "@/lib/nav";
 import { Arrow, Cards, Check, Cross, Flame, Quill, Sitemap, Target } from "@/components/icons";
 import { MindMap } from "@/components/MindMap";
@@ -194,6 +194,7 @@ function LessonPageInner() {
       )}
       {done && (
         <DoneStep
+          lessonId={lesson.id}
           streak={state.streak.current}
           score={state.lessons[lesson.id]?.quizScore ?? 0}
           total={lesson.quiz.length}
@@ -214,7 +215,12 @@ function LessonPageInner() {
 function CourseStep({ lesson, onNext }: { lesson: ReturnType<typeof findLesson> & object; onNext: () => void }) {
   const l = lesson as NonNullable<ReturnType<typeof findLesson>>;
   return (
-    <div className="rise space-y-5">
+    // Fragment plutôt qu'un seul conteneur : la barre collante ci-dessous doit
+    // rester `fixed` par rapport à l'écran, pas au bloc "rise" — une animation
+    // CSS via `transform` crée son propre repère de positionnement, et un
+    // `position: fixed` posé dedans se cale sur ce bloc au lieu du viewport.
+    <>
+    <div className="rise space-y-5 pb-20">
       <section className="card p-5" style={{ background: "var(--h-soft)", borderColor: "transparent" }}>
         <h3 className="mb-2 text-[12px] font-bold uppercase tracking-[0.12em]" style={{ color: "var(--h)" }}>
           Au programme de cette séance
@@ -239,8 +245,24 @@ function CourseStep({ lesson, onNext }: { lesson: ReturnType<typeof findLesson> 
           ))}
         </ul>
       </section>
-      <Button onClick={onNext} size="lg" full>Passer aux définitions <Arrow className="h-4 w-4" /></Button>
+
     </div>
+
+    {/* CTA collant : la lecture du cours peut dépasser l'écran, et c'est
+        justement là qu'on perd le plus de monde (ça n'enchaîne pas sur les
+        définitions) — inutile de finir de tout lire pour pouvoir avancer. */}
+    <div className="fixed inset-x-0 bottom-0 z-30 border-t px-4 pt-3"
+      style={{
+        background: "color-mix(in srgb, var(--paper) 92%, transparent)",
+        backdropFilter: "blur(12px)",
+        borderColor: "var(--line)",
+        paddingBottom: "calc(12px + env(safe-area-inset-bottom))",
+      }}>
+      <div className="mx-auto max-w-[1080px]">
+        <Button onClick={onNext} size="lg" full>Passer aux définitions <Arrow className="h-4 w-4" /></Button>
+      </div>
+    </div>
+    </>
   );
 }
 
@@ -662,9 +684,9 @@ function QuizStep({
 }
 
 function DoneStep({
-  streak, score, total, nextId, onReplay, onHome,
+  lessonId, streak, score, total, nextId, onReplay, onHome,
 }: {
-  streak: number; score: number; total: number; nextId?: string;
+  lessonId: string; streak: number; score: number; total: number; nextId?: string;
   onReplay: () => void; onHome: () => void;
 }) {
   const pathname = usePathname();
@@ -690,6 +712,8 @@ function DoneStep({
           <div className="text-[12px]" style={{ color: "var(--muted)" }}>jours de série</div>
         </div>
       </div>
+
+      <LessonReaction lessonId={lessonId} />
 
       {connexionRequise && (
         <div className="mx-auto mt-6 max-w-sm rounded-2xl p-5 text-left" style={{ background: "var(--gold-soft)" }}>
@@ -719,6 +743,61 @@ function DoneStep({
           Tu peux aussi transformer tes propres cours en fiches →
         </Link>
       </div>
+    </div>
+  );
+}
+
+// Signal continu et sans friction : contrairement au formulaire de suggestion
+// (texte libre, quasi jamais utilisé par les élèves), un tap suffit ici — la
+// seule donnée qu'on perd en échange, c'est le pourquoi.
+function LessonReaction({ lessonId }: { lessonId: string }) {
+  const { signedInAs } = useStudiJur();
+  const [etat, setEtat] = useState<"idle" | "envoi" | "envoye">("idle");
+  const [choix, setChoix] = useState<"utile" | "ameliorer" | null>(null);
+
+  async function reagir(bon: boolean) {
+    if (etat !== "idle") return;
+    setChoix(bon ? "utile" : "ameliorer");
+    setEtat("envoi");
+    try {
+      const sb = getSupabase();
+      const userId = sb ? (await sb.auth.getUser()).data.user?.id ?? null : null;
+      await fetch("/api/feedback", {
+        method: "POST",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify({
+          message: bon ? `👍 Séance utile — leçon ${lessonId}` : `👎 Séance à améliorer — leçon ${lessonId}`,
+          email: signedInAs ?? null,
+          userId,
+        }),
+      });
+    } catch {
+      /* signal en tâche de fond : un échec ne doit pas bloquer la suite de la séance */
+    }
+    setEtat("envoye");
+  }
+
+  return (
+    <div className="mx-auto mt-5 max-w-sm">
+      {etat === "envoye" ? (
+        <p className="text-[13px] font-semibold" style={{ color: "var(--muted)" }}>
+          Merci pour ton retour{choix === "ameliorer" ? " — je regarde ce que je peux améliorer." : " !"}
+        </p>
+      ) : (
+        <div className="flex items-center justify-center gap-3">
+          <span className="text-[13px]" style={{ color: "var(--muted)" }}>Cette séance t&apos;a aidé ?</span>
+          <button onClick={() => reagir(true)} disabled={etat === "envoi"}
+            className="grid h-9 w-9 place-items-center rounded-full text-[16px] transition-transform active:scale-90"
+            style={{ background: "var(--good-soft)" }} aria-label="Oui, utile">
+            👍
+          </button>
+          <button onClick={() => reagir(false)} disabled={etat === "envoi"}
+            className="grid h-9 w-9 place-items-center rounded-full text-[16px] transition-transform active:scale-90"
+            style={{ background: "var(--bad-soft)" }} aria-label="Non, à améliorer">
+            👎
+          </button>
+        </div>
+      )}
     </div>
   );
 }

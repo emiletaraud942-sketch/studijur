@@ -38,6 +38,7 @@ function SignInForm() {
   const [verifying, setVerifying] = useState(false);
   const [phase, setPhase] = useState<"formulaire" | "rappel">("formulaire");
   const [rappelOccupe, setRappelOccupe] = useState(false);
+  const [renvoiDisponibleDans, setRenvoiDisponibleDans] = useState(0);
 
   function terminer() {
     window.location.href = next;
@@ -81,8 +82,15 @@ function SignInForm() {
     terminer();
   }
 
-  async function send(e: React.FormEvent) {
-    e.preventDefault();
+  // Compte à rebours avant de proposer le renvoi : évite qu'on le déclenche
+  // par réflexe avant même que le premier email ait eu une chance d'arriver.
+  useEffect(() => {
+    if (renvoiDisponibleDans <= 0) return;
+    const t = setTimeout(() => setRenvoiDisponibleDans((n) => n - 1), 1000);
+    return () => clearTimeout(t);
+  }, [renvoiDisponibleDans]);
+
+  async function envoyerLien() {
     const sb = getSupabase();
     if (!sb) return;
     setBusy(true);
@@ -100,7 +108,12 @@ function SignInForm() {
     });
     setBusy(false);
     if (err) setError(err.message);
-    else setSent(true);
+    else { setSent(true); setRenvoiDisponibleDans(30); }
+  }
+
+  async function send(e: React.FormEvent) {
+    e.preventDefault();
+    await envoyerLien();
   }
 
   // Alternative au lien cliquable : indispensable pour StudiJur épinglé sur
@@ -194,6 +207,16 @@ function SignInForm() {
             </Button>
           </form>
           {codeError && <p className="mt-3 text-[13px]" style={{ color: "var(--bad)" }}>{codeError}</p>}
+
+          <p className="mt-5 text-[12.5px] leading-relaxed" style={{ color: "var(--muted)" }}>
+            Pas reçu ? Vérifie aussi tes spams / courriers indésirables — certaines adresses universitaires
+            filtrent ce type d&apos;email.
+          </p>
+          <button onClick={envoyerLien} disabled={busy || renvoiDisponibleDans > 0}
+            className="mt-2 text-[13px] font-semibold underline disabled:no-underline"
+            style={{ color: renvoiDisponibleDans > 0 ? "var(--muted)" : "var(--accent)" }}>
+            {busy ? "Envoi…" : renvoiDisponibleDans > 0 ? `Renvoyer le lien (${renvoiDisponibleDans}s)` : "Renvoyer le lien"}
+          </button>
         </>
       ) : (
         <>

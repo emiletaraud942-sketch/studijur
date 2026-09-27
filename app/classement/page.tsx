@@ -3,7 +3,7 @@
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { useStudiJur, supabaseConfigured } from "@/lib/state";
-import { fetchLeaderboard, syncLeaderboardEntry } from "@/lib/leaderboard";
+import { fetchLeaderboard, pseudonymeAleatoire, syncLeaderboardEntry } from "@/lib/leaderboard";
 import { connexionHref } from "@/lib/nav";
 import { Button, SectionTitle, Tag } from "@/components/ui";
 import { Check, Flame } from "@/components/icons";
@@ -70,8 +70,17 @@ export default function ClassementPage() {
   }
 
   async function toggleOptIn(next: boolean) {
-    update((d) => { d.profile.leaderboardOptIn = next; });
-    const res = await syncLeaderboardEntry({ ...state, profile: { ...state.profile, leaderboardOptIn: next } });
+    // Un pseudonyme tiré au sort dès l'activation : sans lui, rejoindre le
+    // classement demandait deux gestes (basculer l'interrupteur, puis encore
+    // taper et enregistrer un pseudo) — assez pour que personne n'aille au
+    // bout. Toujours modifiable juste en dessous après coup.
+    const pseudonym = state.profile.pseudonym?.trim() || (next ? pseudonymeAleatoire() : state.profile.pseudonym);
+    if (next && !state.profile.pseudonym) setPseudoDraft(pseudonym ?? "");
+    update((d) => {
+      d.profile.leaderboardOptIn = next;
+      if (next && !d.profile.pseudonym) d.profile.pseudonym = pseudonym;
+    });
+    const res = await syncLeaderboardEntry({ ...state, profile: { ...state.profile, leaderboardOptIn: next, pseudonym } });
     setSaveMsg(res.ok ? "" : (res.error ?? ""));
     if (next) reload(); else setRows(null);
   }
