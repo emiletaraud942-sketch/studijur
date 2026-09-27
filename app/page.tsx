@@ -7,7 +7,7 @@ import { allCourses, corpusStats, pickDailyLesson, findCourse } from "@/lib/corp
 import { dueCards, masteredCount, streakIsAlive, todayKey } from "@/lib/srs";
 import { fetchLeaderboard } from "@/lib/leaderboard";
 import { Bar, Button, SectionTitle, Tag } from "@/components/ui";
-import { Arrow, Cards, Check, Chevron, Flame, Quill, Sitemap, Target } from "@/components/icons";
+import { Arrow, Cards, Check, Chevron, Flame, Grid, Quill, Sitemap, Target } from "@/components/icons";
 import { longDate } from "@/lib/format";
 
 export default function TodayPage() {
@@ -106,6 +106,19 @@ export default function TodayPage() {
           dis-moi ce qui te manque, ça compte <Chevron className="h-3.5 w-3.5" />
         </Link>
       </section>
+
+      <Link href="/plus" data-hue="blue" className="rise card flex items-center gap-3.5 p-4 transition-transform hover:-translate-y-0.5">
+        <span className="grid h-11 w-11 shrink-0 place-items-center rounded-xl" style={{ background: "var(--ink)", color: "var(--paper)" }}>
+          <Grid className="h-5 w-5" />
+        </span>
+        <div className="min-w-0 flex-1">
+          <h2 className="text-[15px] font-semibold">Tous les outils de StudiJur</h2>
+          <p className="mt-0.5 text-[13px] leading-snug" style={{ color: "var(--muted)" }}>
+            Quiz, cartes mentales, vocabulaire, entraînement CC1, classement...
+          </p>
+        </div>
+        <span className="shrink-0" style={{ color: "var(--muted)" }}><Arrow className="h-4 w-4" /></span>
+      </Link>
 
       {doneToday && signedInAs && Boolean(state.profile.leaderboardOptIn) && state.profile.pseudonym && (
         <RangPromo university={state.profile.university?.trim() || null} pseudonym={state.profile.pseudonym} />
