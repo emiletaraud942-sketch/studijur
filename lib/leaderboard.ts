@@ -12,6 +12,19 @@ function lessonsDoneCount(state: ProgressState): number {
 
 export type LeaderboardStatus = "non-connecte" | "non-configure" | "ok";
 
+const ADJECTIFS = ["Vif", "Sage", "Loyal", "Prudent", "Habile", "Tenace", "Rigoureux", "Assidu"];
+const NOMS = ["Juriste", "Auditeur", "Plaideur", "Clerc", "Légiste", "Rédacteur", "Étudiant", "Praticien"];
+
+// Un pseudonyme tiré au sort plutôt qu'un champ à remplir : c'est la seule
+// étape qui empêchait de rejoindre le classement en un geste — personne ne
+// veut réfléchir à un pseudo pour activer un simple interrupteur.
+export function pseudonymeAleatoire(): string {
+  const a = ADJECTIFS[Math.floor(Math.random() * ADJECTIFS.length)];
+  const n = NOMS[Math.floor(Math.random() * NOMS.length)];
+  const num = Math.floor(100 + Math.random() * 900);
+  return `${n}${a}${num}`;
+}
+
 export function leaderboardAvailable(): LeaderboardStatus {
   const sb = getSupabase();
   if (!sb) return "non-configure";
