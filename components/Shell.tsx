@@ -25,6 +25,7 @@ export default function Shell({ children }: { children: React.ReactNode }) {
   const inLesson = pathname?.startsWith("/lecon/");
   const publique = pathname === "/presentation";
   const daysLeft = trialDaysLeft(state);
+  const midTrial = daysLeft >= 2 && daysLeft <= 4;
   // Sans compte, le vrai palier n'est pas le compte à rebours de 7 jours
   // (inopérant tant qu'aucun compte ne l'ancre) mais la connexion, requise
   // après une leçon complète — voir anonymousLessonCapReached.
@@ -92,11 +93,17 @@ export default function Shell({ children }: { children: React.ReactNode }) {
           <Link href="/abonnement" className="flex items-center justify-between gap-3 rounded-2xl px-4 py-2.5 text-[13px] font-medium"
             style={{ background: "var(--gold-soft)", color: "var(--gold)" }}>
             <span>
-              {daysLeft > 0
-                ? `Essai gratuit — ${daysLeft} jour${daysLeft > 1 ? "s" : ""} restant${daysLeft > 1 ? "s" : ""}`
-                : "Ton essai gratuit est terminé"}
+              {daysLeft <= 0
+                ? "Ton essai gratuit est terminé"
+                // Milieu d'essai (J3-J5 sur 7) : personne ne va jamais voir les
+                // formules avant que l'essai n'expire — le bandeau générique,
+                // affiché tout du long, ne suffit pas à l'inciter. Un message
+                // qui pousse à regarder plutôt qu'à décider tout de suite.
+                : midTrial
+                  ? `Plus que ${daysLeft} jour${daysLeft > 1 ? "s" : ""} d'essai — vois ce que l'abonnement débloque`
+                  : `Essai gratuit — ${daysLeft} jour${daysLeft > 1 ? "s" : ""} restant${daysLeft > 1 ? "s" : ""}`}
             </span>
-            <span className="font-bold">S'abonner →</span>
+            <span className="font-bold">{midTrial ? "Voir les formules →" : "S'abonner →"}</span>
           </Link>
         </div>
       )}

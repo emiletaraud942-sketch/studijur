@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { useEffect, useMemo, useState } from "react";
 import { useStudiJur } from "@/lib/state";
 import { allCourses, corpusStats, pickDailyLesson, findCourse } from "@/lib/corpus";
@@ -12,6 +13,7 @@ import { longDate } from "@/lib/format";
 import RevisionIntensiveBanner from "@/components/RevisionIntensiveBanner";
 
 export default function TodayPage() {
+  const router = useRouter();
   const { state, ready, signedInAs, refreshSubscription } = useStudiJur();
   const [subConfirmed, setSubConfirmed] = useState(false);
 
@@ -54,6 +56,18 @@ export default function TodayPage() {
   const stats = useMemo(() => corpusStats(custom), [custom]);
   const courses = useMemo(() => allCourses(custom), [custom]);
   const doneToday = state.streak.lastDay === todayKey();
+
+  // Retour de connexion sans contexte précis (?bienvenue=1, voir /connexion) :
+  // direction la séance du jour plutôt que ce tableau de bord. On attend
+  // `ready` pour laisser la progression distante (si elle existe, sur un
+  // nouvel appareil) le temps de remplacer l'état local avant de choisir la
+  // leçon, sinon un élève déjà avancé repartirait de la leçon 1.
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    if (new URLSearchParams(window.location.search).get("bienvenue") !== "1") return;
+    if (!ready || doneToday || !daily) return;
+    router.replace(`/lecon/${daily.id}`);
+  }, [ready, doneToday, daily, router]);
 
   const scores = Object.values(state.lessons).filter((l) => l.quizTotal);
   const avg = scores.length
