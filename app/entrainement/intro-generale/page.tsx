@@ -98,7 +98,36 @@ export default function EntrainementIntroGeneralePage() {
           Suivant <Arrow className="h-4 w-4" />
         </button>
       </div>
+
+      {/* Dernière question du parcours : le moment où l'attention est la plus
+          forte pour montrer ce que fait StudiJur au-delà de cet entraînement
+          gratuit — pas avant, ça distrairait de la révision en cours. */}
+      {i === total - 1 && <DecouvrirStudiJur />}
     </div>
+  );
+}
+
+function DecouvrirStudiJur() {
+  return (
+    <Link href="/presentation" className="rise flex items-start gap-3.5 rounded-2xl p-5 transition-transform hover:-translate-y-0.5"
+      style={{ background: "var(--ink)" }}>
+      <div className="min-w-0 flex-1">
+        <span className="inline-block rounded-full px-2.5 py-1 text-[10px] font-bold uppercase tracking-[0.08em]"
+          style={{ background: "color-mix(in srgb, var(--paper) 18%, transparent)", color: "var(--paper)" }}>
+          T&apos;as fini le parcours
+        </span>
+        <h3 className="mt-2 text-[16px] font-semibold" style={{ color: "var(--paper)" }}>
+          Ce que tu viens de faire n&apos;est qu&apos;un aperçu
+        </h3>
+        <p className="mt-1.5 text-[13px] leading-relaxed" style={{ color: "color-mix(in srgb, var(--paper) 78%, transparent)" }}>
+          StudiJur génère aussi des quiz, des flashcards et des cartes mentales depuis tes propres cours, avec
+          une révision espacée qui te fait retenir pour de vrai. Deux minutes pour voir comment ça marche.
+        </p>
+        <span className="mt-3 inline-flex items-center gap-1.5 text-[13.5px] font-bold" style={{ color: "var(--paper)" }}>
+          Découvrir StudiJur <Arrow className="h-4 w-4" />
+        </span>
+      </div>
+    </Link>
   );
 }
 
