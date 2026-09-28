@@ -1,12 +1,14 @@
 "use client";
 
 import Link from "next/link";
+import { useState } from "react";
 import { usePathname } from "next/navigation";
 import { useStudiJur, trialDaysLeft, supabaseConfigured } from "@/lib/state";
 import { connexionHref } from "@/lib/nav";
-import { Books, Chart, Gear, Grid, Home, Quill, Scales, Upload, Flame } from "./icons";
+import { Books, Chart, Gear, Grid, Home, Quill, Scales, Search, Upload, Flame } from "./icons";
 import { longDate } from "@/lib/format";
 import InstallPrompt from "./InstallPrompt";
+import SearchOverlay from "./SearchOverlay";
 import UrgencyBanner from "./UrgencyBanner";
 
 const NAV = [
@@ -21,6 +23,7 @@ const NAV = [
 
 export default function Shell({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
+  const [searchOpen, setSearchOpen] = useState(false);
   const { state, ready, signedInAs } = useStudiJur();
   const inLesson = pathname?.startsWith("/lecon/");
   const publique = pathname === "/presentation";
@@ -50,7 +53,12 @@ export default function Shell({ children }: { children: React.ReactNode }) {
                   </span>
                 </span>
               </Link>
-              <div className="flex items-center gap-3">
+              <div className="flex items-center gap-2">
+                <button onClick={() => setSearchOpen(true)} aria-label="Rechercher"
+                  className="grid h-9 w-9 shrink-0 place-items-center rounded-full"
+                  style={{ background: "var(--surface-2)", color: "var(--muted)" }}>
+                  <Search className="h-[18px] w-[18px]" />
+                </button>
                 {ready && !publique && state.streak.current > 0 && (
                   <span className="flex items-center gap-1.5 rounded-full px-3 py-1.5 text-[13px] font-bold tabular"
                     style={{ background: "var(--gold-soft)", color: "var(--gold)" }}>
@@ -128,6 +136,8 @@ export default function Shell({ children }: { children: React.ReactNode }) {
           </div>
         </nav>
       )}
+
+      {searchOpen && <SearchOverlay onClose={() => setSearchOpen(false)} />}
     </div>
   );
 }
