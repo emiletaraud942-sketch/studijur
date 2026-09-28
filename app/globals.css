@@ -24,6 +24,8 @@
   --good-soft: #E1EFE6;
   --bad: #B14B3A;
   --bad-soft: #F7E1DA;
+  --info: #1D5E86;
+  --info-soft: #DEEDF5;
 
   /* Carte mentale : une couleur FIXE par catégorie, la même sur toute leçon et
      toute matière (jamais liée à --h, la teinte du cours) — pour que l'élève
@@ -65,6 +67,8 @@
   --good-soft: #15352A;
   --bad: #E8927E;
   --bad-soft: #35201B;
+  --info: #6FB6DE;
+  --info-soft: #12293A;
 
   --mm-keypoints: #E2BC6C;
   --mm-keypoints-soft: #332A16;
@@ -99,6 +103,8 @@
   --color-good-soft: var(--good-soft);
   --color-bad: var(--bad);
   --color-bad-soft: var(--bad-soft);
+  --color-info: var(--info);
+  --color-info-soft: var(--info-soft);
   --color-card-border: var(--card-border);
   --font-serif: "Spectral", Georgia, "Times New Roman", serif;
   --font-sans: "Public Sans", ui-sans-serif, system-ui, -apple-system, sans-serif;
