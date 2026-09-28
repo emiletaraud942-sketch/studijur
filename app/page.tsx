@@ -10,6 +10,7 @@ import { fetchLeaderboard } from "@/lib/leaderboard";
 import { Bar, Button, SectionTitle, Tag } from "@/components/ui";
 import { Arrow, Cards, Check, Chevron, Flame, Grid, Quill, Sitemap, Target } from "@/components/icons";
 import { longDate } from "@/lib/format";
+import { OBJECTIONS } from "@/lib/objections";
 import RevisionIntensiveBanner from "@/components/RevisionIntensiveBanner";
 
 export default function TodayPage() {
@@ -309,6 +310,17 @@ function PitchPremiereVisite({ dailyId }: { dailyId?: string }) {
       <p className="mx-auto mt-5 max-w-xs text-[13.5px] leading-relaxed" style={{ color: "var(--muted)" }}>
         Générés aussi à partir de tes propres cours, pas seulement du programme de L1.
       </p>
+
+      <div className="my-5 border-t" style={{ borderColor: "var(--line)" }} />
+
+      <div className="space-y-3.5 text-left">
+        {OBJECTIONS.map((o) => (
+          <div key={o.q}>
+            <div className="text-[13px] font-semibold">{o.q}</div>
+            <p className="mt-0.5 text-[12.5px] leading-relaxed" style={{ color: "var(--muted)" }}>{o.r}</p>
+          </div>
+        ))}
+      </div>
 
       <div className="mt-6">
         <Button href={dailyId ? `/lecon/${dailyId}` : "/bibliotheque"} size="lg" full>

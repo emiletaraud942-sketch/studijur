@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { CORPUS, corpusStats } from "@/lib/corpus";
 import { Scales, Quill, Cards, Target, Check, Arrow, Flame, Sitemap, Upload, Trophy } from "@/components/icons";
+import { OBJECTIONS } from "@/lib/objections";
 
 export const metadata: Metadata = {
   title: "StudiJur — 5 minutes de droit par jour",
@@ -30,21 +31,6 @@ const ETAPES = [
   { Icon: Cards, titre: "Cinq définitions", texte: "Tu récites, tu vérifies, tu te notes. Celles que tu rates reviennent demain, celles que tu sais reviennent dans un mois." },
   { Icon: Target, titre: "Une question d'examen", texte: "Tu fais ton plan au brouillon, puis tu débloques la réponse concise et le plan détaillé en I/A/B." },
   { Icon: Check, titre: "Un quiz de cinq questions", texte: "Correction immédiate, chaque réponse expliquée — y compris celles que tu as ratées." },
-];
-
-const OBJECTIONS = [
-  {
-    q: "Je n'ai pas le temps.",
-    r: "C'est exactement le problème que StudiJur règle. Cinq minutes par jour, c'est moins qu'un trajet de bus. Sur un semestre, cela fait quinze heures de révision active — davantage que la plupart des étudiants n'en font avant les partiels.",
-  },
-  {
-    q: "Mon cours n'est pas le même que le vôtre.",
-    r: "Dépose-le (PDF ou photo). StudiJur le découpe sur les titres de ton propre professeur et en tire automatiquement un quiz, des flashcards à révision espacée et une carte mentale — la génération que d'autres sites font payer cher, incluse ici.",
-  },
-  {
-    q: "Les fiches, je sais déjà les faire.",
-    r: "Faire une fiche, c'est de la lecture active une fois. StudiJur te fait te tester, espace les rappels dans le temps et note ce que tu ne sais pas encore. C'est la différence entre relire et retenir.",
-  },
 ];
 
 const OUTILS_APERCU = [
