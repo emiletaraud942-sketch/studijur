@@ -66,6 +66,9 @@ export function Bell({ className }: P) {
 export function Calendar({ className }: P) {
   return (<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" className={className ?? base} aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2" /><path d="M16 3v4M8 3v4M3.5 10h17" /><path d="M9 14.5l2 2 4-4.5" /></svg>);
 }
+export function Search({ className }: P) {
+  return (<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round" className={className ?? base} aria-hidden="true"><circle cx="10.5" cy="10.5" r="7" /><path d="m20.5 20.5-4.8-4.8" /></svg>);
+}
 export function Trophy({ className }: P) {
   return (<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" className={className ?? base} aria-hidden="true"><path d="M8 21h8" /><path d="M12 17v4" /><path d="M7 4h10v4a5 5 0 0 1-10 0V4Z" /><path d="M7 6H4.5a1 1 0 0 0-1 1c0 2 1 4 4 4" /><path d="M17 6h2.5a1 1 0 0 1 1 1c0 2-1 4-4 4" /></svg>);
 }
