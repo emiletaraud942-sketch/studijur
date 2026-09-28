@@ -246,6 +246,20 @@ function CourseStep({ lesson, onNext }: { lesson: ReturnType<typeof findLesson> 
         </ul>
       </section>
 
+      {l.schema && (
+        <section className="card p-5 sm:p-6">
+          <h3 className="mb-3 text-[12px] font-bold uppercase tracking-[0.12em]" style={{ color: "var(--h)" }}>
+            {l.schema.titre}
+          </h3>
+          <figure>
+            <div dangerouslySetInnerHTML={{ __html: l.schema.svg }} />
+            <figcaption className="mt-3 text-[13px] leading-relaxed" style={{ color: "var(--muted)" }}>
+              {l.schema.legende}
+            </figcaption>
+          </figure>
+        </section>
+      )}
+
     </div>
 
     {/* CTA collant : la lecture du cours peut dépasser l'écran, et c'est

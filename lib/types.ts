@@ -24,6 +24,17 @@ export type QuizItem = {
   why: string;
 };
 
+// Schéma dessiné à la main pour une leçon précise — pas généré depuis les
+// autres champs (à la différence de la carte mentale) : réservé aux quelques
+// leçons où un mécanisme (une hiérarchie, un parcours) se comprend mieux en
+// image qu'en texte. `svg` est le contenu d'un <svg>...</svg> complet, en
+// attributs simple-guillemet pour rester lisible dans le JSON.
+export type LessonSchema = {
+  titre: string;
+  svg: string;
+  legende: string;
+};
+
 export type Lesson = {
   id: string;
   courseId: string;
@@ -37,6 +48,7 @@ export type Lesson = {
   exam: ExamQuestion;
   quiz: QuizItem[];
   custom?: boolean;
+  schema?: LessonSchema;
 };
 
 export type Course = {
