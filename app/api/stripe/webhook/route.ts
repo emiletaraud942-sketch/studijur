@@ -37,6 +37,10 @@ export async function POST(req: Request) {
       case "checkout.session.completed": {
         const s = event.data.object as Stripe.Checkout.Session;
         if (s.customer_email) {
+          // "active" ici n'est qu'un statut provisoire, écrasé dans la
+          // foulée par customer.subscription.created avec le vrai statut
+          // Stripe (trialing, active...) — cette ligne existe surtout pour
+          // créer la ligne et relier l'email au client Stripe.
           await sb.from("subscriptions").upsert({
             email: s.customer_email,
             stripe_customer_id: typeof s.customer === "string" ? s.customer : null,
@@ -46,6 +50,7 @@ export async function POST(req: Request) {
         }
         break;
       }
+      case "customer.subscription.created":
       case "customer.subscription.updated":
       case "customer.subscription.deleted": {
         const sub = event.data.object as Stripe.Subscription;
