@@ -155,12 +155,12 @@ export default function TodayPage() {
             <h2 className="serif text-[24px] font-bold leading-snug sm:text-[27px]">{daily.title}</h2>
             <p className="mt-2 text-[15px] leading-relaxed" style={{ color: "var(--ink-2)" }}>{daily.teaser}</p>
 
-            <div className="mt-5 grid grid-cols-4 gap-2 text-center">
+            <div className="mt-5 grid gap-2 text-center" style={{ gridTemplateColumns: `repeat(${2 + (daily.definitions.length > 0 ? 1 : 0) + (daily.quiz.length > 0 ? 1 : 0)}, minmax(0, 1fr))` }}>
               {[
                 { Icon: Quill, n: `${daily.minutes} min`, l: "Cours" },
-                { Icon: Cards, n: `${daily.definitions.length}`, l: "Définitions" },
+                ...(daily.definitions.length > 0 ? [{ Icon: Cards, n: `${daily.definitions.length}`, l: "Définitions" }] : []),
                 { Icon: Target, n: "1", l: "Question" },
-                { Icon: Check, n: `${daily.quiz.length}`, l: "Quiz" },
+                ...(daily.quiz.length > 0 ? [{ Icon: Check, n: `${daily.quiz.length}`, l: "Quiz" }] : []),
               ].map(({ Icon, n, l }) => (
                 <div key={l} className="rounded-xl py-3" style={{ background: "var(--surface-2)" }}>
                   <Icon className="mx-auto mb-1 h-4 w-4" />
