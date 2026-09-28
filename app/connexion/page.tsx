@@ -41,7 +41,11 @@ function SignInForm() {
   const [renvoiDisponibleDans, setRenvoiDisponibleDans] = useState(0);
 
   function terminer() {
-    window.location.href = next;
+    // Aucun contexte précis demandé (cas par défaut) : direction la séance du
+    // jour plutôt que le tableau de bord — ça évite le clic en plus, et
+    // c'était la fuite la plus nette une fois connecté (élèves qui se
+    // connectaient puis ne faisaient jamais leur première leçon).
+    window.location.href = next === "/" ? "/?bienvenue=1" : next;
   }
 
   // Couvre à la fois le retour du lien magique (le client Supabase détecte
