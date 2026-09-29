@@ -8,7 +8,7 @@ import { allCourses } from "@/lib/corpus";
 import { getSupabase } from "@/lib/supabase";
 import { connexionHref } from "@/lib/nav";
 import { Button, SectionTitle } from "@/components/ui";
-import { Check } from "@/components/icons";
+import { Arrow, Check } from "@/components/icons";
 import Rappel from "@/components/Rappel";
 
 export default function SettingsPage() {
@@ -32,6 +32,24 @@ export default function SettingsPage() {
 
   return (
     <div className="space-y-8">
+      {supabaseConfigured && !signedInAs && (
+        <Link href={connexionHref(pathname)} data-hue="gold"
+          className="rise card flex items-center gap-4 p-5 transition-transform hover:-translate-y-0.5"
+          style={{ boxShadow: "var(--shadow-md)" }}>
+          <span className="grid h-12 w-12 shrink-0 place-items-center rounded-2xl" style={{ background: "var(--h-soft)", color: "var(--h)" }}>
+            <Check className="h-6 w-6" />
+          </span>
+          <div className="min-w-0 flex-1">
+            <h2 className="text-[16px] font-bold">Crée ton compte — c&apos;est gratuit</h2>
+            <p className="mt-1 text-[13.5px] leading-snug" style={{ color: "var(--muted)" }}>
+              Sans compte, ta progression reste bloquée sur cet appareil : un changement de téléphone efface tout.
+              Un compte la sauvegarde et la retrouve partout, en 30 secondes, avec juste ton email.
+            </p>
+          </div>
+          <span className="shrink-0" style={{ color: "var(--h)" }}><Arrow className="h-5 w-5" /></span>
+        </Link>
+      )}
+
       <div>
         <h1 className="serif text-[28px] font-bold tracking-tight">Réglages</h1>
         <p className="mt-1.5 text-[14.5px]" style={{ color: "var(--muted)" }}>Ton profil, ton programme et ton compte.</p>
@@ -111,7 +129,6 @@ export default function SettingsPage() {
             value={supabaseConfigured ? (signedInAs ? `${signedInAs}${syncing ? " (en cours…)" : ""}` : "Non connecté") : "Appareil uniquement"} />
         </div>
         <div className="mt-4 flex flex-wrap gap-3">
-          {supabaseConfigured && !signedInAs && <Button href={connexionHref(pathname)} variant="soft" size="sm">Se connecter</Button>}
           {supabaseConfigured && signedInAs && (
             <Button variant="outline" size="sm" onClick={async () => { await getSupabase()?.auth.signOut(); location.reload(); }}>
               Se déconnecter
