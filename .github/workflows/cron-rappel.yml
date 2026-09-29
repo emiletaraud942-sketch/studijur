@@ -1,0 +1,22 @@
+name: Rappel push horaire
+
+# Le plan Vercel Hobby limite les Cron Jobs à une exécution par jour, ce qui
+# bloquait tout déploiement (vercel.json déclarait "0 * * * *", horaire) —
+# voir la discussion du 29/09/2026. /api/cron/rappel doit rester appelé
+# chaque heure pour servir chaque élève à l'heure de rappel qu'il a choisie
+# (state.profile.reminderHour), donc le déclenchement passe par GitHub
+# Actions (gratuit, sans cette limite) plutôt que par le Cron natif Vercel.
+on:
+  schedule:
+    - cron: "0 * * * *"
+  workflow_dispatch: {}
+
+jobs:
+  rappel:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Appelle /api/cron/rappel
+        run: |
+          curl --fail --show-error --silent \
+            -H "Authorization: Bearer ${{ secrets.CRON_SECRET }}" \
+            "https://studijur.fr/api/cron/rappel"
