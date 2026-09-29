@@ -29,6 +29,7 @@ function freshState(): ProgressState {
     lessons: {},
     cards: {},
     notions: {},
+    exercicesMethodo: {},
     streak: { current: 0, best: 0, days: [] },
     customCourses: [],
   };

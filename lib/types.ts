@@ -142,6 +142,37 @@ export type NotionMastery = {
   dueAt: string;
 };
 
+// Méthodologie d'examen (Fonctionnalité D) : exercice de cas pratique, de
+// commentaire d'arrêt ou de dissertation, généré depuis le contenu existant
+// d'une notion (pas depuis une source externe, à la différence des actus).
+// Pas de notation automatique : l'élève s'auto-évalue contre grilleCorrection
+// et corrigeType après une rédaction libre.
+export type TypeExerciceMethodo = "cas_pratique" | "commentaire_arret" | "dissertation";
+export type StatutExerciceMethodo = "draft" | "published" | "rejected";
+
+export type ExerciceMethodo = {
+  id: string;
+  type: TypeExerciceMethodo;
+  notionId: string;
+  enonce: string;
+  grilleCorrection: string[];
+  corrigeType: string;
+  statut: StatutExerciceMethodo;
+  createdAt: string;
+  updatedAt: string;
+  publishedAt?: string;
+};
+
+// Suivi minimal côté élève : un exercice fait, avec son verdict d'auto-
+// évaluation. Les critères cochés eux-mêmes ne sont pas conservés — l'état
+// vivant qui compte est le score de maîtrise de la notion (lib/srs.ts),
+// déjà mis à jour par ce même verdict.
+export type ExerciceMethodoRecord = {
+  exerciceId: string;
+  completedAt?: string;
+  reussi?: boolean;
+};
+
 export type Profile = {
   firstName?: string;
   university?: string;
@@ -168,6 +199,7 @@ export type ProgressState = {
   // types de questions confondus (actu du jour, quiz, définitions, examen) —
   // distinct de `cards`, qui ne suit que les définitions terme à terme.
   notions: Record<string, NotionMastery>;
+  exercicesMethodo: Record<string, ExerciceMethodoRecord>;
   streak: { current: number; best: number; lastDay?: string; days: string[] };
   customCourses: Course[];
   // Horodatage de la dernière écriture (posé au moment de la persistance, pas
