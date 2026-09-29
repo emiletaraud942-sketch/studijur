@@ -36,11 +36,17 @@ export async function GET(req: Request) {
   }
 
   // Heure ciblée : celle passée en paramètre, sinon l'heure de Paris courante.
+  // `.format()` seul ne marche pas ici : en locale fr-FR, formater seulement
+  // l'heure rend "09 h" (pas "09"), et Number("09 h") vaut NaN — bug vécu en
+  // prod, confirmé par les logs Supabase (hour=eq.NaN sur chaque exécution).
+  // `formatToParts` isole la valeur numérique sans dépendre du gabarit de la
+  // locale.
   const url = new URL(req.url);
   const param = url.searchParams.get("heure");
   const heureParis = Number(
     new Intl.DateTimeFormat("fr-FR", { hour: "2-digit", hour12: false, timeZone: "Europe/Paris" })
-      .format(new Date()),
+      .formatToParts(new Date())
+      .find((p) => p.type === "hour")?.value,
   );
   const heure = param !== null ? Number(param) : heureParis;
 
@@ -113,6 +119,11 @@ export async function GET(req: Request) {
         const code = (err as { statusCode?: number })?.statusCode;
         // 404 et 410 : l'appareil a désinstallé l'app ou révoqué l'autorisation.
         if (code === 404 || code === 410) perimes.push(a.endpoint);
+        // Autre code (ex. 403 clé VAPID invalide) : sans ce log, l'échec
+        // d'envoi ne laisse aucune trace — vécu avec le bug hour=NaN
+        // ci-dessus, découvert seulement via les logs Supabase du 400 côté
+        // requête, jamais côté envoi.
+        else console.error("Échec envoi push", { endpoint: a.endpoint, code, err });
       }
     }),
   );
