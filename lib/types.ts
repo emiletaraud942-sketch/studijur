@@ -228,6 +228,12 @@ export type ProgressState = {
   // (questions ouvertes d'intro générale). Plafonné pour les comptes non
   // abonnés, voir ENTRAINEMENT_CORRECTION_LIMIT dans lib/state.tsx.
   entrainementCorrectionsUsed?: number;
+  // Questions de QuizEclair (components/QuizEclair.tsx) déjà réussies au
+  // moins une fois : identifiées par `${lesson.id}::quiz${index}` (pas d'id
+  // dans QuizItem, la position dans le tableau du corpus suffit). Une
+  // question qui y figure n'est retirée du tirage que tant que d'autres,
+  // non encore réussies, restent disponibles pour compléter le tirage.
+  quizMastered?: Record<string, true>;
 };
 
 // Retour de l'IA sur une copie rédigée par l'élève (mode correction).

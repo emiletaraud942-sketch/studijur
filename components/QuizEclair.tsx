@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { Button, Tag } from "./ui";
 import { Arrow, Check, Cross } from "./icons";
+import { useStudiJur } from "@/lib/state";
 import type { Lesson, QuizItem } from "@/lib/types";
 
 export function shuffle<T>(arr: T[]): T[] {
@@ -21,9 +22,16 @@ export default function QuizEclair({
   onFinish: (good: number, total: number) => void;
   onBack: () => void;
 }) {
-  const [pool] = useState<(QuizItem & { lessonTitle: string })[]>(
-    () => shuffle(lessons.flatMap((l) => l.quiz.map((q) => ({ ...q, lessonTitle: l.title })))).slice(0, 30),
-  );
+  const { state, markQuizMastered } = useStudiJur();
+  const [pool] = useState<(QuizItem & { lessonTitle: string; id: string })[]>(() => {
+    const mastered = state.quizMastered ?? {};
+    const toutes = lessons.flatMap((l) => l.quiz.map((q, idx) => ({ ...q, lessonTitle: l.title, id: `${l.id}::quiz${idx}` })));
+    // Une question déjà réussie ne revient que si les questions encore
+    // inconnues ou ratées ne suffisent pas à remplir le tirage — jamais avant.
+    const aFaire = shuffle(toutes.filter((q) => !mastered[q.id]));
+    const acquises = shuffle(toutes.filter((q) => mastered[q.id]));
+    return [...aFaire, ...acquises].slice(0, 30);
+  });
   const [i, setI] = useState(0);
   const [picked, setPicked] = useState<number | null>(null);
   const [good, setGood] = useState(0);
@@ -44,7 +52,10 @@ export default function QuizEclair({
   function choose(idx: number) {
     if (picked !== null) return;
     setPicked(idx);
-    if (idx === q.answer) setGood((n) => n + 1);
+    if (idx === q.answer) {
+      setGood((n) => n + 1);
+      markQuizMastered(q.id);
+    }
   }
 
   function next() {
