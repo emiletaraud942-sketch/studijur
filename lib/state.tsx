@@ -33,6 +33,7 @@ function freshState(): ProgressState {
     cards: {},
     notions: {},
     exercicesMethodo: {},
+    quizMastered: {},
     streak: { current: 0, best: 0, days: [] },
     activiteDuJour: freshActiviteDuJour(),
     customCourses: [],
@@ -177,6 +178,10 @@ type Ctx = {
   // l'instant : exercices de méthode, voir gradeExerciceMethodo ci-dessous).
   gradeNotionEvent: (notionId: string, correct: boolean) => void;
   gradeExerciceMethodo: (exerciceId: string, notionId: string, reussi: boolean) => void;
+  // Marque une question de QuizEclair comme acquise : elle ne réapparaît plus
+  // dans un tirage tant que d'autres questions non acquises restent
+  // disponibles pour le compléter (voir components/QuizEclair.tsx).
+  markQuizMastered: (questionId: string) => void;
   // Compteurs du jour (Fonctionnalité E) : n'importe quelle réponse notée
   // ailleurs dans l'app doit y passer pour que `objectifAtteint` reste juste.
   bumpActiviteDuJour: (reponses: number, opts?: { notionsDuesRevues?: boolean; actuLue?: boolean }) => void;
@@ -365,6 +370,12 @@ export function StudiJurProvider({ children }: { children: React.ReactNode }) {
     });
   }, [update]);
 
+  const markQuizMastered = useCallback((questionId: string) => {
+    update((d) => {
+      d.quizMastered = { ...(d.quizMastered ?? {}), [questionId]: true };
+    });
+  }, [update]);
+
   const bumpActiviteDuJour = useCallback((
     reponses: number,
     opts?: { notionsDuesRevues?: boolean; actuLue?: boolean },
@@ -393,10 +404,10 @@ export function StudiJurProvider({ children }: { children: React.ReactNode }) {
 
   const value = useMemo<Ctx>(() => ({
     state, ready, syncing, signedInAs, refreshSubscription, update, completeStep, saveDraft,
-    recordQuiz, gradeDefinition, gradeNotionEvent, gradeExerciceMethodo, bumpActiviteDuJour,
+    recordQuiz, gradeDefinition, gradeNotionEvent, gradeExerciceMethodo, markQuizMastered, bumpActiviteDuJour,
     addCustomCourse, removeCustomCourse, reset,
   }), [state, ready, syncing, signedInAs, refreshSubscription, update, completeStep, saveDraft,
-       recordQuiz, gradeDefinition, gradeNotionEvent, gradeExerciceMethodo, bumpActiviteDuJour,
+       recordQuiz, gradeDefinition, gradeNotionEvent, gradeExerciceMethodo, markQuizMastered, bumpActiviteDuJour,
        addCustomCourse, removeCustomCourse, reset]);
 
   return <StudiJurCtx.Provider value={value}>{children}</StudiJurCtx.Provider>;
