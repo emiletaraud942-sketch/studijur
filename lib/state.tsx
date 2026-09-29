@@ -92,11 +92,12 @@ function completedLessonIds(state: ProgressState): Set<string> {
   );
 }
 
-// Le corpus fait 32 leçons : sans plafond, un élève motivé peut tout finir
-// pendant les 7 jours d'essai, avant même d'être passé à la caisse. Deux
-// leçons suffisent à donner un aperçu sans vider le corpus. Une leçon déjà
+// Relevé de 2 à 8 le 29/09/2026 (retour à chaud d'élèves trouvant le
+// plafond de 2 trop serré pour se faire une vraie idée du produit avant de
+// payer) : le vrai garde-fou contre un élève qui viderait tout le corpus
+// sans payer reste les 7 jours d'essai, pas ce plafond. Une leçon déjà
 // commencée reste toujours consultable, seules les nouvelles se verrouillent.
-export const TRIAL_LESSON_LIMIT = 2;
+export const TRIAL_LESSON_LIMIT = 8;
 
 export function trialLessonCapReached(state: ProgressState, lessonId: string): boolean {
   if (state.profile.plan === "active") return false;
