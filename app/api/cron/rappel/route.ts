@@ -80,11 +80,19 @@ export async function GET(req: Request) {
       .select("user_id, state")
       .in("user_id", idsConnus);
     for (const p of progressions ?? []) {
-      const profil = (p.state as { profile?: { reminderHour?: number }; streak?: { lastDay?: string } } | null);
+      const profil = (p.state as {
+        profile?: { reminderHour?: number };
+        streak?: { lastDay?: string; objectifAtteint?: boolean };
+      } | null);
       if (typeof profil?.profile?.reminderHour === "number") {
         preferences.set(p.user_id as string, profil.profile.reminderHour);
       }
-      if (profil?.streak?.lastDay === aujourdhui) dejaFaitAujourdhui.add(p.user_id as string);
+      // `objectifAtteint` (Fonctionnalité E) couvre plus de cas que `lastDay`
+      // seul (répondre à des questions sans finir toute une leçon compte
+      // aussi) : on garde les deux plutôt que de choisir, un seul suffit.
+      if (profil?.streak?.lastDay === aujourdhui || profil?.streak?.objectifAtteint) {
+        dejaFaitAujourdhui.add(p.user_id as string);
+      }
     }
   }
 

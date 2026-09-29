@@ -1,6 +1,9 @@
 import { describe, expect, it } from "vitest";
-import { BOX_INTERVALS, dueNotions, gradeNotion, newNotionMastery, scoreMaitriseFromBox } from "./srs";
-import type { NotionMastery } from "./types";
+import {
+  activiteDuJourActuelle, BOX_INTERVALS, bumpStreak, dueNotions, freshActiviteDuJour, gradeNotion,
+  newNotionMastery, objectifAtteintAujourdhui, scoreMaitriseFromBox, SEUIL_REPONSES_QUOTIDIEN, todayKey,
+} from "./srs";
+import type { ActiviteDuJour, NotionMastery } from "./types";
 
 describe("scoreMaitriseFromBox", () => {
   it("mappe la boîte 1 (jamais réussie) à un score bas", () => {
@@ -113,5 +116,70 @@ describe("dueNotions", () => {
   it("renvoie un tableau vide si aucune notion n'est encore due", () => {
     const demain = new Date(Date.now() + 86400000).toISOString();
     expect(dueNotions({ a: withDueAt("a", demain) })).toEqual([]);
+  });
+});
+
+describe("activiteDuJourActuelle", () => {
+  it("renvoie la même activité si elle date d'aujourd'hui", () => {
+    const activite: ActiviteDuJour = { jour: todayKey(), reponses: 3, notionsDuesRevues: false, actuLue: false };
+    expect(activiteDuJourActuelle(activite)).toEqual(activite);
+  });
+
+  it("remet les compteurs à zéro si l'activité date d'un autre jour", () => {
+    const hier: ActiviteDuJour = { jour: "2020-01-01", reponses: 99, notionsDuesRevues: true, actuLue: true };
+    const actuelle = activiteDuJourActuelle(hier);
+    expect(actuelle.jour).toBe(todayKey());
+    expect(actuelle.reponses).toBe(0);
+    expect(actuelle.notionsDuesRevues).toBe(false);
+    expect(actuelle.actuLue).toBe(false);
+  });
+});
+
+describe("objectifAtteintAujourdhui", () => {
+  it("est faux par défaut (activité fraîche)", () => {
+    expect(objectifAtteintAujourdhui(freshActiviteDuJour())).toBe(false);
+  });
+
+  it("est faux si l'activité date d'un autre jour, même avec des compteurs hauts", () => {
+    const perimee: ActiviteDuJour = { jour: "2020-01-01", reponses: 999, notionsDuesRevues: true, actuLue: true };
+    expect(objectifAtteintAujourdhui(perimee)).toBe(false);
+  });
+
+  it("est vrai dès le seuil de réponses atteint", () => {
+    const juste: ActiviteDuJour = { jour: todayKey(), reponses: SEUIL_REPONSES_QUOTIDIEN, notionsDuesRevues: false, actuLue: false };
+    expect(objectifAtteintAujourdhui(juste)).toBe(true);
+    const pasEncore: ActiviteDuJour = { ...juste, reponses: SEUIL_REPONSES_QUOTIDIEN - 1 };
+    expect(objectifAtteintAujourdhui(pasEncore)).toBe(false);
+  });
+
+  it("est vrai si les notions dues ont été consultées, même sans réponse", () => {
+    const activite: ActiviteDuJour = { jour: todayKey(), reponses: 0, notionsDuesRevues: true, actuLue: false };
+    expect(objectifAtteintAujourdhui(activite)).toBe(true);
+  });
+
+  it("est vrai si l'actu du jour a été lue, même sans réponse", () => {
+    const activite: ActiviteDuJour = { jour: todayKey(), reponses: 0, notionsDuesRevues: false, actuLue: true };
+    expect(objectifAtteintAujourdhui(activite)).toBe(true);
+  });
+});
+
+describe("bumpStreak", () => {
+  it("préserve objectifAtteint quand la série avance", () => {
+    const streak = { current: 2, best: 5, lastDay: todayKey(new Date(Date.now() - 86400000)), days: [], objectifAtteint: true };
+    const next = bumpStreak(streak);
+    expect(next.current).toBe(3);
+    expect(next.objectifAtteint).toBe(true);
+  });
+
+  it("préserve objectifAtteint quand la série redémarre à 1", () => {
+    const streak = { current: 5, best: 5, lastDay: "2020-01-01", days: [], objectifAtteint: false };
+    const next = bumpStreak(streak);
+    expect(next.current).toBe(1);
+    expect(next.objectifAtteint).toBe(false);
+  });
+
+  it("ne change rien si le jour a déjà été compté", () => {
+    const streak = { current: 3, best: 5, lastDay: todayKey(), days: [todayKey()], objectifAtteint: true };
+    expect(bumpStreak(streak)).toEqual(streak);
   });
 });

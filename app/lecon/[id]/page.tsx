@@ -516,7 +516,7 @@ function Correction({
   autocorrect: boolean;
 }) {
   const pathname = usePathname();
-  const { signedInAs } = useStudiJur();
+  const { signedInAs, bumpActiviteDuJour } = useStudiJur();
   const [state, setState] = useState<"idle" | "loading" | "done" | "error">("idle");
   const [feedback, setFeedback] = useState<EssayFeedback | null>(null);
   const [error, setError] = useState("");
@@ -557,6 +557,7 @@ function Correction({
       }
       setFeedback(data.feedback);
       setState("done");
+      bumpActiviteDuJour(1);
     } catch {
       setState("error");
       setError("Le serveur n'a pas répondu. Réessaie dans un instant.");

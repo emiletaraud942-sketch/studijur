@@ -5,7 +5,8 @@ import { useRouter } from "next/navigation";
 import { useEffect, useMemo, useState } from "react";
 import { useStudiJur } from "@/lib/state";
 import { allCourses, corpusStats, pickDailyLesson, findCourse } from "@/lib/corpus";
-import { dueCards, masteredCount, streakIsAlive, todayKey } from "@/lib/srs";
+import { dueCards, dueNotions, masteredCount, streakIsAlive, todayKey } from "@/lib/srs";
+import { notionLabel } from "@/lib/notions";
 import { fetchLeaderboard } from "@/lib/leaderboard";
 import { Bar, Button, SectionTitle, Tag } from "@/components/ui";
 import { Arrow, Cards, Check, Chevron, Flame, Grid, Quill, Sitemap, Target } from "@/components/icons";
@@ -15,7 +16,7 @@ import RevisionIntensiveBanner from "@/components/RevisionIntensiveBanner";
 
 export default function TodayPage() {
   const router = useRouter();
-  const { state, ready, signedInAs, refreshSubscription } = useStudiJur();
+  const { state, ready, signedInAs, refreshSubscription, bumpActiviteDuJour } = useStudiJur();
   const [subConfirmed, setSubConfirmed] = useState(false);
 
   // Retour de Stripe (?abonnement=ok) : le webhook peut prendre quelques
@@ -54,9 +55,14 @@ export default function TodayPage() {
   );
   const dailyCourse = daily ? findCourse(daily.courseId, custom) : undefined;
   const due = useMemo(() => dueCards(state.cards), [state.cards]);
+  const revisionsNotions = useMemo(() => dueNotions(state.notions), [state.notions]);
+  const [notionsDeplie, setNotionsDeplie] = useState(false);
   const stats = useMemo(() => corpusStats(custom), [custom]);
   const courses = useMemo(() => allCourses(custom), [custom]);
   const doneToday = state.streak.lastDay === todayKey();
+  // Série vivante (hier ou aujourd'hui) mais pas encore faite aujourd'hui :
+  // elle se romprait si l'élève ne fait rien avant minuit.
+  const serieEnRisque = !doneToday && state.streak.current > 0 && streakIsAlive(state.streak);
 
   // Retour de connexion sans contexte précis (?bienvenue=1, voir /connexion) :
   // direction la séance du jour plutôt que ce tableau de bord. On attend
@@ -193,7 +199,12 @@ export default function TodayPage() {
 
       <section className="grid grid-cols-2 gap-3 sm:grid-cols-4">
         {[
-          { label: "Série", value: state.streak.current, sub: streakIsAlive(state.streak) ? `record ${state.streak.best}` : "à relancer", Icon: Flame, gold: true },
+          {
+            label: "Série", value: state.streak.current,
+            sub: serieEnRisque ? "en jeu aujourd'hui" : streakIsAlive(state.streak) ? `record ${state.streak.best}` : "à relancer",
+            subColor: serieEnRisque ? "var(--bad)" : undefined,
+            Icon: Flame, gold: true,
+          },
           { label: "Leçons faites", value: doneIds.length, sub: `sur ${stats.lessons}` },
           { label: "Définitions sues", value: masteredCount(state.cards), sub: `${due.length} à revoir` },
           { label: "Moyenne quiz", value: avg === null ? "—" : `${avg}%`, sub: `${scores.length} quiz` },
@@ -206,7 +217,7 @@ export default function TodayPage() {
             <div className="serif mt-1 text-[27px] font-bold leading-none tabular" style={{ color: s.gold ? "var(--gold)" : "var(--ink)" }}>
               {s.value}
             </div>
-            <div className="mt-1 text-[12px]" style={{ color: "var(--muted)" }}>{s.sub}</div>
+            <div className="mt-1 text-[12px] font-semibold" style={{ color: s.subColor ?? "var(--muted)" }}>{s.sub}</div>
           </div>
         ))}
       </section>
@@ -223,6 +234,40 @@ export default function TodayPage() {
             </p>
           </div>
           <Button href="/progression#revisions" variant="soft" size="sm">Réviser</Button>
+        </section>
+      )}
+
+      {revisionsNotions.length > 0 && (
+        <section className="card p-5">
+          <div className="flex items-center justify-between gap-4">
+            <div className="flex items-center gap-2">
+              <Sitemap className="h-4 w-4" />
+              <h3 className="text-[16px] font-semibold">
+                {revisionsNotions.length} notion{revisionsNotions.length > 1 ? "s" : ""} à réviser aujourd&apos;hui
+              </h3>
+            </div>
+            <Button
+              variant="soft" size="sm"
+              onClick={() => {
+                const ouverture = !notionsDeplie;
+                setNotionsDeplie(ouverture);
+                if (ouverture) bumpActiviteDuJour(0, { notionsDuesRevues: true });
+              }}
+            >
+              {notionsDeplie ? "Masquer" : "Voir"}
+            </Button>
+          </div>
+          {notionsDeplie && (
+            <ul className="mt-3 space-y-1.5 border-t pt-3" style={{ borderColor: "var(--line)" }}>
+              {revisionsNotions.map((n) => (
+                <li key={n.notionId}>
+                  <Link href={`/lecon/${n.notionId}`} className="text-[13.5px] font-medium hover:underline" style={{ color: "var(--h, var(--accent))" }}>
+                    {notionLabel(n.notionId, custom)}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          )}
         </section>
       )}
 

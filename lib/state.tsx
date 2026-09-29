@@ -4,7 +4,10 @@ import {
   createContext, useCallback, useContext, useEffect, useMemo, useRef, useState,
 } from "react";
 import type { Course, ProgressState, StepName } from "./types";
-import { bumpStreak, gradeCard, newCard, todayKey } from "./srs";
+import {
+  activiteDuJourActuelle, bumpStreak, freshActiviteDuJour, gradeCard, gradeNotion,
+  newCard, newNotionMastery, objectifAtteintAujourdhui, todayKey,
+} from "./srs";
 import { getSupabase, supabaseConfigured } from "./supabase";
 import { isOwner } from "./owner";
 
@@ -31,8 +34,26 @@ function freshState(): ProgressState {
     notions: {},
     exercicesMethodo: {},
     streak: { current: 0, best: 0, days: [] },
+    activiteDuJour: freshActiviteDuJour(),
     customCourses: [],
   };
+}
+
+// Mutation directe sur le brouillon (déjà une copie profonde, voir `update`
+// ci-dessous) : factorisé parce que trois actions distinctes (définitions,
+// quiz, exercices de méthode) doivent toutes faire remonter l'information
+// jusqu'à `objectifAtteint`, sans dupliquer le calcul à chaque fois.
+function applyBumpActiviteDuJour(
+  d: ProgressState,
+  reponses: number,
+  opts?: { notionsDuesRevues?: boolean; actuLue?: boolean },
+) {
+  const activite = activiteDuJourActuelle(d.activiteDuJour);
+  activite.reponses += reponses;
+  if (opts?.notionsDuesRevues) activite.notionsDuesRevues = true;
+  if (opts?.actuLue) activite.actuLue = true;
+  d.activiteDuJour = activite;
+  d.streak = { ...d.streak, objectifAtteint: objectifAtteintAujourdhui(activite) };
 }
 
 function readLocal(): ProgressState | null {
@@ -150,6 +171,14 @@ type Ctx = {
   saveDraft: (lessonId: string, draft: string) => void;
   recordQuiz: (lessonId: string, score: number, total: number) => void;
   gradeDefinition: (lessonId: string, term: string, knew: boolean) => void;
+  // Fait avancer ou régresser une notion (Leitner à 5 boîtes, lib/srs.ts) —
+  // appelé par tout ce qui note une réponse liée à une notion précise (pour
+  // l'instant : exercices de méthode, voir gradeExerciceMethodo ci-dessous).
+  gradeNotionEvent: (notionId: string, correct: boolean) => void;
+  gradeExerciceMethodo: (exerciceId: string, notionId: string, reussi: boolean) => void;
+  // Compteurs du jour (Fonctionnalité E) : n'importe quelle réponse notée
+  // ailleurs dans l'app doit y passer pour que `objectifAtteint` reste juste.
+  bumpActiviteDuJour: (reponses: number, opts?: { notionsDuesRevues?: boolean; actuLue?: boolean }) => void;
   addCustomCourse: (course: Course) => void;
   removeCustomCourse: (courseId: string) => void;
   reset: () => void;
@@ -303,6 +332,7 @@ export function StudiJurProvider({ children }: { children: React.ReactNode }) {
       rec.quizScore = Math.max(score, rec.quizScore ?? 0);
       rec.quizTotal = total;
       d.lessons[lessonId] = rec;
+      applyBumpActiviteDuJour(d, total);
     });
   }, [update]);
 
@@ -312,7 +342,33 @@ export function StudiJurProvider({ children }: { children: React.ReactNode }) {
       const existing = d.cards[key];
       d.cards[key] = existing ? gradeCard(existing, knew) : newCard(lessonId, term);
       if (existing && !knew) d.cards[key] = gradeCard(existing, false);
+      applyBumpActiviteDuJour(d, 1);
     });
+  }, [update]);
+
+  const gradeNotionEvent = useCallback((notionId: string, correct: boolean) => {
+    update((d) => {
+      const baseline = d.notions[notionId] ?? newNotionMastery(notionId);
+      d.notions[notionId] = gradeNotion(baseline, correct);
+    });
+  }, [update]);
+
+  // Un exercice de méthode complet vaut UNE réussite/échec dans la notion
+  // visée (jamais un gradeNotion par critère coché) — voir Fonctionnalité D.
+  const gradeExerciceMethodo = useCallback((exerciceId: string, notionId: string, reussi: boolean) => {
+    update((d) => {
+      d.exercicesMethodo[exerciceId] = { exerciceId, completedAt: new Date().toISOString(), reussi };
+      const baseline = d.notions[notionId] ?? newNotionMastery(notionId);
+      d.notions[notionId] = gradeNotion(baseline, reussi);
+      applyBumpActiviteDuJour(d, 1);
+    });
+  }, [update]);
+
+  const bumpActiviteDuJour = useCallback((
+    reponses: number,
+    opts?: { notionsDuesRevues?: boolean; actuLue?: boolean },
+  ) => {
+    update((d) => { applyBumpActiviteDuJour(d, reponses, opts); });
   }, [update]);
 
   const addCustomCourse = useCallback((course: Course) => {
@@ -336,9 +392,11 @@ export function StudiJurProvider({ children }: { children: React.ReactNode }) {
 
   const value = useMemo<Ctx>(() => ({
     state, ready, syncing, signedInAs, refreshSubscription, update, completeStep, saveDraft,
-    recordQuiz, gradeDefinition, addCustomCourse, removeCustomCourse, reset,
+    recordQuiz, gradeDefinition, gradeNotionEvent, gradeExerciceMethodo, bumpActiviteDuJour,
+    addCustomCourse, removeCustomCourse, reset,
   }), [state, ready, syncing, signedInAs, refreshSubscription, update, completeStep, saveDraft,
-       recordQuiz, gradeDefinition, addCustomCourse, removeCustomCourse, reset]);
+       recordQuiz, gradeDefinition, gradeNotionEvent, gradeExerciceMethodo, bumpActiviteDuJour,
+       addCustomCourse, removeCustomCourse, reset]);
 
   return <StudiJurCtx.Provider value={value}>{children}</StudiJurCtx.Provider>;
 }
