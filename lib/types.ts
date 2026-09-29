@@ -85,6 +85,63 @@ export type CardRecord = {
   reviews: number;
 };
 
+// Veille juridique reliée au programme (Fonctionnalité A) : une actu du jour,
+// générée en brouillon par l'IA puis relue à la main avant publication.
+// `notionId` référence l'id d'une leçon du corpus (voir lib/notions.ts) —
+// pas de catalogue de notions séparé, le corpus fait déjà cet office.
+export type StatutActualite = "draft" | "published" | "rejected";
+
+export type TypeQuestionActu = "qcm" | "vrai_faux" | "ouverte";
+
+export type QuestionActu = {
+  id: string;
+  actualiteId: string;
+  enonce: string;
+  type: TypeQuestionActu;
+  // Uniquement pour type "qcm" ; absent pour vrai_faux et ouverte.
+  choix?: string[];
+  reponse: string;
+  explication: string;
+  // Distincte de `Actualite.sourceUrl` : permet de citer un texte précis
+  // (article de code, arrêt) si la question en vise un particulier.
+  sourceCitee: string;
+};
+
+export type Actualite = {
+  id: string;
+  titre: string;
+  resume: string;
+  datePublication: string;
+  sourceUrl: string;
+  sourceNom: string;
+  notionId: string;
+  // URL collée dans l'admin ayant servi de matière première au brouillon —
+  // peut différer de sourceUrl (la source officielle citée à l'élève).
+  urlOrigine?: string;
+  statut: StatutActualite;
+  createdAt: string;
+  updatedAt: string;
+  publishedAt?: string;
+  // Jointure optionnelle, remplie à la lecture (pas stockée avec l'actu).
+  questions?: QuestionActu[];
+};
+
+// Répétition espacée par notion (Fonctionnalité B) : même mécanique que
+// CardRecord (Leitner à 5 boîtes, lib/srs.ts) mais à la granularité de la
+// notion plutôt que du terme — une notion est « maîtrisée » par toutes les
+// questions qui la couvrent, tous types confondus.
+export type NotionMastery = {
+  notionId: string;
+  box: number;
+  // 0-100, dérivé directement du box (voir scoreMaitriseFromBox) : une
+  // seule source de vérité, jamais un second calcul qui pourrait diverger.
+  scoreMaitrise: number;
+  reussitesConsecutives: number;
+  lapses: number;
+  reviews: number;
+  dueAt: string;
+};
+
 export type Profile = {
   firstName?: string;
   university?: string;
@@ -107,6 +164,10 @@ export type ProgressState = {
   profile: Profile;
   lessons: Record<string, LessonRecord>;
   cards: Record<string, CardRecord>;
+  // Maîtrise par notion (= par leçon du corpus, voir lib/notions.ts), tous
+  // types de questions confondus (actu du jour, quiz, définitions, examen) —
+  // distinct de `cards`, qui ne suit que les définitions terme à terme.
+  notions: Record<string, NotionMastery>;
   streak: { current: number; best: number; lastDay?: string; days: string[] };
   customCourses: Course[];
   // Horodatage de la dernière écriture (posé au moment de la persistance, pas
