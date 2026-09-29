@@ -156,7 +156,7 @@ function LessonPageInner() {
       <header className="sticky top-0 z-30 -mx-4 px-4 pt-3 pb-3"
         style={{ background: "color-mix(in srgb, var(--paper) 90%, transparent)", backdropFilter: "blur(12px)" }}>
         <div className="flex items-center gap-3">
-          <Link href="/" aria-label="Quitter la séance"
+          <Link href="/cours" aria-label="Quitter la séance"
             className="grid h-8 w-8 shrink-0 place-items-center rounded-lg"
             style={{ background: "var(--surface-2)", color: "var(--muted)" }}>
             <Cross className="h-4 w-4" />
@@ -286,7 +286,11 @@ function CourseStep({
             {l.schema.titre}
           </h3>
           <figure>
-            <div dangerouslySetInnerHTML={{ __html: l.schema.svg }} />
+            {/* Le SVG n'a qu'un viewBox, pas de width/height : sans cette
+                règle, un navigateur peut lui donner sa taille intrinsèque
+                plutôt que la largeur du conteneur (vu en usage réel, schéma
+                bien plus grand que l'écran). */}
+            <div className="mx-auto max-w-[360px] [&>svg]:h-auto [&>svg]:w-full" dangerouslySetInnerHTML={{ __html: l.schema.svg }} />
             <figcaption className="mt-3 text-[13px] leading-relaxed" style={{ color: "var(--muted)" }}>
               {l.schema.legende}
             </figcaption>
