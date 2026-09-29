@@ -16,8 +16,10 @@ const URGENCY = {
   ctaLabel: "Réviser maintenant",
   href: "/entrainement/intro-generale",
   // Le bandeau ne s'affiche plus du tout à partir de cette date, même sans
-  // fermeture manuelle — inutile de rappeler un contrôle déjà passé.
-  hideAfter: "2026-09-30T00:00:00+02:00",
+  // fermeture manuelle — inutile de rappeler un contrôle déjà passé. Le CC1
+  // a eu lieu : date ramenée dans le passé pour le masquer immédiatement,
+  // même chez les élèves qui ne l'avaient pas fermé.
+  hideAfter: "2026-09-29T00:00:00+02:00",
 };
 
 const DISMISS_KEY = `studijur.urgency-dismissed.${URGENCY.id}`;
