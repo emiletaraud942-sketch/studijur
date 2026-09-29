@@ -19,13 +19,26 @@ import { lessonMindMap } from "@/lib/mindmap";
 import AccountCTA from "@/components/AccountCTA";
 import type { Course, EssayFeedback, StepName } from "@/lib/types";
 
-const STEPS: { key: StepName; label: string; Icon: typeof Quill }[] = [
-  { key: "cours", label: "Le cours", Icon: Quill },
-  { key: "definitions", label: "Définitions", Icon: Cards },
-  { key: "mindmap", label: "Carte mentale", Icon: Sitemap },
-  { key: "question", label: "Question", Icon: Target },
-  { key: "quiz", label: "Quiz", Icon: Check },
-];
+const STEP_META: Record<StepName, { label: string; nextPhrase: string; Icon: typeof Quill }> = {
+  cours: { label: "Le cours", nextPhrase: "au cours", Icon: Quill },
+  definitions: { label: "Définitions", nextPhrase: "aux définitions", Icon: Cards },
+  mindmap: { label: "Carte mentale", nextPhrase: "à la carte mentale", Icon: Sitemap },
+  question: { label: "Question", nextPhrase: "à la question", Icon: Target },
+  quiz: { label: "Quiz", nextPhrase: "au quiz", Icon: Check },
+};
+
+// Le parcours standard a 5 étapes, mais une leçon peut légitimement en
+// sauter certaines : la méthodologie n'a ni définitions à réciter (son
+// vocabulaire n'a pas d'intérêt en flashcards) ni quiz (elle s'évalue par la
+// pratique, pas par des QCM) — seuls le cours, la carte mentale et l'exercice
+// pratique de l'étape "Question" ont un sens pour elle.
+function stepsFor(lesson: NonNullable<ReturnType<typeof findLesson>>): StepName[] {
+  const keys: StepName[] = ["cours"];
+  if (lesson.definitions.length > 0) keys.push("definitions");
+  keys.push("mindmap", "question");
+  if (lesson.quiz.length > 0) keys.push("quiz");
+  return keys;
+}
 
 export default function LessonPage() {
   return (
@@ -41,9 +54,7 @@ function LessonPageInner() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const { state, ready, signedInAs, completeStep, saveDraft, recordQuiz, gradeDefinition } = useStudiJur();
-  // Retour de connexion depuis la correction IA (voir Correction ci-dessous) :
-  // on rouvre directement l'étape "Question" plutôt que de repartir du cours.
-  const [step, setStep] = useState(() => (searchParams.get("step") === "question" ? 3 : 0));
+  const [step, setStep] = useState(0);
   const autocorrect = searchParams.get("autocorrect") === "1";
 
   const lesson = useMemo(
@@ -52,8 +63,19 @@ function LessonPageInner() {
   );
   const course = lesson ? findCourse(lesson.courseId, state.customCourses) : undefined;
   const nav = useMemo(() => neighbours(params.id, state.customCourses), [params.id, state.customCourses]);
+  const steps = useMemo(() => (lesson ? stepsFor(lesson) : []), [lesson]);
 
   useEffect(() => { window.scrollTo({ top: 0, behavior: "smooth" }); }, [step]);
+
+  // Retour de connexion depuis la correction IA (voir Correction ci-dessous) :
+  // on rouvre directement l'étape "Question" plutôt que de repartir du cours
+  // — son index varie selon que la leçon a ou non une étape "définitions".
+  useEffect(() => {
+    if (!lesson || searchParams.get("step") !== "question") return;
+    const idx = steps.indexOf("question");
+    if (idx >= 0) setStep(idx);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [lesson]);
 
   if (!ready) return <div className="py-24 text-center text-[14px]" style={{ color: "var(--muted)" }}>Chargement…</div>;
 
@@ -125,7 +147,9 @@ function LessonPageInner() {
     }
   }
 
-  const done = step >= STEPS.length;
+  const done = step >= steps.length;
+  const isLastStep = step === steps.length - 1;
+  const currentKey = steps[step];
 
   return (
     <div data-hue={course.hue} className="pb-6">
@@ -138,15 +162,15 @@ function LessonPageInner() {
             <Cross className="h-4 w-4" />
           </Link>
           <div className="flex flex-1 gap-1.5">
-            {STEPS.map((s, i) => (
-              <div key={s.key} className="h-1.5 flex-1 overflow-hidden rounded-full" style={{ background: "var(--line)" }}>
+            {steps.map((key, i) => (
+              <div key={key} className="h-1.5 flex-1 overflow-hidden rounded-full" style={{ background: "var(--line)" }}>
                 <div className="h-full rounded-full"
                   style={{ width: i < step ? "100%" : i === step ? "45%" : "0%", background: "var(--h)", transition: "width 0.45s cubic-bezier(0.22,1,0.36,1)" }} />
               </div>
             ))}
           </div>
           <span className="shrink-0 text-[12px] font-semibold tabular" style={{ color: "var(--muted)" }}>
-            {Math.min(step + 1, STEPS.length)}/{STEPS.length}
+            {Math.min(step + 1, steps.length)}/{steps.length}
           </span>
         </div>
       </header>
@@ -161,35 +185,42 @@ function LessonPageInner() {
 
       {!done && (
         <div className="mb-4 flex items-center gap-2 text-[12px] font-semibold uppercase tracking-[0.12em]" style={{ color: "var(--h)" }}>
-          {(() => { const S = STEPS[step].Icon; return <S className="h-4 w-4" />; })()}
-          {STEPS[step].label}
+          {(() => { const S = STEP_META[currentKey].Icon; return <S className="h-4 w-4" />; })()}
+          {STEP_META[currentKey].label}
         </div>
       )}
 
-      {step === 0 && <CourseStep lesson={lesson} onNext={() => { completeStep(lesson.id, "cours"); setStep(1); }} />}
-      {step === 1 && (
+      {currentKey === "cours" && (
+        <CourseStep
+          lesson={lesson}
+          nextPhrase={STEP_META[steps[step + 1]].nextPhrase}
+          onNext={() => { completeStep(lesson.id, "cours", isLastStep); setStep((s) => s + 1); }}
+        />
+      )}
+      {currentKey === "definitions" && (
         <DefinitionsStep
           lesson={lesson}
           onGrade={(term, knew) => gradeDefinition(lesson.id, term, knew)}
-          onNext={() => { completeStep(lesson.id, "definitions"); setStep(2); }}
+          onNext={() => { completeStep(lesson.id, "definitions", isLastStep); setStep((s) => s + 1); }}
         />
       )}
-      {step === 2 && (
-        <MindMapStep lesson={lesson} onNext={() => { completeStep(lesson.id, "mindmap"); setStep(3); }} />
+      {currentKey === "mindmap" && (
+        <MindMapStep lesson={lesson} onNext={() => { completeStep(lesson.id, "mindmap", isLastStep); setStep((s) => s + 1); }} />
       )}
-      {step === 3 && (
+      {currentKey === "question" && (
         <QuestionStep
           lesson={lesson}
           draft={state.lessons[lesson.id]?.draft ?? ""}
           onDraft={(d) => saveDraft(lesson.id, d)}
-          onNext={() => { completeStep(lesson.id, "question"); setStep(4); }}
+          onNext={() => { completeStep(lesson.id, "question", isLastStep); setStep((s) => s + 1); }}
+          nextLabel={isLastStep ? "Terminer la séance" : "Passer au quiz"}
           autocorrect={autocorrect}
         />
       )}
-      {step === 4 && (
+      {currentKey === "quiz" && (
         <QuizStep
           lesson={lesson}
-          onFinish={(score) => { recordQuiz(lesson.id, score, lesson.quiz.length); completeStep(lesson.id, "quiz"); setStep(5); }}
+          onFinish={(score) => { recordQuiz(lesson.id, score, lesson.quiz.length); completeStep(lesson.id, "quiz", true); setStep((s) => s + 1); }}
         />
       )}
       {done && (
@@ -212,7 +243,9 @@ function LessonPageInner() {
   );
 }
 
-function CourseStep({ lesson, onNext }: { lesson: ReturnType<typeof findLesson> & object; onNext: () => void }) {
+function CourseStep({
+  lesson, nextPhrase, onNext,
+}: { lesson: ReturnType<typeof findLesson> & object; nextPhrase: string; onNext: () => void }) {
   const l = lesson as NonNullable<ReturnType<typeof findLesson>>;
   return (
     // Fragment plutôt qu'un seul conteneur : la barre collante ci-dessous doit
@@ -226,9 +259,10 @@ function CourseStep({ lesson, onNext }: { lesson: ReturnType<typeof findLesson> 
           Au programme de cette séance
         </h3>
         <p className="text-[14px] leading-relaxed" style={{ color: "var(--ink)" }}>
-          <strong>{l.definitions.length} définitions</strong> à réciter, une <strong>carte mentale</strong> pour tout
-          revoir d&apos;un coup d&apos;œil, une <strong>question type examen</strong> avec correction par l&apos;IA, et un{" "}
-          <strong>quiz de {l.quiz.length} questions</strong>.
+          {l.definitions.length > 0 && <><strong>{l.definitions.length} définitions</strong> à réciter, </>}
+          une <strong>carte mentale</strong> pour tout revoir d&apos;un coup d&apos;œil, une{" "}
+          <strong>question d&apos;entraînement</strong> avec correction par l&apos;IA
+          {l.quiz.length > 0 ? <>, et un <strong>quiz de {l.quiz.length} questions</strong>.</> : "."}
         </p>
       </section>
       <article className="card p-5 sm:p-6"><Prose paragraphs={l.brief} /></article>
@@ -273,7 +307,7 @@ function CourseStep({ lesson, onNext }: { lesson: ReturnType<typeof findLesson> 
         paddingBottom: "calc(12px + env(safe-area-inset-bottom))",
       }}>
       <div className="mx-auto max-w-[1080px]">
-        <Button onClick={onNext} size="lg" full>Passer aux définitions <Arrow className="h-4 w-4" /></Button>
+        <Button onClick={onNext} size="lg" full>Passer {nextPhrase} <Arrow className="h-4 w-4" /></Button>
       </div>
     </div>
     </>
@@ -284,10 +318,15 @@ function MindMapStep({
   lesson, onNext,
 }: { lesson: NonNullable<ReturnType<typeof findLesson>>; onNext: () => void }) {
   const tree = useMemo(() => lessonMindMap(lesson), [lesson]);
+  const branches = [
+    "ses points clés",
+    ...(lesson.definitions.length > 0 ? ["ses définitions"] : []),
+    "son plan d'examen",
+  ];
   return (
     <div className="rise space-y-4">
       <p className="text-[13.5px] leading-relaxed" style={{ color: "var(--muted)" }}>
-        Vue d&apos;ensemble de la leçon, construite depuis ses points clés, ses définitions et son plan d&apos;examen.
+        Vue d&apos;ensemble de la leçon, construite depuis {branches.join(", ").replace(/, ([^,]*)$/, " et $1")}.
         Touche une branche pour la déplier.
       </p>
       <MindMap root={tree} />
@@ -364,12 +403,13 @@ function DefinitionsStep({
 }
 
 function QuestionStep({
-  lesson, draft, onDraft, onNext, autocorrect,
+  lesson, draft, onDraft, onNext, nextLabel, autocorrect,
 }: {
   lesson: NonNullable<ReturnType<typeof findLesson>>;
   draft: string;
   onDraft: (d: string) => void;
   onNext: () => void;
+  nextLabel: string;
   autocorrect: boolean;
 }) {
   const [showConcise, setShowConcise] = useState(false);
@@ -458,7 +498,7 @@ function QuestionStep({
         </section>
       )}
 
-      <Button onClick={onNext} size="lg" full>Passer au quiz <Arrow className="h-4 w-4" /></Button>
+      <Button onClick={onNext} size="lg" full>{nextLabel} <Arrow className="h-4 w-4" /></Button>
     </div>
   );
 }
@@ -706,8 +746,9 @@ function DoneStep({
   const pathname = usePathname();
   const { signedInAs } = useStudiJur();
   const connexionRequise = supabaseConfigured && !signedInAs;
-  const pct = Math.round((score / total) * 100);
-  const verdict = pct >= 80 ? "Cours maîtrisé." : pct >= 50 ? "Bon début, à consolider." : "À reprendre demain.";
+  // Une leçon sans quiz (ex. méthodologie) n'a pas de score à afficher.
+  const pct = total > 0 ? Math.round((score / total) * 100) : null;
+  const verdict = pct === null ? "Séance terminée." : pct >= 80 ? "Cours maîtrisé." : pct >= 50 ? "Bon début, à consolider." : "À reprendre demain.";
   return (
     <div className="pop py-6 text-center">
       <div className="mx-auto mb-5 grid h-20 w-20 place-items-center rounded-full" style={{ background: "var(--gold-soft)", color: "var(--gold)" }}>
@@ -716,11 +757,13 @@ function DoneStep({
       <h2 className="serif text-[27px] font-bold">Séance terminée</h2>
       <p className="mt-1.5 text-[15px]" style={{ color: "var(--muted)" }}>{verdict}</p>
 
-      <div className="mx-auto mt-6 grid max-w-sm grid-cols-2 gap-3">
-        <div className="card p-4">
-          <div className="serif text-[27px] font-bold tabular">{score}/{total}</div>
-          <div className="text-[12px]" style={{ color: "var(--muted)" }}>au quiz</div>
-        </div>
+      <div className={`mx-auto mt-6 grid max-w-sm gap-3 ${total > 0 ? "grid-cols-2" : "grid-cols-1"}`}>
+        {total > 0 && (
+          <div className="card p-4">
+            <div className="serif text-[27px] font-bold tabular">{score}/{total}</div>
+            <div className="text-[12px]" style={{ color: "var(--muted)" }}>au quiz</div>
+          </div>
+        )}
         <div className="card p-4">
           <div className="serif text-[27px] font-bold tabular" style={{ color: "var(--gold)" }}>{streak}</div>
           <div className="text-[12px]" style={{ color: "var(--muted)" }}>jours de série</div>

@@ -35,6 +35,12 @@ function strokeAt(depth: number): number {
   return [0, 2.4, 1.7, 1.2, 1][Math.min(depth, 4)] ?? 1;
 }
 
+// Assez large pour ne jamais recouper un point clé ou un point de plan (228
+// caractères max dans le corpus) ; seules les définitions les plus longues
+// restent tronquées ici — leur texte complet reste lisible dans l'étape
+// Définitions de la leçon.
+const DETAIL_MAX = 240;
+
 // Mot-clé plutôt que phrase : on coupe au dernier espace avant la limite
 // pour ne jamais trancher un mot en deux.
 function truncate(text: string, max: number): string {
@@ -109,7 +115,7 @@ function collectSlots(root: MindNode, collapsed: Set<string>, open: Set<string>)
     let w = labelBox.w;
     let h = labelBox.h;
     if (node.detail && open.has(node.id)) {
-      const db = estimateBox(node.detail, Math.max(9.5, st.font - 1), st.maxW + 20, st.minW);
+      const db = estimateBox(truncate(node.detail, DETAIL_MAX), Math.max(9.5, st.font - 1), st.maxW + 20, st.minW);
       w = Math.max(w, db.w);
       h += db.h;
     }
@@ -271,6 +277,7 @@ export function MindMap({ root }: { root: MindNode }) {
 
   const PAD = 22;
   const vbX = minX - PAD, vbY = minY - PAD, vbW = maxX - minX + PAD * 2, vbH = maxY - minY + PAD * 2;
+  const presentCategories = CATEGORY_ORDER.filter((id) => root.children?.some((b) => b.id === id));
 
   return (
     <div className="card relative overflow-hidden" style={{ height: 440 }}>
@@ -316,7 +323,7 @@ export function MindMap({ root }: { root: MindNode }) {
                 <span>{p.labelText}{p.hasHiddenChildren ? ` (${p.node.children!.length})` : ""}</span>
                 {isDetailOpen && p.node.detail && (
                   <span className="mt-1 font-normal" style={{ color: "var(--muted)", fontSize: st.font - 1 }}>
-                    {truncate(p.node.detail, 90)}
+                    {truncate(p.node.detail, DETAIL_MAX)}
                   </span>
                 )}
               </div>
@@ -329,7 +336,7 @@ export function MindMap({ root }: { root: MindNode }) {
         className="absolute bottom-2 right-2 flex flex-col gap-1 rounded-lg px-2 py-1.5 text-[10px]"
         style={{ background: "var(--surface)", border: "1px solid var(--line)", opacity: 0.92 }}
       >
-        {CATEGORY_ORDER.map((id) => (
+        {presentCategories.map((id) => (
           <div key={id} className="flex items-center gap-1.5">
             <span className="h-2 w-2 shrink-0 rounded-full" style={{ background: CATEGORY[id].fg }} />
             <span style={{ color: "var(--muted)" }}>{CATEGORY[id].label}</span>

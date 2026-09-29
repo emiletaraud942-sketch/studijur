@@ -144,7 +144,7 @@ type Ctx = {
   signedInAs: string | null;
   refreshSubscription: () => Promise<boolean>;
   update: (fn: (draft: ProgressState) => void) => void;
-  completeStep: (lessonId: string, step: StepName) => void;
+  completeStep: (lessonId: string, step: StepName, final?: boolean) => void;
   saveDraft: (lessonId: string, draft: string) => void;
   recordQuiz: (lessonId: string, score: number, total: number) => void;
   gradeDefinition: (lessonId: string, term: string, knew: boolean) => void;
@@ -272,11 +272,14 @@ export function StudiJurProvider({ children }: { children: React.ReactNode }) {
     return active;
   }, [update]);
 
-  const completeStep = useCallback((lessonId: string, step: StepName) => {
+  // `final` marque la fin de la séance : normalement l'étape "quiz", mais
+  // une leçon sans quiz (ex. méthodologie) se termine sur une autre étape —
+  // c'est donc l'appelant qui sait quelle étape est la dernière de SA leçon.
+  const completeStep = useCallback((lessonId: string, step: StepName, final = false) => {
     update((d) => {
       const rec = d.lessons[lessonId] ?? { lessonId };
       rec.lastStep = step;
-      if (step === "quiz") {
+      if (final) {
         rec.completedAt = new Date().toISOString();
         rec.attempts = (rec.attempts ?? 0) + 1;
         d.streak = bumpStreak(d.streak);
