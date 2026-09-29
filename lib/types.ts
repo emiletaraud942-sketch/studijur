@@ -173,6 +173,17 @@ export type ExerciceMethodoRecord = {
   reussi?: boolean;
 };
 
+// Habitude quotidienne (Fonctionnalité E) : de quoi calculer `objectifAtteint`
+// sans avoir besoin de relire le journal d'audit `reponses_utilisateur`
+// (écriture seule, jamais relu côté client — voir lib/notions.ts). `jour`
+// (todayKey()) sert uniquement à savoir quand remettre les compteurs à zéro.
+export type ActiviteDuJour = {
+  jour: string;
+  reponses: number;
+  notionsDuesRevues: boolean;
+  actuLue: boolean;
+};
+
 export type Profile = {
   firstName?: string;
   university?: string;
@@ -200,7 +211,13 @@ export type ProgressState = {
   // distinct de `cards`, qui ne suit que les définitions terme à terme.
   notions: Record<string, NotionMastery>;
   exercicesMethodo: Record<string, ExerciceMethodoRecord>;
-  streak: { current: number; best: number; lastDay?: string; days: string[] };
+  // `objectifAtteint` : calculé pour AUJOURD'HUI (voir `activiteDuJour` et
+  // lib/srs.ts) — la forme d'origine ({current, best, lastDay, days}) n'est
+  // pas modifiée, ce champ ne fait que s'y ajouter.
+  streak: { current: number; best: number; lastDay?: string; days: string[]; objectifAtteint?: boolean };
+  // Compteurs du jour courant (Fonctionnalité E), remis à zéro dès que `jour`
+  // ne correspond plus à aujourd'hui — voir activiteDuJourActuelle (lib/srs.ts).
+  activiteDuJour: ActiviteDuJour;
   customCourses: Course[];
   // Horodatage de la dernière écriture (posé au moment de la persistance, pas
   // à chaque frappe) : départage quel appareil a la version la plus récente

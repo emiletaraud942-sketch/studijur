@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Bell, Books, Calendar, Cards, Chevron, Clock, Flame, Quill, Sitemap, Target, Trophy, Upload } from "@/components/icons";
+import { Bell, Books, Calendar, Cards, Chevron, Clock, Flame, Quill, Scales, Sitemap, Target, Trophy, Upload } from "@/components/icons";
 import SuggestionForm from "@/components/SuggestionForm";
 
 type Outil = { href: string; Icon: typeof Quill; title: string; text: string };
@@ -35,6 +35,7 @@ const GROUPES: Groupe[] = [
       { href: "/entrainement/intro-generale", Icon: Target, title: "Entraînement CC1", text: "30 questions dans le style exact du sujet donné par ton professeur." },
       { href: "/progression#revisions", Icon: Cards, title: "Révision espacée", text: "Les définitions ratées reviennent plus souvent, celles que tu sais s'espacent." },
       { href: "/cas-pratiques", Icon: Target, title: "Cas pratiques guidés", text: "La méthode pas à pas, avec la correction révélée seulement après ta réponse à chaque étape." },
+      { href: "/entrainement-methode", Icon: Scales, title: "S'entraîner à la méthode", text: "Cas pratique, commentaire d'arrêt, dissertation — rédige en conditions réelles, puis auto-évalue-toi contre une grille de correction." },
     ],
   },
   {
