@@ -1,6 +1,6 @@
 # Organisation juridictionnelle
 
-*Cours mis au propre — dernière mise à jour : 23/09/2026*
+*Cours mis au propre — dernière mise à jour : 30/09/2026*
 
 -----
 
@@ -384,7 +384,7 @@ Elle est rattachée au **Conseil de l'Europe**, créé au lendemain de la Second
 
 # PARTIE 2 — L'organisation de la justice
 
-*Plan distribué par le professeur le 23/09/2026 (« Partie 2 plan de cours »). Cours mis au propre au fur et à mesure des séances — dernière intégration : 23/09/2026 (Paragraphe 1 et Paragraphe 2 A de la Section 1).*
+*Plan distribué par le professeur le 23/09/2026 (« Partie 2 plan de cours »). Cours mis au propre au fur et à mesure des séances — dernière intégration : 30/09/2026 (fin du Chapitre 1 : juridictions pénales spécialisées, second degré, amorce de la Cour de cassation).*
 
 ## Chapitre 1 — Les juridictions de l'ordre judiciaire
 
@@ -428,61 +428,315 @@ Il existe **134 tribunaux de commerce** en France, en principe un par région, d
 
 Il est composé de deux propriétaires terriens et de deux exploitants agricoles, et présidé par un **magistrat professionnel** issu du tribunal judiciaire. Depuis 2018, ces assesseurs sont **désignés** — ils étaient auparavant élus — sur proposition des organisations professionnelles, par le président de la cour d'appel après avis du président du tribunal paritaire, pour un mandat de **6 ans**. Il existe **272 tribunaux paritaires des baux ruraux** en France, au moins un par département. À la différence des deux juridictions précédentes, il ne siège pas en permanence, mais se réunit en fonction du volume d'affaires. Le recours à un avocat n'est pas obligatoire ; pour les litiges inférieurs à 5 000 €, le tribunal juge en premier et dernier ressort ; au-delà, l'appel est ouvert devant la cour d'appel.
 
+### ⛳ **S'ARRÊTER LÀ POUR LE CC1**
+
+**Marqueur inscrit par Émile dans ses notes, à cet endroit précis du plan :** le programme du **CC1** s'arrête **à la fin du Paragraphe 1 de la Section 1**, c'est-à-dire **après le tribunal paritaire des baux ruraux**. Tout ce qui suit (juridictions pénales, second degré, Cour de cassation, ordre administratif) est **hors périmètre du CC1** — mais reste au programme de l'examen final.
+
 #### Paragraphe 2 — Les juridictions pénales
 
 Les juridictions pénales ont une vocation répressive particulière : le procès pénal défend les valeurs de la société, d'où la présence systématique du **procureur de la République** (appelé avocat général en cour d'assises ; on parle aussi de ministère public), de la victime et du mis en cause. Le procureur, membre du **parquet** — par opposition aux magistrats du **siège** —, représente les intérêts de la société : il poursuit les auteurs d'infraction même en l'absence ou en cas de défaillance de la victime, en adressant un **réquisitoire** demandant leur condamnation à une peine déterminée. Le droit pénal distingue trois catégories d'infractions selon leur gravité croissante : les **contraventions**, les **délits** et les **crimes**.
 
+  
+
 **A) Les juridictions pénales de droit commun**
+
+  
 
 *1) Les juridictions d'instruction du premier degré.* Spécificité du droit pénal, elles ont pour mission de réunir tous les éléments nécessaires à l'enquête — auditions, perquisitions — selon une **procédure inquisitoire**, afin de déterminer s'il existe des éléments suffisants pour renvoyer la personne devant une juridiction de jugement. Elles sont au nombre de deux.
 
+  
+
 **a) Le juge d'instruction.** Il n'intervient pas pour toute infraction, mais seulement à partir d'un certain seuil de gravité : jamais pour les contraventions, facultativement pour les délits selon la complexité de l'affaire, et obligatoirement pour les crimes. Le juge d'instruction dirige une enquête appelée **information judiciaire** ; il instruit **à charge et à décharge**, de manière objective, sans présumer la culpabilité du mis en examen et en recherchant aussi les preuves de son innocence. Il dispose pour cela de pouvoirs importants : interrogatoires, saisies, perquisitions. À l'issue de son enquête, il rend soit une **ordonnance de renvoi** devant la juridiction de jugement si les preuves de culpabilité sont suffisantes, soit une **ordonnance de non-lieu** si elles sont insuffisantes. Magistrat du siège, inamovible et irrévocable, il est nommé pour 3 ans renouvelables par décret du président de la République. Il en existe au moins un par tribunal judiciaire ; il est saisi par le procureur de la République ou directement par la victime, et statue seul. Ses ordonnances sont susceptibles d'appel devant la **chambre de l'instruction** de la cour d'appel.
+
+  
 
 **b) Le juge des libertés et de la détention (JLD).** Extérieur à l'instruction, il intervient en complément de celle-ci, à la demande du juge d'instruction, et a compétence pour placer une personne en détention provisoire avant son jugement. Il a été créé par la **loi du 15 juin 2000** : auparavant, c'est le juge d'instruction lui-même qui disposait de ce pouvoir, ce qui posait une difficulté d'impartialité et d'objectivité dans la décision de mise en détention. Le JLD est saisi par une **ordonnance motivée** du juge d'instruction, justifiant sa demande de mise en détention ; il se prononce à l'issue d'une audience publique et contradictoire — publique seulement si la personne est majeure. Sa décision de placement en détention prend elle-même la forme d'une **ordonnance motivée**, susceptible d'appel devant la chambre de l'instruction, à l'initiative du procureur de la République ou de la personne mise en détention.
 
+  
+
 *2) Les juridictions de jugement du premier degré.*
+
+  
 
 **a) Le tribunal de police.** Il juge les **contraventions** les plus graves (5e catégorie) : les autres catégories se règlent en principe par le paiement de l'amende, sauf refus de payer, contestation de l'amende ou récidive. Il peut être saisi sur demande du procureur de la République. Il est composé d'un **juge unique**, en présence du procureur de la République, qui demande l'application d'une peine déterminée — le juge restant libre de suivre ou non ses réquisitions. Il existe **164 tribunaux de police** en France, siégeant dans les mêmes locaux que les tribunaux judiciaires. Le tribunal territorialement compétent est celui du lieu de commission de la contravention ou celui de résidence du prévenu. Le recours à un avocat est facultatif.
 
+  
+
 **b) Le tribunal correctionnel.** Il juge les **délits** (vol, coups et blessures, corruption, stupéfiants...). Il peut prononcer des amendes, mais surtout des peines d'emprisonnement pouvant aller jusqu'à **10 ans** — portées à **20 ans** en cas de récidive. Il siège dans les mêmes locaux que le tribunal judiciaire, avec 3 magistrats (un président et deux juges) et, au-delà de 5 magistrats, une organisation en chambres ; il statue en principe en formation **collégiale**, mais à **juge unique** pour une liste de délits punis d'au plus 5 ans d'emprisonnement — par exemple le vol simple ou la conduite sous l'emprise de l'alcool. Le procureur de la République et un service de greffe y sont présents. Il existe **168 tribunaux correctionnels** en France. Le tribunal territorialement compétent est celui du lieu où le délit a été commis, ou celui de résidence du prévenu. Le recours à un avocat est facultatif.
+
+  
 
 **c) La cour d'assises et les cours criminelles départementales.** Avant janvier 2023, seule la cour d'assises jugeait les crimes. Depuis le **1er janvier 2023**, les **cours criminelles départementales** jugent les crimes les moins graves — punis d'au plus **20 ans** d'emprisonnement (par exemple le vol à main armée ou les coups mortels) — commis par des personnes **majeures** et **non récidivistes**. Composées uniquement de **5 magistrats professionnels**, siégeant obligatoirement de manière collégiale, sans jury populaire, elles ont été créées pour limiter trois phénomènes : l'engorgement des cours d'assises, les condamnations de la France par la CEDH pour délai déraisonnable, et la **correctionnalisation** des crimes — leur requalification en délits pour permettre au tribunal correctionnel de les juger. Les arrêts des cours criminelles départementales sont susceptibles d'appel devant la cour d'appel.
 
+  
+
 La **cour d'assises** juge les crimes punis de 20 ans d'emprisonnement ou plus, jusqu'à la réclusion criminelle à perpétuité. Il en existe une par département, soit **103 cours d'assises** en France ; elle ne siège pas en permanence, mais se réunit par **sessions**, environ tous les trois mois. C'est une juridiction **collégiale mixte** : 3 juges professionnels et un **jury populaire** de 6 jurés citoyens, tirés au sort sur les listes électorales, âgés d'au moins **23 ans**. Juges professionnels et jurés délibèrent ensemble : ils se prononcent d'abord sur la culpabilité du prévenu, puis sur la peine. Les jurés n'ont pas accès au dossier complet : ils disposent seulement de l'**ordonnance de mise en accusation**, rendue par le juge d'instruction, et des débats qui se tiennent lors du procès. La société y est représentée par le procureur de la République, appelé **avocat général**, qui prononce un réquisitoire exposant son point de vue et la sanction demandée. La cour d'assises n'est pas compétente pour les crimes commis par des mineurs ni pour les crimes de terrorisme, jugés par une cour d'assises spécialement composée. Elle est territorialement compétente au lieu d'arrestation, de domicile, ou de commission du crime. Ses arrêts sont susceptibles d'appel devant une **cour d'assises d'appel**. Le recours à un avocat y est **obligatoire**.
+
+  
 
 **B) Les juridictions pénales spécialisées**
 
-*Statut : plan seul, non encore vu en cours.* Les mineurs (moins de 18 ans au moment des faits) relèvent de juridictions pénales spécifiques, tournées vers la réinsertion et la rééducation plutôt que vers la répression : les mineurs de moins de 13 ans sont présumés irresponsables pénalement et ne peuvent, dans tous les cas, être incarcérés. Le plan du chapitre distingue :
+  
 
-1.  Les juridictions pénales des mineurs
-      - a) Le juge des enfants
-      - b) Le tribunal pour enfants
-      - c) La cour d'assises des mineurs
-2.  Les juridictions de nature politique
-      - a) La Haute Cour
-      - b) La Cour de justice de la République
-3.  Les juridictions militaires
+*1) Les juridictions pénales des mineurs.*
+
+  
+
+Est **mineure** la personne qui n'a pas 18 ans **au moment des faits**. Sa jeunesse justifie des spécificités à la fois **procédurales** et **juridictionnelles** : la logique dominante est de **réinsérer et de rééduquer** plutôt que de réprimer.
+
+  
+
+Les **mineurs de moins de 13 ans** sont **présumés ne pas être capables de discernement**, donc présumés irresponsables pénalement : ils se voient infliger des **mesures éducatives** par le juge des enfants. Cette présomption peut être **renversée**, mais un mineur de moins de 13 ans ne peut **en aucun cas** être incarcéré. Les mesures possibles sont des mesures de scolarisation, de placement, de prise en charge médicale, de réparation de l'infraction commise, l'interdiction de fréquenter certaines personnes ou certains lieux, ou l'obligation de réparer le dommage.
+
+  
+
+**Fondement textuel (vérifié) : article L. 11-1 du Code de la justice pénale des mineurs (CJPM)** — « Lorsqu'ils sont capables de discernement, les mineurs [...] sont pénalement responsables des crimes, délits ou contraventions dont ils sont reconnus coupables. **Les mineurs de moins de treize ans sont présumés ne pas être capables de discernement. Les mineurs âgés d'au moins treize ans sont présumés être capables de discernement.** Est capable de discernement le mineur qui a compris et voulu son acte et qui est apte à comprendre le sens de la procédure pénale dont il fait l'objet. »
+
+  
+
+*Complément utile :* la « réforme de 2021 » dont parle le cours est l'entrée en vigueur, le **30 septembre 2021**, du **Code de la justice pénale des mineurs**, qui a remplacé l'**ordonnance du 2 février 1945** relative à l'enfance délinquante. *Le texte est issu de l'ordonnance du 11 septembre 2019, ratifiée par la loi du 26 février 2021.*
+
+  
+
+**a) Le juge des enfants.** Il est désigné pour **3 ans renouvelables** et saisi par le procureur de la République pour juger les **contraventions de 5e catégorie** et les **délits** commis par des mineurs. Il mène une double enquête : une **enquête de personnalité** sur le mineur et une **enquête sur les faits**. Il **statue seul** pour prononcer des mesures éducatives, après avoir reçu le mineur avec son avocat, ses représentants légaux et la victime ; c'est à cette occasion qu'il définit la sanction éducative. S'il estime qu'il faut aller au-delà de simples mesures éducatives, l'affaire relève alors du **tribunal pour enfants**.
+
+  
+
+**b) Le tribunal pour enfants.** Il en existe **au moins un par département**. Il se prononce sur les **contraventions les plus graves**, les **délits** et les **crimes** commis par des mineurs **de moins de 16 ans** au moment des faits.
+
+  
+
+Il repose sur le système de l'**échevinage** : mélange de magistrats professionnels et non professionnels. Sa composition est donc d'**un juge professionnel** — le juge des enfants — et de **deux assesseurs non professionnels**, âgés d'au moins **30 ans** et reconnus pour leur compétence en matière d'enfance (souvent des CPE, enseignants, psychologues...), nommés pour **4 ans**.
+
+  
+
+Depuis la réforme de 2021, la procédure a changé : il n'y a **plus d'instruction** sur le modèle de celle des adultes. Désormais, pour les mineurs de moins de 16 ans, le mineur est présenté devant le tribunal pour enfants dans un délai de **10 jours à 3 mois**, et le juge statue **en deux temps** — c'est le mécanisme de la **césure** du procès pénal :
+
+  
+
+1.  **Premier temps : la culpabilité.** Le tribunal dit si le mineur est coupable ou non.
+2.  **Second temps : la sanction**, prononcée **6 à 9 mois plus tard**.
+
+  
+
+*Exception :* pour les faits d'une certaine gravité ou pour les mineurs récidivistes, le tribunal peut décider de statuer **en même temps** sur la culpabilité et sur la sanction.
+
+  
+
+Entre l'audience de culpabilité et l'audience de sanction s'ouvre une **période de mise à l'épreuve éducative** : le mineur est soumis à des mesures éducatives et peut faire l'objet d'une **expertise médicale, sociale et psychologique**. Le but est de cerner sa personnalité et de mesurer son évolution sur ces 6 à 9 mois. À l'issue de cette période, un **rapport éducatif** est soumis au juge ; le tribunal en prend connaissance et opte pour la sanction la plus adaptée.
+
+  
+
+Le tribunal peut prononcer un **avertissement judiciaire**, ou une **mesure éducative judiciaire**, qui se décline en **quatre catégories** :
+
+  
+
+|  |  |
+| :-: | :-: |
+| Mesure | Contenu |
+| Mesure de placement | Foyer, membre de la famille, établissement éducatif |
+| Mesure scolaire | Placement en internat, dans un établissement scolaire ou de formation |
+| Mesure de réparation | Réparation au regard des faits, médiation entre le mineur et la victime |
+| Mesure de santé | Prise en charge psychologique ou médicale ordonnée par le juge |
+
+  
+
+Il peut aussi prononcer de véritables **peines** : **travail d'intérêt général**, obligation d'accomplir un **stage de sensibilisation**, **détention à domicile sous surveillance électronique**, et **peine de prison**.
+
+  
+
+La **publicité des audiences est réduite** : seuls les parties, les témoins et les personnes autorisées sont admis à assister à l'audience.
+
+  
+
+**c) La cour d'assises des mineurs.** Pour les mineurs **âgés de 16 à 18 ans**, les **crimes** relèvent de la cour d'assises des mineurs — il en existe au moins une par département. Elle est composée de **3 juges professionnels** et d'un **jury populaire de 6 citoyens** tirés au sort sur les listes électorales, en présence du procureur de la République.
+
+  
+
+Elle siège en principe **à huis clos**, sauf si le mineur est devenu majeur au moment du procès. Elle ne peut prononcer que des peines **réduites de moitié** par rapport à celles qu'encourrait un majeur — c'est l'**excuse de minorité** : par exemple, la réclusion criminelle à perpétuité devient **30 ans** au maximum. Elle peut également se limiter à des sanctions éducatives. Lorsqu'elle prononce une peine de prison, celle-ci s'exécute obligatoirement dans un **établissement pénitentiaire pour mineurs** ou dans un quartier de prison réservé aux mineurs.
+
+  
+
+*2) Les juridictions de nature politique.*
+
+  
+
+Elles concernent le **président de la République** et les **membres du gouvernement**, pour des fautes commises **dans le cadre de leurs fonctions**. Ces juridictions spéciales ont été créées en vertu du principe de **séparation des pouvoirs**.
+
+  
+
+**a) La Haute Cour.** Elle est prévue par l'**article 68 de la Constitution** et a le pouvoir de **destituer** le président de la République.
+
+  
+
+*Texte exact (vérifié) :* « Le Président de la République ne peut être destitué qu'en cas de **manquement à ses devoirs manifestement incompatible avec l'exercice de son mandat**. La destitution est prononcée par le Parlement constitué en Haute Cour. » *(Rédaction issue de la révision constitutionnelle du 23 février 2007.)*
+
+  
+
+  - **Composition** : le **Parlement tout entier** — députés et sénateurs — constitué en Haute Cour, **présidée par le président de l'Assemblée nationale**.
+  - **Procédure** : une des deux assemblées adopte une **proposition de réunion de la Haute Cour**, aussitôt transmise à l'autre, qui se prononce **dans les quinze jours**. La Haute Cour statue ensuite **dans un délai d'un mois**, **à bulletins secrets**. *Toute délégation de vote est interdite.*
+  - **Majorité requise** : **deux tiers** des membres de l'assemblée concernée, puis des membres de la Haute Cour. La décision est **d'effet immédiat**.
+
+  
+
+*Articulation avec l'immunité présidentielle :* la destitution est la **seule exception** au régime d'immunité du président de la République. Après son mandat, il perd cette immunité et peut être jugé comme tout justiciable pour des faits commis **avant** ou **après** son mandat. Pour les faits commis **pendant** le mandat, il ne pourra jamais être jugé par les juridictions françaises ; seule la **CPI** peut en connaître.
+
+  
+
+**b) La Cour de justice de la République (CJR).** Les membres du gouvernement peuvent être jugés pour les **crimes et délits commis dans l'exercice de leurs fonctions**, mais ils bénéficient d'un **privilège de juridiction** : ils ne sont pas jugés par les tribunaux ordinaires, mais par la Cour de justice de la République.
+
+  
+
+C'est une juridiction **récente**, créée en **1993** *(révision constitutionnelle du 27 juillet 1993 ; art. 68-1 à 68-3 de la Constitution)*, qui a **siégé 9 fois** depuis cette date *(chiffre donné en cours — à confirmer : le nombre d'affaires effectivement jugées est plus faible)*.
+
+  
+
+*Composition (texte exact de l'art. 68-2, vérifié) :* « La Cour de justice de la République comprend **quinze juges** : **douze parlementaires** élus, en leur sein et en nombre égal, par l'Assemblée nationale et par le Sénat [soit **6 députés et 6 sénateurs**] [...] et **trois magistrats du siège à la Cour de cassation**, dont l'un **préside** la Cour de justice de la République. »
+
+  
+
+*Saisine (même article) :* « **Toute personne qui se prétend lésée** par un crime ou un délit commis par un membre du Gouvernement dans l'exercice de ses fonctions peut porter plainte auprès d'une **commission des requêtes**. Cette commission ordonne soit le **classement** de la procédure, soit sa **transmission au procureur général près la Cour de cassation** aux fins de saisine de la Cour. » Le procureur général peut aussi saisir **d'office** la Cour, sur **avis conforme** de la commission des requêtes.
+
+  
+
+⚠️ *Correction de notes :* la commission des requêtes est composée de **trois magistrats du siège de la Cour de cassation, deux conseillers d'État et deux conseillers maîtres à la Cour des comptes** — et non de « deux conseillers de la cour des plaintes », qui n'existe pas. *(Composition posée par la loi organique du 23 novembre 1993 — à vérifier en cours.)*
+
+  
+
+L'**instruction** des requêtes est ensuite menée par une **commission d'instruction**, composée de **trois magistrats de la Cour de cassation**, qui peut conclure à un **non-lieu** ou renvoyer l'affaire devant la CJR. L'arrêt rendu par la Cour peut faire l'objet d'un **pourvoi en cassation** ; si la Cour de cassation casse l'arrêt, la CJR se réunit à nouveau, mais dans une **composition différente**.
+
+  
+
+**L'affaire du sang contaminé** est l'affaire emblématique jugée par cette Cour. Dans les années 1980-1990, des milliers de patients ont reçu des transfusions de sang contaminé par le **VIH** et l'**hépatite C**. Ce qui est reproché au gouvernement est de ne pas avoir mis en place les **tests de dépistage** disponibles, en repoussant leur mise en œuvre pour des **raisons économiques**. *Les notes retiennent 1 200 personnes contaminées et décédées — chiffre à vérifier, les estimations couramment citées sont plus élevées.*
+
+  
+
+Une partie du gouvernement de l'époque a été jugée : le **Premier ministre Laurent Fabius**, la **ministre des Affaires sociales Georgina Dufoix** et le **secrétaire d'État chargé de la Santé Edmond Hervé**. La Cour a **relaxé les deux premiers** et **condamné le troisième** — au motif d'un manquement à une obligation de prudence et de sécurité — tout en le **dispensant de peine**. *(Arrêt rendu en 1999 ; date exacte à vérifier en cours.)*
+
+  
+
+*Critique récurrente :* la CJR serait **relativement clémente** avec les membres du gouvernement, ce qui remettrait en cause le **principe d'égalité** entre les ministres et les citoyens. Il est question, à l'occasion d'une révision constitutionnelle, de la **supprimer** : les ministres seraient alors jugés par les juges ordinaires.
+
+  
+
+*À retenir :* pour les crimes et délits commis **en dehors de leurs fonctions**, les ministres peuvent être jugés par les juridictions ordinaires **même pendant l'exercice de leurs fonctions**.
+
+  
+
+*3) Les juridictions militaires.*
+
+  
+
+On considère de longue date que les militaires, en raison de leur **statut particulier**, doivent être jugés de manière particulière. Ils sont jugés par des formations dont la **composition est adaptée aux enjeux de sécurité nationale**, par des **magistrats spécialisés** dans les **infractions militaires**, définies comme les infractions de nature à porter atteinte à la **défense nationale**. Il n'y a **pas de jury populaire**.
+
+  
+
+*Point de vigilance :* en temps de paix, les juridictions militaires d'exception ont été supprimées et ces infractions relèvent aujourd'hui de **formations spécialisées de juridictions de droit commun** (le tribunal judiciaire de Paris, notamment). *Vérifier en cours l'état exact du dispositif, les notes restant sommaires sur ce point.*
 
 ### Section 2 — Les juridictions de second degré
 
-*Statut : plan seul.*
+Tant que les justiciables ne sont pas satisfaits de la décision rendue, ils peuvent **faire appel** : l'affaire est alors présentée devant un **nouveau juge**, le juge d'appel, qui rejuge l'affaire **dans son intégralité**, **en fait et en droit**.
 
 #### Paragraphe 1 — Les cours d'appel
 
-1.  Les cours d'appel en matière civile
-2.  Les cours d'appel en matière pénale
+Il existe **36 cours d'appel** en France, ce qui signifie que le ressort d'une cour d'appel peut s'étendre sur **2 à 4 départements**. Elles illustrent un problème récurrent de la justice française, la **longueur des délais** : il faut en général compter **environ 15 mois** avant qu'une décision soit rendue.
+
+  
+
+Elles sont composées exclusivement de **magistrats professionnels**, appelés **conseillers**. Ce sont des magistrats d'un **rang plus élevé** que ceux du premier degré, disposant de plus d'ancienneté et ayant exercé dans des juridictions du premier degré.
+
+  
+
+Chaque cour d'appel est dirigée par le **premier président**, qui cumule trois types de fonctions :
+
+  
+
+  - des fonctions **administratives** — il gère la cour ;
+  - des fonctions de **magistrat** — il siège dans une chambre ;
+  - des **fonctions juridictionnelles propres** : il peut suspendre l'**exécution provisoire** des jugements de première instance ; il juge les **demandes de réparation** liées à une détention provisoire dans des affaires qui n'ont pas abouti à une condamnation.
+
+  
+
+*Explication du titre :* on l'appelle « premier président » parce qu'il est le président de la **première chambre** de la cour d'appel, parmi les autres présidents de chambre.
+
+  
+
+*À noter :* il y a **toujours une chambre sociale**, quelle que soit la taille de la cour d'appel.
+
+  
+
+**1) Les cours d'appel en matière civile.** L'organisation en chambres suit les juridictions dont elles jugent les appels :
+
+  
+
+|  |  |
+| :-: | :-: |
+| Chambre de la cour d'appel | Juge les appels des décisions de... |
+| Chambre sociale | Conseil de prud'hommes, tribunal paritaire des baux ruraux |
+| Chambre commerciale | Tribunal de commerce |
+| Chambres civiles (plusieurs) | Tribunal judiciaire, tribunal de proximité |
+
+  
+
+*Rappel du seuil :* les litiges d'un montant **inférieur ou égal à 5 000 €** sont jugés en **premier et dernier ressort** — pas d'appel possible, seulement le pourvoi en cassation.
+
+  
+
+**2) Les cours d'appel en matière pénale.** Là encore, plusieurs chambres :
+
+  
+
+|  |  |
+| :-: | :-: |
+| Chambre | Compétence |
+| Chambre des appels correctionnels | Appels des jugements du tribunal de police et du tribunal correctionnel |
+| Chambre spéciale des mineurs | Appels des décisions du juge des enfants et du tribunal pour enfants |
+| Chambre de l'instruction | Ordonnances du juge d'instruction et du juge des libertés et de la détention |
+| Chambre de l'application des peines | Décisions rendues en première instance par le juge de l'application des peines et le tribunal de l'application des peines |
+
+  
+
+*Limite importante :* la cour d'appel **n'est pas compétente pour les crimes**, qui relèvent de la cour criminelle départementale et de la cour d'assises. *(Point de vigilance : les arrêts des* ***cours criminelles départementales*** *font toutefois l'objet d'un appel devant la cour d'appel — à faire préciser en cours, les notes semblent hésiter sur ce point.)*
 
 #### Paragraphe 2 — Les cours d'assises d'appel
 
+Pendant longtemps, la cour d'assises d'appel n'existait pas : il était **impossible de faire appel** d'un arrêt de cour d'assises, seul le **pourvoi en cassation** était ouvert. La justification était que remettre en cause le verdict du **jury populaire** était impossible, celui-ci étant considéré comme **souverain**.
+
+  
+
+Face aux enjeux des peines prononcées par les cours d'assises, l'appel a été ouvert en **2000** *(loi du 15 juin 2000 renforçant la présomption d'innocence et les droits des victimes)*, au bénéfice de **deux titulaires** : l'**accusé condamné** en première instance et le **procureur de la République** (ministère public).
+
+  
+
+La cour d'assises d'appel juge **en fait et en droit**. Elle est composée de **3 juges professionnels** et de **9 jurés** tirés au sort sur les listes électorales — contre 6 en première instance.
+
+  
+
+**Règle de majorité (vérifiée — art. 359 du Code de procédure pénale) :** « Toute décision **défavorable à l'accusé** se forme à la majorité de **sept voix au moins** lorsque la cour d'assises statue **en premier ressort** et à la majorité de **huit voix au moins** lorsqu'elle statue **en appel**. » Autrement dit, la cour d'assises d'appel ne peut rendre un verdict plus sévère qu'en réunissant une **majorité renforcée de 8 voix** sur 12.
+
 ### Section 3 — La Cour de cassation
 
-*Statut : plan seul.*
+Le justiciable peut encore utiliser une nouvelle **voie de recours** en formant un **pourvoi en cassation**. *Rappel essentiel : la Cour de cassation ne juge* ***qu'en droit*** *— elle n'est pas un troisième degré de juridiction.*
+
+  
+
+**Histoire.** Elle a été créée en **1790** — sous le nom de **Tribunal de cassation** — et prend le nom de **Cour de cassation** à partir de **1804**. Elle siège à Paris, sur l'**île de la Cité**.
+
+  
+
+**Rôle.** Son importance s'est accrue avec l'adoption du **Code civil**, car elle permet une **interprétation uniforme du droit** sur tout le territoire : elle a un rôle de **régulateur**.
 
 #### Paragraphe 1 — Le rôle de la Cour de cassation
+
+*Statut : plan seul, non encore vu en cours.*
+
+  
 
 **A)** Le pourvoi en cassation **B)** La saisine pour avis
 
 #### Paragraphe 2 — Le fonctionnement de la Cour de cassation
+
+*Statut : plan seul, non encore vu en cours.*
 
 ## Chapitre 2 — Les juridictions de l'ordre administratif
 
