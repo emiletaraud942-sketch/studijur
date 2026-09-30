@@ -1,0 +1,177 @@
+[
+  {
+    "id": "orga-14",
+    "order": 14,
+    "title": "Les juridictions pénales des mineurs",
+    "teaser": "Réinsérer plutôt que réprimer : une justice à deux temps pour les moins de 18 ans.",
+    "minutes": 6,
+    "brief": [
+      "Est **mineure** la personne qui n'a pas 18 ans au moment des faits. Sa jeunesse justifie des spécificités procédurales et juridictionnelles : la logique dominante n'est pas de réprimer mais de **réinsérer et de rééduquer**. Les mineurs de moins de 13 ans sont **présumés ne pas être capables de discernement**, donc présumés irresponsables pénalement — cette présomption peut être renversée, mais un mineur de moins de 13 ans **ne peut en aucun cas être incarcéré**. Fondement textuel : article **L. 11-1 du Code de la justice pénale des mineurs (CJPM)**, entré en vigueur le **30 septembre 2021** (ordonnance du 11 septembre 2019, ratifiée par la loi du 26 février 2021), qui remplace l'ordonnance du 2 février 1945 relative à l'enfance délinquante.",
+      "Le **juge des enfants** est désigné pour 3 ans renouvelables et saisi par le procureur de la République pour les contraventions de 5e catégorie et les délits commis par des mineurs. Il mène une double enquête — sur la personnalité du mineur et sur les faits — et statue **seul** pour prononcer des mesures éducatives, après avoir reçu le mineur avec son avocat, ses représentants légaux et la victime. S'il estime qu'il faut aller au-delà, l'affaire est renvoyée devant le **tribunal pour enfants**.",
+      "Le tribunal pour enfants existe au moins un par département et juge les contraventions les plus graves, les délits et les crimes commis par des mineurs de **moins de 16 ans**. Il repose sur l'**échevinage** : le juge des enfants, entouré de deux assesseurs non professionnels (au moins 30 ans, compétents en matière d'enfance, nommés pour 4 ans). Depuis la réforme de 2021, la procédure repose sur la **césure du procès pénal** : le mineur est présenté dans un délai de 10 jours à 3 mois, le tribunal se prononce d'abord sur la **culpabilité**, puis sur la **sanction** 6 à 9 mois plus tard (sauf gravité ou récidive, où les deux peuvent être jugées ensemble). Entre les deux s'ouvre une **période de mise à l'épreuve éducative** : le mineur peut faire l'objet d'une expertise médicale, sociale et psychologique, dont le rapport éclaire la sanction finale. Le tribunal peut prononcer un avertissement, une mesure éducative judiciaire (placement, scolaire, réparation, santé) ou de véritables peines (travail d'intérêt général, stage, bracelet électronique, prison). La publicité des audiences y est réduite.",
+      "Pour les mineurs de **16 à 18 ans**, les crimes relèvent de la **cour d'assises des mineurs** (au moins une par département), composée de 3 juges professionnels et d'un jury populaire de 6 citoyens. Elle siège en principe à **huis clos**, sauf si le mineur est devenu majeur au moment du procès. Elle applique l'**excuse de minorité** : les peines encourues sont réduites de moitié par rapport à un majeur — la perpétuité devient 30 ans au maximum — et une peine de prison s'exécute obligatoirement dans un établissement ou un quartier pénitentiaire réservé aux mineurs."
+    ],
+    "keyPoints": [
+      "Présomption de non-discernement des moins de 13 ans (art. L. 11-1 CJPM) : jamais d'incarcération possible.",
+      "Juge des enfants (statue seul, mesures éducatives) → tribunal pour enfants (échevinage) si plus grave.",
+      "Réforme du 30 septembre 2021 : la césure du procès pénal des mineurs, culpabilité puis sanction 6 à 9 mois après.",
+      "Cour d'assises des mineurs (16-18 ans) : excuse de minorité, peines réduites de moitié."
+    ],
+    "definitions": [
+      { "term": "Discernement (mineur)", "text": "Capacité d'avoir compris et voulu son acte et d'être apte à comprendre le sens de la procédure pénale. Présumé absent avant 13 ans, présumé acquis à partir de 13 ans.", "source": "Article L. 11-1 du Code de la justice pénale des mineurs" },
+      { "term": "Échevinage", "text": "Composition mixte d'une juridiction associant un magistrat professionnel et des juges non professionnels — au tribunal pour enfants, le juge des enfants et deux assesseurs de plus de 30 ans." },
+      { "term": "Césure du procès pénal des mineurs", "text": "Procédure en deux temps instaurée par la réforme de 2021 : le tribunal pour enfants statue d'abord sur la culpabilité, puis sur la sanction, 6 à 9 mois plus tard." },
+      { "term": "Excuse de minorité", "text": "Mécanisme réduisant de moitié les peines encourues par un mineur de 16 à 18 ans devant la cour d'assises des mineurs, par rapport à celles d'un majeur." },
+      { "term": "Mesure éducative judiciaire", "text": "Mesure prononcée par le juge des enfants ou le tribunal pour enfants : placement, mesure scolaire, réparation, ou prise en charge de santé — par opposition à une véritable peine." }
+    ],
+    "exam": {
+      "kind": "question de cours",
+      "question": "Pourquoi la réforme du 30 septembre 2021 a-t-elle instauré la césure du procès pénal des mineurs ?",
+      "concise": "La logique de la justice pénale des mineurs est de **réinsérer et de rééduquer** plutôt que de réprimer. Juger la culpabilité et la sanction en même temps, comme pour un majeur, ne laissait aucune place à l'évolution du mineur entre les faits et le jugement. La réforme du 30 septembre 2021 (Code de la justice pénale des mineurs) répond à cette exigence en instaurant la **césure du procès** : le tribunal pour enfants se prononce d'abord sur la **culpabilité**, dans un délai de 10 jours à 3 mois après la présentation du mineur, puis ouvre une **période de mise à l'épreuve éducative** de 6 à 9 mois, durant laquelle le mineur peut faire l'objet d'une expertise médicale, sociale et psychologique. Ce n'est qu'à l'issue de cette période, sur la base d'un rapport éducatif, que le tribunal prononce la **sanction** la plus adaptée à l'évolution constatée. Seuls les faits les plus graves ou une récidive permettent de statuer sur les deux en même temps, lorsque l'attente n'a plus de sens éducatif.",
+      "plan": [
+        {
+          "title": "I. Une réforme fondée sur la logique éducative de la justice des mineurs",
+          "children": [
+            { "title": "A. Le constat d'un jugement trop rapide", "points": ["Avant 2021, culpabilité et sanction jugées ensemble, comme pour un majeur", "Aucune place laissée à l'évolution du mineur entre les faits et l'audience", "Contradiction avec la logique de réinsertion propre au droit pénal des mineurs"] },
+            { "title": "B. Le mécanisme de la césure", "points": ["Présentation du mineur dans un délai de 10 jours à 3 mois", "Jugement de la culpabilité, puis période de mise à l'épreuve éducative de 6 à 9 mois", "Sanction prononcée à l'issue, sur la base d'un rapport éducatif"] }
+          ]
+        },
+        {
+          "title": "II. Une réforme qui laisse une place à l'exception",
+          "children": [
+            { "title": "A. Les cas où la césure ne s'applique pas", "points": ["Faits d'une certaine gravité", "Mineurs récidivistes", "Le tribunal statue alors en une seule fois sur la culpabilité et la sanction"] },
+            { "title": "B. Une cohérence avec le reste de la justice des mineurs", "points": ["Échevinage du tribunal pour enfants, pensé pour la même finalité éducative", "Excuse de minorité devant la cour d'assises des mineurs, même logique de mesure", "Conclusion : une procédure entièrement construite autour du temps donné au mineur pour évoluer"] }
+          ]
+        }
+      ],
+      "pitfalls": [
+        "Ne pas confondre le juge des enfants (statue seul, mesures éducatives) et le tribunal pour enfants (échevinage, peut prononcer de véritables peines).",
+        "La cour d'assises des mineurs juge les 16-18 ans ; en dessous de 16 ans, c'est le tribunal pour enfants qui est compétent, y compris pour les crimes."
+      ]
+    },
+    "quiz": [
+      { "q": "Les mineurs de moins de 13 ans sont :", "choices": ["Présumés ne pas être capables de discernement", "Toujours jugés comme des majeurs", "Présumés capables de discernement", "Incarcérés systématiquement"], "answer": 0, "why": "Article L. 11-1 du Code de la justice pénale des mineurs : cette présomption peut être renversée, mais un mineur de moins de 13 ans ne peut jamais être incarcéré." },
+      { "q": "Le tribunal pour enfants repose sur :", "choices": ["L'échevinage : le juge des enfants et deux assesseurs non professionnels", "Un jury populaire de 6 citoyens", "Un juge unique", "Trois magistrats professionnels"], "answer": 0, "why": "Composition mixte : le juge des enfants, entouré de deux assesseurs non professionnels de plus de 30 ans, nommés pour 4 ans." },
+      { "q": "La césure du procès pénal des mineurs sépare :", "choices": ["Le jugement de la culpabilité et celui de la sanction", "L'instruction et le jugement", "L'appel et la cassation", "Les mineurs de 13 et 16 ans"], "answer": 0, "why": "Réforme du 30 septembre 2021 : culpabilité jugée d'abord, sanction prononcée 6 à 9 mois plus tard, sauf gravité ou récidive." },
+      { "q": "La cour d'assises des mineurs juge les crimes commis par des mineurs de :", "choices": ["16 à 18 ans", "13 à 16 ans", "10 à 13 ans", "Tout âge"], "answer": 0, "why": "En dessous de 16 ans, c'est le tribunal pour enfants qui reste compétent, y compris pour les crimes." },
+      { "q": "L'excuse de minorité devant la cour d'assises des mineurs a pour effet de :", "choices": ["Réduire de moitié les peines encourues par rapport à un majeur", "Supprimer toute peine", "Doubler la durée de détention", "S'appliquer uniquement aux délits"], "answer": 0, "why": "La réclusion criminelle à perpétuité devient ainsi 30 ans au maximum pour un mineur de 16 à 18 ans." }
+    ]
+  },
+  {
+    "id": "orga-15",
+    "order": 15,
+    "title": "Les juridictions politiques et les juridictions militaires",
+    "teaser": "Le président et les ministres ne sont pas jugés comme les autres justiciables — ni les militaires.",
+    "minutes": 6,
+    "brief": [
+      "En vertu du principe de **séparation des pouvoirs**, le président de la République et les membres du gouvernement ne sont pas jugés par les juridictions ordinaires pour les fautes commises dans l'exercice de leurs fonctions : des juridictions politiques spéciales leur sont réservées.",
+      "La **Haute Cour**, prévue par l'**article 68 de la Constitution** (rédaction issue de la révision constitutionnelle du 23 février 2007), est seule compétente pour **destituer** le président de la République, « en cas de manquement à ses devoirs manifestement incompatible avec l'exercice de son mandat ». Elle est composée du **Parlement tout entier** — députés et sénateurs —, présidée par le président de l'Assemblée nationale. Une assemblée adopte une proposition de réunion, aussitôt transmise à l'autre qui se prononce dans les quinze jours ; la Haute Cour statue ensuite dans un délai d'un mois, à bulletins secrets, toute délégation de vote étant interdite. La majorité requise est des **deux tiers** des membres, à chaque étape. La destitution est la seule exception au régime d'**immunité présidentielle** : pour des faits commis pendant le mandat, le président ne pourra jamais être jugé par les juridictions françaises — seule la Cour pénale internationale pourrait en connaître ; après son mandat, il redevient un justiciable ordinaire.",
+      "La **Cour de justice de la République (CJR)**, créée en 1993 (révision constitutionnelle du 27 juillet 1993, articles 68-1 à 68-3 de la Constitution), juge les membres du gouvernement pour les crimes et délits commis **dans l'exercice de leurs fonctions** : c'est un **privilège de juridiction**. Sa composition, fixée par l'article 68-2, est de **quinze juges** : douze parlementaires élus en nombre égal par l'Assemblée nationale et le Sénat (6 députés, 6 sénateurs), et **trois magistrats du siège de la Cour de cassation**, dont l'un préside. La saisine passe par une **commission des requêtes** (trois magistrats de la Cour de cassation, deux conseillers d'État, deux conseillers maîtres à la Cour des comptes), qui classe la plainte ou la transmet au procureur général près la Cour de cassation ; celui-ci peut aussi saisir d'office, sur avis conforme de la commission. Une commission d'instruction distincte mène ensuite l'enquête et peut conclure à un non-lieu ou renvoyer l'affaire devant la CJR. L'arrêt rendu est susceptible de pourvoi en cassation ; en cas de cassation, la CJR se réunit à nouveau, dans une composition différente.",
+      "L'affaire emblématique jugée par la CJR est celle du **sang contaminé** : dans les années 1980-1990, des milliers de patients ont reçu des transfusions contaminées par le VIH et l'hépatite C, faute d'une mise en place suffisamment rapide des tests de dépistage disponibles, pour des raisons économiques. Ont été jugés le Premier ministre **Laurent Fabius** et la ministre des Affaires sociales **Georgina Dufoix** (relaxés), ainsi que le secrétaire d'État chargé de la Santé **Edmond Hervé** (condamné pour manquement à une obligation de prudence et de sécurité, mais dispensé de peine). La CJR est régulièrement critiquée pour sa clémence envers les membres du gouvernement, ce qui interroge le principe d'égalité devant la justice ; sa suppression, au profit des juridictions ordinaires, est régulièrement évoquée.",
+      "Les **juridictions militaires** jugent, par des magistrats spécialisés et sans jury populaire, les infractions de nature à porter atteinte à la défense nationale. En **temps de paix**, les juridictions militaires d'exception ont été supprimées : ces infractions relèvent aujourd'hui de formations spécialisées de juridictions de droit commun, notamment le tribunal judiciaire de Paris."
+    ],
+    "keyPoints": [
+      "Haute Cour (art. 68) : seule voie de destitution du président, Parlement entier, majorité des deux tiers, vote à bulletins secrets.",
+      "CJR (1993, art. 68-2) : 15 juges (12 parlementaires + 3 magistrats de la Cour de cassation), juge les ministres pour des faits liés à leurs fonctions.",
+      "Affaire du sang contaminé : seule affaire emblématique jugée par la CJR, critique récurrente de clémence.",
+      "Juridictions militaires : pas de jury populaire ; en temps de paix, jugées par des formations spécialisées de droit commun."
+    ],
+    "definitions": [
+      { "term": "Haute Cour", "text": "Juridiction constituée par le Parlement tout entier, seule compétente pour destituer le président de la République en cas de manquement à ses devoirs manifestement incompatible avec son mandat.", "source": "Article 68 de la Constitution" },
+      { "term": "Cour de justice de la République (CJR)", "text": "Juridiction compétente pour juger les membres du gouvernement pour les crimes et délits commis dans l'exercice de leurs fonctions, composée de 15 juges dont 3 magistrats de la Cour de cassation.", "source": "Articles 68-1 à 68-3 de la Constitution" },
+      { "term": "Privilège de juridiction", "text": "Régime dérogatoire selon lequel certaines personnes (ici les membres du gouvernement) ne sont pas jugées par les tribunaux ordinaires mais par une juridiction spécialement désignée." },
+      { "term": "Commission des requêtes (CJR)", "text": "Organe filtrant les plaintes déposées contre un membre du gouvernement, composé de magistrats de la Cour de cassation, de conseillers d'État et de conseillers maîtres à la Cour des comptes." },
+      { "term": "Immunité présidentielle", "text": "Protection empêchant que le président de la République soit jugé par les juridictions françaises pour des faits commis pendant son mandat — la destitution par la Haute Cour en est la seule exception." }
+    ],
+    "exam": {
+      "kind": "dissertation",
+      "question": "Les juridictions politiques françaises garantissent-elles une égalité de tous devant la justice ?",
+      "concise": "Les juridictions politiques — la Haute Cour pour le président de la République, la Cour de justice de la République pour les membres du gouvernement — reposent sur une **justification constitutionnelle solide** : la séparation des pouvoirs interdit qu'un pouvoir juge librement un autre, et l'immunité présidentielle protège la fonction plus que la personne. Elles n'en demeurent pas moins une **rupture avec le principe d'égalité devant la justice**. La composition de la CJR, majoritairement parlementaire, et sa jurisprudence dans l'affaire du sang contaminé — deux relaxes, une condamnation dispensée de peine — nourrissent une critique récurrente de clémence envers les gouvernants, difficilement conciliable avec l'idée que nul n'est au-dessus des lois. Cette tension explique les projets répétés de suppression de la CJR au profit des juridictions ordinaires, sans qu'aucun n'ait abouti à ce jour.",
+      "plan": [
+        {
+          "title": "I. Des juridictions justifiées par la fonction exercée",
+          "children": [
+            { "title": "A. La Haute Cour, gardienne de la séparation des pouvoirs", "points": ["Article 68 : seule voie de destitution, pour un manquement incompatible avec le mandat", "Composition par le Parlement tout entier, majorité des deux tiers", "Immunité présidentielle : protection de la fonction, pas de la personne, pour les faits commis pendant le mandat"] },
+            { "title": "B. La CJR, un privilège de juridiction pour les ministres", "points": ["Créée en 1993, compétente pour les faits liés à l'exercice des fonctions", "Composition mixte : 12 parlementaires et 3 magistrats de la Cour de cassation", "Filtrage par une commission des requêtes avant toute poursuite"] }
+          ]
+        },
+        {
+          "title": "II. Une rupture avec le principe d'égalité, régulièrement critiquée",
+          "children": [
+            { "title": "A. L'affaire du sang contaminé, symbole de la clémence reprochée à la CJR", "points": ["Deux relaxes (Laurent Fabius, Georgina Dufoix)", "Une condamnation dispensée de peine (Edmond Hervé)", "Une affaire qui a nourri durablement la critique de l'institution"] },
+            { "title": "B. Des projets de suppression jamais aboutis", "points": ["L'idée de juger les ministres par les juridictions ordinaires régulièrement avancée", "Aucune réforme constitutionnelle n'a encore supprimé la CJR", "Conclusion : une justification de principe qui n'efface pas le doute sur son application"] }
+          ]
+        }
+      ],
+      "pitfalls": [
+        "Ne pas confondre la destitution (Haute Cour, manquement incompatible avec le mandat) et la responsabilité pénale ordinaire pour des faits étrangers aux fonctions.",
+        "La commission des requêtes de la CJR comprend des conseillers maîtres à la Cour des comptes, et non des « conseillers de la cour des plaintes », qui n'existe pas."
+      ]
+    },
+    "quiz": [
+      { "q": "La Haute Cour est compétente pour :", "choices": ["Destituer le président de la République", "Juger les ministres pour des délits", "Juger les militaires", "Contrôler la constitutionnalité des lois"], "answer": 0, "why": "Article 68 de la Constitution : la destitution suppose un manquement aux devoirs manifestement incompatible avec l'exercice du mandat." },
+      { "q": "La Cour de justice de la République est composée de :", "choices": ["15 juges : 12 parlementaires et 3 magistrats de la Cour de cassation", "9 juges nommés pour 9 ans", "Un juge unique", "27 juges, un par État membre"], "answer": 0, "why": "Article 68-2 de la Constitution : 6 députés, 6 sénateurs, et 3 magistrats du siège de la Cour de cassation, dont l'un préside." },
+      { "q": "La commission des requêtes de la CJR comprend notamment :", "choices": ["Des conseillers maîtres à la Cour des comptes", "Des conseillers de la cour des plaintes", "Des jurés populaires", "Des avocats généraux"], "answer": 0, "why": "Avec trois magistrats de la Cour de cassation et deux conseillers d'État — la « cour des plaintes » n'existe pas." },
+      { "q": "Dans l'affaire du sang contaminé, la CJR a :", "choices": ["Relaxé deux membres du gouvernement et condamné le troisième sans peine", "Condamné les trois membres du gouvernement à de la prison", "Prononcé un non-lieu général", "Renvoyé l'affaire devant la cour d'assises"], "answer": 0, "why": "Laurent Fabius et Georgina Dufoix relaxés ; Edmond Hervé condamné pour manquement à une obligation de prudence, mais dispensé de peine." },
+      { "q": "En temps de paix, les infractions militaires relèvent aujourd'hui :", "choices": ["De formations spécialisées de juridictions de droit commun", "De juridictions militaires d'exception", "De la Haute Cour", "De la Cour de justice de la République"], "answer": 0, "why": "Les juridictions militaires d'exception ont été supprimées en temps de paix ; le tribunal judiciaire de Paris en est un exemple." }
+    ]
+  },
+  {
+    "id": "orga-16",
+    "order": 16,
+    "title": "Les cours d'appel et les cours d'assises d'appel",
+    "teaser": "36 cours, un premier président aux trois casquettes, et une majorité renforcée à 8 voix.",
+    "minutes": 6,
+    "brief": [
+      "Lorsqu'un justiciable n'est pas satisfait d'une décision, il peut faire **appel** : l'affaire est alors rejugée dans son intégralité, **en fait et en droit**, par un nouveau juge.",
+      "Il existe **36 cours d'appel** en France, chacune ayant un ressort de 2 à 4 départements — ce qui explique un délai moyen d'environ **15 mois** avant qu'une décision soit rendue. Elles sont composées exclusivement de magistrats professionnels, appelés **conseillers**, d'un rang plus élevé et disposant de plus d'ancienneté que les magistrats du premier degré. Chaque cour est dirigée par un **premier président**, qui cumule trois fonctions : administratives (il gère la cour), de magistrat (il siège dans une chambre), et juridictionnelles propres (il peut suspendre l'exécution provisoire d'un jugement de première instance, ou juger les demandes de réparation liées à une détention provisoire injustifiée). Son titre vient de ce qu'il préside la première chambre de la cour, parmi les autres présidents de chambre ; il existe toujours, quelle que soit la taille de la cour, une **chambre sociale**.",
+      "En matière **civile**, l'organisation en chambres suit les juridictions dont elles jugent les appels : la chambre sociale pour le conseil de prud'hommes et le tribunal paritaire des baux ruraux, la chambre commerciale pour le tribunal de commerce, les chambres civiles pour le tribunal judiciaire et le tribunal de proximité — étant rappelé que les litiges d'un montant inférieur ou égal à 5 000 € sont jugés en premier et dernier ressort, sans appel possible. En matière **pénale**, on distingue la chambre des appels correctionnels (tribunal de police et tribunal correctionnel), la chambre spéciale des mineurs (juge des enfants et tribunal pour enfants), la chambre de l'instruction (juge d'instruction et JLD) et la chambre de l'application des peines. La cour d'appel n'est en revanche **pas compétente pour les crimes**, qui relèvent de la cour criminelle départementale et de la cour d'assises — les arrêts des cours criminelles départementales étant toutefois eux-mêmes susceptibles d'appel devant la cour d'appel.",
+      "Pendant longtemps, aucun appel n'était possible contre un arrêt de **cour d'assises** : seul le pourvoi en cassation était ouvert, le verdict du jury populaire étant considéré comme souverain. L'appel a été ouvert par la **loi du 15 juin 2000** renforçant la présomption d'innocence et les droits des victimes, au bénéfice de l'accusé condamné en première instance et du procureur de la République. La **cour d'assises d'appel** rejuge en fait et en droit, avec 3 juges professionnels et **9 jurés** (contre 6 en première instance). La majorité requise y est renforcée : selon l'**article 359 du Code de procédure pénale**, toute décision défavorable à l'accusé se forme à la majorité de sept voix au moins en premier ressort, et de **huit voix au moins en appel**."
+    ],
+    "keyPoints": [
+      "36 cours d'appel, composées uniquement de conseillers ; le premier président cumule fonctions administratives, de magistrat et juridictionnelles propres.",
+      "Chambres spécialisées selon la matière : sociale/commerciale/civiles en matière civile, correctionnelle/mineurs/instruction/application des peines en matière pénale.",
+      "La cour d'appel n'est pas compétente pour les crimes (cour criminelle départementale, cour d'assises) — mais les arrêts des cours criminelles départementales, eux, sont susceptibles d'appel devant elle.",
+      "Cour d'assises d'appel ouverte par la loi du 15 juin 2000 : 3 juges + 9 jurés, majorité renforcée de 8 voix (art. 359 CPP)."
+    ],
+    "definitions": [
+      { "term": "Cour d'appel", "text": "Juridiction du second degré qui rejuge une affaire en fait et en droit, composée exclusivement de magistrats professionnels appelés conseillers. 36 en France." },
+      { "term": "Premier président (cour d'appel)", "text": "Magistrat qui dirige une cour d'appel, cumulant des fonctions administratives, des fonctions de magistrat siégeant en chambre, et des fonctions juridictionnelles propres." },
+      { "term": "Conseiller", "text": "Magistrat professionnel siégeant en cour d'appel, d'un rang plus élevé et disposant de plus d'ancienneté que les magistrats des juridictions de premier degré." },
+      { "term": "Cour d'assises d'appel", "text": "Juridiction ouverte par la loi du 15 juin 2000, composée de 3 juges professionnels et de 9 jurés, compétente pour rejuger en fait et en droit un arrêt de cour d'assises." },
+      { "term": "Majorité renforcée (article 359 du Code de procédure pénale)", "text": "Règle selon laquelle toute décision défavorable à l'accusé requiert 7 voix au moins en premier ressort, et 8 voix au moins devant la cour d'assises d'appel." }
+    ],
+    "exam": {
+      "kind": "question de cours",
+      "question": "Pourquoi a-t-il fallu attendre la loi du 15 juin 2000 pour qu'un appel soit possible contre les arrêts de cour d'assises ?",
+      "concise": "Le verdict du jury populaire de la cour d'assises a longtemps été considéré comme **souverain** : le remettre en cause par un appel aurait revenu à contester la légitimité du jugement rendu au nom du peuple. Seul le pourvoi en cassation — qui ne rejuge pas les faits — était donc ouvert. Cette situation posait une difficulté au regard des peines particulièrement lourdes encourues devant cette juridiction, où une erreur judiciaire ne pouvait jamais être corrigée sur le fond. La **loi du 15 juin 2000**, renforçant la présomption d'innocence et les droits des victimes, ouvre l'appel à l'accusé condamné comme au procureur de la République. La **cour d'assises d'appel** reste toutefois composée elle aussi d'un jury populaire — élargi à 9 jurés au lieu de 6 — et la majorité requise pour une décision défavorable à l'accusé est renforcée à 8 voix au lieu de 7, ce qui traduit une prudence particulière avant de confirmer une condamnation en dernier ressort populaire.",
+      "plan": [
+        {
+          "title": "I. Un appel longtemps jugé incompatible avec la souveraineté du jury populaire",
+          "children": [
+            { "title": "A. L'absence d'appel avant 2000", "points": ["Seul le pourvoi en cassation ouvert contre un arrêt de cour d'assises", "La cassation ne rejuge pas les faits, seulement le droit", "Le verdict du jury populaire considéré comme souverain"] },
+            { "title": "B. Une difficulté au regard de la gravité des peines encourues", "points": ["La cour d'assises juge les crimes les plus graves", "Aucune possibilité de rejuger les faits en cas d'erreur", "Un contraste avec le double degré de juridiction généralisé ailleurs"] }
+          ]
+        },
+        {
+          "title": "II. L'ouverture de l'appel par la loi du 15 juin 2000",
+          "children": [
+            { "title": "A. Une réforme au service de la présomption d'innocence", "points": ["Appel ouvert à l'accusé condamné et au procureur de la République", "Cour d'assises d'appel : 3 juges professionnels et 9 jurés", "Rejugement complet en fait et en droit"] },
+            { "title": "B. Une prudence renforcée plutôt qu'un simple rejugement", "points": ["Majorité de 8 voix au lieu de 7 pour confirmer une décision défavorable à l'accusé (art. 359 CPP)", "Un jury plus nombreux qu'en première instance", "Conclusion : un appel qui respecte la légitimité du jury populaire plutôt que de la remettre en cause"] }
+          ]
+        }
+      ],
+      "pitfalls": [
+        "La cour d'appel ordinaire n'est pas compétente pour les crimes : c'est la cour d'assises d'appel, une formation distincte, qui rejuge les arrêts de cour d'assises.",
+        "Ne pas confondre la majorité de 7 voix (premier ressort) et celle de 8 voix (appel) de l'article 359 du Code de procédure pénale."
+      ]
+    },
+    "quiz": [
+      { "q": "Il existe en France :", "choices": ["36 cours d'appel", "103 cours d'appel", "164 cours d'appel", "12 cours d'appel"], "answer": 0, "why": "Chaque cour d'appel a un ressort de 2 à 4 départements, d'où un délai moyen de jugement d'environ 15 mois." },
+      { "q": "Le premier président d'une cour d'appel :", "choices": ["Cumule des fonctions administratives, de magistrat et juridictionnelles propres", "Ne siège jamais dans une chambre", "Est élu par les conseillers de la cour", "Préside uniquement la chambre sociale"], "answer": 0, "why": "Il gère la cour, siège dans une chambre, et dispose de pouvoirs propres comme suspendre l'exécution provisoire d'un jugement." },
+      { "q": "La cour d'appel est compétente pour :", "choices": ["Les appels des jugements civils et correctionnels, mais pas pour les crimes", "Tous les crimes", "Uniquement les crimes", "Les pourvois en cassation"], "answer": 0, "why": "Les crimes relèvent de la cour criminelle départementale et de la cour d'assises ; seuls les arrêts des cours criminelles départementales sont, eux, susceptibles d'appel devant la cour d'appel." },
+      { "q": "L'appel contre les arrêts de cour d'assises a été ouvert par :", "choices": ["La loi du 15 juin 2000", "La loi du 24 mai 1872", "La réforme du 1er janvier 2023", "La loi du 10 juillet 1991"], "answer": 0, "why": "Cette loi, renforçant la présomption d'innocence et les droits des victimes, ouvre l'appel à l'accusé condamné et au procureur de la République." },
+      { "q": "Devant la cour d'assises d'appel, une décision défavorable à l'accusé requiert :", "choices": ["Une majorité de 8 voix au moins", "Une majorité de 7 voix au moins", "L'unanimité", "Une majorité simple"], "answer": 0, "why": "Article 359 du Code de procédure pénale : 7 voix en premier ressort, 8 voix en appel — une prudence renforcée avant de confirmer une condamnation." }
+    ]
+  }
+]

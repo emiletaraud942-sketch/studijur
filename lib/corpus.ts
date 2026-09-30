@@ -10,6 +10,7 @@ import constitB from "./corpus/parts/constit.b.json";
 import orgaA from "./corpus/parts/orga.a.json";
 import orgaB from "./corpus/parts/orga.b.json";
 import orgaC from "./corpus/parts/orga.c.json";
+import orgaD from "./corpus/parts/orga.d.json";
 import histoireA from "./corpus/parts/histoire.a.json";
 import histoireB from "./corpus/parts/histoire.b.json";
 import histoireC from "./corpus/parts/histoire.c.json";
@@ -37,7 +38,7 @@ type RawLesson = Omit<Lesson, "courseId">;
 const PARTS: Record<string, RawLesson[][]> = {
   "intro-droit": [introA, introB, introC, introD] as unknown as RawLesson[][],
   constit: [constitA, constitB] as unknown as RawLesson[][],
-  orga: [orgaA, orgaB, orgaC] as unknown as RawLesson[][],
+  orga: [orgaA, orgaB, orgaC, orgaD] as unknown as RawLesson[][],
   histoire: [histoireA, histoireB, histoireC] as unknown as RawLesson[][],
   methodo: [methodoA] as unknown as RawLesson[][],
   obligations: [obligationsA] as unknown as RawLesson[][],
