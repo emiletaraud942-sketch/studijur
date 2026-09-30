@@ -3,11 +3,11 @@
 import { useEffect, useState } from "react";
 import { useStudiJur } from "@/lib/state";
 import { getSupabase } from "@/lib/supabase";
-import { activerRappel, pushSupporte } from "@/lib/push-client";
+import { activerRappel, iosSansInstallation, pushSupporte } from "@/lib/push-client";
 import { Button, SectionTitle } from "./ui";
 import { Check, Cross, Flame } from "./icons";
 
-type Etat = "inconnu" | "indisponible" | "inactif" | "actif" | "refuse";
+type Etat = "inconnu" | "indisponible" | "a-installer" | "inactif" | "actif" | "refuse";
 
 export default function Rappel() {
   const { state, update, signedInAs } = useStudiJur();
@@ -17,7 +17,7 @@ export default function Rappel() {
   const heure = state.profile.reminderHour ?? 19;
 
   useEffect(() => {
-    if (!pushSupporte()) { setEtat("indisponible"); return; }
+    if (!pushSupporte()) { setEtat(iosSansInstallation() ? "a-installer" : "indisponible"); return; }
     if (Notification.permission === "denied") { setEtat("refuse"); return; }
 
     navigator.serviceWorker.ready
@@ -124,10 +124,19 @@ export default function Rappel() {
         </div>
       </div>
 
+      {etat === "a-installer" && (
+        <p className="rounded-xl p-4 text-[13.5px] leading-relaxed" style={{ background: "var(--bad-soft)", color: "var(--bad)" }}>
+          Sur iPhone, Apple bloque les notifications tant que StudiJur n&apos;est pas installé. Appuie sur{" "}
+          <strong>Partager</strong> (le carré avec la flèche dans Safari), puis{" "}
+          <strong>« Sur l&apos;écran d&apos;accueil »</strong> — ouvre ensuite StudiJur depuis cette icône pour
+          pouvoir activer le rappel.
+        </p>
+      )}
+
       {etat === "indisponible" && (
         <p className="text-[13.5px] leading-relaxed" style={{ color: "var(--muted)" }}>
           Ce navigateur ne gère pas les notifications, ou le serveur n&apos;est pas encore configuré pour les
-          envoyer. Sur iPhone, ajoute d&apos;abord StudiJur à ton écran d&apos;accueil depuis le menu de partage.
+          envoyer.
         </p>
       )}
 
