@@ -13,6 +13,7 @@ import { Arrow, Cards, Check, Chevron, Flame, Grid, Quill, Sitemap, Target } fro
 import { longDate } from "@/lib/format";
 import { OBJECTIONS } from "@/lib/objections";
 import RevisionIntensiveBanner from "@/components/RevisionIntensiveBanner";
+import RappelPromo from "@/components/RappelPromo";
 
 export default function TodayPage() {
   const router = useRouter();
@@ -94,6 +95,8 @@ export default function TodayPage() {
       )}
 
       {doneIds.length === 0 && <PitchPremiereVisite dailyId={daily?.id} />}
+
+      <RappelPromo />
 
       <RevisionIntensiveBanner />
 

@@ -21,6 +21,20 @@ export function pushSupporte(): boolean {
   );
 }
 
+// Sur iPhone/iPad, Apple n'expose `PushManager` que si le site a été
+// installé sur l'écran d'accueil (mode standalone) : dans Safari classique,
+// `pushSupporte()` rend systématiquement false, sans qu'aucune permission
+// n'ait été demandée ni refusée. Distinguer ce cas permet d'expliquer la
+// vraie cause plutôt qu'un message générique "notifications indisponibles".
+export function iosSansInstallation(): boolean {
+  if (typeof window === "undefined") return false;
+  const iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !("MSStream" in window);
+  const standalone =
+    (navigator as unknown as { standalone?: boolean }).standalone === true ||
+    window.matchMedia("(display-mode: standalone)").matches;
+  return iOS && !standalone;
+}
+
 function cleVersOctets(base64: string): Uint8Array {
   const rempli = (base64 + "=".repeat((4 - (base64.length % 4)) % 4))
     .replace(/-/g, "+")
