@@ -10,12 +10,12 @@ import AccountCTA from "@/components/AccountCTA";
 
 type Mode = "pratique" | "lecture";
 
-// Fusionne les anciennes pages /bibliotheque (mode interactif : quiz, suivi
-// de progression) et /cours (mode lecture : texte complet) — même liste de
+// Fusionne les anciennes pages /bibliotheque (mode "Leçons" : quiz, suivi
+// de progression) et /cours (mode "Lecture" : texte complet) — même liste de
 // matières, deux façons de la consulter, au lieu de deux onglets qui se
 // recoupaient entièrement. /bibliotheque et /cours redirigent ici ; un lien
 // `#id` existant reste valable, l'ancre correspond toujours à une matière en
-// mode Pratique (son mode par défaut).
+// mode Leçons (son mode par défaut).
 export default function ProgrammePage() {
   const { state, ready } = useStudiJur();
   const [mode, setMode] = useState<Mode>("pratique");
@@ -38,7 +38,7 @@ export default function ProgrammePage() {
         <button onClick={() => setMode("pratique")}
           className="flex-1 rounded-xl py-2.5 text-[13.5px] font-bold transition-colors"
           style={mode === "pratique" ? { background: "var(--ink)", color: "var(--paper)" } : { color: "var(--muted)" }}>
-          Pratique
+          Leçons
         </button>
         <button onClick={() => setMode("lecture")}
           className="flex-1 rounded-xl py-2.5 text-[13.5px] font-bold transition-colors"
