@@ -6,6 +6,7 @@ import { findCourse } from "@/lib/corpus";
 import { Button } from "@/components/ui";
 import { Arrow, Flame, Target } from "@/components/icons";
 import QuizEclair from "@/components/QuizEclair";
+import CompteApresQuiz from "@/components/CompteApresQuiz";
 
 type Mode = "intro" | "quiz" | "resultat";
 
@@ -41,6 +42,7 @@ export default function EntrainementOrgaPage() {
           <Button onClick={() => setMode("quiz")} size="lg" full>Refaire un tour</Button>
           <Button href="/entrainement" variant="outline" size="lg" full>Retour</Button>
         </div>
+        <CompteApresQuiz />
       </div>
     );
   }

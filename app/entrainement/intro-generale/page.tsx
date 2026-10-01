@@ -11,6 +11,7 @@ import { useStudiJur, entrainementCorrectionCapReached, ENTRAINEMENT_CORRECTION_
 import { authFetchHeaders } from "@/lib/supabase";
 import { connexionHref } from "@/lib/nav";
 import type { EntrainementFeedback } from "@/lib/types";
+import CompteApresQuiz from "@/components/CompteApresQuiz";
 
 const cc1Questions = introGeneraleEntrainement.filter((q) => q.categorie === "Entraînement CC1");
 const reviserQuestions = introGeneraleEntrainement.filter((q) => q.categorie !== "Entraînement CC1");
@@ -102,6 +103,7 @@ export default function EntrainementIntroGeneralePage() {
       {/* Dernière question du parcours : le moment où l'attention est la plus
           forte pour montrer ce que fait StudiJur au-delà de cet entraînement
           gratuit — pas avant, ça distrairait de la révision en cours. */}
+      {i === total - 1 && <CompteApresQuiz />}
       {i === total - 1 && <DecouvrirStudiJur />}
     </div>
   );

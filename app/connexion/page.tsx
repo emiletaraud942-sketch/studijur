@@ -2,12 +2,12 @@
 
 import { Suspense, useEffect, useState } from "react";
 import { useSearchParams } from "next/navigation";
-import { supabaseConfigured, useStudiJur } from "@/lib/state";
+import { supabaseConfigured } from "@/lib/state";
 import { getSupabase } from "@/lib/supabase";
 import { safeNext } from "@/lib/nav";
-import { abonnementActif, activerRappel, pushSupporte, RAPPEL_POST_CONNEXION_REFUSE_KEY } from "@/lib/push-client";
 import { Button } from "@/components/ui";
-import { Flame, Scales } from "@/components/icons";
+import { Scales } from "@/components/icons";
+import { attribuerParrainageSiBesoin } from "@/lib/referral";
 
 export default function SignInPage() {
   return (
@@ -17,18 +17,9 @@ export default function SignInPage() {
   );
 }
 
-function dejaDecline(): boolean {
-  try {
-    return localStorage.getItem(RAPPEL_POST_CONNEXION_REFUSE_KEY) === "1";
-  } catch {
-    return false;
-  }
-}
-
 function SignInForm() {
   const searchParams = useSearchParams();
   const next = safeNext(searchParams.get("next"));
-  const { state } = useStudiJur();
   const [email, setEmail] = useState("");
   const [sent, setSent] = useState(false);
   const [error, setError] = useState("");
@@ -36,55 +27,42 @@ function SignInForm() {
   const [code, setCode] = useState("");
   const [codeError, setCodeError] = useState("");
   const [verifying, setVerifying] = useState(false);
-  const [phase, setPhase] = useState<"formulaire" | "rappel">("formulaire");
-  const [rappelOccupe, setRappelOccupe] = useState(false);
   const [renvoiDisponibleDans, setRenvoiDisponibleDans] = useState(0);
 
   function terminer() {
     // Aucun contexte précis demandé (cas par défaut) : direction la séance du
     // jour plutôt que le tableau de bord — ça évite le clic en plus, et
     // c'était la fuite la plus nette une fois connecté (élèves qui se
-    // connectaient puis ne faisaient jamais leur première leçon).
+    // connectaient puis ne faisaient jamais leur première leçon). L'étape
+    // "activer le rappel" qui s'affichait ici avant d'arriver sur la leçon a
+    // été retirée pour la même raison : elle ajoutait un palier de friction
+    // juste avant le premier contenu réel. Le rappel est maintenant proposé
+    // plus tard, une fois l'élève engagé, via le bandeau RappelPromo de la
+    // page d'accueil.
     window.location.href = next === "/" ? "/?bienvenue=1" : next;
   }
 
   // Couvre à la fois le retour du lien magique (le client Supabase détecte
   // la session depuis le fragment d'URL au chargement de cette page — voir
   // emailRedirectTo ci-dessous) et la validation du code juste en dessous :
-  // les deux déclenchent le même événement, donc un seul endroit décide de
-  // la suite plutôt que deux chemins de redirection dupliqués.
+  // les deux déclenchent le même événement.
   useEffect(() => {
     const sb = getSupabase();
     if (!sb) return;
-    const { data: abonnement } = sb.auth.onAuthStateChange((event) => {
+    const { data: abonnement } = sb.auth.onAuthStateChange((event, session) => {
       if (event !== "SIGNED_IN") return;
       (async () => {
-        if (dejaDecline() || !pushSupporte() || (await abonnementActif())) {
-          terminer();
-          return;
-        }
-        setPhase("rappel");
+        // Attendu avant terminer() : celui-ci navigue via window.location.href,
+        // ce qui coupe toute requête encore en vol — l'attribution doit donc
+        // être terminée avant la redirection, pas lancée en tâche de fond.
+        const userId = session?.user?.id;
+        if (userId) await attribuerParrainageSiBesoin(userId);
+        terminer();
       })();
     });
     return () => abonnement.subscription.unsubscribe();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
-
-  async function activerLeRappel() {
-    setRappelOccupe(true);
-    const sb = getSupabase();
-    const userId = sb ? (await sb.auth.getUser()).data.user?.id ?? null : null;
-    const resultat = await activerRappel(state.profile.reminderHour ?? 19, userId);
-    if (!resultat.ok && resultat.refuse) {
-      try { localStorage.setItem(RAPPEL_POST_CONNEXION_REFUSE_KEY, "1"); } catch { /* tant pis */ }
-    }
-    terminer();
-  }
-
-  function plusTard() {
-    try { localStorage.setItem(RAPPEL_POST_CONNEXION_REFUSE_KEY, "1"); } catch { /* tant pis */ }
-    terminer();
-  }
 
   // Compte à rebours avant de proposer le renvoi : évite qu'on le déclenche
   // par réflexe avant même que le premier email ait eu une chance d'arriver.
@@ -102,8 +80,9 @@ function SignInForm() {
     const { error: err } = await sb.auth.signInWithOtp({
       email: email.trim(),
       // Renvoie vers cette page plutôt que directement vers `next` : c'est ce
-      // qui permet de proposer l'étape "rappel" avant d'arriver sur `next`,
-      // qu'on revienne par le lien ou par le code juste en dessous.
+      // qui permet à l'écouteur onAuthStateChange de gérer la redirection de
+      // façon uniforme, qu'on revienne par le lien ou par le code juste en
+      // dessous.
       options: {
         emailRedirectTo: typeof window !== "undefined"
           ? `${window.location.origin}/connexion?next=${encodeURIComponent(next)}`
@@ -143,35 +122,8 @@ function SignInForm() {
       setCodeError(err.message);
       return;
     }
-    // La suite (étape rappel ou redirection vers `next`) est décidée par
-    // l'écouteur onAuthStateChange ci-dessus, déclenché par ce même verifyOtp.
-  }
-
-  if (phase === "rappel") {
-    return (
-      <div className="mx-auto max-w-sm py-10 text-center">
-        <span className="mx-auto mb-5 grid h-14 w-14 place-items-center rounded-2xl"
-          style={{ background: "var(--gold-soft)", color: "var(--gold)" }}>
-          <Flame className="h-7 w-7" />
-        </span>
-        <h1 className="serif text-[24px] font-bold leading-tight">
-          Active ton rappel quotidien pour ne pas rater ton CC1
-        </h1>
-        <p className="mt-2 text-[14.5px] leading-relaxed" style={{ color: "var(--muted)" }}>
-          Un seul message le soir, à l&apos;heure de ton choix. Modifiable ou désactivable à tout moment dans les
-          réglages.
-        </p>
-        <div className="mt-6 space-y-3">
-          <Button onClick={activerLeRappel} disabled={rappelOccupe} size="lg" full>
-            {rappelOccupe ? "Activation…" : "Activer le rappel"}
-          </Button>
-          <button onClick={plusTard} disabled={rappelOccupe}
-            className="text-[13px] font-semibold" style={{ color: "var(--muted)" }}>
-            Plus tard
-          </button>
-        </div>
-      </div>
-    );
+    // La suite (redirection vers `next`) est décidée par l'écouteur
+    // onAuthStateChange ci-dessus, déclenché par ce même verifyOtp.
   }
 
   return (
@@ -226,6 +178,9 @@ function SignInForm() {
         <>
           <p className="mt-2 text-[14.5px]" style={{ color: "var(--muted)" }}>
             Entre ton adresse : tu recevras un lien de connexion, sans mot de passe.
+          </p>
+          <p className="mt-2 text-[13px] font-semibold" style={{ color: "var(--accent)" }}>
+            Pour ne jamais perdre ta progression, et être rappelé avant tes prochains CC.
           </p>
           <form onSubmit={send} className="mt-6 space-y-3">
             <input type="email" required value={email} onChange={(e) => setEmail(e.target.value)}

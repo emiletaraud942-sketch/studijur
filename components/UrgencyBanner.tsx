@@ -8,18 +8,19 @@ import { useEffect, useState } from "react";
 // c'est lui qui sert de clé de mémorisation, donc un id différent fait
 // réapparaître le bandeau même chez quelqu'un qui avait fermé le précédent.
 const URGENCY = {
-  id: "cc1-intro-droit-2026-09-29",
-  // Pas de date en dur ici : le CC n'a pas lieu le même jour pour tout le
-  // monde (facs et groupes différents) — un jour précis serait faux pour
-  // une partie des élèves.
-  message: "CC1 d'Introduction générale au droit — entraîne-toi avant l'épreuve.",
+  id: "cc-droit-constit-intro-histoire-2026-10-15",
+  // Pas de jour précis dans le message : le CC n'a pas lieu le même jour
+  // pour tout le monde (facs et groupes différents) — seule la date
+  // provisoire de hideAfter ci-dessous sert de garde-fou, à resserrer dès
+  // qu'Émile connaît la date exacte.
+  message: "Un CC approche — droit constitutionnel, intro générale au droit, intro historique au droit public.",
   ctaLabel: "Réviser maintenant",
-  href: "/entrainement/intro-generale",
-  // Le bandeau ne s'affiche plus du tout à partir de cette date, même sans
-  // fermeture manuelle — inutile de rappeler un contrôle déjà passé. Le CC1
-  // a eu lieu : date ramenée dans le passé pour le masquer immédiatement,
-  // même chez les élèves qui ne l'avaient pas fermé.
-  hideAfter: "2026-09-29T00:00:00+02:00",
+  href: "/revision-intensive",
+  // Date provisoire (~2 semaines après le 01/10/2026, avec une marge d'un
+  // jour) : à resserrer sur la vraie date dès qu'elle est connue, en changant
+  // aussi `id` pour que le bandeau réapparaisse même chez ceux qui l'avaient
+  // fermé avec l'ancienne échéance.
+  hideAfter: "2026-10-16T00:00:00+02:00",
 };
 
 const DISMISS_KEY = `studijur.urgency-dismissed.${URGENCY.id}`;
