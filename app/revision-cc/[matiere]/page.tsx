@@ -10,6 +10,9 @@ import { Button, Tag } from "@/components/ui";
 import { Arrow, Clock, Cross, Flame, Sitemap } from "@/components/icons";
 import QuizEclair, { shuffle } from "@/components/QuizEclair";
 import { FicheLesson } from "@/components/FicheLesson";
+import { FicheATrous } from "@/components/FicheATrous";
+import { Chronologie } from "@/components/Chronologie";
+import { PlanDeBataille } from "@/components/PlanDeBataille";
 import RevisionCCGate from "@/components/RevisionCCGate";
 import type { Lesson } from "@/lib/types";
 
@@ -26,6 +29,10 @@ export default function RevisionCCPage() {
 
   const lessons = useMemo(
     () => (config ? (config.lessonSlugs.map((id) => findLesson(id)).filter(Boolean) as Lesson[]) : []),
+    [config],
+  );
+  const chronologieLessons = useMemo(
+    () => (config?.chronologieLessonIds ?? []).map((id) => findLesson(id)).filter(Boolean) as Lesson[],
     [config],
   );
   // Fixé une fois par montage plutôt que recalculé à chaque rendu : sinon les
@@ -97,6 +104,10 @@ export default function RevisionCCPage() {
 
       <CompteARebours ccDate={config.ccDate} pctPreparation={pctPreparation} />
 
+      <PlanDeBataille ccDate={config.ccDate} />
+
+      <Chronologie lessons={chronologieLessons} />
+
       {lessonsAvecSchema.length > 0 && (
         <section>
           <SousTitre icon={<Sitemap className="h-4 w-4" />} texte="Vue d'ensemble" />
@@ -135,6 +146,8 @@ export default function RevisionCCPage() {
           </div>
         </section>
       )}
+
+      <FicheATrous lessons={lessons} />
 
       <section>
         <SousTitre texte="Fiche condensée" />

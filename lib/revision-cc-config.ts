@@ -7,6 +7,12 @@ export type RevisionCCConfig = {
   // fantaisiste. Voir app/revision-cc/[matiere]/page.tsx.
   ccDate: string | null;
   lessonSlugs: string[];
+  // Ids de la matière "dates" (lib/corpus/parts/dates.*.json) dont les
+  // définitions (terme = date, texte = événement) composent la chronologie
+  // interactive de cette page — réutilise un contenu déjà écrit, jamais une
+  // nouvelle frise à produire. Absent ou vide : pas de section chronologie
+  // plutôt qu'un rapprochement de dates mal assorti.
+  chronologieLessonIds?: string[];
 };
 
 export const REVISION_CC: Record<string, RevisionCCConfig> = {
@@ -19,6 +25,7 @@ export const REVISION_CC: Record<string, RevisionCCConfig> = {
       "histoire-07", "histoire-08", "histoire-09", "histoire-10", "histoire-11", "histoire-12",
       "histoire-13", "histoire-14", "histoire-15", "histoire-16", "histoire-17", "histoire-18",
     ],
+    chronologieLessonIds: ["dates-01", "dates-02", "dates-03", "dates-04", "dates-05"],
   },
   constit: {
     id: "constit",
@@ -28,6 +35,7 @@ export const REVISION_CC: Record<string, RevisionCCConfig> = {
       "constit-01", "constit-02", "constit-03", "constit-04",
       "constit-05", "constit-06", "constit-07", "constit-08",
     ],
+    chronologieLessonIds: ["dates-07"],
   },
   "intro-generale": {
     id: "intro-generale",
