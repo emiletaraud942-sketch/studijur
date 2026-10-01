@@ -111,7 +111,7 @@ export default function PresentationPage() {
       <section>
         <h2 className="serif mb-1 text-center text-[26px] font-bold">Tous les outils, en un coup d&apos;œil</h2>
         <p className="mb-6 text-center text-[14.5px]" style={{ color: "var(--muted)" }}>
-          Chacun répond à un besoin précis. <Link href="/plus" className="underline" style={{ color: "var(--accent)" }}>Voir la liste complète</Link>.
+          Chacun répond à un besoin précis.
         </p>
         <div className="grid grid-cols-2 gap-3 sm:grid-cols-3">
           {OUTILS_APERCU.map(({ Icon, titre, texte }) => (

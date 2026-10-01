@@ -5,19 +5,21 @@ import { useState } from "react";
 import { usePathname } from "next/navigation";
 import { useStudiJur, trialDaysLeft, supabaseConfigured } from "@/lib/state";
 import { connexionHref } from "@/lib/nav";
-import { Books, Chart, Gear, Grid, Home, Quill, Scales, Search, Upload, Flame } from "./icons";
+import { Books, Chart, Grid, Home, Scales, Search, Target, Flame } from "./icons";
 import { longDate } from "@/lib/format";
 import InstallPrompt from "./InstallPrompt";
 import SearchOverlay from "./SearchOverlay";
 
+// 5 onglets au lieu de 7 : "Matières" et "Cours" (même liste, juste pratique
+// vs. lecture) fusionnent dans /programme ; "Réviser" est nouveau et regroupe
+// tout ce qui prépare un CC, révision flash incluse (jusque-là invisible du
+// menu) ; "Mes cours" et "Réglages" rejoignent /plus.
 const NAV = [
   { href: "/", label: "Aujourd'hui", Icon: Home },
-  { href: "/bibliotheque", label: "Matières", Icon: Books },
-  { href: "/cours", label: "Cours", Icon: Quill },
-  { href: "/mes-cours", label: "Mes cours", Icon: Upload },
+  { href: "/programme", label: "Programme", Icon: Books },
+  { href: "/reviser", label: "Réviser", Icon: Target },
   { href: "/progression", label: "Progression", Icon: Chart },
-  { href: "/plus", label: "Outils", Icon: Grid },
-  { href: "/reglages", label: "Réglages", Icon: Gear },
+  { href: "/plus", label: "Plus", Icon: Grid },
 ];
 
 export default function Shell({ children }: { children: React.ReactNode }) {

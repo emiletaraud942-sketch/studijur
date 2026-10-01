@@ -156,7 +156,7 @@ function LessonPageInner() {
       <header className="sticky top-0 z-30 -mx-4 px-4 pt-3 pb-3"
         style={{ background: "color-mix(in srgb, var(--paper) 90%, transparent)", backdropFilter: "blur(12px)" }}>
         <div className="flex items-center gap-3">
-          <Link href="/cours" aria-label="Quitter la séance"
+          <Link href="/programme" aria-label="Quitter la séance"
             className="grid h-8 w-8 shrink-0 place-items-center rounded-lg"
             style={{ background: "var(--surface-2)", color: "var(--muted)" }}>
             <Cross className="h-4 w-4" />
