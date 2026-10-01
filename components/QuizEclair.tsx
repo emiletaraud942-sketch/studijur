@@ -16,11 +16,15 @@ export function shuffle<T>(arr: T[]): T[] {
 }
 
 export default function QuizEclair({
-  lessons, onFinish, onBack,
+  lessons, onFinish, onBack, taille = 30,
 }: {
   lessons: Lesson[];
   onFinish: (good: number, total: number) => void;
   onBack: () => void;
+  // Nombre de questions tirées par tentative — 30 par défaut (CC1 d'orga,
+  // révision intensive), réduit à 15 pour une fiche de révision flash par
+  // matière (voir app/revision-cc), plus rapide à faire d'une traite.
+  taille?: number;
 }) {
   const { state, markQuizMastered } = useStudiJur();
   const [pool] = useState<(QuizItem & { lessonTitle: string; id: string })[]>(() => {
@@ -30,7 +34,7 @@ export default function QuizEclair({
     // inconnues ou ratées ne suffisent pas à remplir le tirage — jamais avant.
     const aFaire = shuffle(toutes.filter((q) => !mastered[q.id]));
     const acquises = shuffle(toutes.filter((q) => mastered[q.id]));
-    return [...aFaire, ...acquises].slice(0, 30);
+    return [...aFaire, ...acquises].slice(0, taille);
   });
   const [i, setI] = useState(0);
   const [picked, setPicked] = useState<number | null>(null);
