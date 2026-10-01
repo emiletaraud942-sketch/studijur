@@ -10,7 +10,6 @@ import { connexionHref } from "@/lib/nav";
 import { Button, SectionTitle } from "@/components/ui";
 import { Arrow, Check } from "@/components/icons";
 import Rappel from "@/components/Rappel";
-import Parrainage from "@/components/Parrainage";
 
 export default function SettingsPage() {
   const pathname = usePathname();
@@ -105,8 +104,6 @@ export default function SettingsPage() {
       </section>
 
       <Rappel />
-
-      <Parrainage />
 
       <section className="card p-5">
         <SectionTitle kicker="Affichage" title="Thème" />

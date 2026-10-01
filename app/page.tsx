@@ -127,9 +127,9 @@ export default function TodayPage() {
           <Grid className="h-5 w-5" />
         </span>
         <div className="min-w-0 flex-1">
-          <h2 className="text-[15px] font-semibold">Tous les outils de StudiJur</h2>
+          <h2 className="text-[15px] font-semibold">Plus : dépôt de cours, réglages, vocabulaire</h2>
           <p className="mt-0.5 text-[13px] leading-snug" style={{ color: "var(--muted)" }}>
-            Quiz, cartes mentales, vocabulaire, entraînement CC1, classement...
+            Génère un quiz depuis tes propres notes, gère ton profil et ton abonnement.
           </p>
         </div>
         <span className="shrink-0" style={{ color: "var(--muted)" }}><Arrow className="h-4 w-4" /></span>
@@ -266,13 +266,13 @@ export default function TodayPage() {
         <SectionTitle
           kicker="Programme"
           title="Tes matières"
-          right={<Link href="/bibliotheque" className="flex items-center gap-1 text-[13px] font-semibold" style={{ color: "var(--accent)" }}>Tout voir <Chevron className="h-3.5 w-3.5" /></Link>}
+          right={<Link href="/programme" className="flex items-center gap-1 text-[13px] font-semibold" style={{ color: "var(--accent)" }}>Tout voir <Chevron className="h-3.5 w-3.5" /></Link>}
         />
         <div className="grid gap-3 sm:grid-cols-2">
           {courses.map((c) => {
             const done = c.lessons.filter((l) => doneIds.includes(l.id)).length;
             return (
-              <Link key={c.id} href={`/bibliotheque#${c.id}`} data-hue={c.hue}
+              <Link key={c.id} href={`/programme#${c.id}`} data-hue={c.hue}
                 className="card p-4 transition-transform duration-150 hover:-translate-y-0.5">
                 <div className="flex items-start justify-between gap-3">
                   <div className="min-w-0">
@@ -359,7 +359,7 @@ function PitchPremiereVisite({ dailyId }: { dailyId?: string }) {
       </div>
 
       <div className="mt-6">
-        <Button href={dailyId ? `/lecon/${dailyId}` : "/bibliotheque"} size="lg" full>
+        <Button href={dailyId ? `/lecon/${dailyId}` : "/programme"} size="lg" full>
           Essayer une leçon gratuite <Arrow className="h-4 w-4" />
         </Button>
       </div>

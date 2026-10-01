@@ -24,7 +24,7 @@ export default function CoursMatierePage() {
     return (
       <div className="mx-auto max-w-md py-20 text-center">
         <h1 className="serif text-[22px] font-bold">Matière introuvable</h1>
-        <div className="mt-5"><Button href="/cours">Retour</Button></div>
+        <div className="mt-5"><Button href="/programme">Retour</Button></div>
       </div>
     );
   }
@@ -32,7 +32,7 @@ export default function CoursMatierePage() {
   return (
     <div className="space-y-8">
       <div data-hue={course.hue}>
-        <Link href="/cours" className="text-[13px] font-semibold" style={{ color: "var(--muted)" }}>← Cours</Link>
+        <Link href="/programme" className="text-[13px] font-semibold" style={{ color: "var(--muted)" }}>← Programme</Link>
         <div className="mt-1.5 flex flex-wrap items-center gap-2">
           <Tag tone="hue">{course.short}</Tag>
         </div>

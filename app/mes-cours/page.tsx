@@ -341,7 +341,7 @@ export default function MyCoursesPage() {
                   <h3 className="truncate text-[15px] font-semibold">{c.title}</h3>
                 </div>
                 <div className="flex shrink-0 gap-2">
-                  <Button href={`/bibliotheque#${c.id}`} variant="soft" size="sm">Ouvrir</Button>
+                  <Button href={`/programme#${c.id}`} variant="soft" size="sm">Ouvrir</Button>
                   <button onClick={() => removeCustomCourse(c.id)} aria-label={`Supprimer ${c.title}`}
                     className="grid h-8 w-8 place-items-center rounded-lg"
                     style={{ background: "var(--bad-soft)", color: "var(--bad)" }}>

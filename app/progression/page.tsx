@@ -1,11 +1,13 @@
 "use client";
 
+import Link from "next/link";
 import { useMemo, useState } from "react";
 import { useStudiJur } from "@/lib/state";
 import { allLessons, corpusStats, findLesson } from "@/lib/corpus";
 import { BOX_INTERVALS, dueCards, masteredCount, todayKey } from "@/lib/srs";
 import { Button, SectionTitle, Tag } from "@/components/ui";
-import { Check, Cross, Flame } from "@/components/icons";
+import { Check, Chevron, Cross, Flame, Trophy } from "@/components/icons";
+import Parrainage from "@/components/Parrainage";
 
 export default function ProgressPage() {
   const { state, ready, gradeDefinition } = useStudiJur();
@@ -103,6 +105,24 @@ export default function ProgressPage() {
             <div className="mt-4"><Button href="/" variant="outline">Retour à la séance du jour</Button></div>
           </div>
         )}
+      </section>
+
+      <section>
+        <SectionTitle kicker="Autour de toi" title="Classement et parrainage" />
+        <Link href="/classement" data-hue="gold"
+          className="card flex items-center gap-3.5 p-3.5 transition-transform hover:-translate-y-0.5">
+          <span className="grid h-10 w-10 shrink-0 place-items-center rounded-xl" style={{ background: "var(--h-soft)", color: "var(--h)" }}>
+            <Trophy className="h-[19px] w-[19px]" />
+          </span>
+          <div className="min-w-0 flex-1">
+            <h3 className="text-[14.5px] font-semibold">Classement de promo</h3>
+            <p className="mt-0.5 text-[12.5px] leading-snug" style={{ color: "var(--muted)" }}>
+              Anonyme : compare ta série et tes définitions sues à celles de ta fac.
+            </p>
+          </div>
+          <span className="shrink-0" style={{ color: "var(--muted)" }}><Chevron className="h-4 w-4" /></span>
+        </Link>
+        <div className="mt-3"><Parrainage /></div>
       </section>
     </div>
   );
