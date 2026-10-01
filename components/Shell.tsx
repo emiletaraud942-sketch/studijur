@@ -9,7 +9,6 @@ import { Books, Chart, Gear, Grid, Home, Quill, Scales, Search, Upload, Flame } 
 import { longDate } from "@/lib/format";
 import InstallPrompt from "./InstallPrompt";
 import SearchOverlay from "./SearchOverlay";
-import UrgencyBanner from "./UrgencyBanner";
 
 const NAV = [
   { href: "/", label: "Aujourd'hui", Icon: Home },
@@ -83,7 +82,6 @@ export default function Shell({ children }: { children: React.ReactNode }) {
         </header>
       )}
 
-      {!inLesson && !publique && <UrgencyBanner />}
       {!inLesson && !publique && <InstallPrompt />}
 
       {showConnexion && !inLesson && !publique && (
