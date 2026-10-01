@@ -10,6 +10,7 @@ import {
 } from "./srs";
 import { getSupabase, supabaseConfigured } from "./supabase";
 import { isOwner } from "./owner";
+import { capturerParrainage } from "./referral";
 
 const KEY = "lexio.state.v1";
 const TRIAL_DAYS = 7;
@@ -203,6 +204,10 @@ export function StudiJurProvider({ children }: { children: React.ReactNode }) {
     const local = readLocal();
     if (local) setState(local);
     setReady(true);
+    // Capture best-effort d'un éventuel ?parrain= avant même qu'un compte
+    // existe : voir lib/referral.ts, l'attribution elle-même n'a lieu qu'à
+    // la connexion (app/connexion/page.tsx).
+    capturerParrainage();
 
     const sb = getSupabase();
     if (!sb) return;
