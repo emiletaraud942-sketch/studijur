@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { useStudiJur } from "@/lib/state";
 
 const DISMISS_KEY = "studijur.install-dismissed.v1";
 
@@ -25,12 +26,22 @@ function isIOS(): boolean {
 // (mobile) ou l'installer comme application (bureau). Sur Chrome/Edge, on
 // intercepte l'évènement natif pour proposer un vrai bouton « Installer ».
 // Sur iOS/Safari, cet évènement n'existe pas : on affiche le mode d'emploi.
+//
+// Volontairement pas avant la 1ère leçon terminée, et volontairement pas sur
+// le même écran que le rappel/parrainage de fin de 1ère leçon (voir DoneStep
+// dans app/lecon/[id]/page.tsx) : empiler trois demandes d'un coup fait
+// baisser le taux d'acceptation de chacune. Ici on attend que l'élève ait vu
+// la valeur du site ET revienne naviguer dans l'app — un temps distinct, pour
+// une demande qui engage davantage (installer change l'habitude d'ouverture).
 export default function InstallPrompt() {
+  const { ready, state } = useStudiJur();
+  const premiereLeconFaite = Object.values(state.lessons).some((l) => l.completedAt);
   const [deferred, setDeferred] = useState<InstallEvent | null>(null);
   const [show, setShow] = useState(false);
   const [ios, setIos] = useState(false);
 
   useEffect(() => {
+    if (!ready || !premiereLeconFaite) return;
     if (isStandalone()) return;
     try {
       if (localStorage.getItem(DISMISS_KEY)) return;
@@ -51,7 +62,7 @@ export default function InstallPrompt() {
     }
     window.addEventListener("beforeinstallprompt", onPrompt);
     return () => window.removeEventListener("beforeinstallprompt", onPrompt);
-  }, []);
+  }, [ready, premiereLeconFaite]);
 
   function dismiss() {
     setShow(false);

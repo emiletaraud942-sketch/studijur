@@ -6,6 +6,8 @@ import { useEffect, useState } from "react";
 import { useStudiJur, supabaseConfigured, trialDaysLeft } from "@/lib/state";
 import { corpusStats } from "@/lib/corpus";
 import { connexionHref } from "@/lib/nav";
+import { getSupabase } from "@/lib/supabase";
+import { estParraine } from "@/lib/referral";
 import { Button, SectionTitle, Tag } from "@/components/ui";
 import { Check } from "@/components/icons";
 
@@ -27,11 +29,28 @@ export default function SubscribePage() {
   const [stripeOn, setStripeOn] = useState<boolean | null>(null);
   const [busy, setBusy] = useState<{ plan: Plan; skipTrial: boolean } | null>(null);
   const [error, setError] = useState("");
+  const [userId, setUserId] = useState<string | undefined>();
+  const [parraine, setParraine] = useState(false);
   const stats = corpusStats(state.customCourses);
 
   useEffect(() => {
     fetch("/api/status").then((r) => r.json()).then((s) => setStripeOn(Boolean(s.stripe))).catch(() => setStripeOn(false));
   }, []);
+
+  useEffect(() => {
+    if (!signedInAs) return;
+    const sb = getSupabase();
+    if (!sb) return;
+    let annule = false;
+    (async () => {
+      const { data } = await sb.auth.getUser();
+      const id = data.user?.id;
+      if (!id || annule) return;
+      setUserId(id);
+      setParraine(await estParraine(id));
+    })();
+    return () => { annule = true; };
+  }, [signedInAs]);
 
   // Un abonnement doit être lié à un compte pour rester actif au-delà de cet
   // appareil (voir /api/checkout) : on demande donc de se connecter avant de
@@ -50,7 +69,7 @@ export default function SubscribePage() {
         // link) est stockée par le navigateur pour ce domaine précis, donc
         // si Stripe nous ramène sur un autre domaine après paiement, on
         // paraît « déconnecté » alors que le compte est intact (voir /api/checkout).
-        body: JSON.stringify({ plan, email: signedInAs, origin: window.location.origin, skipTrial }),
+        body: JSON.stringify({ plan, email: signedInAs, userId, origin: window.location.origin, skipTrial }),
       });
       const data = await res.json();
       if (data.url) { window.location.href = data.url; return; }
@@ -79,6 +98,12 @@ export default function SubscribePage() {
                 : "Ton essai gratuit est terminé."}
         </p>
       </div>
+
+      {parraine && !abonne && (
+        <div className="rounded-xl p-3.5 text-center text-[13.5px] font-semibold" style={{ background: "var(--gold-soft)", color: "var(--gold)" }}>
+          Tu as été invité(e) par un ami : 0,90 € offerts, appliqués automatiquement à l&apos;abonnement.
+        </div>
+      )}
 
       <section className="card overflow-hidden" data-hue="green">
         <div className="h-1" style={{ background: "var(--accent)" }} />
