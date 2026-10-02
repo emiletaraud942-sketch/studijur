@@ -2,8 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { ccAVenir, type RevisionCCConfig } from "@/lib/revision-cc-config";
-import { etapeActuelle, joursAvant } from "./PlanDeBataille";
+import { ccAVenir, etapeActuelle, joursAvant, type RevisionCCConfig } from "@/lib/revision-cc-config";
 import { Arrow } from "./icons";
 
 // Calculé côté client uniquement (useEffect, pas au premier rendu) : une
