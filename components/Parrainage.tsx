@@ -45,9 +45,9 @@ export default function Parrainage() {
       <SectionTitle kicker="Parrainage" title="Invite tes amis" />
       <p className="mb-3 text-[13.5px]" style={{ color: "var(--muted)" }}>
         {filleuls === null
-          ? "Partage ton lien : chaque camarade qui l'utilise pour créer son compte compte pour toi."
+          ? "Partage ton lien : ton camarade économise 0,90 € sur son abonnement, et ça compte pour toi."
           : filleuls === 0
-            ? "Personne n'a encore rejoint via ton lien — partage-le dans ton groupe de promo."
+            ? "Personne n'a encore rejoint via ton lien — partage-le dans ton groupe de promo. Ton camarade économise 0,90 € sur son abonnement."
             : `${filleuls} camarade${filleuls > 1 ? "s" : ""} ${filleuls > 1 ? "ont" : "a"} rejoint StudiJur grâce à toi.`}
       </p>
       <div className="flex gap-2">

@@ -59,3 +59,17 @@ export async function compterFilleuls(userId: string): Promise<number> {
     .eq("parrain_id", userId);
   return count ?? 0;
 }
+
+// Sert à afficher la réduction de 0,90 € sur /abonnement — l'application
+// réelle de la réduction au paiement se fait côté serveur (voir
+// /api/checkout), cette fonction n'est qu'un affichage.
+export async function estParraine(userId: string): Promise<boolean> {
+  const sb = getSupabase();
+  if (!sb) return false;
+  const { data } = await sb
+    .from("parrainages")
+    .select("id")
+    .eq("filleul_id", userId)
+    .maybeSingle();
+  return Boolean(data);
+}
