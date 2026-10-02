@@ -97,7 +97,7 @@ export default function MonAbonnementPage() {
           <p className="mt-4 rounded-xl p-4 text-[13.5px]" style={{ background: "var(--surface-2)", color: "var(--muted)" }}>
             Le paiement n&apos;est pas branché sur cette installation : il n&apos;y a rien à gérer, l&apos;accès reste ouvert.
           </p>
-        ) : (
+        ) : abonne ? (
           <div className="mt-4 space-y-3">
             <Button onClick={openPortal} disabled={busy} size="lg" full>
               {busy ? "Ouverture…" : "Gérer ou résilier mon abonnement"}
@@ -105,9 +105,19 @@ export default function MonAbonnementPage() {
             <p className="text-center text-[12.5px]" style={{ color: "var(--muted)" }}>
               Tu seras redirigé vers la page sécurisée de Stripe, notre prestataire de paiement.
             </p>
-            {!abonne && (
-              <Button href="/abonnement" variant="outline" full>Voir les formules</Button>
-            )}
+          </div>
+        ) : (
+          // Pas d'abonnement actif : le portail Stripe n'a rien à gérer pour ce
+          // compte et renverrait une erreur ("aucun abonnement rattaché à cette
+          // adresse") — un nouvel inscrit se retrouvait ainsi face à un bouton
+          // cassé au lieu d'un chemin vers le paiement. On propose directement
+          // de s'abonner.
+          <div className="mt-4 space-y-3">
+            <Button href="/abonnement" size="lg" full>S&apos;abonner</Button>
+            <p className="text-center text-[12.5px]" style={{ color: "var(--muted)" }}>
+              Déjà payé avec une autre adresse email ?{" "}
+              <a href={MAILTO} className="underline font-semibold" style={{ color: "var(--accent)" }}>Écris-nous</a>.
+            </p>
           </div>
         )}
 
