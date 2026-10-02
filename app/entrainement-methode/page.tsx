@@ -1,14 +1,16 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
-import { useStudiJur } from "@/lib/state";
-import { getSupabase } from "@/lib/supabase";
+import { useStudiJur, supabaseConfigured } from "@/lib/state";
+import { getSupabase, authFetchHeaders } from "@/lib/supabase";
+import { connexionHref } from "@/lib/nav";
 import { logReponse } from "@/lib/reponses";
 import { allCourses } from "@/lib/corpus";
 import { notionLabel } from "@/lib/notions";
 import { Button, Tag } from "@/components/ui";
 import { Arrow, Check } from "@/components/icons";
-import type { TypeExerciceMethodo } from "@/lib/types";
+import { usePathname } from "next/navigation";
+import type { EssayFeedback, TypeExerciceMethodo } from "@/lib/types";
 
 const TYPE_LABEL: Record<TypeExerciceMethodo, string> = {
   cas_pratique: "Cas pratique",
@@ -29,7 +31,8 @@ type ExercicePublic = {
 };
 
 export default function EntrainementMethodePage() {
-  const { state, gradeExerciceMethodo, bumpActiviteDuJour } = useStudiJur();
+  const pathname = usePathname();
+  const { state, signedInAs, gradeExerciceMethodo, bumpActiviteDuJour } = useStudiJur();
   const [exercices, setExercices] = useState<ExercicePublic[]>([]);
   const [loading, setLoading] = useState(true);
   const [notionFiltre, setNotionFiltre] = useState("");
@@ -38,6 +41,15 @@ export default function EntrainementMethodePage() {
   const [grilleVisible, setGrilleVisible] = useState(false);
   const [coches, setCoches] = useState<Set<number>>(new Set());
   const [resultat, setResultat] = useState<"reussi" | "a-retravailler" | null>(null);
+  // Correction IA (Fonctionnalité déjà utilisée pour la question type examen de
+  // la leçon quotidienne, voir app/lecon/[id]/page.tsx) : la grille de
+  // correction manuelle reste disponible juste au-dessous, pour qui préfère
+  // s'auto-évaluer sans dépenser de quota IA.
+  const [iaState, setIaState] = useState<"idle" | "loading" | "done" | "error">("idle");
+  const [iaFeedback, setIaFeedback] = useState<EssayFeedback | null>(null);
+  const [iaError, setIaError] = useState("");
+  const motsRedaction = redaction.trim().split(/\s+/).filter(Boolean).length;
+  const connexionRequise = supabaseConfigured && !signedInAs;
 
   useEffect(() => {
     const sb = getSupabase();
@@ -68,6 +80,45 @@ export default function EntrainementMethodePage() {
     setGrilleVisible(false);
     setCoches(new Set());
     setResultat(null);
+    setIaState("idle");
+    setIaFeedback(null);
+    setIaError("");
+  }
+
+  async function corrigerParIA() {
+    if (!ouvert) return;
+    setIaState("loading");
+    setIaError("");
+    try {
+      const res = await fetch("/api/correction", {
+        method: "POST",
+        headers: { "content-type": "application/json", ...(await authFetchHeaders()) },
+        body: JSON.stringify({
+          question: ouvert.enonce,
+          kind: ouvert.type,
+          brouillon: redaction,
+          lessonTitle: notionLabel(ouvert.notion_id, state.customCourses),
+        }),
+      });
+      const data = await res.json();
+      if (!res.ok) {
+        setIaState("error");
+        setIaError(data.error ?? "La correction a échoué.");
+        return;
+      }
+      setIaFeedback(data.feedback);
+      setIaState("done");
+      bumpActiviteDuJour(1);
+      void logReponse({
+        notionId: ouvert.notion_id,
+        questionId: `methodo:${ouvert.id}`,
+        source: "methodo",
+        correcte: data.feedback.note >= 10,
+      });
+    } catch {
+      setIaState("error");
+      setIaError("Le serveur n'a pas répondu. Réessaie dans un instant.");
+    }
   }
 
   function toggleCritere(i: number) {
@@ -120,11 +171,79 @@ export default function EntrainementMethodePage() {
           <textarea id="redaction" rows={10} value={redaction} onChange={(e) => setRedaction(e.target.value)}
             className="w-full resize-y rounded-xl border p-3 text-[14.5px] leading-relaxed outline-none"
             style={{ background: "var(--surface-2)", borderColor: "var(--line)" }} />
+          {motsRedaction < 30 && (
+            <p className="mt-1.5 text-[12px]" style={{ color: "var(--muted)" }}>{motsRedaction}/30 mots minimum pour la correction IA</p>
+          )}
+        </section>
+
+        <section className="card p-5">
+          <h2 className="mb-2 text-[12px] font-bold uppercase tracking-wide" style={{ color: "var(--h)" }}>Correction par l&apos;IA</h2>
+          {iaState !== "done" && (
+            <>
+              <p className="mb-3 text-[13.5px] leading-relaxed" style={{ color: "var(--muted)" }}>
+                Note sur 20, points forts, points faibles et conseils, comme un chargé de TD — sur ta rédaction
+                ci-dessus.
+              </p>
+              {connexionRequise ? (
+                <Button href={connexionHref(pathname ?? "/entrainement-methode")} size="lg" full>
+                  Se connecter pour la correction IA <Arrow className="h-4 w-4" />
+                </Button>
+              ) : (
+                <Button onClick={corrigerParIA} disabled={motsRedaction < 30 || iaState === "loading"} size="lg" full>
+                  {iaState === "loading" ? "Correction en cours…" : "Faire corriger par l'IA"} <Arrow className="h-4 w-4" />
+                </Button>
+              )}
+              {iaState === "error" && <p className="mt-3 text-[13.5px]" style={{ color: "var(--bad)" }}>{iaError}</p>}
+            </>
+          )}
+          {iaState === "done" && iaFeedback && (
+            <div className="rise space-y-4">
+              <div className="flex items-center gap-4">
+                <div className="serif text-[34px] font-bold leading-none tabular" style={{ color: "var(--h)" }}>
+                  {iaFeedback.note}<span className="text-[16px]" style={{ color: "var(--muted)" }}>/{iaFeedback.bareme}</span>
+                </div>
+                <p className="flex-1 text-[13.5px] leading-relaxed" style={{ color: "var(--ink-2)" }}>{iaFeedback.commentaire}</p>
+              </div>
+              {iaFeedback.pointsForts.length > 0 && (
+                <div>
+                  <h3 className="mb-1.5 text-[11.5px] font-bold uppercase tracking-[0.1em]" style={{ color: "var(--good)" }}>Points forts</h3>
+                  <ul className="space-y-1">
+                    {iaFeedback.pointsForts.map((p, i) => (
+                      <li key={i} className="text-[13.5px] leading-relaxed" style={{ color: "var(--ink-2)" }}>{p}</li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+              {iaFeedback.pointsFaibles.length > 0 && (
+                <div>
+                  <h3 className="mb-1.5 text-[11.5px] font-bold uppercase tracking-[0.1em]" style={{ color: "var(--bad)" }}>À améliorer</h3>
+                  <ul className="space-y-1">
+                    {iaFeedback.pointsFaibles.map((p, i) => (
+                      <li key={i} className="text-[13.5px] leading-relaxed" style={{ color: "var(--ink-2)" }}>{p}</li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+              {iaFeedback.conseils.length > 0 && (
+                <div>
+                  <h3 className="mb-1.5 text-[11.5px] font-bold uppercase tracking-[0.1em]" style={{ color: "var(--h)" }}>Conseils</h3>
+                  <ul className="space-y-1">
+                    {iaFeedback.conseils.map((p, i) => (
+                      <li key={i} className="text-[13.5px] leading-relaxed" style={{ color: "var(--ink-2)" }}>{p}</li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+              <button onClick={() => setIaState("idle")} className="text-[12.5px] font-semibold" style={{ color: "var(--muted)" }}>
+                Refaire corriger après modification
+              </button>
+            </div>
+          )}
         </section>
 
         {!grilleVisible ? (
-          <Button onClick={() => setGrilleVisible(true)} size="lg" full>
-            Voir la grille de correction <Arrow className="h-4 w-4" />
+          <Button onClick={() => setGrilleVisible(true)} variant="outline" size="lg" full>
+            Voir la grille de correction et le corrigé, sans IA <Arrow className="h-4 w-4" />
           </Button>
         ) : (
           <>
