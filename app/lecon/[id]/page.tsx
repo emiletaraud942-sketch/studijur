@@ -20,6 +20,7 @@ import AccountCTA from "@/components/AccountCTA";
 import RappelPromo from "@/components/RappelPromo";
 import Parrainage from "@/components/Parrainage";
 import { StreakMilestone } from "@/components/StreakMilestone";
+import { shuffle } from "@/components/QuizEclair";
 import type { Course, EssayFeedback, StepName } from "@/lib/types";
 
 const STEP_META: Record<StepName, { label: string; nextPhrase: string; Icon: typeof Quill }> = {
@@ -690,6 +691,10 @@ function QuizStep({
   const q = lesson.quiz[i];
   const last = i === lesson.quiz.length - 1;
   const correct = picked === q.answer;
+  // La bonne réponse était en position 2 dans ~70 % des questions du corpus
+  // (habitude d'écriture, jamais corrigée) — voir components/QuizEclair.tsx,
+  // même mécanique de mélange à l'affichage uniquement.
+  const ordre = useMemo(() => shuffle(q.choices.map((_, idx) => idx)), [q]);
 
   function next() {
     if (last) { onFinish(score + (correct ? 1 : 0)); return; }
@@ -713,7 +718,8 @@ function QuizStep({
       <div key={i} className="card pop p-5">
         <p className="text-[16.5px] font-semibold leading-snug">{q.q}</p>
         <div className="mt-4 space-y-2.5">
-          {q.choices.map((c, idx) => {
+          {ordre.map((idx) => {
+            const c = q.choices[idx];
             const isAnswer = idx === q.answer;
             const isPicked = idx === picked;
             let style: React.CSSProperties = { background: "var(--surface-2)", borderColor: "var(--line)", color: "var(--ink)" };
