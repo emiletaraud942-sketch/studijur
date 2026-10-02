@@ -1,16 +1,20 @@
 import { NextResponse } from "next/server";
 import Stripe from "stripe";
 import { createClient, type SupabaseClient } from "@supabase/supabase-js";
+import { idCouponParrainage } from "@/lib/stripe-parrainage";
 
 export const runtime = "nodejs";
 
-const RECOMPENSE_PARRAIN_CENTS = 90;
-
-// Symétrique à la réduction du filleul (voir /api/checkout) : si le compte
-// qui vient de payer a été parrainé et que son parrain n'a pas encore été
-// crédité pour lui, on pose un crédit de 0,90 € sur le customer Stripe du
-// parrain (balance négative = crédit, appliqué automatiquement à sa
-// prochaine facture — y compris s'il est déjà abonné). user_id_by_email et
+// Symétrique à la réduction du filleul (voir /api/checkout, qui applique le
+// même coupon directement sur sa session de paiement) : si le compte qui
+// vient de payer a été parrainé et que son parrain n'a pas encore été
+// récompensé pour lui, on pose le coupon sur son abonnement Stripe actif —
+// il apparaît explicitement comme une réduction de 0,90 € sur sa prochaine
+// facture (pas un crédit de solde, invisible et présenté comme un simple
+// ajustement). S'il n'a pas d'abonnement actif pour l'instant (jamais
+// abonné, ou résilié), rien à réduire tout de suite : la récompense reste en
+// attente (parrain_credite=false) et s'appliquera à son prochain paiement,
+// voir recompenseParrainEnAttente dans /api/checkout. user_id_by_email et
 // email_by_user_id : auth.users n'est pas exposé via l'API REST, ces deux
 // fonctions SQL security definer font le pont (voir la migration).
 async function crediterParrainSiBesoin(stripe: Stripe, sb: SupabaseClient, filleulEmail: string): Promise<void> {
@@ -28,15 +32,25 @@ async function crediterParrainSiBesoin(stripe: Stripe, sb: SupabaseClient, fille
   if (!parrainEmail) return;
 
   const existants = await stripe.customers.list({ email: parrainEmail, limit: 1 });
-  const customerId = existants.data[0]?.id ?? (await stripe.customers.create({ email: parrainEmail })).id;
+  const customerId = existants.data[0]?.id;
+  if (!customerId) return;
 
-  await stripe.customers.createBalanceTransaction(customerId, {
-    amount: -RECOMPENSE_PARRAIN_CENTS,
-    currency: "eur",
-    description: "Récompense de parrainage StudiJur",
-  });
+  const abonnements = await stripe.subscriptions.list({ customer: customerId, status: "all", limit: 10 });
+  const actif = abonnements.data.find((s) => s.status === "active" || s.status === "trialing");
+  if (!actif) return;
 
+  await stripe.subscriptions.update(actif.id, { discounts: [{ coupon: await idCouponParrainage(stripe) }] });
   await sb.from("parrainages").update({ parrain_credite: true }).eq("id", parrainage.id);
+}
+
+// Pendant de crediterParrainSiBesoin : quand c'est le parrain lui-même qui
+// vient de payer (/api/checkout lui a déjà appliqué la réduction en attente
+// à cette session, voir recompenseParrainEnAttente là-bas), on marque ici la
+// récompense consommée pour ne jamais la réappliquer à un paiement suivant.
+async function marquerRecompenseAppliqueeSiBesoin(sb: SupabaseClient, payeurEmail: string): Promise<void> {
+  const { data: payeurId } = await sb.rpc("user_id_by_email", { p_email: payeurEmail });
+  if (!payeurId) return;
+  await sb.from("parrainages").update({ parrain_credite: true }).eq("parrain_id", payeurId).eq("parrain_credite", false);
 }
 
 // Le webhook tient à jour la table `subscriptions` dans Supabase. Sans les clés
@@ -91,6 +105,7 @@ export async function POST(req: Request) {
           }, { onConflict: "email" });
 
           await crediterParrainSiBesoin(stripe, sb, email);
+          await marquerRecompenseAppliqueeSiBesoin(sb, email);
         }
         break;
       }
