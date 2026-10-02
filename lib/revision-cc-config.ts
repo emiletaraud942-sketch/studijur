@@ -48,11 +48,15 @@ export const REVISION_CC: Record<string, RevisionCCConfig> = {
   },
 };
 
-// Les CC dans moins de 14 jours, triés par échéance — utilisé par la page
-// d'accueil pour proposer le bouton "Réviser pour [matière]" (voir
-// app/page.tsx). Tant qu'aucune date n'est connue, cette liste reste vide et
-// aucun bouton n'apparaît : pas de fausse urgence.
-export function ccAVenir(dansLesJours = 14): RevisionCCConfig[] {
+// Les CC à venir, triés par échéance — utilisé par ProchainCCBanner sur la
+// page d'accueil. Fenêtre large (60 jours, pas 14) : le plan de bataille
+// affiché avec donne déjà la bonne étape ("Fiche complète" tant qu'on est à
+// J-8 ou plus), donc montrer le compte à rebours tôt encourage à s'y mettre
+// avant la dernière semaine plutôt que de l'annoncer seulement quand il est
+// presque trop tard (voir la stratégie de rétention du 2 octobre 2026).
+// Tant qu'aucune date n'est connue, cette liste reste vide et aucun bandeau
+// n'apparaît : pas de fausse urgence.
+export function ccAVenir(dansLesJours = 60): RevisionCCConfig[] {
   const seuil = Date.now() + dansLesJours * 86400000;
   return Object.values(REVISION_CC)
     .filter((c) => c.ccDate && new Date(c.ccDate).getTime() <= seuil && new Date(c.ccDate).getTime() >= Date.now() - 86400000)

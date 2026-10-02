@@ -1,46 +1,28 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useState } from "react";
 import Link from "next/link";
-import { useParams } from "next/navigation";
 import { useStudiJur } from "@/lib/state";
-import { findLesson } from "@/lib/corpus";
-import { REVISION_CC } from "@/lib/revision-cc-config";
-import { Button, Tag } from "@/components/ui";
-import { Arrow, Clock, Cross, Flame, Sitemap } from "@/components/icons";
-import QuizEclair, { shuffle } from "@/components/QuizEclair";
-import { FicheLesson } from "@/components/FicheLesson";
-import { FicheATrous } from "@/components/FicheATrous";
-import { Chronologie } from "@/components/Chronologie";
+import { useRevisionCC } from "@/lib/useRevisionCC";
+import { Button } from "@/components/ui";
+import { Arrow, Calendar, Cards, Chevron, Clock, Cross, Flame, Quill, Sitemap, Target } from "@/components/icons";
+import QuizEclair from "@/components/QuizEclair";
 import { PlanDeBataille } from "@/components/PlanDeBataille";
 import RevisionCCGate from "@/components/RevisionCCGate";
-import type { Lesson } from "@/lib/types";
 
-type Mode = "fiche" | "quiz" | "resultat";
+type Mode = "hub" | "quiz" | "resultat";
 const TAILLE_QUIZ = 15;
-const NB_QUESTIONS_DE_COURS = 3;
 
+// Hub plutôt que longue page unique : chronologie, pièges, questions, fiche
+// à trous et fiche condensée vivent chacun sur leur propre route — tout
+// cramé sur un seul écran était illisible et décourageant avant de
+// commencer. Voir aussi FicheATrous/PiegesClassiques/QuestionsDeCours,
+// passées en revue "une carte à la fois" pour la même raison.
 export default function RevisionCCPage() {
-  const { matiere } = useParams<{ matiere: string }>();
-  const config = REVISION_CC[matiere];
+  const { config, lessons, chronologieLessons } = useRevisionCC();
   const { state, ready, signedInAs } = useStudiJur();
-  const [mode, setMode] = useState<Mode>("fiche");
+  const [mode, setMode] = useState<Mode>("hub");
   const [score, setScore] = useState({ good: 0, total: 0 });
-
-  const lessons = useMemo(
-    () => (config ? (config.lessonSlugs.map((id) => findLesson(id)).filter(Boolean) as Lesson[]) : []),
-    [config],
-  );
-  const chronologieLessons = useMemo(
-    () => (config?.chronologieLessonIds ?? []).map((id) => findLesson(id)).filter(Boolean) as Lesson[],
-    [config],
-  );
-  // Fixé une fois par montage plutôt que recalculé à chaque rendu : sinon les
-  // 3 questions de cours changeraient à chaque frappe ou mise à jour d'état.
-  const questionsDeCours = useMemo(
-    () => shuffle(lessons.filter((l) => l.exam)).slice(0, NB_QUESTIONS_DE_COURS),
-    [lessons],
-  );
 
   if (!config) {
     return (
@@ -61,7 +43,7 @@ export default function RevisionCCPage() {
         lessons={lessons}
         taille={TAILLE_QUIZ}
         onFinish={(good, total) => { setScore({ good, total }); setMode("resultat"); }}
-        onBack={() => setMode("fiche")}
+        onBack={() => setMode("hub")}
       />
     );
   }
@@ -79,14 +61,16 @@ export default function RevisionCCPage() {
         </p>
         <div className="mx-auto mt-6 flex max-w-sm flex-col gap-3">
           <Button onClick={() => setMode("quiz")} size="lg" full>Refaire un tour</Button>
-          <Button onClick={() => setMode("fiche")} variant="outline" size="lg" full>Retour à la fiche</Button>
+          <Button onClick={() => setMode("hub")} variant="outline" size="lg" full>Retour</Button>
         </div>
       </div>
     );
   }
 
-  const pieges = lessons.flatMap((l) => (l.exam.pitfalls ?? []).map((texte) => ({ texte, lessonTitle: l.title })));
+  const pieges = lessons.flatMap((l) => l.exam.pitfalls ?? []);
   const lessonsAvecSchema = lessons.filter((l) => l.schema);
+  const questionsDeCours = lessons.filter((l) => l.exam);
+  const defKeysTotal = lessons.flatMap((l) => l.definitions).length;
 
   const quizIds = lessons.flatMap((l) => l.quiz.map((_, idx) => `${l.id}::quiz${idx}`));
   const defKeys = lessons.flatMap((l) => l.definitions.map((d) => `${l.id}::${d.term}`));
@@ -94,6 +78,15 @@ export default function RevisionCCPage() {
   const defAcquises = defKeys.filter((k) => (state.cards[k]?.box ?? 0) >= 4).length;
   const totalItems = quizIds.length + defKeys.length;
   const pctPreparation = totalItems ? Math.round(((quizAcquis + defAcquises) / totalItems) * 100) : 0;
+
+  const rubriques = [
+    chronologieLessons.length > 0 && { href: "chronologie", Icon: Calendar, titre: "Chronologie", sousTitre: "Les dates clés, dans l'ordre" },
+    lessonsAvecSchema.length > 0 && { href: "apercu", Icon: Sitemap, titre: "Vue d'ensemble", sousTitre: "Les schémas de synthèse" },
+    pieges.length > 0 && { href: "pieges", Icon: Cross, titre: "Pièges classiques", sousTitre: `${pieges.length} erreur${pieges.length > 1 ? "s" : ""} qui reviennent` },
+    questionsDeCours.length > 0 && { href: "questions", Icon: Target, titre: "Questions de cours", sousTitre: "Le plan attendu, à te tester" },
+    defKeysTotal > 0 && { href: "trous", Icon: Cards, titre: "Fiche à trous", sousTitre: `${defKeysTotal} terme${defKeysTotal > 1 ? "s" : ""} à deviner` },
+    lessons.length > 0 && { href: "fiche", Icon: Quill, titre: "Fiche condensée", sousTitre: "Le cours, point par point" },
+  ].filter(Boolean) as { href: string; Icon: typeof Calendar; titre: string; sousTitre: string }[];
 
   return (
     <div className="space-y-6">
@@ -106,56 +99,23 @@ export default function RevisionCCPage() {
 
       <PlanDeBataille ccDate={config.ccDate} />
 
-      <Chronologie lessons={chronologieLessons} />
-
-      {lessonsAvecSchema.length > 0 && (
-        <section>
-          <SousTitre icon={<Sitemap className="h-4 w-4" />} texte="Vue d'ensemble" />
-          <div className="-mx-4 flex gap-3 overflow-x-auto px-4 pb-2 sm:mx-0 sm:px-0">
-            {lessonsAvecSchema.map((l) => (
-              <div key={l.id} className="card w-[280px] shrink-0 p-4">
-                <h3 className="text-[12px] font-bold uppercase tracking-[0.1em]" style={{ color: "var(--h)" }}>{l.schema!.titre}</h3>
-                <div className="mx-auto mt-3 max-w-[220px] [&>svg]:h-auto [&>svg]:w-full" dangerouslySetInnerHTML={{ __html: l.schema!.svg }} />
-              </div>
-            ))}
-          </div>
-        </section>
-      )}
-
-      {pieges.length > 0 && (
-        <section className="card overflow-hidden">
-          <div className="p-5" style={{ background: "var(--bad-soft)" }}>
-            <SousTitre icon={<Cross className="h-4 w-4" />} texte="Pièges classiques" couleur="var(--bad)" />
-          </div>
-          <ul className="divide-y" style={{ borderColor: "var(--line)" }}>
-            {pieges.map((p, i) => (
-              <li key={i} className="p-4">
-                <p className="text-[13.5px] leading-relaxed" style={{ color: "var(--ink-2)" }}>{p.texte}</p>
-                <Tag>{p.lessonTitle}</Tag>
-              </li>
-            ))}
-          </ul>
-        </section>
-      )}
-
-      {questionsDeCours.length > 0 && (
-        <section>
-          <SousTitre texte="Questions de cours à te poser" />
-          <div className="space-y-3">
-            {questionsDeCours.map((l) => <QuestionDeCours key={l.id} lesson={l} />)}
-          </div>
-        </section>
-      )}
-
-      <FicheATrous lessons={lessons} />
-
       <section>
-        <SousTitre texte="Fiche condensée" />
-        <div className="space-y-3">
-          {lessons.map((l) => (
-            <div key={l.id} data-hue="gold" className="card overflow-hidden">
-              <FicheLesson lesson={l} />
-            </div>
+        <div className="mb-3 text-[12px] font-bold uppercase tracking-[0.1em]" style={{ color: "var(--muted)" }}>
+          Par rubrique
+        </div>
+        <div className="space-y-2.5">
+          {rubriques.map(({ href, Icon, titre, sousTitre }) => (
+            <Link key={href} href={`/revision-cc/${config.id}/${href}`} data-hue="gold"
+              className="card flex items-center gap-3.5 p-3.5 transition-transform hover:-translate-y-0.5">
+              <span className="grid h-10 w-10 shrink-0 place-items-center rounded-xl" style={{ background: "var(--h-soft)", color: "var(--h)" }}>
+                <Icon className="h-[19px] w-[19px]" />
+              </span>
+              <div className="min-w-0 flex-1">
+                <h3 className="text-[14.5px] font-semibold">{titre}</h3>
+                <p className="mt-0.5 text-[12.5px] leading-snug" style={{ color: "var(--muted)" }}>{sousTitre}</p>
+              </div>
+              <span className="shrink-0" style={{ color: "var(--muted)" }}><Chevron className="h-4 w-4" /></span>
+            </Link>
           ))}
         </div>
       </section>
@@ -163,14 +123,6 @@ export default function RevisionCCPage() {
       <Button onClick={() => setMode("quiz")} size="lg" full disabled={!lessons.some((l) => l.quiz.length)}>
         Lancer le quiz ({Math.min(TAILLE_QUIZ, lessons.reduce((n, l) => n + l.quiz.length, 0))} questions) <Arrow className="h-4 w-4" />
       </Button>
-    </div>
-  );
-}
-
-function SousTitre({ icon, texte, couleur }: { icon?: React.ReactNode; texte: string; couleur?: string }) {
-  return (
-    <div className="mb-3 flex items-center gap-2 text-[12px] font-bold uppercase tracking-[0.1em]" style={{ color: couleur ?? "var(--muted)" }}>
-      {icon}{texte}
     </div>
   );
 }
@@ -203,28 +155,5 @@ function CompteARebours({ ccDate, pctPreparation }: { ccDate: string | null; pct
         </div>
       </div>
     </section>
-  );
-}
-
-function QuestionDeCours({ lesson }: { lesson: Lesson }) {
-  const [revele, setRevele] = useState(false);
-  return (
-    <div className="card p-4">
-      <Tag tone="hue">{lesson.title}</Tag>
-      <p className="mt-2 text-[14.5px] font-semibold leading-snug">{lesson.exam.question}</p>
-      <button onClick={() => setRevele((v) => !v)}
-        className="mt-3 rounded-xl px-3.5 py-2 text-[13px] font-semibold active:scale-[0.98]"
-        style={{ background: revele ? "var(--accent)" : "var(--accent-soft)", color: revele ? "var(--accent-ink)" : "var(--accent-strong)" }}>
-        {revele ? "Masquer le plan attendu" : "Voir le plan attendu"}
-      </button>
-      {revele && (
-        <div className="mt-3 space-y-2 border-t pt-3" style={{ borderColor: "var(--line)" }}>
-          <p className="text-[13.5px] leading-relaxed" style={{ color: "var(--ink-2)" }}>{lesson.exam.concise}</p>
-          {lesson.exam.plan.map((partie, i) => (
-            <p key={i} className="text-[12.5px] font-semibold" style={{ color: "var(--muted)" }}>{partie.title}</p>
-          ))}
-        </div>
-      )}
-    </div>
   );
 }
