@@ -13,6 +13,17 @@ import { isOwner } from "./owner";
 import { capturerParrainage } from "./referral";
 
 const KEY = "lexio.state.v1";
+// Identifie à QUI appartient l'état stocké dans KEY — séparé de ProgressState
+// pour ne jamais polluer ce qui part vers Supabase. Sans ça, un appareil déjà
+// utilisé par un compte (ex. l'appareil de test du créateur, passé "actif"
+// via isOwner) renvoyait sa progression ET son plan à n'importe quel AUTRE
+// compte qui se connectait ensuite dessus, tant que ce nouveau compte n'avait
+// pas encore de ligne distante (donc systématiquement à l'inscription) — le
+// bug vécu le 02/10/2026. `null` signifie "jamais associé à un compte"
+// (usage anonyme avant connexion) : ce cas reste volontairement rattaché au
+// premier compte qui se connecte, pour que la progression anonyme survive à
+// la création de compte.
+const OWNER_KEY = "lexio.state.owner";
 const TRIAL_DAYS = 7;
 
 function freshState(): ProgressState {
@@ -215,7 +226,19 @@ export function StudiJurProvider({ children }: { children: React.ReactNode }) {
     (async () => {
       const { data } = await sb.auth.getUser();
       if (cancelled || !data.user) return;
-      setSignedInAs(data.user.email ?? data.user.id);
+      const myId = data.user.email ?? data.user.id;
+      setSignedInAs(myId);
+
+      // L'état local peut appartenir à un AUTRE compte déjà connecté sur cet
+      // appareil (voir OWNER_KEY) : s'il ne correspond pas à qui se connecte
+      // maintenant, on repart d'un état neuf plutôt que de prêter sa
+      // progression et son plan à quelqu'un d'autre, le temps que l'appel
+      // suivant récupère (ou non) le véritable état distant de ce compte.
+      let localOwner: string | null = null;
+      try { localOwner = window.localStorage.getItem(OWNER_KEY); } catch { /* stockage bloqué */ }
+      const localIsForeign = localOwner !== null && localOwner !== myId;
+      if (localIsForeign) setState(freshState());
+
       const { data: row } = await sb
         .from("progress")
         .select("state")
@@ -230,9 +253,10 @@ export function StudiJurProvider({ children }: { children: React.ReactNode }) {
         // ancienne version dès qu'il avait autant ou plus de leçons faites.
         const remote = row.state as ProgressState;
         const remoteTime = remote.savedAt ? Date.parse(remote.savedAt) : 0;
-        const localTime = local?.savedAt ? Date.parse(local.savedAt) : 0;
-        if (!local || remoteTime > localTime) setState({ ...freshState(), ...remote });
+        const localTime = (!localIsForeign && local?.savedAt) ? Date.parse(local.savedAt) : 0;
+        if (localIsForeign || !local || remoteTime > localTime) setState({ ...freshState(), ...remote });
       }
+      try { window.localStorage.setItem(OWNER_KEY, myId); } catch { /* stockage bloqué */ }
       // Un abonnement payé peut avoir été activé depuis un autre appareil, ou
       // juste avant que cette session ne se (re)connecte : on vérifie à
       // chaque connexion plutôt que de ne jamais le faire. Le compte du
