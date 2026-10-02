@@ -296,8 +296,9 @@ export default function EntrainementMethodePage() {
       <div>
         <h1 className="serif text-[26px] font-bold">S&apos;entraîner à la méthode</h1>
         <p className="mt-1.5 text-[14.5px]" style={{ color: "var(--muted)" }}>
-          Cas pratique, commentaire d&apos;arrêt, dissertation : rédige en conditions réelles, puis auto-évalue-toi
-          contre une grille de correction et un corrigé type. Pas de note automatique — c&apos;est à toi de juger.
+          Cas pratique, commentaire d&apos;arrêt, dissertation : rédige en conditions réelles, puis fais-toi
+          corriger par l&apos;IA — note sur 20, points forts, points faibles et conseils — ou auto-évalue-toi
+          contre une grille de correction et un corrigé type, sans IA.
         </p>
       </div>
 
