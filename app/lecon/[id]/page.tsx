@@ -19,6 +19,7 @@ import { lessonMindMap } from "@/lib/mindmap";
 import AccountCTA from "@/components/AccountCTA";
 import RappelPromo from "@/components/RappelPromo";
 import Parrainage from "@/components/Parrainage";
+import { StreakMilestone } from "@/components/StreakMilestone";
 import type { Course, EssayFeedback, StepName } from "@/lib/types";
 
 const STEP_META: Record<StepName, { label: string; nextPhrase: string; Icon: typeof Quill }> = {
@@ -781,6 +782,8 @@ function DoneStep({
           <div className="text-[12px]" style={{ color: "var(--muted)" }}>jours de série</div>
         </div>
       </div>
+
+      <StreakMilestone streak={streak} />
 
       <LessonReaction lessonId={lessonId} />
 

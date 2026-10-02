@@ -1,12 +1,14 @@
 import { NextResponse } from "next/server";
 import { getAdmin } from "@/lib/supabase-admin";
 import { getWebPush, pushConfigured } from "@/lib/push";
-
-export const runtime = "nodejs";
-export const maxDuration = 300;
+import { pickDailyLesson } from "@/lib/corpus";
+import { ccAVenir, etapeActuelle, joursAvant } from "@/lib/revision-cc-config";
+import type { ProgressState } from "@/lib/types";
 
 // Des messages qui tournent : un rappel identique tous les soirs devient un
-// bruit qu'on finit par désactiver.
+// bruit qu'on finit par désactiver. Sert de repli pour les abonnements
+// anonymes (pas de compte, donc pas de progression à personnaliser) et pour
+// un compte dont on n'a trouvé ni CC proche ni prochaine leçon.
 const MESSAGES = [
   { titre: "Cinq minutes ?", corps: "Ta séance du jour t'attend. Le cours, cinq définitions, un quiz." },
   { titre: "Ta série continue", corps: "Une séance aujourd'hui et le compteur repart de plus belle." },
@@ -14,6 +16,38 @@ const MESSAGES = [
   { titre: "Une question t'attend", corps: "Question type examen du jour, avec sa correction et son plan détaillé." },
   { titre: "Définitions du jour", corps: "Cinq définitions à réciter. Celles que tu rates reviendront demain." },
 ];
+
+// Contenu personnalisé par compte plutôt que le même message pour tout le
+// monde : priorité au CC le plus proche s'il y en a un dans la fenêtre
+// d'urgence réelle (14 jours, voir ccAVenir — pas les 60 jours de la bannière
+// d'accueil, qui peut se permettre d'être vue tous les jours ; une
+// notification doit rester rare et justifiée). Sinon, le nom de la prochaine
+// leçon. Sinon, repli sur la rotation générique.
+function messagePersonnalise(etat: Pick<ProgressState, "lessons" | "profile" | "customCourses"> | null): { titre: string; corps: string } {
+  const prochainCC = ccAVenir(14)[0];
+  if (prochainCC?.ccDate) {
+    const jours = joursAvant(prochainCC.ccDate);
+    if (jours >= 0) {
+      const etape = etapeActuelle(jours);
+      return {
+        titre: jours === 0 ? "C'est le jour J" : `J-${jours} avant le CC`,
+        corps: etape
+          ? `${prochainCC.label} : ${etape.titre.toLowerCase()}.`
+          : `${prochainCC.label} approche. Cinq minutes maintenant.`,
+      };
+    }
+  }
+
+  if (etat) {
+    const doneIds = Object.values(etat.lessons ?? {}).filter((l) => l.completedAt).map((l) => l.lessonId);
+    const daily = pickDailyLesson(doneIds, etat.profile?.activeCourses ?? [], etat.customCourses ?? []);
+    if (daily) {
+      return { titre: "Ta séance t'attend", corps: `Aujourd'hui : « ${daily.title} ». Cinq minutes, pas plus.` };
+    }
+  }
+
+  return MESSAGES[new Date().getDate() % MESSAGES.length];
+}
 
 function autorise(req: Request): boolean {
   const attendu = process.env.CRON_SECRET;
@@ -73,6 +107,7 @@ export async function GET(req: Request) {
   const idsConnus = [...new Set((comptes ?? []).map((a) => a.user_id).filter((id): id is string => Boolean(id)))];
   const preferences = new Map<string, number>();
   const dejaFaitAujourdhui = new Set<string>();
+  const progressionsParCompte = new Map<string, Pick<ProgressState, "lessons" | "profile" | "customCourses">>();
   if (idsConnus.length) {
     const aujourdhui = new Intl.DateTimeFormat("fr-CA", { timeZone: "Europe/Paris" }).format(new Date());
     const { data: progressions } = await sb
@@ -80,17 +115,18 @@ export async function GET(req: Request) {
       .select("user_id, state")
       .in("user_id", idsConnus);
     for (const p of progressions ?? []) {
-      const profil = (p.state as {
-        profile?: { reminderHour?: number };
+      const profil = (p.state as Pick<ProgressState, "lessons" | "profile" | "customCourses"> & {
         streak?: { lastDay?: string; objectifAtteint?: boolean };
       } | null);
-      if (typeof profil?.profile?.reminderHour === "number") {
+      if (!profil) continue;
+      progressionsParCompte.set(p.user_id as string, profil);
+      if (typeof profil.profile?.reminderHour === "number") {
         preferences.set(p.user_id as string, profil.profile.reminderHour);
       }
       // `objectifAtteint` (Fonctionnalité E) couvre plus de cas que `lastDay`
       // seul (répondre à des questions sans finir toute une leçon compte
       // aussi) : on garde les deux plutôt que de choisir, un seul suffit.
-      if (profil?.streak?.lastDay === aujourdhui || profil?.streak?.objectifAtteint) {
+      if (profil.streak?.lastDay === aujourdhui || profil.streak?.objectifAtteint) {
         dejaFaitAujourdhui.add(p.user_id as string);
       }
     }
@@ -109,14 +145,14 @@ export async function GET(req: Request) {
   // appareil uniquement a déjà fait.
   const aEnvoyer = abonnements.filter((a) => !a.user_id || !dejaFaitAujourdhui.has(a.user_id));
 
-  const message = MESSAGES[new Date().getDate() % MESSAGES.length];
-  const charge = JSON.stringify({ ...message, url: "/" });
-
   let envoyes = 0;
   const perimes: string[] = [];
 
   await Promise.all(
     aEnvoyer.map(async (a) => {
+      const etat = a.user_id ? progressionsParCompte.get(a.user_id) ?? null : null;
+      const message = messagePersonnalise(etat);
+      const charge = JSON.stringify({ ...message, url: "/" });
       try {
         await wp.sendNotification(
           { endpoint: a.endpoint, keys: { p256dh: a.p256dh, auth: a.auth } },
