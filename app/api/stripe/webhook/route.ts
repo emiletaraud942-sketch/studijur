@@ -1,8 +1,43 @@
 import { NextResponse } from "next/server";
 import Stripe from "stripe";
-import { createClient } from "@supabase/supabase-js";
+import { createClient, type SupabaseClient } from "@supabase/supabase-js";
 
 export const runtime = "nodejs";
+
+const RECOMPENSE_PARRAIN_CENTS = 90;
+
+// Symétrique à la réduction du filleul (voir /api/checkout) : si le compte
+// qui vient de payer a été parrainé et que son parrain n'a pas encore été
+// crédité pour lui, on pose un crédit de 0,90 € sur le customer Stripe du
+// parrain (balance négative = crédit, appliqué automatiquement à sa
+// prochaine facture — y compris s'il est déjà abonné). user_id_by_email et
+// email_by_user_id : auth.users n'est pas exposé via l'API REST, ces deux
+// fonctions SQL security definer font le pont (voir la migration).
+async function crediterParrainSiBesoin(stripe: Stripe, sb: SupabaseClient, filleulEmail: string): Promise<void> {
+  const { data: filleulId } = await sb.rpc("user_id_by_email", { p_email: filleulEmail });
+  if (!filleulId) return;
+
+  const { data: parrainage } = await sb
+    .from("parrainages")
+    .select("id, parrain_id, parrain_credite")
+    .eq("filleul_id", filleulId)
+    .maybeSingle();
+  if (!parrainage || parrainage.parrain_credite) return;
+
+  const { data: parrainEmail } = await sb.rpc("email_by_user_id", { p_id: parrainage.parrain_id });
+  if (!parrainEmail) return;
+
+  const existants = await stripe.customers.list({ email: parrainEmail, limit: 1 });
+  const customerId = existants.data[0]?.id ?? (await stripe.customers.create({ email: parrainEmail })).id;
+
+  await stripe.customers.createBalanceTransaction(customerId, {
+    amount: -RECOMPENSE_PARRAIN_CENTS,
+    currency: "eur",
+    description: "Récompense de parrainage StudiJur",
+  });
+
+  await sb.from("parrainages").update({ parrain_credite: true }).eq("id", parrainage.id);
+}
 
 // Le webhook tient à jour la table `subscriptions` dans Supabase. Sans les clés
 // Supabase de service, il se contente d'accuser réception : Stripe ne réessaie
@@ -36,17 +71,26 @@ export async function POST(req: Request) {
     switch (event.type) {
       case "checkout.session.completed": {
         const s = event.data.object as Stripe.Checkout.Session;
-        if (s.customer_email) {
+        // /api/checkout passe désormais `customer` (un Customer Stripe
+        // réutilisé d'une session à l'autre, voir ce fichier) plutôt que
+        // `customer_email` — ce dernier ne serait alors jamais renseigné sur
+        // la session, contrairement à customer_details.email qui reflète
+        // l'email du client quelle que soit la façon dont il a été fourni.
+        const email = s.customer_details?.email ?? s.customer_email;
+        const customerId = typeof s.customer === "string" ? s.customer : null;
+        if (email) {
           // "active" ici n'est qu'un statut provisoire, écrasé dans la
           // foulée par customer.subscription.created avec le vrai statut
           // Stripe (trialing, active...) — cette ligne existe surtout pour
           // créer la ligne et relier l'email au client Stripe.
           await sb.from("subscriptions").upsert({
-            email: s.customer_email,
-            stripe_customer_id: typeof s.customer === "string" ? s.customer : null,
+            email,
+            stripe_customer_id: customerId,
             status: "active",
             updated_at: new Date().toISOString(),
           }, { onConflict: "email" });
+
+          await crediterParrainSiBesoin(stripe, sb, email);
         }
         break;
       }

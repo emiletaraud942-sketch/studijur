@@ -36,6 +36,18 @@ async function idCouponParrainage(stripe: Stripe): Promise<string> {
   }
 }
 
+// Un éventuel crédit de parrain (voir le webhook) est posé sur un Customer
+// Stripe précis et ne s'applique qu'aux factures de CE customer — il faut
+// donc réutiliser le même d'une session à l'autre plutôt que d'en laisser
+// Stripe créer un nouveau à chaque clic sur "s'abonner" (ce qui arrive si on
+// passe seulement `customer_email` sans `customer`, voir plus bas).
+async function idCustomerStripe(stripe: Stripe, email: string): Promise<string> {
+  const existants = await stripe.customers.list({ email, limit: 1 });
+  if (existants.data[0]) return existants.data[0].id;
+  const cree = await stripe.customers.create({ email });
+  return cree.id;
+}
+
 export async function POST(req: Request) {
   const secret = process.env.STRIPE_SECRET_KEY;
   let plan = "monthly";
@@ -104,6 +116,7 @@ export async function POST(req: Request) {
   const discountParams = parraine
     ? { discounts: [{ coupon: await idCouponParrainage(stripe) }] }
     : { allow_promotion_codes: true };
+  const customerId = await idCustomerStripe(stripe, email);
 
   try {
     const session = await stripe.checkout.sessions.create({
@@ -116,7 +129,7 @@ export async function POST(req: Request) {
       ...(skipTrial ? {} : { subscription_data: { trial_period_days: 7 } }),
       ...discountParams,
       locale: "fr",
-      customer_email: email,
+      customer: customerId,
       success_url: `${origin}/?abonnement=ok`,
       cancel_url: `${origin}/abonnement`,
     });
