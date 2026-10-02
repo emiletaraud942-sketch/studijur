@@ -234,6 +234,11 @@ export type ProgressState = {
   // question qui y figure n'est retirée du tirage que tant que d'autres,
   // non encore réussies, restent disponibles pour compléter le tirage.
   quizMastered?: Record<string, true>;
+  // Fiches condensées marquées comme lues (étape 1 du plan de bataille,
+  // /revision-cc/[matiere]/fiche) — clé : id de leçon. Sans ça, lire la
+  // fiche ne faisait avancer aucun compteur : seules les leçons vraiment
+  // testées (quiz, définitions) comptaient dans "% de préparation".
+  fichesLues?: Record<string, true>;
 };
 
 // Retour de l'IA sur une copie rédigée par l'élève (mode correction).

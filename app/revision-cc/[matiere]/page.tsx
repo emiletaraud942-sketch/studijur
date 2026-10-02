@@ -76,16 +76,22 @@ export default function RevisionCCPage() {
   const defKeys = lessons.flatMap((l) => l.definitions.map((d) => `${l.id}::${d.term}`));
   const quizAcquis = quizIds.filter((id) => state.quizMastered?.[id]).length;
   const defAcquises = defKeys.filter((k) => (state.cards[k]?.box ?? 0) >= 4).length;
-  const totalItems = quizIds.length + defKeys.length;
-  const pctPreparation = totalItems ? Math.round(((quizAcquis + defAcquises) / totalItems) * 100) : 0;
+  // Étape 1 du plan de bataille (lire la fiche condensée) n'est jamais
+  // testée, donc jamais comptée par quizMastered/cards comme les deux autres
+  // — sans l'inclure ici, la lire ne faisait avancer aucun compteur (voir
+  // FicheCondensee.tsx). Une unité par leçon, comme pour le quiz et les
+  // définitions, pour rester proportionné au reste du score.
+  const fichesLuesCount = lessons.filter((l) => state.fichesLues?.[l.id]).length;
+  const totalItems = quizIds.length + defKeys.length + lessons.length;
+  const pctPreparation = totalItems ? Math.round(((quizAcquis + defAcquises + fichesLuesCount) / totalItems) * 100) : 0;
 
   const rubriques = [
+    lessons.length > 0 && { href: "fiche", Icon: Quill, titre: "Fiche condensée", sousTitre: `${fichesLuesCount}/${lessons.length} leçon${lessons.length > 1 ? "s" : ""} lues` },
     chronologieLessons.length > 0 && { href: "chronologie", Icon: Calendar, titre: "Chronologie", sousTitre: "Les dates clés, dans l'ordre" },
     lessonsAvecSchema.length > 0 && { href: "apercu", Icon: Sitemap, titre: "Vue d'ensemble", sousTitre: "Les schémas de synthèse" },
-    pieges.length > 0 && { href: "pieges", Icon: Cross, titre: "Pièges classiques", sousTitre: `${pieges.length} erreur${pieges.length > 1 ? "s" : ""} qui reviennent` },
-    questionsDeCours.length > 0 && { href: "questions", Icon: Target, titre: "Questions de cours", sousTitre: "Le plan attendu, à te tester" },
     defKeysTotal > 0 && { href: "trous", Icon: Cards, titre: "Fiche à trous", sousTitre: `${defKeysTotal} terme${defKeysTotal > 1 ? "s" : ""} à deviner` },
-    lessons.length > 0 && { href: "fiche", Icon: Quill, titre: "Fiche condensée", sousTitre: "Le cours, point par point" },
+    questionsDeCours.length > 0 && { href: "questions", Icon: Target, titre: "Questions de cours", sousTitre: "Le plan attendu, à te tester" },
+    pieges.length > 0 && { href: "pieges", Icon: Cross, titre: "Pièges classiques", sousTitre: `${pieges.length} erreur${pieges.length > 1 ? "s" : ""} qui reviennent` },
   ].filter(Boolean) as { href: string; Icon: typeof Calendar; titre: string; sousTitre: string }[];
 
   return (
@@ -97,7 +103,7 @@ export default function RevisionCCPage() {
 
       <CompteARebours ccDate={config.ccDate} pctPreparation={pctPreparation} />
 
-      <PlanDeBataille ccDate={config.ccDate} />
+      <PlanDeBataille ccDate={config.ccDate} matiereId={config.id} />
 
       <section>
         <div className="mb-3 text-[12px] font-bold uppercase tracking-[0.1em]" style={{ color: "var(--muted)" }}>

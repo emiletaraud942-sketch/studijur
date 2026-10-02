@@ -48,7 +48,12 @@ export const REVISION_CC: Record<string, RevisionCCConfig> = {
   },
 };
 
-export type Etape = { seuil: number; titre: string; texte: string };
+// `rubrique` : segment de route sous /revision-cc/[matiere]/... vers lequel
+// pointe l'étape (voir PlanDeBataille) — pour ne plus jamais répéter "lis la
+// fiche" sans un moyen d'y aller en un tap depuis le plan lui-même. `null`
+// pour l'étape quiz, qui n'a pas de route propre (le bouton "Lancer le quiz"
+// du hub suffit, déjà sur la même page).
+export type Etape = { seuil: number; titre: string; texte: string; rubrique: string | null };
 
 // Seuils en jours restants avant le CC, du plus loin au plus proche —
 // transforme le compte à rebours en programme concret plutôt qu'une date
@@ -56,10 +61,10 @@ export type Etape = { seuil: number; titre: string; texte: string };
 // /revision-cc), ProchainCCBanner (bannière "J-" de l'accueil) et la cron de
 // rappel push (contenu personnalisé de la notification).
 export const ETAPES: Etape[] = [
-  { seuil: 8, titre: "Fiche complète", texte: "Lis la fiche condensée, la chronologie et les schémas, leçon par leçon." },
-  { seuil: 4, titre: "Quiz complet", texte: "Fais le quiz en entier au moins une fois, sans regarder la fiche avant." },
-  { seuil: 2, titre: "Focus sur tes erreurs", texte: "Reprends la fiche à trous et uniquement les questions ratées au quiz." },
-  { seuil: 0, titre: "Dernière ligne droite", texte: "Relis les plans de dissertation et les pièges classiques, pas de contenu nouveau." },
+  { seuil: 8, titre: "Fiche complète", texte: "Lis la fiche condensée, la chronologie et les schémas, leçon par leçon.", rubrique: "fiche" },
+  { seuil: 4, titre: "Quiz complet", texte: "Fais le quiz en entier au moins une fois, sans regarder la fiche avant.", rubrique: null },
+  { seuil: 2, titre: "Focus sur tes erreurs", texte: "Reprends la fiche à trous et uniquement les questions ratées au quiz.", rubrique: "trous" },
+  { seuil: 0, titre: "Dernière ligne droite", texte: "Relis les plans de dissertation et les pièges classiques, pas de contenu nouveau.", rubrique: "pieges" },
 ];
 
 export function joursAvant(ccDate: string): number {
