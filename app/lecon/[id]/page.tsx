@@ -17,6 +17,8 @@ import { Arrow, Cards, Check, Cross, Flame, Quill, Sitemap, Target } from "@/com
 import { MindMap } from "@/components/MindMap";
 import { lessonMindMap } from "@/lib/mindmap";
 import AccountCTA from "@/components/AccountCTA";
+import RappelPromo from "@/components/RappelPromo";
+import Parrainage from "@/components/Parrainage";
 import type { Course, EssayFeedback, StepName } from "@/lib/types";
 
 const STEP_META: Record<StepName, { label: string; nextPhrase: string; Icon: typeof Quill }> = {
@@ -230,6 +232,11 @@ function LessonPageInner() {
           score={state.lessons[lesson.id]?.quizScore ?? 0}
           total={lesson.quiz.length}
           nextId={nav.next?.id}
+          // Juste après la toute première leçon terminée (pas avant : rien à
+          // sauvegarder ni à partager tant que l'élève n'a pas encore vu ce que
+          // vaut le site), motivation au plus haut pour activer le rappel
+          // quotidien et inviter des amis — voir DoneStep.
+          premiereLecon={Object.values(state.lessons).filter((l) => l.completedAt).length === 1}
           onReplay={() => setStep(0)}
           onHome={() => router.push("/")}
         />
@@ -743,9 +750,9 @@ function QuizStep({
 }
 
 function DoneStep({
-  lessonId, streak, score, total, nextId, onReplay, onHome,
+  lessonId, streak, score, total, nextId, premiereLecon, onReplay, onHome,
 }: {
-  lessonId: string; streak: number; score: number; total: number; nextId?: string;
+  lessonId: string; streak: number; score: number; total: number; nextId?: string; premiereLecon: boolean;
   onReplay: () => void; onHome: () => void;
 }) {
   const pathname = usePathname();
@@ -793,6 +800,18 @@ function DoneStep({
           <div className="mt-4">
             <Button href={connexionHref(pathname)} size="lg" full>Créer mon compte gratuit <Arrow className="h-4 w-4" /></Button>
           </div>
+        </div>
+      )}
+
+      {/* Première leçon jamais terminée, déjà connecté : motivation au plus
+          haut pour activer le rappel (sinon la série se perd dès demain) puis
+          inviter des amis — le rappel d'abord (bénéfice pour soi, friction
+          basse), le parrainage ensuite (demande tournée vers les autres) :
+          jamais fusionnés en une seule carte, chacun garde son message clair. */}
+      {!connexionRequise && premiereLecon && (
+        <div className="mx-auto mt-6 max-w-sm space-y-3 text-left">
+          <RappelPromo />
+          <Parrainage />
         </div>
       )}
 

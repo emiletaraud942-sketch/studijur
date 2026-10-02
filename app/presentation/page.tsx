@@ -3,6 +3,7 @@ import Link from "next/link";
 import { CORPUS, corpusStats } from "@/lib/corpus";
 import { Scales, Quill, Cards, Target, Check, Arrow, Flame, Sitemap, Upload, Trophy } from "@/components/icons";
 import { OBJECTIONS } from "@/lib/objections";
+import CCPresentationBanner from "@/components/CCPresentationBanner";
 
 export const metadata: Metadata = {
   title: "StudiJur — 5 minutes de droit par jour",
@@ -71,6 +72,8 @@ export default function PresentationPage() {
           </span>
         </div>
       </section>
+
+      <CCPresentationBanner />
 
       <section className="grid grid-cols-3 gap-3 text-center">
         {[
