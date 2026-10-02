@@ -46,6 +46,7 @@ function freshState(): ProgressState {
     notions: {},
     exercicesMethodo: {},
     quizMastered: {},
+    fichesLues: {},
     streak: { current: 0, best: 0, days: [] },
     activiteDuJour: freshActiviteDuJour(),
     customCourses: [],
@@ -194,6 +195,10 @@ type Ctx = {
   // dans un tirage tant que d'autres questions non acquises restent
   // disponibles pour le compléter (voir components/QuizEclair.tsx).
   markQuizMastered: (questionId: string) => void;
+  // Marque la fiche condensée d'une leçon comme lue (étape 1 du plan de
+  // bataille) — bascule plutôt que marquage seul : une leçon peut être
+  // décochée par erreur de clic.
+  marquerFicheLue: (lessonId: string, lue: boolean) => void;
   // Compteurs du jour (Fonctionnalité E) : n'importe quelle réponse notée
   // ailleurs dans l'app doit y passer pour que `objectifAtteint` reste juste.
   bumpActiviteDuJour: (reponses: number, opts?: { notionsDuesRevues?: boolean; actuLue?: boolean }) => void;
@@ -405,6 +410,15 @@ export function StudiJurProvider({ children }: { children: React.ReactNode }) {
     });
   }, [update]);
 
+  const marquerFicheLue = useCallback((lessonId: string, lue: boolean) => {
+    update((d) => {
+      const fichesLues = { ...(d.fichesLues ?? {}) };
+      if (lue) fichesLues[lessonId] = true;
+      else delete fichesLues[lessonId];
+      d.fichesLues = fichesLues;
+    });
+  }, [update]);
+
   const bumpActiviteDuJour = useCallback((
     reponses: number,
     opts?: { notionsDuesRevues?: boolean; actuLue?: boolean },
@@ -433,10 +447,10 @@ export function StudiJurProvider({ children }: { children: React.ReactNode }) {
 
   const value = useMemo<Ctx>(() => ({
     state, ready, syncing, signedInAs, refreshSubscription, update, completeStep, saveDraft,
-    recordQuiz, gradeDefinition, gradeNotionEvent, gradeExerciceMethodo, markQuizMastered, bumpActiviteDuJour,
+    recordQuiz, gradeDefinition, gradeNotionEvent, gradeExerciceMethodo, markQuizMastered, marquerFicheLue, bumpActiviteDuJour,
     addCustomCourse, removeCustomCourse, reset,
   }), [state, ready, syncing, signedInAs, refreshSubscription, update, completeStep, saveDraft,
-       recordQuiz, gradeDefinition, gradeNotionEvent, gradeExerciceMethodo, markQuizMastered, bumpActiviteDuJour,
+       recordQuiz, gradeDefinition, gradeNotionEvent, gradeExerciceMethodo, markQuizMastered, marquerFicheLue, bumpActiviteDuJour,
        addCustomCourse, removeCustomCourse, reset]);
 
   return <StudiJurCtx.Provider value={value}>{children}</StudiJurCtx.Provider>;
