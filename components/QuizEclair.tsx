@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import { Button, Tag } from "./ui";
 import { Arrow, Check, Cross } from "./icons";
 import { useStudiJur } from "@/lib/state";
@@ -52,6 +52,13 @@ export default function QuizEclair({
   const q = pool[i];
   const last = i === pool.length - 1;
   const correct = picked === q.answer;
+  // La bonne réponse était en position 2 dans ~70 % des questions du corpus
+  // (habitude d'écriture, jamais corrigée) — un élève un peu attentif finit
+  // par deviner sans lire. Mélangé une fois par question (pas à chaque
+  // rendu, sinon l'ordre bougerait sous les yeux en recliquant) ; `choose`
+  // et l'affichage continuent de raisonner sur l'index d'origine, donc le
+  // score n'est pas affecté.
+  const ordre = useMemo(() => shuffle(q.choices.map((_, idx) => idx)), [q]);
 
   function choose(idx: number) {
     if (picked !== null) return;
@@ -80,7 +87,8 @@ export default function QuizEclair({
         <div className="mb-2"><Tag tone="hue">{q.lessonTitle}</Tag></div>
         <p className="text-[16.5px] font-semibold leading-snug">{q.q}</p>
         <div className="mt-4 space-y-2.5">
-          {q.choices.map((c, idx) => {
+          {ordre.map((idx) => {
+            const c = q.choices[idx];
             const isAnswer = idx === q.answer;
             const isPicked = idx === picked;
             let style: React.CSSProperties = { background: "var(--surface-2)", borderColor: "var(--line)", color: "var(--ink)" };
