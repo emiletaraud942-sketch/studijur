@@ -184,5 +184,45 @@
       ]
     },
     "quiz": []
+  },
+  {
+    "id": "methodo-05",
+    "order": 5,
+    "title": "Le cas pratique : le syllogisme juridique",
+    "teaser": "Majeure, mineure, conclusion : la règle, les faits, la solution — jamais dans le désordre.",
+    "minutes": 5,
+    "brief": [
+      "Le cas pratique applique une méthode de raisonnement empruntée à la logique formelle : le **syllogisme juridique**. Il part d'une règle générale, la **majeure**, l'applique à une situation de fait, la **mineure**, et en tire une **conclusion** — la solution du cas posé.",
+      "La majeure est la règle de droit applicable : un texte, un principe jurisprudentiel, parfois combinée à sa condition d'entrée en vigueur ou d'application. Une règle qui subordonne elle-même son application à un acte complémentaire — par exemple un **décret d'application** attendu — n'est pas pleinement applicable tant que cet acte n'est pas intervenu : la majeure doit alors intégrer cette condition, pas seulement énoncer le principe nu.",
+      "La mineure qualifie juridiquement les faits de l'espèce au regard des conditions posées par la majeure. **Règle d'or** : les faits se placent dans la mineure, jamais dans la majeure, qui reste une proposition générale et abstraite, valable indépendamment du cas posé — une majeure qui citerait déjà les faits de l'espèce n'en est plus une.",
+      "La conclusion applique la majeure à la mineure et répond à la question posée. Une confusion fréquente consiste à mélanger la **question de droit** — ce que l'on cherche à savoir — et la **majeure** elle-même — la règle qui permet d'y répondre : les deux doivent apparaître distinctement dans la copie, la première ouvrant le raisonnement, la seconde le nourrissant."
+    ],
+    "keyPoints": [
+      "Syllogisme : majeure (règle) + mineure (faits qualifiés) → conclusion (solution).",
+      "La majeure reste générale et abstraite ; les faits n'apparaissent que dans la mineure.",
+      "Une règle subordonnée à un acte complémentaire (ex. décret d'application) n'est pleinement applicable qu'une fois cet acte intervenu — à intégrer dans la majeure.",
+      "Distinguer la question de droit (ce qu'on cherche) de la majeure (ce qui permet d'y répondre)."
+    ],
+    "definitions": [],
+    "exam": {
+      "kind": "exercice — cas pratique",
+      "question": "Une loi prévoit qu'un nouveau droit entre en vigueur « dans des conditions fixées par décret ». Six mois après la publication de la loi, le décret n'est toujours pas paru. Un justiciable peut-il déjà se prévaloir de ce droit ? Construisez le syllogisme (majeure, mineure, conclusion).",
+      "concise": "**Majeure.** Une disposition législative qui subordonne elle-même son application à un décret n'est pas d'application immédiate : le droit qu'elle institue n'existe juridiquement qu'à compter de l'entrée en vigueur du décret attendu, et le grief tiré de son inapplication ne peut prospérer tant que ce décret n'est pas intervenu. **Mineure.** En l'espèce, la loi renvoie expressément à un décret pour fixer les conditions du droit institué, et ce décret n'a pas été publié six mois après la loi. **Conclusion.** Le justiciable ne peut pas encore se prévaloir de ce droit : son entrée en vigueur reste suspendue à la publication du décret.",
+      "plan": [
+        { "title": "I. Une majeure qui intègre la condition d'entrée en vigueur", "children": [
+          { "title": "A. Distinguer la règle de son seul énoncé de principe", "points": ["Une loi peut instituer un droit sans le rendre immédiatement applicable", "Le renvoi à un décret d'application comme condition, non comme simple détail d'exécution", "Conséquence : la majeure doit énoncer la règle et sa condition de mise en œuvre"] },
+          { "title": "B. Le risque d'une majeure incomplète", "points": ["Énoncer seulement le principe conduirait à une conclusion fausse", "Vérifier systématiquement si le texte renvoie à un acte complémentaire", "Le silence du décret n'emporte pas abrogation du principe, seulement sa suspension"] }
+        ] },
+        { "title": "II. Une mineure et une conclusion qui en découlent strictement", "children": [
+          { "title": "A. Qualifier les faits au regard de la condition posée", "points": ["Vérifier concrètement si le décret attendu a été pris", "Ne jamais réintroduire les faits dans la majeure", "La mineure reste silencieuse sur tout fait non pertinent au regard de la majeure"] },
+          { "title": "B. Une conclusion qui répond à la question posée", "points": ["Reformuler la question de droit avant de conclure", "La conclusion ne doit rien ajouter à ce que majeure et mineure autorisent", "Distinguer l'absence de droit (jamais né) et le droit simplement suspendu"] }
+        ] }
+      ],
+      "pitfalls": [
+        "Ne pas confondre la question de droit, qui ouvre le raisonnement, et la majeure, qui y répond : les deux doivent apparaître distinctement dans la copie.",
+        "Ne jamais faire entrer un élément de fait dans l'énoncé de la majeure : elle doit rester vraie quel que soit le cas posé."
+      ]
+    },
+    "quiz": []
   }
 ]
