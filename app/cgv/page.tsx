@@ -24,17 +24,6 @@ export default function CGVPage() {
         </p>
       </div>
 
-      <section className="card space-y-2 p-4" data-hue="gold">
-        <p className="text-[13.5px] font-semibold" style={{ color: "var(--h)" }}>
-          Document rédigé par l&apos;éditeur, non relu par un professionnel du droit à ce stade.
-        </p>
-        <p className="text-[13px] leading-relaxed" style={{ color: "var(--ink-2)" }}>
-          Il décrit fidèlement le fonctionnement réel du service (prix, essai, résiliation). Les clauses de
-          rétractation et de médiation à la consommation en particulier devraient être vérifiées par un
-          professionnel avant de s&apos;y fier en cas de litige.
-        </p>
-      </section>
-
       <section className="space-y-3">
         <SectionTitle kicker="Identification" title="Vendeur" />
         <P>
@@ -109,8 +98,7 @@ export default function CGVPage() {
           (comme l&apos;accès à StudiJur), ce droit peut être exclu dès lors que l&apos;exécution a commencé avec
           l&apos;accord explicite du consommateur et sa renonciation expresse à son droit de rétractation.
           L&apos;essai gratuit décrit ci-dessus, qui précède tout prélèvement, a vocation à couvrir cette période
-          de réflexion en pratique. Cette clause mérite une vérification juridique avant d&apos;être considérée
-          comme définitive (voir l&apos;avertissement en tête de page).
+          de réflexion en pratique.
         </P>
       </section>
 
