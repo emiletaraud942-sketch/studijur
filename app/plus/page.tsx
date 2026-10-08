@@ -1,19 +1,20 @@
 import Link from "next/link";
-import { Books, Chevron, Gear, Quill, Upload } from "@/components/icons";
+import { Chevron, Gear, Quill, Upload } from "@/components/icons";
 import SuggestionForm from "@/components/SuggestionForm";
 
 // Catch-all pour ce qui ne tient pas dans les 4 autres onglets : dépôt de
-// cours, réglages (profil, matières suivies, notifications, abonnement,
-// thème — plus accessible directement depuis la barre du bas), un raccourci
-// vers le vocabulaire, et les suggestions. Tout ce qui concerne la révision
-// avant un CC a déménagé vers /reviser, et les matières vers /programme.
+// cours (aussi atteignable directement depuis Aujourd'hui, voir app/page.tsx),
+// profil (matières suivies, notifications, abonnement, thème), et les
+// suggestions. Tout ce qui concerne la révision avant un CC a déménagé vers
+// /reviser, les matières vers /programme (dont le vocabulaire juridique, qui
+// n'a donc plus besoin de son propre raccourci ici).
 export default function PlusPage() {
   return (
     <div className="space-y-8">
       <div>
         <h1 className="serif text-[28px] font-bold tracking-tight">Plus</h1>
         <p className="mt-1.5 text-[14.5px]" style={{ color: "var(--muted)" }}>
-          Dépôt de cours, réglages et vocabulaire.
+          Dépôt de cours, profil et suggestions.
         </p>
       </div>
 
@@ -47,23 +48,9 @@ export default function PlusPage() {
             <Gear className="h-[19px] w-[19px]" />
           </span>
           <div className="min-w-0 flex-1">
-            <h3 className="text-[14.5px] font-semibold">Réglages</h3>
+            <h3 className="text-[14.5px] font-semibold">Profil</h3>
             <p className="mt-0.5 text-[12.5px] leading-snug" style={{ color: "var(--muted)" }}>
-              Profil, matières suivies, notifications, abonnement et thème.
-            </p>
-          </div>
-          <span className="shrink-0" style={{ color: "var(--muted)" }}><Chevron className="h-4 w-4" /></span>
-        </Link>
-
-        <Link href="/cours/vocabulaire-juridique" data-hue="blue"
-          className="card mt-2.5 flex items-center gap-3.5 p-3.5 transition-transform hover:-translate-y-0.5">
-          <span className="grid h-10 w-10 shrink-0 place-items-center rounded-xl" style={{ background: "var(--h-soft)", color: "var(--h)" }}>
-            <Books className="h-[19px] w-[19px]" />
-          </span>
-          <div className="min-w-0 flex-1">
-            <h3 className="text-[14.5px] font-semibold">Vocabulaire juridique</h3>
-            <p className="mt-0.5 text-[12.5px] leading-snug" style={{ color: "var(--muted)" }}>
-              Le lexique des mots importants — ordonnance, décret, jurisprudence...
+              Matières suivies, notifications, abonnement, thème — et te déconnecter.
             </p>
           </div>
           <span className="shrink-0" style={{ color: "var(--muted)" }}><Chevron className="h-4 w-4" /></span>
