@@ -3,7 +3,8 @@
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useEffect, useMemo, useState } from "react";
-import { useStudiJur } from "@/lib/state";
+import { estVisiteurNeuf, useStudiJur } from "@/lib/state";
+import Landing from "@/components/Landing";
 import { allCourses, corpusStats, pickDailyLesson, findCourse } from "@/lib/corpus";
 import { dueCards, dueNotions, masteredCount, streakIsAlive, todayKey } from "@/lib/srs";
 import { notionLabel } from "@/lib/notions";
@@ -86,6 +87,13 @@ export default function TodayPage() {
 
   if (!ready) {
     return <div className="py-24 text-center text-[14px]" style={{ color: "var(--muted)" }}>Chargement…</div>;
+  }
+
+  // Premier visiteur (pas de compte, aucune leçon faite, aucun cours déposé) :
+  // la vitrine plutôt que le tableau de bord — voir estVisiteurNeuf et
+  // components/Shell (qui masque aussi la navigation de l'app dans ce cas).
+  if (estVisiteurNeuf(state, signedInAs)) {
+    return <Landing />;
   }
 
   return (
