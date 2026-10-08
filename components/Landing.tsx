@@ -3,6 +3,7 @@ import { CORPUS, corpusStats, pickDailyLesson } from "@/lib/corpus";
 import { Scales, Quill, Cards, Target, Check, Arrow, Flame, Upload } from "@/components/icons";
 import { OBJECTIONS } from "@/lib/objections";
 import CCPresentationBanner from "@/components/CCPresentationBanner";
+import PreuveSociale from "@/components/PreuveSociale";
 
 const ETAPES = [
   { Icon: Quill, titre: "Le cours", texte: "Une notion, expliquée en quatre paragraphes, avec les trois points à retenir absolument." },
@@ -64,6 +65,7 @@ export default function Landing() {
           <span className="text-[13px]" style={{ color: "var(--muted)" }}>
             Dix jours gratuits, jusqu&apos;à ton CC si besoin. Aucune carte bancaire demandée.
           </span>
+          <PreuveSociale />
         </div>
       </section>
 
@@ -173,6 +175,26 @@ export default function Landing() {
               compteur — est ce qui te fait revenir demain, même sans motivation particulière ce jour-là.
             </p>
           </div>
+        </div>
+      </section>
+
+      <section className="card p-6">
+        <h2 className="serif mb-4 text-[18px] font-bold">Qui est derrière StudiJur</h2>
+        <div className="space-y-3 text-[14px] leading-relaxed" style={{ color: "var(--ink-2)" }}>
+          <p>
+            Créé par <strong>Émile Taraud</strong> (micro-entreprise individuelle) pour les étudiants de L1 de
+            droit — les mentions légales complètes sont{" "}
+            <Link href="/mentions-legales" className="underline">ici</Link>.
+          </p>
+          <p>
+            Le contenu vient des cours tels que donnés en amphi, mis au propre et vérifié par recoupement avec
+            les textes de loi et la jurisprudence officielle avant publication — jamais inventé au-delà de ce
+            qui est vu en cours. Les corrections de questions rédigées sont générées par IA et restent
+            indicatives.
+          </p>
+          <p className="text-[13px]" style={{ color: "var(--muted)" }}>
+            Une question, une erreur repérée ? <a href="mailto:contact@studijur.fr" className="underline">contact@studijur.fr</a>
+          </p>
         </div>
       </section>
 

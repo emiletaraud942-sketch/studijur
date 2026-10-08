@@ -216,6 +216,10 @@ export default function SubscribePage() {
           Déjà abonné ? Gérer ou résilier mon abonnement
         </Link>
       </p>
+      <p className="text-center text-[12px]" style={{ color: "var(--muted)" }}>
+        En t&apos;abonnant, tu acceptes les{" "}
+        <Link href="/cgv" className="underline">Conditions générales de vente</Link>.
+      </p>
     </div>
   );
 }

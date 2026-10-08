@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { SectionTitle } from "@/components/ui";
 
 export const metadata: Metadata = {
@@ -19,7 +20,7 @@ export default function MentionsLegalesPage() {
       <div>
         <h1 className="serif text-[28px] font-bold tracking-tight">Mentions légales & Conditions d&apos;utilisation</h1>
         <p className="mt-1.5 text-[13.5px]" style={{ color: "var(--muted)" }}>
-          Dernière mise à jour : septembre 2026.
+          Dernière mise à jour : octobre 2026.
         </p>
       </div>
 
@@ -33,16 +34,23 @@ export default function MentionsLegalesPage() {
           <p>Code APE/NAF : 6201Z — Programmation informatique</p>
           <p>TVA : non applicable, art. 293 B du CGI (franchise en base)</p>
           <p>Adresse : 3 square Georges Braque, 76770 Malaunay, France</p>
-          <p>Email : emiletaraud942@gmail.com</p>
+          <p>Email : contact@studijur.fr</p>
           <p>Directeur de la publication : Émile Taraud</p>
         </div>
       </section>
 
       <section className="space-y-3">
-        <SectionTitle kicker="Hébergement" title="Hébergeur" />
+        <SectionTitle kicker="Hébergement" title="Hébergeur et sous-traitants" />
         <P>
-          Le site est hébergé par Vercel Inc., 440 N Barranca Ave #4133, Covina, CA 91723, États-Unis
-          (<span className="whitespace-nowrap">vercel.com</span>).
+          Le site (l&apos;application elle-même) est hébergé par Vercel Inc., 440 N Barranca Ave #4133, Covina,
+          CA 91723, États-Unis (<span className="whitespace-nowrap">vercel.com</span>).
+        </P>
+        <P>
+          Les comptes et la progression (leçons faites, définitions sues, série) sont stockés par Supabase, sur
+          un serveur situé en France (région Paris). Les paiements sont traités directement par Stripe, qui ne
+          transmet à StudiJur ni numéro de carte ni donnée bancaire. Le texte soumis pour une correction générée
+          par IA est envoyé à Anthropic (États-Unis), le temps de produire la correction, selon sa propre
+          politique de confidentialité.
         </P>
       </section>
 
@@ -94,17 +102,42 @@ export default function MentionsLegalesPage() {
         <SectionTitle kicker="Vie privée" title="Données personnelles" />
         <P>
           Sans compte créé, la progression (leçons faites, définitions sues, série) est conservée uniquement sur
-          l&apos;appareil de l&apos;étudiant. Avec un compte, ces mêmes données sont synchronisées de façon
-          sécurisée pour rester accessibles depuis plusieurs appareils. Aucune donnée n&apos;est vendue à des
-          tiers. La page Profil permet à tout moment d&apos;effacer sa progression.
+          l&apos;appareil de l&apos;étudiant. Avec un compte, StudiJur conserve : l&apos;email (identification et
+          lien avec l&apos;abonnement), la progression (leçons faites, définitions sues, série, réponses
+          rédigées), et les champs optionnels renseignés dans le profil (prénom, université). Ces données sont
+          conservées tant que le compte existe ; la page Profil permet de les effacer à tout moment, et
+          d&apos;écrire à l&apos;adresse de contact ci-dessous supprime aussi le compte sur demande.
+        </P>
+        <P>
+          Aucune donnée n&apos;est vendue à des tiers. Conformément au RGPD, tu disposes d&apos;un droit
+          d&apos;accès, de rectification et de suppression de tes données : écris à l&apos;adresse de contact
+          ci-dessous.
+        </P>
+      </section>
+
+      <section className="space-y-3">
+        <SectionTitle kicker="Abonnement" title="Essai gratuit et résiliation" />
+        <P>
+          L&apos;essai gratuit dure au moins dix jours, prolongé jusqu&apos;au prochain contrôle continu connu de
+          l&apos;étudiant si celui-ci tombe plus tard — aucune carte bancaire n&apos;est demandée pour en
+          profiter. Passé ce délai sans abonnement, l&apos;accès aux nouvelles leçons est suspendu ; la
+          progression déjà faite reste conservée.
+        </P>
+        <P>
+          Un abonnement payant se résilie à tout moment, sans frais ni justification, depuis la page Profil
+          (gestion de l&apos;abonnement) ou par email à l&apos;adresse de contact. La résiliation annule le
+          prochain prélèvement ; l&apos;accès reste ouvert jusqu&apos;à la fin de la période déjà payée, et la
+          progression est conservée en cas de réabonnement ultérieur. Le détail complet (prix, modalités de
+          paiement, droit de rétractation) figure dans les{" "}
+          <Link href="/cgv" className="underline">Conditions générales de vente</Link>.
         </P>
       </section>
 
       <section className="space-y-3">
         <SectionTitle kicker="Contact" title="Une question ?" />
         <P>
-          Pour toute question sur ces mentions ou sur l&apos;usage de tes documents, écris à l&apos;adresse de
-          contact indiquée dans les réglages de l&apos;application.
+          Pour toute question sur ces mentions, sur l&apos;usage de tes documents ou sur tes données
+          personnelles, écris à <a href="mailto:contact@studijur.fr" className="underline">contact@studijur.fr</a>.
         </P>
       </section>
     </div>
