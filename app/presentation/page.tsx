@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { CORPUS, corpusStats } from "@/lib/corpus";
-import { Scales, Quill, Cards, Target, Check, Arrow, Flame, Sitemap, Upload, Trophy } from "@/components/icons";
+import { Scales, Quill, Cards, Target, Check, Arrow, Flame, Upload } from "@/components/icons";
 import { OBJECTIONS } from "@/lib/objections";
 import CCPresentationBanner from "@/components/CCPresentationBanner";
 
@@ -34,13 +34,22 @@ const ETAPES = [
   { Icon: Check, titre: "Un quiz de cinq questions", texte: "Correction immédiate, chaque réponse expliquée — y compris celles que tu as ratées." },
 ];
 
-const OUTILS_APERCU = [
-  { Icon: Sitemap, titre: "Cartes mentales", texte: "Une leçon, vue d'un coup d'œil." },
-  { Icon: Target, titre: "Entraînement CC1", texte: "Le format exact du contrôle." },
-  { Icon: Cards, titre: "Révision espacée", texte: "Ce que tu rates revient plus souvent." },
-  { Icon: Trophy, titre: "Classement", texte: "Anonyme, comparé à ta fac." },
-  { Icon: Upload, titre: "Mes cours", texte: "Quiz, flashcards et carte mentale sur tes propres cours." },
-  { Icon: Flame, titre: "Série quotidienne", texte: "Un compteur de jours qui donne envie de continuer." },
+const BENEFICES = [
+  {
+    Icon: Cards,
+    titre: "Tu retiens, pas seulement tu relis",
+    texte: "La révision espacée fait revenir plus souvent ce que tu rates, et moins souvent ce que tu sais déjà. C'est ce qui reste en tête le jour du CC.",
+  },
+  {
+    Icon: Check,
+    titre: "Le format exact du contrôle",
+    texte: "Question de cours avec plan détaillé, cas pratique, commentaire — les mêmes exercices qu'à l'examen, avec leur grille de correction.",
+  },
+  {
+    Icon: Target,
+    titre: "Prêt avant le CC, pas la veille",
+    texte: "Le format exact du contrôle, un plan de révision calé sur ta date de CC, pour arriver le jour J sans tout redécouvrir en une nuit.",
+  },
 ] as const;
 
 export default function PresentationPage() {
@@ -54,22 +63,36 @@ export default function PresentationPage() {
           <Scales className="h-9 w-9" />
         </span>
         <h1 className="serif mx-auto max-w-2xl text-[34px] font-bold leading-[1.1] tracking-tight sm:text-[46px]">
-          Cinq minutes de droit par jour.<br />Tous les jours.
+          Retiens ton cours de L1 de droit,<br />5 minutes par jour.
         </h1>
         <p className="mx-auto mt-4 max-w-xl text-[16px] leading-relaxed" style={{ color: "var(--muted)" }}>
-          StudiJur est l&apos;entraînement quotidien des étudiants en première année de droit. Une séance courte,
-          guidée, calée sur ce qui est vraiment vu en amphi et mise à jour tout au long du semestre — qui te fait
-          réviser pour de vrai, pas relire en diagonale la veille du partiel.
+          Pour réviser pour de vrai, pas relire en diagonale la veille du partiel : une notion, cinq définitions,
+          une question d&apos;examen corrigée, un quiz — chaque jour, sur le programme de L1 ou sur ton propre
+          polycopié.
         </p>
         <div className="mt-7 flex flex-col items-center gap-3">
           <Link href="/"
             className="inline-flex items-center gap-2 rounded-xl px-6 py-3.5 text-[15px] font-semibold"
             style={{ background: "var(--accent)", color: "var(--accent-ink)" }}>
-            Commencer maintenant <Arrow className="h-4 w-4" />
+            Faire ma première séance <Arrow className="h-4 w-4" />
           </Link>
           <span className="text-[13px]" style={{ color: "var(--muted)" }}>
             Sept jours gratuits. Aucune carte bancaire demandée.
           </span>
+        </div>
+      </section>
+
+      <section className="card flex items-start gap-4 p-6" data-hue="blue">
+        <span className="grid h-11 w-11 shrink-0 place-items-center rounded-xl"
+          style={{ background: "var(--h-soft)", color: "var(--h)" }}>
+          <Upload className="h-6 w-6" />
+        </span>
+        <div>
+          <h2 className="text-[16px] font-bold">Pas juste le programme de L1 : ton cours à toi</h2>
+          <p className="mt-1.5 text-[14px] leading-relaxed" style={{ color: "var(--ink-2)" }}>
+            Dépose ton polycopié (PDF ou photo) et StudiJur en tire automatiquement un quiz, des flashcards à
+            révision espacée et une carte mentale — sur les mots de ton propre professeur, pas un cours générique.
+          </p>
         </div>
       </section>
 
@@ -112,19 +135,19 @@ export default function PresentationPage() {
       </section>
 
       <section>
-        <h2 className="serif mb-1 text-center text-[26px] font-bold">Tous les outils, en un coup d&apos;œil</h2>
+        <h2 className="serif mb-1 text-center text-[26px] font-bold">Ce que ça change vraiment</h2>
         <p className="mb-6 text-center text-[14.5px]" style={{ color: "var(--muted)" }}>
-          Chacun répond à un besoin précis.
+          Pas une liste de fonctionnalités : ce qui change pour toi.
         </p>
-        <div className="grid grid-cols-2 gap-3 sm:grid-cols-3">
-          {OUTILS_APERCU.map(({ Icon, titre, texte }) => (
-            <div key={titre} className="card p-4">
-              <span className="mb-2 grid h-9 w-9 place-items-center rounded-lg"
+        <div className="grid gap-3 sm:grid-cols-3">
+          {BENEFICES.map(({ Icon, titre, texte }) => (
+            <div key={titre} className="card p-5">
+              <span className="mb-3 grid h-9 w-9 place-items-center rounded-lg"
                 style={{ background: "var(--accent-soft)", color: "var(--accent)" }}>
                 <Icon className="h-[18px] w-[18px]" />
               </span>
-              <h3 className="text-[13.5px] font-bold">{titre}</h3>
-              <p className="mt-0.5 text-[12px] leading-snug" style={{ color: "var(--muted)" }}>{texte}</p>
+              <h3 className="serif text-[15.5px] font-bold">{titre}</h3>
+              <p className="mt-1.5 text-[13.5px] leading-relaxed" style={{ color: "var(--ink-2)" }}>{texte}</p>
             </div>
           ))}
         </div>
@@ -159,12 +182,10 @@ export default function PresentationPage() {
             <Flame className="h-6 w-6" />
           </span>
           <div>
-            <h2 className="serif text-[20px] font-bold">La série, c&apos;est ce qui fait la différence</h2>
+            <h2 className="serif text-[20px] font-bold">Tu ne révises plus la veille</h2>
             <p className="mt-2 text-[14.5px] leading-relaxed" style={{ color: "var(--ink-2)" }}>
-              Un jour travaillé, un jour de plus au compteur. Ce n&apos;est pas la leçon qui te fera revenir
-              demain : c&apos;est le chiffre que tu ne voudras pas remettre à zéro. Les applications de langues
-              en vivent depuis quinze ans ; le droit s&apos;y prête encore mieux, parce qu&apos;il se joue
-              entièrement sur la mémoire et la méthode.
+              Tu révises un peu chaque jour, sans y penser. La série — un jour travaillé, un jour de plus au
+              compteur — est ce qui te fait revenir demain, même sans motivation particulière ce jour-là.
             </p>
           </div>
         </div>
