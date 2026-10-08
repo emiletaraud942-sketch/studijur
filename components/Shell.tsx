@@ -67,12 +67,7 @@ export default function Shell({ children }: { children: React.ReactNode }) {
                     {state.streak.current}
                   </span>
                 )}
-                {publique ? (
-                  <Link href="/" className="rounded-full px-3.5 py-2 text-[13.5px] font-bold"
-                    style={{ background: "var(--accent)", color: "var(--accent-ink)" }}>
-                    Commencer
-                  </Link>
-                ) : (
+                {!publique && (
                   <span className="hidden text-[13px] sm:block" style={{ color: "var(--muted)" }}>
                     {longDate()}
                   </span>
