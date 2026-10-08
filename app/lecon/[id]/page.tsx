@@ -20,6 +20,7 @@ import AccountCTA from "@/components/AccountCTA";
 import SignalerErreur from "@/components/SignalerErreur";
 import MentionCorrectionIA from "@/components/MentionCorrectionIA";
 import RappelPromo from "@/components/RappelPromo";
+import InstallPromoCard from "@/components/InstallPromoCard";
 import Parrainage from "@/components/Parrainage";
 import { StreakMilestone } from "@/components/StreakMilestone";
 import { shuffle } from "@/components/QuizEclair";
@@ -817,13 +818,14 @@ function DoneStep({
       )}
 
       {/* Première leçon jamais terminée, déjà connecté : motivation au plus
-          haut pour activer le rappel (sinon la série se perd dès demain) puis
-          inviter des amis — le rappel d'abord (bénéfice pour soi, friction
-          basse), le parrainage ensuite (demande tournée vers les autres) :
-          jamais fusionnés en une seule carte, chacun garde son message clair. */}
+          haut pour activer le rappel et épingler l'app (ce qui fait revenir,
+          décision du 08/10/2026 — les deux comptent plus que le palier
+          d'install différé d'avant) puis inviter des amis — chacun garde sa
+          propre carte, jamais fusionnés en une seule. */}
       {!connexionRequise && premiereLecon && (
         <div className="mx-auto mt-6 max-w-sm space-y-3 text-left">
           <RappelPromo />
+          <InstallPromoCard />
           <Parrainage />
         </div>
       )}

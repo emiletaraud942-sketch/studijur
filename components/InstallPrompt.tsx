@@ -2,37 +2,26 @@
 
 import { useEffect, useState } from "react";
 import { useStudiJur } from "@/lib/state";
-
-const DISMISS_KEY = "studijur.install-dismissed.v1";
+import { INSTALL_DISMISS_KEY as DISMISS_KEY, isIOS, isStandalone } from "@/lib/install-client";
 
 interface InstallEvent extends Event {
   prompt: () => Promise<void>;
   userChoice: Promise<{ outcome: "accepted" | "dismissed" }>;
 }
 
-function isStandalone(): boolean {
-  if (typeof window === "undefined") return false;
-  const nav = window.navigator as Navigator & { standalone?: boolean };
-  return window.matchMedia("(display-mode: standalone)").matches || nav.standalone === true;
-}
-
-function isIOS(): boolean {
-  if (typeof navigator === "undefined") return false;
-  const w = window as unknown as { MSStream?: unknown };
-  return /iphone|ipad|ipod/i.test(navigator.userAgent) && !w.MSStream;
-}
-
-// Bannière d'installation PWA : « épingler » StudiJur sur l'écran d'accueil
-// (mobile) ou l'installer comme application (bureau). Sur Chrome/Edge, on
-// intercepte l'évènement natif pour proposer un vrai bouton « Installer ».
-// Sur iOS/Safari, cet évènement n'existe pas : on affiche le mode d'emploi.
+// Bannière d'installation PWA, affichée dans l'en-tête de l'app (voir
+// Shell) : « épingler » StudiJur sur l'écran d'accueil (mobile) ou
+// l'installer comme application (bureau). Sur Chrome/Edge, on intercepte
+// l'évènement natif pour proposer un vrai bouton « Installer ». Sur
+// iOS/Safari, cet évènement n'existe pas : on affiche le mode d'emploi.
 //
-// Volontairement pas avant la 1ère leçon terminée, et volontairement pas sur
-// le même écran que le rappel/parrainage de fin de 1ère leçon (voir DoneStep
-// dans app/lecon/[id]/page.tsx) : empiler trois demandes d'un coup fait
-// baisser le taux d'acceptation de chacune. Ici on attend que l'élève ait vu
-// la valeur du site ET revienne naviguer dans l'app — un temps distinct, pour
-// une demande qui engage davantage (installer change l'habitude d'ouverture).
+// Rattrape surtout ceux qui quittent juste après DoneStep sans jamais
+// revenir sur l'accueil : InstallPromoCard (même écran que le rappel, voir
+// app/lecon/[id]/page.tsx) couvre déjà le cas Android/bureau à ce moment-là,
+// en partageant la même clé de refus — donc pas de double demande à la
+// visite suivante. Reste utile pour iOS (pas encore couvert par
+// InstallPromoCard, qui s'efface sur iOS car RappelPromo s'en charge déjà)
+// et pour qui revient sans être passé par là.
 export default function InstallPrompt() {
   const { ready, state } = useStudiJur();
   const premiereLeconFaite = Object.values(state.lessons).some((l) => l.completedAt);

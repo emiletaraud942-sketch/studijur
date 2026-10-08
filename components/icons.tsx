@@ -72,6 +72,9 @@ export function Search({ className }: P) {
 export function Trophy({ className }: P) {
   return (<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" className={className ?? base} aria-hidden="true"><path d="M8 21h8" /><path d="M12 17v4" /><path d="M7 4h10v4a5 5 0 0 1-10 0V4Z" /><path d="M7 6H4.5a1 1 0 0 0-1 1c0 2 1 4 4 4" /><path d="M17 6h2.5a1 1 0 0 1 1 1c0 2-1 4-4 4" /></svg>);
 }
+export function Pin({ className }: P) {
+  return (<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" className={className ?? base} aria-hidden="true"><path d="M12 2a5.5 5.5 0 0 0-5.5 5.5c0 4 5.5 10.5 5.5 10.5s5.5-6.5 5.5-10.5A5.5 5.5 0 0 0 12 2Z" /><circle cx="12" cy="7.5" r="2" /></svg>);
+}
 export function Clock({ className }: P) {
   return (<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" className={className ?? base} aria-hidden="true"><path d="M12 7v6l4 2" /><circle cx="12" cy="13" r="8.5" /><path d="M9 2h6M12 2v3" /></svg>);
 }
