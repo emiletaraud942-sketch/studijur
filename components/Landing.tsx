@@ -1,0 +1,210 @@
+import Link from "next/link";
+import { CORPUS, corpusStats, pickDailyLesson } from "@/lib/corpus";
+import { Scales, Quill, Cards, Target, Check, Arrow, Flame, Upload } from "@/components/icons";
+import { OBJECTIONS } from "@/lib/objections";
+import CCPresentationBanner from "@/components/CCPresentationBanner";
+
+const ETAPES = [
+  { Icon: Quill, titre: "Le cours", texte: "Une notion, expliquée en quatre paragraphes, avec les trois points à retenir absolument." },
+  { Icon: Cards, titre: "Cinq définitions", texte: "Tu récites, tu vérifies, tu te notes. Celles que tu rates reviennent demain, celles que tu sais reviennent dans un mois." },
+  { Icon: Target, titre: "Une question d'examen", texte: "Tu fais ton plan au brouillon, puis tu débloques la réponse concise et le plan détaillé en I/A/B." },
+  { Icon: Check, titre: "Un quiz de cinq questions", texte: "Correction immédiate, chaque réponse expliquée — y compris celles que tu as ratées." },
+];
+
+const BENEFICES = [
+  {
+    Icon: Cards,
+    titre: "Tu retiens, pas seulement tu relis",
+    texte: "La révision espacée fait revenir plus souvent ce que tu rates, et moins souvent ce que tu sais déjà. C'est ce qui reste en tête le jour du CC.",
+  },
+  {
+    Icon: Check,
+    titre: "Le format exact du contrôle",
+    texte: "Question de cours avec plan détaillé, cas pratique, commentaire — les mêmes exercices qu'à l'examen, avec leur grille de correction.",
+  },
+  {
+    Icon: Target,
+    titre: "Prêt avant le CC, pas la veille",
+    texte: "Le format exact du contrôle, un plan de révision calé sur ta date de CC, pour arriver le jour J sans tout redécouvrir en une nuit.",
+  },
+] as const;
+
+// Contenu partagé entre /presentation (visite directe, lien partagé) et / pour
+// un visiteur qui n'a encore rien fait (voir estVisiteurNeuf dans lib/state) —
+// un seul texte à tenir à jour plutôt que deux pages qui divergent. Le CTA
+// pointe directement vers une leçon plutôt que vers "/" : rendu depuis "/"
+// lui-même pour un nouveau visiteur, un lien vers "/" rechargerait la même
+// page au lieu de faire avancer vers du contenu.
+export default function Landing() {
+  const stats = corpusStats();
+  const daily = pickDailyLesson([], [], []);
+  const ctaHref = daily ? `/lecon/${daily.id}` : "/programme";
+
+  return (
+    <div className="space-y-14 pb-10">
+      <section className="pt-6 text-center">
+        <span className="mx-auto mb-5 grid h-16 w-16 place-items-center rounded-2xl"
+          style={{ background: "var(--accent-soft)", color: "var(--accent)" }}>
+          <Scales className="h-9 w-9" />
+        </span>
+        <h1 className="serif mx-auto max-w-2xl text-[34px] font-bold leading-[1.1] tracking-tight sm:text-[46px]">
+          Retiens ton cours de L1 de droit,<br />5 minutes par jour.
+        </h1>
+        <p className="mx-auto mt-4 max-w-xl text-[16px] leading-relaxed" style={{ color: "var(--muted)" }}>
+          Pour réviser pour de vrai, pas relire en diagonale la veille du partiel : une notion, cinq définitions,
+          une question d&apos;examen corrigée, un quiz — chaque jour, sur le programme de L1 ou sur ton propre
+          polycopié.
+        </p>
+        <div className="mt-7 flex flex-col items-center gap-3">
+          <Link href={ctaHref}
+            className="inline-flex items-center gap-2 rounded-xl px-6 py-3.5 text-[15px] font-semibold"
+            style={{ background: "var(--accent)", color: "var(--accent-ink)" }}>
+            Faire ma première séance <Arrow className="h-4 w-4" />
+          </Link>
+          <span className="text-[13px]" style={{ color: "var(--muted)" }}>
+            Sept jours gratuits. Aucune carte bancaire demandée.
+          </span>
+        </div>
+      </section>
+
+      <section className="card flex items-start gap-4 p-6" data-hue="blue">
+        <span className="grid h-11 w-11 shrink-0 place-items-center rounded-xl"
+          style={{ background: "var(--h-soft)", color: "var(--h)" }}>
+          <Upload className="h-6 w-6" />
+        </span>
+        <div>
+          <h2 className="text-[16px] font-bold">Pas juste le programme de L1 : ton cours à toi</h2>
+          <p className="mt-1.5 text-[14px] leading-relaxed" style={{ color: "var(--ink-2)" }}>
+            Dépose ton polycopié (PDF ou photo) et StudiJur en tire automatiquement un quiz, des flashcards à
+            révision espacée et une carte mentale — sur les mots de ton propre professeur, pas un cours générique.
+          </p>
+        </div>
+      </section>
+
+      <CCPresentationBanner />
+
+      <section className="grid grid-cols-3 gap-3 text-center">
+        {[
+          { n: stats.lessons, l: "leçons prêtes" },
+          { n: stats.definitions, l: "définitions" },
+          { n: stats.questions, l: "questions de quiz" },
+        ].map((s) => (
+          <div key={s.l} className="card py-5">
+            <div className="serif text-[28px] font-bold tabular sm:text-[34px]">{s.n}</div>
+            <div className="mt-0.5 text-[12.5px]" style={{ color: "var(--muted)" }}>{s.l}</div>
+          </div>
+        ))}
+      </section>
+
+      <section>
+        <h2 className="serif mb-1 text-center text-[26px] font-bold">Ta séance, quatre temps</h2>
+        <p className="mb-6 text-center text-[14.5px]" style={{ color: "var(--muted)" }}>
+          Toujours la même structure. C&apos;est ce qui la rend tenable.
+        </p>
+        <div className="grid gap-3 sm:grid-cols-2">
+          {ETAPES.map(({ Icon, titre, texte }, i) => (
+            <div key={titre} className="card p-5">
+              <div className="mb-3 flex items-center gap-3">
+                <span className="grid h-9 w-9 shrink-0 place-items-center rounded-lg"
+                  style={{ background: "var(--accent-soft)", color: "var(--accent)" }}>
+                  <Icon className="h-[18px] w-[18px]" />
+                </span>
+                <h3 className="serif text-[17px] font-bold">
+                  <span className="tabular" style={{ color: "var(--muted)" }}>{i + 1}. </span>{titre}
+                </h3>
+              </div>
+              <p className="text-[14px] leading-relaxed" style={{ color: "var(--ink-2)" }}>{texte}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section>
+        <h2 className="serif mb-1 text-center text-[26px] font-bold">Ce que ça change vraiment</h2>
+        <p className="mb-6 text-center text-[14.5px]" style={{ color: "var(--muted)" }}>
+          Pas une liste de fonctionnalités : ce qui change pour toi.
+        </p>
+        <div className="grid gap-3 sm:grid-cols-3">
+          {BENEFICES.map(({ Icon, titre, texte }) => (
+            <div key={titre} className="card p-5">
+              <span className="mb-3 grid h-9 w-9 place-items-center rounded-lg"
+                style={{ background: "var(--accent-soft)", color: "var(--accent)" }}>
+                <Icon className="h-[18px] w-[18px]" />
+              </span>
+              <h3 className="serif text-[15.5px] font-bold">{titre}</h3>
+              <p className="mt-1.5 text-[13.5px] leading-relaxed" style={{ color: "var(--ink-2)" }}>{texte}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section>
+        <h2 className="serif mb-1 text-center text-[26px] font-bold">Le programme de L1, déjà écrit</h2>
+        <p className="mb-6 text-center text-[14.5px]" style={{ color: "var(--muted)" }}>
+          Et ton propre cours si tu le déposes, mis à jour tout au long de l&apos;année selon ce qui est vraiment
+          vu en cours.
+        </p>
+        <div className="space-y-2.5">
+          {CORPUS.map((c) => (
+            <div key={c.id} data-hue={c.hue} className="card flex items-center justify-between gap-4 p-4">
+              <div className="min-w-0">
+                <h3 className="serif truncate text-[16px] font-bold">{c.title}</h3>
+                <p className="mt-0.5 truncate text-[13px]" style={{ color: "var(--muted)" }}>{c.subtitle}</p>
+              </div>
+              <span className="shrink-0 rounded-full px-3 py-1 text-[12.5px] font-bold tabular"
+                style={{ background: "var(--h-soft)", color: "var(--h)" }}>
+                {c.lessons.length} leçons
+              </span>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section className="card p-6">
+        <div className="flex items-start gap-4">
+          <span className="grid h-11 w-11 shrink-0 place-items-center rounded-xl"
+            style={{ background: "var(--gold-soft)", color: "var(--gold)" }}>
+            <Flame className="h-6 w-6" />
+          </span>
+          <div>
+            <h2 className="serif text-[20px] font-bold">Tu ne révises plus la veille</h2>
+            <p className="mt-2 text-[14.5px] leading-relaxed" style={{ color: "var(--ink-2)" }}>
+              Tu révises un peu chaque jour, sans y penser. La série — un jour travaillé, un jour de plus au
+              compteur — est ce qui te fait revenir demain, même sans motivation particulière ce jour-là.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2 className="serif mb-6 text-center text-[26px] font-bold">Ce que tu es en train de te dire</h2>
+        <div className="space-y-3">
+          {OBJECTIONS.map((o) => (
+            <div key={o.q} className="card p-5">
+              <h3 className="text-[15px] font-semibold">{o.q}</h3>
+              <p className="mt-1.5 text-[14px] leading-relaxed" style={{ color: "var(--ink-2)" }}>{o.r}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section className="card overflow-hidden text-center">
+        <div className="h-1" style={{ background: "var(--accent)" }} />
+        <div className="p-7">
+          <h2 className="serif text-[24px] font-bold">Sept jours pour voir</h2>
+          <p className="mx-auto mt-2 max-w-md text-[14.5px]" style={{ color: "var(--muted)" }}>
+            Gratuit, sans carte bancaire. Ensuite, 49 € pour toute l&apos;année de L1, ou 5,90 € par mois
+            sans engagement.
+          </p>
+          <div className="mt-6">
+            <Link href={ctaHref}
+              className="inline-flex items-center gap-2 rounded-xl px-6 py-3.5 text-[15px] font-semibold"
+              style={{ background: "var(--accent)", color: "var(--accent-ink)" }}>
+              Faire ma première séance <Arrow className="h-4 w-4" />
+            </Link>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+}

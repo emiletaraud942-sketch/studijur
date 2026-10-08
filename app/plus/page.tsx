@@ -81,7 +81,8 @@ export default function PlusPage() {
       </div>
 
       <p className="text-center text-[12.5px]" style={{ color: "var(--muted)" }}>
-        Encore une mention légale au menu : voir <Link href="/mentions-legales" className="underline">mentions légales</Link>.
+        <Link href="/presentation" className="underline">Revoir la présentation de StudiJur</Link> · Encore une
+        mention légale au menu : voir <Link href="/mentions-legales" className="underline">mentions légales</Link>.
       </p>
     </div>
   );

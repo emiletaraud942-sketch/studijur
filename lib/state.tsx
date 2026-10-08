@@ -106,6 +106,15 @@ function completedLessonIds(state: ProgressState): Set<string> {
   );
 }
 
+// N'a strictement rien fait : pas de compte, aucune leçon terminée, aucun
+// cours déposé. Sert à distinguer, sur "/", un vrai premier visiteur (qui
+// doit voir la vitrine, pas le tableau de bord) de quelqu'un qui a juste
+// effacé sa progression ou n'est pas encore synchronisé. Voir components/Shell
+// et app/page.tsx.
+export function estVisiteurNeuf(state: ProgressState, signedInAs: string | null): boolean {
+  return !signedInAs && completedLessonIds(state).size === 0 && state.customCourses.length === 0;
+}
+
 // Relevé de 2 à 8 le 29/09/2026 (retour à chaud d'élèves trouvant le
 // plafond de 2 trop serré pour se faire une vraie idée du produit avant de
 // payer) : le vrai garde-fou contre un élève qui viderait tout le corpus

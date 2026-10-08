@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import { usePathname } from "next/navigation";
-import { useStudiJur, trialDaysLeft, supabaseConfigured } from "@/lib/state";
+import { useStudiJur, trialDaysLeft, supabaseConfigured, estVisiteurNeuf } from "@/lib/state";
 import { connexionHref } from "@/lib/nav";
 import { Books, Chart, Grid, Home, Scales, Search, Target, Flame } from "./icons";
 import { longDate } from "@/lib/format";
@@ -27,7 +27,10 @@ export default function Shell({ children }: { children: React.ReactNode }) {
   const [searchOpen, setSearchOpen] = useState(false);
   const { state, ready, signedInAs } = useStudiJur();
   const inLesson = pathname?.startsWith("/lecon/");
-  const publique = pathname === "/presentation";
+  // "/" bascule aussi en mode vitrine (pas de nav, pas de bandeaux d'app) pour
+  // un premier visiteur : app/page.tsx y affiche alors le même contenu que
+  // /presentation (voir Landing) plutôt que le tableau de bord.
+  const publique = pathname === "/presentation" || (pathname === "/" && ready && estVisiteurNeuf(state, signedInAs));
   const daysLeft = trialDaysLeft(state);
   const midTrial = daysLeft >= 2 && daysLeft <= 4;
   // Sans compte, le vrai palier n'est pas le compte à rebours de 7 jours
