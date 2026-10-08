@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "StudiJur — 5 minutes de droit par jour",
-    description: "Réviser sa L1 de droit cinq minutes par jour. Sept jours gratuits.",
+    description: "Réviser sa L1 de droit cinq minutes par jour. Dix jours gratuits, jusqu'à ton CC si besoin.",
     images: ["/og.png"],
   },
 };

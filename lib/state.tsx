@@ -11,6 +11,7 @@ import {
 import { getSupabase, supabaseConfigured } from "./supabase";
 import { isOwner } from "./owner";
 import { capturerParrainage } from "./referral";
+import { joursAvantProchainCC } from "./revision-cc-config";
 
 const KEY = "lexio.state.v1";
 // Identifie à QUI appartient l'état stocké dans KEY — séparé de ProgressState
@@ -24,7 +25,7 @@ const KEY = "lexio.state.v1";
 // premier compte qui se connecte, pour que la progression anonyme survive à
 // la création de compte.
 const OWNER_KEY = "lexio.state.owner";
-const TRIAL_DAYS = 7;
+const TRIAL_DAYS = 10;
 
 function freshState(): ProgressState {
   const now = new Date().toISOString();
@@ -90,10 +91,18 @@ function writeLocal(state: ProgressState) {
   }
 }
 
+// Décision d'Émile du 09/10/2026 : 10 jours fixes se sont révélés trop
+// courts pour un produit qui se joue sur l'habitude, alors que l'enjeu (le
+// CC) peut tomber 4 à 8 semaines après l'inscription — le moment où un
+// étudiant est prêt à payer, c'est juste avant son CC, pas un chrono qui
+// coupe l'accès en plein milieu des révisions. Plancher de 10 jours (ne
+// descend jamais en dessous), prolongé jusqu'au prochain CC s'il tombe plus
+// tard. Les deux termes diminuent d'un jour chaque jour qui passe : le
+// résultat ne peut donc que décroître, jamais sauter en arrière.
 export function trialDaysLeft(state: ProgressState): number {
   const start = new Date(state.profile.trialStartedAt).getTime();
   const elapsed = Math.floor((Date.now() - start) / 86400000);
-  return Math.max(0, TRIAL_DAYS - elapsed);
+  return Math.max(0, TRIAL_DAYS - elapsed, joursAvantProchainCC());
 }
 
 export function hasAccess(state: ProgressState): boolean {
@@ -118,8 +127,9 @@ export function estVisiteurNeuf(state: ProgressState, signedInAs: string | null)
 // Relevé de 2 à 8 le 29/09/2026 (retour à chaud d'élèves trouvant le
 // plafond de 2 trop serré pour se faire une vraie idée du produit avant de
 // payer) : le vrai garde-fou contre un élève qui viderait tout le corpus
-// sans payer reste les 7 jours d'essai, pas ce plafond. Une leçon déjà
-// commencée reste toujours consultable, seules les nouvelles se verrouillent.
+// sans payer reste la durée de l'essai (voir trialDaysLeft), pas ce plafond.
+// Une leçon déjà commencée reste toujours consultable, seules les nouvelles
+// se verrouillent.
 export const TRIAL_LESSON_LIMIT = 8;
 
 export function trialLessonCapReached(state: ProgressState, lessonId: string): boolean {

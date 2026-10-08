@@ -17,6 +17,8 @@ import { Arrow, Cards, Check, Cross, Flame, Quill, Sitemap, Target } from "@/com
 import { MindMap } from "@/components/MindMap";
 import { lessonMindMap } from "@/lib/mindmap";
 import AccountCTA from "@/components/AccountCTA";
+import SignalerErreur from "@/components/SignalerErreur";
+import MentionCorrectionIA from "@/components/MentionCorrectionIA";
 import RappelPromo from "@/components/RappelPromo";
 import Parrainage from "@/components/Parrainage";
 import { StreakMilestone } from "@/components/StreakMilestone";
@@ -185,6 +187,7 @@ function LessonPageInner() {
           <Tag>Leçon {lesson.order}</Tag>
         </div>
         <h1 className="serif text-[26px] font-bold leading-tight sm:text-[31px]">{lesson.title}</h1>
+        <div className="mt-2"><SignalerErreur lessonId={lesson.id} lessonTitle={lesson.title} /></div>
       </div>
 
       {!done && (
@@ -339,8 +342,8 @@ function MindMapStep({
   return (
     <div className="rise space-y-4">
       <p className="text-[13.5px] leading-relaxed" style={{ color: "var(--muted)" }}>
-        Vue d&apos;ensemble de la leçon, construite depuis {branches.join(", ").replace(/, ([^,]*)$/, " et $1")}.
-        Touche une branche pour la déplier.
+        Avant la question d&apos;examen : une vue d&apos;ensemble de la leçon, construite depuis{" "}
+        {branches.join(", ").replace(/, ([^,]*)$/, " et $1")}. Touche une branche pour la déplier.
       </p>
       <MindMap root={tree} />
       <Button onClick={onNext} size="lg" full>Passer à la question <Arrow className="h-4 w-4" /></Button>
@@ -670,6 +673,7 @@ function Correction({
               </ul>
             </div>
           )}
+          <MentionCorrectionIA />
           <button onClick={() => setState("idle")} className="text-[12.5px] font-semibold" style={{ color: "var(--muted)" }}>
             Refaire corriger après modification
           </button>

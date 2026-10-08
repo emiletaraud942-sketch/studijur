@@ -2,6 +2,11 @@ import { NextResponse } from "next/server";
 import Stripe from "stripe";
 import { createClient } from "@supabase/supabase-js";
 import { idCouponParrainage } from "@/lib/stripe-parrainage";
+import { joursAvantProchainCC } from "@/lib/revision-cc-config";
+
+// Doit rester égal à TRIAL_DAYS dans lib/state.tsx (essai sans carte) : les
+// deux essais s'arrêtent à la même date, voir joursAvantProchainCC.
+const TRIAL_DAYS_PLANCHER = 10;
 
 export const runtime = "nodejs";
 
@@ -112,11 +117,16 @@ export async function POST(req: Request) {
     const session = await stripe.checkout.sessions.create({
       mode: "subscription",
       line_items: [{ price, quantity: 1 }],
-      // Par défaut, 7 jours d'essai avant le premier prélèvement — mais
-      // certains savent déjà qu'ils veulent payer tout de suite (essai déjà
-      // fait sur l'appareil, ou juste envie d'un accès immédiat) : skipTrial
-      // leur évite d'être coincés dans un essai qu'ils ne voulaient pas.
-      ...(skipTrial ? {} : { subscription_data: { trial_period_days: 7 } }),
+      // Par défaut, essai avant le premier prélèvement — au moins
+      // TRIAL_DAYS_PLANCHER jours, prolongé jusqu'au prochain CC si besoin
+      // (même règle que l'essai sans carte, voir trialDaysLeft dans
+      // lib/state.tsx). Certains savent déjà qu'ils veulent payer tout de
+      // suite (essai déjà fait sur l'appareil, ou juste envie d'un accès
+      // immédiat) : skipTrial leur évite d'être coincés dans un essai qu'ils
+      // ne voulaient pas.
+      ...(skipTrial ? {} : {
+        subscription_data: { trial_period_days: Math.max(TRIAL_DAYS_PLANCHER, joursAvantProchainCC()) },
+      }),
       ...discountParams,
       locale: "fr",
       customer: customerId,

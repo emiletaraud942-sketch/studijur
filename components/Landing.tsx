@@ -3,6 +3,7 @@ import { CORPUS, corpusStats, pickDailyLesson } from "@/lib/corpus";
 import { Scales, Quill, Cards, Target, Check, Arrow, Flame, Upload } from "@/components/icons";
 import { OBJECTIONS } from "@/lib/objections";
 import CCPresentationBanner from "@/components/CCPresentationBanner";
+import PreuveSociale from "@/components/PreuveSociale";
 
 const ETAPES = [
   { Icon: Quill, titre: "Le cours", texte: "Une notion, expliquée en quatre paragraphes, avec les trois points à retenir absolument." },
@@ -62,8 +63,9 @@ export default function Landing() {
             Faire ma première séance <Arrow className="h-4 w-4" />
           </Link>
           <span className="text-[13px]" style={{ color: "var(--muted)" }}>
-            Sept jours gratuits. Aucune carte bancaire demandée.
+            Dix jours gratuits, jusqu&apos;à ton CC si besoin. Aucune carte bancaire demandée.
           </span>
+          <PreuveSociale />
         </div>
       </section>
 
@@ -176,6 +178,26 @@ export default function Landing() {
         </div>
       </section>
 
+      <section className="card p-6">
+        <h2 className="serif mb-4 text-[18px] font-bold">Qui est derrière StudiJur</h2>
+        <div className="space-y-3 text-[14px] leading-relaxed" style={{ color: "var(--ink-2)" }}>
+          <p>
+            Créé par <strong>Émile Taraud</strong> (micro-entreprise individuelle) pour les étudiants de L1 de
+            droit — les mentions légales complètes sont{" "}
+            <Link href="/mentions-legales" className="underline">ici</Link>.
+          </p>
+          <p>
+            Le contenu vient des cours tels que donnés en amphi, mis au propre et vérifié par recoupement avec
+            les textes de loi et la jurisprudence officielle avant publication — jamais inventé au-delà de ce
+            qui est vu en cours. Les corrections de questions rédigées sont générées par IA et restent
+            indicatives.
+          </p>
+          <p className="text-[13px]" style={{ color: "var(--muted)" }}>
+            Une question, une erreur repérée ? <a href="mailto:contact@studijur.fr" className="underline">contact@studijur.fr</a>
+          </p>
+        </div>
+      </section>
+
       <section>
         <h2 className="serif mb-6 text-center text-[26px] font-bold">Ce que tu es en train de te dire</h2>
         <div className="space-y-3">
@@ -191,7 +213,7 @@ export default function Landing() {
       <section className="card overflow-hidden text-center">
         <div className="h-1" style={{ background: "var(--accent)" }} />
         <div className="p-7">
-          <h2 className="serif text-[24px] font-bold">Sept jours pour voir</h2>
+          <h2 className="serif text-[24px] font-bold">Dix jours pour voir, jusqu&apos;à ton CC si besoin</h2>
           <p className="mx-auto mt-2 max-w-md text-[14.5px]" style={{ color: "var(--muted)" }}>
             Gratuit, sans carte bancaire. Ensuite, 49 € pour toute l&apos;année de L1, ou 5,90 € par mois
             sans engagement.

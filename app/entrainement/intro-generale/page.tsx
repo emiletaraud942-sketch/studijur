@@ -12,6 +12,7 @@ import { authFetchHeaders } from "@/lib/supabase";
 import { connexionHref } from "@/lib/nav";
 import type { EntrainementFeedback } from "@/lib/types";
 import CompteApresQuiz from "@/components/CompteApresQuiz";
+import MentionCorrectionIA from "@/components/MentionCorrectionIA";
 
 const cc1Questions = introGeneraleEntrainement.filter((q) => q.categorie === "Entraînement CC1");
 const reviserQuestions = introGeneraleEntrainement.filter((q) => q.categorie !== "Entraînement CC1");
@@ -231,6 +232,7 @@ function QuestionCard({ q }: { q: QuestionEntrainement }) {
             {verdictLabel}
           </div>
           <p className="mt-1 text-[13.5px] leading-relaxed" style={{ color: "var(--ink-2)" }}>{feedback.commentaire}</p>
+          <div className="mt-2"><MentionCorrectionIA /></div>
         </div>
       )}
 
