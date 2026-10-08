@@ -5,18 +5,20 @@ import { useState } from "react";
 import { usePathname } from "next/navigation";
 import { useStudiJur, trialDaysLeft, supabaseConfigured, estVisiteurNeuf } from "@/lib/state";
 import { connexionHref } from "@/lib/nav";
-import { Books, Chart, Grid, Home, Scales, Search, Target, Flame } from "./icons";
+import { Books, Chart, Grid, Home, Scales, Search, Target, Flame, Upload } from "./icons";
 import { longDate } from "@/lib/format";
 import InstallPrompt from "./InstallPrompt";
 import SearchOverlay from "./SearchOverlay";
 
-// 5 onglets au lieu de 7 : "Matières" et "Cours" (même liste, juste pratique
-// vs. lecture) fusionnent dans /programme ; "Réviser" est nouveau et regroupe
-// tout ce qui prépare un CC, révision flash incluse (jusque-là invisible du
-// menu) ; "Mes cours" et "Réglages" rejoignent /plus.
+// 6 onglets : "Matières" et "Cours" (même liste, juste pratique vs. lecture)
+// fusionnent dans /programme ; "Réviser" regroupe tout ce qui prépare un CC ;
+// "Mes cours" (dépôt) ressort de "Plus" avec son propre onglet le 09/10/2026 —
+// différenciateur n°1 du site, il ne doit pas dépendre d'un détour pour être
+// découvert. "Réglages" reste dans "Plus" (sous le nom "Profil").
 const NAV = [
   { href: "/", label: "Aujourd'hui", Icon: Home },
   { href: "/programme", label: "Programme", Icon: Books },
+  { href: "/mes-cours", label: "Mes cours", Icon: Upload },
   { href: "/reviser", label: "Réviser", Icon: Target },
   { href: "/progression", label: "Progression", Icon: Chart },
   { href: "/plus", label: "Plus", Icon: Grid },

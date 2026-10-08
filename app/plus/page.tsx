@@ -1,49 +1,28 @@
 import Link from "next/link";
-import { Chevron, Gear, Quill, Upload } from "@/components/icons";
+import { Chevron, Gear, Quill } from "@/components/icons";
 import SuggestionForm from "@/components/SuggestionForm";
 
-// Catch-all pour ce qui ne tient pas dans les 4 autres onglets : dépôt de
-// cours (aussi atteignable directement depuis Aujourd'hui, voir app/page.tsx),
-// profil (matières suivies, notifications, abonnement, thème), et les
-// suggestions. Tout ce qui concerne la révision avant un CC a déménagé vers
-// /reviser, les matières vers /programme (dont le vocabulaire juridique, qui
-// n'a donc plus besoin de son propre raccourci ici).
+// Ce qui ne tient pas dans les 5 autres onglets : profil (matières suivies,
+// notifications, abonnement, thème, déconnexion) et suggestions. Le dépôt de
+// cours a quitté cette page le 09/10/2026 pour son propre onglet ("Mes
+// cours", voir components/Shell) — différenciateur n°1 du site, il ne doit
+// plus dépendre d'un détour par "Plus" pour être découvert. Tout ce qui
+// concerne la révision avant un CC a déménagé vers /reviser, les matières
+// vers /programme (dont le vocabulaire juridique, qui n'a donc pas besoin de
+// son propre raccourci ici).
 export default function PlusPage() {
   return (
     <div className="space-y-8">
       <div>
         <h1 className="serif text-[28px] font-bold tracking-tight">Plus</h1>
         <p className="mt-1.5 text-[14.5px]" style={{ color: "var(--muted)" }}>
-          Dépôt de cours, profil et suggestions.
+          Profil et suggestions.
         </p>
       </div>
 
       <section>
-        <Link href="/mes-cours"
-          className="flex items-start gap-3.5 rounded-2xl p-4.5 transition-transform hover:-translate-y-0.5"
-          style={{ background: "var(--ink)" }}>
-          <span className="grid h-10 w-10 shrink-0 place-items-center rounded-xl" style={{ background: "var(--accent)", color: "var(--accent-ink)" }}>
-            <Upload className="h-[19px] w-[19px]" />
-          </span>
-          <div className="min-w-0 flex-1">
-            <h3 className="text-[14.5px] font-semibold" style={{ color: "var(--paper)" }}>Dépose un cours, obtiens tout le reste</h3>
-            <p className="mt-1 text-[12.5px] leading-relaxed" style={{ color: "color-mix(in srgb, var(--paper) 78%, transparent)" }}>
-              PDF ou photo de ton polycopié : StudiJur en tire automatiquement un quiz, des flashcards à révision
-              espacée et une carte mentale — la génération que d&apos;autres sites font payer cher, incluse ici.
-            </p>
-            <div className="mt-3 grid grid-cols-3 gap-2">
-              {["Quiz", "Flashcards", "Carte mentale"].map((t) => (
-                <div key={t} className="rounded-lg py-2 text-center text-[11px] font-bold"
-                  style={{ background: "color-mix(in srgb, var(--paper) 12%, transparent)", color: "var(--paper)" }}>
-                  {t}
-                </div>
-              ))}
-            </div>
-          </div>
-        </Link>
-
         <Link href="/reglages" data-hue="plum"
-          className="card mt-2.5 flex items-center gap-3.5 p-3.5 transition-transform hover:-translate-y-0.5">
+          className="card flex items-center gap-3.5 p-3.5 transition-transform hover:-translate-y-0.5">
           <span className="grid h-10 w-10 shrink-0 place-items-center rounded-xl" style={{ background: "var(--h-soft)", color: "var(--h)" }}>
             <Gear className="h-[19px] w-[19px]" />
           </span>
