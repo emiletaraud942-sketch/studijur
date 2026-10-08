@@ -9,6 +9,7 @@ import { allCourses } from "@/lib/corpus";
 import { notionLabel } from "@/lib/notions";
 import { Button, Tag } from "@/components/ui";
 import { Arrow, Check } from "@/components/icons";
+import MentionCorrectionIA from "@/components/MentionCorrectionIA";
 import { usePathname } from "next/navigation";
 import type { EssayFeedback, TypeExerciceMethodo } from "@/lib/types";
 
@@ -234,6 +235,7 @@ export default function EntrainementMethodePage() {
                   </ul>
                 </div>
               )}
+              <MentionCorrectionIA />
               <button onClick={() => setIaState("idle")} className="text-[12.5px] font-semibold" style={{ color: "var(--muted)" }}>
                 Refaire corriger après modification
               </button>
