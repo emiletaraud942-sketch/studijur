@@ -1,16 +1,16 @@
 "use client";
 
 import Link from "next/link";
-import { useMemo, useState } from "react";
+import { useMemo } from "react";
 import { useStudiJur } from "@/lib/state";
-import { allLessons, corpusStats, findLesson } from "@/lib/corpus";
+import { corpusStats } from "@/lib/corpus";
 import { BOX_INTERVALS, dueCards, masteredCount, todayKey } from "@/lib/srs";
-import { Button, SectionTitle, Tag } from "@/components/ui";
-import { Check, Chevron, Cross, Flame, Trophy } from "@/components/icons";
+import { SectionTitle } from "@/components/ui";
+import { Arrow, Cards, Chevron, Flame, Trophy } from "@/components/icons";
 import Parrainage from "@/components/Parrainage";
 
 export default function ProgressPage() {
-  const { state, ready, gradeDefinition } = useStudiJur();
+  const { state, ready } = useStudiJur();
   const custom = state.customCourses;
   const stats = useMemo(() => corpusStats(custom), [custom]);
   const due = useMemo(() => dueCards(state.cards), [state.cards]);
@@ -90,21 +90,23 @@ export default function ProgressPage() {
         </div>
       </section>
 
-      <section id="revisions" className="scroll-mt-24">
-        <SectionTitle
-          kicker="À revoir"
-          title={due.length ? `${due.length} définition${due.length > 1 ? "s" : ""} dues aujourd'hui` : "Rien à revoir aujourd'hui"}
-        />
-        {due.length > 0 ? (
-          <ReviewDeck cards={due} onGrade={gradeDefinition} />
-        ) : (
-          <div className="card p-6 text-center">
-            <p className="text-[14.5px]" style={{ color: "var(--muted)" }}>
-              Tes révisions sont à jour. Reviens demain, ou avance dans une nouvelle leçon.
+      <section>
+        <SectionTitle kicker="À revoir" title="Révision espacée" />
+        <Link href="/reviser#revisions" data-hue="green"
+          className="card flex items-center gap-3.5 p-4 transition-transform hover:-translate-y-0.5">
+          <span className="grid h-11 w-11 shrink-0 place-items-center rounded-xl" style={{ background: "var(--h-soft)", color: "var(--h)" }}>
+            <Cards className="h-5 w-5" />
+          </span>
+          <div className="min-w-0 flex-1">
+            <h3 className="text-[15px] font-semibold">
+              {due.length ? `${due.length} définition${due.length > 1 ? "s" : ""} dues aujourd'hui` : "Tes révisions sont à jour"}
+            </h3>
+            <p className="mt-0.5 text-[13px]" style={{ color: "var(--muted)" }}>
+              {due.length ? "Les réviser maintenant, sur la page Réviser." : "Reviens demain, ou avance dans une nouvelle leçon."}
             </p>
-            <div className="mt-4"><Button href="/" variant="outline">Retour à la séance du jour</Button></div>
           </div>
-        )}
+          <span className="shrink-0" style={{ color: "var(--muted)" }}><Arrow className="h-4 w-4" /></span>
+        </Link>
       </section>
 
       <section>
@@ -153,68 +155,6 @@ function Heatmap({ days }: { days: string[] }) {
         </span>
         <span>Aujourd&apos;hui</span>
       </div>
-    </div>
-  );
-}
-
-function ReviewDeck({
-  cards, onGrade,
-}: {
-  cards: { key: string; lessonId: string; term: string }[];
-  onGrade: (lessonId: string, term: string, knew: boolean) => void;
-}) {
-  const [i, setI] = useState(0);
-  const [revealed, setRevealed] = useState(false);
-  const card = cards[Math.min(i, cards.length - 1)];
-  const lesson = findLesson(card.lessonId, []) ?? allLessons([]).find((l) => l.id === card.lessonId);
-  const def = lesson?.definitions.find((d) => d.term === card.term);
-
-  if (i >= cards.length) {
-    return (
-      <div className="card pop p-6 text-center">
-        <div className="mx-auto mb-3 grid h-14 w-14 place-items-center rounded-full" style={{ background: "var(--good-soft)", color: "var(--good)" }}>
-          <Check className="h-7 w-7" />
-        </div>
-        <h3 className="serif text-[19px] font-bold">Révisions terminées</h3>
-        <p className="mt-1 text-[14px]" style={{ color: "var(--muted)" }}>Les cartes sues reviendront plus tard.</p>
-      </div>
-    );
-  }
-
-  function grade(knew: boolean) {
-    onGrade(card.lessonId, card.term, knew);
-    setI((n) => n + 1);
-    setRevealed(false);
-  }
-
-  return (
-    <div className="space-y-4">
-      <div className="text-[12.5px] tabular" style={{ color: "var(--muted)" }}>
-        Carte {i + 1} sur {cards.length}
-      </div>
-      <div key={card.key} className="card pop min-h-[200px] p-6">
-        {lesson && <div className="mb-2"><Tag>{lesson.title}</Tag></div>}
-        <h3 className="serif text-[22px] font-bold leading-snug">{card.term}</h3>
-        {revealed ? (
-          <p className="mt-4 rise text-[15px] leading-relaxed" style={{ color: "var(--ink-2)" }}>
-            {def?.text ?? "Définition introuvable — la leçon d'origine a peut-être été supprimée."}
-          </p>
-        ) : (
-          <button onClick={() => setRevealed(true)}
-            className="mt-5 w-full rounded-xl border border-dashed py-7 text-[14px] font-semibold"
-            style={{ borderColor: "var(--line-strong)", color: "var(--muted)" }}>
-            Touche pour vérifier
-          </button>
-        )}
-      </div>
-      {revealed && (
-        <div className="rise grid grid-cols-2 gap-3">
-          <button onClick={() => grade(false)} className="flex items-center justify-center gap-2 rounded-xl py-3.5 text-[14px] font-semibold active:scale-[0.98]"
-            style={{ background: "var(--bad-soft)", color: "var(--bad)" }}><Cross className="h-4 w-4" /> À revoir</button>
-          <button onClick={() => grade(true)} className="flex items-center justify-center gap-2 rounded-xl py-3.5 text-[14px] font-semibold active:scale-[0.98]"
-            style={{ background: "var(--good-soft)", color: "var(--good)" }}><Check className="h-4 w-4" /> Je savais</button>
-        </div>
-      )}
     </div>
   );
 }

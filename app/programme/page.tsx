@@ -30,7 +30,8 @@ export default function ProgrammePage() {
       <div>
         <h1 className="serif text-[28px] font-bold tracking-tight">Programme</h1>
         <p className="mt-1.5 text-[14.5px]" style={{ color: "var(--muted)" }}>
-          {stats.lessons} leçons, {stats.definitions} définitions et {stats.questions} questions de quiz.
+          Pour avancer chaque jour : {stats.lessons} leçons, {stats.definitions} définitions et {stats.questions}
+          {" "}questions de quiz. Pour réviser avant un CC, voir <Link href="/reviser" className="underline">Réviser</Link>.
         </p>
       </div>
 

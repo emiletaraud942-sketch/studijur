@@ -10,7 +10,7 @@ import { dueCards, dueNotions, masteredCount, streakIsAlive, todayKey } from "@/
 import { notionLabel } from "@/lib/notions";
 import { fetchLeaderboard } from "@/lib/leaderboard";
 import { Bar, Button, SectionTitle, Tag } from "@/components/ui";
-import { Arrow, Cards, Check, Chevron, Flame, Grid, Quill, Sitemap, Target } from "@/components/icons";
+import { Arrow, Cards, Check, Chevron, Flame, Quill, Sitemap, Target, Upload } from "@/components/icons";
 import { longDate } from "@/lib/format";
 import { OBJECTIONS } from "@/lib/objections";
 import RevisionIntensiveBanner from "@/components/RevisionIntensiveBanner";
@@ -133,14 +133,14 @@ export default function TodayPage() {
         </Link>
       </section>
 
-      <Link href="/plus" data-hue="blue" className="rise card flex items-center gap-3.5 p-4 transition-transform hover:-translate-y-0.5">
+      <Link href="/mes-cours" data-hue="blue" className="rise card flex items-center gap-3.5 p-4 transition-transform hover:-translate-y-0.5">
         <span className="grid h-11 w-11 shrink-0 place-items-center rounded-xl" style={{ background: "var(--ink)", color: "var(--paper)" }}>
-          <Grid className="h-5 w-5" />
+          <Upload className="h-5 w-5" />
         </span>
         <div className="min-w-0 flex-1">
-          <h2 className="text-[15px] font-semibold">Plus : dépôt de cours, réglages, vocabulaire</h2>
+          <h2 className="text-[15px] font-semibold">Dépose un cours, obtiens quiz et flashcards</h2>
           <p className="mt-0.5 text-[13px] leading-snug" style={{ color: "var(--muted)" }}>
-            Génère un quiz depuis tes propres notes, gère ton profil et ton abonnement.
+            PDF ou photo de ton polycopié : StudiJur en tire automatiquement une séance au même format.
           </p>
         </div>
         <span className="shrink-0" style={{ color: "var(--muted)" }}><Arrow className="h-4 w-4" /></span>

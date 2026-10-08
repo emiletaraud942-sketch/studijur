@@ -51,8 +51,8 @@ export default function SettingsPage() {
       )}
 
       <div>
-        <h1 className="serif text-[28px] font-bold tracking-tight">Réglages</h1>
-        <p className="mt-1.5 text-[14.5px]" style={{ color: "var(--muted)" }}>Ton profil, ton programme et ton compte.</p>
+        <h1 className="serif text-[28px] font-bold tracking-tight">Profil</h1>
+        <p className="mt-1.5 text-[14.5px]" style={{ color: "var(--muted)" }}>Ton profil, ton abonnement et tes réglages.</p>
       </div>
 
       <section className="card p-5">
@@ -76,6 +76,28 @@ export default function SettingsPage() {
               </button>
             ))}
           </div>
+        </div>
+      </section>
+
+      <section className="card p-5">
+        <SectionTitle kicker="Compte" title="Abonnement et synchronisation" />
+        <div className="space-y-2.5 text-[14px]">
+          <Row label="Formule"
+            value={state.profile.plan === "active" ? "Abonné" : `Essai — ${trialDaysLeft(state)} j restants`} />
+          <Row label="Synchronisation"
+            value={supabaseConfigured ? (signedInAs ? `${signedInAs}${syncing ? " (en cours…)" : ""}` : "Non connecté") : "Appareil uniquement"} />
+        </div>
+        <div className="mt-4 flex flex-wrap gap-3">
+          {supabaseConfigured && signedInAs && (
+            <Button variant="outline" size="sm" onClick={async () => { await getSupabase()?.auth.signOut(); location.reload(); }}>
+              Se déconnecter
+            </Button>
+          )}
+          {/* Toujours visible : un élève doit pouvoir atteindre la gestion (et
+              donc la résiliation) de son abonnement même s'il n'est pas
+              connecté sur cet appareil — la page explique alors quoi faire. */}
+          <Button href="/mon-abonnement" variant="soft" size="sm">Gérer mon abonnement</Button>
+          {state.profile.plan !== "active" && <Button href="/abonnement" size="sm">Voir les formules</Button>}
         </div>
       </section>
 
@@ -117,28 +139,6 @@ export default function SettingsPage() {
               {label}
             </button>
           ))}
-        </div>
-      </section>
-
-      <section className="card p-5">
-        <SectionTitle kicker="Compte" title="Abonnement et synchronisation" />
-        <div className="space-y-2.5 text-[14px]">
-          <Row label="Formule"
-            value={state.profile.plan === "active" ? "Abonné" : `Essai — ${trialDaysLeft(state)} j restants`} />
-          <Row label="Synchronisation"
-            value={supabaseConfigured ? (signedInAs ? `${signedInAs}${syncing ? " (en cours…)" : ""}` : "Non connecté") : "Appareil uniquement"} />
-        </div>
-        <div className="mt-4 flex flex-wrap gap-3">
-          {supabaseConfigured && signedInAs && (
-            <Button variant="outline" size="sm" onClick={async () => { await getSupabase()?.auth.signOut(); location.reload(); }}>
-              Se déconnecter
-            </Button>
-          )}
-          {/* Toujours visible : un élève doit pouvoir atteindre la gestion (et
-              donc la résiliation) de son abonnement même s'il n'est pas
-              connecté sur cet appareil — la page explique alors quoi faire. */}
-          <Button href="/mon-abonnement" variant="soft" size="sm">Gérer mon abonnement</Button>
-          {state.profile.plan !== "active" && <Button href="/abonnement" size="sm">Voir les formules</Button>}
         </div>
       </section>
 

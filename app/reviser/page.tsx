@@ -1,7 +1,8 @@
 import Link from "next/link";
-import { Cards, Chevron, Clock, Scales, Target } from "@/components/icons";
+import { Chevron, Clock, Scales, Target } from "@/components/icons";
 import { REVISION_CC } from "@/lib/revision-cc-config";
 import ProchainCCBanner from "@/components/ProchainCCBanner";
+import RevisionEspacee from "@/components/RevisionEspacee";
 import { Tag } from "@/components/ui";
 
 type Outil = { href: string; Icon: typeof Scales; title: string; text: string; nouveau?: boolean };
@@ -10,13 +11,14 @@ type Outil = { href: string; Icon: typeof Scales; title: string; text: string; n
 // contrôle" de /plus. La révision flash par matière (/revision-cc), jusque-là
 // seulement accessible par lien direct ou bandeau d'accueil, devient ici le
 // premier élément de la page plutôt qu'une fonctionnalité invisible.
-const AVANT_UN_CC: Outil[] = [
+//
+// Un seul groupe "S'entraîner avant l'examen" plutôt que deux (c'était
+// "Avant un CC" + "Méthode d'examen" séparés) : le retour utilisateur du
+// 08/10/2026 trouvait la page trop dense (8 entrées sans hiérarchie claire).
+const SENTRAINER: Outil[] = [
   { href: "/revision-intensive", Icon: Clock, title: "Révision intensive", text: "La fiche de dernière minute — tout le programme condensé — puis un quiz éclair toutes matières." },
   { href: "/entrainement/intro-generale", Icon: Target, title: "Entraînement CC1", text: "30 questions dans le style exact du sujet donné par ton professeur." },
   { href: "/cas-pratiques", Icon: Target, title: "Cas pratiques guidés", text: "La méthode pas à pas, avec la correction révélée seulement après ta réponse à chaque étape." },
-];
-
-const METHODE: Outil[] = [
   { href: "/entrainement-methode", Icon: Scales, title: "S'entraîner à la méthode", text: "Cas pratique, commentaire d'arrêt, dissertation — rédige en conditions réelles, puis une correction IA notée sur 20.", nouveau: true },
 ];
 
@@ -34,9 +36,11 @@ export default function ReviserPage() {
 
       <ProchainCCBanner />
 
+      <RevisionEspacee />
+
       <section>
         <div className="mb-3 flex items-center gap-2 text-[11px] font-bold uppercase tracking-[0.12em]" style={{ color: "var(--muted)" }}>
-          Révision flash par matière
+          Plan de révision par matière, calé sur ton CC
           <Tag tone="gold">Nouveau : plan de bataille</Tag>
         </div>
         <p className="mb-3 text-[12.5px] leading-relaxed" style={{ color: "var(--muted)" }}>
@@ -59,31 +63,10 @@ export default function ReviserPage() {
 
       <section data-hue="gold">
         <div className="mb-3 text-[11px] font-bold uppercase tracking-[0.12em]" style={{ color: "var(--h)" }}>
-          Avant un CC
+          S&apos;entraîner avant l&apos;examen
         </div>
         <div className="space-y-2.5">
-          {AVANT_UN_CC.map(({ href, Icon, title, text }) => (
-            <Link key={href} href={href}
-              className="card flex items-center gap-3.5 p-3.5 transition-transform hover:-translate-y-0.5">
-              <span className="grid h-10 w-10 shrink-0 place-items-center rounded-xl" style={{ background: "var(--h-soft)", color: "var(--h)" }}>
-                <Icon className="h-[19px] w-[19px]" />
-              </span>
-              <div className="min-w-0 flex-1">
-                <h3 className="text-[14.5px] font-semibold">{title}</h3>
-                <p className="mt-0.5 text-[12.5px] leading-snug" style={{ color: "var(--muted)" }}>{text}</p>
-              </div>
-              <span className="shrink-0" style={{ color: "var(--muted)" }}><Chevron className="h-4 w-4" /></span>
-            </Link>
-          ))}
-        </div>
-      </section>
-
-      <section data-hue="plum">
-        <div className="mb-3 text-[11px] font-bold uppercase tracking-[0.12em]" style={{ color: "var(--h)" }}>
-          Méthode d&apos;examen
-        </div>
-        <div className="space-y-2.5">
-          {METHODE.map(({ href, Icon, title, text, nouveau }) => (
+          {SENTRAINER.map(({ href, Icon, title, text, nouveau }) => (
             <Link key={href} href={href}
               className="card flex items-center gap-3.5 p-3.5 transition-transform hover:-translate-y-0.5">
               <span className="grid h-10 w-10 shrink-0 place-items-center rounded-xl" style={{ background: "var(--h-soft)", color: "var(--h)" }}>
@@ -101,20 +84,6 @@ export default function ReviserPage() {
           ))}
         </div>
       </section>
-
-      <Link href="/progression#revisions" data-hue="green"
-        className="card flex items-center gap-3.5 p-3.5 transition-transform hover:-translate-y-0.5">
-        <span className="grid h-10 w-10 shrink-0 place-items-center rounded-xl" style={{ background: "var(--h-soft)", color: "var(--h)" }}>
-          <Cards className="h-[19px] w-[19px]" />
-        </span>
-        <div className="min-w-0 flex-1">
-          <h3 className="text-[14.5px] font-semibold">Révision espacée</h3>
-          <p className="mt-0.5 text-[12.5px] leading-snug" style={{ color: "var(--muted)" }}>
-            Les définitions ratées reviennent plus souvent, celles que tu sais s&apos;espacent.
-          </p>
-        </div>
-        <span className="shrink-0" style={{ color: "var(--muted)" }}><Chevron className="h-4 w-4" /></span>
-      </Link>
     </div>
   );
 }

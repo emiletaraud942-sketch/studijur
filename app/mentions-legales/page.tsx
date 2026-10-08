@@ -96,7 +96,7 @@ export default function MentionsLegalesPage() {
           Sans compte créé, la progression (leçons faites, définitions sues, série) est conservée uniquement sur
           l&apos;appareil de l&apos;étudiant. Avec un compte, ces mêmes données sont synchronisées de façon
           sécurisée pour rester accessibles depuis plusieurs appareils. Aucune donnée n&apos;est vendue à des
-          tiers. La page Réglages permet à tout moment d&apos;effacer sa progression.
+          tiers. La page Profil permet à tout moment d&apos;effacer sa progression.
         </P>
       </section>
 

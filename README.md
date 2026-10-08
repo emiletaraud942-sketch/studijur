@@ -22,7 +22,7 @@ capacité supplémentaire, sans changement de code — voir `.env.example`.
 | `NEXT_PUBLIC_SUPABASE_*` | comptes et synchronisation multi-appareils | progression locale au navigateur |
 | `STRIPE_*` | abonnement et essai de 7 jours | accès ouvert |
 
-La page **Réglages** affiche en direct l'état de chaque service.
+La page **Profil** (route `/reglages`) affiche en direct l'état de chaque service.
 
 ## Base de données
 
