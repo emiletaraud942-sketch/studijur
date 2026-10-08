@@ -33,10 +33,12 @@ export default function Shell({ children }: { children: React.ReactNode }) {
   const publique = pathname === "/presentation" || (pathname === "/" && ready && estVisiteurNeuf(state, signedInAs));
   const daysLeft = trialDaysLeft(state);
   const midTrial = daysLeft >= 2 && daysLeft <= 4;
-  // Sans compte, le vrai palier n'est pas le compte à rebours de 7 jours
+  // Sans compte, le vrai palier n'est pas le compte à rebours de l'essai
   // (inopérant tant qu'aucun compte ne l'ancre) mais la connexion, requise
   // après une leçon complète — voir anonymousLessonCapReached.
   const anonyme = supabaseConfigured && !signedInAs;
+  // Fenêtre d'urgence du bandeau : la dernière semaine, quelle que soit la
+  // durée totale de l'essai (10 jours fixes ou prolongée jusqu'au CC).
   const showTrial = ready && !anonyme && state.profile.plan !== "active" && daysLeft <= 7;
   const showConnexion = ready && anonyme;
 

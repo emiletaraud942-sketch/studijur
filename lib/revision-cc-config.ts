@@ -90,3 +90,13 @@ export function ccAVenir(dansLesJours = 60): RevisionCCConfig[] {
     .filter((c) => c.ccDate && new Date(c.ccDate).getTime() <= seuil && new Date(c.ccDate).getTime() >= Date.now() - 86400000)
     .sort((a, b) => new Date(a.ccDate!).getTime() - new Date(b.ccDate!).getTime());
 }
+
+// Jours avant le CC le plus proche à partir d'aujourd'hui, ou -Infinity si
+// aucune date n'est connue — brique commune à la durée de l'essai sans carte
+// (trialDaysLeft, lib/state.tsx) et à celle de l'essai Stripe avec carte
+// (app/api/checkout/route.ts) : les deux doivent s'arrêter au même moment,
+// sans quoi renseigner sa carte plus tôt désavantagerait l'élève.
+export function joursAvantProchainCC(): number {
+  const prochainCC = ccAVenir()[0];
+  return prochainCC?.ccDate ? joursAvant(prochainCC.ccDate) : -Infinity;
+}

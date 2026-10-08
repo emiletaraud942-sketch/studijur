@@ -4,7 +4,7 @@ import Landing from "@/components/Landing";
 export const metadata: Metadata = {
   title: "StudiJur — 5 minutes de droit par jour",
   description:
-    "L'entraînement quotidien des étudiants en L1 de droit : une leçon de 5 minutes, cinq définitions, une question type examen corrigée et un quiz. Sept jours d'essai gratuit.",
+    "L'entraînement quotidien des étudiants en L1 de droit : une leçon de 5 minutes, cinq définitions, une question type examen corrigée et un quiz. Dix jours d'essai gratuit, jusqu'à ton CC si besoin.",
   openGraph: {
     title: "StudiJur — 5 minutes de droit par jour",
     description:
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "StudiJur — 5 minutes de droit par jour",
-    description: "Réviser sa L1 de droit cinq minutes par jour. Sept jours gratuits.",
+    description: "Réviser sa L1 de droit cinq minutes par jour. Dix jours gratuits, jusqu'à ton CC si besoin.",
     images: ["/og.png"],
   },
 };

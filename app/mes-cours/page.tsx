@@ -32,7 +32,7 @@ export default function MyCoursesPage() {
   const importes = state.customCourses.length;
   const abonne = state.profile.plan === "active";
   const acces = hasAccess(state);
-  // Sans compte, le vrai palier n'est pas l'essai de 7 jours (inopérant tant
+  // Sans compte, le vrai palier n'est pas l'essai gratuit (inopérant tant
   // qu'aucun compte ne l'ancre) mais un import gratuit, puis la connexion —
   // même principe que la leçon gratuite sur /lecon/[id], voir
   // anonymousImportCapReached. Une fois connecté, on repasse sur le plafond

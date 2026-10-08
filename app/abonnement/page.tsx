@@ -92,7 +92,7 @@ export default function SubscribePage() {
           {abonne
             ? "Ton abonnement est actif. Merci."
             : left === null
-              ? "Sept jours d'essai gratuit, puis la formule de ton choix."
+              ? "Dix jours d'essai gratuit (prolongés jusqu'à ton CC si besoin), puis la formule de ton choix."
               : left > 0
                 ? `Il te reste ${left} jour${left > 1 ? "s" : ""} d'essai gratuit.`
                 : "Ton essai gratuit est terminé."}
@@ -115,7 +115,7 @@ export default function SubscribePage() {
           </div>
           <p className="mt-1 text-[13.5px]" style={{ color: "var(--muted)" }}>
             Soit 4,08 € par mois — toute l&apos;année de L1, de la rentrée aux rattrapages.
-            7 jours d&apos;essai gratuit.
+            Dix jours d&apos;essai gratuit, prolongés jusqu&apos;à ton CC si besoin.
           </p>
           <div className="mt-5">
             {abonne ? (
@@ -133,7 +133,7 @@ export default function SubscribePage() {
                 <button onClick={() => checkout("annual", true)} disabled={busy !== null}
                   className="block w-full text-center text-[12.5px] font-semibold underline"
                   style={{ color: "var(--muted)" }}>
-                  {busy?.plan === "annual" && busy.skipTrial ? "Redirection…" : "Payer tout de suite, sans les 7 jours d'essai"}
+                  {busy?.plan === "annual" && busy.skipTrial ? "Redirection…" : "Payer tout de suite, sans les 10 jours d'essai"}
                 </button>
               </div>
             ) : (
@@ -156,7 +156,8 @@ export default function SubscribePage() {
           <span className="text-[15px]" style={{ color: "var(--muted)" }}>/ mois</span>
         </div>
         <p className="mt-1 text-[13.5px]" style={{ color: "var(--muted)" }}>
-          Sans engagement, résiliable en un clic. 7 jours d&apos;essai gratuit.
+          Sans engagement, résiliable en un clic. Dix jours d&apos;essai gratuit, prolongés jusqu&apos;à ton CC
+          si besoin.
         </p>
         {!abonne && ready && stripeOn && (
           <div className="mt-4">
@@ -170,7 +171,7 @@ export default function SubscribePage() {
                 <button onClick={() => checkout("monthly", true)} disabled={busy !== null}
                   className="block w-full text-center text-[12.5px] font-semibold underline"
                   style={{ color: "var(--muted)" }}>
-                  {busy?.plan === "monthly" && busy.skipTrial ? "Redirection…" : "Payer tout de suite, sans les 7 jours d'essai"}
+                  {busy?.plan === "monthly" && busy.skipTrial ? "Redirection…" : "Payer tout de suite, sans les 10 jours d'essai"}
                 </button>
               </div>
             )}

@@ -20,7 +20,7 @@ capacité supplémentaire, sans changement de code — voir `.env.example`.
 |---|---|---|
 | `ANTHROPIC_API_KEY` | génération des leçons depuis les cours déposés | analyseur local, qualité moindre |
 | `NEXT_PUBLIC_SUPABASE_*` | comptes et synchronisation multi-appareils | progression locale au navigateur |
-| `STRIPE_*` | abonnement et essai de 7 jours | accès ouvert |
+| `STRIPE_*` | abonnement et essai gratuit (10 jours, jusqu'au CC si besoin) | accès ouvert |
 
 La page **Profil** (route `/reglages`) affiche en direct l'état de chaque service.
 

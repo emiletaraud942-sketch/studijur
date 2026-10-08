@@ -62,7 +62,7 @@ export default function Landing() {
             Faire ma première séance <Arrow className="h-4 w-4" />
           </Link>
           <span className="text-[13px]" style={{ color: "var(--muted)" }}>
-            Sept jours gratuits. Aucune carte bancaire demandée.
+            Dix jours gratuits, jusqu&apos;à ton CC si besoin. Aucune carte bancaire demandée.
           </span>
         </div>
       </section>
@@ -191,7 +191,7 @@ export default function Landing() {
       <section className="card overflow-hidden text-center">
         <div className="h-1" style={{ background: "var(--accent)" }} />
         <div className="p-7">
-          <h2 className="serif text-[24px] font-bold">Sept jours pour voir</h2>
+          <h2 className="serif text-[24px] font-bold">Dix jours pour voir, jusqu&apos;à ton CC si besoin</h2>
           <p className="mx-auto mt-2 max-w-md text-[14.5px]" style={{ color: "var(--muted)" }}>
             Gratuit, sans carte bancaire. Ensuite, 49 € pour toute l&apos;année de L1, ou 5,90 € par mois
             sans engagement.
