@@ -4,10 +4,11 @@ import { envoyerEmail } from "@/lib/brevo";
 
 export const runtime = "nodejs";
 
-// Envoi ponctuel (déclenché à la main via workflow_dispatch, voir
-// .github/workflows/relance-email.yml), pas un cron récurrent : à retirer
-// une fois la campagne du 09/10/2026 envoyée plutôt que de laisser un
-// endpoint "email à tous les comptes" disponible en permanence.
+// Outil de campagne réutilisable (déclenché à la main via workflow_dispatch,
+// voir .github/workflows/relance-email.yml), pas un cron récurrent. Pour une
+// prochaine campagne : changer SUJET/HTML ci-dessous, committer, puis
+// redéclencher le workflow (sans ?debug=1 pour l'envoi réel, avec pour
+// tester sur une seule adresse d'abord).
 function autorise(req: Request): boolean {
   const attendu = process.env.CRON_SECRET;
   if (!attendu) return false;
