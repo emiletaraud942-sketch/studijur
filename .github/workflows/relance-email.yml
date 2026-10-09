@@ -5,7 +5,16 @@ name: Relance email abonnés
 # ponctuelle vers /api/admin/relance (voir ce fichier — à retirer après
 # l'envoi du 09/10/2026).
 on:
-  workflow_dispatch: {}
+  workflow_dispatch:
+    inputs:
+      debug:
+        description: "1 pour tester un seul envoi (diagnostic Brevo) au lieu d'envoyer à tout le monde"
+        required: false
+        default: ""
+      to:
+        description: "Email de test (avec debug=1) — par défaut le premier compte trouvé"
+        required: false
+        default: ""
 
 jobs:
   relance:
@@ -15,4 +24,4 @@ jobs:
         run: |
           curl --fail --show-error --silent \
             -H "Authorization: Bearer ${{ secrets.CRON_SECRET }}" \
-            "https://studijur.fr/api/admin/relance"
+            "https://studijur.fr/api/admin/relance?debug=${{ github.event.inputs.debug }}&to=${{ github.event.inputs.to }}"

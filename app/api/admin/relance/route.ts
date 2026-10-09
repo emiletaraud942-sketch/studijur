@@ -29,6 +29,31 @@ const HTML = `
   </p>
 `;
 
+// `envoyerEmail` (lib/brevo.ts) avale l'erreur Brevo pour ne jamais faire
+// échouer l'action qui l'a déclenché ailleurs dans l'app — mais ça laisse
+// une campagne ratée (ex. 09/10/2026, 85 échecs) sans aucun détail. Ce mode
+// diagnostic appelle Brevo directement, sur un seul destinataire, pour
+// voir le vrai statut/corps de réponse avant de retenter sur tout le monde.
+async function diagnostic(to: string): Promise<{ status?: number; body?: string; erreur?: string }> {
+  const apiKey = process.env.BREVO_API_KEY;
+  if (!apiKey) return { erreur: "BREVO_API_KEY absent" };
+  try {
+    const res = await fetch("https://api.brevo.com/v3/smtp/email", {
+      method: "POST",
+      headers: { "api-key": apiKey, "content-type": "application/json", accept: "application/json" },
+      body: JSON.stringify({
+        sender: { email: process.env.BREVO_SENDER_EMAIL ?? "contact@studijur.fr", name: "StudiJur" },
+        to: [{ email: to }],
+        subject: SUJET,
+        htmlContent: HTML,
+      }),
+    });
+    return { status: res.status, body: await res.text() };
+  } catch (err) {
+    return { erreur: String(err) };
+  }
+}
+
 export async function GET(req: Request) {
   if (!autorise(req)) return NextResponse.json({ error: "Non autorisé." }, { status: 401 });
 
@@ -41,6 +66,12 @@ export async function GET(req: Request) {
     if (error) return NextResponse.json({ error: error.message }, { status: 500 });
     for (const u of data.users) if (u.email) emails.push(u.email);
     if (data.users.length < 200) break;
+  }
+
+  const url = new URL(req.url);
+  if (url.searchParams.get("debug") === "1") {
+    const to = url.searchParams.get("to") ?? emails[0];
+    return NextResponse.json({ total: emails.length, teste: to, resultat: await diagnostic(to) });
   }
 
   let envoyes = 0;
