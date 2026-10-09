@@ -70,7 +70,7 @@ export async function GET(req: Request) {
 
   const url = new URL(req.url);
   if (url.searchParams.get("debug") === "1") {
-    const to = url.searchParams.get("to") ?? emails[0];
+    const to = url.searchParams.get("to") || emails[0];
     return NextResponse.json({ total: emails.length, teste: to, resultat: await diagnostic(to) });
   }
 
