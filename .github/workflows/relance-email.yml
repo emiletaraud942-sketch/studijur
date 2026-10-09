@@ -1,0 +1,18 @@
+name: Relance email abonnés
+
+# Déclenchement manuel uniquement (workflow_dispatch) : contrairement à
+# cron-rappel.yml, ce n'est pas une tâche récurrente mais une campagne
+# ponctuelle vers /api/admin/relance (voir ce fichier — à retirer après
+# l'envoi du 09/10/2026).
+on:
+  workflow_dispatch: {}
+
+jobs:
+  relance:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Appelle /api/admin/relance
+        run: |
+          curl --fail --show-error --silent \
+            -H "Authorization: Bearer ${{ secrets.CRON_SECRET }}" \
+            "https://studijur.fr/api/admin/relance"
