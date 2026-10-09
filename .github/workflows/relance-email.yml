@@ -1,9 +1,9 @@
 name: Relance email abonnés
 
 # Déclenchement manuel uniquement (workflow_dispatch) : contrairement à
-# cron-rappel.yml, ce n'est pas une tâche récurrente mais une campagne
-# ponctuelle vers /api/admin/relance (voir ce fichier — à retirer après
-# l'envoi du 09/10/2026).
+# cron-rappel.yml, ce n'est pas une tâche récurrente mais un outil de
+# campagne réutilisable vers /api/admin/relance (voir ce fichier — gardé
+# en place entre les campagnes plutôt que supprimé après chaque envoi).
 on:
   workflow_dispatch:
     inputs:
