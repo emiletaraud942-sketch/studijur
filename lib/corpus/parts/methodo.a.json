@@ -224,5 +224,97 @@
       ]
     },
     "quiz": []
+  },
+  {
+    "id": "methodo-06",
+    "order": 6,
+    "title": "La fiche d'arrêt",
+    "teaser": "Résumer une décision avant de la commenter : faits, procédure, moyen, problème de droit, solution — rien de plus.",
+    "minutes": 5,
+    "brief": [
+      "La fiche d'arrêt est un exercice **préparatoire**, presque toujours exigé avant un commentaire ou une note d'arrêt, parfois noté pour lui-même en TD. Elle résume une décision de justice (arrêt d'une cour, jugement d'un tribunal) en **cinq rubriques fixes**, toujours dans le même ordre : les faits, la procédure, les prétentions et moyens des parties, le problème de droit, la solution. On n'y **critique rien** : l'appréciation vient seulement après, dans la note d'arrêt.",
+      "**Les faits** se résument de façon chronologique et objective, sans jugement de valeur, en identifiant les parties par leur **qualité procédurale** — demandeur, défendeur, ou, au stade du pourvoi, demandeur au pourvoi et défendeur au pourvoi — plutôt que par leur nom propre répété à chaque phrase.",
+      "**La procédure** retrace le parcours judiciaire dans l'ordre : qui a saisi quelle juridiction en premier, ce qu'elle a décidé, qui a interjeté appel, ce qu'a décidé la cour d'appel, qui s'est pourvu en cassation et pourquoi. Le **demandeur au pourvoi** est celui qui conteste l'arrêt d'appel ; le **défendeur au pourvoi** est celui qui l'a obtenu et le défend.",
+      "**Les prétentions et moyens** exposent ce que chaque partie demande et l'argumentation juridique qui soutient sa demande — un **moyen** est précisément l'argument de droit invoqué au soutien d'un pourvoi. Le **problème de droit** est la question juridique précise que la juridiction doit trancher : il se formule en **une question synthétique**, jamais en reprenant les faits de l'espèce. La **solution** est le dispositif de la décision — ce que tranche la juridiction (cassation ou rejet du pourvoi, confirmation ou infirmation du jugement) — assorti du raisonnement qui y conduit, parfois résumé dans un **chapeau** : la formule de principe placée en tête de certains arrêts, qui énonce la règle générale avant de l'appliquer au cas d'espèce."
+    ],
+    "keyPoints": [
+      "Cinq rubriques, toujours dans le même ordre : faits, procédure, prétentions et moyens, problème de droit, solution.",
+      "Un exercice objectif et préparatoire — on ne critique rien, ça viendra dans la note d'arrêt.",
+      "Vocabulaire de procédure précis : demandeur/défendeur au pourvoi, moyen, dispositif, chapeau.",
+      "Le problème de droit se formule en une question synthétique, jamais en reprenant les faits."
+    ],
+    "definitions": [],
+    "exam": {
+      "kind": "exercice — rédiger une fiche d'arrêt",
+      "question": "Cas d'école : un acheteur refuse de payer le prix convenu avec un vendeur, invoquant un vice du consentement. Le tribunal judiciaire rejette sa demande d'annulation de la vente. La cour d'appel confirme ce jugement. L'acheteur forme un pourvoi en cassation, soutenant que la cour d'appel n'a pas recherché si le vice allégué avait été déterminant de son consentement. Construisez la fiche d'arrêt correspondante (faits, procédure, moyen, problème de droit), sans inventer de solution — elle n'est pas donnée par l'énoncé.",
+      "concise": "**Faits.** Un acheteur a refusé de payer le prix d'une vente, invoquant un vice de son consentement. **Procédure.** Le tribunal judiciaire, saisi par le vendeur, a rejeté la demande d'annulation formée par l'acheteur ; la cour d'appel, saisie par ce dernier, a confirmé le jugement ; l'acheteur, demandeur au pourvoi, s'est pourvu en cassation contre cet arrêt. **Moyen.** L'acheteur reproche à la cour d'appel de ne pas avoir recherché si le vice allégué avait été déterminant de son consentement. **Problème de droit.** Une juridiction peut-elle rejeter une demande d'annulation pour vice du consentement sans rechercher le caractère déterminant de ce vice ? **Solution.** Non donnée par l'énoncé : à ce stade de la fiche, elle resterait à vérifier dans le dispositif de l'arrêt réel.",
+      "plan": [
+        {
+          "title": "I. Les rubriques qui situent l'affaire",
+          "children": [
+            { "title": "A. Faits et procédure", "points": ["Les faits : résumé chronologique et objectif, sans jugement de valeur", "La procédure : qui a saisi qui, et ce qui a été décidé à chaque étape", "Identifier les parties par leur qualité, pas par leur nom répété"] },
+            { "title": "B. Prétentions et moyens", "points": ["Ce que chaque partie demande", "Le moyen : l'argument de droit soutenant le pourvoi", "Distinguer le moyen de la simple insatisfaction du plaideur"] }
+          ]
+        },
+        {
+          "title": "II. Les rubriques qui posent et tranchent la question",
+          "children": [
+            { "title": "A. Le problème de droit", "points": ["Une question synthétique, jamais la reprise des faits", "Elle doit pouvoir se poser indépendamment de l'espèce", "Elle prépare directement la problématique de la future note"] },
+            { "title": "B. La solution", "points": ["Le dispositif : cassation ou rejet, confirmation ou infirmation", "Le raisonnement qui y conduit, parfois résumé en un chapeau", "Une fiche sans solution reste incomplète : elle appelle à vérifier l'arrêt réel"] }
+          ]
+        }
+      ],
+      "pitfalls": [
+        "Ne jamais glisser une appréciation personnelle dans la fiche : elle reste un résumé neutre, l'appréciation est l'objet de la note d'arrêt.",
+        "Ne pas confondre le problème de droit (une question générale) avec les faits de l'espèce qui l'illustrent."
+      ]
+    },
+    "quiz": []
+  },
+  {
+    "id": "methodo-07",
+    "order": 7,
+    "title": "La note d'arrêt",
+    "teaser": "Commenter un arrêt, ce n'est pas refaire le procès : c'est apprécier la solution retenue par la cour.",
+    "minutes": 5,
+    "brief": [
+      "La note d'arrêt — aussi appelée commentaire d'arrêt — est l'exercice noté qui prolonge la fiche d'arrêt : elle applique au texte d'une décision de justice la même logique que le commentaire de texte juridique vu précédemment, **expliquer puis apprécier**. La différence tient à son objet : le texte commenté est toujours une décision de justice, ce qui impose à l'introduction d'intégrer, sous une forme condensée, les rubriques de la fiche d'arrêt avant d'atteindre la problématique.",
+      "**L'introduction** suit un enchaînement propre : l'accroche (jamais de « de tout temps »), puis la fiche d'arrêt résumée en quelques lignes (faits, procédure, moyen), l'**annonce du sens de la décision** — ce que tranche la cour, en une phrase, sans détailler son raisonnement, qui sera développé dans le corps —, l'**intérêt de l'arrêt** (un revirement, une précision inédite, une solution controversée en doctrine), la **problématique**, qui reformule le problème de droit en une question qui engage un débat plutôt qu'une simple interrogation fermée, et l'**annonce de plan**.",
+      "Le corps du devoir garde l'architecture binaire habituelle — I/A/B, II/A/B, chapeaux, transitions, **jamais de conclusion**. Deux architectures reviennent le plus souvent : « le principe posé par la cour » (I) / « la portée de ce principe » (II), ou bien « les conditions de la solution » (I) / « les effets de la solution » (II). Chaque sous-partie doit **citer un extrait précis** de la décision — les termes exacts des motifs, ou, pour un arrêt récent rédigé selon la réforme de la motivation engagée par la Cour de cassation en 2019, le paragraphe numéroté concerné —, puis l'expliquer et l'apprécier en le confrontant à la jurisprudence antérieure, à la doctrine ou au texte visé.",
+      "Trois choses qu'on ne fait **jamais** dans une note d'arrêt : critiquer les faits, qui sont donnés et non discutables ; rejuger l'affaire à la place de la cour, en expliquant ce qu'on aurait décidé soi-même ; reprocher à la cour de ne pas avoir statué sur une question qu'elle n'avait pas à trancher — elle répond au **moyen** qui lui était soumis, pas à toutes les questions que l'espèce aurait pu soulever."
+    ],
+    "keyPoints": [
+      "La note d'arrêt applique au texte d'une décision la logique du commentaire : expliquer, puis apprécier.",
+      "Introduction propre : accroche, fiche d'arrêt condensée, annonce du sens de la décision, intérêt, problématique, annonce de plan.",
+      "Deux architectures classiques : principe posé / portée du principe, ou conditions de la solution / effets de la solution.",
+      "On ne critique jamais les faits et on ne rejuge pas l'affaire : on apprécie le raisonnement de la cour sur le moyen qui lui était soumis."
+    ],
+    "definitions": [],
+    "exam": {
+      "kind": "exercice — plan de note d'arrêt",
+      "question": "Reprenez le cas de la fiche d'arrêt précédente (acheteur invoquant un vice du consentement, débouté en première instance et en appel, pourvoi fondé sur l'absence de recherche du caractère déterminant du vice). Supposons que la Cour de cassation casse l'arrêt d'appel, reprochant précisément aux juges du fond de ne pas avoir recherché si le vice allégué avait revêtu un caractère déterminant. Rédigez la problématique de la note d'arrêt, puis les deux titres de parties (I et II) d'un plan possible.",
+      "concise": "**Problématique.** Une juridiction peut-elle rejeter une demande d'annulation pour vice du consentement sans caractériser le caractère déterminant de ce vice dans la formation du contrat ? **Titre I** (le principe posé) : « L'exigence d'une recherche du caractère déterminant du vice ». **Titre II** (la portée du principe) : « Les conséquences sur le contrôle exercé par les juges du fond ». Les deux titres s'articulent : le premier énonce la règle que la Cour vient de poser, le second en mesure l'effet sur la façon dont les juridictions inférieures devront désormais motiver leurs décisions.",
+      "plan": [
+        {
+          "title": "I. Une introduction qui prépare le commentaire",
+          "children": [
+            { "title": "A. La fiche d'arrêt condensée", "points": ["Faits et procédure résumés en quelques lignes", "Le moyen qui a conduit à la cassation", "L'annonce du sens de la décision, sans développer le raisonnement"] },
+            { "title": "B. L'intérêt et la problématique", "points": ["L'intérêt : pourquoi cette solution mérite d'être commentée", "La problématique engage un débat, elle n'est pas une question fermée", "Elle prépare directement les deux titres du plan"] }
+          ]
+        },
+        {
+          "title": "II. Un corps qui explique puis apprécie",
+          "children": [
+            { "title": "A. Citer pour expliquer", "points": ["Un extrait précis des motifs entre guillemets dans chaque sous-partie", "Jamais de paraphrase sans citation", "Rattacher la citation à la question de droit posée"] },
+            { "title": "B. Apprécier sans rejuger", "points": ["Confronter la solution à la jurisprudence antérieure et à la doctrine", "Ne jamais critiquer les faits, qui sont donnés", "Ne jamais reprocher à la cour de ne pas trancher une question hors du moyen soulevé"] }
+          ]
+        }
+      ],
+      "pitfalls": [
+        "Ne jamais rouvrir le débat sur les faits : ils sont fixés par les juges du fond, seule leur qualification juridique se discute.",
+        "L'annonce du sens de la décision, en introduction, n'est pas la problématique : elle dit ce que la cour tranche, pas la question qui engage le commentaire."
+      ]
+    },
+    "quiz": []
   }
 ]
