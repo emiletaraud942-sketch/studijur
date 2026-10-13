@@ -5,6 +5,7 @@ import introA from "./corpus/parts/intro-droit.a.json";
 import introB from "./corpus/parts/intro-droit.b.json";
 import introC from "./corpus/parts/intro-droit.c.json";
 import introD from "./corpus/parts/intro-droit.d.json";
+import introE from "./corpus/parts/intro-droit.e.json";
 import constitA from "./corpus/parts/constit.a.json";
 import constitB from "./corpus/parts/constit.b.json";
 import constitC from "./corpus/parts/constit.c.json";
@@ -37,7 +38,7 @@ type RawLesson = Omit<Lesson, "courseId">;
 // chargement du module. Aucune étape de build n'est nécessaire, et ajouter une
 // matière revient à déposer un fichier et à l'enregistrer dans cette table.
 const PARTS: Record<string, RawLesson[][]> = {
-  "intro-droit": [introA, introB, introC, introD] as unknown as RawLesson[][],
+  "intro-droit": [introA, introB, introC, introD, introE] as unknown as RawLesson[][],
   constit: [constitA, constitB, constitC] as unknown as RawLesson[][],
   orga: [orgaA, orgaB, orgaC, orgaD] as unknown as RawLesson[][],
   histoire: [histoireA, histoireB, histoireC] as unknown as RawLesson[][],
