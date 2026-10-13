@@ -9,7 +9,7 @@
       "Trois notions structurent l'ensemble du droit privé. Les **personnes** sont les sujets de droit — personnes physiques et personnes morales —, dotées de la **personnalité juridique**, l'aptitude à être titulaire de droits et d'obligations. Les **biens** sont tout ce qui n'est pas une personne ; leur notion centrale est la **propriété**, présentée par l'article 544 du Code civil comme le droit le plus absolu. Les **obligations**, enfin, sont des liens de droit entre un créancier et un débiteur, dont la source est soit le **contrat** (art. 1101 C. civ.), soit la **responsabilité** (art. 1240 C. civ.).",
       "Le droit contemporain est traversé par des tendances de fond, qu'il faut savoir mobiliser dans une copie. La **constitutionnalisation** : la QPC irrigue désormais toutes les branches du droit. L'**européanisation** : primauté du droit de l'Union européenne, influence croissante de la CEDH. La **fondamentalisation** : les droits fondamentaux gagnent jusqu'aux litiges entre personnes privées.",
       "La **contractualisation** : montée en puissance de la norme négociée, le contrat, au détriment parfois de la loi imposée. La **subjectivisation** : prolifération des « droits à » — droit à la santé, au logement. La **numérisation** : *open data* des décisions de justice, encadrement de l'intelligence artificielle par l'AI Act (règlement (UE) 2024/1689 du 13 juin 2024).",
-      "L'**écologisation** : le droit saisi par l'impératif environnemental — Charte de l'environnement de 2004, devoir de vigilance, contentieux climatique. La **protection de la vulnérabilité** : le droit se met du côté des plus faibles — consommateur, mineur, majeur protégé. La **lutte contre les discriminations**, enfin : la recherche d'une égalité concrète, et non plus seulement formelle.",
+      "L'**écologisation** : le droit saisi par l'impératif environnemental — Charte de l'environnement du 1er mars 2005, devoir de vigilance, contentieux climatique. La **protection de la vulnérabilité** : le droit se met du côté des plus faibles — consommateur, mineur, majeur protégé. La **lutte contre les discriminations**, enfin : la recherche d'une égalité concrète, et non plus seulement formelle.",
       "Ces neuf tendances ne sont pas de simples mots-clés isolés : elles s'articulent entre elles. La fondamentalisation et l'européanisation se nourrissent l'une l'autre par la jurisprudence de la CEDH ; la numérisation et l'écologisation posent toutes deux la question de l'adaptation du droit à des phénomènes qui débordent les frontières nationales. Savoir les nommer et les illustrer est un réflexe attendu dans toute copie de droit contemporain."
     ],
     "keyPoints": [
@@ -23,7 +23,7 @@
       { "term": "Propriété", "text": "Droit réel présenté comme le plus absolu que le droit reconnaisse sur un bien.", "source": "Article 544 du Code civil" },
       { "term": "Constitutionnalisation", "text": "Tendance contemporaine par laquelle le contrôle de constitutionnalité, notamment via la QPC, irrigue toutes les branches du droit." },
       { "term": "Fondamentalisation", "text": "Tendance par laquelle les droits fondamentaux gagnent en influence jusque dans les litiges entre personnes privées." },
-      { "term": "Écologisation du droit", "text": "Tendance par laquelle le droit intègre l'impératif environnemental, à travers la Charte de l'environnement de 2004, le devoir de vigilance et le contentieux climatique." }
+      { "term": "Écologisation du droit", "text": "Tendance par laquelle le droit intègre l'impératif environnemental, à travers la Charte de l'environnement du 1er mars 2005, le devoir de vigilance et le contentieux climatique." }
     ],
     "exam": {
       "kind": "dissertation",
@@ -41,7 +41,7 @@
           "title": "II. Des mutations répondant aux défis contemporains",
           "children": [
             { "title": "A. Contractualisation et protection des plus faibles", "points": ["La montée en puissance de la norme négociée", "La protection de la vulnérabilité : consommateur, mineur, majeur protégé", "La lutte contre les discriminations, vers une égalité concrète"] },
-            { "title": "B. Numérisation et écologisation", "points": ["L'open data des décisions de justice et l'AI Act de 2024", "La Charte de l'environnement de 2004 et le contentieux climatique", "Conclusion : les piliers demeurent, la logique se transforme"] }
+            { "title": "B. Numérisation et écologisation", "points": ["L'open data des décisions de justice et l'AI Act de 2024", "La Charte de l'environnement du 1er mars 2005 et le contentieux climatique", "Conclusion : les piliers demeurent, la logique se transforme"] }
           ]
         }
       ],
@@ -55,7 +55,7 @@
       { "q": "L'article 544 du Code civil concerne :", "choices": ["Le contrat", "La responsabilité", "La propriété", "La filiation"], "answer": 2, "why": "Il présente la propriété comme le droit le plus absolu reconnu sur un bien." },
       { "q": "L'AI Act est :", "choices": ["Une loi française de 2024", "Un règlement de l'Union européenne du 13 juin 2024", "Un traité de l'ONU", "Une décision du Conseil constitutionnel"], "answer": 1, "why": "Règlement (UE) 2024/1689, qui encadre l'intelligence artificielle à l'échelle de l'Union." },
       { "q": "La fondamentalisation désigne :", "choices": ["La disparition des droits fondamentaux", "La montée en puissance des droits fondamentaux dans les litiges entre particuliers", "La codification du droit", "La suppression de la Constitution"], "answer": 1, "why": "Les droits fondamentaux irriguent désormais des rapports autrefois purement privés." },
-      { "q": "L'écologisation du droit s'appuie notamment sur :", "choices": ["Le Code civil de 1804", "La Charte de l'environnement de 2004", "La loi de 1905", "L'article 544 du Code civil"], "answer": 1, "why": "Avec le devoir de vigilance et le développement du contentieux climatique." }
+      { "q": "L'écologisation du droit s'appuie notamment sur :", "choices": ["Le Code civil de 1804", "La Charte de l'environnement du 1er mars 2005", "La loi de 1905", "L'article 544 du Code civil"], "answer": 1, "why": "Avec le devoir de vigilance et le développement du contentieux climatique." }
     ]
   },
   {
