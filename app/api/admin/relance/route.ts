@@ -15,14 +15,15 @@ function autorise(req: Request): boolean {
   return req.headers.get("authorization") === `Bearer ${attendu}`;
 }
 
-const SUJET = "Ton programme de révision t'attend";
+const SUJET = "Tes CC arrivent — il est temps de réviser";
 
 const HTML = `
   <p>Salut,</p>
-  <p>Ton programme de révision pour tes prochains CC t'attend sur StudiJur : le cours du jour, les définitions, un quiz, et un plan de révision calé automatiquement sur la date de ton contrôle.</p>
+  <p>Tes premiers contrôles continus approchent : le <strong>21 octobre</strong> (Introduction historique au droit public) et le <strong>22 octobre</strong> (Droit constitutionnel et Introduction générale au droit) — dans un peu plus d'une semaine.</p>
+  <p>Sur StudiJur, ton plan de révision est calé automatiquement sur ces dates : fiche condensée, quiz, puis focus sur tes erreurs à l'approche du jour J.</p>
   <p>
     <a href="https://studijur.fr/reviser" style="display:inline-block;background:#1a2e22;color:#ffffff;padding:11px 20px;border-radius:8px;text-decoration:none;font-weight:600;">
-      Reprendre mes révisions →
+      Voir mon plan de révision →
     </a>
   </p>
   <p style="color:#767676;font-size:13px;margin-top:28px;">
