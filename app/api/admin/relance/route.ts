@@ -15,14 +15,15 @@ function autorise(req: Request): boolean {
   return req.headers.get("authorization") === `Bearer ${attendu}`;
 }
 
-const SUJET = "Ton programme de révision t'attend";
+const SUJET = "Tes CC arrivent — il est temps de réviser";
 
 const HTML = `
   <p>Salut,</p>
-  <p>Ton programme de révision pour tes prochains CC t'attend sur StudiJur : le cours du jour, les définitions, un quiz, et un plan de révision calé automatiquement sur la date de ton contrôle.</p>
+  <p>Tes premiers contrôles continus approchent : le <strong>21 octobre</strong> (Introduction historique au droit public) et le <strong>22 octobre</strong> (Droit constitutionnel et Introduction générale au droit) — dans un peu plus d'une semaine.</p>
+  <p>Sur StudiJur, ton plan de révision est calé automatiquement sur ces dates : fiche condensée, quiz, puis focus sur tes erreurs à l'approche du jour J.</p>
   <p>
     <a href="https://studijur.fr/reviser" style="display:inline-block;background:#1a2e22;color:#ffffff;padding:11px 20px;border-radius:8px;text-decoration:none;font-weight:600;">
-      Reprendre mes révisions →
+      Voir mon plan de révision →
     </a>
   </p>
   <p style="color:#767676;font-size:13px;margin-top:28px;">
@@ -61,18 +62,38 @@ export async function GET(req: Request) {
   const sb = getAdmin();
   if (!sb) return NextResponse.json({ error: "Supabase non configuré." }, { status: 503 });
 
-  const emails: string[] = [];
+  const comptes: { id: string; email: string }[] = [];
   for (let page = 1; ; page += 1) {
     const { data, error } = await sb.auth.admin.listUsers({ page, perPage: 200 });
     if (error) return NextResponse.json({ error: error.message }, { status: 500 });
-    for (const u of data.users) if (u.email) emails.push(u.email);
+    for (const u of data.users) if (u.email) comptes.push({ id: u.id, email: u.email });
     if (data.users.length < 200) break;
   }
+
+  // Qui a déjà les notifications push activées reçoit déjà ce rappel chaque
+  // soir par ce canal (voir app/api/cron/rappel/route.ts, qui personnalise
+  // automatiquement le message avec le compte à rebours du CC le plus
+  // proche) : lui renvoyer le même rappel par email ferait doublon. On ne
+  // mail donc que les comptes sans abonnement push actif.
+  const { data: abonnes, error: erreurAbonnes } = await sb
+    .from("push_subscriptions")
+    .select("user_id")
+    .not("user_id", "is", null);
+  if (erreurAbonnes) return NextResponse.json({ error: erreurAbonnes.message }, { status: 500 });
+  const idsAvecPush = new Set((abonnes ?? []).map((a) => a.user_id as string));
+
+  const emails = comptes.filter((c) => !idsAvecPush.has(c.id)).map((c) => c.email);
 
   const url = new URL(req.url);
   if (url.searchParams.get("debug") === "1") {
     const to = url.searchParams.get("to") || emails[0];
-    return NextResponse.json({ total: emails.length, teste: to, resultat: await diagnostic(to) });
+    return NextResponse.json({
+      totalComptes: comptes.length,
+      avecPush: idsAvecPush.size,
+      aMailer: emails.length,
+      teste: to,
+      resultat: await diagnostic(to),
+    });
   }
 
   let envoyes = 0;
@@ -83,5 +104,11 @@ export async function GET(req: Request) {
     else echecs.push(to);
   }
 
-  return NextResponse.json({ total: emails.length, envoyes, echecs: echecs.length });
+  return NextResponse.json({
+    totalComptes: comptes.length,
+    avecPush: idsAvecPush.size,
+    aMailer: emails.length,
+    envoyes,
+    echecs: echecs.length,
+  });
 }
