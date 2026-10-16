@@ -19,7 +19,7 @@ const SUJET = "Tes CC arrivent — il est temps de réviser";
 
 const HTML = `
   <p>Salut,</p>
-  <p>Tes premiers contrôles continus approchent : le <strong>21 octobre</strong> (Introduction historique au droit public) et le <strong>22 octobre</strong> (Droit constitutionnel et Introduction générale au droit) — dans un peu plus d'une semaine.</p>
+  <p>Tes premiers contrôles continus approchent : le <strong>5 novembre</strong> (Droit constitutionnel et Introduction générale au droit) et le <strong>6 novembre</strong> (Introduction historique au droit public).</p>
   <p>Sur StudiJur, ton plan de révision est calé automatiquement sur ces dates : fiche condensée, quiz, puis focus sur tes erreurs à l'approche du jour J.</p>
   <p>
     <a href="https://studijur.fr/reviser" style="display:inline-block;background:#1a2e22;color:#ffffff;padding:11px 20px;border-radius:8px;text-decoration:none;font-weight:600;">
