@@ -149,13 +149,15 @@
       "Le travail au brouillon commence par une **lecture stylo en main**. On identifie la **nature du texte** — article de presse, extrait doctrinal, discours politique, décision de justice, texte normatif — ainsi que son auteur, sa qualité, sa date et son contexte de production. On dégage ensuite **un mot-clé**, on lui donne une **définition précise**, et on y ajoute une courte **réflexion personnelle** : ce travail nourrira directement l'intérêt du texte dans l'introduction.",
       "Reste à choisir le **plan**. Contrairement à une idée reçue, il n'est pas toujours interdit de suivre l'ordre du texte : le plan **linéaire**, qui suit cet ordre, convient aux discours et aux textes chronologiques ; le plan **thématique**, qui regroupe les idées par thème, convient aux textes doctrinaux et aux décisions de justice. Le choix dépend donc de la nature du texte, pas d'une règle absolue.",
       "L'**introduction** reprend les étapes de la dissertation, adaptées et complétées : accroche, puis on **situe le texte** (contexte juridique, politique, historique), sa **présentation** (auteur, nature, date, source, plan interne éventuel), la **définition des notions clés**, l'**intérêt du texte** — nourri par le mot-clé travaillé au brouillon —, la **problématique**, et l'**annonce de plan**.",
-      "Dans le corps du commentaire, on ne **paraphrase jamais** : chaque paragraphe cite un extrait court du texte, entre guillemets, puis l'analyse et le confronte au droit positif, à la jurisprudence, à la doctrine. Le schéma attendu est **citer, expliquer, apprécier** ; un commentaire sans citations n'en est pas un. Même architecture formelle que la dissertation — I/A/B, II/A/B, chapeaux, transitions — et, comme elle, **pas de conclusion**."
+      "Dans le corps du commentaire, on ne **paraphrase jamais** : chaque paragraphe cite un extrait court du texte, entre guillemets, puis l'analyse et le confronte au droit positif, à la jurisprudence, à la doctrine. Le schéma attendu est **citer, expliquer, apprécier** ; un commentaire sans citations n'en est pas un. Même architecture formelle que la dissertation — I/A/B, II/A/B, chapeaux, transitions — et, comme elle, **pas de conclusion**.",
+      "La différence entre paraphraser et commenter tient souvent à une seule chose : la **citation précise, avec son numéro de ligne, suivie d'une analyse**. « Le texte dit que le pouvoir vient du peuple » reste de la paraphrase, même reformulée avec d'autres mots : le texte est seulement répété. « En affirmant que le pouvoir « vient du peuple » (l. 3), l'auteur reprend, sans le nommer, le principe de souveraineté populaire » est un commentaire : la citation est exacte, datée par sa ligne, et éclairée par une connaissance du cours. Symétriquement, une connaissance du cours qui n'éclaire aucune ligne précise du texte n'a pas sa place, même si elle est exacte : le commentaire reste au service du texte, jamais l'inverse. Le même réflexe vaut pour le plan : énumérer les cas que le texte distingue un par un, dans l'ordre où il les présente, n'est encore que de la paraphrase organisée ; un plan de commentaire doit dégager une **idée** derrière cette succession, que chaque partie défend."
     ],
     "keyPoints": [
       "Ni paraphrase, ni dissertation : expliquer puis apprécier.",
       "Brouillon : nature/auteur/date/contexte du texte, puis un mot-clé + définition + réflexion personnelle.",
       "Plan linéaire pour un discours ou un texte chronologique ; plan thématique pour un texte doctrinal ou une décision de justice.",
-      "Introduction en 7 étapes : accroche, situer le texte, présentation, définitions, intérêt du texte, problématique, annonce."
+      "Introduction en 7 étapes : accroche, situer le texte, présentation, définitions, intérêt du texte, problématique, annonce.",
+      "Citer avec le numéro de ligne, puis expliquer : une citation reformulée sans analyse reste de la paraphrase ; une connaissance du cours sans citation à l'appui est hors sujet."
     ],
     "definitions": [],
     "exam": {
@@ -180,7 +182,9 @@
       ],
       "pitfalls": [
         "Le plan linéaire n'est pas interdit : il est même recommandé pour un discours ou un texte chronologique.",
-        "Une citation non expliquée ne vaut rien : elle doit toujours être suivie d'une analyse."
+        "Une citation non expliquée ne vaut rien : elle doit toujours être suivie d'une analyse.",
+        "Vérifiez systématiquement les dates avant de rédiger : attribuer au texte un événement postérieur à sa rédaction est l'anachronisme le plus sanctionné en commentaire historique ou juridique.",
+        "Un plan qui reprend les cas du texte un par un, dans son ordre, n'est qu'une paraphrase déguisée en plan : chaque partie doit défendre une idée, pas résumer une portion du texte."
       ]
     },
     "quiz": []
