@@ -34,6 +34,8 @@ export const REVISION_CC: Record<string, RevisionCCConfig> = {
     lessonSlugs: [
       "constit-01", "constit-02", "constit-03", "constit-04",
       "constit-05", "constit-06", "constit-07", "constit-08",
+      "constit-09", "constit-10", "constit-11", "constit-12", "constit-13",
+      "constit-14", "constit-15",
     ],
     chronologieLessonIds: ["dates-07"],
   },
@@ -44,6 +46,7 @@ export const REVISION_CC: Record<string, RevisionCCConfig> = {
     lessonSlugs: [
       "intro-01", "intro-02", "intro-03", "intro-04", "intro-05", "intro-06", "intro-07", "intro-08",
       "intro-09", "intro-10", "intro-11", "intro-12", "intro-13", "intro-14", "intro-15", "intro-16",
+      "intro-17", "intro-18", "intro-19", "intro-20", "intro-21", "intro-22",
     ],
   },
 };
