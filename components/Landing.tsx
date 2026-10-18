@@ -43,6 +43,8 @@ export default function Landing() {
 
   return (
     <div className="space-y-14 pb-10">
+      <CCPresentationBanner />
+
       <section className="pt-6 text-center">
         <span className="mx-auto mb-5 grid h-16 w-16 place-items-center rounded-2xl"
           style={{ background: "var(--accent-soft)", color: "var(--accent)" }}>
@@ -82,8 +84,6 @@ export default function Landing() {
           </p>
         </div>
       </section>
-
-      <CCPresentationBanner />
 
       <section className="grid grid-cols-3 gap-3 text-center">
         {[
