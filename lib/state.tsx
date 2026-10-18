@@ -251,7 +251,6 @@ export function StudiJurProvider({ children }: { children: React.ReactNode }) {
       const { data } = await sb.auth.getUser();
       if (cancelled || !data.user) return;
       const myId = data.user.email ?? data.user.id;
-      setSignedInAs(myId);
 
       // L'état local peut appartenir à un AUTRE compte déjà connecté sur cet
       // appareil (voir OWNER_KEY) : s'il ne correspond pas à qui se connecte
@@ -281,6 +280,17 @@ export function StudiJurProvider({ children }: { children: React.ReactNode }) {
         if (localIsForeign || !local || remoteTime > localTime) setState({ ...freshState(), ...remote });
       }
       try { window.localStorage.setItem(OWNER_KEY, myId); } catch { /* stockage bloqué */ }
+      if (cancelled) return;
+      // Posé seulement maintenant (pas dès la connexion) : avant ce point,
+      // `state` peut encore porter l'ancien cache local de cet appareil, pas
+      // la version distante qu'on vient de récupérer ci-dessus. Activer la
+      // synchro vers Supabase plus tôt risquait de renvoyer ce cache périmé
+      // au serveur avant que la comparaison ci-dessus n'ait eu le temps de le
+      // remplacer — écrasant la vraie progression d'un autre appareil si le
+      // SELECT distant prenait plus de 1500 ms (l'effet de synchro juste en
+      // dessous se déclenche dès que `signedInAs` change, même sans nouvelle
+      // modification de `state`). Voir le bug de synchro du 18/10/2026.
+      setSignedInAs(myId);
       // Un abonnement payé peut avoir été activé depuis un autre appareil, ou
       // juste avant que cette session ne se (re)connecte : on vérifie à
       // chaque connexion plutôt que de ne jamais le faire. Le compte du
