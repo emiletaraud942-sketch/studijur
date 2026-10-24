@@ -1,0 +1,608 @@
+[
+  {
+    "id": "orga-17",
+    "order": 17,
+    "title": "La Cour de cassation",
+    "teaser": "Juge du droit, pas des faits : six chambres, un pourvoi, et un avis qui ne lie personne.",
+    "minutes": 6,
+    "brief": [
+      "Après un jugement de première instance et, le cas échéant, un arrêt de cour d'appel, le justiciable peut former un **pourvoi en cassation**. La **Cour de cassation** est la juridiction suprême de l'ordre judiciaire : elle ne constitue **pas un troisième degré** de juridiction, car elle ne rejuge jamais l'affaire sur les **faits**. Elle contrôle uniquement la **bonne application du droit** par la juridiction contestée — interprétation et application correctes de la règle de droit. Créée en **1790** sous le nom de Tribunal de cassation, elle prend le nom de Cour de cassation en **1804**, année du Code civil, dont elle permet depuis une interprétation **uniforme** sur tout le territoire : elle joue le rôle de **régulateur** de l'ordre judiciaire.",
+      "Son **rôle classique** est le **pourvoi**, qui se fait a posteriori de la décision contestée. La partie qui forme un pourvoi « se pourvoit en cassation ». Trois issues sont possibles : le **rejet** du pourvoi, qui rend la décision attaquée définitive, faute d'erreur de droit ; ou la **cassation** — la Cour **casse et annule** la décision, en tout ou partie, parce que le droit n'a pas été respecté. En cas de cassation, elle **renvoie** en principe le litige à de nouveaux juges, qui rejugent l'affaire dans son intégralité ; mais lorsqu'il n'est pas nécessaire de statuer à nouveau sur le fond, elle peut se prononcer **directement** sans renvoyer.",
+      "Depuis une réforme récente, la Cour exerce aussi un **rôle a priori** par la **saisine pour avis** : tous les juges (sauf les juges d'instruction et les cours d'assises) peuvent, en cours de procès, saisir la Cour de cassation pour obtenir un avis sur une « **question de droit nouvelle présentant une difficulté sérieuse et se posant dans de nombreux litiges** », à condition qu'elle ne fasse pas déjà l'objet d'un pourvoi en cours. La Cour peut refuser si ces conditions ne sont pas réunies. L'avis **ne lie pas** la juridiction qui l'a demandé, même si celle-ci a tout intérêt à le suivre ; une dizaine d'avis sont rendus chaque année.",
+      "La Cour de cassation est organisée en **6 chambres** : trois chambres civiles ordinaires (1re : personnes, contrats, assurances, international ; 2e : divorce, procédure civile ; 3e : droits réels, immobilier, urbanisme) ; deux chambres civiles spécialisées (commerciale, sociale) ; et la **chambre criminelle**, compétente en matière pénale. Ses magistrats, appelés **conseillers**, sont des magistrats de haut rang ; des personnalités non-magistrates mais juristes éminents (notaires, professeurs de droit) peuvent aussi être nommées conseillers, pour 5 ans non renouvelables, sur proposition du Conseil supérieur de la magistrature. De jeunes magistrats, conseillers référendaires et auditeurs, les assistent dans leurs travaux.",
+      "Les formations de jugement s'étagent selon l'importance de l'affaire : une chambre compte environ 20 conseillers, mais les jugements ordinaires sont rendus par **5 conseillers**, parfois seulement **3** depuis la réforme de 2001 (sauf la chambre criminelle, toujours au moins 5) lorsque l'affaire ne soulève aucune difficulté — la formation passant à 5 en cas de débat nécessaire. Une **chambre mixte** réunit des conseillers de plusieurs chambres lorsqu'une question de droit les concerne toutes ; l'**assemblée plénière** (environ 20 conseillers, toutes chambres représentées) est réservée aux affaires d'une importance majeure."
+    ],
+    "keyPoints": [
+      "Juge du droit, jamais des faits ; créée en 1790 (Tribunal de cassation), renommée Cour de cassation en 1804.",
+      "Pourvoi (a posteriori) : rejet ou cassation (avec renvoi, ou sans renvoi si la Cour évoque) ; saisine pour avis (a priori) : ne lie pas le juge, une dizaine par an.",
+      "6 chambres : 3 civiles ordinaires, 2 civiles spécialisées (commerciale, sociale), 1 criminelle.",
+      "Formation de jugement ordinaire : 5 conseillers, parfois 3 depuis 2001 (sauf chambre criminelle) ; chambre mixte et assemblée plénière pour les affaires importantes."
+    ],
+    "definitions": [
+      {
+        "term": "Pourvoi en cassation",
+        "text": "Voie de recours par laquelle une partie demande à la Cour de cassation de contrôler la bonne application du droit par la décision contestée, sans réexamen des faits."
+      },
+      {
+        "term": "Cassation avec renvoi",
+        "text": "Décision par laquelle la Cour de cassation annule la décision attaquée et renvoie l'affaire à de nouveaux juges pour qu'ils la rejugent dans son intégralité."
+      },
+      {
+        "term": "Saisine pour avis",
+        "text": "Procédure permettant à un juge, sauf le juge d'instruction et la cour d'assises, de demander à la Cour de cassation un avis non contraignant sur une question de droit nouvelle et sérieuse."
+      },
+      {
+        "term": "Chambre criminelle",
+        "text": "Chambre de la Cour de cassation compétente en matière pénale, dont la formation de jugement ordinaire compte toujours au moins 5 conseillers."
+      },
+      {
+        "term": "Assemblée plénière",
+        "text": "Formation de jugement la plus solennelle de la Cour de cassation, réunissant environ 20 conseillers représentant toutes les chambres, pour les affaires d'une importance majeure."
+      }
+    ],
+    "exam": {
+      "kind": "question de cours",
+      "question": "En quoi la Cour de cassation n'est-elle pas un troisième degré de juridiction ?",
+      "concise": "Un degré de juridiction supplémentaire impliquerait un nouveau jugement de l'affaire, **faits compris** — c'est exactement ce que fait la cour d'appel, qui réexamine en fait et en droit. La Cour de cassation procède différemment : elle ne contrôle que la **bonne application du droit** par la juridiction dont la décision est contestée, jamais les faits qu'elle a retenus. Lorsqu'elle casse une décision, elle ne la remplace pas par sa propre appréciation des faits : elle **renvoie**, en principe, l'affaire à de nouveaux juges du fond, qui seuls rejugent l'intégralité du litige. Ce n'est que par exception — lorsque statuer à nouveau sur le fond n'est pas nécessaire — qu'elle tranche elle-même, sans renvoyer. Ce rôle d'unification plutôt que de rejugement explique aussi sa seconde fonction, plus récente : la saisine pour avis, qui intervient **avant** la décision du juge du fond pour éclairer une question de droit nouvelle, sans jamais s'y substituer puisque l'avis ne lie pas. La Cour de cassation n'ajoute donc pas un degré de jugement : elle garantit, au sommet de l'ordre judiciaire, l'unité d'interprétation du droit.",
+      "plan": [
+        {
+          "title": "I. Un contrôle du droit, jamais des faits",
+          "children": [
+            {
+              "title": "A. La distinction avec les juridictions du fond",
+              "points": [
+                "Premier et second degré : jugement en fait et en droit",
+                "Cour de cassation : contrôle de la seule application du droit",
+                "Une juridiction régulatrice plutôt qu'un troisième jugement"
+              ]
+            },
+            {
+              "title": "B. Les issues du pourvoi",
+              "points": [
+                "Rejet du pourvoi, décision devenue définitive",
+                "Cassation avec renvoi à de nouveaux juges du fond",
+                "Cassation sans renvoi, lorsque le fond n'exige pas un nouveau jugement"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "II. Un rôle d'unification confirmé par la saisine pour avis",
+          "children": [
+            {
+              "title": "A. Un avis donné avant, non après",
+              "points": [
+                "Question de droit nouvelle, sérieuse, non déjà en pourvoi",
+                "Tous les juges peuvent saisir, sauf juge d'instruction et cour d'assises",
+                "Une dizaine d'avis rendus chaque année"
+              ]
+            },
+            {
+              "title": "B. Un avis qui ne lie pas",
+              "points": [
+                "La juridiction demandeuse reste libre de ne pas le suivre",
+                "Un intérêt pratique fort à le suivre tout de même",
+                "Conclusion : la Cour éclaire et unifie, elle ne rejuge jamais"
+              ]
+            }
+          ]
+        }
+      ],
+      "pitfalls": [
+        "La Cour de cassation ne réexamine jamais les faits : seule la bonne application du droit est contrôlée.",
+        "La saisine pour avis ne lie pas la juridiction qui l'a demandée, contrairement à un pourvoi qui peut casser une décision déjà rendue."
+      ]
+    },
+    "quiz": [
+      {
+        "q": "La Cour de cassation a pris ce nom en :",
+        "choices": [
+          "1804",
+          "1790",
+          "1872",
+          "1958"
+        ],
+        "answer": 0,
+        "why": "Créée en 1790 sous le nom de Tribunal de cassation, elle devient Cour de cassation en 1804, année du Code civil."
+      },
+      {
+        "q": "Lorsqu'elle casse une décision, la Cour de cassation :",
+        "choices": [
+          "Renvoie en principe l'affaire à de nouveaux juges du fond",
+          "Rejuge toujours elle-même les faits",
+          "Ne peut jamais annuler qu'en partie",
+          "Doit systématiquement saisir le Conseil constitutionnel"
+        ],
+        "answer": 0,
+        "why": "Sauf lorsqu'un nouveau jugement sur le fond n'est pas nécessaire, où elle peut trancher directement."
+      },
+      {
+        "q": "La Cour de cassation est organisée en :",
+        "choices": [
+          "6 chambres",
+          "10 chambres",
+          "3 chambres",
+          "15 chambres"
+        ],
+        "answer": 0,
+        "why": "Trois chambres civiles ordinaires, deux civiles spécialisées (commerciale, sociale) et la chambre criminelle."
+      },
+      {
+        "q": "La saisine pour avis de la Cour de cassation peut être demandée par :",
+        "choices": [
+          "Tous les juges sauf le juge d'instruction et la cour d'assises",
+          "Uniquement le procureur général",
+          "Le justiciable directement",
+          "Le Conseil constitutionnel"
+        ],
+        "answer": 0,
+        "why": "Et seulement pour une question de droit nouvelle, sérieuse et non déjà soumise à un pourvoi."
+      },
+      {
+        "q": "Depuis la réforme de 2001, une affaire simple devant la Cour de cassation peut être jugée par :",
+        "choices": [
+          "3 conseillers au lieu de 5",
+          "1 conseiller seul",
+          "20 conseillers obligatoirement",
+          "La seule chambre criminelle, quelle que soit la matière"
+        ],
+        "answer": 0,
+        "why": "Sauf la chambre criminelle, qui siège toujours à au moins 5 conseillers."
+      }
+    ]
+  },
+  {
+    "id": "orga-18",
+    "order": 18,
+    "title": "Le tribunal administratif et la cour administrative d'appel",
+    "teaser": "42 tribunaux créés en 1953, 9 cours d'appel créées en 1987 — et un rapporteur public qui n'est ni partie ni procureur.",
+    "minutes": 6,
+    "brief": [
+      "Les **juridictions administratives** tranchent les litiges impliquant l'administration — État, collectivités territoriales, établissements publics —, qu'ils opposent un particulier à l'administration ou deux administrations entre elles. Comme l'ordre judiciaire, l'ordre administratif distingue des juridictions de droit commun et des juridictions spécialisées. Le **tribunal administratif (TA)**, créé en **1953**, en est le juge du premier degré : il en existe **42 en France** (deux en Normandie, à Rouen et à Caen). Les délais y sont longs — 11 mois en moyenne, 18 mois à 2 ans à Rouen.",
+      "Le TA a une **compétence générale**, non limitée par la loi, pour juger notamment les conflits entre agents publics et leur administration-employeur (ancienneté, sanction disciplinaire...), entre l'administration et un usager du service public (étudiant contestant une note, usager contestant le retrait d'une aide sociale, permis de construire...), entre deux administrations (État contre collectivité, collectivités entre elles), ou entre l'administration et une association (dissolution, refus de subvention, contentieux environnemental — exemple : l'autoroute A69 dans le Tarn).",
+      "Organisé en **chambres** spécialisées par domaine (environnement, urbanisme, fonction publique...), chaque chambre compte 3 juges, dont un **rapporteur** chargé d'instruire le dossier et de rédiger le jugement. Un personnage propre à l'ordre administratif siège à l'audience : le **rapporteur public**, qui présente des **conclusions** sur le droit applicable, les faits et la solution envisagée. Totalement **indépendant** — il n'est ni procureur, ni partie, ne peut donc jamais faire appel —, il ne participe pas au délibéré et les juges ne sont jamais tenus de le suivre, même s'ils suivent souvent la qualité de son raisonnement. Le principe reste la **collégialité**, mais le juge statue à **juge unique** pour les affaires simples (enjeu mineur, article R222-13 CJA), les requêtes manifestement irrecevables (article R222-1 CJA), ou en tant que **juge des référés**.",
+      "La **cour administrative d'appel (CAA)**, créée en **1987**, est le juge du second degré : 9 CAA en France (Bordeaux, Nancy, Lyon, Nantes, Paris, Douai, Marseille, Versailles, Toulouse), rendant près de 35 000 arrêts par an — le TA de Rouen relève de la CAA de Douai. Organisées sur un modèle proche des TA, en chambres (de 4 à Douai, à 10 à Paris), elles jugent en principe en formation collégiale de 3 magistrats, portée à 5 pour les affaires complexes, avec un rapporteur et un rapporteur public. L'appel contre les jugements des TA est la règle, sauf exceptions listées par l'article R. 811-1 du Code de justice administrative — impôts locaux, aides sociales, permis de conduire, pensions de retraite — où le TA statue en premier et dernier ressort, seul un pourvoi en cassation devant le Conseil d'État restant ouvert ; de même pour le référé suspension. L'avocat y est en principe obligatoire. Comme les TA, les CAA exercent aussi une mission consultative, cette fois à la demande des préfets de **région**."
+    ],
+    "keyPoints": [
+      "TA (1953, 42 en France) : compétence générale, chambres de 3 juges, rapporteur public indépendant qui ne participe pas au délibéré.",
+      "Juge unique pour affaires simples, requêtes irrecevables, référés ; collégialité sinon.",
+      "CAA (1987, 9 en France) : juge d'appel des TA, collégialité (3, parfois 5 juges), sauf exceptions de l'article R. 811-1 CJA jugées en premier et dernier ressort par le TA.",
+      "Mission consultative des TA (préfets de département) et des CAA (préfets de région), peu utilisée en pratique."
+    ],
+    "definitions": [
+      {
+        "term": "Tribunal administratif (TA)",
+        "text": "Juridiction administrative de droit commun, juge du premier degré, créée en 1953 (42 en France), compétente pour la majorité des litiges avec l'administration."
+      },
+      {
+        "term": "Rapporteur public",
+        "text": "Magistrat propre à l'ordre administratif qui présente à l'audience des conclusions indépendantes sur la solution du litige, sans participer au délibéré ni pouvoir faire appel."
+      },
+      {
+        "term": "Cour administrative d'appel (CAA)",
+        "text": "Juridiction administrative de droit commun, juge du second degré, créée en 1987 (9 en France), compétente pour l'appel des jugements des tribunaux administratifs."
+      },
+      {
+        "term": "Juge unique administratif",
+        "text": "Formation de jugement dérogatoire au principe de collégialité, applicable aux affaires simples, aux requêtes manifestement irrecevables et au juge des référés (art. R222-1 et R222-13 CJA)."
+      },
+      {
+        "term": "Jugement en premier et dernier ressort devant le TA",
+        "text": "Régime applicable à certains contentieux listés par l'article R. 811-1 du Code de justice administrative (impôts locaux, aides sociales, permis de conduire, pensions de retraite), fermant l'appel mais laissant ouvert le pourvoi en cassation."
+      }
+    ],
+    "exam": {
+      "kind": "question de cours",
+      "question": "Quel rôle joue le rapporteur public devant les juridictions administratives, et pourquoi n'existe-t-il pas devant les juridictions judiciaires ?",
+      "concise": "Le rapporteur public est une spécificité de la justice administrative, sans équivalent judiciaire. Il présente à l'audience des **conclusions** — une analyse du droit applicable, des faits et de la solution qu'il préconise — mais il n'est **ni un procureur** (il ne représente ni l'État ni la société) **ni une partie** au procès (il n'est ni dans l'accusation ni dans la défense) : il est totalement **indépendant**, et ne peut d'ailleurs jamais faire appel de la décision rendue. Il ne participe pas au délibéré des juges, qui restent libres de ne pas suivre son analyse, même si la qualité habituelle de ses conclusions les y incite souvent en pratique. Cette figure s'explique par l'histoire du contentieux administratif : né d'un conseil du souverain plutôt que d'un tribunal opposant deux parties, il a conservé la trace d'une voix éclairante, distincte des parties, qui n'a pas de raison d'être dans un procès judiciaire classique organisé autour de l'accusation et de la défense. Le rapporteur public incarne ainsi la singularité d'une justice pensée, à l'origine, comme un conseil rendu juridictionnel plutôt que comme un arbitrage entre deux parties égales.",
+      "plan": [
+        {
+          "title": "I. Une fonction indépendante, ni partie ni procureur",
+          "children": [
+            {
+              "title": "A. Des conclusions, pas une défense ni une accusation",
+              "points": [
+                "Analyse du droit applicable, des faits, de la solution envisagée",
+                "Présentées à l'audience, avant le délibéré",
+                "Aucune représentation de l'État ni de la société"
+              ]
+            },
+            {
+              "title": "B. Une influence sans pouvoir de décision",
+              "points": [
+                "Absence de participation au délibéré",
+                "Les juges ne sont jamais tenus de le suivre",
+                "Impossibilité de faire appel de la décision rendue"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "II. Une singularité propre à l'histoire du contentieux administratif",
+          "children": [
+            {
+              "title": "A. L'héritage de la justice retenue",
+              "points": [
+                "Le Conseil d'État, ancien conseil du Roi, rendait d'abord des avis",
+                "Une logique de conseil éclairé plutôt que d'opposition de parties",
+                "Une fonction maintenue après la consécration de la justice déléguée en 1872"
+              ]
+            },
+            {
+              "title": "B. Une absence d'équivalent dans l'ordre judiciaire",
+              "points": [
+                "Le procès judiciaire est structuré par l'accusation et la défense",
+                "Le ministère public y représente déjà la société",
+                "Conclusion : le rapporteur public prolonge, sous forme juridictionnelle, l'ancienne fonction de conseil"
+              ]
+            }
+          ]
+        }
+      ],
+      "pitfalls": [
+        "Ne pas confondre le rapporteur (l'un des juges, chargé d'instruire et de rédiger le jugement) et le rapporteur public (indépendant, présente des conclusions à l'audience).",
+        "Le rapporteur public ne peut jamais faire appel : il n'est pas partie au procès."
+      ]
+    },
+    "quiz": [
+      {
+        "q": "Le tribunal administratif a été créé en :",
+        "choices": [
+          "1953",
+          "1872",
+          "1987",
+          "1799"
+        ],
+        "answer": 0,
+        "why": "Il existe aujourd'hui 42 tribunaux administratifs en France."
+      },
+      {
+        "q": "Le rapporteur public :",
+        "choices": [
+          "Ne participe pas au délibéré et ne peut pas faire appel",
+          "Représente le ministère public",
+          "Est une partie au procès",
+          "Siège uniquement en cour administrative d'appel"
+        ],
+        "answer": 0,
+        "why": "Il est totalement indépendant, ni procureur ni partie, et siège aussi bien devant les TA que les CAA et le Conseil d'État."
+      },
+      {
+        "q": "La cour administrative d'appel a été créée en :",
+        "choices": [
+          "1987",
+          "1953",
+          "1958",
+          "2023"
+        ],
+        "answer": 0,
+        "why": "Il en existe 9 en France, rendant près de 35 000 arrêts par an."
+      },
+      {
+        "q": "Le juge administratif statue à juge unique notamment :",
+        "choices": [
+          "Pour les affaires simples à enjeu mineur et en tant que juge des référés",
+          "Pour toutes les affaires sans exception",
+          "Uniquement devant le Conseil d'État",
+          "Jamais, la collégialité est absolue"
+        ],
+        "answer": 0,
+        "why": "Articles R222-1 et R222-13 du Code de justice administrative."
+      },
+      {
+        "q": "Devant le TA, un jugement en premier et dernier ressort (sans appel possible) concerne notamment :",
+        "choices": [
+          "Les impôts locaux et les aides sociales",
+          "Tous les litiges indistinctement",
+          "Uniquement les litiges environnementaux",
+          "Les litiges entre deux collectivités territoriales"
+        ],
+        "answer": 0,
+        "why": "Liste de l'article R. 811-1 du Code de justice administrative ; seul un pourvoi en cassation devant le Conseil d'État reste ouvert."
+      }
+    ]
+  },
+  {
+    "id": "orga-19",
+    "order": 19,
+    "title": "Les juridictions administratives spécialisées",
+    "teaser": "Cour des comptes, CNDA, juridictions disciplinaires : la justice administrative hors du cadre général.",
+    "minutes": 6,
+    "brief": [
+      "À côté des tribunaux administratifs et des cours administratives d'appel, l'ordre administratif compte des **juridictions spécialisées**, financières et non financières. Parmi les **juridictions financières**, la **Cour des comptes** contrôle les comptes des **gestionnaires publics** et sanctionne « les fautes graves ayant causé un préjudice financier significatif », par des amendes plafonnées à **6 mois de rémunération** du gestionnaire — sans exclure des poursuites pénales ou disciplinaires parallèles pour les mêmes faits. Elle exerce aussi des missions non juridictionnelles : assistance au Parlement dans le contrôle des lois de finances, certification des comptes de l'État et de la sécurité sociale. Organisée comme une juridiction judiciaire, avec un parquet et un procureur général, elle ne peut être saisie par un justiciable ordinaire, mais par les procureurs de la République, les préfets, ou s'**auto-saisir**.",
+      "La **cour d'appel financière**, créée en **2023**, est présidée par le premier président de la Cour des comptes et composée de 4 conseillers d'État, 4 conseillers à la Cour des comptes et deux personnalités qualifiées ; ses arrêts sont susceptibles de pourvoi en cassation devant le **Conseil d'État**. Les **chambres régionales et territoriales des comptes**, existant depuis **1982** (18 aujourd'hui), avaient vocation à décharger la Cour des comptes mais, depuis la réforme de 2023 qui a transféré à cette dernière le jugement des comptes des gestionnaires publics, elles n'ont plus de **missions juridictionnelles** : elles réalisent des **contrôles administratifs**, peuvent signaler des irrégularités à la Cour des comptes ou saisir le procureur de la République, et peuvent être saisies pour avis par le préfet en cas de budget communal non adopté dans les délais ou déséquilibré.",
+      "Parmi les juridictions administratives spéciales **non financières**, la **Cour nationale du droit d'asile (CNDA)** est la plus ancienne et juge le contentieux le plus abondant : elle statue sur les décisions de l'**OFPRA** (office français de protection des réfugiés et apatrides) et, lorsqu'elle annule un refus de statut de réfugié, peut l'accorder elle-même — elle statue alors en **plein contentieux**. Présidée par un conseiller d'État, composée aussi de juges financiers et judiciaires, ses arrêts sont susceptibles de pourvoi en cassation devant le Conseil d'État.",
+      "Les **juridictions disciplinaires** forment une catégorie nombreuse et non exhaustive, généralement composées de représentants des professions plutôt que de magistrats professionnels — les **conseils de l'ordre** (pharmaciens, dentistes, sages-femmes...). Deux sont à retenir en particulier : le **Conseil supérieur de la magistrature**, qui juge les magistrats judiciaires mais est lui-même une juridiction administrative spéciale, et le **conseil de discipline des universitaires**, jugé en première instance par la section disciplinaire du conseil d'administration de l'université, puis en appel par un conseiller d'État et en cassation par le Conseil d'État lui-même."
+    ],
+    "keyPoints": [
+      "Cour des comptes : contrôle les gestionnaires publics, amendes jusqu'à 6 mois de rémunération, organisée comme une juridiction judiciaire (parquet, procureur général).",
+      "Cour d'appel financière (2023) → pourvoi devant le Conseil d'État ; chambres régionales/territoriales (1982, 18 en France) : plus de rôle juridictionnel depuis 2023, seulement des contrôles administratifs.",
+      "CNDA : statue en plein contentieux sur les refus de l'OFPRA, pourvoi devant le Conseil d'État.",
+      "Juridictions disciplinaires : conseils de l'ordre, CSM (juge les magistrats, mais juridiction administrative), conseil de discipline des universitaires."
+    ],
+    "definitions": [
+      {
+        "term": "Cour des comptes",
+        "text": "Juridiction financière chargée de contrôler les comptes des gestionnaires publics et de sanctionner les fautes graves ayant causé un préjudice financier significatif."
+      },
+      {
+        "term": "Gestionnaire public",
+        "text": "Catégorie née de la fusion des comptables publics et des ordonnateurs, dont les comptes relèvent désormais du jugement de la Cour des comptes."
+      },
+      {
+        "term": "Chambre régionale ou territoriale des comptes",
+        "text": "Juridiction financière locale (18 en France), sans plus de mission juridictionnelle depuis 2023, exerçant des contrôles administratifs et pouvant signaler des irrégularités à la Cour des comptes."
+      },
+      {
+        "term": "Cour nationale du droit d'asile (CNDA)",
+        "text": "Juridiction administrative spéciale la plus ancienne, statuant en plein contentieux sur les recours contre les décisions de l'OFPRA en matière de statut de réfugié."
+      },
+      {
+        "term": "Conseil supérieur de la magistrature (CSM)",
+        "text": "Juridiction disciplinaire des magistrats judiciaires, bien qu'elle soit elle-même une juridiction administrative spéciale."
+      }
+    ],
+    "exam": {
+      "kind": "question de cours",
+      "question": "En quoi l'organisation de la Cour des comptes se rapproche-t-elle de celle d'une juridiction judiciaire, tout en relevant de l'ordre administratif ?",
+      "concise": "La Cour des comptes présente une organisation atypique pour une juridiction administrative : elle dispose d'un **parquet**, avec un **procureur général**, ce qui rapproche son fonctionnement de celui d'une juridiction judiciaire plutôt que de celui, par exemple, du tribunal administratif et de son rapporteur public indépendant. Elle ne peut par ailleurs pas être saisie par un justiciable ordinaire — à la différence du TA — mais seulement par le procureur de la République, les préfets, ou en s'**auto-saisissant**, ce qui traduit sa vocation de contrôle de l'intérêt général plutôt que de règlement de litiges individuels. Elle reste pourtant rattachée à l'ordre administratif : ses arrêts, comme ceux de la cour d'appel financière créée en 2023, font l'objet d'un pourvoi en cassation devant le **Conseil d'État**, et non devant la Cour de cassation. Cette hybridation — un parquet comme dans l'ordre judiciaire, une cassation comme dans l'ordre administratif — illustre que le rattachement d'une juridiction à un ordre tient moins à son organisation interne qu'à la nature du contentieux qu'elle juge : ici, le contrôle des comptes publics, matière éminemment administrative.",
+      "plan": [
+        {
+          "title": "I. Une organisation qui emprunte au modèle judiciaire",
+          "children": [
+            {
+              "title": "A. La présence d'un parquet",
+              "points": [
+                "Un procureur général, absent des juridictions administratives de droit commun",
+                "Une différence avec le rapporteur public, indépendant et non représentant de la société",
+                "Pas de saisine par un justiciable ordinaire"
+              ]
+            },
+            {
+              "title": "B. Des voies de saisine spécifiques",
+              "points": [
+                "Procureurs de la République, préfets",
+                "Auto-saisine possible",
+                "Une logique de contrôle d'office plutôt que de litige individuel"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "II. Un rattachement confirmé à l'ordre administratif",
+          "children": [
+            {
+              "title": "A. Le pourvoi devant le Conseil d'État",
+              "points": [
+                "Les arrêts de la Cour des comptes et de la cour d'appel financière",
+                "Jamais un pourvoi devant la Cour de cassation",
+                "Une juridiction financière, mais administrative"
+              ]
+            },
+            {
+              "title": "B. Un contrôle au service de l'intérêt général",
+              "points": [
+                "Sanctions pour faute grave ayant causé un préjudice financier",
+                "Missions non juridictionnelles : assistance au Parlement, certification des comptes",
+                "Conclusion : le rattachement suit la matière jugée, pas l'organisation interne"
+              ]
+            }
+          ]
+        }
+      ],
+      "pitfalls": [
+        "Les arrêts de la Cour des comptes et de la cour d'appel financière relèvent de la cassation devant le Conseil d'État, jamais la Cour de cassation.",
+        "Les chambres régionales et territoriales des comptes n'ont plus de mission juridictionnelle depuis 2023 : seulement des contrôles administratifs."
+      ]
+    },
+    "quiz": [
+      {
+        "q": "La Cour des comptes peut être saisie par :",
+        "choices": [
+          "Le procureur de la République, les préfets, ou s'auto-saisir",
+          "N'importe quel justiciable",
+          "Uniquement le Premier ministre",
+          "Uniquement le Conseil constitutionnel"
+        ],
+        "answer": 0,
+        "why": "Contrairement au tribunal administratif, elle n'est pas ouverte à la saisine par un justiciable ordinaire."
+      },
+      {
+        "q": "Depuis 2023, les chambres régionales et territoriales des comptes :",
+        "choices": [
+          "N'ont plus de mission juridictionnelle",
+          "Jugent désormais tous les comptables publics",
+          "Ont été supprimées",
+          "Sont devenues des cours d'appel financières"
+        ],
+        "answer": 0,
+        "why": "Le jugement des comptes des gestionnaires publics a été transféré à la Cour des comptes elle-même."
+      },
+      {
+        "q": "La CNDA statue sur les décisions :",
+        "choices": [
+          "De l'OFPRA, en matière de statut de réfugié",
+          "Du ministère de l'Intérieur sur les permis de conduire",
+          "Des préfectures sur l'urbanisme",
+          "De la Cour des comptes"
+        ],
+        "answer": 0,
+        "why": "Elle peut accorder elle-même le statut de réfugié : on dit qu'elle statue en plein contentieux."
+      },
+      {
+        "q": "Le Conseil supérieur de la magistrature est :",
+        "choices": [
+          "Une juridiction disciplinaire des magistrats judiciaires, mais administrative",
+          "Une juridiction judiciaire",
+          "Compétent pour juger les ministres",
+          "Une chambre de la Cour de cassation"
+        ],
+        "answer": 0,
+        "why": "Il juge les magistrats du siège et du parquet, mais relève lui-même de l'ordre administratif."
+      },
+      {
+        "q": "Les arrêts de la Cour des comptes et de la cour d'appel financière sont susceptibles de pourvoi devant :",
+        "choices": [
+          "Le Conseil d'État",
+          "La Cour de cassation",
+          "La Cour de justice de la République",
+          "Le Tribunal des conflits"
+        ],
+        "answer": 0,
+        "why": "Comme toute juridiction administrative, leur cassation relève du Conseil d'État."
+      }
+    ]
+  },
+  {
+    "id": "orga-20",
+    "order": 20,
+    "title": "Le Conseil d'État",
+    "teaser": "De la justice retenue à la justice déléguée : conseil du gouvernement et juge de cassation administratif.",
+    "minutes": 6,
+    "brief": [
+      "Le Conseil d'État tire son organisation de son histoire. Héritier de l'ancien **Conseil du Roi**, institué par les révolutionnaires en **1799**, il exerçait d'abord des missions de **conseil**, sous le régime de la **justice retenue** : il conseillait l'exécutif, qui restait seul compétent pour trancher. La **justice déléguée**, consacrée en **1872**, lui permet de rendre lui-même ses décisions en son nom propre. Il reste la seule juridiction administrative jusqu'en **1953** (création des tribunaux administratifs), puis **1987** (création des cours administratives d'appel).",
+      "Le Conseil d'État conserve une **organisation dualiste**, héritée de cette double histoire : d'un côté, **6 sections administratives** (intérieur, finances, travaux publics, sociale, administration, études de la prospective et de la coopération), qui exercent une mission de conseil ; de l'autre, la **section du contentieux**, qui exerce la mission de jugement. Sa présidence effective est assurée par son **vice-président** — le Président du Conseil d'État est, symboliquement, le Premier ministre.",
+      "La **section du contentieux** compte **10 chambres** (anciennement « sous-sections »), numérotées de 1 à 10. Les formations de jugement s'étagent selon l'importance de l'affaire : la **chambre jugeant seule** (3 à 5 membres), pour les affaires sans difficulté particulière ; la **formation en chambres réunies** (9 membres pour 2 chambres, 11 pour 3 ou 4), en cas de difficulté ; la **section du contentieux** elle-même, formation solennelle de 15 conseillers (président de la section, 3 présidents adjoints, 10 présidents de chambre, rapporteur), pour les affaires d'importance particulière ; enfin l'**assemblée du contentieux**, formation la plus solennelle, réunissant 17 membres — dont le vice-président du Conseil d'État, les présidents des 6 sections administratives et le président de la section du contentieux — pour les affaires d'importance majeure. Des formations à **juge unique** existent aussi, lorsque la nature de l'affaire ne justifie pas la collégialité ou pour le juge des référés. Devant le Conseil d'État, à la différence des autres juridictions administratives, le rapporteur public peut, exceptionnellement, assister au **délibéré** si les parties ne s'y opposent pas, sans toutefois y prendre part.",
+      "Le Conseil d'État exerce deux missions principales. Sa mission de **conseil**, historique, le conduit à donner un avis juridique sur les projets de loi, les ordonnances et certains décrets — un avis important, car l'écarter expose le gouvernement à un recours peu susceptible de réussir devant le juge administratif. Cinq des six sections administratives rendent ces avis ; la sixième élabore le rapport d'activité annuel, qui signale à l'exécutif les sujets de réforme jugés importants pour l'intérêt général.",
+      "Sa mission **contentieuse** fait du Conseil d'État un **juge de cassation** (pour les arrêts des CAA, des juridictions administratives spéciales, et des jugements des TA rendus en premier et dernier ressort — il peut rejeter le pourvoi, casser avec renvoi, ou « évoquer » l'affaire en la jugeant lui-même), un **juge d'appel** résiduel (depuis 1987, uniquement pour le contentieux électoral et les référés libertés contre les décisions des TA — sans possibilité de cassation ultérieure dans ce cas), et un **juge du premier et dernier ressort** pour une liste de matières fixée par le Code de justice administrative (décrets réglementaires du Président ou du Premier ministre, élections européennes et régionales...) — une activité représentant environ 13 % de son activité, contre 3 % pour l'appel, et sans aucune voie de recours ultérieure. Il rend enfin des **avis contentieux** : saisi par un TA ou une CAA sur une question de droit nouvelle et sérieuse, il dispose de 3 mois pour se prononcer, sans que son avis ne lie les juges du fond."
+    ],
+    "keyPoints": [
+      "Conseil du Roi (1799) → justice retenue → justice déléguée (1872) ; seule juridiction administrative jusqu'en 1953 (TA) puis 1987 (CAA).",
+      "Organisation dualiste : 6 sections administratives (conseil) + section du contentieux à 10 chambres (jugement), présidée en pratique par le vice-président.",
+      "Formations de jugement croissantes : chambre jugeant seule → chambres réunies → section du contentieux (15) → assemblée du contentieux (17).",
+      "Trois rôles contentieux : juge de cassation (principal), juge d'appel résiduel (depuis 1987), juge du premier et dernier ressort (~13 % de l'activité) ; plus les avis contentieux."
+    ],
+    "definitions": [
+      {
+        "term": "Organisation dualiste du Conseil d'État",
+        "text": "Division entre les sections administratives, qui exercent une mission de conseil, et la section du contentieux, qui exerce la mission de jugement."
+      },
+      {
+        "term": "Assemblée du contentieux",
+        "text": "Formation de jugement la plus solennelle du Conseil d'État, réunissant 17 membres (dont le vice-président et les présidents des sections), pour les affaires d'importance majeure."
+      },
+      {
+        "term": "Évocation (Conseil d'État)",
+        "text": "Faculté pour le Conseil d'État, lorsqu'il casse une décision, de juger lui-même l'affaire sans la renvoyer, pour une bonne administration de la justice ou pour imposer une nouvelle interprétation du droit."
+      },
+      {
+        "term": "Avis contentieux",
+        "text": "Avis rendu par la section du contentieux du Conseil d'État, à la demande d'un tribunal administratif ou d'une cour administrative d'appel, sur une question de droit nouvelle et sérieuse, sans lier les juges du fond."
+      },
+      {
+        "term": "Juge du premier et dernier ressort (Conseil d'État)",
+        "text": "Compétence du Conseil d'État pour juger directement, sans appel ni cassation possible, une liste de matières fixée par le Code de justice administrative."
+      }
+    ],
+    "exam": {
+      "kind": "dissertation",
+      "question": "L'organisation dualiste du Conseil d'État, entre conseil et jugement, est-elle un héritage dépassé ?",
+      "concise": "L'organisation dualiste du Conseil d'État — sections administratives de conseil d'un côté, section du contentieux de l'autre — trouve son origine dans le système de la **justice retenue** : jusqu'en 1872, le Conseil ne faisait que conseiller l'exécutif, qui tranchait lui-même. On pourrait croire cette dualité dépassée depuis la **justice déléguée**, qui fait du Conseil une juridiction à part entière rendant ses décisions en son nom propre. Elle demeure pourtant pleinement active aujourd'hui : cinq sections administratives rendent chaque année des avis sur les projets de texte gouvernementaux, et la sixième alimente le débat public par son rapport annuel. Cette persistance n'est pas un archaïsme mais une **spécificité assumée** de la justice administrative, dont témoigne aussi, côté contentieux, la figure du rapporteur public, habilité à assister exceptionnellement au délibéré du Conseil d'État — une proximité entre conseil et jugement qu'on ne retrouverait pas à l'identique devant une juridiction judiciaire. Le Conseil d'État reste ainsi une institution double : juge de cassation, d'appel résiduel et de premier ressort d'un côté, conseiller privilégié du gouvernement de l'autre, les deux fonctions se nourrissant mutuellement de la même expertise.",
+      "plan": [
+        {
+          "title": "I. Une dualité héritée de l'histoire de la justice administrative",
+          "children": [
+            {
+              "title": "A. De la justice retenue à la justice déléguée",
+              "points": [
+                "Conseil du Roi puis institution révolutionnaire de 1799",
+                "Justice retenue : le Conseil conseille, l'exécutif tranche",
+                "Justice déléguée de 1872 : le Conseil juge en son nom propre"
+              ]
+            },
+            {
+              "title": "B. Une organisation qui a conservé la trace de cette double origine",
+              "points": [
+                "6 sections administratives maintenues malgré la justice déléguée",
+                "Section du contentieux distincte, dédiée au jugement",
+                "Présidence effective par le vice-président, le Premier ministre restant président symbolique"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "II. Une dualité toujours active, non un vestige",
+          "children": [
+            {
+              "title": "A. Une mission de conseil pleinement exercée",
+              "points": [
+                "Avis sur les projets de loi, ordonnances et décrets",
+                "Un avis dont l'écart expose à un recours peu susceptible de réussir",
+                "Rapport annuel signalant les réformes jugées nécessaires"
+              ]
+            },
+            {
+              "title": "B. Une porosité assumée entre conseil et jugement",
+              "points": [
+                "Le rapporteur public peut exceptionnellement assister au délibéré du Conseil d'État",
+                "Une proximité sans équivalent dans l'ordre judiciaire",
+                "Conclusion : une dualité fonctionnelle, pas un archaïsme institutionnel"
+              ]
+            }
+          ]
+        }
+      ],
+      "pitfalls": [
+        "Ne pas confondre la justice retenue (avant 1872) et la justice déléguée (depuis 1872, confirmée par l'arrêt Cadot de 1889).",
+        "Le Président du Conseil d'État est, symboliquement, le Premier ministre : la présidence effective revient au vice-président."
+      ]
+    },
+    "quiz": [
+      {
+        "q": "Le Conseil d'État a été institué en :",
+        "choices": [
+          "1799",
+          "1872",
+          "1953",
+          "1987"
+        ],
+        "answer": 0,
+        "why": "Il hérite de l'ancien Conseil du Roi et exerce d'abord une justice retenue, avant la justice déléguée de 1872."
+      },
+      {
+        "q": "La présidence effective du Conseil d'État est assurée par :",
+        "choices": [
+          "Son vice-président",
+          "Le Premier ministre",
+          "Le Président de la République",
+          "Le premier président de la Cour de cassation"
+        ],
+        "answer": 0,
+        "why": "Le Premier ministre n'en est que le président symbolique."
+      },
+      {
+        "q": "La formation de jugement la plus solennelle du Conseil d'État est :",
+        "choices": [
+          "L'assemblée du contentieux",
+          "La chambre jugeant seule",
+          "La formation en chambres réunies",
+          "La section administrative"
+        ],
+        "answer": 0,
+        "why": "17 membres, réservée aux affaires d'importance majeure."
+      },
+      {
+        "q": "Le Conseil d'État est juge d'appel des décisions des TA :",
+        "choices": [
+          "Uniquement pour le contentieux électoral et les référés libertés",
+          "Pour tous les contentieux depuis 1987",
+          "Jamais, seulement juge de cassation",
+          "Uniquement en matière financière"
+        ],
+        "answer": 0,
+        "why": "Depuis la création des CAA en 1987, son rôle de juge d'appel s'est réduit à ces deux domaines."
+      },
+      {
+        "q": "L'activité de juge du premier et dernier ressort représente environ :",
+        "choices": [
+          "13 % de l'activité du Conseil d'État",
+          "90 % de son activité",
+          "50 % de son activité",
+          "0 %, cette compétence n'existe plus"
+        ],
+        "answer": 0,
+        "why": "Contre environ 3 % pour l'activité de juge d'appel, le reste étant la cassation."
+      }
+    ]
+  }
+]
