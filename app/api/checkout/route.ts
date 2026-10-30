@@ -135,7 +135,10 @@ export async function POST(req: Request) {
         custom_text: {
           submit: { message: "En payant, tu demandes l'accès immédiat au contenu et tu renonces à ton droit de rétractation (voir les CGV)." },
         },
-        ...discountParams,
+        // La réduction de parrainage reste réservée aux abonnements : elle
+        // se consomme une fois, alors qu'un pass peut s'acheter à chaque
+        // semaine d'examens.
+        allow_promotion_codes: true,
         locale: "fr",
         customer: customerId,
         success_url: `${origin}/?abonnement=ok`,

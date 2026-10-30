@@ -95,19 +95,32 @@ export async function POST(req: Request) {
         const customerId = typeof s.customer === "string" ? s.customer : null;
         if (email && s.mode === "payment" && s.metadata?.formule === "pass") {
           // Pass partiels : un second achat pendant un pass encore valide
-          // prolonge à partir de sa fin, pas d'aujourd'hui. `status` n'est
-          // pas touché : il reste celui d'un éventuel abonnement.
+          // prolonge à partir de sa fin, pas d'aujourd'hui.
           if (s.payment_status !== "paid") break;
-          const { data: ligne } = await sb.from("subscriptions").select("pass_expires_at").eq("email", email).maybeSingle();
-          const finActuelle = ligne?.pass_expires_at ? Date.parse(ligne.pass_expires_at) : 0;
-          const depart = Math.max(Date.now(), Number.isFinite(finActuelle) ? finActuelle : 0);
-          await sb.from("subscriptions").upsert({
-            email,
-            stripe_customer_id: customerId,
-            pass_expires_at: new Date(depart + PASS_JOURS * 86400000).toISOString(),
-            updated_at: new Date().toISOString(),
-          }, { onConflict: "email" });
-          await marquerRecompenseAppliqueeSiBesoin(sb, email);
+          // Idempotence : Stripe peut rejouer l'événement. Le marqueur est
+          // posé d'abord ; s'il existe déjà, ce pass est déjà crédité.
+          const { error: dejaTraite } = await sb.from("pass_sessions_traitees").insert({ session_id: s.id });
+          if (dejaTraite?.code === "23505") break;
+          if (dejaTraite) throw dejaTraite;
+          try {
+            const { data: ligne } = await sb.from("subscriptions").select("pass_expires_at").eq("email", email).maybeSingle();
+            const finActuelle = ligne?.pass_expires_at ? Date.parse(ligne.pass_expires_at) : 0;
+            const depart = Math.max(Date.now(), Number.isFinite(finActuelle) ? finActuelle : 0);
+            const fin = new Date(depart + PASS_JOURS * 86400000).toISOString();
+            // `status` vaut 'trialing' par défaut en base, ce qui ouvrirait un
+            // accès d'abonné illimité à qui n'a acheté qu'un pass : une
+            // nouvelle ligne est donc créée avec un statut neutre, et une
+            // ligne existante garde celui de son abonnement éventuel.
+            const { error } = ligne
+              ? await sb.from("subscriptions").update({ pass_expires_at: fin, updated_at: new Date().toISOString() }).eq("email", email)
+              : await sb.from("subscriptions").insert({ email, stripe_customer_id: customerId, status: "none", pass_expires_at: fin });
+            if (error) throw error;
+          } catch (err) {
+            // Écriture échouée : on libère le marqueur pour que le réessai de
+            // Stripe puisse créditer le pass.
+            await sb.from("pass_sessions_traitees").delete().eq("session_id", s.id);
+            throw err;
+          }
         } else if (email) {
           // "active" ici n'est qu'un statut provisoire, écrasé dans la
           // foulée par customer.subscription.created avec le vrai statut
@@ -135,8 +148,14 @@ export async function POST(req: Request) {
         break;
       }
     }
-  } catch {
+  } catch (err) {
     // On n'échoue jamais bruyamment : Stripe rejouerait l'événement en boucle.
+    // Seule exception, un pass payé non crédité : mieux vaut un réessai de
+    // Stripe qu'un élève qui a payé sans rien recevoir.
+    const s2 = event.type === "checkout.session.completed" ? (event.data.object as Stripe.Checkout.Session) : null;
+    if (s2?.metadata?.formule === "pass") {
+      return NextResponse.json({ error: err instanceof Error ? err.message : "écriture du pass impossible" }, { status: 500 });
+    }
   }
 
   return NextResponse.json({ received: true });

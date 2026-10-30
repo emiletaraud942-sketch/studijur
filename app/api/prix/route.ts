@@ -21,6 +21,7 @@ export async function GET() {
   };
   const secret = process.env.STRIPE_SECRET_KEY;
   const prix = { ...PRIX_PAR_DEFAUT };
+  let echec = false;
   const disponibles = secret ? (Object.keys(ids) as Formule[]).filter((f) => Boolean(ids[f])) : [];
   if (secret) {
     const stripe = new Stripe(secret);
@@ -29,10 +30,12 @@ export async function GET() {
         const p = await stripe.prices.retrieve(ids[f]!);
         if (typeof p.unit_amount === "number") prix[f] = p.unit_amount;
       } catch {
-        /* prix par défaut : la page reste affichable */
+        /* prix par défaut : la page reste affichable, sans le mettre en cache */
+        echec = true;
       }
     }));
   }
-  cache = { at: Date.now(), body: { prix, disponibles } };
-  return NextResponse.json(cache.body);
+  const body = { prix, disponibles };
+  if (!echec) cache = { at: Date.now(), body };
+  return NextResponse.json(body);
 }
