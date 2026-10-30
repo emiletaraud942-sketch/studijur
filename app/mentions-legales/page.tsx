@@ -118,10 +118,12 @@ export default function MentionsLegalesPage() {
       <section className="space-y-3">
         <SectionTitle kicker="Abonnement" title="Essai gratuit et résiliation" />
         <P>
-          L&apos;essai gratuit dure au moins dix jours, prolongé jusqu&apos;au prochain contrôle continu connu de
-          l&apos;étudiant si celui-ci tombe plus tard — aucune carte bancaire n&apos;est demandée pour en
-          profiter. Passé ce délai sans abonnement, l&apos;accès aux nouvelles leçons est suspendu ; la
-          progression déjà faite reste conservée.
+          Pour les comptes créés avant le 7 novembre 2026, l&apos;essai gratuit dure au moins dix jours, prolongé
+          jusqu&apos;au prochain contrôle continu connu de l&apos;étudiant si celui-ci tombe plus tard — aucune
+          carte bancaire n&apos;est demandée pour en profiter. Ensuite, et pour les comptes créés après cette
+          date, une leçon nouvelle par jour reste gratuite ; le reste s&apos;obtient avec le pass partiels
+          (paiement unique de 7 jours, sans renouvellement) ou un abonnement. La progression déjà faite reste
+          toujours conservée.
         </P>
         <P>
           Un abonnement payant se résilie à tout moment, sans frais ni justification, depuis la page Profil

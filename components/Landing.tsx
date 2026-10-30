@@ -3,6 +3,8 @@ import { CORPUS, corpusStats, pickDailyLesson } from "@/lib/corpus";
 import { Scales, Quill, Cards, Target, Check, Arrow, Flame, Upload } from "@/components/icons";
 import { OBJECTIONS } from "@/lib/objections";
 import CCPresentationBanner from "@/components/CCPresentationBanner";
+import SelonDate from "@/components/SelonDate";
+import { euros, PASS_JOURS, PRIX_PAR_DEFAUT } from "@/lib/tarifs";
 import PreuveSociale from "@/components/PreuveSociale";
 
 const ETAPES = [
@@ -65,7 +67,10 @@ export default function Landing() {
             Faire ma première séance <Arrow className="h-4 w-4" />
           </Link>
           <span className="text-[13px]" style={{ color: "var(--muted)" }}>
-            Dix jours gratuits, jusqu&apos;à ton CC si besoin. Aucune carte bancaire demandée.
+            <SelonDate
+              avant="Gratuit jusqu'à ton CC, aucune carte bancaire demandée."
+              apres="Une leçon gratuite par jour, pour toujours. Aucune carte bancaire demandée."
+            />
           </span>
           <PreuveSociale />
         </div>
@@ -213,10 +218,12 @@ export default function Landing() {
       <section className="card overflow-hidden text-center">
         <div className="h-1" style={{ background: "var(--accent)" }} />
         <div className="p-7">
-          <h2 className="serif text-[24px] font-bold">Dix jours pour voir, jusqu&apos;à ton CC si besoin</h2>
+          <h2 className="serif text-[24px] font-bold">
+            <SelonDate avant="Gratuit jusqu'à ton CC" apres="Une leçon gratuite par jour" />
+          </h2>
           <p className="mx-auto mt-2 max-w-md text-[14.5px]" style={{ color: "var(--muted)" }}>
-            Gratuit, sans carte bancaire. Ensuite, 49 € pour toute l&apos;année de L1, ou 5,90 € par mois
-            sans engagement.
+            Sans carte bancaire. Un partiel qui approche ? Le pass {PASS_JOURS} jours à {euros(PRIX_PAR_DEFAUT.pass)}
+            , sans abonnement, débloque tout. Ou {euros(PRIX_PAR_DEFAUT.annual)} pour toute l&apos;année de L1.
           </p>
           <div className="mt-6">
             <Link href={ctaHref}

@@ -193,6 +193,10 @@ export type Profile = {
   createdAt: string;
   trialStartedAt: string;
   plan: "trial" | "active" | "expired";
+  // Fin du pass partiels (paiement unique, voir lib/tarifs.ts), relue dans la
+  // table `subscriptions` à chaque connexion — jamais posée par le client
+  // lui-même. Absente : aucun pass acheté.
+  passExpiresAt?: string;
   reminderHour?: number;
   // Classement de promo, anonyme et désactivé par défaut.
   leaderboardOptIn?: boolean;
@@ -239,6 +243,10 @@ export type ProgressState = {
   // fiche ne faisait avancer aucun compteur : seules les leçons vraiment
   // testées (quiz, définitions) comptaient dans "% de préparation".
   fichesLues?: Record<string, true>;
+  // Leçons nouvelles ouvertes aujourd'hui par un compte gratuit (après
+  // l'essai, voir LECONS_GRATUITES_PAR_JOUR dans lib/tarifs.ts). `jour` au
+  // format todayKey : une liste d'un autre jour ne compte plus.
+  leconsGratuites?: { jour: string; ids: string[] };
 };
 
 // Retour de l'IA sur une copie rédigée par l'élève (mode correction).

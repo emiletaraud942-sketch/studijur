@@ -9,6 +9,7 @@ export async function GET() {
     anthropic: anthropicConfigured,
     supabase: Boolean(process.env.NEXT_PUBLIC_SUPABASE_URL && process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY),
     stripe: Boolean(process.env.STRIPE_SECRET_KEY && process.env.STRIPE_PRICE_ID),
+    pass: Boolean(process.env.STRIPE_SECRET_KEY && process.env.STRIPE_PRICE_ID_PASS),
     push: pushConfigured && Boolean(process.env.SUPABASE_SERVICE_ROLE_KEY),
     model: anthropicConfigured ? currentModel() : "",
   });

@@ -1,7 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { useStudiJur } from "@/lib/state";
+import { estPremium, useStudiJur } from "@/lib/state";
 import { allCourses } from "@/lib/corpus";
 import { Button, SectionTitle, Tag } from "@/components/ui";
 import { Arrow, Check, Flame } from "@/components/icons";
@@ -20,12 +20,12 @@ export default function RevisionIntensivePage() {
 
   if (!ready) return <div className="py-24 text-center text-[14px]" style={{ color: "var(--muted)" }}>Chargement…</div>;
 
-  if (state.profile.plan !== "active") {
+  if (!estPremium(state)) {
     return (
       <div className="mx-auto max-w-md py-20 text-center">
         <h1 className="serif text-[24px] font-bold">Réservé aux abonnés</h1>
         <p className="mt-2 text-[15px]" style={{ color: "var(--muted)" }}>
-          La fiche de dernière minute et le quiz éclair débloquent avec l&apos;abonnement.
+          La fiche de dernière minute et le quiz éclair se débloquent avec le pass 7 jours (4,90 €) ou un abonnement.
         </p>
         <div className="mt-6"><Button href="/abonnement" size="lg">Voir les formules</Button></div>
       </div>

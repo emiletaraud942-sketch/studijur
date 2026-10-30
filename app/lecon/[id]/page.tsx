@@ -6,8 +6,9 @@ import { Suspense, useEffect, useMemo, useRef, useState } from "react";
 import { useParams, usePathname, useRouter, useSearchParams } from "next/navigation";
 import {
   useStudiJur, hasAccess, trialLessonCapReached, TRIAL_LESSON_LIMIT,
-  anonymousLessonCapReached, supabaseConfigured,
+  anonymousLessonCapReached, supabaseConfigured, leconGratuiteDisponible,
 } from "@/lib/state";
+import { euros, PRIX_PAR_DEFAUT } from "@/lib/tarifs";
 import { findLesson, findCourse, neighbours, corpusStats } from "@/lib/corpus";
 import { Button, Prose, Tag } from "@/components/ui";
 import { inlineMarkup } from "@/lib/format";
@@ -60,7 +61,7 @@ function LessonPageInner() {
   const pathname = usePathname();
   const router = useRouter();
   const searchParams = useSearchParams();
-  const { state, ready, signedInAs, completeStep, saveDraft, recordQuiz, gradeDefinition } = useStudiJur();
+  const { state, ready, signedInAs, completeStep, saveDraft, recordQuiz, gradeDefinition, ouvrirLeconGratuite } = useStudiJur();
   const [step, setStep] = useState(0);
   const autocorrect = searchParams.get("autocorrect") === "1";
 
@@ -73,6 +74,17 @@ function LessonPageInner() {
   const steps = useMemo(() => (lesson ? stepsFor(lesson) : []), [lesson]);
 
   useEffect(() => { window.scrollTo({ top: 0, behavior: "smooth" }); }, [step]);
+
+  // Compte gratuit (essai fini, pas de pass ni d'abonnement) : la leçon qu'il
+  // vient d'ouvrir compte comme sa leçon nouvelle du jour (voir
+  // leconGratuiteDisponible). Enregistré à l'ouverture, pas à la fin : sinon
+  // quitter la leçon en cours et en ouvrir une autre contournerait la limite.
+  const leconGratuiteEnCours = Boolean(
+    ready && lesson && signedInAs && !hasAccess(state) && leconGratuiteDisponible(state, lesson.id),
+  );
+  useEffect(() => {
+    if (leconGratuiteEnCours && lesson) ouvrirLeconGratuite(lesson.id);
+  }, [leconGratuiteEnCours, lesson, ouvrirLeconGratuite]);
 
   // Retour de connexion depuis la correction IA (voir Correction ci-dessous) :
   // on rouvre directement l'étape "Question" plutôt que de repartir du cours
@@ -128,14 +140,17 @@ function LessonPageInner() {
       );
     }
   } else {
-    if (!hasAccess(state)) {
+    if (!hasAccess(state) && !leconGratuiteDisponible(state, lesson.id)) {
       return (
         <div className="mx-auto max-w-md py-20 text-center">
-          <h1 className="serif text-[24px] font-bold">Ton essai gratuit est terminé</h1>
+          <h1 className="serif text-[24px] font-bold">Ta leçon gratuite du jour est faite</h1>
           <p className="mt-2 text-[15px]" style={{ color: "var(--muted)" }}>
-            Abonne-toi pour continuer les séances quotidiennes. Ta progression et ta série sont conservées.
+            Reviens demain pour la suivante, ta série continue. Un partiel ou un CC qui approche ? Le pass 7 jours
+            ({euros(PRIX_PAR_DEFAUT.pass)}, sans abonnement) débloque toutes les leçons, les plans de révision et
+            la correction IA.
           </p>
-          <div className="mt-6"><Button href="/abonnement" size="lg">Voir les formules</Button></div>
+          <div className="mt-6"><Button href="/abonnement" size="lg">Débloquer le pass 7 jours</Button></div>
+          <div className="mt-3"><Button href="/" variant="outline">Retour à l&apos;accueil</Button></div>
         </div>
       );
     }
@@ -768,8 +783,16 @@ function DoneStep({
   onReplay: () => void; onHome: () => void;
 }) {
   const pathname = usePathname();
-  const { signedInAs } = useStudiJur();
+  const { state, signedInAs } = useStudiJur();
   const connexionRequise = supabaseConfigured && !signedInAs;
+  const gratuit = !connexionRequise && !hasAccess(state);
+  // Entonnoir (Vercel Analytics) : leçon terminée, première ou non, gratuit
+  // ou payant — la suite se lit dans `rappel_active`, `page_abonnement` et
+  // `checkout_demarre`.
+  useEffect(() => {
+    track("lecon_terminee", { premiere: premiereLecon, connecte: !connexionRequise, gratuit });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
   // Une leçon sans quiz (ex. méthodologie) n'a pas de score à afficher.
   const pct = total > 0 ? Math.round((score / total) * 100) : null;
   const verdict = pct === null ? "Séance terminée." : pct >= 80 ? "Cours maîtrisé." : pct >= 50 ? "Bon début, à consolider." : "À reprendre demain.";
@@ -830,9 +853,31 @@ function DoneStep({
         </div>
       )}
 
+      {/* Après la première leçon, le rappel quotidien se reproposait plus
+          jamais ici : or c'est ce qui fait revenir. RappelPromo se masque tout
+          seul s'il est déjà actif ou décliné. */}
+      {!connexionRequise && !premiereLecon && (
+        <div className="mx-auto mt-6 max-w-sm text-left"><RappelPromo /></div>
+      )}
+
+      {/* Compte gratuit : le moment où l'envie est la plus haute est juste
+          après une séance réussie. */}
+      {gratuit && (
+        <div data-hue="gold" className="card mx-auto mt-6 max-w-sm p-5 text-left">
+          <h3 className="text-[15px] font-semibold">Besoin d&apos;enchaîner avant ton partiel ?</h3>
+          <p className="mt-1 text-[13px] leading-snug" style={{ color: "var(--muted)" }}>
+            Le pass 7 jours, c&apos;est {euros(PRIX_PAR_DEFAUT.pass)} une seule fois, sans abonnement : toutes les
+            leçons, les plans de révision CC et la correction IA, tant que dure ta semaine de révisions.
+          </p>
+          <div className="mt-3">
+            <Button href="/abonnement" size="md" full>Voir le pass 7 jours</Button>
+          </div>
+        </div>
+      )}
+
       <div className="mx-auto mt-6 flex max-w-sm flex-col gap-3">
-        {nextId && <Button href={`/lecon/${nextId}`} size="lg" full>Enchaîner la leçon suivante <Arrow className="h-4 w-4" /></Button>}
-        <Button onClick={onHome} variant={nextId ? "outline" : "primary"} size="lg" full>Retour à l&apos;accueil</Button>
+        {nextId && !gratuit && <Button href={`/lecon/${nextId}`} size="lg" full>Enchaîner la leçon suivante <Arrow className="h-4 w-4" /></Button>}
+        <Button onClick={onHome} variant={nextId && !gratuit ? "outline" : "primary"} size="lg" full>Retour à l&apos;accueil</Button>
         <button onClick={onReplay} className="text-[13px] font-semibold" style={{ color: "var(--muted)" }}>Refaire la séance</button>
         <Link href="/mes-cours" onClick={() => track("mes_cours_lien_clic", { emplacement: "fin_lecon" })}
           className="text-[13px] font-semibold" style={{ color: "var(--h, var(--accent))" }}>

@@ -2,6 +2,7 @@ import { NextResponse } from "next/server";
 import Stripe from "stripe";
 import { createClient, type SupabaseClient } from "@supabase/supabase-js";
 import { idCouponParrainage } from "@/lib/stripe-parrainage";
+import { PASS_JOURS } from "@/lib/tarifs";
 
 export const runtime = "nodejs";
 
@@ -92,7 +93,22 @@ export async function POST(req: Request) {
         // l'email du client quelle que soit la façon dont il a été fourni.
         const email = s.customer_details?.email ?? s.customer_email;
         const customerId = typeof s.customer === "string" ? s.customer : null;
-        if (email) {
+        if (email && s.mode === "payment" && s.metadata?.formule === "pass") {
+          // Pass partiels : un second achat pendant un pass encore valide
+          // prolonge à partir de sa fin, pas d'aujourd'hui. `status` n'est
+          // pas touché : il reste celui d'un éventuel abonnement.
+          if (s.payment_status !== "paid") break;
+          const { data: ligne } = await sb.from("subscriptions").select("pass_expires_at").eq("email", email).maybeSingle();
+          const finActuelle = ligne?.pass_expires_at ? Date.parse(ligne.pass_expires_at) : 0;
+          const depart = Math.max(Date.now(), Number.isFinite(finActuelle) ? finActuelle : 0);
+          await sb.from("subscriptions").upsert({
+            email,
+            stripe_customer_id: customerId,
+            pass_expires_at: new Date(depart + PASS_JOURS * 86400000).toISOString(),
+            updated_at: new Date().toISOString(),
+          }, { onConflict: "email" });
+          await marquerRecompenseAppliqueeSiBesoin(sb, email);
+        } else if (email) {
           // "active" ici n'est qu'un statut provisoire, écrasé dans la
           // foulée par customer.subscription.created avec le vrai statut
           // Stripe (trialing, active...) — cette ligne existe surtout pour

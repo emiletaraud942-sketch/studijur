@@ -2,8 +2,10 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { track } from "@vercel/analytics/react";
 import { useEffect, useState } from "react";
-import { useStudiJur, supabaseConfigured, trialDaysLeft } from "@/lib/state";
+import { useStudiJur, supabaseConfigured, trialDaysLeft, passJoursRestants } from "@/lib/state";
+import { apresBascule, euros, PASS_JOURS, PRIX_PAR_DEFAUT, type Formule } from "@/lib/tarifs";
 import { corpusStats } from "@/lib/corpus";
 import { connexionHref } from "@/lib/nav";
 import { getSupabase } from "@/lib/supabase";
@@ -14,19 +16,20 @@ import { Check } from "@/components/icons";
 const FEATURES = [
   "Une séance guidée de 5 minutes chaque jour",
   "Tout le corpus L1 : introduction au droit, constitutionnel, organisation juridictionnelle, histoire du droit public, méthodologie",
+  "Le mode examen : plan de révision CC, fiches condensées, pièges classiques, dates à connaître, quiz de 15 questions",
   "Cinq définitions par jour, rappelées en révision espacée",
   "Une question type examen par leçon, avec réponse concise et plan détaillé",
-  "Un quiz de cinq questions, chaque réponse expliquée",
   "Tes propres cours transformés en leçons au même format",
-  "Série quotidienne, statistiques et suivi de mémorisation",
 ];
 
-type Plan = "annual" | "monthly";
+type Plan = Formule;
 
 export default function SubscribePage() {
   const pathname = usePathname();
   const { state, ready, signedInAs } = useStudiJur();
   const [stripeOn, setStripeOn] = useState<boolean | null>(null);
+  const [prix, setPrix] = useState<Record<Formule, number>>(PRIX_PAR_DEFAUT);
+  const [disponibles, setDisponibles] = useState<Formule[] | null>(null);
   const [busy, setBusy] = useState<{ plan: Plan; skipTrial: boolean } | null>(null);
   const [error, setError] = useState("");
   const [userId, setUserId] = useState<string | undefined>();
@@ -34,7 +37,12 @@ export default function SubscribePage() {
   const stats = corpusStats(state.customCourses);
 
   useEffect(() => {
+    track("page_abonnement");
     fetch("/api/status").then((r) => r.json()).then((s) => setStripeOn(Boolean(s.stripe))).catch(() => setStripeOn(false));
+    fetch("/api/prix").then((r) => r.json()).then((d) => {
+      if (d?.prix) setPrix(d.prix);
+      if (Array.isArray(d?.disponibles)) setDisponibles(d.disponibles);
+    }).catch(() => {});
   }, []);
 
   useEffect(() => {
@@ -59,6 +67,7 @@ export default function SubscribePage() {
 
   async function checkout(plan: Plan, skipTrial = false) {
     if (!signedInAs) return;
+    track("checkout_demarre", { formule: plan });
     setBusy({ plan, skipTrial });
     setError("");
     try {
@@ -83,83 +92,114 @@ export default function SubscribePage() {
 
   const left = ready ? trialDaysLeft(state) : null;
   const abonne = ready && state.profile.plan === "active";
+  const passRestant = ready ? passJoursRestants(state) : 0;
+  const bascule = apresBascule();
+  // Un essai avec carte n'existe plus après la bascule (voir /api/checkout).
+  const essaiAvecCarte = !bascule;
+  const peutPayer = ready && stripeOn === true && !abonne;
+  const formuleDispo = (f: Formule) => disponibles === null || disponibles.includes(f);
+  const mensuelParAn = Math.round((prix.annual / 12));
 
   return (
     <div className="mx-auto max-w-lg space-y-6">
       <div className="text-center">
-        <h1 className="serif text-[30px] font-bold tracking-tight">StudiJur, tous les jours</h1>
+        <h1 className="serif text-[30px] font-bold tracking-tight">Prêt(e) pour tes partiels ?</h1>
         <p className="mx-auto mt-2 max-w-md text-[15px]" style={{ color: "var(--muted)" }}>
           {abonne
             ? "Ton abonnement est actif. Merci."
-            : left === null
-              ? "Dix jours d'essai gratuit (prolongés jusqu'à ton CC si besoin), puis la formule de ton choix."
-              : left > 0
-                ? `Il te reste ${left} jour${left > 1 ? "s" : ""} d'essai gratuit.`
-                : "Ton essai gratuit est terminé."}
+            : passRestant > 0
+              ? `Ton pass partiels est actif : encore ${passRestant} jour${passRestant > 1 ? "s" : ""}.`
+              : left !== null && left > 0
+                ? `Il te reste ${left} jour${left > 1 ? "s" : ""} d'accès complet gratuit.`
+                : "Une leçon gratuite par jour, pour toujours. Pour réviser sans limite avant un examen, choisis ta formule."}
         </p>
       </div>
 
       {parraine && !abonne && (
         <div className="rounded-xl p-3.5 text-center text-[13.5px] font-semibold" style={{ background: "var(--gold-soft)", color: "var(--gold)" }}>
-          Tu as été invité(e) par un ami : 0,90 € offerts, appliqués automatiquement à l&apos;abonnement.
+          Tu as été invité(e) par un ami : 0,90 € offerts, appliqués automatiquement au paiement.
         </div>
       )}
 
-      <section className="card overflow-hidden" data-hue="green">
-        <div className="h-1" style={{ background: "var(--accent)" }} />
-        <div className="p-6">
-          <div className="mb-3"><Tag tone="gold">Le plus choisi</Tag></div>
-          <div className="flex items-baseline gap-2">
-            <span className="serif text-[44px] font-bold leading-none">49 €</span>
-            <span className="text-[15px]" style={{ color: "var(--muted)" }}>/ an</span>
-          </div>
-          <p className="mt-1 text-[13.5px]" style={{ color: "var(--muted)" }}>
-            Soit 4,08 € par mois — toute l&apos;année de L1, de la rentrée aux rattrapages.
-            Dix jours d&apos;essai gratuit, prolongés jusqu&apos;à ton CC si besoin.
-          </p>
-          <div className="mt-5">
-            {abonne ? (
-              <div className="space-y-3">
+      {formuleDispo("pass") && (
+        <section className="card overflow-hidden" data-hue="gold">
+          <div className="h-1" style={{ background: "var(--gold)" }} />
+          <div className="p-6">
+            <div className="mb-3"><Tag tone="gold">Idéal avant un partiel</Tag></div>
+            <div className="flex items-baseline gap-2">
+              <span className="serif text-[44px] font-bold leading-none">{euros(prix.pass)}</span>
+              <span className="text-[15px]" style={{ color: "var(--muted)" }}>pour {PASS_JOURS} jours</span>
+            </div>
+            <p className="mt-1 text-[13.5px]" style={{ color: "var(--muted)" }}>
+              Paiement unique, <strong>sans abonnement ni renouvellement</strong> : rien ne sera prélevé ensuite.
+              Tout le contenu, plan de révision CC et correction IA compris, pendant ta semaine de révisions.
+            </p>
+            <div className="mt-5">
+              {abonne ? (
                 <Button href="/" size="lg" full>Retour à ma séance</Button>
-                <Button href="/mon-abonnement" variant="outline" full>Gérer ou résilier mon abonnement</Button>
-              </div>
-            ) : ready && stripeOn && needsAccount ? (
-              <Button href={connexionHref(pathname)} size="lg" full>Se connecter pour s&apos;abonner</Button>
-            ) : ready && stripeOn ? (
-              <div className="space-y-2">
-                <Button onClick={() => checkout("annual")} disabled={busy !== null} size="lg" full>
-                  {busy?.plan === "annual" && !busy.skipTrial ? "Redirection…" : "Démarrer l'essai gratuit"}
+              ) : ready && stripeOn && needsAccount ? (
+                <Button href={connexionHref(pathname)} size="lg" full>Se connecter pour continuer</Button>
+              ) : ready && stripeOn ? (
+                <Button onClick={() => checkout("pass")} disabled={busy !== null} size="lg" full>
+                  {busy?.plan === "pass" ? "Redirection…" : passRestant > 0 ? `Prolonger de ${PASS_JOURS} jours` : `Prendre le pass ${PASS_JOURS} jours`}
                 </Button>
-                <button onClick={() => checkout("annual", true)} disabled={busy !== null}
-                  className="block w-full text-center text-[12.5px] font-semibold underline"
-                  style={{ color: "var(--muted)" }}>
-                  {busy?.plan === "annual" && busy.skipTrial ? "Redirection…" : "Payer tout de suite, sans les 10 jours d'essai"}
-                </button>
-              </div>
+              ) : (
+                <div className="rounded-xl p-4 text-center text-[13.5px]" style={{ background: "var(--surface-2)", color: "var(--muted)" }}>
+                  Le paiement n&apos;est pas encore branché : l&apos;accès reste ouvert. Ajoute les clés Stripe pour l&apos;activer.
+                </div>
+              )}
+            </div>
+            {ready && stripeOn && needsAccount && !abonne && (
+              <p className="mt-2 text-center text-[12.5px]" style={{ color: "var(--muted)" }}>
+                Un compte relie ton accès à tes appareils — aucun mot de passe, juste ton email.
+              </p>
+            )}
+          </div>
+        </section>
+      )}
+
+      <section className="card p-6" data-hue="green">
+        <div className="flex items-baseline gap-2">
+          <span className="serif text-[34px] font-bold leading-none">{euros(prix.annual)}</span>
+          <span className="text-[15px]" style={{ color: "var(--muted)" }}>pour toute ta L1</span>
+        </div>
+        <p className="mt-1 text-[13.5px]" style={{ color: "var(--muted)" }}>
+          Soit {euros(mensuelParAn)} par mois : CC, partiels, rattrapages, de la rentrée à la fin de l&apos;année,
+          sans te soucier de rien racheter.
+          {essaiAvecCarte && " Dix jours d'essai gratuit, prolongés jusqu'à ton CC si besoin."}
+        </p>
+        {peutPayer && formuleDispo("annual") && (
+          <div className="mt-4">
+            {needsAccount ? (
+              <Button href={connexionHref(pathname)} full>Se connecter pour s&apos;abonner</Button>
             ) : (
-              <div className="rounded-xl p-4 text-center text-[13.5px]" style={{ background: "var(--surface-2)", color: "var(--muted)" }}>
-                Le paiement n&apos;est pas encore branché : l&apos;accès reste ouvert. Ajoute les clés Stripe pour activer l&apos;abonnement.
+              <div className="space-y-2">
+                <Button onClick={() => checkout("annual")} disabled={busy !== null} full>
+                  {busy?.plan === "annual" && !busy.skipTrial ? "Redirection…" : essaiAvecCarte ? "Démarrer l'essai gratuit" : "Prendre la formule annuelle"}
+                </Button>
+                {essaiAvecCarte && (
+                  <button onClick={() => checkout("annual", true)} disabled={busy !== null}
+                    className="block w-full text-center text-[12.5px] font-semibold underline"
+                    style={{ color: "var(--muted)" }}>
+                    {busy?.plan === "annual" && busy.skipTrial ? "Redirection…" : "Payer tout de suite, sans les 10 jours d'essai"}
+                  </button>
+                )}
               </div>
             )}
           </div>
-          {ready && stripeOn && needsAccount && !abonne && (
-            <p className="mt-2 text-center text-[12.5px]" style={{ color: "var(--muted)" }}>
-              Un compte relie ton abonnement à tes appareils — aucun mot de passe, juste ton email.
-            </p>
-          )}
-        </div>
+        )}
       </section>
 
       <section className="card p-6">
         <div className="flex items-baseline gap-2">
-          <span className="serif text-[30px] font-bold leading-none">5,90 €</span>
+          <span className="serif text-[30px] font-bold leading-none">{euros(prix.monthly)}</span>
           <span className="text-[15px]" style={{ color: "var(--muted)" }}>/ mois</span>
         </div>
         <p className="mt-1 text-[13.5px]" style={{ color: "var(--muted)" }}>
-          Sans engagement, résiliable en un clic. Dix jours d&apos;essai gratuit, prolongés jusqu&apos;à ton CC
-          si besoin.
+          Sans engagement, résiliable en un clic.
+          {essaiAvecCarte && " Dix jours d'essai gratuit, prolongés jusqu'à ton CC si besoin."}
         </p>
-        {!abonne && ready && stripeOn && (
+        {peutPayer && formuleDispo("monthly") && (
           <div className="mt-4">
             {needsAccount ? (
               <Button href={connexionHref(pathname)} variant="outline" full>Se connecter pour s&apos;abonner</Button>
@@ -168,11 +208,13 @@ export default function SubscribePage() {
                 <Button onClick={() => checkout("monthly")} disabled={busy !== null} variant="outline" full>
                   {busy?.plan === "monthly" && !busy.skipTrial ? "Redirection…" : "Prendre la formule mensuelle"}
                 </Button>
-                <button onClick={() => checkout("monthly", true)} disabled={busy !== null}
-                  className="block w-full text-center text-[12.5px] font-semibold underline"
-                  style={{ color: "var(--muted)" }}>
-                  {busy?.plan === "monthly" && busy.skipTrial ? "Redirection…" : "Payer tout de suite, sans les 10 jours d'essai"}
-                </button>
+                {essaiAvecCarte && (
+                  <button onClick={() => checkout("monthly", true)} disabled={busy !== null}
+                    className="block w-full text-center text-[12.5px] font-semibold underline"
+                    style={{ color: "var(--muted)" }}>
+                    {busy?.plan === "monthly" && busy.skipTrial ? "Redirection…" : "Payer tout de suite, sans les 10 jours d'essai"}
+                  </button>
+                )}
               </div>
             )}
           </div>
@@ -182,7 +224,7 @@ export default function SubscribePage() {
       {error && <p className="text-center text-[13px]" style={{ color: "var(--bad)" }}>{error}</p>}
 
       <section className="card p-6">
-        <SectionTitle kicker="Dans l'abonnement" title="Ce qu'il y a dedans" />
+        <SectionTitle kicker="Dans chaque formule" title="Ce qu'il y a dedans" />
         <ul className="space-y-2.5">
           {FEATURES.map((f) => (
             <li key={f} className="flex gap-2.5 text-[14px] leading-relaxed">
@@ -217,7 +259,7 @@ export default function SubscribePage() {
         </Link>
       </p>
       <p className="text-center text-[12px]" style={{ color: "var(--muted)" }}>
-        En t&apos;abonnant, tu acceptes les{" "}
+        En payant, tu acceptes les{" "}
         <Link href="/cgv" className="underline">Conditions générales de vente</Link>.
       </p>
     </div>

@@ -12,6 +12,7 @@ import { getSupabase, supabaseConfigured } from "./supabase";
 import { isOwner } from "./owner";
 import { capturerParrainage } from "./referral";
 import { joursAvantProchainCC } from "./revision-cc-config";
+import { apresBascule, LECONS_GRATUITES_PAR_JOUR } from "./tarifs";
 
 const KEY = "lexio.state.v1";
 // Identifie à QUI appartient l'état stocké dans KEY — séparé de ProgressState
@@ -99,14 +100,46 @@ function writeLocal(state: ProgressState) {
 // descend jamais en dessous), prolongé jusqu'au prochain CC s'il tombe plus
 // tard. Les deux termes diminuent d'un jour chaque jour qui passe : le
 // résultat ne peut donc que décroître, jamais sauter en arrière.
+//
+// Décision du 29/10/2026 (voir lib/tarifs.ts) : après BASCULE_FREEMIUM, un
+// compte créé ensuite n'a plus d'essai (la leçon gratuite du jour en tient
+// lieu), et plus personne n'est prolongé jusqu'au prochain CC — les essais
+// déjà commencés vont simplement au bout de leurs 10 jours.
 export function trialDaysLeft(state: ProgressState): number {
   const start = new Date(state.profile.trialStartedAt).getTime();
+  if (apresBascule(start)) return 0;
   const elapsed = Math.floor((Date.now() - start) / 86400000);
-  return Math.max(0, TRIAL_DAYS - elapsed, joursAvantProchainCC());
+  const prolongationCC = apresBascule() ? -Infinity : joursAvantProchainCC();
+  return Math.max(0, TRIAL_DAYS - elapsed, prolongationCC);
 }
 
+// Jours restants (arrondis au-dessus) sur un pass partiels, 0 sans pass
+// valide.
+export function passJoursRestants(state: ProgressState): number {
+  const fin = state.profile.passExpiresAt ? Date.parse(state.profile.passExpiresAt) : NaN;
+  if (!Number.isFinite(fin)) return 0;
+  return Math.max(0, Math.ceil((fin - Date.now()) / 86400000));
+}
+
+// A payé : abonnement (mensuel ou annuel) ou pass partiels encore valide.
+export function estPremium(state: ProgressState): boolean {
+  return state.profile.plan === "active" || passJoursRestants(state) > 0;
+}
+
+// Accès complet : payé, ou essai en cours. Sans ça, le compte reste gratuit
+// (une leçon nouvelle par jour, voir leconGratuiteDisponible).
 export function hasAccess(state: ProgressState): boolean {
-  return state.profile.plan === "active" || trialDaysLeft(state) > 0;
+  return estPremium(state) || trialDaysLeft(state) > 0;
+}
+
+// Compte gratuit, essai terminé : une leçon déjà terminée reste toujours
+// consultable, et chaque jour LECONS_GRATUITES_PAR_JOUR leçon(s) nouvelle(s)
+// s'ouvrent. Comme le reste de l'état local, ce n'est pas un verrou
+// infalsifiable — le vrai garde-fou de coût (IA) reste côté serveur.
+export function leconGratuiteDisponible(state: ProgressState, lessonId: string): boolean {
+  if (completedLessonIds(state).has(lessonId)) return true;
+  const duJour = state.leconsGratuites?.jour === todayKey() ? state.leconsGratuites.ids : [];
+  return duJour.includes(lessonId) || duJour.length < LECONS_GRATUITES_PAR_JOUR;
 }
 
 function completedLessonIds(state: ProgressState): Set<string> {
@@ -133,7 +166,7 @@ export function estVisiteurNeuf(state: ProgressState, signedInAs: string | null)
 export const TRIAL_LESSON_LIMIT = 8;
 
 export function trialLessonCapReached(state: ProgressState, lessonId: string): boolean {
-  if (state.profile.plan === "active") return false;
+  if (estPremium(state)) return false;
   const dejaFaites = completedLessonIds(state);
   if (dejaFaites.has(lessonId)) return false;
   return dejaFaites.size >= TRIAL_LESSON_LIMIT;
@@ -174,7 +207,7 @@ export function anonymousImportCapReached(state: ProgressState): boolean {
 export const ENTRAINEMENT_CORRECTION_LIMIT = 2;
 
 export function entrainementCorrectionCapReached(state: ProgressState): boolean {
-  if (state.profile.plan === "active") return false;
+  if (estPremium(state)) return false;
   return (state.entrainementCorrectionsUsed ?? 0) >= ENTRAINEMENT_CORRECTION_LIMIT;
 }
 
@@ -183,15 +216,32 @@ export function entrainementCorrectionCapReached(state: ProgressState): boolean 
 // application avant cette fonction : un abonnement payé ne débloquait donc
 // rien de son côté. La RLS `subscriptions_select_own` ne laisse un élève
 // connecté lire que sa propre ligne (auth.jwt() ->> 'email' = email).
-async function fetchSubscriptionActive(email: string): Promise<boolean> {
+//
+// `pass_expires_at` : fin du pass partiels (paiement unique), posée par le
+// même webhook — voir lib/tarifs.ts.
+type EtatPaiement = { active: boolean; passExpiresAt: string | null };
+
+async function fetchSubscription(email: string): Promise<EtatPaiement> {
   const sb = getSupabase();
-  if (!sb) return false;
+  if (!sb) return { active: false, passExpiresAt: null };
   try {
-    const { data } = await sb.from("subscriptions").select("status").eq("email", email).maybeSingle();
-    return data?.status === "active" || data?.status === "trialing";
+    const { data } = await sb.from("subscriptions").select("status, pass_expires_at").eq("email", email).maybeSingle();
+    return {
+      active: data?.status === "active" || data?.status === "trialing",
+      passExpiresAt: typeof data?.pass_expires_at === "string" ? data.pass_expires_at : null,
+    };
   } catch {
-    return false;
+    return { active: false, passExpiresAt: null };
   }
+}
+
+// N'écrit que ce qui change : un pass n'est jamais retiré ici (une erreur
+// réseau renverrait `null`), seulement posé ou prolongé.
+function appliquerPaiement(prev: ProgressState, p: EtatPaiement): ProgressState {
+  const plan = p.active ? "active" : prev.profile.plan;
+  const pass = p.passExpiresAt ?? prev.profile.passExpiresAt;
+  if (plan === prev.profile.plan && pass === prev.profile.passExpiresAt) return prev;
+  return { ...prev, profile: { ...prev.profile, plan, ...(pass ? { passExpiresAt: pass } : {}) } };
 }
 
 type Ctx = {
@@ -200,6 +250,9 @@ type Ctx = {
   syncing: boolean;
   signedInAs: string | null;
   refreshSubscription: () => Promise<boolean>;
+  // Compte gratuit : retient qu'une leçon nouvelle a été ouverte aujourd'hui
+  // (voir leconGratuiteDisponible). Sans effet si elle l'est déjà.
+  ouvrirLeconGratuite: (lessonId: string) => void;
   update: (fn: (draft: ProgressState) => void) => void;
   completeStep: (lessonId: string, step: StepName, final?: boolean) => void;
   saveDraft: (lessonId: string, draft: string) => void;
@@ -299,10 +352,8 @@ export function StudiJurProvider({ children }: { children: React.ReactNode }) {
       if (isOwner(data.user.email)) {
         setState((prev) => (prev.profile.plan === "active" ? prev : { ...prev, profile: { ...prev.profile, plan: "active" } }));
       } else if (data.user.email) {
-        const active = await fetchSubscriptionActive(data.user.email);
-        if (!cancelled && active) {
-          setState((prev) => (prev.profile.plan === "active" ? prev : { ...prev, profile: { ...prev.profile, plan: "active" } }));
-        }
+        const paiement = await fetchSubscription(data.user.email);
+        if (!cancelled) setState((prev) => appliquerPaiement(prev, paiement));
       }
     })();
     return () => { cancelled = true; };
@@ -367,9 +418,21 @@ export function StudiJurProvider({ children }: { children: React.ReactNode }) {
     if (!sb) return false;
     const { data } = await sb.auth.getUser();
     if (!data.user?.email) return false;
-    const active = isOwner(data.user.email) || await fetchSubscriptionActive(data.user.email);
-    if (active) update((d) => { d.profile.plan = "active"; });
-    return active;
+    if (isOwner(data.user.email)) {
+      update((d) => { d.profile.plan = "active"; });
+      return true;
+    }
+    const paiement = await fetchSubscription(data.user.email);
+    setState((prev) => appliquerPaiement(prev, paiement));
+    return paiement.active || (paiement.passExpiresAt !== null && Date.parse(paiement.passExpiresAt) > Date.now());
+  }, [update]);
+
+  const ouvrirLeconGratuite = useCallback((lessonId: string) => {
+    update((d) => {
+      const jour = todayKey();
+      const ids = d.leconsGratuites?.jour === jour ? d.leconsGratuites.ids : [];
+      if (!ids.includes(lessonId)) d.leconsGratuites = { jour, ids: [...ids, lessonId] };
+    });
   }, [update]);
 
   // `final` marque la fin de la séance : normalement l'étape "quiz", mais
@@ -475,10 +538,10 @@ export function StudiJurProvider({ children }: { children: React.ReactNode }) {
   }, []);
 
   const value = useMemo<Ctx>(() => ({
-    state, ready, syncing, signedInAs, refreshSubscription, update, completeStep, saveDraft,
+    state, ready, syncing, signedInAs, refreshSubscription, ouvrirLeconGratuite, update, completeStep, saveDraft,
     recordQuiz, gradeDefinition, gradeNotionEvent, gradeExerciceMethodo, markQuizMastered, marquerFicheLue, bumpActiviteDuJour,
     addCustomCourse, removeCustomCourse, reset,
-  }), [state, ready, syncing, signedInAs, refreshSubscription, update, completeStep, saveDraft,
+  }), [state, ready, syncing, signedInAs, refreshSubscription, ouvrirLeconGratuite, update, completeStep, saveDraft,
        recordQuiz, gradeDefinition, gradeNotionEvent, gradeExerciceMethodo, markQuizMastered, marquerFicheLue, bumpActiviteDuJour,
        addCustomCourse, removeCustomCourse, reset]);
 
