@@ -3,6 +3,7 @@ import Stripe from "stripe";
 import { createClient } from "@supabase/supabase-js";
 import { idCouponParrainage } from "@/lib/stripe-parrainage";
 import { joursAvantProchainCC } from "@/lib/revision-cc-config";
+import { apresBascule, type Formule } from "@/lib/tarifs";
 
 // Doit rester égal à TRIAL_DAYS dans lib/state.tsx (essai sans carte) : les
 // deux essais s'arrêtent à la même date, voir joursAvantProchainCC.
@@ -41,14 +42,14 @@ async function idCustomerStripe(stripe: Stripe, email: string): Promise<string> 
 
 export async function POST(req: Request) {
   const secret = process.env.STRIPE_SECRET_KEY;
-  let plan = "monthly";
+  let plan: Formule = "monthly";
   let email: string | undefined;
   let userId: string | undefined;
   let clientOrigin: string | undefined;
   let skipTrial = false;
   try {
     const body = (await req.json()) as { plan?: string; email?: string; userId?: string; origin?: string; skipTrial?: boolean };
-    if (body?.plan === "annual") plan = "annual";
+    if (body?.plan === "annual" || body?.plan === "pass") plan = body.plan;
     if (typeof body?.email === "string" && body.email.includes("@")) email = body.email.trim();
     if (typeof body?.userId === "string" && body.userId) userId = body.userId;
     if (typeof body?.origin === "string") clientOrigin = body.origin;
@@ -68,13 +69,19 @@ export async function POST(req: Request) {
       { status: 401 },
     );
   }
-  const price = plan === "annual"
-    ? process.env.STRIPE_PRICE_ID_ANNUAL ?? process.env.STRIPE_PRICE_ID
-    : process.env.STRIPE_PRICE_ID;
+  const price = plan === "pass"
+    ? process.env.STRIPE_PRICE_ID_PASS
+    : plan === "annual"
+      ? process.env.STRIPE_PRICE_ID_ANNUAL ?? process.env.STRIPE_PRICE_ID
+      : process.env.STRIPE_PRICE_ID;
 
   if (!secret || !price) {
     return NextResponse.json(
-      { error: "Stripe n'est pas configuré : ajoute STRIPE_SECRET_KEY et STRIPE_PRICE_ID." },
+      {
+        error: plan === "pass"
+          ? "Le pass 7 jours n'est pas encore disponible : ajoute STRIPE_PRICE_ID_PASS."
+          : "Stripe n'est pas configuré : ajoute STRIPE_SECRET_KEY et STRIPE_PRICE_ID.",
+      },
       { status: 503 },
     );
   }
@@ -114,6 +121,37 @@ export async function POST(req: Request) {
     : { allow_promotion_codes: true };
 
   try {
+    // Pass partiels : paiement unique (mode "payment"), sans reconduction ni
+    // essai. `metadata.formule` permet au webhook de le reconnaître et de
+    // poser sa date de fin (voir /api/stripe/webhook).
+    if (plan === "pass") {
+      const session = await stripe.checkout.sessions.create({
+        mode: "payment",
+        line_items: [{ price, quantity: 1 }],
+        metadata: { formule: "pass" },
+        // Contenu numérique fourni tout de suite : le consentement à
+        // l'exécution immédiate et la renonciation à rétractation doivent
+        // être recueillis avant le paiement (voir /cgv).
+        custom_text: {
+          submit: { message: "En payant, tu demandes l'accès immédiat au contenu et tu renonces à ton droit de rétractation (voir les CGV)." },
+        },
+        // La réduction de parrainage reste réservée aux abonnements : elle
+        // se consomme une fois, alors qu'un pass peut s'acheter à chaque
+        // semaine d'examens.
+        allow_promotion_codes: true,
+        locale: "fr",
+        customer: customerId,
+        success_url: `${origin}/?abonnement=ok`,
+        cancel_url: `${origin}/abonnement`,
+      });
+      return NextResponse.json({ url: session.url });
+    }
+
+    // Après la bascule (lib/tarifs.ts), plus d'essai sur les abonnements :
+    // la leçon gratuite du jour en tient lieu, et un essai avec carte
+    // offrirait gratuitement la semaine d'avant les partiels, celle où le
+    // pass se vend. Avant, la règle d'origine reste tenue.
+    const essai = !skipTrial && !apresBascule();
     const session = await stripe.checkout.sessions.create({
       mode: "subscription",
       line_items: [{ price, quantity: 1 }],
@@ -124,7 +162,7 @@ export async function POST(req: Request) {
       // suite (essai déjà fait sur l'appareil, ou juste envie d'un accès
       // immédiat) : skipTrial leur évite d'être coincés dans un essai qu'ils
       // ne voulaient pas.
-      ...(skipTrial ? {} : {
+      ...(!essai ? {} : {
         subscription_data: { trial_period_days: Math.max(TRIAL_DAYS_PLANCHER, joursAvantProchainCC()) },
       }),
       ...discountParams,

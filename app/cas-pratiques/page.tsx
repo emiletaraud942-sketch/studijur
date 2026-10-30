@@ -2,7 +2,7 @@
 
 import { useMemo } from "react";
 import Link from "next/link";
-import { useStudiJur } from "@/lib/state";
+import { estPremium, useStudiJur } from "@/lib/state";
 import { allLessons, courseOf } from "@/lib/corpus";
 import { Button, SectionTitle, Tag } from "@/components/ui";
 import { Arrow, Target } from "@/components/icons";
@@ -16,11 +16,11 @@ export default function CasPratiquesPage() {
 
   if (!ready) return <div className="py-24 text-center text-[14px]" style={{ color: "var(--muted)" }}>Chargement…</div>;
 
-  if (state.profile.plan !== "active") {
+  if (!estPremium(state)) {
     return (
       <div className="mx-auto max-w-md py-20 text-center">
         <h1 className="serif text-[24px] font-bold">Réservé aux abonnés</h1>
-        <p className="mt-2 text-[15px]" style={{ color: "var(--muted)" }}>Les cas pratiques guidés débloquent avec l&apos;abonnement.</p>
+        <p className="mt-2 text-[15px]" style={{ color: "var(--muted)" }}>Les cas pratiques guidés se débloquent avec le pass 7 jours (4,90 €) ou un abonnement.</p>
         <div className="mt-6"><Button href="/abonnement" size="lg">Voir les formules</Button></div>
       </div>
     );

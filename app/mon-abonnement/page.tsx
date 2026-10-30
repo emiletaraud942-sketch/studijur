@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
-import { useStudiJur, supabaseConfigured, trialDaysLeft } from "@/lib/state";
+import { useStudiJur, supabaseConfigured, trialDaysLeft, passJoursRestants } from "@/lib/state";
 import { getSupabase } from "@/lib/supabase";
 import { connexionHref } from "@/lib/nav";
 import { Button, SectionTitle, Tag } from "@/components/ui";
@@ -60,6 +60,7 @@ export default function MonAbonnementPage() {
 
   const abonne = state.profile.plan === "active";
   const left = trialDaysLeft(state);
+  const pass = passJoursRestants(state);
 
   return (
     <div className="mx-auto max-w-lg space-y-6">
@@ -73,11 +74,11 @@ export default function MonAbonnementPage() {
       <section className="card p-5">
         <SectionTitle
           kicker="État"
-          title={abonne ? "Abonnement actif" : left > 0 ? "Essai gratuit en cours" : "Aucun abonnement"}
-          right={abonne ? <Tag tone="gold">Abonné</Tag> : undefined}
+          title={abonne ? "Abonnement actif" : pass > 0 ? "Pass partiels actif" : left > 0 ? "Essai gratuit en cours" : "Aucun abonnement"}
+          right={abonne || pass > 0 ? <Tag tone="gold">{abonne ? "Abonné" : "Pass"}</Tag> : undefined}
         />
         <div className="space-y-2.5 text-[14px]">
-          <Row label="Formule" value={abonne ? "Abonné" : left > 0 ? `Essai — ${left} jour${left > 1 ? "s" : ""} restant${left > 1 ? "s" : ""}` : "Essai terminé"} />
+          <Row label="Formule" value={abonne ? "Abonné" : pass > 0 ? `Pass partiels — ${pass} jour${pass > 1 ? "s" : ""} restant${pass > 1 ? "s" : ""}, sans renouvellement` : left > 0 ? `Essai — ${left} jour${left > 1 ? "s" : ""} restant${left > 1 ? "s" : ""}` : "Gratuit (1 leçon par jour)"} />
           <Row label="Compte lié" value={signedInAs ?? "Non connecté sur cet appareil"} />
         </div>
 
@@ -113,7 +114,7 @@ export default function MonAbonnementPage() {
           // cassé au lieu d'un chemin vers le paiement. On propose directement
           // de s'abonner.
           <div className="mt-4 space-y-3">
-            <Button href="/abonnement" size="lg" full>S&apos;abonner</Button>
+            <Button href="/abonnement" size="lg" full>Voir les formules</Button>
             <p className="text-center text-[12.5px]" style={{ color: "var(--muted)" }}>
               Déjà payé avec une autre adresse email ?{" "}
               <a href={MAILTO} className="underline font-semibold" style={{ color: "var(--accent)" }}>Écris-nous</a>.

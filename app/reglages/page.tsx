@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
-import { useStudiJur, supabaseConfigured, trialDaysLeft } from "@/lib/state";
+import { useStudiJur, supabaseConfigured, trialDaysLeft, estPremium, passJoursRestants } from "@/lib/state";
 import { allCourses } from "@/lib/corpus";
 import { getSupabase } from "@/lib/supabase";
 import { connexionHref } from "@/lib/nav";
@@ -83,7 +83,7 @@ export default function SettingsPage() {
         <SectionTitle kicker="Compte" title="Abonnement et synchronisation" />
         <div className="space-y-2.5 text-[14px]">
           <Row label="Formule"
-            value={state.profile.plan === "active" ? "Abonné" : `Essai — ${trialDaysLeft(state)} j restants`} />
+            value={state.profile.plan === "active" ? "Abonné" : passJoursRestants(state) > 0 ? `Pass partiels — ${passJoursRestants(state)} j restants` : trialDaysLeft(state) > 0 ? `Essai — ${trialDaysLeft(state)} j restants` : "Gratuit — 1 leçon par jour"} />
           <Row label="Synchronisation"
             value={supabaseConfigured ? (signedInAs ? `${signedInAs}${syncing ? " (en cours…)" : ""}` : "Non connecté") : "Appareil uniquement"} />
         </div>
@@ -97,7 +97,7 @@ export default function SettingsPage() {
               donc la résiliation) de son abonnement même s'il n'est pas
               connecté sur cet appareil — la page explique alors quoi faire. */}
           <Button href="/mon-abonnement" variant="soft" size="sm">Gérer mon abonnement</Button>
-          {state.profile.plan !== "active" && <Button href="/abonnement" size="sm">Voir les formules</Button>}
+          {!estPremium(state) && <Button href="/abonnement" size="sm">Voir les formules</Button>}
         </div>
       </section>
 

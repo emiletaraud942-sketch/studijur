@@ -2,6 +2,7 @@
 
 import { Suspense, useEffect, useState } from "react";
 import { useSearchParams } from "next/navigation";
+import { track } from "@vercel/analytics/react";
 import { supabaseConfigured } from "@/lib/state";
 import { getSupabase } from "@/lib/supabase";
 import { safeNext } from "@/lib/nav";
@@ -91,7 +92,7 @@ function SignInForm() {
     });
     setBusy(false);
     if (err) setError(err.message);
-    else { setSent(true); setRenvoiDisponibleDans(30); }
+    else { track("connexion_demandee"); setSent(true); setRenvoiDisponibleDans(30); }
   }
 
   async function send(e: React.FormEvent) {

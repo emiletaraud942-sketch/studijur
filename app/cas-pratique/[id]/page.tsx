@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useParams, useRouter } from "next/navigation";
 import { useMemo, useState } from "react";
-import { useStudiJur } from "@/lib/state";
+import { estPremium, useStudiJur } from "@/lib/state";
 import { findLesson, courseOf } from "@/lib/corpus";
 import { Button, Tag } from "@/components/ui";
 import { Arrow, Check, Cross, Target } from "@/components/icons";
@@ -25,7 +25,7 @@ export default function CasPratiqueGuide() {
 
   if (!ready) return <div className="py-24 text-center text-[14px]" style={{ color: "var(--muted)" }}>Chargement…</div>;
 
-  if (state.profile.plan !== "active") {
+  if (!estPremium(state)) {
     return (
       <div className="mx-auto max-w-md py-20 text-center">
         <h1 className="serif text-[24px] font-bold">Réservé aux abonnés</h1>

@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useRef, useState } from "react";
-import { anonymousImportCapReached, hasAccess, supabaseConfigured, useStudiJur } from "@/lib/state";
+import { anonymousImportCapReached, estPremium, hasAccess, supabaseConfigured, useStudiJur } from "@/lib/state";
 import { TRIAL_IMPORT_LIMIT } from "@/lib/limits";
 import { prepareImage } from "@/lib/image-prep";
 import { authFetchHeaders } from "@/lib/supabase";
@@ -30,7 +30,7 @@ export default function MyCoursesPage() {
   const photoRef = useRef<HTMLInputElement>(null);
 
   const importes = state.customCourses.length;
-  const abonne = state.profile.plan === "active";
+  const abonne = estPremium(state);
   const acces = hasAccess(state);
   // Sans compte, le vrai palier n'est pas l'essai gratuit (inopérant tant
   // qu'aucun compte ne l'ancre) mais un import gratuit, puis la connexion —

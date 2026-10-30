@@ -3,7 +3,8 @@
 import Link from "next/link";
 import { useState } from "react";
 import { usePathname } from "next/navigation";
-import { useStudiJur, trialDaysLeft, supabaseConfigured, estVisiteurNeuf } from "@/lib/state";
+import { useStudiJur, trialDaysLeft, supabaseConfigured, estVisiteurNeuf, estPremium } from "@/lib/state";
+import { apresBascule } from "@/lib/tarifs";
 import { connexionHref } from "@/lib/nav";
 import { Books, Chart, Grid, Home, Scales, Search, Target, Flame, Upload } from "./icons";
 import { longDate } from "@/lib/format";
@@ -41,7 +42,7 @@ export default function Shell({ children }: { children: React.ReactNode }) {
   const anonyme = supabaseConfigured && !signedInAs;
   // Fenêtre d'urgence du bandeau : la dernière semaine, quelle que soit la
   // durée totale de l'essai (10 jours fixes ou prolongée jusqu'au CC).
-  const showTrial = ready && !anonyme && state.profile.plan !== "active" && daysLeft <= 7;
+  const showTrial = ready && !anonyme && !estPremium(state) && daysLeft <= 7;
   const showConnexion = ready && anonyme;
 
   return (
@@ -104,7 +105,7 @@ export default function Shell({ children }: { children: React.ReactNode }) {
             style={{ background: "var(--gold-soft)", color: "var(--gold)" }}>
             <span>
               {daysLeft <= 0
-                ? "Ton essai gratuit est terminé"
+                ? (apresBascule() ? "Une leçon gratuite par jour — pass 7 jours pour tout débloquer" : "Ton essai gratuit est terminé")
                 // Milieu d'essai (J3-J5 sur 7) : personne ne va jamais voir les
                 // formules avant que l'essai n'expire — le bandeau générique,
                 // affiché tout du long, ne suffit pas à l'inciter. Un message
@@ -113,7 +114,7 @@ export default function Shell({ children }: { children: React.ReactNode }) {
                   ? `Plus que ${daysLeft} jour${daysLeft > 1 ? "s" : ""} d'essai — vois ce que l'abonnement débloque`
                   : `Essai gratuit — ${daysLeft} jour${daysLeft > 1 ? "s" : ""} restant${daysLeft > 1 ? "s" : ""}`}
             </span>
-            <span className="font-bold">{midTrial ? "Voir les formules →" : "S'abonner →"}</span>
+            <span className="font-bold">{daysLeft <= 0 ? "Voir le pass →" : midTrial ? "Voir les formules →" : "S'abonner →"}</span>
           </Link>
         </div>
       )}

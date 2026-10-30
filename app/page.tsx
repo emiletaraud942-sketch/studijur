@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useEffect, useMemo, useState } from "react";
+import { track } from "@vercel/analytics/react";
 import { estVisiteurNeuf, useStudiJur } from "@/lib/state";
 import Landing from "@/components/Landing";
 import { allCourses, corpusStats, pickDailyLesson, findCourse } from "@/lib/corpus";
@@ -37,6 +38,7 @@ export default function TodayPage() {
       const active = await refreshSubscription();
       if (cancelled) return;
       if (active) {
+        track("paiement_confirme");
         setSubConfirmed(true);
       } else if (attempts < 6) {
         setTimeout(tick, 2000);
@@ -100,7 +102,7 @@ export default function TodayPage() {
     <div className="space-y-8">
       {subConfirmed && (
         <div className="rise rounded-2xl px-4 py-3 text-[13.5px] font-semibold" style={{ background: "var(--good-soft)", color: "var(--good)" }}>
-          Abonnement activé, merci !
+          Accès débloqué, merci !
         </div>
       )}
 

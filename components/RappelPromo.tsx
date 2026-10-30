@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { track } from "@vercel/analytics/react";
 import { useStudiJur } from "@/lib/state";
 import { getSupabase } from "@/lib/supabase";
 import { activerRappel, iosSansInstallation, pushSupporte, RAPPEL_POST_CONNEXION_REFUSE_KEY } from "@/lib/push-client";
@@ -51,7 +52,7 @@ export default function RappelPromo() {
     const userId = sb ? (await sb.auth.getUser()).data.user?.id ?? null : null;
     const resultat = await activerRappel(state.profile.reminderHour ?? 19, userId);
     setOccupe(false);
-    if (resultat.ok) { setEtat("cache"); return; }
+    if (resultat.ok) { track("rappel_active"); setEtat("cache"); return; }
     if (resultat.refuse) decliner();
   }
 

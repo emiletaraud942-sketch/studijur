@@ -7,7 +7,7 @@ import { Tag, Button } from "@/components/ui";
 import { Arrow, Chevron } from "@/components/icons";
 import { inlineMarkup } from "@/lib/format";
 import { introGeneraleEntrainement, type QuestionEntrainement } from "@/lib/entrainement";
-import { useStudiJur, entrainementCorrectionCapReached, ENTRAINEMENT_CORRECTION_LIMIT, supabaseConfigured } from "@/lib/state";
+import { useStudiJur, estPremium, entrainementCorrectionCapReached, ENTRAINEMENT_CORRECTION_LIMIT, supabaseConfigured } from "@/lib/state";
 import { authFetchHeaders } from "@/lib/supabase";
 import { connexionHref } from "@/lib/nav";
 import type { EntrainementFeedback } from "@/lib/types";
@@ -147,7 +147,7 @@ function QuestionCard({ q }: { q: QuestionEntrainement }) {
   const connexionRequise = supabaseConfigured && !signedInAs;
   const restantes = Math.max(0, ENTRAINEMENT_CORRECTION_LIMIT - (state.entrainementCorrectionsUsed ?? 0));
   const wordCount = reponse.trim() ? reponse.trim().split(/\s+/).filter(Boolean).length : 0;
-  const abonne = state.profile.plan === "active";
+  const abonne = estPremium(state);
 
   async function corriger() {
     setCorrectionState("loading");

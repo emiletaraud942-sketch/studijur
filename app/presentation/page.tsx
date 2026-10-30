@@ -4,7 +4,7 @@ import Landing from "@/components/Landing";
 export const metadata: Metadata = {
   title: "StudiJur — 5 minutes de droit par jour",
   description:
-    "L'entraînement quotidien des étudiants en L1 de droit : une leçon de 5 minutes, cinq définitions, une question type examen corrigée et un quiz. Dix jours d'essai gratuit, jusqu'à ton CC si besoin.",
+    "L'entraînement quotidien des étudiants en L1 de droit : une leçon de 5 minutes, cinq définitions, une question type examen corrigée et un quiz. Une leçon gratuite par jour, et un pass 7 jours à 4,90 € pour réviser avant les partiels.",
   openGraph: {
     title: "StudiJur — 5 minutes de droit par jour",
     description:
