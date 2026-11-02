@@ -49,6 +49,18 @@ export const REVISION_CC: Record<string, RevisionCCConfig> = {
       "intro-17", "intro-18", "intro-19", "intro-20", "intro-21", "intro-22",
     ],
   },
+  orga: {
+    id: "orga",
+    label: "Organisation juridictionnelle",
+    // Date du CC1 pas encore communiquée (26/10/2026) — jamais inventée, voir
+    // le commentaire sur `ccDate` plus haut.
+    ccDate: null,
+    lessonSlugs: [
+      "orga-01", "orga-02", "orga-03", "orga-04", "orga-05", "orga-06", "orga-07", "orga-08",
+      "orga-09", "orga-10", "orga-11", "orga-12", "orga-13", "orga-14", "orga-15", "orga-16",
+      "orga-17", "orga-18", "orga-19", "orga-20",
+    ],
+  },
 };
 
 // `rubrique` : segment de route sous /revision-cc/[matiere]/... vers lequel
