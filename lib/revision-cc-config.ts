@@ -19,7 +19,11 @@ export const REVISION_CC: Record<string, RevisionCCConfig> = {
   "droit-public": {
     id: "droit-public",
     label: "Introduction historique au droit public",
-    ccDate: "2026-11-06",
+    // Pas de date affichée : les CC varient d'une université à l'autre, voir
+    // le commentaire sur `ccDate` plus haut — l'appli doit rester utile à
+    // n'importe quel étudiant de L1, pas seulement à ceux dont le CC tombe à
+    // cette date précise.
+    ccDate: null,
     lessonSlugs: [
       "histoire-01", "histoire-02", "histoire-03", "histoire-04", "histoire-05", "histoire-06",
       "histoire-07", "histoire-08", "histoire-09", "histoire-10", "histoire-11", "histoire-12",
@@ -30,7 +34,7 @@ export const REVISION_CC: Record<string, RevisionCCConfig> = {
   constit: {
     id: "constit",
     label: "Droit constitutionnel",
-    ccDate: "2026-11-05",
+    ccDate: null,
     lessonSlugs: [
       "constit-01", "constit-02", "constit-03", "constit-04",
       "constit-05", "constit-06", "constit-07", "constit-08",
@@ -42,7 +46,7 @@ export const REVISION_CC: Record<string, RevisionCCConfig> = {
   "intro-generale": {
     id: "intro-generale",
     label: "Introduction générale au droit",
-    ccDate: "2026-11-05",
+    ccDate: null,
     lessonSlugs: [
       "intro-01", "intro-02", "intro-03", "intro-04", "intro-05", "intro-06", "intro-07", "intro-08",
       "intro-09", "intro-10", "intro-11", "intro-12", "intro-13", "intro-14", "intro-15", "intro-16",
