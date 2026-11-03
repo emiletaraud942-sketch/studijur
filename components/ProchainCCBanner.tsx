@@ -1,50 +1,35 @@
-"use client";
-
 import Link from "next/link";
-import { useEffect, useState } from "react";
-import { ccAVenir, etapeActuelle, joursAvant, type RevisionCCConfig } from "@/lib/revision-cc-config";
-import { Arrow } from "./icons";
+import { REVISION_CC } from "@/lib/revision-cc-config";
+import { Arrow, Clock } from "./icons";
 
-// Calculé côté client uniquement (useEffect, pas au premier rendu) : une
-// comparaison à Date.now() rendue côté serveur puis réhydratée côté client
-// peut différer de quelques secondes et déclencher un avertissement
-// d'hydratation React pour un gain nul ici.
-//
-// Le badge "J-" (plutôt que "CC dans X jours") et l'étape du plan de
-// bataille (voir PlanDeBataille.tsx, même logique de seuils réutilisée pour
-// ne jamais désynchroniser les deux) donnent sur l'accueil, en un coup
-// d'œil, la même lecture qu'un étudiant se fait déjà mentalement d'un
-// compte à rebours de révisions — et disent quoi faire aujourd'hui, pas
-// seulement combien de jours restent.
+// Sur l'accueil (compte connecté) : accès direct aux fiches de révision CC,
+// matière par matière. Pas de date ni de compte à rebours (voir le
+// commentaire sur `ccDate`, lib/revision-cc-config.ts) — les CC varient d'une
+// université à l'autre, donc pas de fausse urgence commune à tous.
 export default function ProchainCCBanner() {
-  const [items, setItems] = useState<RevisionCCConfig[]>([]);
-
-  useEffect(() => { setItems(ccAVenir()); }, []);
-
-  if (!items.length) return null;
+  const matieres = Object.values(REVISION_CC);
 
   return (
     <div className="space-y-2.5">
-      {items.map((c) => {
-        const jours = joursAvant(c.ccDate!);
-        const etape = etapeActuelle(jours);
-        return (
-          <Link key={c.id} href={`/revision-cc/${c.id}`} data-hue="gold"
-            className="rise card flex items-center gap-3.5 p-4 transition-transform hover:-translate-y-0.5">
-            <span className="grid h-11 w-11 shrink-0 place-items-center rounded-xl text-[13px] font-bold tabular"
-              style={{ background: "var(--bad-soft)", color: "var(--bad)" }}>
-              {jours <= 0 ? "J" : `J-${jours}`}
-            </span>
-            <div className="min-w-0 flex-1">
-              <h2 className="text-[15px] font-semibold">Réviser pour {c.label}</h2>
-              <p className="mt-0.5 text-[13px]" style={{ color: "var(--muted)" }}>
-                {jours <= 0 ? "C'est aujourd'hui" : etape ? `Étape du jour : ${etape.titre}` : `CC dans ${jours} jour${jours > 1 ? "s" : ""}`}
-              </p>
-            </div>
-            <span className="shrink-0" style={{ color: "var(--muted)" }}><Arrow className="h-4 w-4" /></span>
-          </Link>
-        );
-      })}
+      <h2 className="text-[11px] font-semibold uppercase tracking-[0.14em]" style={{ color: "var(--muted)" }}>
+        Réviser pour les CC et les partiels
+      </h2>
+      {matieres.map((m) => (
+        <Link key={m.id} href={`/revision-cc/${m.id}`} data-hue="gold"
+          className="rise card flex items-center gap-3.5 p-4 transition-transform hover:-translate-y-0.5">
+          <span className="grid h-11 w-11 shrink-0 place-items-center rounded-xl"
+            style={{ background: "var(--h-soft)", color: "var(--h)" }}>
+            <Clock className="h-5 w-5" />
+          </span>
+          <div className="min-w-0 flex-1">
+            <h3 className="text-[15px] font-semibold">Réviser pour {m.label}</h3>
+            <p className="mt-0.5 text-[13px]" style={{ color: "var(--muted)" }}>
+              Fiche condensée, quiz et pièges classiques
+            </p>
+          </div>
+          <span className="shrink-0" style={{ color: "var(--muted)" }}><Arrow className="h-4 w-4" /></span>
+        </Link>
+      ))}
     </div>
   );
 }

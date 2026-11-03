@@ -1,61 +1,39 @@
-"use client";
-
 import Link from "next/link";
-import { useEffect, useState } from "react";
-import { ccAVenir, etapeActuelle, joursAvant, type RevisionCCConfig } from "@/lib/revision-cc-config";
-import { Arrow } from "./icons";
+import { REVISION_CC } from "@/lib/revision-cc-config";
+import { Arrow, Clock } from "./icons";
 
 // Contrairement à ProchainCCBanner (dans l'app, un lien discret par matière),
 // cette bannière vit sur / et /presentation pour un visiteur SANS compte —
-// retour d'Émile du 18/10/2026 : c'est la toute première chose à voir sur la
-// page, avant même le pitch, avec un vrai raccourci "Voir mon plan de
-// révision" par matière (même format que ProchainCCHero dans /reviser,
-// réservé aux comptes connectés) plutôt qu'une bannière texte qui ne mène
-// nulle part avant la création du compte. Calculé côté client (useEffect,
-// pas au premier rendu) pour éviter un écart de rendu serveur/client sur
-// Date.now() — voir la même remarque dans ProchainCCBanner.
+// la toute première chose à voir, avant même le pitch, avec un raccourci
+// direct vers chaque matière. Pas de date ni de compte à rebours (voir le
+// commentaire sur `ccDate`, lib/revision-cc-config.ts) : les CC varient d'une
+// université à l'autre, donc pas de fausse urgence commune à tous — juste la
+// liste des fiches et quiz de révision par matière.
 export default function CCPresentationBanner() {
-  const [items, setItems] = useState<RevisionCCConfig[]>([]);
-
-  useEffect(() => { setItems(ccAVenir()); }, []);
-
-  if (!items.length) return null;
+  const matieres = Object.values(REVISION_CC);
 
   return (
     <section className="space-y-2.5">
       <h2 className="text-[13px] font-semibold" style={{ color: "var(--muted)" }}>
-        Les prochains CC approchent
+        Réviser pour les CC et les partiels
       </h2>
       <div className="grid gap-2.5 sm:grid-cols-2">
-        {items.map((c) => {
-          const jours = joursAvant(c.ccDate!);
-          const etape = etapeActuelle(jours);
-          return (
-            <div key={c.id} className="card overflow-hidden" data-hue="gold">
-              <div className="h-1" style={{ background: "var(--bad)" }} />
-              <div className="p-5 text-center">
-                <span className="serif text-[32px] font-bold leading-none tabular" style={{ color: "var(--bad)" }}>
-                  {jours <= 0 ? "J" : `J-${jours}`}
-                </span>
-                <h3 className="mt-1.5 text-[15px] font-bold">{c.label}</h3>
-                <p className="mx-auto mt-1.5 max-w-xs text-[13px] leading-relaxed" style={{ color: "var(--ink-2)" }}>
-                  {jours <= 0
-                    ? "C'est aujourd'hui."
-                    : etape
-                      ? <><strong>{etape.titre}</strong> — {etape.texte}</>
-                      : `Dans ${jours} jour${jours > 1 ? "s" : ""}.`}
-                </p>
-                <div className="mt-4">
-                  <Link href={`/revision-cc/${c.id}`}
-                    className="inline-flex items-center gap-2 rounded-xl px-5 py-2.5 text-[13.5px] font-semibold"
-                    style={{ background: "var(--accent)", color: "var(--accent-ink)" }}>
-                    Voir mon plan de révision <Arrow className="h-3.5 w-3.5" />
-                  </Link>
-                </div>
-              </div>
+        {matieres.map((m) => (
+          <Link key={m.id} href={`/revision-cc/${m.id}`} data-hue="gold"
+            className="card flex items-center gap-3.5 p-4 transition-transform hover:-translate-y-0.5">
+            <span className="grid h-11 w-11 shrink-0 place-items-center rounded-xl"
+              style={{ background: "var(--h-soft)", color: "var(--h)" }}>
+              <Clock className="h-5 w-5" />
+            </span>
+            <div className="min-w-0 flex-1">
+              <h3 className="text-[15px] font-semibold">{m.label}</h3>
+              <p className="mt-0.5 text-[13px]" style={{ color: "var(--muted)" }}>
+                Fiche condensée, chronologie, quiz et pièges classiques
+              </p>
             </div>
-          );
-        })}
+            <span className="shrink-0" style={{ color: "var(--muted)" }}><Arrow className="h-4 w-4" /></span>
+          </Link>
+        ))}
       </div>
     </section>
   );

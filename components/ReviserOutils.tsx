@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { REVISION_CC } from "@/lib/revision-cc-config";
 import { Chevron, Clock, Scales, Target } from "./icons";
 import { Tag } from "./ui";
 
@@ -24,7 +23,6 @@ const SENTRAINER: Outil[] = [
 // 08/10/2026).
 export default function ReviserOutils() {
   const [ouvert, setOuvert] = useState(false);
-  const matieres = Object.values(REVISION_CC);
 
   return (
     <section>
@@ -37,24 +35,6 @@ export default function ReviserOutils() {
 
       {ouvert && (
         <div className="rise mt-4 space-y-6">
-          <div>
-            <div className="mb-3 text-[11px] font-bold uppercase tracking-[0.12em]" style={{ color: "var(--muted)" }}>
-              Plan de révision par matière, calé sur ton CC
-            </div>
-            <div className="grid gap-2.5 sm:grid-cols-3">
-              {matieres.map((m) => (
-                <Link key={m.id} href={`/revision-cc/${m.id}`} data-hue="gold"
-                  className="card flex items-center gap-3 p-3.5 transition-transform hover:-translate-y-0.5">
-                  <span className="grid h-9 w-9 shrink-0 place-items-center rounded-xl" style={{ background: "var(--h-soft)", color: "var(--h)" }}>
-                    <Clock className="h-[17px] w-[17px]" />
-                  </span>
-                  <span className="min-w-0 flex-1 text-[13px] font-semibold leading-snug">{m.label}</span>
-                  <span className="shrink-0" style={{ color: "var(--muted)" }}><Chevron className="h-4 w-4" /></span>
-                </Link>
-              ))}
-            </div>
-          </div>
-
           <div data-hue="gold">
             <div className="mb-3 text-[11px] font-bold uppercase tracking-[0.12em]" style={{ color: "var(--h)" }}>
               S&apos;entraîner avant l&apos;examen
