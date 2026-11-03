@@ -1,49 +1,38 @@
-"use client";
-
-import { useEffect, useState } from "react";
 import Link from "next/link";
-import { ccAVenir, etapeActuelle, joursAvant, type RevisionCCConfig } from "@/lib/revision-cc-config";
-import { Arrow } from "./icons";
+import { REVISION_CC } from "@/lib/revision-cc-config";
+import { Arrow, Clock } from "./icons";
 
-// Remplace la grille de 3 matières comme point d'entrée principal de
-// /reviser : plutôt que de demander à l'élève de choisir sa matière (il n'y
-// a qu'un CC le plus proche qui compte vraiment), un seul gros bloc détecte
-// automatiquement lequel et dit quoi faire aujourd'hui. Retour utilisateur
-// du 08/10/2026 : "un seul gros bouton Mon CC est le... qui génère son plan
-// de révision" — les dates de CC sont déjà connues par matière (voir
-// REVISION_CC), donc pas besoin de les faire saisir : seule la détection du
-// plus proche manquait de mise en avant.
+// Point d'entrée principal de /reviser pour les révisions de CC/partiels —
+// un seul bloc, un lien par matière, en haut de la page plutôt que replié
+// derrière "Plus d'outils" (voir ReviserOutils). Pas de date ni de compte à
+// rebours (voir le commentaire sur `ccDate`, lib/revision-cc-config.ts) :
+// les CC varient d'une université à l'autre, donc pas de fausse urgence
+// commune à tous — juste un accès direct à la fiche et au quiz de chaque
+// matière.
 export default function ProchainCCHero() {
-  const [cc, setCc] = useState<RevisionCCConfig | null | undefined>(undefined);
-
-  useEffect(() => { setCc(ccAVenir()[0] ?? null); }, []);
-
-  if (!cc) return null;
-
-  const jours = joursAvant(cc.ccDate!);
-  const etape = etapeActuelle(jours);
+  const matieres = Object.values(REVISION_CC);
 
   return (
     <section className="card overflow-hidden" data-hue="gold">
-      <div className="h-1.5" style={{ background: "var(--bad)" }} />
-      <div className="p-6 text-center">
-        <span className="serif text-[44px] font-bold leading-none tabular" style={{ color: "var(--bad)" }}>
-          {jours <= 0 ? "J" : `J-${jours}`}
-        </span>
-        <h2 className="mt-2 text-[17px] font-bold">{cc.label}</h2>
-        <p className="mx-auto mt-2 max-w-sm text-[14px] leading-relaxed" style={{ color: "var(--ink-2)" }}>
-          {jours <= 0
-            ? "C'est aujourd'hui."
-            : etape
-              ? <><strong>{etape.titre}</strong> — {etape.texte}</>
-              : `Dans ${jours} jour${jours > 1 ? "s" : ""}.`}
+      <div className="h-1.5" style={{ background: "var(--h)" }} />
+      <div className="p-6">
+        <h2 className="text-center text-[17px] font-bold">Réviser pour les CC et les partiels</h2>
+        <p className="mx-auto mt-1.5 max-w-sm text-center text-[13.5px] leading-relaxed" style={{ color: "var(--ink-2)" }}>
+          Fiche condensée, chronologie, fiche à trous, pièges classiques et quiz, matière par matière.
         </p>
-        <div className="mt-5">
-          <Link href={`/revision-cc/${cc.id}`}
-            className="inline-flex items-center gap-2 rounded-xl px-6 py-3.5 text-[15px] font-semibold"
-            style={{ background: "var(--accent)", color: "var(--accent-ink)" }}>
-            Voir mon plan de révision <Arrow className="h-4 w-4" />
-          </Link>
+        <div className="mt-5 grid gap-2.5 sm:grid-cols-2">
+          {matieres.map((m) => (
+            <Link key={m.id} href={`/revision-cc/${m.id}`}
+              className="flex items-center gap-3 rounded-xl p-3.5 transition-transform hover:-translate-y-0.5"
+              style={{ background: "var(--surface-2)" }}>
+              <span className="grid h-9 w-9 shrink-0 place-items-center rounded-lg"
+                style={{ background: "var(--h-soft)", color: "var(--h)" }}>
+                <Clock className="h-[17px] w-[17px]" />
+              </span>
+              <span className="min-w-0 flex-1 text-[13.5px] font-semibold leading-snug">{m.label}</span>
+              <span className="shrink-0" style={{ color: "var(--muted)" }}><Arrow className="h-4 w-4" /></span>
+            </Link>
+          ))}
         </div>
       </div>
     </section>
