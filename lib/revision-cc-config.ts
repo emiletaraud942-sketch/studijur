@@ -39,7 +39,7 @@ export const REVISION_CC: Record<string, RevisionCCConfig> = {
       "constit-01", "constit-02", "constit-03", "constit-04",
       "constit-05", "constit-06", "constit-07", "constit-08",
       "constit-09", "constit-10", "constit-11", "constit-12", "constit-13",
-      "constit-14", "constit-15",
+      "constit-14", "constit-15", "constit-16", "constit-17",
     ],
     chronologieLessonIds: ["dates-07"],
   },

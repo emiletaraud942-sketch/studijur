@@ -115,5 +115,121 @@
       { "q": "Depuis la Révolution française, la France a connu :", "choices": ["1 seule Constitution", "5 Constitutions", "15 Constitutions", "25 Constitutions"], "answer": 2, "why": "À comparer à la Constitution des États-Unis de 1787, toujours en vigueur aujourd'hui." },
       { "q": "Le bloc de constitutionnalité a été élargi au-delà du seul texte de 1958 par la décision du Conseil constitutionnel :", "choices": ["Liberté d'association, 16 juillet 1971", "Sarran, 30 octobre 1998", "Costa contre Enel, 1964", "Garde à vue, 30 juillet 2010"], "answer": 0, "why": "Cette décision reconnaît une valeur contraignante au préambule et aux textes qu'il vise, forgeant le bloc de constitutionnalité." }
     ]
+  },
+  {
+    "id": "constit-16",
+    "order": 16,
+    "title": "La séparation des pouvoirs selon Montesquieu",
+    "teaser": "« Il faut que, par la disposition des choses, le pouvoir arrête le pouvoir. »",
+    "minutes": 6,
+    "brief": [
+      "La **séparation des pouvoirs** explique comment les fonctions de l'État se répartissent entre plusieurs organes capables de se contrôler mutuellement, afin d'empêcher qu'un seul ne concentre tout le pouvoir. **John Locke**, dans son *Essai sur le gouvernement civil* (1690), distingue déjà plusieurs fonctions et hiérarchise les pouvoirs au profit du législatif : pour lui, le roi doit être soumis à la loi. Mais c'est **Montesquieu** (Charles-Louis de Secondat, baron de La Brède et de Montesquieu), dans *De l'esprit des lois* (1748), notamment ses chapitres IV et VI, qui en donne la théorie la plus aboutie, et la plus citée depuis — jusqu'à l'article 16 de la DDHC de 1789.",
+      "La théorie part d'un constat pessimiste sur la nature humaine : « C'est une expérience éternelle que tout homme qui a du pouvoir est porté à en abuser ; il va jusqu'à ce qu'il trouve des limites. » Montesquieu écrit en pleine monarchie absolue française, qu'il critique implicitement : toute personne qui détient du pouvoir finira par en abuser au détriment de la liberté politique d'autrui. La seule parade, pour lui, est de **séparer les pouvoirs** plutôt que de les laisser se concentrer entre les mêmes mains : « Pour qu'on ne puisse abuser du pouvoir, il faut que, par la disposition des choses, le pouvoir arrête le pouvoir. »",
+      "Cette formule implique une **différenciation fonctionnelle** : il faut distinguer, dans l'État, trois fonctions — **législative** (créer la loi), **exécutive** (l'appliquer) et **judiciaire** (régler les contentieux) — avant de les répartir. Elle implique ensuite une **différenciation organique** : attribuer ces fonctions à des organes distincts. Mais Montesquieu n'exige jamais une **spécialisation fonctionnelle totale** : un même organe peut cumuler plusieurs fonctions ; la seule règle impérative est qu'**aucun organe ne doit détenir la totalité des fonctions de statuer**, ce qui suppose au minimum deux organes se partageant le pouvoir. La fonction **judiciaire**, en revanche, doit rester complètement à l'écart du jeu politique, neutre, sans **faculté d'empêcher** les autres organes.",
+      "Pour que la séparation soit effective, chaque organe doit disposer d'une **faculté d'empêcher** les autres, c'est-à-dire d'une procédure lui permettant de bloquer un abus. Montesquieu tire ce modèle du **régime britannique** qu'il idéalise : le pouvoir législatif appartient aux deux chambres du Parlement, le pouvoir exécutif au roi, qui dispose d'un droit de veto sur l'assemblée — un mécanisme de contrebalancement réciproque. Mais la théorie connaît deux limites pratiques que Montesquieu lui-même n'a jamais ignorées : une **spécialisation fonctionnelle absolue**, où chaque organe exercerait exclusivement une seule fonction sans jamais coopérer, serait trop rigide pour fonctionner — aucun État ne l'applique réellement ; une **indépendance organique absolue**, où les organes ne pourraient jamais se contrôler ni se renverser, risquerait au contraire le **blocage institutionnel complet** en cas de crise, comme l'illustrent les « shutdowns » américains lorsque Président et Congrès appartiennent à des partis différents. D'où l'importance des **moyens d'action réciproques** : nomination (le président nomme des ministres ou des juges), contrôle (un organe peut demander des comptes à un autre) et révocation (le plus radical, comme le pouvoir de l'Assemblée nationale de renverser le gouvernement en France)."
+    ],
+    "keyPoints": [
+      "Montesquieu, De l'esprit des lois (1748) : tout homme qui a du pouvoir est porté à en abuser — seule limite : séparer les pouvoirs.",
+      "« Le pouvoir arrête le pouvoir » : différenciation fonctionnelle (3 fonctions) puis organique (plusieurs organes), mais pas de spécialisation totale exigée — sauf pour le judiciaire, neutre.",
+      "Faculté d'empêcher : chaque organe doit pouvoir bloquer un autre ; modèle tiré du régime britannique (veto royal sur le Parlement).",
+      "Limites pratiques : la spécialisation absolue est impraticable, l'indépendance organique absolue risque le blocage institutionnel (shutdown) ; critique du fait majoritaire (Pierre Gaudemet)."
+    ],
+    "definitions": [
+      { "term": "Séparation des pouvoirs", "text": "Théorie, développée par Montesquieu, selon laquelle les fonctions de l'État doivent être réparties entre plusieurs organes capables de se contrôler mutuellement, afin d'empêcher la concentration et l'abus du pouvoir.", "source": "Montesquieu, De l'esprit des lois, 1748" },
+      { "term": "Différenciation fonctionnelle", "text": "Distinction, à l'intérieur de l'État, entre les différentes fonctions à exercer — législative, exécutive, judiciaire — préalable à leur répartition entre des organes." },
+      { "term": "Différenciation organique", "text": "Attribution des fonctions de l'État à des organes distincts, sans que cela implique nécessairement qu'un organe n'exerce qu'une seule fonction." },
+      { "term": "Faculté d'empêcher", "text": "Capacité reconnue à un organe de bloquer l'action d'un autre organe, condition nécessaire pour qu'aucun pouvoir n'abuse du sien sans contrôle." },
+      { "term": "Fait majoritaire", "text": "Phénomène, identifié par Pierre Gaudemet, par lequel un même parti politique détient la majorité dans plusieurs organes à la fois, ce qui atténue dans la pratique la portée de la séparation des pouvoirs." }
+    ],
+    "exam": {
+      "kind": "dissertation",
+      "question": "Montesquieu a-t-il prôné une séparation absolue des pouvoirs ?",
+      "concise": "Montesquieu part d'un constat pessimiste sur la nature humaine — tout homme qui a du pouvoir est porté à en abuser — pour en tirer une exigence : répartir les fonctions de l'État entre plusieurs organes dotés d'une faculté d'empêcher réciproque, de façon que « le pouvoir arrête le pouvoir ». Mais cette exigence n'a jamais été, chez lui, celle d'une séparation absolue. Il n'impose pas de spécialisation fonctionnelle totale : un même organe peut cumuler plusieurs fonctions, la seule règle étant qu'aucun n'en détienne la totalité. Une lecture rigoriste de sa théorie, imposant l'isolement complet des organes et l'interdiction de toute coopération, serait d'ailleurs inapplicable : aucun État ne la pratique, car elle empêcherait toute coordination des politiques publiques et exposerait, en cas de désaccord entre organes, à un blocage institutionnel complet — à l'image des « shutdowns » américains. Montesquieu propose donc une séparation souple, fondée sur l'équilibre et la collaboration contrôlée, non sur l'isolement des pouvoirs.",
+      "plan": [
+        {
+          "title": "I. Une théorie fondée sur la méfiance envers le pouvoir",
+          "children": [
+            { "title": "A. Le constat pessimiste de Montesquieu", "points": ["« Tout homme qui a du pouvoir est porté à en abuser »", "Une critique implicite de l'absolutisme monarchique français", "La séparation comme seul remède : « le pouvoir arrête le pouvoir »"] },
+            { "title": "B. Une différenciation fonctionnelle puis organique", "points": ["Trois fonctions : législative, exécutive, judiciaire", "La fonction judiciaire, neutre, sans faculté d'empêcher", "Le modèle du régime britannique : veto royal, deux chambres"] }
+          ]
+        },
+        {
+          "title": "II. Une séparation volontairement souple, non absolue",
+          "children": [
+            { "title": "A. L'absence de spécialisation fonctionnelle exigée", "points": ["Un même organe peut cumuler plusieurs fonctions", "Seule exigence : qu'aucun organe ne détienne toutes les fonctions", "L'impraticabilité d'une spécialisation totale et rigide"] },
+            { "title": "B. Les moyens d'action réciproques, condition de l'équilibre", "points": ["Nomination, contrôle, révocation entre organes", "Le risque du blocage institutionnel en cas d'indépendance absolue (shutdown américain)", "La critique contemporaine du fait majoritaire, Pierre Gaudemet"] }
+          ]
+        }
+      ],
+      "pitfalls": [
+        "Ne pas présenter Montesquieu comme partisan d'une séparation stricte et totale : il exige seulement qu'aucun organe ne cumule toutes les fonctions.",
+        "Ne pas confondre différenciation fonctionnelle (les fonctions) et différenciation organique (les organes qui les exercent)."
+      ]
+    },
+    "quiz": [
+      { "q": "Selon Montesquieu, la seule façon d'empêcher l'abus du pouvoir est :", "choices": ["De confier tout le pouvoir à un seul homme vertueux", "De séparer les pouvoirs pour que le pouvoir arrête le pouvoir", "De supprimer le pouvoir judiciaire", "De soumettre le pouvoir à un référendum permanent"], "answer": 1, "why": "« Il faut que, par la disposition des choses, le pouvoir arrête le pouvoir » : la séparation, pas la vertu, protège contre l'abus." },
+      { "q": "Montesquieu exige-t-il qu'un organe n'exerce qu'une seule fonction ?", "choices": ["Oui, c'est l'exigence centrale de sa théorie", "Non, il exige seulement qu'aucun organe ne cumule toutes les fonctions", "Oui, mais seulement pour le pouvoir exécutif", "Non, aucune règle n'encadre la répartition des fonctions"], "answer": 1, "why": "Montesquieu n'impose pas de spécialisation fonctionnelle totale : la seule règle impérative porte sur le cumul intégral des fonctions." },
+      { "q": "La fonction judiciaire, chez Montesquieu, doit rester :", "choices": ["Dotée d'une faculté d'empêcher forte", "Neutre et à l'écart du jeu politique", "Confiée au pouvoir législatif", "Soumise au pouvoir exécutif"], "answer": 1, "why": "Montesquieu la sort du jeu politique, sans lui accorder de faculté d'empêcher, pour préserver sa neutralité." },
+      { "q": "Une indépendance organique absolue entre les pouvoirs risque surtout :", "choices": ["De renforcer la démocratie", "Un blocage institutionnel complet en cas de crise", "De supprimer la fonction judiciaire", "De fusionner les trois fonctions"], "answer": 1, "why": "Sans moyens d'action réciproques, un désaccord entre organes peut paralyser l'État, comme lors des shutdowns américains." },
+      { "q": "Le fait majoritaire, identifié par Pierre Gaudemet, désigne :", "choices": ["L'élection du Président au suffrage universel", "Un même parti détenant la majorité dans plusieurs organes à la fois", "La règle de la majorité qualifiée pour réviser la Constitution", "Le vote à la majorité simple au Parlement"], "answer": 1, "why": "Ce phénomène, absent à l'époque de Montesquieu où les partis n'existaient pas, atténue en pratique la portée de la séparation des pouvoirs." }
+    ]
+  },
+  {
+    "id": "constit-17",
+    "order": 17,
+    "title": "Les régimes politiques : d'Aristote à Esmein",
+    "teaser": "Monarchie ou tyrannie ? Et pourquoi la France n'est ni tout à fait parlementaire ni tout à fait présidentielle.",
+    "minutes": 6,
+    "brief": [
+      "Le terme **régime politique** est ambigu : en droit, on lui préfère l'expression **forme de gouvernement**, c'est-à-dire la manière dont le pouvoir est organisé et exercé dans un État. La plus ancienne réflexion sur la question remonte à **Aristote**, philosophe grec du IVe siècle avant J.-C., qui se posait une question simple : qu'est-ce qu'un bon gouvernement ? Il propose une classification fondée sur le **nombre de personnes** qui détiennent le pouvoir, croisée avec la **qualité** de son exercice. Le gouvernement d'un seul donne la **monarchie**, forme juste, ou la **tyrannie**, sa forme déviée ; le gouvernement de plusieurs donne l'**aristocratie** ou l'**oligarchie** ; le gouvernement de tous donne la **République** (ou *politeia*), forme modérée, ou la **démocratie**, qu'Aristote entend en un sens péjoratif — le régime où le peuple abuse de son pouvoir pour servir ses intérêts particuliers plutôt que l'intérêt général. Cette classification est aujourd'hui **obsolète** : la monarchie absolue a quasiment disparu, et la plupart des États modernes sont des républiques démocratiques.",
+      "Les classifications contemporaines retiennent un autre critère : l'ouverture du pouvoir à la contestation. Les **régimes à pouvoir clos**, ou **monocratiques**, concentrent le pouvoir sans alternance réelle possible — les régimes totalitaires en sont l'exemple. Les **régimes à pouvoir ouvert**, ou **pluralistes**, organisent au contraire la coexistence de plusieurs partis politiques et l'accès au pouvoir par des **élections libres**. Les régimes monocratiques se dotent souvent de **fausses constitutions** et organisent de **fausses élections**, pour imiter les apparences des démocraties pluralistes sans en respecter la substance.",
+      "Au sein des régimes pluralistes, le juriste français **Adhémar Esmein** (1848-1913) propose, dans ses *Éléments de droit constitutionnel*, une classification affinée selon la **manière dont ils appliquent la séparation des pouvoirs**. Il distingue deux grands modèles, qui se répondent : une **séparation souple** des pouvoirs produit un **régime parlementaire**, où l'exécutif et le législatif collaborent étroitement ; une **séparation stricte** produit un **régime présidentiel**. Ces deux modèles ne sont pas des catégories pures mais des **idéaux-types**, des repères théoriques dont aucun régime concret ne se rapproche jamais parfaitement. Le régime présidentiel est classiquement illustré par les **États-Unis** ; le régime parlementaire par le **Royaume-Uni** et, dans une certaine mesure, par la **France**.",
+      "Ce qui caractérise le **régime parlementaire**, ce n'est pas la simple existence d'un parlement — les régimes présidentiels en possèdent aussi un — mais une **double collaboration** entre l'exécutif et le législatif : une collaboration **positive**, les deux pouvoirs participant ensemble à l'action de l'État, et une collaboration **négative**, c'est-à-dire la possibilité de se contrôler mutuellement, le Parlement pouvant renverser le gouvernement et le chef de l'État pouvant dissoudre l'assemblée. Historiquement, ce modèle naît au **Royaume-Uni**, considéré comme la « mère » du parlementarisme : c'est par la voie de la **coutume** qu'apparaît progressivement cette collaboration des pouvoirs, marquée par l'affaiblissement continu du pouvoir du roi au profit du Parlement, représentant de la nation."
+    ],
+    "keyPoints": [
+      "Aristote : classification par le nombre de gouvernants (un seul, plusieurs, tous) croisé avec la qualité du régime (juste/dévié) — monarchie/tyrannie, aristocratie/oligarchie, république/démocratie (péjorative chez Aristote). Classification obsolète aujourd'hui.",
+      "Classifications modernes : régimes à pouvoir clos (monocratiques, totalitaires) contre régimes à pouvoir ouvert (pluralistes, élections libres) — les régimes monocratiques imitent souvent les apparences pluralistes (fausses constitutions, fausses élections).",
+      "Esmein (Éléments de droit constitutionnel) : séparation souple → régime parlementaire ; séparation stricte → régime présidentiel — deux idéaux-types, jamais purs en pratique.",
+      "Régime parlementaire : collaboration positive (action commune) et négative (contrôle réciproque, renversement/dissolution) entre exécutif et législatif ; né au Royaume-Uni par la coutume."
+    ],
+    "definitions": [
+      { "term": "Forme de gouvernement", "text": "Expression préférée en droit à « régime politique » pour désigner la manière dont le pouvoir est organisé et exercé au sein d'un État." },
+      { "term": "Régime à pouvoir clos (monocratique)", "text": "Régime qui concentre le pouvoir sans alternance réelle possible, caractéristique des régimes totalitaires, parfois dissimulé derrière de fausses constitutions et de fausses élections." },
+      { "term": "Régime à pouvoir ouvert (pluraliste)", "text": "Régime organisant la coexistence de plusieurs partis politiques et l'accès au pouvoir par des élections libres." },
+      { "term": "Régime parlementaire", "text": "Régime caractérisé par une séparation souple des pouvoirs et une double collaboration entre exécutif et législatif : positive (action commune) et négative (contrôle réciproque, pouvant aller jusqu'au renversement du gouvernement ou à la dissolution de l'assemblée).", "source": "Adhémar Esmein, Éléments de droit constitutionnel" },
+      { "term": "Régime présidentiel", "text": "Régime caractérisé par une séparation stricte des pouvoirs exécutif et législatif, illustré classiquement par les États-Unis.", "source": "Adhémar Esmein, Éléments de droit constitutionnel" }
+    ],
+    "exam": {
+      "kind": "question de cours",
+      "question": "Présentez la classification des régimes pluralistes proposée par Adhémar Esmein.",
+      "concise": "Adhémar Esmein, dans ses *Éléments de droit constitutionnel*, classe les régimes pluralistes selon la manière dont ils appliquent la séparation des pouvoirs théorisée par Montesquieu. Il distingue deux grands modèles : une **séparation souple**, qui organise une collaboration étroite entre l'exécutif et le législatif et produit le **régime parlementaire**, illustré par le Royaume-Uni et, dans une certaine mesure, la France ; et une **séparation stricte**, qui tient les deux pouvoirs à l'écart l'un de l'autre et produit le **régime présidentiel**, illustré par les États-Unis. Ces deux modèles sont des **idéaux-types** : des repères théoriques dont aucun régime concret ne se rapproche jamais parfaitement, chaque État combinant en pratique des éléments des deux logiques. Dans le régime parlementaire, la collaboration est double : positive, puisque l'exécutif et le législatif participent ensemble à l'action de l'État, et négative, puisqu'ils peuvent se contrôler mutuellement — le Parlement pouvant renverser le gouvernement, le chef de l'État pouvant dissoudre l'assemblée.",
+      "plan": [
+        {
+          "title": "I. Une classification fondée sur le degré de séparation des pouvoirs",
+          "children": [
+            { "title": "A. Deux modèles théoriques opposés", "points": ["Séparation souple : collaboration étroite entre exécutif et législatif", "Séparation stricte : des pouvoirs tenus à l'écart l'un de l'autre", "Des idéaux-types, non des catégories pures"] },
+            { "title": "B. Des illustrations classiques", "points": ["Le régime présidentiel : les États-Unis", "Le régime parlementaire : le Royaume-Uni, « mère » du parlementarisme", "La France, un cas qui se rapproche du modèle parlementaire sans s'y réduire"] }
+          ]
+        },
+        {
+          "title": "II. Le régime parlementaire, un modèle de double collaboration",
+          "children": [
+            { "title": "A. Une collaboration positive", "points": ["L'exécutif et le législatif participent ensemble à l'action de l'État", "Ne pas confondre avec la simple existence d'un parlement", "Un modèle né de la coutume britannique, affaiblissement progressif du pouvoir royal"] },
+            { "title": "B. Une collaboration négative, condition de l'équilibre", "points": ["Le Parlement peut renverser le gouvernement", "Le chef de l'État peut dissoudre l'assemblée", "Conclusion : c'est cette possibilité de contrôle réciproque, plus que la collaboration elle-même, qui définit le régime parlementaire"] }
+          ]
+        }
+      ],
+      "pitfalls": [
+        "Ne pas confondre la classification d'Aristote (nombre de gouvernants) avec celle d'Esmein (degré de séparation des pouvoirs) : ce sont deux critères différents, à des époques différentes.",
+        "L'existence d'un parlement ne suffit pas à définir un régime parlementaire : les régimes présidentiels ont aussi un parlement, c'est la collaboration réciproque qui fait la différence."
+      ]
+    },
+    "quiz": [
+      { "q": "Chez Aristote, le gouvernement d'un seul, dans sa forme déviée, est appelé :", "choices": ["Oligarchie", "Tyrannie", "Démocratie", "Aristocratie"], "answer": 1, "why": "La monarchie est la forme juste du gouvernement d'un seul ; la tyrannie en est la forme déviée, corrompue." },
+      { "q": "Chez Aristote, la démocratie est entendue en un sens :", "choices": ["Positif et moderne", "Péjoratif : le peuple abuse de son pouvoir pour ses intérêts particuliers", "Identique à la République", "Réservé aux cités grecques"], "answer": 1, "why": "C'est la République (politeia) qui est, chez Aristote, la forme juste et modérée du gouvernement de tous." },
+      { "q": "Un régime à pouvoir clos, ou monocratique, se caractérise par :", "choices": ["Des élections libres et une alternance réelle", "L'absence d'alternance réelle, parfois dissimulée derrière de fausses élections", "La séparation stricte des pouvoirs", "Un régime parlementaire"], "answer": 1, "why": "Les régimes totalitaires en sont l'exemple type, parfois maquillés en démocraties pluralistes par de fausses constitutions." },
+      { "q": "Selon Adhémar Esmein, le régime parlementaire résulte d'une séparation des pouvoirs :", "choices": ["Stricte", "Souple", "Inexistante", "Judiciaire"], "answer": 1, "why": "La séparation stricte produit, elle, le régime présidentiel — les deux étant des idéaux-types, jamais purs en pratique." },
+      { "q": "Ce qui définit le régime parlementaire n'est pas la seule existence d'un parlement, mais :", "choices": ["L'élection du chef de l'État au suffrage universel", "La double collaboration, positive et négative, entre exécutif et législatif", "L'absence de tout pouvoir judiciaire", "Le gouvernement d'un seul homme"], "answer": 1, "why": "Les régimes présidentiels ont aussi un parlement ; c'est la possibilité de se contrôler mutuellement (renversement, dissolution) qui distingue le régime parlementaire." }
+    ]
   }
 ]
