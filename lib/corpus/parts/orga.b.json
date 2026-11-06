@@ -85,28 +85,28 @@
       { "term": "Conflit négatif", "text": "Situation dans laquelle les deux ordres se déclarent successivement incompétents, laissant le justiciable sans juge. Le dernier juge saisi doit saisir le Tribunal des conflits." }
     ],
     "exam": {
-      "kind": "dissertation",
-      "question": "Le dualisme juridictionnel français est-il justifié ?",
-      "concise": "Le dualisme repose sur une justification historique — la méfiance révolutionnaire envers les parlements d'Ancien Régime, traduite par la loi des 16 et 24 août 1790 — et sur une justification théorique : l'administration poursuit l'intérêt général avec des prérogatives exorbitantes, que le droit privé ne sait pas appréhender. C'est l'enseignement de l'arrêt Blanco de 1873. Le dualisme a par ailleurs produit un droit administratif protecteur, forgé par un juge spécialisé qui a su imposer la légalité à la puissance publique, de l'arrêt Cadot au recours pour excès de pouvoir. Il a toutefois un coût : la **complexité** pour le justiciable, obligé d'identifier le bon ordre sous peine de perdre du temps ; les **conflits de compétence**, dont le traitement par le Tribunal des conflits allonge encore les procédures au point que ce dernier doit parfois indemniser le préjudice qu'il a lui-même contribué à causer ; et le brouillage des frontières, le juge judiciaire étant souvent compétent en matière de libertés. Le dualisme reste donc justifié dans son principe, mais son coût procédural appelle des simplifications.",
+      "kind": "cas pratique",
+      "question": "M. Rivière est blessé par la collision d'un véhicule de collecte des déchets exploité en régie par la commune de Lillebonne, alors en tournée de ramassage. Il assigne la commune devant le tribunal judiciaire. La commune soulève une exception d'incompétence, que le tribunal judiciaire rejette en se déclarant compétent. Le préfet souhaite faire trancher la question de compétence. Déterminez l'ordre juridictionnel réellement compétent, puis la procédure que le préfet peut engager pour faire respecter cette compétence.",
+      "concise": "**Qualification du litige.** Les trois critères de la frontière droit privé / droit public convergent ici vers l'ordre administratif. Critère organique : l'auteur du dommage est une personne publique, la commune, agissant par ses propres services (régie). Critère matériel : la collecte des déchets est une activité de **service public**, non une gestion privée ordinaire. Critère finaliste : elle poursuit l'intérêt général du nettoiement de la commune. Sur le modèle de l'arrêt **Blanco** (TC, 8 février 1873), la responsabilité d'une personne publique dans l'exercice d'un service public obéit à des règles propres au droit administratif et relève du **juge administratif**, non du tribunal judiciaire. Le tribunal judiciaire, en se déclarant compétent, a donc commis une erreur de compétence. **Procédure.** C'est un **conflit positif** : les deux ordres se disputent la compétence, le tribunal judiciaire l'ayant retenue à tort. Le préfet doit déposer un **déclinatoire de compétence** devant le tribunal judiciaire, l'invitant à se dessaisir. Si le tribunal maintient sa position malgré le déclinatoire, le préfet prend un **arrêté de conflit**, qui suspend l'instance judiciaire et saisit le **Tribunal des conflits**. Celui-ci ne tranchera pas le fond du litige — l'indemnisation de M. Rivière —, mais seulement la question de compétence, et devrait, conformément à la logique de l'arrêt Blanco, attribuer le litige à l'ordre administratif.",
       "plan": [
         {
-          "title": "I. Un dualisme historiquement et théoriquement fondé",
+          "title": "I. La qualification du litige : une compétence administrative",
           "children": [
-            { "title": "A. Un héritage révolutionnaire", "points": ["La méfiance envers les parlements d'Ancien Régime", "Loi des 16 et 24 août 1790, décret du 2 septembre 1795", "De la justice retenue à la justice déléguée : loi du 24 mai 1872, arrêt Cadot de 1889"] },
-            { "title": "B. Une spécificité irréductible du droit administratif", "points": ["TC, Blanco, 1873 : des règles propres à la responsabilité de l'État", "Les prérogatives de puissance publique et la logique d'intérêt général", "Un juge spécialisé qui a construit un droit protecteur : recours pour excès de pouvoir"] }
+            { "title": "A. L'application des trois critères", "points": ["Critère organique : une personne publique, la commune en régie", "Critère matériel : une activité de service public, le nettoiement", "Critère finaliste : l'intérêt général, non un intérêt privé"] },
+            { "title": "B. Le rattachement à la jurisprudence Blanco", "points": ["TC, Blanco, 8 février 1873 : des règles propres à la responsabilité de l'État", "L'erreur de compétence commise par le tribunal judiciaire", "Conclusion : le litige relève du juge administratif"] }
           ]
         },
         {
-          "title": "II. Un dualisme coûteux pour le justiciable",
+          "title": "II. Le règlement de la question de compétence",
           "children": [
-            { "title": "A. La complexité de la répartition des compétences", "points": ["La difficulté de qualifier le litige : TC, Bac d'Eloka, 1921", "Les blocs de compétence créés par la loi pour simplifier", "Le juge judiciaire, gardien de la liberté individuelle et de la propriété"] },
-            { "title": "B. Le coût procédural du règlement des conflits", "points": ["Conflit positif et conflit négatif : des procédures longues", "L'indemnisation du préjudice né de la durée excessive due au dualisme", "Conclusion : un principe justifié, une mise en œuvre à simplifier"] }
+            { "title": "A. Un conflit positif entre les deux ordres", "points": ["Le tribunal judiciaire s'est déclaré compétent à tort", "Distinction avec le conflit négatif, où les deux ordres se déclarent incompétents", "L'initiative appartient au préfet, non aux parties"] },
+            { "title": "B. La procédure devant le Tribunal des conflits", "points": ["Le déclinatoire de compétence déposé par le préfet", "À défaut, l'arrêté de conflit qui saisit le Tribunal des conflits", "Le Tribunal tranche la seule compétence, jamais le fond du litige"] }
           ]
         }
       ],
       "pitfalls": [
-        "Le Tribunal des conflits a été réorganisé en 1872 puis réformé en 2015 : il ne se prononce pas sur le fond, sauf deux exceptions.",
-        "Ne pas dater l'arrêt Blanco de 1889 ni Cadot de 1873 : Blanco est de 1873, Cadot de 1889."
+        "Ne pas confondre conflit positif (un ordre se déclare compétent à tort) et conflit négatif (les deux se déclarent incompétents) : la procédure et l'auteur de la saisine diffèrent.",
+        "Le Tribunal des conflits ne juge jamais le fond du litige, sauf les deux exceptions vues en cours (conflit de décisions, durée excessive de procédure) : ici, il ne statuera pas sur l'indemnisation de M. Rivière."
       ]
     },
     "quiz": [
