@@ -6,6 +6,7 @@ import { estPremium, useStudiJur } from "@/lib/state";
 import { allLessons, courseOf } from "@/lib/corpus";
 import { Button, SectionTitle, Tag } from "@/components/ui";
 import { Arrow, Target } from "@/components/icons";
+import BoutonRetour from "@/components/BoutonRetour";
 
 export default function CasPratiquesPage() {
   const { state, ready } = useStudiJur();
@@ -28,6 +29,7 @@ export default function CasPratiquesPage() {
 
   return (
     <div className="space-y-7">
+      <BoutonRetour />
       <div>
         <h1 className="serif text-[28px] font-bold tracking-tight">Cas pratiques guidés</h1>
         <p className="mt-1.5 text-[14.5px]" style={{ color: "var(--muted)" }}>

@@ -84,28 +84,28 @@
       { "term": "Prérogative de puissance publique", "text": "Pouvoir exorbitant du droit commun reconnu à l'administration pour l'accomplissement de sa mission d'intérêt général (décision unilatérale, expropriation, exécution d'office)." }
     ],
     "exam": {
-      "kind": "dissertation",
-      "question": "La distinction du droit privé et du droit public est-elle toujours pertinente ?",
-      "concise": "La distinction reste structurante : elle commande l'organisation des facultés, la répartition des contentieux entre les deux ordres de juridiction et, plus profondément, deux logiques normatives — celle de l'égalité des volontés et celle de la puissance publique au service de l'intérêt général. L'arrêt Blanco en donne le fondement moderne. Mais sa pertinence est aujourd'hui érodée sur trois fronts : la multiplication des matières mixtes (droit pénal, droit du travail, droit de la santé) ; la privatisation de l'action publique, qui voit des personnes privées gérer des services publics avec des prérogatives publiques ; et l'influence du droit européen, qui raisonne en termes fonctionnels et ignore largement cette *summa divisio*. La distinction survit donc moins comme une frontière que comme un **outil de raisonnement** permettant d'identifier la logique applicable à une situation donnée.",
+      "kind": "cas pratique",
+      "question": "Deux situations distinctes. 1) Lors de travaux de voirie sur une route départementale, un lampadaire appartenant au département s'effondre et blesse M. Chevallier, qui souhaite engager la responsabilité du département. 2) Le conseil régional vend aux enchères, à un particulier, un véhicule de service réformé ; un litige survient ensuite sur la garantie des vices cachés de ce véhicule. Pour chacune des deux situations, déterminez, en appliquant les trois critères de la distinction droit privé / droit public, l'ordre juridictionnel compétent.",
+      "concise": "**Première situation : la chute du lampadaire.** Critère organique : l'auteur du dommage est une personne publique, le département. Critère matériel : l'entretien de la voirie départementale est une mission de **service public**, non une gestion patrimoniale ordinaire. Critère finaliste : elle poursuit l'intérêt général de la sécurité routière. Les trois critères convergent vers le droit public : sur le modèle de l'arrêt **Blanco** (TC, 8 février 1873), la responsabilité du département dans l'exercice de cette mission obéit à des règles propres et relève du **juge administratif**. **Seconde situation : la vente du véhicule réformé.** Critère organique : une personne publique, la région, est encore présente — ce critère seul pencherait vers le droit public. Mais critère matériel : il s'agit d'une **gestion privée ordinaire** de son patrimoine mobilier, assimilable à celle de tout vendeur. Critère finaliste : la région agit ici comme n'importe quel vendeur aux enchères, sans poursuivre l'intérêt général de façon spécifique. Les critères matériel et finaliste l'emportent sur le seul critère organique : le litige relève du **droit privé** et du **juge judiciaire**, selon les règles ordinaires de la garantie des vices cachés.",
       "plan": [
         {
-          "title": "I. Une distinction structurante",
+          "title": "I. La chute du lampadaire : une compétence administrative",
           "children": [
-            { "title": "A. Un fondement historique et institutionnel", "points": ["Loi des 16 et 24 août 1790 : interdiction faite au juge judiciaire de juger l'administration", "Décret du 2 septembre 1795 et naissance de la justice retenue", "TC, Blanco, 1873 : l'autonomie du droit administratif"] },
-            { "title": "B. Deux logiques normatives irréductibles", "points": ["Droit privé : égalité des volontés, autonomie de la volonté, réparation", "Droit public : inégalité assumée, prérogatives exorbitantes, intérêt général", "Conséquence pratique : la compétence juridictionnelle"] }
+            { "title": "A. L'application des trois critères", "points": ["Critère organique : le département, personne publique", "Critère matériel : l'entretien de la voirie, mission de service public", "Critère finaliste : la sécurité routière, intérêt général"] },
+            { "title": "B. Le rattachement à la jurisprudence Blanco", "points": ["TC, Blanco, 8 février 1873 : des règles propres à la responsabilité des personnes publiques", "Une convergence des trois critères vers le droit public", "Conclusion : compétence du juge administratif"] }
           ]
         },
         {
-          "title": "II. Une distinction érodée",
+          "title": "II. La vente du véhicule réformé : une compétence judiciaire",
           "children": [
-            { "title": "A. Le brouillage des frontières", "points": ["Les matières mixtes : droit pénal, droit du travail, droit de la concurrence", "Les trois critères de qualification : organique, matériel, finaliste", "Les personnes privées gérant un service public avec prérogatives de puissance publique"] },
-            { "title": "B. L'influence d'un droit européen indifférent à la distinction", "points": ["La CEDH raisonne en termes de droits et libertés, pas de nature de la personne", "Le droit de l'Union impose des catégories fonctionnelles (entreprise, opérateur économique)", "Conclusion : d'une frontière à un outil de qualification"] }
+            { "title": "A. Un critère organique insuffisant à lui seul", "points": ["La présence d'une personne publique, la région", "Mais une activité qui n'est pas, par nature, un service public", "Nécessité de combiner les trois critères, jamais un seul"] },
+            { "title": "B. Les critères matériel et finaliste décisifs", "points": ["Une gestion privée ordinaire du patrimoine mobilier", "Aucune poursuite spécifique de l'intérêt général dans cette vente", "Conclusion : compétence du juge judiciaire, droit commun de la garantie des vices cachés"] }
           ]
         }
       ],
       "pitfalls": [
-        "L'arrêt Blanco est du 8 février 1873, rendu par le Tribunal des conflits : ne pas l'attribuer au Conseil d'État.",
-        "Ne pas confondre droit objectif / droits subjectifs avec droit public / droit privé : ce sont deux distinctions indépendantes."
+        "Ne jamais s'arrêter au seul critère organique : la présence d'une personne publique ne suffit pas à elle seule à fonder la compétence administrative.",
+        "Ne pas confondre droit objectif / droits subjectifs avec droit public / droit privé : ce sont deux distinctions indépendantes, seule la seconde est ici en jeu."
       ]
     },
     "quiz": [
