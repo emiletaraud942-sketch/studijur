@@ -15,15 +15,16 @@ function autorise(req: Request): boolean {
   return req.headers.get("authorization") === `Bearer ${attendu}`;
 }
 
-const SUJET = "Tes CC arrivent — il est temps de réviser";
+const SUJET = "On continue ? Cinq minutes aujourd'hui sur StudiJur";
 
 const HTML = `
   <p>Salut,</p>
-  <p>Tes premiers contrôles continus approchent : le <strong>5 novembre</strong> (Droit constitutionnel et Introduction générale au droit) et le <strong>6 novembre</strong> (Introduction historique au droit public).</p>
-  <p>Sur StudiJur, ton plan de révision est calé automatiquement sur ces dates : fiche condensée, quiz, puis focus sur tes erreurs à l'approche du jour J.</p>
+  <p>Ça fait un moment qu'on ne t'a pas vu sur StudiJur.</p>
+  <p>On n'est jamais vraiment sûr de la date exacte d'un partiel avant qu'elle tombe — alors la meilleure assurance, c'est de réviser un petit peu chaque jour plutôt que de tout découvrir la veille.</p>
+  <p>Sur StudiJur tu as déjà : le programme de L1 (ou ton propre cours si tu l'as déposé), des quiz, des flashcards à révision espacée, des questions type examen corrigées — cinq minutes suffisent.</p>
   <p>
     <a href="https://studijur.fr/reviser" style="display:inline-block;background:#1a2e22;color:#ffffff;padding:11px 20px;border-radius:8px;text-decoration:none;font-weight:600;">
-      Voir mon plan de révision →
+      Reprendre ma révision →
     </a>
   </p>
   <p style="color:#767676;font-size:13px;margin-top:28px;">
@@ -70,26 +71,17 @@ export async function GET(req: Request) {
     if (data.users.length < 200) break;
   }
 
-  // Qui a déjà les notifications push activées reçoit déjà ce rappel chaque
-  // soir par ce canal (voir app/api/cron/rappel/route.ts, qui personnalise
-  // automatiquement le message avec le compte à rebours du CC le plus
-  // proche) : lui renvoyer le même rappel par email ferait doublon. On ne
-  // mail donc que les comptes sans abonnement push actif.
-  const { data: abonnes, error: erreurAbonnes } = await sb
-    .from("push_subscriptions")
-    .select("user_id")
-    .not("user_id", "is", null);
-  if (erreurAbonnes) return NextResponse.json({ error: erreurAbonnes.message }, { status: 500 });
-  const idsAvecPush = new Set((abonnes ?? []).map((a) => a.user_id as string));
-
-  const emails = comptes.filter((c) => !idsAvecPush.has(c.id)).map((c) => c.email);
+  // Campagne ponctuelle de relance (voir la demande d'Émile du 08/11/2026) :
+  // contrairement au rappel quotidien automatique (app/api/cron/rappel/route.ts,
+  // personnalisé par compte à rebours du CC le plus proche), celle-ci vise
+  // tout le monde, y compris les comptes déjà abonnés au push.
+  const emails = comptes.map((c) => c.email);
 
   const url = new URL(req.url);
   if (url.searchParams.get("debug") === "1") {
     const to = url.searchParams.get("to") || emails[0];
     return NextResponse.json({
       totalComptes: comptes.length,
-      avecPush: idsAvecPush.size,
       aMailer: emails.length,
       teste: to,
       resultat: await diagnostic(to),
@@ -106,7 +98,6 @@ export async function GET(req: Request) {
 
   return NextResponse.json({
     totalComptes: comptes.length,
-    avecPush: idsAvecPush.size,
     aMailer: emails.length,
     envoyes,
     echecs: echecs.length,
