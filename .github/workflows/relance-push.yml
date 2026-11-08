@@ -1,0 +1,22 @@
+name: Relance push abonnés
+
+# Déclenchement manuel uniquement (workflow_dispatch) : outil de campagne
+# ponctuelle vers /api/admin/relance-push (voir ce fichier), sur le même
+# principe que relance-email.yml pour le volet email.
+on:
+  workflow_dispatch:
+    inputs:
+      debug:
+        description: "1 pour seulement compter les abonnés visés, sans envoyer"
+        required: false
+        default: ""
+
+jobs:
+  relance-push:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Appelle /api/admin/relance-push
+        run: |
+          curl --fail --show-error --silent \
+            -H "Authorization: Bearer ${{ secrets.CRON_SECRET }}" \
+            "https://studijur.fr/api/admin/relance-push?debug=${{ github.event.inputs.debug }}"
