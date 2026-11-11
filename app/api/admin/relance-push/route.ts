@@ -16,8 +16,8 @@ function autorise(req: Request): boolean {
   return req.headers.get("authorization") === `Bearer ${attendu}`;
 }
 
-const TITRE = "Ça fait un moment !";
-const CORPS = "Cinq minutes aujourd'hui pour ne pas tout redécouvrir la veille du partiel.";
+const TITRE = "Les CC approchent";
+const CORPS = "Une séance de 5 minutes aujourd'hui, ou dépose ton cours du jour. Un peu chaque jour suffit.";
 
 export async function GET(req: Request) {
   if (!autorise(req)) return NextResponse.json({ error: "Non autorisé." }, { status: 401 });

@@ -15,18 +15,22 @@ function autorise(req: Request): boolean {
   return req.headers.get("authorization") === `Bearer ${attendu}`;
 }
 
-const SUJET = "On continue ? Cinq minutes aujourd'hui sur StudiJur";
+const SUJET = "Les CC et les partiels arrivent : révise un peu chaque jour";
 
 const HTML = `
   <p>Salut,</p>
-  <p>Ça fait un moment qu'on ne t'a pas vu sur StudiJur.</p>
-  <p>On n'est jamais vraiment sûr de la date exacte d'un partiel avant qu'elle tombe — alors la meilleure assurance, c'est de réviser un petit peu chaque jour plutôt que de tout découvrir la veille.</p>
-  <p>Sur StudiJur tu as déjà : le programme de L1 (ou ton propre cours si tu l'as déposé), des quiz, des flashcards à révision espacée, des questions type examen corrigées — cinq minutes suffisent.</p>
+  <p>Les contrôles continus et les partiels approchent. Pas besoin de tout reprendre en une nuit : <strong>un peu chaque jour</strong> suffit, et StudiJur est fait pour ça.</p>
+  <ul style="padding-left:18px;line-height:1.6;">
+    <li><strong>Révise avec ce qui est déjà dans l'appli</strong> : le programme de L1 (introduction au droit, droit constitutionnel, organisation juridictionnelle, histoire du droit public, méthodologie) en séances de 5 minutes, avec définitions, question type examen corrigée et quiz.</li>
+    <li><strong>Ajoute tes propres cours au fur et à mesure</strong> : dépose un PDF ou une photo de ton polycopié, StudiJur en tire une leçon, un quiz et des flashcards (avec le pass 7 jours ou l'abonnement).</li>
+    <li><strong>Garde le rythme</strong> : une séance par jour, et un rappel le soir si tu l'actives dans ton profil.</li>
+  </ul>
   <p>
-    <a href="https://studijur.fr/reviser" style="display:inline-block;background:#1a2e22;color:#ffffff;padding:11px 20px;border-radius:8px;text-decoration:none;font-weight:600;">
-      Reprendre ma révision →
+    <a href="https://studijur.fr" style="display:inline-block;background:#1a2e22;color:#ffffff;padding:11px 20px;border-radius:8px;text-decoration:none;font-weight:600;">
+      Faire ma séance du jour →
     </a>
   </p>
+  <p style="font-size:14px;">Tu as des cours à ajouter ? <a href="https://studijur.fr/mes-cours">Dépose-les ici</a>.</p>
   <p style="color:#767676;font-size:13px;margin-top:28px;">
     Tu reçois cet email parce que tu as un compte StudiJur. Pour ne plus en recevoir, réponds simplement à ce message.
   </p>
