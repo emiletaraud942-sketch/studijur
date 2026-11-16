@@ -10,8 +10,8 @@ import { allCourses, corpusStats, pickDailyLesson, findCourse } from "@/lib/corp
 import { dueCards, dueNotions, masteredCount, streakIsAlive, todayKey } from "@/lib/srs";
 import { notionLabel } from "@/lib/notions";
 import { fetchLeaderboard } from "@/lib/leaderboard";
-import { Bar, Button, SectionTitle, Tag } from "@/components/ui";
-import { Arrow, Cards, Check, Chevron, Flame, Quill, Sitemap, Target, Upload } from "@/components/icons";
+import { Bar, Button, SectionTitle } from "@/components/ui";
+import { Arrow, Books, Calendar, Cards, Check, Chevron, Clock, Flame, Quill, Scales, Sitemap, Target, Upload } from "@/components/icons";
 import { longDate } from "@/lib/format";
 import { OBJECTIONS } from "@/lib/objections";
 import RevisionIntensiveBanner from "@/components/RevisionIntensiveBanner";
@@ -153,38 +153,50 @@ export default function TodayPage() {
       )}
 
       {daily && dailyCourse ? (
-        <section data-hue={dailyCourse.hue} className="card rise overflow-hidden" style={{ boxShadow: "var(--shadow-md)" }}>
-          <div className="h-1" style={{ background: "var(--h)" }} />
-          <div className="p-5 sm:p-7">
-            <div className="mb-3 flex flex-wrap items-center gap-2">
-              <Tag tone="hue">{dailyCourse.short}</Tag>
-              <Tag>Leçon {daily.order}</Tag>
-              <Tag>{daily.minutes} min</Tag>
-              {doneToday && <Tag tone="gold">Bonus</Tag>}
-            </div>
-            <h2 className="serif text-[24px] font-bold leading-snug sm:text-[27px]">{daily.title}</h2>
-            <p className="mt-2 text-[15px] leading-relaxed" style={{ color: "var(--ink-2)" }}>{daily.teaser}</p>
+        <section data-hue={dailyCourse.hue} className="card rise relative overflow-hidden p-5 sm:p-7"
+          style={{ background: "var(--h)", color: "var(--accent-ink)", boxShadow: "var(--shadow-md)" }}>
+          <div className="blob" style={{ right: -40, bottom: -50, width: 170, height: 170, background: "var(--accent-ink)", opacity: 0.1 }} />
 
-            <div className="mt-5 grid gap-2 text-center" style={{ gridTemplateColumns: `repeat(${2 + (daily.definitions.length > 0 ? 1 : 0) + (daily.quiz.length > 0 ? 1 : 0)}, minmax(0, 1fr))` }}>
-              {[
-                { Icon: Quill, n: `${daily.minutes} min`, l: "Cours" },
-                ...(daily.definitions.length > 0 ? [{ Icon: Cards, n: `${daily.definitions.length}`, l: "Définitions" }] : []),
-                { Icon: Target, n: "1", l: "Question" },
-                ...(daily.quiz.length > 0 ? [{ Icon: Check, n: `${daily.quiz.length}`, l: "Quiz" }] : []),
-              ].map(({ Icon, n, l }) => (
-                <div key={l} className="rounded-xl py-3" style={{ background: "var(--surface-2)" }}>
-                  <Icon className="mx-auto mb-1 h-4 w-4" />
-                  <div className="text-[14px] font-bold tabular">{n}</div>
-                  <div className="text-[10.5px] font-medium uppercase tracking-wider" style={{ color: "var(--muted)" }}>{l}</div>
-                </div>
-              ))}
-            </div>
+          <div className="relative mb-3 flex flex-wrap items-center gap-2">
+            <span className="inline-flex items-center rounded-full px-2.5 py-1 text-[11px] font-bold uppercase tracking-[0.07em]"
+              style={{ background: "var(--accent-ink)", color: "var(--h)" }}>
+              {dailyCourse.short}
+            </span>
+            <span className="inline-flex items-center rounded-full px-2.5 py-1 text-[11px] font-semibold uppercase tracking-[0.07em]"
+              style={{ background: "color-mix(in srgb, var(--accent-ink) 22%, transparent)", color: "var(--accent-ink)" }}>
+              Leçon {daily.order} · {daily.minutes} min
+            </span>
+            {doneToday && (
+              <span className="inline-flex items-center rounded-full px-2.5 py-1 text-[11px] font-bold uppercase tracking-[0.07em]"
+                style={{ background: "var(--gold)", color: "var(--accent-ink)" }}>
+                Bonus
+              </span>
+            )}
+          </div>
+          <h2 className="serif relative text-[24px] font-bold leading-snug sm:text-[27px]">{daily.title}</h2>
+          <p className="relative mt-2 max-w-md text-[15px] leading-relaxed"
+            style={{ color: "color-mix(in srgb, var(--accent-ink) 85%, var(--h))" }}>{daily.teaser}</p>
 
-            <div className="mt-5">
-              <Button href={`/lecon/${daily.id}`} size="lg" full>
-                Commencer la séance <Arrow className="h-4 w-4" />
-              </Button>
-            </div>
+          <div className="relative mt-5 grid gap-2 text-center" style={{ gridTemplateColumns: `repeat(${2 + (daily.definitions.length > 0 ? 1 : 0) + (daily.quiz.length > 0 ? 1 : 0)}, minmax(0, 1fr))` }}>
+            {[
+              { Icon: Quill, n: `${daily.minutes} min`, l: "Cours" },
+              ...(daily.definitions.length > 0 ? [{ Icon: Cards, n: `${daily.definitions.length}`, l: "Définitions" }] : []),
+              { Icon: Target, n: "1", l: "Question" },
+              ...(daily.quiz.length > 0 ? [{ Icon: Check, n: `${daily.quiz.length}`, l: "Quiz" }] : []),
+            ].map(({ Icon, n, l }) => (
+              <div key={l} className="rounded-2xl py-3" style={{ background: "color-mix(in srgb, var(--accent-ink) 16%, transparent)" }}>
+                <Icon className="mx-auto mb-1 h-4 w-4" />
+                <div className="text-[14px] font-bold tabular">{n}</div>
+                <div className="text-[10.5px] font-medium uppercase tracking-wider"
+                  style={{ color: "color-mix(in srgb, var(--accent-ink) 78%, var(--h))" }}>{l}</div>
+              </div>
+            ))}
+          </div>
+
+          <div className="relative mt-5">
+            <Button href={`/lecon/${daily.id}`} variant="invert" size="lg" full>
+              Commencer la séance <Arrow className="h-4 w-4" />
+            </Button>
           </div>
         </section>
       ) : (
@@ -284,19 +296,25 @@ export default function TodayPage() {
         <div className="grid gap-3 sm:grid-cols-2">
           {courses.map((c) => {
             const done = c.lessons.filter((l) => doneIds.includes(l.id)).length;
+            const Icone = ICONE_MATIERE[c.id] ?? Books;
             return (
               <Link key={c.id} href={`/programme#${c.id}`} data-hue={c.hue}
                 className="card p-4 transition-transform duration-150 hover:-translate-y-0.5">
-                <div className="flex items-start justify-between gap-3">
-                  <div className="min-w-0">
-                    <h3 className="serif truncate text-[17px] font-semibold">{c.title}</h3>
-                    <p className="mt-0.5 line-clamp-1 text-[13px]" style={{ color: "var(--muted)" }}>{c.subtitle}</p>
-                  </div>
-                  <span className="shrink-0 text-[13px] font-bold tabular" style={{ color: "var(--h)" }}>
-                    {done}/{c.lessons.length}
+                <div className="flex items-start gap-3.5">
+                  <span className="grid h-11 w-11 shrink-0 place-items-center rounded-2xl" style={{ background: "var(--h-soft)", color: "var(--h)" }}>
+                    <Icone className="h-5 w-5" />
                   </span>
+                  <div className="min-w-0 flex-1">
+                    <div className="flex items-start justify-between gap-3">
+                      <h3 className="serif truncate text-[17px] font-semibold">{c.title}</h3>
+                      <span className="shrink-0 text-[13px] font-bold tabular" style={{ color: "var(--h)" }}>
+                        {done}/{c.lessons.length}
+                      </span>
+                    </div>
+                    <p className="mt-0.5 line-clamp-1 text-[13px]" style={{ color: "var(--muted)" }}>{c.subtitle}</p>
+                    <div className="mt-2.5"><Bar value={done} total={c.lessons.length} /></div>
+                  </div>
                 </div>
-                <div className="mt-3"><Bar value={done} total={c.lessons.length} /></div>
               </Link>
             );
           })}
@@ -305,6 +323,20 @@ export default function TodayPage() {
     </div>
   );
 }
+
+// Une petite tuile d'icône par matière dans la liste "Tes matières" (voir
+// Main.dc.html, la maquette de référence) — purement décoratif, pas de champ
+// icon sur Course : un id non listé retombe sur Books.
+const ICONE_MATIERE: Record<string, (p: { className?: string }) => React.ReactElement> = {
+  "intro-droit": Scales,
+  "constitutionnel": Books,
+  "organisation-juridictionnelle": Sitemap,
+  "histoire-droit-public": Clock,
+  "methodologie": Quill,
+  "droit-obligations": Target,
+  "dates": Calendar,
+  "vocabulaire-juridique": Cards,
+};
 
 const ATOUTS = [
   { Icon: Check, label: "Quiz par leçon" },

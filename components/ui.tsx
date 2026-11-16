@@ -97,7 +97,7 @@ export function Button({
   children: React.ReactNode;
   onClick?: () => void;
   href?: string;
-  variant?: "primary" | "soft" | "ghost" | "outline";
+  variant?: "primary" | "soft" | "ghost" | "outline" | "invert";
   size?: "sm" | "md" | "lg";
   disabled?: boolean;
   type?: "button" | "submit";
@@ -118,6 +118,10 @@ export function Button({
     soft: { background: "var(--h-soft, var(--accent-soft))", color: "var(--h, var(--accent))", border: "1.5px solid transparent" },
     outline: { background: "transparent", color: "var(--ink)", border: "1.5px solid var(--card-border)" },
     ghost: { background: "transparent", color: "var(--muted)", border: "1.5px solid transparent" },
+    // Bouton clair sur fond coloré plein (carte "leçon du jour", héro
+    // d'accueil) : toujours --accent-ink (crème fixe), texte teinté par la
+    // matière si la carte porte un data-hue, sinon --accent.
+    invert: { background: "var(--accent-ink)", color: "var(--h, var(--accent))", border: "1.5px solid transparent" },
   };
   const cls = `inline-flex items-center justify-center gap-2 font-bold transition-all duration-150 active:scale-[0.98] disabled:opacity-40 disabled:pointer-events-none hover:brightness-[1.06] ${sizes[size]} ${full ? "w-full" : ""}`;
   if (href) {

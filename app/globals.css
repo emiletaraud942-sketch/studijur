@@ -135,8 +135,14 @@ h1, h2, h3, h4, .serif { font-family: var(--font-serif); }
 .card {
   background: var(--surface);
   border: 1.5px solid var(--card-border);
-  border-radius: 20px;
+  border-radius: 26px;
   box-shadow: var(--shadow-sm);
+}
+
+.blob {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
 }
 
 .prose-law p { margin-bottom: 0.95rem; line-height: 1.72; color: var(--ink-2); }
