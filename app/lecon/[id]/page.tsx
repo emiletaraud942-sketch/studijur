@@ -708,7 +708,12 @@ function QuizStep({
   const [i, setI] = useState(0);
   const [picked, setPicked] = useState<number | null>(null);
   const [score, setScore] = useState(0);
-  const q = lesson.quiz[i];
+  // Les questions de la leçon sont mélangées à chaque séance (pas seulement
+  // les choix de réponse) : sans ça, refaire la même leçon pose toujours les
+  // mêmes 5 questions dans le même ordre, et l'élève finit par les deviner
+  // par position plutôt que par réponse.
+  const [ordreQuestions] = useState(() => shuffle(lesson.quiz.map((_, idx) => idx)));
+  const q = lesson.quiz[ordreQuestions[i]];
   const last = i === lesson.quiz.length - 1;
   const correct = picked === q.answer;
   // La bonne réponse était en position 2 dans ~70 % des questions du corpus

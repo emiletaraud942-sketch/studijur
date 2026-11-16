@@ -29,7 +29,11 @@ export const REVISION_CC: Record<string, RevisionCCConfig> = {
       "histoire-07", "histoire-08", "histoire-09", "histoire-10", "histoire-11", "histoire-12",
       "histoire-13", "histoire-14", "histoire-15", "histoire-16", "histoire-17", "histoire-18",
     ],
-    chronologieLessonIds: ["dates-01", "dates-02", "dates-03", "dates-04", "dates-05"],
+    // dates-01 à dates-06 : toute la frise "dates" (lib/corpus/parts/dates.*.json)
+    // qui relève de l'histoire du droit public, de l'Antiquité au Code civil
+    // et ses réformes contemporaines — aucune leçon de la matière "dates"
+    // rattachable à ce CC ne doit rester hors de la frise.
+    chronologieLessonIds: ["dates-01", "dates-02", "dates-03", "dates-04", "dates-05", "dates-06"],
   },
   constit: {
     id: "constit",
@@ -41,7 +45,10 @@ export const REVISION_CC: Record<string, RevisionCCConfig> = {
       "constit-09", "constit-10", "constit-11", "constit-12", "constit-13",
       "constit-14", "constit-15", "constit-16", "constit-17",
     ],
-    chronologieLessonIds: ["dates-07"],
+    // dates-07 (droit constitutionnel), dates-08 (bloc de conventionnalité)
+    // et dates-12 (État, nation, décentralisation) : les trois leçons de la
+    // matière "dates" qui relèvent du programme de constit.
+    chronologieLessonIds: ["dates-07", "dates-08", "dates-12"],
   },
   "intro-generale": {
     id: "intro-generale",
@@ -52,6 +59,9 @@ export const REVISION_CC: Record<string, RevisionCCConfig> = {
       "intro-09", "intro-10", "intro-11", "intro-12", "intro-13", "intro-14", "intro-15", "intro-16",
       "intro-17", "intro-18", "intro-19", "intro-20", "intro-21", "intro-22",
     ],
+    // dates-11 (construction européenne) et dates-13 (sources du droit) :
+    // les deux leçons "dates" qui relèvent de l'intro générale au droit.
+    chronologieLessonIds: ["dates-11", "dates-13"],
   },
   orga: {
     id: "orga",
@@ -64,6 +74,10 @@ export const REVISION_CC: Record<string, RevisionCCConfig> = {
       "orga-09", "orga-10", "orga-11", "orga-12", "orga-13", "orga-14", "orga-15", "orga-16",
       "orga-17", "orga-18", "orga-19", "orga-20",
     ],
+    // dates-09 (organisation juridictionnelle) et dates-10 (juridictions
+    // internationales et européennes) : les deux leçons "dates" du programme
+    // d'organisation juridictionnelle.
+    chronologieLessonIds: ["dates-09", "dates-10"],
   },
 };
 
