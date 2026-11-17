@@ -148,6 +148,39 @@
         ],
         "answer": 0,
         "why": "Sauf la chambre criminelle, qui siège toujours à au moins 5 conseillers."
+      },
+      {
+        "q": "Les personnalités non-magistrates pouvant être nommées conseillers à la Cour de cassation le sont pour :",
+        "choices": [
+          "5 ans non renouvelables",
+          "9 ans renouvelables",
+          "3 ans renouvelables",
+          "À vie"
+        ],
+        "answer": 0,
+        "why": "Sur proposition du Conseil supérieur de la magistrature."
+      },
+      {
+        "q": "Une chambre mixte de la Cour de cassation réunit :",
+        "choices": [
+          "Des magistrats et des jurés populaires",
+          "Des conseillers de plusieurs chambres, pour une question de droit commune",
+          "Des conseillers d'État et des conseillers à la Cour de cassation",
+          "Le procureur général et le premier président uniquement"
+        ],
+        "answer": 1,
+        "why": "Par opposition à l'assemblée plénière, réservée aux affaires d'une importance majeure."
+      },
+      {
+        "q": "Les conseillers référendaires et auditeurs de la Cour de cassation :",
+        "choices": [
+          "Siègent seuls dans les affaires simples",
+          "Président la chambre criminelle",
+          "Assistent les conseillers dans leurs travaux",
+          "Sont nommés par le Conseil d'État"
+        ],
+        "answer": 2,
+        "why": "Ce sont de jeunes magistrats qui épaulent les conseillers de la Cour."
       }
     ]
   },
@@ -299,6 +332,39 @@
         ],
         "answer": 0,
         "why": "Liste de l'article R. 811-1 du Code de justice administrative ; seul un pourvoi en cassation devant le Conseil d'État reste ouvert."
+      },
+      {
+        "q": "Dans chaque chambre du tribunal administratif, le juge chargé d'instruire le dossier et de rédiger le jugement s'appelle :",
+        "choices": [
+          "Le rapporteur public",
+          "Le procureur",
+          "Le président de chambre",
+          "Le rapporteur"
+        ],
+        "answer": 3,
+        "why": "À ne pas confondre avec le rapporteur public, totalement indépendant, qui présente des conclusions à l'audience."
+      },
+      {
+        "q": "Devant la cour administrative d'appel, la formation collégiale peut être portée à :",
+        "choices": [
+          "5 magistrats pour les affaires complexes",
+          "10 magistrats systématiquement",
+          "1 seul magistrat",
+          "20 magistrats"
+        ],
+        "answer": 0,
+        "why": "Le principe reste une formation collégiale de 3 magistrats."
+      },
+      {
+        "q": "La mission consultative de la cour administrative d'appel s'exerce à la demande :",
+        "choices": [
+          "Du Premier ministre",
+          "Des préfets de région",
+          "Des préfets de département",
+          "Du Conseil d'État"
+        ],
+        "answer": 1,
+        "why": "À la différence des TA, saisis pour avis par les préfets de département."
       }
     ]
   },
@@ -450,6 +516,39 @@
         ],
         "answer": 0,
         "why": "Comme toute juridiction administrative, leur cassation relève du Conseil d'État."
+      },
+      {
+        "q": "Les amendes prononcées par la Cour des comptes contre un gestionnaire public sont plafonnées à :",
+        "choices": [
+          "Un mois de rémunération",
+          "Trois mois de rémunération",
+          "Six mois de rémunération",
+          "Un an de rémunération"
+        ],
+        "answer": 2,
+        "why": "Sans exclure des poursuites pénales ou disciplinaires parallèles pour les mêmes faits."
+      },
+      {
+        "q": "La cour d'appel financière, créée en 2023, est composée notamment de :",
+        "choices": [
+          "9 magistrats élus par leurs pairs",
+          "15 juges dont des parlementaires",
+          "3 juges professionnels et 6 jurés",
+          "4 conseillers d'État, 4 conseillers à la Cour des comptes et 2 personnalités qualifiées"
+        ],
+        "answer": 3,
+        "why": "Présidée par le premier président de la Cour des comptes."
+      },
+      {
+        "q": "En première instance, le conseil de discipline des universitaires est jugé par :",
+        "choices": [
+          "La section disciplinaire du conseil d'administration de l'université",
+          "Un conseiller d'État",
+          "Le Conseil d'État",
+          "La Cour des comptes"
+        ],
+        "answer": 0,
+        "why": "L'appel est ensuite porté devant un conseiller d'État, et la cassation devant le Conseil d'État lui-même."
       }
     ]
   },
@@ -602,6 +701,39 @@
         ],
         "answer": 0,
         "why": "Contre environ 3 % pour l'activité de juge d'appel, le reste étant la cassation."
+      },
+      {
+        "q": "La section du contentieux du Conseil d'État compte :",
+        "choices": [
+          "6 chambres",
+          "10 chambres",
+          "15 chambres",
+          "17 chambres"
+        ],
+        "answer": 1,
+        "why": "Anciennement appelées « sous-sections », numérotées de 1 à 10."
+      },
+      {
+        "q": "Parmi les six sections administratives du Conseil d'État, celle qui n'élabore pas d'avis mais le rapport d'activité annuel est :",
+        "choices": [
+          "La première",
+          "La troisième",
+          "La sixième",
+          "Toutes les sections rendent des avis"
+        ],
+        "answer": 2,
+        "why": "Les cinq autres sections administratives rendent des avis sur les projets de texte gouvernementaux."
+      },
+      {
+        "q": "Saisi pour un avis contentieux par un TA ou une CAA, le Conseil d'État dispose, pour se prononcer, d'un délai de :",
+        "choices": [
+          "Un mois",
+          "Six mois",
+          "Un an",
+          "Trois mois"
+        ],
+        "answer": 3,
+        "why": "Cet avis ne lie pas les juges du fond qui l'ont demandé."
       }
     ]
   }
