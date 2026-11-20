@@ -10,6 +10,7 @@ import { notionLabel } from "@/lib/notions";
 import { Button, Tag } from "@/components/ui";
 import { Arrow, Check } from "@/components/icons";
 import MentionCorrectionIA from "@/components/MentionCorrectionIA";
+import BoutonRetour from "@/components/BoutonRetour";
 import { usePathname } from "next/navigation";
 import type { EssayFeedback, TypeExerciceMethodo } from "@/lib/types";
 
@@ -295,6 +296,7 @@ export default function EntrainementMethodePage() {
 
   return (
     <div className="space-y-5">
+      <BoutonRetour />
       <div>
         <h1 className="serif text-[26px] font-bold">S&apos;entraîner à la méthode</h1>
         <p className="mt-1.5 text-[14.5px]" style={{ color: "var(--muted)" }}>

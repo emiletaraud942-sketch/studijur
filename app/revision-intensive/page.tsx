@@ -5,6 +5,7 @@ import { estPremium, useStudiJur } from "@/lib/state";
 import { allCourses } from "@/lib/corpus";
 import { Button, SectionTitle, Tag } from "@/components/ui";
 import { Arrow, Check, Flame } from "@/components/icons";
+import BoutonRetour from "@/components/BoutonRetour";
 import QuizEclair from "@/components/QuizEclair";
 import { FicheLesson } from "@/components/FicheLesson";
 import type { Course } from "@/lib/types";
@@ -46,6 +47,7 @@ export default function RevisionIntensivePage() {
   if (mode === "choix") {
     return (
       <div className="space-y-7">
+        <BoutonRetour />
         <div>
           <h1 className="serif text-[28px] font-bold tracking-tight">Révision intensive</h1>
           <p className="mt-1.5 text-[14.5px]" style={{ color: "var(--muted)" }}>

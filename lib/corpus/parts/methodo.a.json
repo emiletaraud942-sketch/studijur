@@ -209,7 +209,7 @@
     ],
     "definitions": [],
     "exam": {
-      "kind": "exercice — cas pratique",
+      "kind": "cas pratique",
       "question": "Une loi prévoit qu'un nouveau droit entre en vigueur « dans des conditions fixées par décret ». Six mois après la publication de la loi, le décret n'est toujours pas paru. Un justiciable peut-il déjà se prévaloir de ce droit ? Construisez le syllogisme (majeure, mineure, conclusion).",
       "concise": "**Majeure.** Une disposition législative qui subordonne elle-même son application à un décret n'est pas d'application immédiate : le droit qu'elle institue n'existe juridiquement qu'à compter de l'entrée en vigueur du décret attendu, et le grief tiré de son inapplication ne peut prospérer tant que ce décret n'est pas intervenu. **Mineure.** En l'espèce, la loi renvoie expressément à un décret pour fixer les conditions du droit institué, et ce décret n'a pas été publié six mois après la loi. **Conclusion.** Le justiciable ne peut pas encore se prévaloir de ce droit : son entrée en vigueur reste suspendue à la publication du décret.",
       "plan": [
