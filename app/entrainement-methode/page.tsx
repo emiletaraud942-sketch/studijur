@@ -10,6 +10,8 @@ import { notionLabel } from "@/lib/notions";
 import { Button, Tag } from "@/components/ui";
 import { Arrow, Check } from "@/components/icons";
 import MentionCorrectionIA from "@/components/MentionCorrectionIA";
+import FicheMethode from "@/components/FicheMethode";
+import { FICHES_METHODE } from "@/lib/methode-fiches";
 import { usePathname } from "next/navigation";
 import type { EssayFeedback, TypeExerciceMethodo } from "@/lib/types";
 
@@ -38,6 +40,7 @@ export default function EntrainementMethodePage() {
   const [loading, setLoading] = useState(true);
   const [notionFiltre, setNotionFiltre] = useState("");
   const [ouvertId, setOuvertId] = useState<string | null>(null);
+  const [ficheOuverteId, setFicheOuverteId] = useState<string | null>(null);
   const [redaction, setRedaction] = useState("");
   const [grilleVisible, setGrilleVisible] = useState(false);
   const [coches, setCoches] = useState<Set<number>>(new Set());
@@ -74,6 +77,7 @@ export default function EntrainementMethodePage() {
 
   const filtres = notionFiltre ? exercices.filter((e) => e.notion_id === notionFiltre) : exercices;
   const ouvert = exercices.find((e) => e.id === ouvertId);
+  const ficheOuverte = FICHES_METHODE.find((f) => f.id === ficheOuverteId);
 
   function ouvrir(id: string) {
     setOuvertId(id);
@@ -146,6 +150,17 @@ export default function EntrainementMethodePage() {
 
   if (loading) {
     return <p className="py-24 text-center text-[14px]" style={{ color: "var(--muted)" }}>Chargement…</p>;
+  }
+
+  if (ficheOuverte) {
+    return (
+      <div className="space-y-4">
+        <button onClick={() => setFicheOuverteId(null)} className="text-[13px] font-semibold" style={{ color: "var(--muted)" }}>
+          ← Retour aux fiches méthode
+        </button>
+        <FicheMethode fiche={ficheOuverte} />
+      </div>
+    );
   }
 
   if (ouvert) {
@@ -303,6 +318,21 @@ export default function EntrainementMethodePage() {
           contre une grille de correction et un corrigé type, sans IA.
         </p>
       </div>
+
+      <section>
+        <h2 className="mb-2.5 text-[11px] font-bold uppercase tracking-[0.12em]" style={{ color: "var(--muted)" }}>
+          Fiches méthode — le plan type et les critères à respecter
+        </h2>
+        <div className="grid gap-2.5 sm:grid-cols-3">
+          {FICHES_METHODE.map((f) => (
+            <button key={f.id} onClick={() => setFicheOuverteId(f.id)}
+              className="card p-3.5 text-left transition-transform hover:-translate-y-0.5">
+              <h3 className="text-[14px] font-semibold leading-snug">{f.titre}</h3>
+              <p className="mt-1 line-clamp-2 text-[12.5px] leading-snug" style={{ color: "var(--muted)" }}>{f.teaser}</p>
+            </button>
+          ))}
+        </div>
+      </section>
 
       {notions.length > 0 && (
         <select value={notionFiltre} onChange={(e) => setNotionFiltre(e.target.value)}
