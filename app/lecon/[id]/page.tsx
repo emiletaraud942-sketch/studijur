@@ -10,7 +10,7 @@ import {
 } from "@/lib/state";
 import { euros, PRIX_PAR_DEFAUT } from "@/lib/tarifs";
 import { findLesson, findCourse, neighbours, corpusStats } from "@/lib/corpus";
-import { Button, Prose, Tag } from "@/components/ui";
+import { Button, Prose } from "@/components/ui";
 import { inlineMarkup } from "@/lib/format";
 import { authFetchHeaders, getSupabase } from "@/lib/supabase";
 import { connexionHref } from "@/lib/nav";
@@ -183,12 +183,21 @@ function LessonPageInner() {
             style={{ background: "var(--surface-2)", color: "var(--muted)" }}>
             <Cross className="h-4 w-4" />
           </Link>
-          <div className="flex flex-1 gap-1.5">
+          {/* Onglets façon usekard.be (Fiche / Quiz / Cartes mémoire…) plutôt
+              qu'une simple barre de progression — chaque étape déjà faite
+              reste identifiable d'un coup d'œil, l'étape courante en pilule
+              pleine. */}
+          <div className="no-scrollbar flex flex-1 gap-1.5 overflow-x-auto">
             {steps.map((key, i) => (
-              <div key={key} className="h-1.5 flex-1 overflow-hidden rounded-full" style={{ background: "var(--line)" }}>
-                <div className="h-full rounded-full"
-                  style={{ width: i < step ? "100%" : i === step ? "45%" : "0%", background: "var(--h)", transition: "width 0.45s cubic-bezier(0.22,1,0.36,1)" }} />
-              </div>
+              <span key={key}
+                className="shrink-0 rounded-full px-3 py-1.5 text-[12px] font-bold whitespace-nowrap"
+                style={i === step
+                  ? { background: "var(--h)", color: "var(--accent-ink)" }
+                  : i < step
+                    ? { background: "var(--h-soft)", color: "var(--h)" }
+                    : { background: "var(--surface-2)", color: "var(--muted)" }}>
+                {STEP_META[key].label}
+              </span>
             ))}
           </div>
           <span className="shrink-0 text-[12px] font-semibold tabular" style={{ color: "var(--muted)" }}>
@@ -197,13 +206,19 @@ function LessonPageInner() {
         </div>
       </header>
 
-      <div className="mb-5 mt-4">
-        <div className="mb-2 flex flex-wrap items-center gap-2">
-          <Tag tone="hue">{course.short}</Tag>
-          <Tag>Leçon {lesson.order}</Tag>
+      {/* Bannière à dégradé façon fiche usekard.be : repère de matière en
+          capitales, grand titre, puis la phrase d'accroche en serif italique
+          — la même touche éditoriale que leur date sous le titre. */}
+      <div className="mb-5 mt-4 overflow-hidden rounded-2xl p-5 sm:p-7"
+        style={{ background: "linear-gradient(165deg, var(--surface-2) 0%, var(--h) 100%)" }}>
+        <div className="mb-2 flex flex-wrap items-center gap-2 text-[11.5px] font-bold uppercase tracking-[0.1em]" style={{ color: "var(--ink-2)" }}>
+          <span>{course.title}</span>
+          <span>·</span>
+          <span>Leçon {lesson.order}</span>
         </div>
-        <h1 className="serif text-[26px] font-bold leading-tight sm:text-[31px]">{lesson.title}</h1>
-        <div className="mt-2"><SignalerErreur lessonId={lesson.id} lessonTitle={lesson.title} /></div>
+        <h1 className="text-[26px] font-extrabold leading-tight sm:text-[32px]" style={{ color: "var(--accent-ink)" }}>{lesson.title}</h1>
+        <p className="editorial-italic mt-2 text-[17px]" style={{ color: "color-mix(in srgb, var(--accent-ink) 85%, var(--h))" }}>{lesson.teaser}</p>
+        <div className="mt-3"><SignalerErreur lessonId={lesson.id} lessonTitle={lesson.title} /></div>
       </div>
 
       {!done && (
@@ -282,9 +297,10 @@ function CourseStep({
     // `position: fixed` posé dedans se cale sur ce bloc au lieu du viewport.
     <>
     <div className="rise space-y-5 pb-20">
-      <section className="card p-5" style={{ background: "var(--h-soft)", borderColor: "transparent" }}>
-        <h3 className="mb-2 text-[12px] font-bold uppercase tracking-[0.12em]" style={{ color: "var(--h)" }}>
-          Au programme de cette séance
+      {/* "L'essentiel" façon usekard.be : callout jaune à liseré gauche. */}
+      <section className="card border-l-4 p-5" style={{ background: "var(--gold-soft)", borderColor: "var(--gold)" }}>
+        <h3 className="mb-2 text-[12px] font-bold uppercase tracking-[0.12em]" style={{ color: "var(--gold)" }}>
+          L&apos;essentiel
         </h3>
         <p className="text-[14px] leading-relaxed" style={{ color: "var(--ink)" }}>
           {l.definitions.length > 0 && <><strong>{l.definitions.length} définitions</strong> à réciter, </>}
@@ -294,14 +310,17 @@ function CourseStep({
         </p>
       </section>
       <article className="card p-5 sm:p-6"><Prose paragraphs={l.brief} /></article>
-      <section className="card p-5" style={{ background: "var(--h-soft)", borderColor: "transparent" }}>
-        <h3 className="mb-3 text-[12px] font-bold uppercase tracking-[0.12em]" style={{ color: "var(--h)" }}>
+      {/* Numéros ronds verts plutôt que des puces : même traitement que le
+          bloc "à retenir absolument" d'usekard.be. */}
+      <section className="card p-5" style={{ background: "var(--surface-2)" }}>
+        <h3 className="mb-3 text-[12px] font-bold uppercase tracking-[0.12em]" style={{ color: "var(--mm-plan)" }}>
           À retenir absolument
         </h3>
-        <ul className="space-y-2.5">
+        <ul className="space-y-3">
           {l.keyPoints.map((k, i) => (
-            <li key={i} className="flex gap-2.5 text-[14.5px] leading-relaxed" style={{ color: "var(--ink)" }}>
-              <span className="mt-[7px] h-1.5 w-1.5 shrink-0 rounded-full" style={{ background: "var(--h)" }} />
+            <li key={i} className="flex gap-3 text-[14.5px] leading-relaxed" style={{ color: "var(--ink)" }}>
+              <span className="grid h-5 w-5 shrink-0 place-items-center rounded-full text-[11px] font-bold tabular"
+                style={{ background: "var(--good)", color: "#fff" }}>{i + 1}</span>
               <span dangerouslySetInnerHTML={{ __html: inlineMarkup(k) }} />
             </li>
           ))}
@@ -733,29 +752,47 @@ function QuizStep({
     if (idx === q.answer) setScore((s) => s + 1);
   }
 
+  const LETTERS = ["A", "B", "C", "D"];
+  const pct = Math.round((i / lesson.quiz.length) * 100);
+
   return (
     <div className="rise space-y-4">
-      <div className="flex items-center justify-between text-[12.5px]" style={{ color: "var(--muted)" }}>
-        <span className="tabular">Question {i + 1} sur {lesson.quiz.length}</span>
-        <span className="tabular">{score} / {lesson.quiz.length} correctes</span>
+      <div className="flex items-center justify-between gap-4">
+        <span className="text-[12.5px] tabular" style={{ color: "var(--muted)" }}>Question {i + 1} sur {lesson.quiz.length}</span>
+        <span className="flex items-center gap-1 text-[13px] font-bold tabular" style={{ color: "var(--good)" }}>
+          {score} <Check className="h-3.5 w-3.5" />
+        </span>
+      </div>
+      <div className="h-1.5 w-full overflow-hidden rounded-full" style={{ background: "var(--line)" }}>
+        <div className="h-full rounded-full transition-all" style={{ width: `${pct}%`, background: "var(--h)" }} />
       </div>
 
-      <div key={i} className="card pop p-5">
-        <p className="text-[16.5px] font-semibold leading-snug">{q.q}</p>
-        <div className="mt-4 space-y-2.5">
+      <div key={i} className="card pop p-6">
+        <p className="text-[19px] font-bold leading-snug">{q.q}</p>
+        <div className="mt-5 grid gap-3 sm:grid-cols-2">
           {ordre.map((idx) => {
             const c = q.choices[idx];
             const isAnswer = idx === q.answer;
             const isPicked = idx === picked;
-            let style: React.CSSProperties = { background: "var(--surface-2)", borderColor: "var(--line)", color: "var(--ink)" };
-            if (picked !== null && isAnswer) style = { background: "var(--good-soft)", borderColor: "var(--good)", color: "var(--good)" };
-            else if (isPicked) style = { background: "var(--bad-soft)", borderColor: "var(--bad)", color: "var(--bad)" };
-            else if (picked !== null) style = { ...style, opacity: 0.55 };
+            let style: React.CSSProperties = { background: "var(--surface)", borderColor: "var(--line-strong)", color: "var(--ink)" };
+            let badgeStyle: React.CSSProperties = { background: "var(--surface-2)", color: "var(--ink-2)" };
+            if (picked !== null && isAnswer) {
+              style = { background: "var(--good-soft)", borderColor: "var(--good)", color: "var(--good)" };
+              badgeStyle = { background: "var(--good)", color: "#fff" };
+            } else if (isPicked) {
+              style = { background: "var(--bad-soft)", borderColor: "var(--bad)", color: "var(--bad)" };
+              badgeStyle = { background: "var(--bad)", color: "#fff" };
+            } else if (picked !== null) {
+              style = { ...style, opacity: 0.55 };
+            }
             return (
               <button key={idx} onClick={() => choose(idx)} disabled={picked !== null}
-                className="flex w-full items-center justify-between gap-3 rounded-xl border px-4 py-3 text-left text-[14.5px] font-medium transition-all active:scale-[0.99]"
+                className="flex items-center gap-3 rounded-xl border px-4 py-3.5 text-left text-[14.5px] font-semibold transition-all active:scale-[0.99]"
                 style={style}>
-                <span>{c}</span>
+                <span className="grid h-7 w-7 shrink-0 place-items-center rounded-full text-[12.5px] font-bold tabular" style={badgeStyle}>
+                  {LETTERS[idx]}
+                </span>
+                <span className="flex-1">{c}</span>
                 {picked !== null && isAnswer && <Check className="h-4 w-4 shrink-0" />}
                 {picked !== null && isPicked && !isAnswer && <Cross className="h-4 w-4 shrink-0" />}
               </button>
@@ -766,7 +803,7 @@ function QuizStep({
 
       {picked !== null && (
         <div className="rise space-y-3">
-          <div className="card p-4" style={{ background: correct ? "var(--good-soft)" : "var(--bad-soft)", borderColor: "transparent" }}>
+          <div className="card p-4" style={{ background: "var(--surface-2)", borderColor: "transparent" }}>
             <div className="mb-1 text-[12px] font-bold uppercase tracking-[0.1em]" style={{ color: correct ? "var(--good)" : "var(--bad)" }}>
               {correct ? "Exact" : "Raté"}
             </div>
