@@ -48,29 +48,28 @@ export default function Landing() {
     <div className="space-y-14 pb-10">
       <CCPresentationBanner />
 
-      <section className="card rise relative overflow-hidden p-8 text-center sm:p-14"
-        style={{ background: "var(--accent)", color: "var(--accent-ink)", boxShadow: "var(--shadow-lg)" }}>
-        <div className="blob" style={{ top: -70, left: -90, width: 230, height: 230, background: "var(--accent-strong)", opacity: 0.45 }} />
-        <div className="blob" style={{ bottom: -90, right: -70, width: 210, height: 210, background: "var(--accent-ink)", opacity: 0.08 }} />
-
+      {/* Héro clair à bordure pointillée façon usekard.be — plus d'aplat de
+          couleur ni de formes organiques, l'accent violet reste réservé au
+          badge et au bouton. */}
+      <section className="rise relative overflow-hidden rounded-2xl border border-dashed p-8 text-center sm:p-14"
+        style={{ borderColor: "var(--accent)", background: "linear-gradient(135deg, var(--accent-soft) 0%, var(--surface) 70%)" }}>
         <span className="relative mx-auto mb-5 grid h-16 w-16 place-items-center rounded-2xl"
-          style={{ background: "color-mix(in srgb, var(--accent-ink) 18%, transparent)", color: "var(--accent-ink)" }}>
+          style={{ background: "var(--accent)", color: "var(--accent-ink)" }}>
           <Scales className="h-9 w-9" />
         </span>
-        <h1 className="serif relative mx-auto max-w-2xl text-[34px] font-bold leading-[1.1] tracking-tight sm:text-[46px]">
+        <h1 className="relative mx-auto max-w-2xl text-[34px] font-extrabold leading-[1.1] tracking-tight sm:text-[46px]">
           Retiens ton cours de L1 de droit,<br />5 minutes par jour.
         </h1>
-        <p className="relative mx-auto mt-4 max-w-xl text-[16px] leading-relaxed"
-          style={{ color: "color-mix(in srgb, var(--accent-ink) 82%, var(--accent))" }}>
+        <p className="relative mx-auto mt-4 max-w-xl text-[16px] leading-relaxed" style={{ color: "var(--ink-2)" }}>
           Pour réviser pour de vrai, pas relire en diagonale la veille du partiel : une notion, cinq définitions,
           une question d&apos;examen corrigée, un quiz — chaque jour, sur le programme de L1 ou sur ton propre
           polycopié.
         </p>
         <div className="relative mt-7 flex flex-col items-center gap-3">
-          <Button href={ctaHref} variant="invert" size="lg">
+          <Button href={ctaHref} variant="primary" size="lg">
             Faire ma première séance <Arrow className="h-4 w-4" />
           </Button>
-          <span className="text-[13px]" style={{ color: "color-mix(in srgb, var(--accent-ink) 75%, var(--accent))" }}>
+          <span className="text-[13px]" style={{ color: "var(--muted)" }}>
             <SelonDate
               avant="Gratuit jusqu'à ton CC, aucune carte bancaire demandée."
               apres="Une leçon gratuite par jour, pour toujours. Aucune carte bancaire demandée."
