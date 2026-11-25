@@ -3,85 +3,87 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 :root {
-  --paper: #F4E8DD;
-  --surface: #FBF2EA;
-  --surface-2: #F0DCC8;
-  --ink: #3B241F;
-  --ink-2: #5A4136;
-  --muted: #9A6B57;
-  --line: #E8D6C6;
-  --line-strong: #D7BBA0;
+  /* Palette inspirée d'usekard.be/espace : fond quasi blanc, violet vif en
+     accent de marque, encre presque noire pour le texte, cartes blanches à
+     bordure fine plutôt que fonds colorés. */
+  --paper: #FAFAFE;
+  --surface: #FFFFFF;
+  --surface-2: #F3F1FD;
+  --ink: #111113;
+  --ink-2: #44454B;
+  --muted: #74757E;
+  --line: #E7E7EF;
+  --line-strong: #D6D6E4;
 
-  --accent: #6B2B26;
-  --accent-strong: #4A1D19;
-  --accent-soft: #F3DED8;
-  --accent-ink: #F6E9DD;
+  --accent: #6D4FF0;
+  --accent-strong: #5637E0;
+  --accent-soft: #EFEBFE;
+  --accent-ink: #FFFFFF;
 
-  --gold: #B5542F;
-  --gold-soft: #F0DCC8;
+  --gold: #C2410C;
+  --gold-soft: #FEF3C7;
 
-  --good: #3F6B4A;
-  --good-soft: #E6EEE3;
-  --bad: #A8432A;
-  --bad-soft: #F7E1DA;
-  --info: #7A5B2E;
-  --info-soft: #EEE4CE;
+  --good: #15803D;
+  --good-soft: #DCFCE7;
+  --bad: #B91C1C;
+  --bad-soft: #FEE2E2;
+  --info: #1D4ED8;
+  --info-soft: #DBEAFE;
 
   /* Carte mentale : une couleur FIXE par catégorie, la même sur toute leçon et
      toute matière (jamais liée à --h, la teinte du cours) — pour que l'élève
      associe "cette couleur = ce type de contenu" au fil du temps. */
-  --mm-keypoints: #9C6B14;
-  --mm-keypoints-soft: #F5E9CD;
-  --mm-definitions: #1C6E72;
-  --mm-definitions-soft: #DCEEEE;
-  --mm-plan: #8C3A4A;
-  --mm-plan-soft: #F3DEE1;
+  --mm-keypoints: #B45309;
+  --mm-keypoints-soft: #FEF3C7;
+  --mm-definitions: #0E7490;
+  --mm-definitions-soft: #E0F7FA;
+  --mm-plan: #BE185D;
+  --mm-plan-soft: #FCE7F3;
 
-  /* Bordure épaisse "carte à onglets" façon GénéraQuiz : brun chaud, plus marine. */
-  --card-border: rgba(59, 36, 31, 0.14);
+  --card-border: #E7E7EF;
 
-  --shadow-sm: 0 1px 2px rgba(59, 36, 31, 0.08);
-  --shadow-md: 0 2px 4px rgba(59, 36, 31, 0.06), 0 10px 26px -14px rgba(59, 36, 31, 0.3);
-  --shadow-lg: 0 6px 10px -2px rgba(59, 36, 31, 0.12), 0 26px 50px -24px rgba(59, 36, 31, 0.4);
+  --shadow-sm: 0 1px 2px rgba(17, 17, 19, 0.04);
+  --shadow-md: 0 1px 2px rgba(17, 17, 19, 0.04), 0 8px 24px -12px rgba(17, 17, 19, 0.12);
+  --shadow-lg: 0 2px 6px rgba(17, 17, 19, 0.06), 0 24px 48px -20px rgba(109, 79, 240, 0.28);
 }
 
 .dark {
-  --paper: #1F1511;
-  --surface: #2A1E19;
-  --surface-2: #3A2A22;
-  --ink: #F3E7DC;
-  --ink-2: #D9C4B5;
-  --muted: #B39A89;
-  --line: #3A2A22;
-  --line-strong: #4A362C;
+  --paper: #0D0D10;
+  --surface: #17171C;
+  --surface-2: #1F1F27;
+  --ink: #F2F2F6;
+  --ink-2: #C7C7D1;
+  --muted: #8F8F9C;
+  --line: #27272F;
+  --line-strong: #33333E;
 
-  --accent: #E08A5C;
-  --accent-strong: #F0A678;
-  --accent-soft: #3A241C;
-  --accent-ink: #1F1511;
+  --accent: #8B74FF;
+  --accent-strong: #A596FF;
+  --accent-soft: #241F3D;
+  --accent-ink: #FFFFFF;
 
-  --gold: #E0B563;
-  --gold-soft: #362B14;
+  --gold: #FB923C;
+  --gold-soft: #3A2A12;
 
-  --good: #7BB68A;
-  --good-soft: #1E3324;
-  --bad: #E8927E;
-  --bad-soft: #35201B;
-  --info: #C9A876;
-  --info-soft: #332917;
+  --good: #4ADE80;
+  --good-soft: #0F2A1A;
+  --bad: #F87171;
+  --bad-soft: #341414;
+  --info: #60A5FA;
+  --info-soft: #132339;
 
-  --mm-keypoints: #E2BC6C;
-  --mm-keypoints-soft: #332A16;
-  --mm-definitions: #5FC4C9;
-  --mm-definitions-soft: #12302F;
-  --mm-plan: #E39AA8;
-  --mm-plan-soft: #331B20;
+  --mm-keypoints: #F3B559;
+  --mm-keypoints-soft: #302207;
+  --mm-definitions: #4FD1E0;
+  --mm-definitions-soft: #0C2A2D;
+  --mm-plan: #F472B6;
+  --mm-plan-soft: #341226;
 
-  --card-border: rgba(243, 236, 217, 0.16);
+  --card-border: #27272F;
 
   --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
   --shadow-md: 0 2px 4px rgba(0, 0, 0, 0.3), 0 8px 24px -12px rgba(0, 0, 0, 0.6);
-  --shadow-lg: 0 4px 8px rgba(0, 0, 0, 0.3), 0 24px 48px -24px rgba(0, 0, 0, 0.8);
+  --shadow-lg: 0 4px 8px rgba(0, 0, 0, 0.3), 0 24px 48px -24px rgba(139, 116, 255, 0.35);
 }
 
 @theme inline {
@@ -106,8 +108,12 @@
   --color-info: var(--info);
   --color-info-soft: var(--info-soft);
   --color-card-border: var(--card-border);
-  --font-serif: "Fraunces", Georgia, "Times New Roman", serif;
-  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-sans: "Plus Jakarta Sans", "Inter", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  /* usekard.be n'a pas de police de titre distincte : les titres reprennent
+     la même grosse sans-serif que le corps de texte (voir --font-serif juste
+     en dessous). La touche serif italique (leur date sous un grand titre)
+     est une classe à part, .editorial-italic, jamais le titre entier. */
+  --font-serif: var(--font-sans);
 }
 
 * { -webkit-tap-highlight-color: transparent; }
@@ -123,7 +129,13 @@ body {
   text-rendering: optimizeLegibility;
 }
 
+/* Les titres reprennent la même sans-serif très grasse que le corps de texte
+   (voir --font-serif, qui pointe maintenant vers --font-sans) : usekard.be
+   n'utilise une empreinte serif qu'en touche ponctuelle (la date sous un
+   grand titre), jamais pour un titre entier — voir .editorial-italic. */
 h1, h2, h3, h4, .serif { font-family: var(--font-serif); }
+
+.editorial-italic { font-family: "Instrument Serif", Georgia, "Times New Roman", serif; font-style: italic; }
 
 ::selection { background: var(--accent-soft); color: var(--accent-strong); }
 
@@ -134,8 +146,8 @@ h1, h2, h3, h4, .serif { font-family: var(--font-serif); }
 
 .card {
   background: var(--surface);
-  border: 1.5px solid var(--card-border);
-  border-radius: 26px;
+  border: 1px solid var(--card-border);
+  border-radius: 18px;
   box-shadow: var(--shadow-sm);
 }
 

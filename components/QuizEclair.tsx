@@ -75,31 +75,49 @@ export default function QuizEclair({
     setPicked(null);
   }
 
+  const pct = Math.round((i / pool.length) * 100);
+  const LETTERS = ["A", "B", "C", "D"];
+
   return (
     <div className="space-y-4">
-      <div className="flex items-center justify-between text-[12.5px]" style={{ color: "var(--muted)" }}>
-        <button onClick={onBack} className="font-semibold">Abandonner</button>
-        <span className="tabular">Question {i + 1} sur {pool.length}</span>
-        <span className="tabular">{good} correctes</span>
+      <div className="flex items-center justify-between gap-4">
+        <button onClick={onBack} className="text-[12.5px] font-semibold" style={{ color: "var(--muted)" }}>Abandonner</button>
+        <span className="text-[12.5px] tabular" style={{ color: "var(--muted)" }}>Question {i + 1} sur {pool.length}</span>
+        <span className="flex items-center gap-1 text-[13px] font-bold tabular" style={{ color: "var(--good)" }}>
+          {good} <Check className="h-3.5 w-3.5" />
+        </span>
+      </div>
+      <div className="h-1.5 w-full overflow-hidden rounded-full" style={{ background: "var(--line)" }}>
+        <div className="h-full rounded-full transition-all" style={{ width: `${pct}%`, background: "var(--accent)" }} />
       </div>
 
-      <div key={i} className="card pop p-5">
-        <div className="mb-2"><Tag tone="hue">{q.lessonTitle}</Tag></div>
-        <p className="text-[16.5px] font-semibold leading-snug">{q.q}</p>
-        <div className="mt-4 space-y-2.5">
+      <div key={i} className="card pop p-6">
+        <div className="mb-3"><Tag tone="hue">{q.lessonTitle}</Tag></div>
+        <p className="text-[19px] font-bold leading-snug">{q.q}</p>
+        <div className="mt-5 grid gap-3 sm:grid-cols-2">
           {ordre.map((idx) => {
             const c = q.choices[idx];
             const isAnswer = idx === q.answer;
             const isPicked = idx === picked;
-            let style: React.CSSProperties = { background: "var(--surface-2)", borderColor: "var(--line)", color: "var(--ink)" };
-            if (picked !== null && isAnswer) style = { background: "var(--good-soft)", borderColor: "var(--good)", color: "var(--good)" };
-            else if (isPicked) style = { background: "var(--bad-soft)", borderColor: "var(--bad)", color: "var(--bad)" };
-            else if (picked !== null) style = { ...style, opacity: 0.55 };
+            let style: React.CSSProperties = { background: "var(--surface)", borderColor: "var(--line-strong)", color: "var(--ink)" };
+            let badgeStyle: React.CSSProperties = { background: "var(--surface-2)", color: "var(--ink-2)" };
+            if (picked !== null && isAnswer) {
+              style = { background: "var(--good-soft)", borderColor: "var(--good)", color: "var(--good)" };
+              badgeStyle = { background: "var(--good)", color: "#fff" };
+            } else if (isPicked) {
+              style = { background: "var(--bad-soft)", borderColor: "var(--bad)", color: "var(--bad)" };
+              badgeStyle = { background: "var(--bad)", color: "#fff" };
+            } else if (picked !== null) {
+              style = { ...style, opacity: 0.55 };
+            }
             return (
               <button key={idx} onClick={() => choose(idx)} disabled={picked !== null}
-                className="flex w-full items-center justify-between gap-3 rounded-xl border px-4 py-3 text-left text-[14.5px] font-medium transition-all active:scale-[0.99]"
+                className="flex items-center gap-3 rounded-xl border px-4 py-3.5 text-left text-[14.5px] font-semibold transition-all active:scale-[0.99]"
                 style={style}>
-                <span>{c}</span>
+                <span className="grid h-7 w-7 shrink-0 place-items-center rounded-full text-[12.5px] font-bold tabular" style={badgeStyle}>
+                  {LETTERS[idx]}
+                </span>
+                <span className="flex-1">{c}</span>
                 {picked !== null && isAnswer && <Check className="h-4 w-4 shrink-0" />}
                 {picked !== null && isPicked && !isAnswer && <Cross className="h-4 w-4 shrink-0" />}
               </button>
@@ -110,7 +128,7 @@ export default function QuizEclair({
 
       {picked !== null && (
         <div className="rise space-y-3">
-          <div className="card p-4" style={{ background: correct ? "var(--good-soft)" : "var(--bad-soft)", borderColor: "transparent" }}>
+          <div className="card p-4" style={{ background: "var(--surface-2)", borderColor: "transparent" }}>
             <p className="text-[14px] leading-relaxed" style={{ color: "var(--ink-2)" }}>{q.why}</p>
           </div>
           <Button onClick={next} size="lg" full>{last ? "Voir mon score" : "Question suivante"} <Arrow className="h-4 w-4" /></Button>

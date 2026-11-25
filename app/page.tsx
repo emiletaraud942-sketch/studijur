@@ -153,17 +153,15 @@ export default function TodayPage() {
       )}
 
       {daily && dailyCourse ? (
-        <section data-hue={dailyCourse.hue} className="card rise relative overflow-hidden p-5 sm:p-7"
-          style={{ background: "var(--h)", color: "var(--accent-ink)", boxShadow: "var(--shadow-md)" }}>
-          <div className="blob" style={{ right: -40, bottom: -50, width: 170, height: 170, background: "var(--accent-ink)", opacity: 0.1 }} />
-
+        <section data-hue={dailyCourse.hue} className="rise relative overflow-hidden rounded-2xl border border-dashed p-5 sm:p-7"
+          style={{ borderColor: "var(--h)", background: "linear-gradient(135deg, var(--h-soft) 0%, var(--surface) 70%)" }}>
           <div className="relative mb-3 flex flex-wrap items-center gap-2">
             <span className="inline-flex items-center rounded-full px-2.5 py-1 text-[11px] font-bold uppercase tracking-[0.07em]"
-              style={{ background: "var(--accent-ink)", color: "var(--h)" }}>
+              style={{ background: "var(--h)", color: "var(--accent-ink)" }}>
               {dailyCourse.short}
             </span>
             <span className="inline-flex items-center rounded-full px-2.5 py-1 text-[11px] font-semibold uppercase tracking-[0.07em]"
-              style={{ background: "color-mix(in srgb, var(--accent-ink) 22%, transparent)", color: "var(--accent-ink)" }}>
+              style={{ background: "var(--h-soft)", color: "var(--h)" }}>
               Leçon {daily.order} · {daily.minutes} min
             </span>
             {doneToday && (
@@ -173,9 +171,8 @@ export default function TodayPage() {
               </span>
             )}
           </div>
-          <h2 className="serif relative text-[24px] font-bold leading-snug sm:text-[27px]">{daily.title}</h2>
-          <p className="relative mt-2 max-w-md text-[15px] leading-relaxed"
-            style={{ color: "color-mix(in srgb, var(--accent-ink) 85%, var(--h))" }}>{daily.teaser}</p>
+          <h2 className="relative text-[24px] font-extrabold leading-snug sm:text-[27px]">{daily.title}</h2>
+          <p className="editorial-italic relative mt-2 max-w-md text-[18px]" style={{ color: "var(--ink-2)" }}>{daily.teaser}</p>
 
           <div className="relative mt-5 grid gap-2 text-center" style={{ gridTemplateColumns: `repeat(${2 + (daily.definitions.length > 0 ? 1 : 0) + (daily.quiz.length > 0 ? 1 : 0)}, minmax(0, 1fr))` }}>
             {[
@@ -184,17 +181,16 @@ export default function TodayPage() {
               { Icon: Target, n: "1", l: "Question" },
               ...(daily.quiz.length > 0 ? [{ Icon: Check, n: `${daily.quiz.length}`, l: "Quiz" }] : []),
             ].map(({ Icon, n, l }) => (
-              <div key={l} className="rounded-2xl py-3" style={{ background: "color-mix(in srgb, var(--accent-ink) 16%, transparent)" }}>
-                <Icon className="mx-auto mb-1 h-4 w-4" />
+              <div key={l} className="rounded-2xl border py-3" style={{ background: "var(--surface)", borderColor: "var(--line)" }}>
+                <span className="mx-auto mb-1 block w-fit" style={{ color: "var(--h)" }}><Icon className="h-4 w-4" /></span>
                 <div className="text-[14px] font-bold tabular">{n}</div>
-                <div className="text-[10.5px] font-medium uppercase tracking-wider"
-                  style={{ color: "color-mix(in srgb, var(--accent-ink) 78%, var(--h))" }}>{l}</div>
+                <div className="text-[10.5px] font-medium uppercase tracking-wider" style={{ color: "var(--muted)" }}>{l}</div>
               </div>
             ))}
           </div>
 
           <div className="relative mt-5">
-            <Button href={`/lecon/${daily.id}`} variant="invert" size="lg" full>
+            <Button href={`/lecon/${daily.id}`} variant="primary" size="lg" full>
               Commencer la séance <Arrow className="h-4 w-4" />
             </Button>
           </div>
